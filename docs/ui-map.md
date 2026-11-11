@@ -46,6 +46,7 @@ pointing at the right thing.
 | P14 | Participant report | `/reports/:id/participants/:userId` | Authors | `app/reports/[id]/participants/[userId]/page.tsx` |
 | P15 | Not allowed | any of the above, when WordPress refuses access | Anyone without access | `components/access-error.tsx` |
 | P16 | Colours | `/colours` | Authors (the defaults and display take an administrator) | `app/colours/page.tsx` |
+| P17 | Webinars | `/webinars` | Everyone: upcoming live sessions and on-demand webinars | `app/webinars/page.tsx` |
 
 ## Popups
 
