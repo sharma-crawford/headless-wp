@@ -15,6 +15,7 @@ import EditableTitle from "@/components/builder/editable-title";
 import { NODE_LABELS } from "@/components/builder/node-labels";
 import TreeView from "@/components/builder/tree-view";
 import PageShell from "@/components/page-shell";
+import { Cover } from "@/components/programme-card";
 import { FormatBadge, StateBadge } from "@/components/state-badge";
 import {
   createNodeAction,
@@ -26,19 +27,22 @@ import {
   setStatusAction,
 } from "@/app/actions/authoring";
 import { isAuthenticated } from "@/lib/auth";
+import { swatchSolid } from "@/lib/colours";
 import { decodeEntities } from "@/lib/html";
-import type { Plan, ProgramAccess, TreeNode, WebinarLive } from "@/lib/types";
+import type { ChecklistItem, Plan, ProgramAccess, TreeNode, WebinarLive } from "@/lib/types";
 import { setProgramAccessAction } from "@/app/actions/plans";
 import { getMe, getPlans, getProgramTree } from "@/lib/wordpress";
 
 export default async function BuilderProgramPage({
   params,
+  searchParams,
 }: PageProps<"/builder/programs/[id]">) {
   if (!(await isAuthenticated())) {
     redirect("/login");
   }
 
   const { id } = await params;
+  const requestedTab = (await searchParams).tab;
 
   let tree: TreeNode;
 
@@ -71,8 +75,12 @@ export default async function BuilderProgramPage({
     isAdmin = false;
   }
 
+  const tab: Tab =
+    (["curriculum", "details", "access"] as const).find((t) => t === requestedTab) ?? "curriculum";
+  const title = decodeEntities(tree.title);
+
   return (
-    <PageShell code="P10">
+    <PageShell code="P10" wide>
       <Breadcrumbs
         trail={[
           { label: "Build", href: "/builder" },
@@ -80,160 +88,360 @@ export default async function BuilderProgramPage({
         ]}
       />
 
-      <div className="mt-4 flex flex-wrap items-center gap-3">
-        <ColourMenu
-          nodeId={tree.id}
-          title={decodeEntities(tree.title)}
-          own={tree.color}
-          inherited={null}
-          inheritedFrom={null}
-        />
+      {/* The header band: what this is, and the few things done to all of it. */}
+      <div className="mt-4 flex flex-wrap items-center gap-5 rounded-2xl border border-zinc-200 bg-white p-5">
+        <div className="w-28 shrink-0 overflow-hidden rounded-xl">
+          <Cover
+            colour={tree.color ? swatchSolid(tree.color) : undefined}
+            webinar={isWebinar}
+            image={tree.cover ?? null}
+            className="h-20"
+          />
+        </div>
 
-        <EditableTitle nodeId={tree.id} title={decodeEntities(tree.title)} />
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-2">
+            <StateBadge state={isDraft ? "draft" : "published"} />
+            {isWebinar ? (
+              <FormatBadge format="webinar" />
+            ) : (
+              <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-semibold text-zinc-700">
+                Course
+              </span>
+            )}
+            {tree.access?.plan && (
+              <span className="rounded-full bg-brand-800 px-2 py-0.5 text-xs font-semibold text-white">
+                {tree.access.plan.name}
+              </span>
+            )}
+          </div>
 
-        <StateBadge state={isDraft ? "draft" : "published"} />
+          <div className="mt-1.5 flex flex-wrap items-center gap-2">
+            <ColourMenu
+              nodeId={tree.id}
+              title={title}
+              own={tree.color}
+              inherited={null}
+              inheritedFrom={null}
+            />
+            <EditableTitle nodeId={tree.id} title={title} />
+          </div>
 
-        {isWebinar && (
-          <FormatBadge format="webinar" />
-        )}
+          <AuthorshipLine item={tree} />
+        </div>
 
-        <div className="ml-auto flex flex-wrap items-center gap-2">
-          {/*
-            The cohort is the other half of the same programme: who is on it
-            and how far they have got. Reached from here rather than from the
-            menu, because the question "is anyone actually doing this?" is
-            asked while looking at the thing itself.
-          */}
+        <div className="flex flex-wrap items-center gap-2">
           {/*
             What the cohort will meet, rather than what the author sees. An
             author's own passes and completions shape the participant screens
-            for them: a quiz they passed while writing it leaves the module it
-            gates unlocked. Preview answers as somebody with nothing recorded.
+            for them; preview answers as somebody with nothing recorded.
           */}
           <Button
             variant="outline"
+            className="h-10"
             nativeButton={false}
             render={<Link href={`/programs/${tree.id}?preview=1`} />}
           >
             Preview as participant
           </Button>
 
+          {/* The other half of the same programme: who is on it, how far they got. */}
           <Button
             variant="outline"
+            className="h-10"
             nativeButton={false}
             render={<Link href={`/reports/${tree.id}`} />}
           >
             Cohort report
           </Button>
 
-          {/*
-            A plain link, not <Link>: the answer is a file to save, and
-            client-side navigation would try to render it as a page.
-          */}
-          <Button
-            variant="outline"
-            nativeButton={false}
-            render={<a href={`/builder/programs/${tree.id}/backup`} download />}
-          >
-            Download backup
-          </Button>
-
           <ActionForm action={setStatusAction}>
             <input type="hidden" name="id" value={tree.id} />
-            <input
-              type="hidden"
-              name="status"
-              value={isDraft ? "publish" : "draft"}
-            />
-            <Button type="submit" variant="outline">
+            <input type="hidden" name="status" value={isDraft ? "publish" : "draft"} />
+            {/* One primary action per screen: publishing, while it is a draft. */}
+            <Button type="submit" variant={isDraft ? "default" : "outline"} className="h-10 px-4">
               {isDraft ? "Publish programme" : "Unpublish programme"}
             </Button>
           </ActionForm>
         </div>
       </div>
 
-      <AuthorshipLine item={tree} />
+      <nav aria-label="Programme sections" className="mt-6 flex gap-1 overflow-x-auto border-b border-zinc-200">
+        <TabLink id={tree.id} tab="curriculum" current={tab}>
+          {isWebinar ? "Webinar" : "Curriculum"}
+        </TabLink>
+        <TabLink id={tree.id} tab="details" current={tab}>
+          Details
+        </TabLink>
+        {isAdmin && (
+          <TabLink id={tree.id} tab="access" current={tab}>
+            Access
+          </TabLink>
+        )}
+      </nav>
 
-      {/*
-        Hours are entered from the accreditation paperwork, not calculated —
-        and the two figures are never added together: an attorney admitted in
-        both states reports the same seat time to each bar.
-      */}
-      <details className="mt-4 text-sm">
-        <summary className="cursor-pointer text-zinc-500 hover:text-zinc-900">
-          {tree.credits
-            ?.map((credit) =>
-              credit.hours > 0
-                ? `${credit.label}: ${credit.hours} h`
-                : `${credit.label}: not accredited`
-            )
-            .join(" · ")}
-        </summary>
+      <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
+        <div className="min-w-0 space-y-6">
+          {tab === "curriculum" &&
+            (isWebinar ? (
+              <>
+                <Section
+                  title="The video page"
+                  intro="Open the module to paste the video address and write the description. Add a quiz to it if the webinar needs one."
+                >
+                  {/*
+                    The unit is still there — progress, certificates and
+                    reports all count modules inside units — but a webinar's
+                    author never needs to see it.
+                  */}
+                  {units[0] ? (
+                    <TreeView
+                      node={units[0]}
+                      inherited={units[0].color ?? tree.color}
+                      inheritedFrom={units[0].color ? "unit" : "programme"}
+                    />
+                  ) : (
+                    <p className="text-zinc-600">
+                      This webinar has no module. Switch it to a course and back
+                      to a webinar, on Details, to create one.
+                    </p>
+                  )}
+                </Section>
+                <LiveSessionForm programmeId={tree.id} live={tree.live ?? null} />
+              </>
+            ) : (
+              <>
+                {units.length === 0 ? (
+                  <p className="rounded-xl border border-dashed border-zinc-300 bg-white px-6 py-10 text-center text-zinc-600">
+                    Start with a unit: a stage of the course, holding its modules
+                    and live sessions.
+                  </p>
+                ) : (
+                  <TreeView node={tree} inherited={tree.color} inheritedFrom="programme" />
+                )}
 
-        <ActionForm
-          action={saveCreditsAction}
-          className="mt-3 flex flex-wrap items-end gap-4"
-        >
-          <input type="hidden" name="id" value={tree.id} />
+                {/*
+                  One click, named for you: a unit belongs to this programme,
+                  and it is renamed where it is edited.
+                */}
+                <ActionForm action={createNodeAction}>
+                  <input type="hidden" name="type" value="pcle_unit" />
+                  <input type="hidden" name="parent_id" value={tree.id} />
+                  <input type="hidden" name="title" value="New unit" />
+                  <button
+                    type="submit"
+                    className="flex h-14 w-full items-center justify-center gap-2 rounded-xl border-2 border-dashed border-zinc-300 text-sm font-semibold text-zinc-600 transition hover:border-brand-400 hover:text-brand-700"
+                  >
+                    <PlusIcon className="size-4" />
+                    Add {NODE_LABELS.pcle_unit.singular.toLowerCase()}
+                  </button>
+                </ActionForm>
 
-          {tree.credits?.map((credit) => (
-            <span key={credit.jurisdiction}>
-              <label
-                htmlFor={`credit-${credit.jurisdiction}`}
-                className="block text-xs font-medium text-zinc-600"
-              >
-                {credit.label}
-              </label>
-              <Input
-                id={`credit-${credit.jurisdiction}`}
-                type="number"
-                name={`credit_${credit.jurisdiction}`}
-                defaultValue={credit.hours > 0 ? credit.hours : ""}
-                min="0"
-                step="0.25"
-                placeholder="—"
-                className="mt-1 w-24"
+                <p className="text-sm text-zinc-500">
+                  Click any title to write its body, attach a document or image,
+                  or embed a video by its address. Drag the handle to reorder.
+                </p>
+              </>
+            ))}
+
+          {tab === "details" && (
+            <>
+              <FormatSection programmeId={tree.id} isWebinar={isWebinar} />
+              <CreditsSection programmeId={tree.id} credits={tree.credits ?? []} />
+              <CatalogueListing
+                programmeId={tree.id}
+                cover={tree.cover ?? null}
+                topics={tree.topics ?? []}
+                isDraft={isDraft}
               />
-            </span>
-          ))}
+              <Section
+                title="Backup"
+                intro="Everything in the programme as one file. Restoring it, on Build, makes a new draft beside this one."
+              >
+                {/*
+                  A plain link, not <Link>: the answer is a file to save, and
+                  client-side navigation would try to render it as a page.
+                */}
+                <Button
+                  variant="outline"
+                  nativeButton={false}
+                  render={<a href={`/builder/programs/${tree.id}/backup`} download />}
+                >
+                  Download backup
+                </Button>
+              </Section>
+            </>
+          )}
 
-          <Button type="submit">Save hours</Button>
+          {tab === "access" && isAdmin && (
+            <ProgrammeAccess programmeId={tree.id} access={tree.access ?? null} plans={plans} />
+          )}
+        </div>
 
-          <span className="w-full text-xs text-zinc-500">
-            Approved hours per jurisdiction, in quarter-hour steps. Leave blank
-            where the programme is not accredited. Certificates cannot be
-            issued for a programme with no hours.
-          </span>
-        </ActionForm>
-      </details>
+        <aside className="space-y-5">
+          <Checklist programmeId={tree.id} items={tree.checklist ?? []} />
 
-      {isAdmin && (
-        <ProgrammeAccess programmeId={tree.id} access={tree.access ?? null} plans={plans} />
-      )}
+          <div className="rounded-xl border border-zinc-200 bg-white p-5 text-sm">
+            <h2 className="text-lg font-semibold text-zinc-950">At a glance</h2>
+            <dl className="mt-3 space-y-2.5">
+              <Glance label="Participants">{tree.cohort?.participants ?? 0}</Glance>
+              <Glance label="Cohort progress">{tree.cohort?.percent ?? 0}%</Glance>
+              <Glance label="In the catalogue">{isDraft ? "Not while a draft" : "Yes"}</Glance>
+              <Glance label="Included in">
+                {tree.access?.plan ? `${tree.access.plan.name} and above` : "No plan"}
+              </Glance>
+            </dl>
+            {!isDraft && (
+              <Link
+                href={`/catalogue/${tree.id}`}
+                className="mt-4 block font-semibold text-brand-700 hover:underline"
+              >
+                See it in the catalogue →
+              </Link>
+            )}
+          </div>
+        </aside>
+      </div>
+    </PageShell>
+  );
+}
 
-      <CatalogueListing
-        programmeId={tree.id}
-        cover={tree.cover ?? null}
-        topics={tree.topics ?? []}
-        isDraft={isDraft}
-      />
+type Tab = "curriculum" | "details" | "access";
 
-      {/*
-        Two submit buttons rather than a select and a save: the choice is the
-        action. Becoming a webinar may be refused — a second unit in the way —
-        and ActionForm shows the server's reason beside the buttons.
-      */}
-      <ActionForm
-        action={setFormatAction}
-        className="mt-4 flex flex-wrap items-center gap-2 text-sm"
-      >
-        <input type="hidden" name="id" value={tree.id} />
-        <span className="text-zinc-500">Format</span>
+/** A tab is a link: each one is a URL, so a reload or a shared link keeps it. */
+function TabLink({
+  id,
+  tab,
+  current,
+  children,
+}: {
+  id: number;
+  tab: Tab;
+  current: Tab;
+  children: React.ReactNode;
+}) {
+  const on = tab === current;
+
+  return (
+    <Link
+      href={tab === "curriculum" ? `/builder/programs/${id}` : `/builder/programs/${id}?tab=${tab}`}
+      aria-current={on ? "page" : undefined}
+      className={
+        on
+          ? "relative px-4 py-3 text-[0.95rem] font-medium whitespace-nowrap text-brand-800 after:absolute after:inset-x-4 after:bottom-0 after:h-0.5 after:rounded-full after:bg-amber-400"
+          : "px-4 py-3 text-[0.95rem] font-medium whitespace-nowrap text-zinc-500 hover:text-zinc-900"
+      }
+    >
+      {children}
+    </Link>
+  );
+}
+
+/** A titled card on a tab. */
+function Section({
+  title,
+  intro,
+  children,
+}: {
+  title: string;
+  intro?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="rounded-xl border border-zinc-200 bg-white p-6">
+      <h2 className="text-lg font-semibold text-zinc-950">{title}</h2>
+      {intro && <p className="mt-1 text-sm text-zinc-500">{intro}</p>}
+      <div className="mt-4">{children}</div>
+    </section>
+  );
+}
+
+function Glance({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex justify-between gap-3">
+      <dt className="text-zinc-500">{label}</dt>
+      <dd className="text-right font-medium text-zinc-900">{children}</dd>
+    </div>
+  );
+}
+
+/**
+ * Ready to publish: what a participant would meet that is missing. Advice,
+ * not a gate — publishing is never refused for an unticked line.
+ */
+function Checklist({ items }: { programmeId: number; items: ChecklistItem[] }) {
+  if (items.length === 0) {
+    return null;
+  }
+
+  const done = items.filter((item) => item.done).length;
+  const fixHref: Record<string, string | null> = {
+    summary: null,
+    content: null,
+    credits: "?tab=details",
+    cover: "?tab=details",
+    quizzes: null,
+    drafts: null,
+  };
+
+  return (
+    <div className="rounded-xl border border-zinc-200 bg-white p-5">
+      <div className="flex items-center justify-between">
+        <h2 className="text-lg font-semibold text-zinc-950">Ready to publish</h2>
+        <span className="text-sm font-semibold text-brand-700">
+          {done} of {items.length}
+        </span>
+      </div>
+      <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-zinc-200">
+        <div
+          className="h-full rounded-full bg-emerald-600"
+          style={{ width: `${Math.round((done / items.length) * 100)}%` }}
+        />
+      </div>
+
+      <ul className="mt-4 space-y-2.5 text-sm">
+        {items.map((item) => {
+          const href = item.node_id ? `/builder/nodes/${item.node_id}` : fixHref[item.key];
+
+          return (
+            <li key={item.key} className="flex gap-2">
+              <span aria-hidden="true" className={item.done ? "text-emerald-600" : "text-amber-600"}>
+                {item.done ? "✓" : "!"}
+              </span>
+              <span className={item.done ? "text-zinc-700" : "text-zinc-900"}>
+                {item.label}
+                <span className="sr-only">{item.done ? " (done)" : " (to do)"}</span>
+                {!item.done && href && (
+                  <>
+                    {" "}
+                    <Link href={href} className="font-medium text-brand-700 hover:underline">
+                      Fix
+                    </Link>
+                  </>
+                )}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+/** Course or webinar: two buttons, because the choice is the action. */
+function FormatSection({ programmeId, isWebinar }: { programmeId: number; isWebinar: boolean }) {
+  return (
+    <Section
+      title="Format"
+      intro="A webinar is one video, with an optional quiz. Participants go straight to it — there are no units to click through."
+    >
+      {/* Becoming a webinar may be refused — a second unit in the way — and ActionForm says why. */}
+      <ActionForm action={setFormatAction} className="flex flex-wrap items-center gap-2">
+        <input type="hidden" name="id" value={programmeId} />
         <Button
           type="submit"
           name="format"
           value="series"
-          size="sm"
           variant={isWebinar ? "outline" : "default"}
           aria-pressed={!isWebinar}
         >
@@ -243,89 +451,60 @@ export default async function BuilderProgramPage({
           type="submit"
           name="format"
           value="webinar"
-          size="sm"
           variant={isWebinar ? "default" : "outline"}
           aria-pressed={isWebinar}
         >
           Webinar
         </Button>
-        <span className="w-full text-xs text-zinc-500">
-          A webinar is one video, with an optional quiz. Participants go
-          straight to it — there are no units to click through.
-        </span>
       </ActionForm>
+    </Section>
+  );
+}
 
-      {isWebinar ? (
-        <Card className="mt-8 p-6">
-          {/*
-            The unit is still there — progress, certificates and reports all
-            count modules inside units — but a webinar's author never needs to
-            see it. Drawing the unit's tree shows just the module row, with
-            its own editor link and its add menu for a quiz.
-          */}
-          {units[0] ? (
-            <TreeView
-              node={units[0]}
-              inherited={units[0].color ?? tree.color}
-              inheritedFrom={units[0].color ? "unit" : "programme"}
+/**
+ * Hours from the accreditation paperwork, not calculated — and the figures
+ * are never added together: an attorney admitted in both states reports the
+ * same seat time to each bar.
+ */
+function CreditsSection({
+  programmeId,
+  credits,
+}: {
+  programmeId: number;
+  credits: NonNullable<TreeNode["credits"]>;
+}) {
+  return (
+    <Section
+      title="CLE credit hours"
+      intro="Approved hours per jurisdiction, in quarter-hour steps. Leave blank where the programme is not accredited."
+    >
+      <ActionForm action={saveCreditsAction} className="flex flex-wrap items-end gap-4">
+        <input type="hidden" name="id" value={programmeId} />
+
+        {credits.map((credit) => (
+          <span key={credit.jurisdiction}>
+            <label
+              htmlFor={`credit-${credit.jurisdiction}`}
+              className="block text-xs font-medium text-zinc-600"
+            >
+              {credit.label}
+            </label>
+            <Input
+              id={`credit-${credit.jurisdiction}`}
+              type="number"
+              name={`credit_${credit.jurisdiction}`}
+              defaultValue={credit.hours > 0 ? credit.hours : ""}
+              min="0"
+              step="0.25"
+              placeholder="—"
+              className="mt-1 w-24"
             />
-          ) : (
-            <p className="text-zinc-600">
-              This webinar has no module. Switch to Series and back to
-              Webinar to create one.
-            </p>
-          )}
+          </span>
+        ))}
 
-          <p className="mt-6 border-t border-zinc-100 pt-4 text-sm text-zinc-500">
-            Open the module to paste the video address and write the
-            description. Add a quiz to it if the webinar needs one.
-          </p>
-        </Card>
-      ) : null}
-
-      {isWebinar ? (
-        <LiveSessionForm programmeId={tree.id} live={tree.live ?? null} />
-      ) : (
-      <Card className="mt-8 p-6">
-        {units.length === 0 ? (
-          <p className="text-zinc-600">
-            Nothing in this programme yet. A unit is a stage of the course —
-            add one to start.
-          </p>
-        ) : (
-          <TreeView node={tree} inherited={tree.color} inheritedFrom="programme" />
-        )}
-
-        {/*
-          The top-level add sits with the tree rather than in a toolbar: a unit
-          belongs to this programme, and the whole point of building here is
-          that you never pick a parent from a list — it is wherever you clicked.
-        */}
-        {/*
-          One click, named for you. Asking for a title before the thing exists
-          was a question with an obvious answer, and it stood between the
-          instructor and the only action this page is for.
-        */}
-        <ActionForm
-          action={createNodeAction}
-          className="mt-6 border-t border-zinc-100 pt-4"
-        >
-          <input type="hidden" name="type" value="pcle_unit" />
-          <input type="hidden" name="parent_id" value={tree.id} />
-          <input type="hidden" name="title" value="New unit" />
-          <Button type="submit" variant="outline">
-            <PlusIcon className="size-4" />
-            Add {NODE_LABELS.pcle_unit.singular.toLowerCase()}
-          </Button>
-        </ActionForm>
-      </Card>
-      )}
-
-      <p className="mt-6 text-sm text-zinc-500">
-        Click any title to write its body, attach a document or image, or embed
-        a video by its address.
-      </p>
-    </PageShell>
+        <Button type="submit">Save hours</Button>
+      </ActionForm>
+    </Section>
   );
 }
 
@@ -443,14 +622,13 @@ function CatalogueListing({
   isDraft: boolean;
 }) {
   return (
-    <details className="mt-2 text-sm">
-      <summary className="cursor-pointer text-zinc-500 hover:text-zinc-900">
-        Catalogue: {cover ? "cover image" : "no cover"} ·{" "}
-        {topics.length > 0 ? topics.join(", ") : "no topics"}
-        {isDraft && " · not listed while a draft"}
-      </summary>
-
-      <div className="mt-3 grid gap-6 rounded-lg border border-zinc-200 bg-white p-4 sm:grid-cols-[12rem_minmax(0,1fr)]">
+    <Section
+      title="In the catalogue"
+      intro={`Catalogue: ${cover ? "cover image" : "no cover"} · ${
+        topics.length > 0 ? topics.join(", ") : "no topics"
+      }${isDraft ? " · not listed while a draft" : ""}`}
+    >
+      <div className="grid gap-6 text-sm sm:grid-cols-[12rem_minmax(0,1fr)]">
         <div>
           <div className="aspect-[16/10] overflow-hidden rounded-md border border-zinc-200 bg-zinc-100">
             {cover ? (
@@ -521,7 +699,7 @@ function CatalogueListing({
           </ActionForm>
         </div>
       </div>
-    </details>
+    </Section>
   );
 }
 
@@ -553,15 +731,14 @@ function ProgrammeAccess({
     .join(" · ");
 
   return (
-    <details className="mt-2 text-sm">
-      <summary className="cursor-pointer text-zinc-500 hover:text-zinc-900">
-        Access: {summary}
-      </summary>
-
+    <Section
+      title="Who can open it"
+      intro={`Access: ${summary}. Choosing a plan includes every plan above it.`}
+    >
       <ActionForm
         key={`${minRank}|${access?.sold_alone}|${access?.price}`}
         action={setProgramAccessAction}
-        className="mt-3 grid gap-4 rounded-lg border border-zinc-200 bg-white p-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] sm:items-end"
+        className="grid gap-4 text-sm sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] sm:items-end"
       >
         <input type="hidden" name="id" value={programmeId} />
 
@@ -608,6 +785,6 @@ function ProgrammeAccess({
           )}
         </span>
       </ActionForm>
-    </details>
+    </Section>
   );
 }

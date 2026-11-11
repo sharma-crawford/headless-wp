@@ -64,8 +64,7 @@ test.describe("Plans", () => {
     // An administrator puts the programme in the plan…
     await signOut(page);
     await signIn(page, people.administrator);
-    await page.goto(`/builder/programs/${programme.id}`);
-    await page.getByText(/^Access:/).click();
+    await page.goto(`/builder/programs/${programme.id}?tab=access`);
     await page.getByLabel("Included in").selectOption({ label: `${name} and above` });
     await page.getByRole("button", { name: "Save access" }).click();
     await expect(page.getByText(`Access: in ${name} and above`)).toBeVisible();
@@ -96,6 +95,10 @@ test.describe("Plans", () => {
     await expect(page.getByRole("banner").getByRole("button", { name: "Plans" })).toHaveCount(0);
 
     await page.goto(`/builder/programs/${programme.id}`);
-    await expect(page.getByText(/^Access:/)).toHaveCount(0);
+    await expect(page.getByRole("link", { name: "Access", exact: true })).toHaveCount(0);
+
+    // Nor by typing the address: the tab is not drawn for them.
+    await page.goto(`/builder/programs/${programme.id}?tab=access`);
+    await expect(page.getByLabel("Included in")).toHaveCount(0);
   });
 });

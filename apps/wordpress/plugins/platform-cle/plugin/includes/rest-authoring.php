@@ -572,6 +572,10 @@ function pcle_authoring_list_programs() {
 			'units'      => count( pcle_authoring_get_children( $program->ID, 'pcle_unit' ) ),
 			'modules'    => count( pcle_get_program_module_ids( $program->ID ) ),
 			'enrollees'  => count( pcle_get_program_enrollee_ids( $program->ID ) ),
+			// For the Build screen's cards (studio.php, catalogue.php).
+			'cover'      => pcle_get_program_cover_url( $program->ID ),
+			'cohort'     => pcle_program_cohort( $program->ID ),
+			'checklist'  => pcle_program_checklist( $program->ID ),
 		) + pcle_authoring_shape_authorship( $program );
 	}
 
@@ -586,8 +590,13 @@ function pcle_authoring_list_programs() {
  */
 function pcle_authoring_get_tree( $request ) {
 	$program = get_post( (int) $request['id'] );
+	$tree    = pcle_authoring_build_tree( $program );
 
-	return rest_ensure_response( pcle_authoring_build_tree( $program ) );
+	// Only at the root: what the programme screen's sidebar shows (studio.php).
+	$tree['checklist'] = pcle_program_checklist( $program->ID );
+	$tree['cohort']    = pcle_program_cohort( $program->ID );
+
+	return rest_ensure_response( $tree );
 }
 
 /* =========================================================================

@@ -17,7 +17,7 @@ test.describe("Building a curriculum", () => {
     await signIn(page, people.instructor);
     await page.goto("/builder");
 
-    await expect(page.getByRole("heading", { name: "Build" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Your programmes" })).toBeVisible();
     await expect(page.getByRole("link", { name: programme.title })).toBeVisible();
   });
 
@@ -141,7 +141,7 @@ test.describe("Previewing as a participant", () => {
     await signIn(page, people.instructor);
     await page.goto(`/programs/${programme.id}?preview=1`);
 
-    await page.getByRole("button", { name: "Leave preview" }).click();
+    await page.getByRole("link", { name: /Leave preview/ }).click();
 
     await expect(page).toHaveURL(new RegExp(`/builder/programs/${programme.id}$`));
   });
@@ -469,7 +469,8 @@ test.describe("Backing up a programme", () => {
 
   test("a backup downloads, and restores as a new draft", async ({ page }) => {
     await signIn(page, people.instructor);
-    await page.goto(`/builder/programs/${programme.id}`);
+    // On the programme's Details tab.
+    await page.goto(`/builder/programs/${programme.id}?tab=details`);
 
     const [download] = await Promise.all([
       page.waitForEvent("download"),

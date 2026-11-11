@@ -26,7 +26,8 @@ test.describe("Webinars", () => {
 
   test("an author turns a programme into a webinar", async ({ page }) => {
     await signIn(page, people.instructor);
-    await page.goto(`/builder/programs/${programme.id}`);
+    // The format is on the programme's Details tab.
+    await page.goto(`/builder/programs/${programme.id}?tab=details`);
 
     await page.getByRole("button", { name: "Webinar", exact: true }).click();
 
