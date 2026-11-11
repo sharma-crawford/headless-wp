@@ -239,6 +239,8 @@ function pcle_rest_shape_module( $module ) {
 		'excerpt'   => pcle_rest_excerpt( $module ),
 		'completed' => ( ! pcle_previewing_as_participant() && pcle_is_module_complete( $module->ID ) ),
 		'color'     => pcle_participant_colour( $module->ID ),
+		// Only ever true in an author's preview, which shows drafts so they can be checked.
+		'draft'     => 'publish' !== $module->post_status,
 	);
 }
 
@@ -459,6 +461,7 @@ function pcle_rest_get_program( $request ) {
 			'credits'        => pcle_rest_shape_credit_hours( $program->ID ),
 			'format'         => pcle_get_program_format( $program->ID ),
 			'color'          => pcle_participant_colour( $program->ID ),
+			'cover'          => pcle_get_program_cover_url( $program->ID ),
 			// Where a webinar's participant actually goes. 0 for a series, or
 			// for a webinar whose module is not published yet.
 			'webinar_module' => pcle_get_webinar_module_id( $program->ID ),

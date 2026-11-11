@@ -1,40 +1,37 @@
 import Link from "next/link";
-
-import { Button } from "@pcle/ui/components/button";
+import { EyeIcon } from "lucide-react";
 
 /**
- * Says, on every previewed screen, that this is not your own view.
+ * Says, on every screen of a preview, that this is a preview — and the way
+ * back to the builder.
  *
- * Without it the two views are indistinguishable — the giveaway is progress
- * you did not expect to be zero — and an author could spend ten minutes
- * wondering why the module they finished this morning looks untouched.
+ * A slim bar rather than a panel: the point of previewing is to see the
+ * screen as a participant does, and a block of text above it is the one
+ * thing a participant never sees.
  */
 export default function PreviewBanner({
   programmeId,
 }: {
-  /** Where "Leave preview" goes: the builder, where preview started. */
   programmeId?: number;
 }) {
   return (
-    <div className="mb-6 flex flex-wrap items-center gap-3 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
-      <p className="text-sm text-amber-900">
-        <span className="font-medium">Previewing as a participant.</span>{" "}
-        Nothing you have completed or passed counts here, and every quiz gate
-        is closed — this is the programme as somebody meets it on their first
-        morning.
-      </p>
+    <div
+      role="status"
+      className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg bg-brand-900 px-4 py-2.5 text-sm text-brand-100"
+    >
+      <EyeIcon aria-hidden="true" className="size-4 text-amber-300" />
+      <span>
+        <span className="font-semibold text-white">Previewing as a participant.</span>{" "}
+        Your own progress doesn&apos;t count here, quiz gates are closed, and
+        drafts are shown and marked.
+      </span>
 
-      <Button
-        variant="outline"
-        size="sm"
-        className="ml-auto"
-        nativeButton={false}
-        render={
-          <Link href={programmeId ? `/builder/programs/${programmeId}` : "/builder"} />
-        }
+      <Link
+        href={programmeId ? `/builder/programs/${programmeId}` : "/builder"}
+        className="ml-auto font-semibold text-amber-300 hover:text-amber-200"
       >
-        Leave preview
-      </Button>
+        Leave preview →
+      </Link>
     </div>
   );
 }
