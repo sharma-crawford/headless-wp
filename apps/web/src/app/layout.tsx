@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Source_Sans_3, Source_Serif_4 } from "next/font/google";
 
 import { TooltipProvider } from "@pcle/ui/components/tooltip";
 
@@ -9,8 +9,18 @@ import { getColourSettings } from "@/lib/wordpress";
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+/*
+ * A serif for headings and a humanist sans for everything else: the pairing
+ * reads as an institution rather than a dashboard, which is the point for
+ * continuing legal education. Mono stays Geist — it only draws screen codes.
+ */
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
+  subsets: ["latin"],
+});
+
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
   subsets: ["latin"],
 });
 
@@ -48,7 +58,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${sourceSans.variable} ${sourceSerif.variable} ${geistMono.variable} h-full antialiased`}
       data-colour-mark={colours.mark}
     >
       <body className="min-h-full flex flex-col">

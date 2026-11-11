@@ -3,8 +3,10 @@ import { redirect } from "next/navigation";
 
 import { Button } from "@pcle/ui/components/button";
 import { Card, CardContent } from "@pcle/ui/components/card";
+import { cn } from "@pcle/ui/lib/utils";
 
 import { logoutAction } from "@/app/actions/auth";
+import { Wordmark } from "@/components/page-shell";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
 import { decodeEntities } from "@/lib/html";
@@ -54,15 +56,22 @@ async function getWordPressSite(): Promise<WordPressSite> {
 /** One way in, with a word about where it leads. */
 function PathCard({ path }: { path: Path }) {
   const card = (
-    <Card className="h-full p-6 text-left hover:ring-foreground/20">
+    <Card className="h-full p-6 text-left transition group-hover:-translate-y-0.5 group-hover:shadow-[0_8px_24px_-8px_rgb(15_23_42/0.18)] group-hover:ring-foreground/20">
       <CardContent className="p-0">
-        <h2 className="text-lg font-medium text-zinc-950">{path.label}</h2>
-        <p className="mt-1 text-sm text-zinc-600">{path.description}</p>
+        <h3 className="text-lg font-semibold text-zinc-950 group-hover:text-brand-800">
+          {path.label}
+          <span aria-hidden="true" className="ml-1 text-brand-600">
+            {path.external ? "↗" : "→"}
+          </span>
+        </h3>
+        <p className="mt-1.5 text-[0.95rem] leading-relaxed text-zinc-600">
+          {path.description}
+        </p>
       </CardContent>
     </Card>
   );
 
-  const className = "block transition hover:shadow-sm";
+  const className = "group block h-full";
 
   return path.external ? (
     <a href={path.href} className={className}>
@@ -106,48 +115,86 @@ export default async function Home() {
   const site = await getWordPressSite();
 
   return (
-    <main className="flex flex-1 items-center justify-center bg-zinc-50 px-6 py-16">
-      <div className="w-full max-w-3xl text-center">
-        <h1 className="text-5xl font-semibold tracking-tight text-zinc-950">
-          {decodeEntities(site.name)}
-        </h1>
-
-        {site.description !== "" && (
-          <p className="mt-4 text-xl text-zinc-600">
-            {decodeEntities(site.description)}
-          </p>
+    <main className="flex flex-1 flex-col bg-zinc-50">
+      <section
+        className={cn(
+          "bg-brand-900 text-white",
+          /* Signed out, the hero is the whole page: nothing waits below it. */
+          !signedIn && "flex flex-1 flex-col"
         )}
+        style={{
+          backgroundImage:
+            "radial-gradient(80% 90% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(60% 80% at 100% 100%, oklch(76.9% 0.188 70.08 / 0.16), transparent 70%)",
+        }}
+      >
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
+          <Wordmark inverted compact={false} />
 
-        {signedIn ? (
-          <>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {paths.map((path) => (
-                <PathCard key={path.href} path={path} />
-              ))}
-            </div>
-
-            {/*
-              The way out. Every other screen carries the shared header; this
-              one carries nothing, and it is where signing in lands.
-            */}
-            <form action={logoutAction} className="mt-10">
-              <Button type="submit" variant="link" className="text-zinc-500">
+          {/*
+            The way out. Every other screen carries the shared header; this
+            one carries its own, and it is where signing in lands.
+          */}
+          {signedIn && (
+            <form action={logoutAction}>
+              <Button
+                type="submit"
+                variant="ghost"
+                className="text-brand-100 hover:bg-white/10 hover:text-white"
+              >
                 Log out
               </Button>
             </form>
-          </>
-        ) : (
-          <div className="mt-10">
-            <Button nativeButton={false} render={<Link href="/login" />}>
-              Sign in
-            </Button>
+          )}
+        </div>
 
-            <p className="mt-4 text-sm text-zinc-500">
-              Course materials are available to enrolled participants.
+        <div
+          className={cn(
+            "mx-auto w-full max-w-6xl px-4 pt-10 pb-16 sm:px-6 sm:pt-14 sm:pb-24",
+            !signedIn && "my-auto"
+          )}
+        >
+          <p className="text-xs font-semibold tracking-[0.14em] text-amber-300 uppercase">
+            Continuing Legal Education
+          </p>
+          <h1 className="mt-3 max-w-3xl text-4xl leading-tight font-semibold sm:text-5xl">
+            {decodeEntities(site.name)}
+          </h1>
+
+          {site.description !== "" && (
+            <p className="mt-4 max-w-2xl text-lg text-brand-100 sm:text-xl">
+              {decodeEntities(site.description)}
             </p>
+          )}
+
+          {!signedIn && (
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <Button
+                className="h-11 bg-amber-400 px-6 text-base text-brand-950 hover:bg-amber-300"
+                nativeButton={false}
+                render={<Link href="/login" />}
+              >
+                Sign in
+              </Button>
+
+              <p className="text-sm text-brand-200">
+                Course materials are available to enrolled participants.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {signedIn && (
+        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
+          <h2 className="text-2xl font-semibold text-zinc-950">Where to next?</h2>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {paths.map((path) => (
+              <PathCard key={path.href} path={path} />
+            ))}
           </div>
-        )}
-      </div>
+        </section>
+      )}
+
       <PageCode code="P1" />
     </main>
   );

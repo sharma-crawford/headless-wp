@@ -3,8 +3,22 @@
 @source "../../../../libs/ui/src";
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-source-serif);
   --font-mono: var(--font-geist-mono);
+}
+
+/*
+ * Page and section headings are set in the serif everywhere, so no screen has
+ * to remember to ask for it. Card titles and form labels stay in the sans —
+ * those are interface, not headings.
+ */
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-serif), Georgia, serif;
+    letter-spacing: -0.01em;
+  }
 }
 
 /*

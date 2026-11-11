@@ -6,7 +6,9 @@ import { cn } from "@pcle/ui/lib/utils";
 
 import { logoutAction } from "@/app/actions/auth";
 import { PageCode } from "@/components/screen-code";
+import NavLink from "@/components/nav-link";
 import { pathsFor } from "@/lib/navigation";
+import { getMe } from "@/lib/wordpress";
 
 /**
  * Shared frame for the signed-in pages: a header offering the same paths the
@@ -41,6 +43,7 @@ export default async function PageShell({
   wide?: boolean;
 }) {
   const paths = await pathsFor();
+  const name = await displayName();
 
   return (
     /*
@@ -49,65 +52,135 @@ export default async function PageShell({
       below the fold on every page, which is a footer nobody ever reads.
     */
     <div className="flex flex-1 flex-col bg-zinc-50">
-      <header className="border-b border-zinc-200 bg-white">
-        <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-4">
-          <Link
-            href="/"
-            className="text-sm font-semibold text-zinc-950 hover:underline"
-          >
-            Platform CLE
-          </Link>
+      <header className="sticky top-0 z-30 border-b border-zinc-200 bg-white/95 shadow-[0_1px_2px_rgb(15_23_42/0.04)] backdrop-blur">
+        <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:px-6">
+          <Wordmark />
 
-          {paths.map((path) => (
-            <Button
-              key={path.href}
-              variant="link"
-              size="sm"
-              className="px-0 text-zinc-500"
-              nativeButton={false}
-              render={
-                path.external ? (
-                  <a href={path.href} />
-                ) : (
-                  <Link href={path.href} />
-                )
-              }
-            >
-              {path.label}
-            </Button>
-          ))}
+          {/*
+            The paths scroll sideways on a phone rather than wrapping: a
+            wrapped header changes height from screen to screen, which reads
+            as the page jumping.
+          */}
+          <nav
+            aria-label="Main"
+            className="-mx-1 flex min-w-0 flex-1 items-center overflow-x-auto [scrollbar-width:none]"
+          >
+            {paths.map((path) => (
+              <NavLink
+                key={path.href}
+                href={path.href}
+                label={path.label}
+                external={path.external}
+              />
+            ))}
+          </nav>
 
           {/* Everyone's, whatever their role, so it sits with Log out rather than in pathsFor(). */}
-          <Button
-            variant="link"
-            size="sm"
-            className="ml-auto px-0 text-zinc-500"
-            nativeButton={false}
-            render={<Link href="/account" />}
-          >
-            Account
-          </Button>
-
-          <form action={logoutAction}>
+          <div className="flex shrink-0 items-center gap-1">
             <Button
-              type="submit"
-              variant="link"
-              size="sm"
-              className="px-0 text-zinc-500"
+              variant="ghost"
+              className="h-9 gap-2 px-2 text-zinc-700"
+              nativeButton={false}
+              render={<Link href="/account" />}
             >
-              Log out
+              <Initials name={name} />
+              <span className="hidden sm:inline">Account</span>
+              <span className="sr-only sm:hidden">Account</span>
             </Button>
-          </form>
+
+            <form action={logoutAction}>
+              <Button
+                type="submit"
+                variant="ghost"
+                className="h-9 px-2.5 text-zinc-500"
+              >
+                Log out
+              </Button>
+            </form>
+          </div>
         </div>
       </header>
 
       <main
-        className={cn("mx-auto w-full px-6 py-10", wide ? "max-w-6xl" : "max-w-3xl")}
+        className={cn(
+          "mx-auto w-full px-4 py-10 sm:px-6 sm:py-12",
+          wide ? "max-w-6xl" : "max-w-3xl"
+        )}
       >
         {children}
       </main>
 
       <PageCode code={code} />
     </div>
+  );
+}
+
+/**
+ * The reader's name, or nothing if WordPress cannot say. Decoration only:
+ * the header must render for a reader whose token has just expired.
+ */
+async function displayName(): Promise<string> {
+  try {
+    return (await getMe()).display_name;
+  } catch {
+    return "";
+  }
+}
+
+/** The site's mark: goes to the menu, like every wordmark. */
+export function Wordmark({
+  inverted = false,
+  compact = true,
+}: {
+  inverted?: boolean;
+  /** Only the mark on a phone, so the header's links keep the room. */
+  compact?: boolean;
+}) {
+  return (
+    <Link
+      href="/"
+      aria-label="Platform CLE, menu"
+      className={cn(
+        "group flex shrink-0 items-center gap-2.5",
+        inverted ? "text-white" : "text-brand-900"
+      )}
+    >
+      <span
+        aria-hidden="true"
+        className={cn(
+          "grid size-8 place-items-center rounded-md font-serif text-sm font-semibold",
+          inverted ? "bg-white text-brand-900" : "bg-brand-800 text-white"
+        )}
+      >
+        P
+      </span>
+      <span
+        className={cn(
+          "font-serif text-lg leading-none font-semibold tracking-tight",
+          compact && "hidden sm:inline"
+        )}
+      >
+        Platform <span className={inverted ? "text-amber-300" : "text-brand-600"}>CLE</span>
+      </span>
+    </Link>
+  );
+}
+
+/** A round badge with the reader's initials, beside Account. */
+function Initials({ name }: { name: string }) {
+  const initials = name
+    .split(/[\s@._-]+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase())
+    .join("");
+
+  return (
+    <span
+      aria-hidden="true"
+      className="grid size-7 place-items-center rounded-full bg-brand-100 text-xs font-semibold text-brand-800"
+    >
+      {initials || "·"}
+    </span>
   );
 }
