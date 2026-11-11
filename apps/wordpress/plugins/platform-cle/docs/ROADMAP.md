@@ -45,7 +45,8 @@ been closed — see the findings below for what and how.
 | 🟡 | An administrator account's display name is the address it was created from, so it is the public byline on anything it authors | — wp-admin, data not code |
 | 🟡 | Login rate limiting / brute-force protection | — SG Security is active on the host; verify what it already covers before building |
 | 🟡 | Certificates: provider numbers, signatory, per-bar wording | **owner** — accreditation input |
-| 🟡 | Payment-driven enrollment | provider choice |
+| 🟡 | Theme, webinars hub and student tiers (six phases, see below) | — phases 0, 1, 4 and 5 can start now |
+| 🟡 | Payment-driven enrollment: payment grants a plan or a programme | provider choice |
 | 🟡 | Blocks lack `block.json` (invisible in the editor inserter) | — |
 | 🟡 | No i18n catalog (`.pot`) | — |
 | 🟡 | `FROM wordpress:latest` is unpinned | — |
@@ -215,7 +216,54 @@ Goal: run the first real 4-week cohort safely.
 
 ---
 
+## Milestone: a professional platform, webinars and student tiers
+
+Planned 11 November 2026. Six phases, each shippable on its own, payment last.
+
+| Phase | Scope | Rough size | Blocked on |
+|---|---|---|---|
+| 0 | Theme: light, professional (SkillPath-style), top navigation, programme cards with cover image and excerpt | 3–4 days | — |
+| 1 | Course player on P4–P6 (outline sidebar, previous/next, complete and continue) and "continue where you left off" on P2 | 2–3 days | — |
+| 2 | Webinars hub at `/webinars`: upcoming live and on demand, join link on sessions, registration, `.ics`, reminders | 4–5 days | SMTP, for reminders that arrive |
+| 3 | Certificates on screen: download from a finished programme and from the account | 2 days | accreditation input, for certificates that carry credit |
+| 4 | Public catalogue and programme detail pages, readable signed out | 3–4 days | — |
+| 5 | Plans and single purchases, granted by hand, with locked pages and a Pricing page | 5–7 days | — |
+| 6 | Payment: checkout and a webhook that writes the same grant phase 5 writes by hand | ~1 week | provider choice |
+
+**Decisions made, so they do not live only in chat:**
+
+- **Ranked tiers.** Each plan has a rank; a plan opens content at its own rank
+  and every rank below. A programme carries a minimum tier.
+- **Plans are data, not code.** Administrators create plans (name, rank,
+  price) and set each programme's minimum tier. Which plan includes what is a
+  business decision proposed at meetings, and nothing in the code presumes an
+  answer — no Free/Standard/Premium baked in.
+- **Live webinars are included in plans.** A live session takes the tier of
+  the programme it belongs to.
+- **A programme can also be sold on its own**, alongside whatever tier it sits
+  in.
+- **One gate.** `pcle_can_access_post()` stays the only place access is
+  decided. It gains two more reasons to say yes — a plan whose rank covers the
+  programme, a purchase of it — beside the enrolment it already checks. No
+  second, parallel check.
+- **The public catalogue gets its own endpoint** returning only safe fields
+  (title, image, excerpt, hours, tier, price). The protected content routes are
+  not opened, for the reason in the audit: one item and a list of items are
+  separate routes, and a guard on one is not a guard on the other.
+- **No grandfathering.** The platform is not live and today's students are
+  demo data, so the tier model replaces enrolment-only access without a
+  migration of anyone's entitlements.
+
+This reshapes the payment milestone below: payment grants a **plan** or a
+**single programme**, rather than enrolling in one programme.
+
+---
+
 ## Milestone: payment-driven enrollment (production model)
+
+> Partly superseded by the tiers milestone above: what a payment grants is now
+> a plan or a single programme. The bridge pattern and provider notes still
+> hold.
 
 **Decision (deferred):** in production, students are enrolled when they **pay**.
 Provider not yet chosen — plan only for now; the pilot uses bulk/manual enrollment.
