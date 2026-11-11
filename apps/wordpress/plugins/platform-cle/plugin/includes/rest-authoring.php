@@ -255,6 +255,13 @@ function pcle_authoring_shape_node( $post ) {
 	// Type-specific facts the tree needs to show a row honestly.
 	if ( 'pcle_event' === $post->post_type ) {
 		$node['starts_at'] = pcle_get_event_datetime( $post->ID );
+		$node['duration']  = pcle_get_event_duration( $post->ID );
+		$node['join_url']  = pcle_get_event_join_url( $post->ID );
+	}
+
+	// A webinar's live session lives on a unit the author never sees.
+	if ( 'pcle_program' === $post->post_type && pcle_is_webinar( $post->ID ) ) {
+		$node['live'] = pcle_shape_webinar_live( $post->ID );
 	}
 
 	if ( 'pcle_scenario' === $post->post_type ) {
@@ -789,6 +796,25 @@ function pcle_authoring_update_node( $request ) {
 		}
 	}
 
+	/*
+	 * A webinar's live session: { starts_at, duration, join_url }, each
+	 * optional. After the format change above, so a programme turned into a
+	 * webinar in the same request can be given its date in it too.
+	 */
+	if ( null !== $request['live'] && 'pcle_program' === get_post_type( $id ) ) {
+		$live = (array) $request['live'];
+		$set  = pcle_set_webinar_live(
+			$id,
+			array_key_exists( 'starts_at', $live ) ? (string) $live['starts_at'] : null,
+			array_key_exists( 'duration', $live ) ? $live['duration'] : null,
+			array_key_exists( 'join_url', $live ) ? (string) $live['join_url'] : null
+		);
+
+		if ( is_wp_error( $set ) ) {
+			return $set;
+		}
+	}
+
 	if ( null !== $request['color'] ) {
 		// Checked before anything is written, for the same reason.
 		$coloured = pcle_set_colour( $id, (string) $request['color'] );
@@ -803,7 +829,7 @@ function pcle_authoring_update_node( $request ) {
 		 * recolouring a programme should not make it "last edited" by
 		 * whoever chose the colour.
 		 */
-		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'questions', 'pass_mark', 'gates_completion', 'credits' );
+		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'duration', 'join_url', 'live', 'questions', 'pass_mark', 'gates_completion', 'credits' );
 
 		if ( ! array_filter( $fields, fn( $field ) => null !== $request[ $field ] ) ) {
 			return rest_ensure_response( pcle_authoring_shape_node( get_post( $id ) ) );
@@ -824,6 +850,10 @@ function pcle_authoring_update_node( $request ) {
 	// Type-specific fields, each validated by the sanitiser that already owns it.
 	if ( null !== $request['starts_at'] && 'pcle_event' === get_post_type( $id ) ) {
 		update_post_meta( $id, PCLE_EVENT_DATETIME_META, pcle_sanitize_event_datetime( (string) $request['starts_at'] ) );
+	}
+
+	if ( 'pcle_event' === get_post_type( $id ) ) {
+		pcle_set_event_details( $id, $request['join_url'], $request['duration'] );
 	}
 
 	if ( 'pcle_quiz' === get_post_type( $id ) ) {

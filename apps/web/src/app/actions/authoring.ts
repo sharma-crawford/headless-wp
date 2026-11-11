@@ -248,6 +248,53 @@ async function saveCreditsAction(
   return {};
 }
 
+/**
+ * A webinar's live session: date, length and join link, or "remove".
+ *
+ * The date comes from a datetime-local input in the site's timezone, which is
+ * the format the plugin's sanitiser already accepts; nothing is converted.
+ */
+async function saveLiveAction(
+  _prev: BuilderActionState,
+  formData: FormData
+): Promise<BuilderActionState> {
+  const id = readId(formData.get("id"));
+
+  if (!id) {
+    return { error: "That webinar could not be identified." };
+  }
+
+  const remove = formData.get("intent") === "remove";
+  const startsAt = String(formData.get("starts_at") ?? "").trim();
+  const joinUrl = String(formData.get("join_url") ?? "").trim();
+  const duration = Number(formData.get("duration") ?? 0);
+
+  if (!remove && !startsAt) {
+    return { error: "Choose a date and time for the session." };
+  }
+
+  if (!remove && joinUrl && !joinUrl.startsWith("https://")) {
+    return { error: "The join link must start with https://" };
+  }
+
+  try {
+    await updateNode(id, {
+      live: remove
+        ? { starts_at: "" }
+        : {
+            starts_at: startsAt,
+            duration: Number.isFinite(duration) && duration > 0 ? duration : 0,
+            join_url: joinUrl,
+          },
+    });
+  } catch (error) {
+    return { error: describe(error) };
+  }
+
+  refresh();
+  return {};
+}
+
 async function setFormatAction(
   _prev: BuilderActionState,
   formData: FormData
@@ -619,6 +666,7 @@ export {
   createProgramAction,
   saveBodyAction,
   saveCreditsAction,
+  saveLiveAction,
   setFormatAction,
   setColourAction,
   renameNodeAction,

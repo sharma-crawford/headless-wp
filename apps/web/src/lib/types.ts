@@ -34,6 +34,15 @@ type SessionEvent = {
   title: string;
   /** ISO 8601, empty when the event has no date set. */
   starts_at: string;
+  /** ISO 8601: the start plus its length. Empty without a date. */
+  ends_at?: string;
+  /** Minutes; an hour when nobody said. */
+  duration?: number;
+  /**
+   * Where to join (Zoom, Teams…), or "". Only ever sent to a reader who
+   * may see the session's programme.
+   */
+  join_url?: string;
   /** Pre-formatted in the site's own locale and timezone. */
   formatted: string;
 };
@@ -336,6 +345,9 @@ export type {
   ModuleResource,
   ModuleDetail,
   TrainingProgram,
+  WebinarLive,
+  WebinarSession,
+  Webinars,
 };
 
 /* ------------------------------------------------------------------ */
@@ -486,6 +498,42 @@ type TreeNode = Authorship & {
   credits?: CreditHours[];
   /** Programmes only. */
   format?: ProgramFormat;
+  /** Events only: minutes. */
+  duration?: number;
+  /** Events only. */
+  join_url?: string;
+  /** Webinar programmes only: the live session, or null when it has none. */
+  live?: WebinarLive | null;
+};
+
+/** A webinar's live session as the builder edits it. */
+type WebinarLive = {
+  event_id: number;
+  /** 'Y-m-d H:i:s' in the site's timezone, or "". */
+  starts_at: string;
+  duration: number;
+  join_url: string;
+};
+
+/** A session on the webinars hub: the session, and which programme it is in. */
+type WebinarSession = SessionEvent & {
+  program: {
+    id: number;
+    title: string;
+    format: ProgramFormat;
+    color: Swatch | null;
+  };
+  /** Where "details" leads: the video page for a webinar, the unit for a series. */
+  href: string;
+};
+
+type Webinars = {
+  /** Soonest first, including any still running. */
+  upcoming: WebinarSession[];
+  /** Webinars with no session still to come. */
+  on_demand: TrainingProgram[];
+  /** The server's clock, ISO 8601. */
+  now: string;
 };
 
 /** A file attached to a node through the builder. */
