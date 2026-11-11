@@ -26,7 +26,7 @@ export default function VersionStamp() {
   return (
     <footer className="border-t border-zinc-200 bg-white">
       <div className="mx-auto max-w-6xl px-6 py-3 text-xs text-zinc-400">
-        <span className="font-medium text-zinc-500">Platform CLE</span> v
+        <span className="font-medium text-zinc-500">The Armory</span> v
         {version}
         <span aria-hidden="true"> · </span>
         <code className="font-mono">{commit}</code>

@@ -47,7 +47,7 @@ async function getWordPressSite(): Promise<WordPressSite> {
     console.error("The front door could not read the site from WordPress.", error);
 
     return {
-      name: "Platform CLE",
+      name: "The Armory",
       description: "",
     };
   }

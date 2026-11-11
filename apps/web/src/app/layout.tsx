@@ -42,7 +42,7 @@ const SITE_URL =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Platform CLE",
+  title: "The Armory",
   description:
     "Continuing Legal Education on immigration habeas corpus, by The Pen & Sword.",
 };

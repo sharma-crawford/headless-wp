@@ -139,7 +139,7 @@ export function Wordmark({
   return (
     <Link
       href="/"
-      aria-label="Platform CLE, menu"
+      aria-label="The Armory, menu"
       className={cn(
         "group flex shrink-0 items-center gap-2.5",
         inverted ? "text-white" : "text-brand-900"
@@ -152,7 +152,7 @@ export function Wordmark({
           inverted ? "bg-white text-brand-900" : "bg-brand-800 text-white"
         )}
       >
-        P
+        A
       </span>
       <span
         className={cn(
@@ -160,7 +160,7 @@ export function Wordmark({
           compact && "hidden sm:inline"
         )}
       >
-        Platform <span className={inverted ? "text-amber-300" : "text-brand-600"}>CLE</span>
+        The <span className={inverted ? "text-amber-300" : "text-brand-600"}>Armory</span>
       </span>
     </Link>
   );

@@ -164,7 +164,7 @@ export default async function ColoursPage() {
 
       <p className="mt-2 text-zinc-600">
         How programmes, what is in them, and how far along people are, are
-        coloured across Platform CLE. Every colour comes from the same 32
+        coloured across The Armory. Every colour comes from the same 32
         named swatches; a choice is saved the moment it is made.
       </p>
 
