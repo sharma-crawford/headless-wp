@@ -49,6 +49,8 @@ pointing at the right thing.
 | P17 | Webinars | `/webinars` | Everyone: upcoming live sessions and on-demand webinars | `app/webinars/page.tsx` |
 | P18 | Catalogue | `/catalogue` | Anyone, signed in or not | `app/catalogue/page.tsx` |
 | P19 | Catalogue programme | `/catalogue/:id` | Anyone, signed in or not | `app/catalogue/[id]/page.tsx` |
+| P20 | Plans | `/plans` | Administrators | `app/plans/page.tsx` |
+| P21 | Pricing | `/pricing` | Anyone, signed in or not | `app/pricing/page.tsx` |
 
 ## Popups
 

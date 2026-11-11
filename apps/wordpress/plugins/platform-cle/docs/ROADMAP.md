@@ -230,7 +230,7 @@ last.
 | 3 | Certificates on screen: download from a finished programme and from the account | 2 days | accreditation input, for certificates that carry credit |
 | 4 | Public catalogue and programme detail pages, readable signed out; topics; public cover images | 3–4 days | in review |
 | 5 | **Accounts:** self sign-up with email verification, "Forgot password?" in the app, choosing a plan at sign-up | 3–4 days | **SMTP** |
-| 6 | Plans and single purchases, granted by hand, with locked pages and a Pricing page | 5–7 days | — |
+| 6 | Plans and single purchases, granted by hand, with locked pages and a Pricing page | 5–7 days | in review |
 | 7 | Payment: checkout and a webhook that writes the same grant phase 6 writes by hand | ~1 week | provider choice, legal pages, SMTP |
 
 **Decisions made, so they do not live only in chat:**
@@ -260,6 +260,27 @@ last.
   download handler makes that single exception, it lapses when the
   programme is unpublished, and only an image already attached to the
   programme can be made its cover.
+- **Plans live in one option, people's plans in user meta** (`includes/plans.php`).
+  A plan is `{id, name, rank, price label, description, features}`; prices
+  are labels, not amounts, because nothing charges anyone until phase 7.
+- **`pcle_user_has_program()` is the gate:** enrolled, or on a plan whose
+  rank reaches the programme's minimum. `pcle_can_access_post()` asks it, so
+  every route, listing, file and model answer follows plans with no second
+  check. My Training lists plan programmes too.
+- **A single purchase is an enrolment.** Selling a programme alone grants
+  what an administrator's enrolment grants, so "granted by hand" in phase 6
+  is enrolling someone, and phase 7's webhook will call the same function.
+- **Which plans include a programme, and its price alone, take an
+  administrator.** Teaching a programme is not pricing it; the plugin refuses
+  an instructor, and the builder does not offer them the control.
+- **Plan holders are on a programme's roster** for session reminders and the
+  attendance sheet — a live webinar in a plan is theirs to attend. The cohort
+  *report* still lists enrolled people only (see the gaps below).
+- **A plan ends after its last day** (inclusive, site timezone). Deleting a
+  plan takes it from its holders; progress, attendance and certificates stay.
+- **Refused, a participant is shown the catalogue page**, not a locked door:
+  `/programs/:id` sends them to `/catalogue/:id?locked=1`, which says which
+  plan opens it.
 - **The join link is never public.** It is not registered on the event's
   REST meta; it travels only in the participant routes that have already
   checked access, and in the calendar file built from them.
@@ -291,7 +312,8 @@ None of these is covered by a phase above. Grouped by what each blocks.
 | 🔴 | **Self sign-up** | Only an administrator can create an account today. Now phase 5. |
 | 🔴 | **Password reset from the app** | The sign-in screen has no "Forgot password?". Now phase 5. |
 | 🔴 | **Email delivery (SMTP + SPF/DKIM)** | Already open above; it now gates sign-up, resets, reminders, invitations and receipts. Needs an owner and a choice of relay. |
-| 🟡 | **Subscription lifecycle** | Upgrade, downgrade, cancel, failed payment, lapsed access. Proposed: progress, attendance and certificates are kept for good; only access to content locks. To decide before phase 6. |
+| 🟡 | **Subscription lifecycle** | Upgrade, downgrade, cancel, failed payment, lapsed access. Phase 6 implements the proposal by hand — an end date, after which access locks and records stay — but the rules for payment events are still to decide before phase 7. |
+| 🟡 | **Plan holders in cohort reports** | Reports list enrolled people only, so a plan holder working through a programme is not in its report. Decide whether reports show "everyone who has started it" before plans go live. |
 | 🟡 | **Legal pages and tax** | Terms, privacy and refund policies; whether sales tax applies. Expected by a payment provider and by bars. |
 
 **Makes it look finished**
