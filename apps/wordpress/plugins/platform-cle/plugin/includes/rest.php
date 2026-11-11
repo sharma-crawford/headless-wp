@@ -60,6 +60,7 @@ function pcle_rest_get_my_training( $request ) {
 		$out[] = array(
 			'id'       => (int) $program->ID,
 			'title'    => get_the_title( $program ),
+			'excerpt'  => pcle_rest_excerpt( $program ),
 			'progress' => pcle_rest_shape_progress( pcle_get_program_progress( $program->ID ) ),
 			'format'   => pcle_get_program_format( $program->ID ),
 			'color'    => pcle_participant_colour( $program->ID ),

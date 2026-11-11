@@ -1,15 +1,10 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@pcle/ui/components/card";
-
 import { renderAccessError } from "@/components/access-error";
-import { ColourStrip } from "@/components/colour-marks";
+import PageHeading from "@/components/page-heading";
 import PageShell from "@/components/page-shell";
-import ProgressBar from "@/components/progress-bar";
-import { FormatBadge } from "@/components/state-badge";
+import ProgrammeCard from "@/components/programme-card";
 import { isAuthenticated } from "@/lib/auth";
-import { decodeEntities } from "@/lib/html";
 import type { TrainingProgram } from "@/lib/types";
 import { getMyTraining } from "@/lib/wordpress";
 
@@ -27,40 +22,30 @@ export default async function MyTrainingPage() {
   }
 
   return (
-    <PageShell code="P2">
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-950">
-        My Training
-      </h1>
+    <PageShell code="P2" wide>
+      <PageHeading
+        eyebrow="Your learning"
+        title="My Training"
+        intro={
+          programs.length === 0
+            ? undefined
+            : "Pick up where you left off, or start something new."
+        }
+      />
 
       {programs.length === 0 ? (
-        <p className="mt-4 text-zinc-600">
-          You are not enrolled in any programme yet. Once an administrator
-          enrolls you, it will appear here.
-        </p>
+        <div className="mt-8 rounded-xl border border-dashed border-zinc-300 bg-white px-6 py-12 text-center">
+          <p className="font-serif text-lg text-zinc-900">Nothing here yet</p>
+          <p className="mx-auto mt-2 max-w-md text-zinc-600">
+            You are not enrolled in any programme yet. Once an administrator
+            enrolls you, it will appear here.
+          </p>
+        </div>
       ) : (
-        <ul className="mt-8 space-y-4">
+        <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {programs.map((program) => (
             <li key={program.id}>
-              <Link
-                href={`/programs/${program.id}`}
-                className="block transition hover:shadow-sm"
-              >
-                <Card className="relative hover:border-zinc-300">
-                  <ColourStrip swatch={program.color} />
-                  <CardHeader>
-                    <CardTitle className="flex flex-wrap items-center gap-2 text-xl font-medium text-zinc-950">
-                      {decodeEntities(program.title)}
-                      {program.format === "webinar" && (
-                        <FormatBadge format="webinar" />
-                      )}
-                    </CardTitle>
-                  </CardHeader>
-
-                  <CardContent>
-                    <ProgressBar progress={program.progress} />
-                  </CardContent>
-                </Card>
-              </Link>
+              <ProgrammeCard program={program} />
             </li>
           ))}
         </ul>

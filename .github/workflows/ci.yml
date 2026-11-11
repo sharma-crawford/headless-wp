@@ -62,7 +62,14 @@ jobs:
       - run: npm ci
 
       - name: Install the browser
-        run: npx playwright install --with-deps chromium
+        # --with-deps goes through apt, and when the runner cannot reach the
+        # Ubuntu mirrors (DNS failures resolving azure.archive.ubuntu.com
+        # have failed whole runs before a single test) that is fatal for no
+        # reason: the hosted image already carries Chrome and the libraries
+        # it needs. Try the full install, and fall back to the browser alone.
+        run: |
+          npx playwright install --with-deps chromium \
+            || { echo "::warning::System packages unavailable; installing the browser alone."; npx playwright install chromium; }
         working-directory: apps/web
 
       - name: Run the suite

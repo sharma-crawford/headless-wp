@@ -32,7 +32,9 @@ export default function ProgressBar({ progress, label }: ProgressBarProps) {
         aria-label={label ? `${label}: ${description}` : description}
       >
         <div
-          className="h-full rounded-full bg-emerald-600 transition-[width]"
+          className={`h-full rounded-full transition-[width] ${
+            total > 0 && completed === total ? "bg-emerald-600" : "bg-brand-600"
+          }`}
           style={{ width: `${percentage}%` }}
         />
       </div>

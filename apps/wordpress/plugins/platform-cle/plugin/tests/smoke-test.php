@@ -376,6 +376,8 @@ pcle_eq( $student_data['programs'][0]['progress']['total'], 2, 'program progress
 pcle_eq( $student_data['programs'][0]['progress']['completed'], 1, 'program progress completed matches earlier fixture state (module2 completed)' );
 pcle_eq( $student_data['programs'][0]['progress']['percentage'], 50, 'program progress percentage matches completed/total' );
 pcle_ok( ! isset( $student_data['programs'][0]['post_type'] ), 'response does not leak raw WP_Post fields' );
+pcle_ok( is_string( $student_data['programs'][0]['excerpt'] ), 'each program carries a plain-text excerpt for its card' );
+pcle_ok( false === strpos( $student_data['programs'][0]['excerpt'], '<' ), 'the excerpt is plain text, not markup' );
 
 $admin_res  = pcle_rest_my_training( $admin );
 $admin_data = $admin_res->get_data();

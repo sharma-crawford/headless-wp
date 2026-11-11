@@ -462,9 +462,13 @@ async function setPersonRole(id: number, role: string): Promise<Person> {
  * The rest of the app assumes a participant; this is what lets it offer the
  * builder to the people who have one and nobody else.
  */
-async function getMe(): Promise<Me> {
+const getMe = cache(async (): Promise<Me> => {
+  /*
+   * Cached per request: the header asks for the reader's name and the
+   * navigation asks for their role, and both render on every screen.
+   */
   return wordpressFetch("/platform-cle/v1/me", { auth: true }) as Promise<Me>;
-}
+});
 
 async function getAuthoringPrograms(): Promise<{
   programs: AuthoringProgram[];

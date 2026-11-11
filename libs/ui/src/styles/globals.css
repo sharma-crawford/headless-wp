@@ -14,46 +14,53 @@
  * this breaks, and it breaks silently.
  */
 
+/*
+ * The palette: professional rather than utilitarian.
+ *
+ * A deep navy carries the brand (primary buttons, the header mark, links that
+ * matter), a warm amber is the one accent (highlights, "live" and "new"
+ * markers), and everything else is a cool, faintly blue neutral. Amber is
+ * never a background for small white text: at this lightness that fails
+ * contrast, so it pairs with navy text or stays decoration.
+ */
 :root {
-  --background: hsl(0 0% 100%);
-  --foreground: hsl(0 0% 3.9%);
+  --background: oklch(100% 0 0);
+  --foreground: var(--color-zinc-950);
 
   /* Raised surfaces: cards sit on the background, popovers sit on everything. */
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(0 0% 3.9%);
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(0 0% 3.9%);
+  --card: oklch(100% 0 0);
+  --card-foreground: var(--color-zinc-950);
+  --popover: oklch(100% 0 0);
+  --popover-foreground: var(--color-zinc-950);
 
-  --primary: hsl(0 0% 9%);
-  --primary-foreground: hsl(0 0% 98%);
-  --secondary: hsl(0 0% 96.1%);
-  --secondary-foreground: hsl(0 0% 9%);
-  --muted: hsl(0 0% 96.1%);
-  --muted-foreground: hsl(0 0% 45.1%);
-  --accent: hsl(0 0% 96.1%);
-  --accent-foreground: hsl(0 0% 9%);
-  --destructive: hsl(0 84.2% 60.2%);
-  --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(0 0% 89.8%);
-  --input: hsl(0 0% 89.8%);
-  --ring: hsl(0 0% 3.9%);
+  --primary: var(--color-brand-800);
+  --primary-foreground: oklch(100% 0 0);
+  --secondary: var(--color-zinc-100);
+  --secondary-foreground: var(--color-zinc-900);
+  --muted: var(--color-zinc-100);
+  --muted-foreground: var(--color-zinc-500);
+  --accent: var(--color-brand-50);
+  --accent-foreground: var(--color-brand-900);
+  --destructive: oklch(57.7% 0.245 27.325);
+  --destructive-foreground: oklch(98.5% 0 0);
+  --border: var(--color-zinc-200);
+  --input: var(--color-zinc-300);
+  --ring: var(--color-brand-600);
 
   /*
    * The sidebar carries its own palette so it can read as a distinct surface
-   * from the page it frames. Kept neutral to match baseColor: neutral — the
-   * shadcn defaults for these ship with a blue primary/ring, which would be the
-   * only chromatic colour in an otherwise greyscale theme.
+   * from the page it frames.
    */
-  --sidebar: hsl(0 0% 98%);
-  --sidebar-foreground: hsl(0 0% 3.9%);
-  --sidebar-primary: hsl(0 0% 9%);
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(0 0% 96.1%);
-  --sidebar-accent-foreground: hsl(0 0% 9%);
-  --sidebar-border: hsl(0 0% 89.8%);
-  --sidebar-ring: hsl(0 0% 3.9%);
+  --sidebar: var(--color-zinc-50);
+  --sidebar-foreground: var(--color-zinc-950);
+  --sidebar-primary: var(--color-brand-800);
+  --sidebar-primary-foreground: oklch(100% 0 0);
+  --sidebar-accent: var(--color-brand-50);
+  --sidebar-accent-foreground: var(--color-brand-900);
+  --sidebar-border: var(--color-zinc-200);
+  --sidebar-ring: var(--color-brand-600);
 
-  --radius: 0.5rem;
+  --radius: 0.625rem;
 }
 
 .dark {
@@ -65,8 +72,8 @@
   --popover: hsl(0 0% 3.9%);
   --popover-foreground: hsl(0 0% 98%);
 
-  --primary: hsl(0 0% 98%);
-  --primary-foreground: hsl(0 0% 9%);
+  --primary: var(--color-brand-200);
+  --primary-foreground: var(--color-brand-950);
   --secondary: hsl(0 0% 14.9%);
   --secondary-foreground: hsl(0 0% 98%);
   --muted: hsl(0 0% 14.9%);
@@ -88,6 +95,53 @@
   --sidebar-accent-foreground: hsl(0 0% 98%);
   --sidebar-border: hsl(0 0% 14.9%);
   --sidebar-ring: hsl(0 0% 83.1%);
+}
+
+/*
+ * The scales behind the tokens above.
+ *
+ * `zinc` is redefined, not added to: the app writes `text-zinc-600` and
+ * friends in some forty files, and the neutral the theme wants is a cool,
+ * faintly navy grey rather than Tailwind's flat one. Overriding the scale
+ * here moves every one of those screens at once; renaming the classes would
+ * be the same change spread across forty diffs. So in this codebase "zinc"
+ * means "the brand neutral" — the values are Tailwind's slate.
+ *
+ * `brand` is the navy, `amber` keeps Tailwind's own values and is listed
+ * only so the one accent is named in the same place as the rest.
+ *
+ * `static` because the :root tokens read these through var(): Tailwind
+ * otherwise emits a theme variable only when a utility uses it, and a token
+ * pointing at an unemitted variable resolves to nothing.
+ */
+@theme static {
+  --color-zinc-50: oklch(98.4% 0.003 247.858);
+  --color-zinc-100: oklch(96.8% 0.007 247.896);
+  --color-zinc-200: oklch(92.9% 0.013 255.508);
+  --color-zinc-300: oklch(86.9% 0.022 252.894);
+  --color-zinc-400: oklch(70.4% 0.04 256.788);
+  --color-zinc-500: oklch(55.4% 0.046 257.417);
+  --color-zinc-600: oklch(44.6% 0.043 257.281);
+  --color-zinc-700: oklch(37.2% 0.044 257.287);
+  --color-zinc-800: oklch(27.9% 0.041 260.031);
+  --color-zinc-900: oklch(20.8% 0.042 265.755);
+  --color-zinc-950: oklch(12.9% 0.042 264.695);
+
+  --color-brand-50: oklch(97% 0.014 254);
+  --color-brand-100: oklch(93.5% 0.03 255);
+  --color-brand-200: oklch(87% 0.056 256);
+  --color-brand-300: oklch(78% 0.09 257);
+  --color-brand-400: oklch(66% 0.13 258);
+  --color-brand-500: oklch(55% 0.15 259);
+  --color-brand-600: oklch(46% 0.14 260);
+  --color-brand-700: oklch(39% 0.12 261);
+  --color-brand-800: oklch(32% 0.1 262);
+  --color-brand-900: oklch(26% 0.08 263);
+  --color-brand-950: oklch(19% 0.06 265);
+
+  --color-amber-300: oklch(87.9% 0.169 91.605);
+  --color-amber-400: oklch(82.8% 0.189 84.429);
+  --color-amber-500: oklch(76.9% 0.188 70.08);
 }
 
 @theme inline {

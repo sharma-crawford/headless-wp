@@ -296,6 +296,11 @@ type ReportCsv = {
 type TrainingProgram = {
   id: number;
   title: string;
+  /**
+   * Plain text for the card. Optional because the app can deploy before the
+   * plugin that sends it does; a card without one simply has no summary.
+   */
+  excerpt?: string;
   progress: Progress;
   format: ProgramFormat;
   color: Swatch | null;
