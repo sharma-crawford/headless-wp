@@ -250,6 +250,27 @@ class WordPress {
     );
   }
 
+  /** Every plan, so a test can find and remove the one it made. */
+  async plans(): Promise<{ id: string; name: string; rank: number }[]> {
+    const response = await this.api.get(`${API}/platform-cle/v1/plans`, {
+      headers: this.headers,
+    });
+
+    return ((await response.json()) as { plans: { id: string; name: string; rank: number }[] }).plans;
+  }
+
+  async deletePlan(id: string): Promise<void> {
+    await this.api.delete(`${API}/platform-cle/v1/plans/${id}`, { headers: this.headers });
+  }
+
+  /** Gives someone a plan, or "" to take it away. */
+  async setPlan(userId: number, plan: string, until = ""): Promise<void> {
+    await this.api.put(`${API}/platform-cle/v1/people/${userId}/plan`, {
+      headers: this.headers,
+      data: { plan, until },
+    });
+  }
+
   async enrol(programmeId: number, email: string): Promise<void> {
     const response = await this.api.post(`${API}/platform-cle/v1/enrollments`, {
       headers: this.headers,

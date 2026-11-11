@@ -215,7 +215,12 @@ function pcle_get_visible_programs( $user_id = 0 ) {
 		);
 	}
 
-	$enrolled = pcle_get_enrolled_programs( $user_id );
+	// Enrolled in, or opened by their plan (plans.php).
+	$enrolled = array_values(
+		array_unique(
+			array_merge( pcle_get_enrolled_programs( $user_id ), pcle_get_plan_program_ids( $user_id ) )
+		)
+	);
 	if ( ! $enrolled ) {
 		return array();
 	}
@@ -269,7 +274,12 @@ function pcle_get_program_students( $program_id = 0, $only_enrolled = false ) {
 	);
 
 	if ( $only_enrolled && $program_id ) {
-		$enrolled = pcle_get_program_enrollee_ids( $program_id );
+		// Plan holders too: a live session in a plan is theirs to be reminded of and attend.
+		$enrolled = array_values(
+			array_unique(
+				array_merge( pcle_get_program_enrollee_ids( $program_id ), pcle_get_program_plan_holder_ids( $program_id ) )
+			)
+		);
 		if ( ! $enrolled ) {
 			return array();
 		}

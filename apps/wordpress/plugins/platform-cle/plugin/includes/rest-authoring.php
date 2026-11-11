@@ -259,10 +259,11 @@ function pcle_authoring_shape_node( $post ) {
 		$node['join_url']  = pcle_get_event_join_url( $post->ID );
 	}
 
-	// What the public catalogue shows of it (catalogue.php).
+	// What the public catalogue shows of it (catalogue.php, plans.php).
 	if ( 'pcle_program' === $post->post_type ) {
 		$node['topics'] = pcle_get_program_topics( $post->ID );
 		$node['cover']  = pcle_get_program_cover_url( $post->ID );
+		$node['access'] = pcle_shape_program_access( $post->ID );
 	}
 
 	// A webinar's live session lives on a unit the author never sees.
@@ -530,6 +531,8 @@ function pcle_rest_get_me() {
 			 * decides regardless.
 			 */
 			'can_invite'   => user_can( $user->ID, 'create_users' ),
+			// The plan they hold today, or null (plans.php).
+			'plan'         => pcle_shape_user_plan( $user->ID ),
 		)
 	);
 }
@@ -816,6 +819,25 @@ function pcle_authoring_update_node( $request ) {
 		}
 	}
 
+	/*
+	 * What a programme is in and what it costs is a business decision, so
+	 * it takes an administrator — teaching a programme is not pricing it.
+	 * Checked before anything is written.
+	 */
+	if ( null !== $request['access'] && 'pcle_program' === get_post_type( $id ) ) {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return new WP_Error( 'pcle_cannot_price', __( 'Only an administrator sets which plans include a programme.', 'platform-cle' ), array( 'status' => 403 ) );
+		}
+
+		$access = (array) $request['access'];
+		pcle_set_program_access(
+			$id,
+			array_key_exists( 'min_rank', $access ) ? (int) $access['min_rank'] : null,
+			array_key_exists( 'sold_alone', $access ) ? rest_sanitize_boolean( $access['sold_alone'] ) : null,
+			array_key_exists( 'price', $access ) ? (string) $access['price'] : null
+		);
+	}
+
 	if ( null !== $request['topics'] && 'pcle_program' === get_post_type( $id ) ) {
 		pcle_set_program_topics( $id, $request['topics'] );
 	}
@@ -848,7 +870,7 @@ function pcle_authoring_update_node( $request ) {
 		 * recolouring a programme should not make it "last edited" by
 		 * whoever chose the colour.
 		 */
-		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'questions', 'pass_mark', 'gates_completion', 'credits' );
+		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'credits' );
 
 		if ( ! array_filter( $fields, fn( $field ) => null !== $request[ $field ] ) ) {
 			return rest_ensure_response( pcle_authoring_shape_node( get_post( $id ) ) );

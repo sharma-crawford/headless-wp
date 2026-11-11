@@ -73,7 +73,8 @@ test.describe("Changing what someone may do", () => {
 
     const row = page.getByRole("row").filter({ hasText: subject });
 
-    await row.getByRole("combobox").selectOption("pcle_instructor");
+    // By its label: an administrator's row also has the plan chooser (P20).
+    await row.getByLabel(/^Role for/).selectOption("pcle_instructor");
     await row.getByRole("button", { name: "Change" }).click();
 
     await expect(page.getByText(/is now CLE Instructor/)).toBeVisible();

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { Card, CardContent } from "@pcle/ui/components/card";
@@ -10,8 +11,10 @@ import PageShell from "@/components/page-shell";
 import { isAuthenticated } from "@/lib/auth";
 import { swatchLabel } from "@/lib/colours";
 import { decodeEntities } from "@/lib/html";
+import type { HeldPlan } from "@/lib/types";
 import {
   getAccount,
+  getMe,
   getMyColours,
   type Account,
   type MyColours,
@@ -48,6 +51,13 @@ export default async function AccountPage() {
    * should cost the colours section, not the password form.
    */
   let colours: MyColours | null = null;
+  let plan: HeldPlan | null = null;
+
+  try {
+    plan = (await getMe()).plan;
+  } catch {
+    plan = null;
+  }
 
   try {
     colours = await getMyColours();
@@ -64,6 +74,22 @@ export default async function AccountPage() {
         Signed in as <span className="font-medium text-zinc-900">{account.username}</span>
         {account.email && <> · {account.email}</>}
       </p>
+
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-200 bg-white px-5 py-4">
+        <p className="text-zinc-700">
+          {plan ? (
+            <>
+              Your plan: <strong className="font-semibold text-zinc-950">{plan.name}</strong>
+              {plan.until && <span className="text-zinc-500"> · until {plan.until}</span>}
+            </>
+          ) : (
+            "You don't hold a plan. Your programmes are the ones you are enrolled in."
+          )}
+        </p>
+        <Link href="/pricing" className="text-sm font-medium text-brand-700 hover:underline">
+          {plan ? "Compare plans" : "See plans"} →
+        </Link>
+      </div>
 
       <Card className="mt-8">
         <CardContent className="space-y-4">

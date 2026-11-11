@@ -27,8 +27,9 @@ import {
 } from "@/app/actions/authoring";
 import { isAuthenticated } from "@/lib/auth";
 import { decodeEntities } from "@/lib/html";
-import type { TreeNode, WebinarLive } from "@/lib/types";
-import { getProgramTree } from "@/lib/wordpress";
+import type { Plan, ProgramAccess, TreeNode, WebinarLive } from "@/lib/types";
+import { setProgramAccessAction } from "@/app/actions/plans";
+import { getMe, getPlans, getProgramTree } from "@/lib/wordpress";
 
 export default async function BuilderProgramPage({
   params,
@@ -54,6 +55,21 @@ export default async function BuilderProgramPage({
   const isDraft = tree.status !== "publish";
   const units = tree.children.filter((child) => child.type === "pcle_unit");
   const isWebinar = tree.format === "webinar";
+
+  /*
+   * Which plans open the programme is an administrator's decision, so only
+   * an administrator is shown the control. The plugin refuses anyone else
+   * regardless.
+   */
+  let isAdmin = false;
+  let plans: Plan[] = [];
+
+  try {
+    isAdmin = (await getMe()).is_admin;
+    plans = isAdmin ? (await getPlans()).plans : [];
+  } catch {
+    isAdmin = false;
+  }
 
   return (
     <PageShell code="P10">
@@ -190,6 +206,10 @@ export default async function BuilderProgramPage({
           </span>
         </ActionForm>
       </details>
+
+      {isAdmin && (
+        <ProgrammeAccess programmeId={tree.id} access={tree.access ?? null} plans={plans} />
+      )}
 
       <CatalogueListing
         programmeId={tree.id}
@@ -501,6 +521,93 @@ function CatalogueListing({
           </ActionForm>
         </div>
       </div>
+    </details>
+  );
+}
+
+/**
+ * Which plans open this programme, and whether it is also sold on its own.
+ *
+ * Choosing a plan means "this plan and every one above it" — the ranks do
+ * the rest. The select lists the plans by name, because nobody proposes a
+ * programme for "rank 2" at a meeting.
+ */
+function ProgrammeAccess({
+  programmeId,
+  access,
+  plans,
+}: {
+  programmeId: number;
+  access: ProgramAccess | null;
+  plans: Plan[];
+}) {
+  const minRank = access?.min_rank ?? 0;
+  // The plan whose rank is the minimum, or the cheapest one above it.
+  const selected = minRank ? (plans.find((plan) => plan.rank >= minRank)?.rank ?? 0) : 0;
+
+  const summary = [
+    access?.plan ? `in ${access.plan.name} and above` : "in no plan",
+    access?.sold_alone ? `sold alone${access.price ? ` for ${access.price}` : ""}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  return (
+    <details className="mt-2 text-sm">
+      <summary className="cursor-pointer text-zinc-500 hover:text-zinc-900">
+        Access: {summary}
+      </summary>
+
+      <ActionForm
+        key={`${minRank}|${access?.sold_alone}|${access?.price}`}
+        action={setProgramAccessAction}
+        className="mt-3 grid gap-4 rounded-lg border border-zinc-200 bg-white p-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] sm:items-end"
+      >
+        <input type="hidden" name="id" value={programmeId} />
+
+        <span>
+          <label htmlFor="access-plan" className="block text-xs font-medium text-zinc-600">
+            Included in
+          </label>
+          <select
+            id="access-plan"
+            name="min_rank"
+            defaultValue={String(selected)}
+            className="mt-1 h-9 w-full rounded-lg border border-input bg-background px-2.5 text-sm"
+          >
+            <option value="0">No plan — enrolment or purchase only</option>
+            {plans.map((plan) => (
+              <option key={plan.id} value={plan.rank}>
+                {plan.name} and above
+              </option>
+            ))}
+          </select>
+        </span>
+
+        <span className="flex flex-wrap items-end gap-3">
+          <label className="flex h-9 items-center gap-2 text-sm text-zinc-700">
+            <input type="checkbox" name="sold_alone" defaultChecked={access?.sold_alone} className="size-4" />
+            Also sold on its own
+          </label>
+          <span className="min-w-0 flex-1">
+            <label htmlFor="access-price" className="block text-xs font-medium text-zinc-600">
+              Price alone
+            </label>
+            <Input id="access-price" name="price" defaultValue={access?.price} placeholder="$49" className="mt-1" />
+          </span>
+        </span>
+
+        <span className="flex flex-wrap items-center gap-3 sm:col-span-2">
+          <Button type="submit" size="sm">
+            Save access
+          </Button>
+          {plans.length === 0 && (
+            <span className="text-xs text-zinc-500">
+              No plans exist yet. <Link href="/plans" className="underline">Create them on Plans.</Link>
+            </span>
+          )}
+        </span>
+      </ActionForm>
     </details>
   );
 }

@@ -8,8 +8,9 @@
  * routes of its own, and each field they return is chosen here, by name:
  *
  *   - title, summary, format, topics, cover, credit hours, how much is in it,
- *     the date of its next live session — and for one programme, the titles
- *     of its units and modules.
+ *     the date of its next live session, which plan opens it and what it
+ *     costs on its own — and for one programme, the titles of its units and
+ *     modules.
  *   - never a body, a model answer, a file, a quiz, a join link, a person.
  *
  * Only published programmes, and only published units and modules inside
@@ -367,5 +368,7 @@ function pcle_catalogue_shape( $program ) {
 		'units'     => count( $units ),
 		'modules'   => $modules,
 		'next_live' => $next,
+		// The cheapest plan that opens it, and whether it is sold on its own (plans.php).
+		'access'    => pcle_shape_program_access( $program->ID ),
 	);
 }

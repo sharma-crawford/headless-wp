@@ -113,6 +113,10 @@ function pcle_smoke_teardown() {
 	}
 	$done = true;
 
+	// The plans section replaces the site's plans; put the real ones back.
+	if ( array_key_exists( 'pcle_plans_backup', $GLOBALS ) ) {
+		update_option( PCLE_PLANS_OPTION, $GLOBALS['pcle_plans_backup'], false );
+	}
 	foreach ( $GLOBALS['created_posts'] ?? array() as $pid ) {
 		wp_delete_post( $pid, true );
 	}
@@ -3618,7 +3622,7 @@ pcle_eq( count( $row ), 1, 'listing a published programme' );
 $row = reset( $row );
 pcle_eq(
 	array_keys( $row ),
-	array( 'id', 'title', 'excerpt', 'format', 'color', 'cover', 'topics', 'credits', 'units', 'modules', 'next_live' ),
+	array( 'id', 'title', 'excerpt', 'format', 'color', 'cover', 'topics', 'credits', 'units', 'modules', 'next_live', 'access' ),
 	'with exactly the fields chosen for it, and nothing else'
 );
 
@@ -3704,6 +3708,118 @@ pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$prog_a
 pcle_ok( ! pcle_is_public_cover( $cover ), 'and clearing the cover makes the image private again' );
 
 pcle_set_program_topics( $prog_a, array() );
+wp_set_current_user( 0 );
+
+/* ------------------------------------------------------------------ */
+pcle_section( '# Plans' );
+/* ------------------------------------------------------------------ */
+/*
+ * Ranked tiers, defined by administrators. What matters: a plan opens
+ * exactly the programmes at or below its rank, through the same gate as
+ * enrolment, and stops when it ends.
+ */
+
+$GLOBALS['pcle_plans_backup'] = get_option( PCLE_PLANS_OPTION, array() );
+
+// Someone enrolled in nothing, so only a plan can open anything for them.
+$plan_reader     = pcle_make_student();
+$created_users[] = $plan_reader;
+update_option( PCLE_PLANS_OPTION, array(), false );
+
+$plan_call = function ( $uid, $method, $route, $params = array() ) {
+	return pcle_authoring_call( $uid, $method, $route, $params );
+};
+
+// Who may define plans.
+pcle_eq( $plan_call( $student, 'POST', '/platform-cle/v1/plans', array( 'name' => 'Nope', 'rank' => 1 ) )->get_status(), 403, 'a participant cannot create a plan' );
+pcle_eq( $plan_call( $instructor, 'POST', '/platform-cle/v1/plans', array( 'name' => 'Nope', 'rank' => 1 ) )->get_status(), 403, 'nor can an instructor' );
+
+$basic = $plan_call( $admin, 'POST', '/platform-cle/v1/plans', array( 'name' => 'TEST Basic', 'rank' => 1, 'price' => '$99 a year', 'features' => "Live webinars\nOn-demand library\n\n" ) );
+pcle_eq( $basic->get_status(), 200, 'an administrator creates a plan' );
+$basic_id = $basic->get_data()['id'];
+pcle_eq( $basic->get_data()['features'], array( 'Live webinars', 'On-demand library' ), 'its features one per line, blanks dropped' );
+
+$plus    = $plan_call( $admin, 'POST', '/platform-cle/v1/plans', array( 'name' => 'TEST Plus', 'rank' => 2, 'price' => '$199 a year' ) );
+$plus_id = $plus->get_data()['id'];
+// Whatever this site already has at rank 2 or below; the count below is relative to it.
+$plus_opens_before = $plus->get_data()['programs'];
+pcle_eq( $plan_call( $admin, 'POST', '/platform-cle/v1/plans', array( 'name' => 'TEST Clash', 'rank' => 2 ) )->get_status(), 409, 'two plans cannot share a rank' );
+pcle_eq( $plan_call( $admin, 'POST', '/platform-cle/v1/plans', array( 'name' => '', 'rank' => 3 ) )->get_status(), 400, 'a plan needs a name' );
+pcle_eq( $plan_call( $admin, 'PATCH', "/platform-cle/v1/plans/{$plus_id}", array( 'name' => 'TEST Plus', 'rank' => 2, 'price' => '$249 a year' ) )->get_data()['price'], '$249 a year', 'an administrator changes a plan' );
+pcle_eq( wp_list_pluck( pcle_get_plans(), 'id' ), array( $basic_id, $plus_id ), 'plans are listed lowest rank first' );
+
+// What a programme is in: only an administrator decides.
+$tier = function ( $uid, $program, $access ) use ( $plan_call ) {
+	return $plan_call( $uid, 'PATCH', "/platform-cle/v1/authoring/nodes/{$program}", array( 'access' => $access ) );
+};
+pcle_eq( $tier( $instructor, $prog_b, array( 'min_rank' => 1 ) )->get_status(), 403, 'an instructor cannot put a programme in a plan' );
+pcle_eq( pcle_get_program_min_rank( $prog_b ), 0, 'and nothing was written' );
+pcle_eq( $tier( $admin, $prog_b, array( 'min_rank' => 2, 'sold_alone' => true, 'price' => '$49' ) )->get_status(), 200, 'an administrator puts a programme in Plus and above' );
+$prog_b_access = pcle_shape_program_access( $prog_b );
+pcle_eq( $prog_b_access['plan']['id'], $plus_id, 'its entry plan is Plus' );
+pcle_eq( $prog_b_access['price'], '$49', 'and it is sold on its own for $49' );
+
+// The gate.
+pcle_ok( ! pcle_can_access_post( $prog_b, $plan_reader ), 'with no plan, a programme in a plan stays closed' );
+pcle_ok( is_wp_error( pcle_set_user_plan( $plan_reader, 'no-such-plan' ) ), 'an unknown plan cannot be given' );
+
+pcle_set_user_plan( $plan_reader, $basic_id );
+pcle_ok( ! pcle_can_access_post( $prog_b, $plan_reader ), 'a lower plan does not open it' );
+
+pcle_set_user_plan( $plan_reader, $plus_id );
+pcle_ok( pcle_can_access_post( $prog_b, $plan_reader ), 'its own plan opens it' );
+pcle_ok( in_array( $prog_b, wp_list_pluck( pcle_get_visible_programs( $plan_reader ), 'ID' ), true ), 'and it is on their My Training' );
+pcle_ok( ! pcle_can_access_post( $prog_a, $plan_reader ), 'a programme in no plan stays closed to a plan holder' );
+pcle_ok( in_array( $plan_reader, pcle_get_program_plan_holder_ids( $prog_b ), true ), 'plan holders are among those reminded of its sessions' );
+pcle_ok( in_array( $plan_reader, wp_list_pluck( pcle_get_program_students( $prog_b, true ), 'ID' ), true ), 'and on its attendance sheet' );
+
+$me_plan = pcle_rest_get( $plan_reader, '/platform-cle/v1/me' )->get_data()['plan'];
+pcle_eq( $me_plan['id'], $plus_id, 'a reader is told which plan they hold' );
+
+// A higher plan opens what a lower one does.
+pcle_set_program_access( $prog_b, 1 );
+pcle_ok( pcle_can_access_post( $prog_b, $plan_reader ), 'a higher plan opens a lower tier' );
+pcle_set_program_access( $prog_b, 2 );
+
+// Ending.
+pcle_eq( pcle_set_user_plan( $plan_reader, $plus_id, '2026-02-30' )->get_error_code(), 'pcle_plan_until_invalid', 'an end date must be a real date' );
+pcle_set_user_plan( $plan_reader, $plus_id, wp_date( 'Y-m-d' ) );
+pcle_ok( pcle_can_access_post( $prog_b, $plan_reader ), 'a plan holds through its last day' );
+pcle_set_user_plan( $plan_reader, $plus_id, wp_date( 'Y-m-d', time() - DAY_IN_SECONDS ) );
+pcle_ok( ! pcle_can_access_post( $prog_b, $plan_reader ), 'and not after it' );
+pcle_eq( pcle_rest_get( $plan_reader, '/platform-cle/v1/me' )->get_data()['plan'], null, 'an ended plan is no plan' );
+
+// Over REST, as the People screen sets it.
+pcle_eq( $plan_call( $instructor, 'PUT', "/platform-cle/v1/people/{$plan_reader}/plan", array( 'plan' => $plus_id, 'until' => '' ) )->get_status(), 403, 'an instructor cannot give someone a plan' );
+$given = $plan_call( $admin, 'PUT', "/platform-cle/v1/people/{$plan_reader}/plan", array( 'plan' => $plus_id, 'until' => '' ) );
+pcle_eq( $given->get_status(), 200, 'an administrator gives someone a plan' );
+pcle_ok( pcle_can_access_post( $prog_b, $plan_reader ), 'which opens its programmes at once' );
+
+// Enrolment still opens a programme on its own: a purchase is an enrolment.
+pcle_ok( pcle_can_access_post( $prog_a, $student ), 'enrolment still opens a programme with no plan' );
+
+// The Pricing page.
+$public_plans = pcle_rest_get( 0, '/platform-cle/v1/plans' );
+pcle_eq( $public_plans->get_status(), 200, 'plans are readable signed out, for the Pricing page' );
+$public_plus = wp_list_filter( $public_plans->get_data()['plans'], array( 'id' => $plus_id ) );
+pcle_eq( reset( $public_plus )['programs'], $plus_opens_before + 1, 'each says how many programmes it opens' );
+pcle_ok( ! isset( reset( $public_plus )['holders'] ), 'but not who holds it' );
+
+// The catalogue says how a programme can be had.
+$cat_b = $catalogue( "/platform-cle/v1/catalogue/{$prog_b}" )->get_data();
+pcle_eq( $cat_b['access']['plan']['name'], 'TEST Plus', 'the catalogue names its entry plan' );
+pcle_ok( $cat_b['access']['sold_alone'], 'and that it is sold on its own' );
+
+// Deleting a plan leaves its holders with nothing, and their records alone.
+pcle_eq( $plan_call( $admin, 'DELETE', "/platform-cle/v1/plans/{$plus_id}" )->get_status(), 200, 'an administrator deletes a plan' );
+pcle_ok( ! pcle_can_access_post( $prog_b, $plan_reader ), 'its holders lose what it opened' );
+pcle_eq( get_user_meta( $plan_reader, PCLE_USER_PLAN_META, true ), '', 'and hold nothing' );
+pcle_eq( $catalogue( "/platform-cle/v1/catalogue/{$prog_b}" )->get_data()['access']['plan'], null, 'a tier no plan reaches shows no plan' );
+
+pcle_set_user_plan( $plan_reader, '' );
+pcle_set_program_access( $prog_b, 0, false, '' );
+update_option( PCLE_PLANS_OPTION, $GLOBALS['pcle_plans_backup'], false );
+unset( $GLOBALS['pcle_plans_backup'] );
 wp_set_current_user( 0 );
 
 /* ------------------------------------------------------------------ */

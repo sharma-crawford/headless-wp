@@ -43,7 +43,10 @@ test.describe("The public catalogue", () => {
 
     await expect(page).toHaveURL(new RegExp(`/catalogue/${programme.id}$`));
     await expect(page.getByRole("heading", { level: 1, name: programme.title })).toBeVisible();
-    await expect(page.getByRole("button", { name: "Sign in to start" })).toBeVisible();
+    // Whatever plan it is in, a stranger is offered a way in.
+    await expect(
+      page.getByRole("complementary").getByRole("button", { name: "Sign in", exact: true })
+    ).toBeVisible();
   });
 
   test("search narrows the list, and says when nothing matches", async ({ page }) => {

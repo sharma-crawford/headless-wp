@@ -4,10 +4,11 @@ import { Card, CardContent } from "@pcle/ui/components/card";
 
 import { renderAccessError } from "@/components/access-error";
 import PageShell from "@/components/page-shell";
+import PersonPlan from "@/components/plans/person-plan";
 import RoleChooser from "@/components/role-chooser";
 import { isAuthenticated } from "@/lib/auth";
-import type { People } from "@/lib/types";
-import { getPeople } from "@/lib/wordpress";
+import type { People, Plan } from "@/lib/types";
+import { getMe, getPeople, getPlans } from "@/lib/wordpress";
 
 export const dynamic = "force-dynamic";
 
@@ -26,9 +27,14 @@ export default async function PeoplePage() {
   }
 
   let directory: People;
+  let isAdmin = false;
+  let plans: Plan[] = [];
 
   try {
     directory = await getPeople();
+    isAdmin = (await getMe()).is_admin;
+    // Plans are an administrator's; only they get the column.
+    plans = isAdmin ? (await getPlans()).plans : [];
   } catch (error) {
     return renderAccessError(error, {
       title: "You do not have access to this list",
@@ -50,12 +56,13 @@ export default async function PeoplePage() {
 
       <Card className="mt-8 p-0">
         <CardContent className="overflow-x-auto p-6">
-          <table className="w-full min-w-[40rem] text-left">
+          <table className="w-full min-w-[56rem] text-left">
             <thead>
               <tr className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
                 <th className="pb-2 pr-4">Person</th>
                 <th className="pb-2 pr-4">Role</th>
-                <th className="pb-2">Change</th>
+                <th className="pb-2 pr-4">Change</th>
+                {isAdmin && <th className="pb-2">Plan</th>}
               </tr>
             </thead>
 
@@ -76,7 +83,7 @@ export default async function PeoplePage() {
                     {person.role_label}
                   </td>
 
-                  <td className="py-3">
+                  <td className="py-3 pr-4">
                     {person.editable ? (
                       <RoleChooser person={person} roles={directory.roles} />
                     ) : (
@@ -92,6 +99,16 @@ export default async function PeoplePage() {
                       </span>
                     )}
                   </td>
+
+                  {isAdmin && (
+                    <td className="py-3">
+                      {person.role === "pcle_student" ? (
+                        <PersonPlan person={person} plans={plans} />
+                      ) : (
+                        <span className="text-xs text-zinc-400">Staff see everything</span>
+                      )}
+                    </td>
+                  )}
                 </tr>
               ))}
             </tbody>
