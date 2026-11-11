@@ -295,6 +295,94 @@ async function saveLiveAction(
   return {};
 }
 
+/** A cover larger than this is refused before it is sent. */
+const MAX_COVER_BYTES = 4 * 1024 * 1024;
+
+/**
+ * Sets, replaces or removes a programme's cover — the image the public
+ * catalogue shows.
+ *
+ * Uploading attaches the image to the programme (protected, like every
+ * upload) and then names it the cover, which is what makes it public: see
+ * pcle_is_public_cover() in the plugin.
+ */
+async function saveCoverAction(
+  _prev: BuilderActionState,
+  formData: FormData
+): Promise<BuilderActionState> {
+  const id = readId(formData.get("id"));
+
+  if (!id) {
+    return { error: "That programme could not be identified." };
+  }
+
+  if (formData.get("intent") === "remove") {
+    try {
+      await updateNode(id, { cover: 0 });
+    } catch (error) {
+      return { error: describe(error) };
+    }
+
+    refresh();
+    return {};
+  }
+
+  const file = formData.get("cover");
+
+  if (!(file instanceof File) || file.size === 0) {
+    return { error: "Choose an image for the cover." };
+  }
+
+  if (!file.type.startsWith("image/")) {
+    return { error: "A cover must be an image: JPEG, PNG or WebP." };
+  }
+
+  if (file.size > MAX_COVER_BYTES) {
+    return { error: "That image is larger than 4 MB. Export a smaller one." };
+  }
+
+  try {
+    const media = await uploadNodeMedia(id, file);
+
+    if (!media.is_image) {
+      return { error: "That file is not an image WordPress can show." };
+    }
+
+    await updateNode(id, { cover: media.id });
+  } catch (error) {
+    return { error: describe(error) };
+  }
+
+  refresh();
+  return {};
+}
+
+/** A programme's topics, as one comma-separated field. */
+async function saveTopicsAction(
+  _prev: BuilderActionState,
+  formData: FormData
+): Promise<BuilderActionState> {
+  const id = readId(formData.get("id"));
+
+  if (!id) {
+    return { error: "That programme could not be identified." };
+  }
+
+  const topics = String(formData.get("topics") ?? "")
+    .split(",")
+    .map((topic) => topic.trim())
+    .filter(Boolean);
+
+  try {
+    await updateNode(id, { topics });
+  } catch (error) {
+    return { error: describe(error) };
+  }
+
+  refresh();
+  return {};
+}
+
 async function setFormatAction(
   _prev: BuilderActionState,
   formData: FormData
@@ -665,8 +753,10 @@ export {
   saveQuizAction,
   createProgramAction,
   saveBodyAction,
+  saveCoverAction,
   saveCreditsAction,
   saveLiveAction,
+  saveTopicsAction,
   setFormatAction,
   setColourAction,
   renameNodeAction,

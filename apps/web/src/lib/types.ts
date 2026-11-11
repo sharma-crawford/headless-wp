@@ -315,7 +315,39 @@ type TrainingProgram = {
   color: Swatch | null;
 };
 
+/** A published programme as the public catalogue shows it. */
+type CatalogueProgram = {
+  id: number;
+  title: string;
+  excerpt: string;
+  format: ProgramFormat;
+  color: Swatch | null;
+  /** A URL a signed-out browser can load, or null. */
+  cover: string | null;
+  topics: string[];
+  /** Only the jurisdictions it is accredited in. */
+  credits: CreditHours[];
+  units: number;
+  modules: number;
+  /** ISO 8601 of the next live session, or "". */
+  next_live: string;
+};
+
+type CatalogueDetail = CatalogueProgram & {
+  /** Unit and module titles, nothing more. Empty for a webinar. */
+  outline: { title: string; modules: string[] }[];
+};
+
+type Catalogue = {
+  programs: CatalogueProgram[];
+  /** Every topic in use, to filter by. */
+  topics: string[];
+};
+
 export type {
+  Catalogue,
+  CatalogueDetail,
+  CatalogueProgram,
   People,
   Person,
   GrantableRole,
@@ -502,6 +534,10 @@ type TreeNode = Authorship & {
   duration?: number;
   /** Events only. */
   join_url?: string;
+  /** Programmes only: topics, for the catalogue. */
+  topics?: string[];
+  /** Programmes only: the cover's URL, or null. */
+  cover?: string | null;
   /** Webinar programmes only: the live session, or null when it has none. */
   live?: WebinarLive | null;
 };

@@ -172,6 +172,15 @@ export default async function Home() {
               <Button
                 className="h-11 bg-amber-400 px-6 text-base text-brand-950 hover:bg-amber-300"
                 nativeButton={false}
+                render={<Link href="/catalogue" />}
+              >
+                Browse the catalogue
+              </Button>
+
+              <Button
+                variant="outline"
+                className="h-11 border-white/30 bg-transparent px-6 text-base text-white hover:bg-white/10 hover:text-white"
+                nativeButton={false}
                 render={<Link href="/login" />}
               >
                 Sign in

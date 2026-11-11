@@ -259,6 +259,12 @@ function pcle_authoring_shape_node( $post ) {
 		$node['join_url']  = pcle_get_event_join_url( $post->ID );
 	}
 
+	// What the public catalogue shows of it (catalogue.php).
+	if ( 'pcle_program' === $post->post_type ) {
+		$node['topics'] = pcle_get_program_topics( $post->ID );
+		$node['cover']  = pcle_get_program_cover_url( $post->ID );
+	}
+
 	// A webinar's live session lives on a unit the author never sees.
 	if ( 'pcle_program' === $post->post_type && pcle_is_webinar( $post->ID ) ) {
 		$node['live'] = pcle_shape_webinar_live( $post->ID );
@@ -801,6 +807,19 @@ function pcle_authoring_update_node( $request ) {
 	 * optional. After the format change above, so a programme turned into a
 	 * webinar in the same request can be given its date in it too.
 	 */
+	// Checked before anything is written: an image from elsewhere is refused.
+	if ( null !== $request['cover'] && 'pcle_program' === get_post_type( $id ) ) {
+		$covered = pcle_set_program_cover( $id, (int) $request['cover'] );
+
+		if ( is_wp_error( $covered ) ) {
+			return $covered;
+		}
+	}
+
+	if ( null !== $request['topics'] && 'pcle_program' === get_post_type( $id ) ) {
+		pcle_set_program_topics( $id, $request['topics'] );
+	}
+
 	if ( null !== $request['live'] && 'pcle_program' === get_post_type( $id ) ) {
 		$live = (array) $request['live'];
 		$set  = pcle_set_webinar_live(
@@ -829,7 +848,7 @@ function pcle_authoring_update_node( $request ) {
 		 * recolouring a programme should not make it "last edited" by
 		 * whoever chose the colour.
 		 */
-		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'duration', 'join_url', 'live', 'questions', 'pass_mark', 'gates_completion', 'credits' );
+		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'questions', 'pass_mark', 'gates_completion', 'credits' );
 
 		if ( ! array_filter( $fields, fn( $field ) => null !== $request[ $field ] ) ) {
 			return rest_ensure_response( pcle_authoring_shape_node( get_post( $id ) ) );

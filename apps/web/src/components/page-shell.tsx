@@ -7,7 +7,8 @@ import { cn } from "@pcle/ui/lib/utils";
 import { logoutAction } from "@/app/actions/auth";
 import { PageCode } from "@/components/screen-code";
 import NavLink from "@/components/nav-link";
-import { pathsFor } from "@/lib/navigation";
+import { isAuthenticated } from "@/lib/auth";
+import { pathsFor, type Path } from "@/lib/navigation";
 import { getMe } from "@/lib/wordpress";
 
 /**
@@ -42,8 +43,23 @@ export default async function PageShell({
    */
   wide?: boolean;
 }) {
-  const paths = await pathsFor();
-  const name = await displayName();
+  /*
+   * Signed out, the only screens that render a shell are the public ones
+   * (the catalogue). They get the public header: what anyone may browse,
+   * and a way in. Everything else sends a signed-out reader to /login
+   * before it gets here.
+   */
+  const signedIn = await isAuthenticated();
+  const paths: Path[] = signedIn
+    ? await pathsFor()
+    : [
+        {
+          href: "/catalogue",
+          label: "Catalogue",
+          description: "",
+        },
+      ];
+  const name = signedIn ? await displayName() : "";
 
   return (
     /*
@@ -75,29 +91,39 @@ export default async function PageShell({
             ))}
           </nav>
 
-          {/* Everyone's, whatever their role, so it sits with Log out rather than in pathsFor(). */}
-          <div className="flex shrink-0 items-center gap-1">
+          {!signedIn ? (
             <Button
-              variant="ghost"
-              className="h-9 gap-2 px-2 text-zinc-700"
+              className="h-9 shrink-0 px-4"
               nativeButton={false}
-              render={<Link href="/account" />}
+              render={<Link href="/login" />}
             >
-              <Initials name={name} />
-              <span className="hidden sm:inline">Account</span>
-              <span className="sr-only sm:hidden">Account</span>
+              Sign in
             </Button>
-
-            <form action={logoutAction}>
+          ) : (
+            /* Everyone's, whatever their role, so it sits with Log out rather than in pathsFor(). */
+            <div className="flex shrink-0 items-center gap-1">
               <Button
-                type="submit"
                 variant="ghost"
-                className="h-9 px-2.5 text-zinc-500"
+                className="h-9 gap-2 px-2 text-zinc-700"
+                nativeButton={false}
+                render={<Link href="/account" />}
               >
-                Log out
+                <Initials name={name} />
+                <span className="hidden sm:inline">Account</span>
+                <span className="sr-only sm:hidden">Account</span>
               </Button>
-            </form>
-          </div>
+
+              <form action={logoutAction}>
+                <Button
+                  type="submit"
+                  variant="ghost"
+                  className="h-9 px-2.5 text-zinc-500"
+                >
+                  Log out
+                </Button>
+              </form>
+            </div>
+          )}
         </div>
       </header>
 

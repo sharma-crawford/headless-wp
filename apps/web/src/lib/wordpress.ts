@@ -5,6 +5,8 @@ import { DEFAULT_SETTINGS, changesFromDefaults, mergeSettings } from "@/lib/colo
 import type { ColourSettings, Swatch } from "@/lib/colours";
 import type {
   AuthoringProgram,
+  Catalogue,
+  CatalogueDetail,
   EnrollmentResult,
   People,
   Person,
@@ -260,6 +262,20 @@ async function getProgram(id: number, preview = false): Promise<Program> {
     `/platform-cle/v1/programs/${id}${preview ? "?preview=1" : ""}`,
     { auth: true }
   ) as Promise<Program>;
+}
+
+/**
+ * The public catalogue. No token: it is the one read that answers someone
+ * signed out, and sending one would make it look like it needed it.
+ */
+async function getCatalogue(): Promise<Catalogue> {
+  return wordpressFetch("/platform-cle/v1/catalogue") as Promise<Catalogue>;
+}
+
+async function getCatalogueItem(id: number): Promise<CatalogueDetail> {
+  return wordpressFetch(
+    `/platform-cle/v1/catalogue/${id}`
+  ) as Promise<CatalogueDetail>;
 }
 
 /** The webinars hub: upcoming sessions and on-demand webinars for this reader. */
@@ -577,6 +593,10 @@ async function updateNode(
      * the session.
      */
     live?: { starts_at?: string; duration?: number; join_url?: string };
+    /** Programmes: topic names, replacing the old ones. */
+    topics?: string[];
+    /** Programmes: an image attached to it, or 0 to clear the cover. */
+    cover?: number;
     /** A swatch name, or "" to clear it so the item inherits again. */
     color?: Swatch | "";
     /** Quizzes. The server sanitises and re-keys these; it owns the rules. */
@@ -661,6 +681,8 @@ export {
   getUnit,
   getModule,
   setModuleCompletion,
+  getCatalogue,
+  getCatalogueItem,
   getMe,
   getWebinars,
   getProgramReport,
