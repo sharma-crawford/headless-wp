@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 
 import { renderAccessError } from "@/components/access-error";
+import ContinueCard from "@/components/continue-card";
 import PageHeading from "@/components/page-heading";
 import PageShell from "@/components/page-shell";
 import ProgrammeCard from "@/components/programme-card";
@@ -42,13 +43,21 @@ export default async function MyTrainingPage() {
           </p>
         </div>
       ) : (
-        <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {programs.map((program) => (
-            <li key={program.id}>
-              <ProgrammeCard program={program} />
-            </li>
-          ))}
-        </ul>
+        <>
+          <ContinueCard programs={programs} />
+
+          <h2 className="mt-12 text-2xl font-semibold text-zinc-950">
+            Your programmes
+          </h2>
+
+          <ul className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {programs.map((program) => (
+              <li key={program.id}>
+                <ProgrammeCard program={program} />
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </PageShell>
   );

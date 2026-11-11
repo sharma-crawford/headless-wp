@@ -2,11 +2,14 @@ import { redirect } from "next/navigation";
 
 import { renderAccessError } from "@/components/access-error";
 import Breadcrumbs from "@/components/breadcrumbs";
+import CourseOutline from "@/components/course-outline";
+import CoursePlayer from "@/components/course-player";
 import PageShell from "@/components/page-shell";
 import PreviewBanner from "@/components/preview-banner";
 import UnitSection from "@/components/unit-section";
 import WpContent from "@/components/wp-content";
 import { isAuthenticated } from "@/lib/auth";
+import { outlineFor } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
 import type { UnitDetail } from "@/lib/types";
 import { getUnit } from "@/lib/wordpress";
@@ -30,35 +33,49 @@ export default async function UnitPage({
     return renderAccessError(error);
   }
 
+  const program = await outlineFor(unit.program?.id, preview);
+
   return (
-    <PageShell code="P5">
+    <PageShell code="P5" wide>
       {preview && <PreviewBanner programmeId={unit.program?.id} />}
 
-      <Breadcrumbs
-        trail={[
-          { label: "My Training", href: "/my-training" },
-          ...(unit.program
-            ? [
-                {
-                  label: unit.program.title,
-                  href: keepPreview(`/programs/${unit.program.id}`, preview),
-                },
-              ]
-            : []),
-          { label: unit.title },
-        ]}
-      />
-
-      <WpContent html={unit.content} className="mt-6" />
-
-      <div className="mt-6">
-        <UnitSection
-          unit={unit}
-          headingLevel="h1"
-          linkHeading={false}
-          preview={preview}
+      <CoursePlayer
+        outline={
+          program && (
+            <CourseOutline
+              program={program}
+              current={{ unit: unit.id }}
+              preview={preview}
+            />
+          )
+        }
+      >
+        <Breadcrumbs
+          trail={[
+            { label: "My Training", href: "/my-training" },
+            ...(unit.program
+              ? [
+                  {
+                    label: unit.program.title,
+                    href: keepPreview(`/programs/${unit.program.id}`, preview),
+                  },
+                ]
+              : []),
+            { label: unit.title },
+          ]}
         />
-      </div>
+
+        <WpContent html={unit.content} className="mt-6" />
+
+        <div className="mt-6">
+          <UnitSection
+            unit={unit}
+            headingLevel="h1"
+            linkHeading={false}
+            preview={preview}
+          />
+        </div>
+      </CoursePlayer>
     </PageShell>
   );
 }

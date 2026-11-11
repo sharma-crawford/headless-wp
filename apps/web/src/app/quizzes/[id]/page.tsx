@@ -4,16 +4,20 @@ import { Card, CardContent } from "@pcle/ui/components/card";
 
 import { renderAccessError } from "@/components/access-error";
 import Breadcrumbs from "@/components/breadcrumbs";
+import CourseOutline from "@/components/course-outline";
+import CoursePlayer from "@/components/course-player";
 import PageShell from "@/components/page-shell";
 import PreviewBanner from "@/components/preview-banner";
 import QuizRunner from "@/components/quiz-runner";
+import StepNav from "@/components/step-nav";
 import WpContent from "@/components/wp-content";
 import { StateBadge } from "@/components/state-badge";
 import { isAuthenticated } from "@/lib/auth";
+import { neighbours, outlineFor } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
 import { decodeEntities } from "@/lib/html";
 import type { QuizAttempt, QuizForTaking } from "@/lib/types";
-import { getQuiz } from "@/lib/wordpress";
+import { getModule, getQuiz } from "@/lib/wordpress";
 
 /**
  * Past sittings.
@@ -78,71 +82,117 @@ export default async function QuizPage({
     return renderAccessError(error);
   }
 
+  /*
+   * The outline, and the module's quizzes to list under it. Both are
+   * navigation: a quiz that loaded renders even if neither can be had.
+   */
+  const [program, parent] = await Promise.all([
+    outlineFor(quiz.program?.id, preview),
+    quiz.module
+      ? getModule(quiz.module.id, preview).catch(() => null)
+      : Promise.resolve(null),
+  ]);
+  const { next } =
+    program && quiz.module
+      ? neighbours(program, quiz.module.id)
+      : { next: null };
+
   return (
-    <PageShell code="P6">
+    <PageShell code="P6" wide>
       {preview && <PreviewBanner programmeId={quiz.program?.id} />}
 
-      <Breadcrumbs
-        trail={[
-          { label: "My Training", href: "/my-training" },
-          ...(quiz.program
-            ? [
-                {
-                  label: quiz.program.title,
-                  href: keepPreview(`/programs/${quiz.program.id}`, preview),
-                },
-              ]
-            : []),
-          ...(quiz.module
-            ? [
-                {
-                  label: quiz.module.title,
-                  href: keepPreview(`/modules/${quiz.module.id}`, preview),
-                },
-              ]
-            : []),
-          { label: quiz.title },
-        ]}
-      />
+      <CoursePlayer
+        outline={
+          program && (
+            <CourseOutline
+              program={program}
+              current={{ module: quiz.module?.id, quiz: quiz.id }}
+              quizzes={parent?.quizzes ?? []}
+              preview={preview}
+            />
+          )
+        }
+      >
+        <Breadcrumbs
+          trail={[
+            { label: "My Training", href: "/my-training" },
+            ...(quiz.program
+              ? [
+                  {
+                    label: quiz.program.title,
+                    href: keepPreview(`/programs/${quiz.program.id}`, preview),
+                  },
+                ]
+              : []),
+            ...(quiz.module
+              ? [
+                  {
+                    label: quiz.module.title,
+                    href: keepPreview(`/modules/${quiz.module.id}`, preview),
+                  },
+                ]
+              : []),
+            { label: quiz.title },
+          ]}
+        />
 
-      <div className="mt-4 flex flex-wrap items-center gap-3">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-950">
-          {decodeEntities(quiz.title)}
-        </h1>
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <h1 className="text-3xl font-semibold text-zinc-950 sm:text-4xl">
+            {decodeEntities(quiz.title)}
+          </h1>
 
-        {quiz.passed && (
-          <StateBadge state="complete">Passed</StateBadge>
+          {quiz.passed && (
+            <StateBadge state="complete">Passed</StateBadge>
+          )}
+
+          {quiz.required && !quiz.passed && (
+            <StateBadge state="required">Required for this module</StateBadge>
+          )}
+        </div>
+
+        <p className="mt-2 text-sm text-zinc-500">
+          {quiz.questions.length}{" "}
+          {quiz.questions.length === 1 ? "question" : "questions"} · pass mark{" "}
+          {quiz.pass_mark}%
+        </p>
+
+        {quiz.content.trim() && <WpContent html={quiz.content} className="mt-6" />}
+
+        <div className="mt-8">
+          {quiz.questions.length === 0 ? (
+            <Card className="p-6">
+              <CardContent className="p-0">
+                <p className="text-zinc-600">
+                  This quiz has no questions yet. Your instructor is still
+                  writing it.
+                </p>
+              </CardContent>
+            </Card>
+          ) : (
+            <QuizRunner quiz={quiz} />
+          )}
+        </div>
+
+        <Attempts attempts={quiz.attempts} />
+
+        {program && quiz.module && (
+          <StepNav
+            previous={{
+              href: `/modules/${quiz.module.id}`,
+              title: `Back to ${quiz.module.title}`,
+            }}
+            next={
+              next
+                ? { href: `/modules/${next.module.id}`, title: next.module.title }
+                : {
+                    href: `/programs/${program.id}`,
+                    title: "Back to the programme overview",
+                  }
+            }
+            preview={preview}
+          />
         )}
-
-        {quiz.required && !quiz.passed && (
-          <StateBadge state="required">Required for this module</StateBadge>
-        )}
-      </div>
-
-      <p className="mt-2 text-sm text-zinc-500">
-        {quiz.questions.length}{" "}
-        {quiz.questions.length === 1 ? "question" : "questions"} · pass mark{" "}
-        {quiz.pass_mark}%
-      </p>
-
-      {quiz.content.trim() && <WpContent html={quiz.content} className="mt-6" />}
-
-      <div className="mt-8">
-        {quiz.questions.length === 0 ? (
-          <Card className="p-6">
-            <CardContent className="p-0">
-              <p className="text-zinc-600">
-                This quiz has no questions yet. Your instructor is still
-                writing it.
-              </p>
-            </CardContent>
-          </Card>
-        ) : (
-          <QuizRunner quiz={quiz} />
-        )}
-      </div>
-
-      <Attempts attempts={quiz.attempts} />
+      </CoursePlayer>
     </PageShell>
   );
 }

@@ -239,3 +239,75 @@ test.describe("The path a participant walks", () => {
     ).toBeVisible();
   });
 });
+
+test.describe("The course player", () => {
+  let wordpress: WordPress;
+  let programme: { id: number; title: string };
+  let modules: TreeNode[];
+
+  test.beforeAll(async () => {
+    wordpress = await WordPress.asAdministrator();
+    programme = await wordpress.firstProgramme();
+    await wordpress.enrol(
+      programme.id,
+      await wordpress.emailOf(people.participant.username)
+    );
+
+    // Every module, in the order units and modules are authored.
+    modules = [];
+    const walk = (node: TreeNode) => {
+      if (node.type === "pcle_module") {
+        modules.push(node);
+      }
+      (node.children ?? []).forEach(walk);
+    };
+    walk(await wordpress.tree(programme.id));
+  });
+
+  test("the outline marks where the reader is", async ({ page }) => {
+    await signIn(page, people.participant);
+    await page.goto(`/modules/${modules[0].id}`);
+
+    const outline = page
+      .locator("aside")
+      .getByRole("navigation", { name: "Course outline" });
+
+    await expect(outline).toBeVisible();
+    await expect(
+      outline.locator('[aria-current="page"]', { hasText: modules[0].title })
+    ).toBeVisible();
+    // Every unit and module of the programme is listed, not just this unit's.
+    await expect(
+      outline.getByRole("link", { name: modules[modules.length - 1].title })
+    ).toBeVisible();
+  });
+
+  test("Next leads to the following module, and the last to the programme", async ({
+    page,
+  }) => {
+    test.skip(modules.length < 2, "The programme needs two modules.");
+
+    await signIn(page, people.participant);
+    await page.goto(`/modules/${modules[0].id}`);
+
+    await page.locator('a[rel="next"]').click();
+    await expect(page).toHaveURL(new RegExp(`/modules/${modules[1].id}$`));
+    await expect(
+      page.getByRole("heading", { level: 1, name: modules[1].title })
+    ).toBeVisible();
+
+    await page.goto(`/modules/${modules[modules.length - 1].id}`);
+    await page.locator('a[rel="next"]').click();
+    await expect(page).toHaveURL(new RegExp(`/programs/${programme.id}$`));
+  });
+
+  test("My Training offers the next unfinished module", async ({ page }) => {
+    await signIn(page, people.participant);
+
+    const card = page.getByRole("region", { name: "Continue where you left off" });
+    await expect(card).toBeVisible();
+    await card.getByRole("link").click();
+
+    await expect(page).toHaveURL(/\/modules\/\d+$/);
+  });
+});
