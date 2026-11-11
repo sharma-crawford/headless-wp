@@ -228,7 +228,7 @@ last.
 | 1 | Course player on P4–P6 (outline sidebar, previous/next) and "continue where you left off" on P2 | 2–3 days | in review (#59) |
 | 2 | Webinars hub at `/webinars`: upcoming live and on demand, join link and length on sessions, `.ics`. A webinar can be held live | 4–5 days | in review; reminders already exist and need only SMTP to arrive |
 | 3 | Certificates on screen: download from a finished programme and from the account | 2 days | accreditation input, for certificates that carry credit |
-| 4 | Public catalogue and programme detail pages, readable signed out; public cover images | 3–4 days | — |
+| 4 | Public catalogue and programme detail pages, readable signed out; topics; public cover images | 3–4 days | in review |
 | 5 | **Accounts:** self sign-up with email verification, "Forgot password?" in the app, choosing a plan at sign-up | 3–4 days | **SMTP** |
 | 6 | Plans and single purchases, granted by hand, with locked pages and a Pricing page | 5–7 days | — |
 | 7 | Payment: checkout and a webhook that writes the same grant phase 6 writes by hand | ~1 week | provider choice, legal pages, SMTP |
@@ -250,6 +250,16 @@ last.
 - **No separate registration.** Being entitled to a programme is being
   invited to its sessions: the hourly reminder already emails every
   enrolled participant. A headcount, if wanted, is a later addition.
+- **The catalogue is its own public routes** (`includes/catalogue.php`), not
+  an opened-up existing one, and every field is named in one shaping
+  function: title, summary, format, topics, cover, credit hours, counts, the
+  next live date, and for one programme the unit and module titles. Never a
+  body, an answer, a file, a quiz, a join link or a person. Only published
+  programmes; a draft is a 404.
+- **A published programme's cover is public; no other upload is.** The
+  download handler makes that single exception, it lapses when the
+  programme is unpublished, and only an image already attached to the
+  programme can be made its cover.
 - **The join link is never public.** It is not registered on the event's
   REST meta; it travels only in the participant routes that have already
   checked access, and in the calendar file built from them.
@@ -298,7 +308,7 @@ None of these is covered by a phase above. Grouped by what each blocks.
 |---|---|---|
 | 🟡 | Caching | The webinars hub and the catalogue walk every visible programme per request — the N+1 above, now on more screens. Measure before launch. |
 | 🟡 | Login rate limiting, confirmed backups | Already open above. |
-| 🟡 | Builder upload tests | Three drop/paste tests fail against a local container; CI will say whether they fail there too. |
+| ~~🟡~~ | ~~Builder upload tests~~ | Closed: not the builder. The smoke suite, run as root, created the month's upload folder as root, and WordPress could not write into it. DEVELOPMENT.md now runs it as `www-data`. |
 
 **Decisions only the owners can make:** plan names, ranks and prices; the
 payment provider (Stripe recommended); the accreditation details certificates

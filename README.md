@@ -183,7 +183,7 @@ appears to succeed while the running site keeps serving the old code.
 ### Running the plugin test suite
 
 ```bash
-docker compose exec wordpress php /var/www/html/wp-content/plugins/platform-cle/tests/smoke-test.php
+docker compose exec -u www-data wordpress php /var/www/html/wp-content/plugins/platform-cle/tests/smoke-test.php
 ```
 
 Dependency-free, exits non-zero on failure, and runs in CI on every push
