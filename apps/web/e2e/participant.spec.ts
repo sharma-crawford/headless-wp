@@ -233,10 +233,11 @@ test.describe("The path a participant walks", () => {
     await page.goto(`/programs/${programme.id}`);
 
     // They hold the participant role and every capability that comes with
-    // it. Access is decided by enrolment, which is the sharpest test of it.
-    await expect(
-      page.getByText(/not enrolled in this programme/i)
-    ).toBeVisible();
+    // it. Access is decided by enrolment (or a plan), which is the sharpest
+    // test of it. Refused, they are shown what it is and how to get it.
+    await expect(page).toHaveURL(new RegExp(`/catalogue/${programme.id}\\?locked=1$`));
+    await expect(page.getByText("This programme isn't open to you yet.")).toBeVisible();
+    await expect(page.getByRole("button", { name: /Go to the/ })).toHaveCount(0);
   });
 });
 

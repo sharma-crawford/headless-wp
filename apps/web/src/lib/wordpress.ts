@@ -5,8 +5,10 @@ import { DEFAULT_SETTINGS, changesFromDefaults, mergeSettings } from "@/lib/colo
 import type { ColourSettings, Swatch } from "@/lib/colours";
 import type {
   AuthoringProgram,
+  Plan,
   Catalogue,
   CatalogueDetail,
+  CatalogueProgram,
   EnrollmentResult,
   People,
   Person,
@@ -52,13 +54,26 @@ class WordPressApiError extends Error {
   code?: string;
   /** The `data` payload WordPress attached, when it sent one. */
   data?: unknown;
+  /**
+   * WordPress's own sentence for the refusal, when it wrote one — "Rank 2 is
+   * already Plus". Shown to people only where the plugin's wording is meant
+   * for them; elsewhere the app says it in its own words.
+   */
+  detail?: string;
 
-  constructor(message: string, status: number, code?: string, data?: unknown) {
+  constructor(
+    message: string,
+    status: number,
+    code?: string,
+    data?: unknown,
+    detail?: string
+  ) {
     super(message);
     this.name = "WordPressApiError";
     this.status = status;
     this.code = code;
     this.data = data;
+    this.detail = detail;
   }
 }
 
@@ -98,10 +113,10 @@ async function wordpressFetch(
      * which required questions were left blank. Reading it here is what lets
      * an action say something true to the participant instead of "try again".
      */
-    let body: { code?: string; data?: unknown } | null = null;
+    let body: { code?: string; data?: unknown; message?: string } | null = null;
 
     try {
-      body = (await response.json()) as { code?: string; data?: unknown };
+      body = (await response.json()) as { code?: string; data?: unknown; message?: string };
     } catch {
       body = null;
     }
@@ -112,7 +127,8 @@ async function wordpressFetch(
         : `WordPress request to ${path} failed.`,
       response.status,
       body?.code,
-      body?.data
+      body?.data,
+      typeof body?.message === "string" ? body.message : undefined
     );
   }
 
@@ -264,18 +280,86 @@ async function getProgram(id: number, preview = false): Promise<Program> {
   ) as Promise<Program>;
 }
 
+/** Every plan, lowest rank first. Public: the Pricing page reads it. */
+async function getPlans(): Promise<{ plans: Plan[] }> {
+  /*
+   * With a token when there is one, so an administrator also sees holders.
+   * An expired token is refused even on a public route, and the Pricing
+   * page must not break for it: ask again as nobody.
+   */
+  if (await getAuthToken()) {
+    try {
+      return (await wordpressFetch("/platform-cle/v1/plans", { auth: true })) as { plans: Plan[] };
+    } catch {
+      // Fall through.
+    }
+  }
+
+  return wordpressFetch("/platform-cle/v1/plans") as Promise<{ plans: Plan[] }>;
+}
+
+type PlanInput = {
+  name: string;
+  rank: number;
+  price: string;
+  description: string;
+  features: string[];
+};
+
+async function savePlan(input: PlanInput, id?: string): Promise<Plan> {
+  return wordpressFetch(id ? `/platform-cle/v1/plans/${id}` : "/platform-cle/v1/plans", {
+    auth: true,
+    method: id ? "PATCH" : "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(input),
+  }) as Promise<Plan>;
+}
+
+async function deletePlan(id: string): Promise<void> {
+  await wordpressFetch(`/platform-cle/v1/plans/${id}`, { auth: true, method: "DELETE" });
+}
+
+/** Gives someone a plan ("" takes it away), optionally until a date. */
+async function setPersonPlan(userId: number, plan: string, until: string): Promise<void> {
+  await wordpressFetch(`/platform-cle/v1/people/${userId}/plan`, {
+    auth: true,
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ plan, until }),
+  });
+}
+
 /**
  * The public catalogue. No token: it is the one read that answers someone
  * signed out, and sending one would make it look like it needed it.
  */
 async function getCatalogue(): Promise<Catalogue> {
-  return wordpressFetch("/platform-cle/v1/catalogue") as Promise<Catalogue>;
+  const catalogue = (await wordpressFetch("/platform-cle/v1/catalogue")) as Catalogue;
+
+  return { ...catalogue, programs: catalogue.programs.map(withAccess) };
 }
 
 async function getCatalogueItem(id: number): Promise<CatalogueDetail> {
-  return wordpressFetch(
-    `/platform-cle/v1/catalogue/${id}`
-  ) as Promise<CatalogueDetail>;
+  return withAccess(
+    (await wordpressFetch(`/platform-cle/v1/catalogue/${id}`)) as CatalogueDetail
+  );
+}
+
+/**
+ * Fills in `access` when the plugin did not send it.
+ *
+ * The app deploys on every merge and the plugin deploys on its own, so for a
+ * few minutes the app can be talking to a plugin from before plans existed.
+ * "In no plan, not sold alone" is what that plugin means, and every screen
+ * can then read `access` without asking whether it is there.
+ */
+function withAccess<T extends { access?: CatalogueProgram["access"] }>(program: T): T & {
+  access: CatalogueProgram["access"];
+} {
+  return {
+    ...program,
+    access: program.access ?? { min_rank: 0, plan: null, sold_alone: false, price: "" },
+  };
 }
 
 /** The webinars hub: upcoming sessions and on-demand webinars for this reader. */
@@ -597,6 +681,8 @@ async function updateNode(
     topics?: string[];
     /** Programmes: an image attached to it, or 0 to clear the cover. */
     cover?: number;
+    /** Programmes, administrators only: which plans open it, and its price alone. */
+    access?: { min_rank?: number; sold_alone?: boolean; price?: string };
     /** A swatch name, or "" to clear it so the item inherits again. */
     color?: Swatch | "";
     /** Quizzes. The server sanitises and re-keys these; it owns the rules. */
@@ -684,6 +770,10 @@ export {
   getCatalogue,
   getCatalogueItem,
   getMe,
+  getPlans,
+  savePlan,
+  deletePlan,
+  setPersonPlan,
   getWebinars,
   getProgramReport,
   getProgramReportCsv,

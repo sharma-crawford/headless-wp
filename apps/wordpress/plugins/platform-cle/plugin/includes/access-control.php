@@ -96,7 +96,8 @@ function pcle_can_access_post( $post_id = 0, $user_id = 0 ) {
 		return true;
 	}
 
-	return pcle_is_enrolled( $program_id, $uid );
+	// Enrolled, or on a plan that covers it (plans.php). The one question.
+	return pcle_user_has_program( $program_id, $uid );
 }
 
 /**

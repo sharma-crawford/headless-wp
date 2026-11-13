@@ -66,6 +66,7 @@ function pcle_shape_person( $user ) {
 		 * it out there would mean teaching the frontend the rules above.
 		 */
 		'editable'   => pcle_role_is_editable( $user ),
+		'plan'       => pcle_shape_user_plan( $user->ID ),
 	);
 }
 

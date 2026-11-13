@@ -92,6 +92,16 @@ async function pathsFor(): Promise<Path[]> {
     );
   }
 
+  // What the plans are and cost is a business decision: administrators only.
+  if (admin) {
+    paths.push({
+      href: "/plans",
+      label: "Plans",
+      description: "The plans people can hold, their ranks and prices, and what each opens.",
+      staff: true,
+    });
+  }
+
   /*
    * Administration stays in WordPress: enrolment of whole cohorts, accounts
    * and site settings live there and are not worth a second implementation.

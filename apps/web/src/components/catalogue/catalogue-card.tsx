@@ -60,6 +60,11 @@ export default function CatalogueCard({
               Live {live.month} {live.day}
             </span>
           )}
+          {program.access.plan && (
+            <span className="rounded-full bg-brand-800 px-2 py-0.5 text-xs font-semibold text-white">
+              {program.access.plan.name}
+            </span>
+          )}
           {program.topics.map((topic) => (
             <span
               key={topic}
@@ -84,6 +89,9 @@ export default function CatalogueCard({
           <p className="text-zinc-500">{sizeLine(program)}</p>
           {program.credits.length > 0 && (
             <p className="font-medium text-zinc-800">{creditLine(program)}</p>
+          )}
+          {program.access.sold_alone && program.access.price && (
+            <p className="text-zinc-600">{program.access.price} on its own</p>
           )}
         </div>
       </div>

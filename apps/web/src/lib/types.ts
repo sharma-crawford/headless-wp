@@ -331,6 +331,7 @@ type CatalogueProgram = {
   modules: number;
   /** ISO 8601 of the next live session, or "". */
   next_live: string;
+  access: ProgramAccess;
 };
 
 type CatalogueDetail = CatalogueProgram & {
@@ -345,6 +346,9 @@ type Catalogue = {
 };
 
 export type {
+  HeldPlan,
+  Plan,
+  ProgramAccess,
   Catalogue,
   CatalogueDetail,
   CatalogueProgram,
@@ -395,6 +399,50 @@ type Me = {
   is_admin: boolean;
   /** May create accounts — which teaching alone does not grant. */
   can_invite: boolean;
+  /** The plan they hold today, or null. */
+  plan: HeldPlan | null;
+};
+
+/* ------------------------------------------------------------------ */
+/* Plans                                                               */
+/* ------------------------------------------------------------------ */
+
+/**
+ * A plan: a ranked tier an administrator defines. It opens every programme
+ * whose minimum rank is at or below its own.
+ */
+type Plan = {
+  id: string;
+  name: string;
+  rank: number;
+  /** As shown: "$199 a year". A label, not an amount. */
+  price: string;
+  description: string;
+  features: string[];
+  /** How many published programmes it opens. */
+  programs: number;
+  /** Administrators only: how many people hold it. */
+  holders?: number;
+};
+
+/** The plan someone holds. */
+type HeldPlan = {
+  id: string;
+  name: string;
+  rank: number;
+  /** Last day, 'Y-m-d', or "" for no end. */
+  until: string;
+};
+
+/** How a programme can be had. */
+type ProgramAccess = {
+  /** The lowest plan rank that opens it; 0 = in no plan. */
+  min_rank: number;
+  /** The cheapest plan that opens it, or null. */
+  plan: { id: string; name: string; rank: number } | null;
+  sold_alone: boolean;
+  /** Its price on its own, as shown, or "". */
+  price: string;
 };
 
 /** An account, as a staff screen needs to see it. */
@@ -410,6 +458,7 @@ type Person = {
    * administrator's, and only with the capability.
    */
   editable: boolean;
+  plan: HeldPlan | null;
 };
 
 /** A role the app is allowed to grant. Administrator is never among them. */
@@ -538,6 +587,8 @@ type TreeNode = Authorship & {
   topics?: string[];
   /** Programmes only: the cover's URL, or null. */
   cover?: string | null;
+  /** Programmes only: which plans open it, and its price alone. */
+  access?: ProgramAccess;
   /** Webinar programmes only: the live session, or null when it has none. */
   live?: WebinarLive | null;
 };

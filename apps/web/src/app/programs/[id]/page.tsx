@@ -11,7 +11,7 @@ import { isAuthenticated } from "@/lib/auth";
 import { decodeEntities } from "@/lib/html";
 import { isPreview, keepPreview } from "@/lib/preview";
 import type { Program } from "@/lib/types";
-import { getProgram } from "@/lib/wordpress";
+import { WordPressApiError, getProgram } from "@/lib/wordpress";
 
 export default async function ProgramPage({
   params,
@@ -24,12 +24,26 @@ export default async function ProgramPage({
   const { id } = await params;
   const preview = isPreview(await searchParams);
 
-  let program: Program;
+  let program: Program | null = null;
+  let refused: unknown = null;
 
   try {
     program = await getProgram(Number(id), preview);
   } catch (error) {
-    return renderAccessError(error);
+    refused = error;
+  }
+
+  /*
+   * Not theirs: show them what it is and how to get it, rather than a
+   * locked door. The catalogue page says why they landed there. Outside
+   * the try, because redirect() works by throwing.
+   */
+  if (refused instanceof WordPressApiError && refused.status === 403 && !preview) {
+    redirect(`/catalogue/${Number(id)}?locked=1`);
+  }
+
+  if (!program) {
+    return renderAccessError(refused);
   }
 
   // A webinar is its one module: this screen would only be a link to it.
