@@ -118,12 +118,12 @@ function PlanCard({
       className={cn(
         "relative flex h-full flex-col rounded-2xl border bg-white p-7",
         featured
-          ? "border-brand-800 shadow-[0_12px_32px_-12px_rgb(15_23_42/0.35)] ring-1 ring-brand-800"
+          ? "border-brand-600 shadow-[0_12px_32px_-12px_rgb(15_23_42/0.35)] ring-1 ring-brand-600"
           : "border-zinc-200"
       )}
     >
       {featured && (
-        <span className="absolute -top-3 left-7 rounded-full bg-amber-400 px-3 py-0.5 text-xs font-bold text-brand-950">
+        <span className="absolute -top-3 left-7 rounded-full bg-brand-600 px-3 py-0.5 text-xs font-bold text-white">
           Most popular
         </span>
       )}

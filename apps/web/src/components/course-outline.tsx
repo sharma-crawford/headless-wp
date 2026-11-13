@@ -133,7 +133,7 @@ export default function CourseOutline({
   );
 }
 
-/** A circle: filled green and ticked when done, ringed in navy when open. */
+/** A circle: filled green and ticked when done, ringed in teal when open. */
 function Tick({ done, current }: { done: boolean; current: boolean }) {
   return (
     <span

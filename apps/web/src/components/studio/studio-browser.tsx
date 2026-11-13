@@ -76,7 +76,7 @@ export default function StudioBrowser({
               className={cn(
                 "h-8 rounded-full border px-3.5 text-sm font-medium transition",
                 filter === value
-                  ? "border-brand-800 bg-brand-800 text-white"
+                  ? "border-brand-600 bg-brand-600 text-white"
                   : "border-zinc-300 bg-white text-zinc-700 hover:border-zinc-400"
               )}
             >

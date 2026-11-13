@@ -125,7 +125,7 @@ export default async function Home() {
         )}
         style={{
           backgroundImage:
-            "radial-gradient(80% 90% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(60% 80% at 100% 100%, oklch(76.9% 0.188 70.08 / 0.16), transparent 70%)",
+            "radial-gradient(80% 90% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(60% 80% at 100% 100%, oklch(65.5% 0.121 222.8 / 0.45), transparent 70%)",
         }}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
@@ -154,7 +154,7 @@ export default async function Home() {
             !signedIn && "my-auto"
           )}
         >
-          <p className="text-xs font-semibold tracking-[0.14em] text-amber-300 uppercase">
+          <p className="text-xs font-semibold tracking-[0.14em] text-brand-300 uppercase">
             Continuing Legal Education
           </p>
           <h1 className="mt-3 max-w-3xl text-4xl leading-tight font-semibold sm:text-5xl">
@@ -170,7 +170,7 @@ export default async function Home() {
           {!signedIn && (
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Button
-                className="h-11 bg-amber-400 px-6 text-base text-brand-950 hover:bg-amber-300"
+                className="h-11 bg-brand-400 px-6 text-base text-brand-950 hover:bg-brand-300"
                 nativeButton={false}
                 render={<Link href="/catalogue" />}
               >

@@ -71,7 +71,7 @@ export default async function LoginPage({
 }
 
 /**
- * The navy half of the screen on a wide display: who this is, and what is
+ * The teal half of the screen on a wide display: who this is, and what is
  * waiting on the other side of the form. Hidden on a phone, where it would
  * only push the form below the fold.
  *
@@ -84,13 +84,13 @@ function BrandPanel() {
       className="relative hidden overflow-hidden bg-brand-900 px-12 py-14 text-white lg:flex lg:flex-col"
       style={{
         backgroundImage:
-          "radial-gradient(90% 70% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(70% 60% at 100% 100%, oklch(76.9% 0.188 70.08 / 0.18), transparent 70%)",
+          "radial-gradient(90% 70% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(70% 60% at 100% 100%, oklch(65.5% 0.121 222.8 / 0.45), transparent 70%)",
       }}
     >
       <Wordmark inverted compact={false} />
 
       <div className="my-auto max-w-md">
-        <p className="text-xs font-semibold tracking-[0.14em] text-amber-300 uppercase">
+        <p className="text-xs font-semibold tracking-[0.14em] text-brand-300 uppercase">
           Continuing Legal Education
         </p>
         <h2 className="mt-3 text-4xl leading-tight font-semibold">
@@ -118,7 +118,7 @@ function Point({ title, children }: { title: string; children: ReactNode }) {
     <li className="flex gap-3">
       <span
         aria-hidden="true"
-        className="mt-1 grid size-5 shrink-0 place-items-center rounded-full bg-amber-400 text-[11px] font-bold text-brand-950"
+        className="mt-1 grid size-5 shrink-0 place-items-center rounded-full bg-brand-400 text-[11px] font-bold text-brand-950"
       >
         ✓
       </span>

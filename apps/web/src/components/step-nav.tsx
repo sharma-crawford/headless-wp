@@ -59,7 +59,7 @@ function StepLink({
       className={cn(
         "group rounded-xl border px-5 py-4 transition",
         isNext
-          ? "border-brand-800 bg-brand-800 text-white hover:bg-brand-900 sm:text-right"
+          ? "border-brand-600 bg-brand-600 text-white hover:bg-brand-700 sm:text-right"
           : "border-zinc-200 bg-white hover:border-zinc-300"
       )}
     >

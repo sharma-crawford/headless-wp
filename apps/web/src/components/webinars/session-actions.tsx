@@ -80,7 +80,7 @@ export default function SessionActions({
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "inline-flex items-center gap-1.5 rounded-lg bg-amber-400 px-5 font-semibold text-brand-950 transition hover:bg-amber-300",
+              "inline-flex items-center gap-1.5 rounded-lg bg-brand-400 px-5 font-semibold text-brand-950 transition hover:bg-brand-300",
               large ? "h-11 text-base" : "h-10 text-sm"
             )}
           >
