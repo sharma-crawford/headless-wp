@@ -9,6 +9,8 @@ type Path = {
   description: string;
   /** Leaves the app — WordPress, in practice. */
   external?: boolean;
+  /** Offered for teaching or administering, not to every participant. */
+  staff?: boolean;
 };
 
 /**
@@ -44,30 +46,40 @@ async function pathsFor(): Promise<Path[]> {
       description:
         "The programmes you are enrolled in, and how far through them you are.",
     },
+    {
+      href: "/webinars",
+      label: "Webinars",
+      description:
+        "Live sessions coming up, with the link to join, and webinars to watch on demand.",
+    },
   ];
 
   if (author) {
     paths.push(
       {
         href: "/builder",
+        staff: true,
         label: "Build",
         description:
           "Write and organise programmes, units, modules and quizzes.",
       },
       {
         href: "/reports",
+        staff: true,
         label: "Reports",
         description:
           "Who is enrolled, what they have completed, and what is outstanding.",
       },
       {
         href: "/people",
+        staff: true,
         label: "People",
         description:
           "Who has an account and what they may do. Changing a role takes an administrator.",
       },
       {
         href: "/colours",
+        staff: true,
         label: "Colours",
         description:
           "Colour programmes, and choose the colours every badge is drawn in. The badges are an administrator's.",
@@ -87,6 +99,7 @@ async function pathsFor(): Promise<Path[]> {
       label: "Administration",
       description: "Accounts, enrolment and site settings, in WordPress.",
       external: true,
+      staff: true,
     });
   }
 

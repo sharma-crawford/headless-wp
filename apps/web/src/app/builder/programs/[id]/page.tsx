@@ -19,12 +19,13 @@ import { FormatBadge, StateBadge } from "@/components/state-badge";
 import {
   createNodeAction,
   saveCreditsAction,
+  saveLiveAction,
   setFormatAction,
   setStatusAction,
 } from "@/app/actions/authoring";
 import { isAuthenticated } from "@/lib/auth";
 import { decodeEntities } from "@/lib/html";
-import type { TreeNode } from "@/lib/types";
+import type { TreeNode, WebinarLive } from "@/lib/types";
 import { getProgramTree } from "@/lib/wordpress";
 
 export default async function BuilderProgramPage({
@@ -251,6 +252,10 @@ export default async function BuilderProgramPage({
             description. Add a quiz to it if the webinar needs one.
           </p>
         </Card>
+      ) : null}
+
+      {isWebinar ? (
+        <LiveSessionForm programmeId={tree.id} live={tree.live ?? null} />
       ) : (
       <Card className="mt-8 p-6">
         {units.length === 0 ? (
@@ -292,5 +297,101 @@ export default async function BuilderProgramPage({
         a video by its address.
       </p>
     </PageShell>
+  );
+}
+
+/**
+ * A webinar's live session: when, how long, and the link to join.
+ *
+ * Saved on the session hidden inside the webinar, so reminders, attendance
+ * and the cohort report all see it. Removing it takes the date away; the
+ * session itself is kept if anyone was already marked as attending.
+ */
+function LiveSessionForm({
+  programmeId,
+  live,
+}: {
+  programmeId: number;
+  live: WebinarLive | null;
+}) {
+  // 'Y-m-d H:i:s' -> 'Y-m-d\THH:i' for the input.
+  const startsAt = live?.starts_at ? live.starts_at.slice(0, 16).replace(" ", "T") : "";
+
+  return (
+    <Card className="mt-6 p-6">
+      <h2 className="text-lg font-semibold text-zinc-950">Live session</h2>
+      <p className="mt-1 text-sm text-zinc-500">
+        {live?.starts_at
+          ? "Participants see it under Upcoming on Webinars, and can join from 15 minutes before."
+          : "Optional. Give the webinar a date to hold it live; it moves to On demand once it has finished."}
+      </p>
+
+      {/*
+        Keyed on what is saved, so a save that changes it draws a fresh form.
+        The inputs are uncontrolled: without the key, the refresh after a save
+        would change their default values in place, which Base UI rejects.
+      */}
+      <ActionForm
+        key={`${live?.starts_at ?? ""}|${live?.duration ?? ""}|${live?.join_url ?? ""}`}
+        action={saveLiveAction}
+        className="mt-4 grid gap-4 sm:grid-cols-[auto_auto_minmax(0,1fr)] sm:items-end"
+      >
+        <input type="hidden" name="id" value={programmeId} />
+
+        <span>
+          <label htmlFor="live-starts" className="block text-xs font-medium text-zinc-600">
+            Date and time (site timezone)
+          </label>
+          <Input
+            id="live-starts"
+            type="datetime-local"
+            name="starts_at"
+            defaultValue={startsAt}
+            className="mt-1"
+          />
+        </span>
+
+        <span>
+          <label htmlFor="live-duration" className="block text-xs font-medium text-zinc-600">
+            Length (minutes)
+          </label>
+          <Input
+            id="live-duration"
+            type="number"
+            name="duration"
+            min="5"
+            max="600"
+            step="5"
+            defaultValue={live?.duration ?? 60}
+            className="mt-1 w-28"
+          />
+        </span>
+
+        <span>
+          <label htmlFor="live-join" className="block text-xs font-medium text-zinc-600">
+            Join link
+          </label>
+          <Input
+            id="live-join"
+            type="url"
+            name="join_url"
+            placeholder="https://zoom.us/j/…"
+            defaultValue={live?.join_url ?? ""}
+            className="mt-1"
+          />
+        </span>
+
+        <span className="flex flex-wrap gap-2 sm:col-span-3">
+          <Button type="submit" name="intent" value="save">
+            {live?.starts_at ? "Save session" : "Schedule session"}
+          </Button>
+          {live?.starts_at && (
+            <Button type="submit" name="intent" value="remove" variant="outline">
+              Remove session
+            </Button>
+          )}
+        </span>
+      </ActionForm>
+    </Card>
   );
 }

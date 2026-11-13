@@ -3483,6 +3483,123 @@ delete_post_meta( $unit, PCLE_COLOUR_META );
 wp_set_current_user( 0 );
 
 /* ------------------------------------------------------------------ */
+pcle_section( '# Live sessions and the webinars hub' );
+/* ------------------------------------------------------------------ */
+
+$site_time = function ( $modify ) {
+	return ( new DateTimeImmutable( 'now', wp_timezone() ) )->modify( $modify )->format( 'Y-m-d H:i:s' );
+};
+$hub_has   = function ( $data, $list, $key, $value ) {
+	return count( wp_list_filter( $data[ $list ], array( $key => $value ) ) ) > 0;
+};
+$hub       = function ( $uid ) {
+	return pcle_rest_get( $uid, '/platform-cle/v1/webinars' );
+};
+
+// A session's join link and length.
+$hub_event       = pcle_make_post( 'pcle_event', 'TEST Hub Session', array( '_pcle_unit_id' => $unit ) );
+$created_posts[] = $hub_event;
+pcle_eq( pcle_get_event_duration( $hub_event ), PCLE_EVENT_DEFAULT_DURATION, 'a session with no length is an hour' );
+
+pcle_set_event_details( $hub_event, 'http://example.com/join', 0 );
+pcle_eq( pcle_get_event_join_url( $hub_event ), '', 'a plain-http join link is refused' );
+pcle_set_event_details( $hub_event, 'javascript:alert(1)', null );
+pcle_eq( pcle_get_event_join_url( $hub_event ), '', 'so is a script' );
+pcle_set_event_details( $hub_event, 'https://zoom.example/j/123', 9999 );
+pcle_eq( pcle_get_event_join_url( $hub_event ), 'https://zoom.example/j/123', 'an https link is kept' );
+pcle_eq( pcle_get_event_duration( $hub_event ), 600, 'and a length is held to ten hours' );
+
+$registered = get_registered_meta_keys( 'post', 'pcle_event' );
+pcle_ok( ! isset( $registered[ PCLE_EVENT_JOIN_URL_META ] ), 'the join link is not on the event\'s REST meta' );
+
+$edited = pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$hub_event}", array( 'join_url' => 'https://teams.example/m/9', 'duration' => 45 ) );
+pcle_eq( $edited->get_status(), 200, 'the authoring API edits a session\'s link and length' );
+pcle_eq( $edited->get_data()['join_url'], 'https://teams.example/m/9', 'and returns the link' );
+pcle_eq( $edited->get_data()['duration'], 45, 'and the length' );
+
+// The hub: a session in the past is not upcoming; one later today is.
+update_post_meta( $hub_event, PCLE_EVENT_DATETIME_META, $site_time( '-2 days' ) );
+pcle_ok( ! $hub_has( $hub( $student )->get_data(), 'upcoming', 'id', $hub_event ), 'a past session is not upcoming' );
+
+update_post_meta( $hub_event, PCLE_EVENT_DATETIME_META, $site_time( '-20 minutes' ) );
+$running = wp_list_filter( $hub( $student )->get_data()['upcoming'], array( 'id' => $hub_event ) );
+pcle_eq( count( $running ), 1, 'a session still running stays listed' );
+$running = reset( $running );
+pcle_eq( $running['join_url'], 'https://teams.example/m/9', 'with its join link, for an enrolled reader' );
+pcle_eq( $running['program']['id'], $prog_a, 'naming its programme' );
+pcle_eq( $running['href'], "/units/{$unit}", 'and leading to its unit' );
+pcle_ok( strtotime( $running['ends_at'] ) - strtotime( $running['starts_at'] ) === 45 * MINUTE_IN_SECONDS, 'ending when its length says' );
+
+pcle_eq( $hub( 0 )->get_status(), 401, 'someone signed out gets no hub' );
+
+// A webinar's own live session, set from the programme.
+$live_prog       = pcle_make_post( 'pcle_program', 'TEST Live Webinar' );
+$created_posts[] = $live_prog;
+pcle_eq( $patch_format( $live_prog, 'webinar' )->get_status(), 200, 'a programme becomes a webinar' );
+foreach ( pcle_authoring_get_children( $live_prog, 'pcle_unit' ) as $u ) {
+	$created_posts[] = (int) $u->ID;
+	foreach ( pcle_authoring_get_children( $u->ID, 'pcle_module' ) as $m ) {
+		$created_posts[] = (int) $m->ID;
+	}
+}
+
+$set_live = function ( $live ) use ( $admin, $live_prog ) {
+	return pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$live_prog}", array( 'live' => $live ) );
+};
+
+pcle_eq( pcle_authoring_call( $admin, 'GET', "/platform-cle/v1/authoring/nodes/{$live_prog}" )->get_data()['live'], null, 'a new webinar has no live session' );
+
+$went_live = $set_live( array( 'starts_at' => $site_time( '+2 days' ), 'duration' => 90, 'join_url' => 'https://zoom.example/j/777' ) );
+pcle_eq( $went_live->get_status(), 200, 'a webinar is given a live session' );
+$live_event      = pcle_get_webinar_event_id( $live_prog );
+$created_posts[] = $live_event;
+pcle_ok( $live_event > 0, 'stored on a session inside it' );
+pcle_eq( $went_live->get_data()['live']['duration'], 90, 'and the builder reads it back' );
+pcle_eq( pcle_get_program_for_post( $live_event ), $live_prog, 'which belongs to the webinar, so reminders and attendance find it' );
+
+$set_live( array( 'join_url' => 'https://zoom.example/j/778' ) );
+pcle_ok( '' !== pcle_get_event_datetime( $live_event ), 'changing only the link leaves the date alone' );
+pcle_eq( pcle_get_event_join_url( $live_event ), 'https://zoom.example/j/778', 'and changes the link' );
+
+pcle_eq(
+	pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$prog_a}", array( 'live' => array( 'starts_at' => $site_time( '+1 day' ) ) ) )->get_status(),
+	409,
+	'a series has no live session of its own'
+);
+
+// Who sees it.
+pcle_ok( ! $hub_has( $hub( $student )->get_data(), 'upcoming', 'id', $live_event ), 'a webinar the reader is not enrolled in is not offered' );
+pcle_enroll_user( $live_prog, $student );
+$hub_data = $hub( $student )->get_data();
+pcle_ok( $hub_has( $hub_data, 'upcoming', 'id', $live_event ), 'enrolled, its session is upcoming' );
+pcle_ok( ! $hub_has( $hub_data, 'on_demand', 'id', $live_prog ), 'and the webinar is not yet on demand' );
+$live_row = wp_list_filter( $hub_data['upcoming'], array( 'id' => $live_event ) );
+pcle_eq( reset( $live_row )['href'], '/modules/' . pcle_get_webinar_module_id( $live_prog ), 'leading to the video page' );
+
+// Once held, it is a recording.
+$set_live( array( 'starts_at' => $site_time( '-3 days' ) ) );
+$hub_data = $hub( $student )->get_data();
+pcle_ok( ! $hub_has( $hub_data, 'upcoming', 'id', $live_event ), 'held, it is no longer upcoming' );
+pcle_ok( $hub_has( $hub_data, 'on_demand', 'id', $live_prog ), 'and is on demand' );
+
+// The programme's status carries the hidden session too.
+pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$live_prog}", array( 'status' => 'draft' ) );
+pcle_eq( get_post_status( $live_event ), 'draft', 'unpublishing a webinar takes its live session with it' );
+pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$live_prog}", array( 'status' => 'publish' ) );
+
+// Clearing the date: removed, unless someone was marked as attending.
+pcle_mark_attendance( $live_event, $student, $admin );
+$set_live( array( 'starts_at' => '' ) );
+pcle_ok( (bool) get_post( $live_event ), 'a session with attendance is kept when its date is cleared' );
+pcle_eq( pcle_get_event_datetime( $live_event ), '', 'only its date goes' );
+pcle_unmark_attendance( $live_event, $student );
+$set_live( array( 'starts_at' => '' ) );
+pcle_ok( ! get_post( $live_event ), 'with no attendance, the session is removed' );
+
+pcle_unenroll_user( $live_prog, $student );
+wp_set_current_user( 0 );
+
+/* ------------------------------------------------------------------ */
 /* Teardown                                                           */
 /* ------------------------------------------------------------------ */
 pcle_smoke_teardown();

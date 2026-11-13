@@ -97,18 +97,19 @@ export default async function Home() {
   const paths = signedIn ? await pathsFor() : [];
 
   /*
-   * A menu of one is not a menu.
+   * A participant's menu is not a choice worth stopping for.
    *
    * Signing in lands here, which is right for anyone with a choice to make
-   * and a toll gate for everyone else: a participant has exactly one path,
-   * and showing them a single card to click is asking them to confirm the
-   * only thing they could have wanted. They go straight there instead.
+   * and a toll gate for everyone else: a participant's paths are their
+   * training and the webinars, and showing them two cards to click is
+   * asking them to confirm the obvious. They go straight to My Training,
+   * which is the first path and links onward; the header offers the rest.
    *
    * Only for a path inside the app. Bouncing someone out to wp-admin before
    * they have seen a single screen of this one would be a different and
    * much ruder decision.
    */
-  if (paths.length === 1 && !paths[0].external) {
+  if (paths.length > 0 && !paths.some((path) => path.staff) && !paths[0].external) {
     redirect(paths[0].href);
   }
 

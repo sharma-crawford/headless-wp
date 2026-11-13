@@ -55,19 +55,26 @@ add_action( 'rest_api_init', 'pcle_register_my_training_route' );
 function pcle_rest_get_my_training( $request ) {
 	$programs = pcle_get_visible_programs();
 
-	$out = array();
-	foreach ( $programs as $program ) {
-		$out[] = array(
-			'id'       => (int) $program->ID,
-			'title'    => get_the_title( $program ),
-			'excerpt'  => pcle_rest_excerpt( $program ),
-			'progress' => pcle_rest_shape_progress( pcle_get_program_progress( $program->ID ) ),
-			'format'   => pcle_get_program_format( $program->ID ),
-			'color'    => pcle_participant_colour( $program->ID ),
-		);
-	}
+	return rest_ensure_response(
+		array( 'programs' => array_map( 'pcle_rest_shape_training_program', $programs ) )
+	);
+}
 
-	return rest_ensure_response( array( 'programs' => $out ) );
+/**
+ * A programme as a card: what My Training and the webinars hub both list.
+ *
+ * @param WP_Post $program Programme.
+ * @return array
+ */
+function pcle_rest_shape_training_program( $program ) {
+	return array(
+		'id'       => (int) $program->ID,
+		'title'    => get_the_title( $program ),
+		'excerpt'  => pcle_rest_excerpt( $program ),
+		'progress' => pcle_rest_shape_progress( pcle_get_program_progress( $program->ID ) ),
+		'format'   => pcle_get_program_format( $program->ID ),
+		'color'    => pcle_participant_colour( $program->ID ),
+	);
 }
 
 /* =========================================================================
@@ -245,18 +252,32 @@ function pcle_rest_shape_module( $module ) {
  * @return array
  */
 function pcle_rest_shape_event( $event ) {
-	$raw = pcle_get_event_datetime( $event->ID );
-	$iso = '';
+	$raw      = pcle_get_event_datetime( $event->ID );
+	$duration = pcle_get_event_duration( $event->ID );
+	$iso      = '';
+	$ends     = '';
 
 	if ( $raw ) {
 		$datetime = date_create_immutable_from_format( 'Y-m-d H:i:s', $raw, wp_timezone() );
-		$iso      = $datetime ? $datetime->format( DATE_ATOM ) : '';
+
+		if ( $datetime ) {
+			$iso  = $datetime->format( DATE_ATOM );
+			$ends = $datetime->modify( '+' . $duration . ' minutes' )->format( DATE_ATOM );
+		}
 	}
 
+	/*
+	 * The join link travels only in this shape, and this shape is only built
+	 * by routes that have already checked the reader may see the session's
+	 * programme. It is not registered on the event's REST meta.
+	 */
 	return array(
 		'id'        => (int) $event->ID,
 		'title'     => get_the_title( $event ),
 		'starts_at' => $iso,
+		'ends_at'   => $ends,
+		'duration'  => $duration,
+		'join_url'  => pcle_get_event_join_url( $event->ID ),
 		'formatted' => $raw ? pcle_format_event_datetime( $event->ID ) : '',
 	);
 }

@@ -41,17 +41,17 @@ been closed — see the findings below for what and how.
 | | Item | Blocked on |
 |---|---|---|
 | 🟡 | Confirm the host's backups run and restore | — minutes, and the deploy workflow writes to production |
-| 🟡 | SMTP delivery: nothing the platform emails is vouched for | a choice — relay through the org's Microsoft 365, or a transactional provider |
+| 🔴 | SMTP delivery: nothing the platform emails is vouched for — and self sign-up, password resets and paid plans all depend on it | a choice — relay through the org's Microsoft 365, or a transactional provider |
 | 🟡 | An administrator account's display name is the address it was created from, so it is the public byline on anything it authors | — wp-admin, data not code |
 | 🟡 | Login rate limiting / brute-force protection | — SG Security is active on the host; verify what it already covers before building |
 | 🟡 | Certificates: provider numbers, signatory, per-bar wording | **owner** — accreditation input |
-| 🟡 | Theme, webinars hub and student tiers (six phases, see below) | — phases 0, 1, 4 and 5 can start now |
+| 🟡 | Theme, webinars hub, accounts and student tiers (eight phases, see below) | — 0–2 in review; 4 and 6 can start now; 5 waits on SMTP |
 | 🟡 | Payment-driven enrollment: payment grants a plan or a programme | provider choice |
 | 🟡 | Blocks lack `block.json` (invisible in the editor inserter) | — |
 | 🟡 | No i18n catalog (`.pot`) | — |
 | 🟡 | `FROM wordpress:latest` is unpinned | — |
 | 🟡 | Progress computation is N+1; nothing cached | — no measurement yet says it costs anything at this size |
-| 🟡 | Live sessions carry a date but no video/conferencing link | — |
+| ~~🟡~~ | ~~Live sessions carry a date but no video/conferencing link~~ — closed: a session has a join link and a length, a webinar can be held live, and `/webinars` lists them (phase 2) | — |
 | 🟢 | Deleting a parent from wp-admin still orphans children | — |
 
 Closed since the audit and not listed above: the production host, backups aside;
@@ -218,17 +218,20 @@ Goal: run the first real 4-week cohort safely.
 
 ## Milestone: a professional platform, webinars and student tiers
 
-Planned 11 November 2026. Six phases, each shippable on its own, payment last.
+Planned 11 November 2026; the accounts phase was added the same day, when
+the gaps below were found. Eight phases, each shippable on its own, payment
+last.
 
-| Phase | Scope | Rough size | Blocked on |
+| Phase | Scope | Rough size | Status / blocked on |
 |---|---|---|---|
-| 0 | Theme: light, professional (SkillPath-style), top navigation, programme cards with cover image and excerpt | 3–4 days | — |
-| 1 | Course player on P4–P6 (outline sidebar, previous/next, complete and continue) and "continue where you left off" on P2 | 2–3 days | — |
-| 2 | Webinars hub at `/webinars`: upcoming live and on demand, join link on sessions, registration, `.ics`, reminders | 4–5 days | SMTP, for reminders that arrive |
+| 0 | Theme: light, professional (SkillPath-style), top navigation, programme cards with drawn covers and excerpts | 3–4 days | in review (#58) |
+| 1 | Course player on P4–P6 (outline sidebar, previous/next) and "continue where you left off" on P2 | 2–3 days | in review (#59) |
+| 2 | Webinars hub at `/webinars`: upcoming live and on demand, join link and length on sessions, `.ics`. A webinar can be held live | 4–5 days | in review; reminders already exist and need only SMTP to arrive |
 | 3 | Certificates on screen: download from a finished programme and from the account | 2 days | accreditation input, for certificates that carry credit |
-| 4 | Public catalogue and programme detail pages, readable signed out | 3–4 days | — |
-| 5 | Plans and single purchases, granted by hand, with locked pages and a Pricing page | 5–7 days | — |
-| 6 | Payment: checkout and a webhook that writes the same grant phase 5 writes by hand | ~1 week | provider choice |
+| 4 | Public catalogue and programme detail pages, readable signed out; public cover images | 3–4 days | — |
+| 5 | **Accounts:** self sign-up with email verification, "Forgot password?" in the app, choosing a plan at sign-up | 3–4 days | **SMTP** |
+| 6 | Plans and single purchases, granted by hand, with locked pages and a Pricing page | 5–7 days | — |
+| 7 | Payment: checkout and a webhook that writes the same grant phase 6 writes by hand | ~1 week | provider choice, legal pages, SMTP |
 
 **Decisions made, so they do not live only in chat:**
 
@@ -240,6 +243,16 @@ Planned 11 November 2026. Six phases, each shippable on its own, payment last.
   answer — no Free/Standard/Premium baked in.
 - **Live webinars are included in plans.** A live session takes the tier of
   the programme it belongs to.
+- **A live webinar is a webinar with a session.** Its date, length and join
+  link are stored on an ordinary Schedule Event inside the webinar's hidden
+  unit, so reminders, attendance, reports and credit treat it exactly like a
+  series' session. Once it has finished it moves to On demand.
+- **No separate registration.** Being entitled to a programme is being
+  invited to its sessions: the hourly reminder already emails every
+  enrolled participant. A headcount, if wanted, is a later addition.
+- **The join link is never public.** It is not registered on the event's
+  REST meta; it travels only in the participant routes that have already
+  checked access, and in the calendar file built from them.
 - **A programme can also be sold on its own**, alongside whatever tier it sits
   in.
 - **One gate.** `pcle_can_access_post()` stays the only place access is
@@ -256,6 +269,40 @@ Planned 11 November 2026. Six phases, each shippable on its own, payment last.
 
 This reshapes the payment milestone below: payment grants a **plan** or a
 **single programme**, rather than enrolling in one programme.
+
+### Missing from the phases, found 11 November 2026
+
+None of these is covered by a phase above. Grouped by what each blocks.
+
+**Blocks selling — needed before phase 7**
+
+| | Gap | Notes |
+|---|---|---|
+| 🔴 | **Self sign-up** | Only an administrator can create an account today. Now phase 5. |
+| 🔴 | **Password reset from the app** | The sign-in screen has no "Forgot password?". Now phase 5. |
+| 🔴 | **Email delivery (SMTP + SPF/DKIM)** | Already open above; it now gates sign-up, resets, reminders, invitations and receipts. Needs an owner and a choice of relay. |
+| 🟡 | **Subscription lifecycle** | Upgrade, downgrade, cancel, failed payment, lapsed access. Proposed: progress, attendance and certificates are kept for good; only access to content locks. To decide before phase 6. |
+| 🟡 | **Legal pages and tax** | Terms, privacy and refund policies; whether sales tax applies. Expected by a payment provider and by bars. |
+
+**Makes it look finished**
+
+| | Gap | Notes |
+|---|---|---|
+| 🟡 | Theme on the remaining screens | Phase 0 restyled sign-in, the menu, the header and My Training. Reports, People, Account, Colours and the builder still have the old look. ~2 days. |
+| 🟡 | Times in the viewer's timezone | Sessions are shown in the site's timezone. Fine for Kansas City; anyone elsewhere does the arithmetic. ~½ day. |
+| 🟢 | Search and link previews | Titles, social images and a sitemap, once the catalogue is public (phase 4). |
+
+**Engineering before real traffic**
+
+| | Gap | Notes |
+|---|---|---|
+| 🟡 | Caching | The webinars hub and the catalogue walk every visible programme per request — the N+1 above, now on more screens. Measure before launch. |
+| 🟡 | Login rate limiting, confirmed backups | Already open above. |
+| 🟡 | Builder upload tests | Three drop/paste tests fail against a local container; CI will say whether they fail there too. |
+
+**Decisions only the owners can make:** plan names, ranks and prices; the
+payment provider (Stripe recommended); the accreditation details certificates
+need.
 
 ---
 

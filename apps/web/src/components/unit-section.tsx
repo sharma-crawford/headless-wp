@@ -5,8 +5,10 @@ import { Card, CardContent } from "@pcle/ui/components/card";
 
 import { ColourDot, ColourStrip } from "@/components/colour-marks";
 import ProgressBar from "@/components/progress-bar";
+import SessionActions from "@/components/webinars/session-actions";
 import { decodeEntities } from "@/lib/html";
 import { keepPreview } from "@/lib/preview";
+import { calendarHref } from "@/lib/sessions";
 import type { Unit } from "@/lib/types";
 
 /**
@@ -114,19 +116,31 @@ export default function UnitSection({
           <div className="mt-6 rounded border border-zinc-200 bg-zinc-50 p-4">
             <h3 className="text-sm font-semibold text-zinc-700">Live sessions</h3>
 
-            <ul className="mt-2 space-y-1">
+            <ul className="mt-2 divide-y divide-zinc-200">
               {unit.events.map((event) => (
-                <li key={event.id} className="text-sm text-zinc-600">
-                  <span className="font-medium text-zinc-800">
-                    {decodeEntities(event.title)}
+                <li
+                  key={event.id}
+                  className="flex flex-col gap-3 py-3 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <span>
+                    <span className="font-medium text-zinc-800">
+                      {decodeEntities(event.title)}
+                    </span>
+                    {event.formatted && (
+                      <>
+                        {" — "}
+                        <time dateTime={event.starts_at || undefined}>
+                          {decodeEntities(event.formatted)}
+                        </time>
+                      </>
+                    )}
                   </span>
-                  {event.formatted && (
-                    <>
-                      {" — "}
-                      <time dateTime={event.starts_at || undefined}>
-                        {decodeEntities(event.formatted)}
-                      </time>
-                    </>
+
+                  {event.starts_at && (
+                    <SessionActions
+                      session={event}
+                      calendarHref={calendarHref(event.id)}
+                    />
                   )}
                 </li>
               ))}

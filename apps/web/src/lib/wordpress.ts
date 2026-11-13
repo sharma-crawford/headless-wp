@@ -22,6 +22,7 @@ import type {
   QuizResult,
   ReportCsv,
   TrainingProgram,
+  Webinars,
   TreeNode,
   UnitDetail,
 } from "@/lib/types";
@@ -259,6 +260,13 @@ async function getProgram(id: number, preview = false): Promise<Program> {
     `/platform-cle/v1/programs/${id}${preview ? "?preview=1" : ""}`,
     { auth: true }
   ) as Promise<Program>;
+}
+
+/** The webinars hub: upcoming sessions and on-demand webinars for this reader. */
+async function getWebinars(): Promise<Webinars> {
+  return wordpressFetch("/platform-cle/v1/webinars", {
+    auth: true,
+  }) as Promise<Webinars>;
 }
 
 async function getUnit(id: number, preview = false): Promise<UnitDetail> {
@@ -564,6 +572,11 @@ async function updateNode(
     credits?: Record<string, number>;
     /** Programmes. Becoming a webinar reshapes it on the server, or is refused. */
     format?: ProgramFormat;
+    /**
+     * Webinars: their live session. Each field optional; starts_at "" removes
+     * the session.
+     */
+    live?: { starts_at?: string; duration?: number; join_url?: string };
     /** A swatch name, or "" to clear it so the item inherits again. */
     color?: Swatch | "";
     /** Quizzes. The server sanitises and re-keys these; it owns the rules. */
@@ -649,6 +662,7 @@ export {
   getModule,
   setModuleCompletion,
   getMe,
+  getWebinars,
   getProgramReport,
   getProgramReportCsv,
   getParticipantProgress,

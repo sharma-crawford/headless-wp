@@ -185,7 +185,12 @@ function pcle_sync_webinar_status( $program_id ) {
 	$status = get_post_status( $program_id );
 
 	foreach ( pcle_authoring_get_children( $program_id, 'pcle_unit' ) as $unit ) {
-		$posts = array_merge( array( $unit ), pcle_authoring_get_children( $unit->ID, 'pcle_module' ) );
+		$posts = array_merge(
+			array( $unit ),
+			pcle_authoring_get_children( $unit->ID, 'pcle_module' ),
+			// Its live session (webinars.php): hidden with the unit, so it follows too.
+			pcle_authoring_get_children( $unit->ID, 'pcle_event' )
+		);
 
 		foreach ( $posts as $post ) {
 			if ( $post->post_status !== $status ) {
