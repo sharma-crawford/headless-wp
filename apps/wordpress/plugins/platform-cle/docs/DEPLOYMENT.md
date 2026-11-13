@@ -88,7 +88,7 @@ for the move to a new host, in section 3.
 - A production host: managed WordPress hosting or a VPS with **PHP 8.1+**,
   **MySQL 5.7+/MariaDB 10.4+**, and **HTTPS**.
 - A domain and DNS access.
-- The repo (`github.com/mariasaavedra/headless-wp`) — the plugin and theme live
+- The repo (`github.com/sharma-crawford/headless-wp`) — the plugin and theme live
   under `apps/wordpress/plugins/platform-cle/`.
 
 ## 1. Provision the host

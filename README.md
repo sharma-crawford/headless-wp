@@ -93,22 +93,27 @@ Production configuration lives with each host, never in the repository:
 
 | Where | What it sets |
 |-------|--------------|
-| The Vercel project behind `armory` — `platform-ui`, built from `apps/web` | `WORDPRESS_API_URL=https://platform.thepen-and-swordkc.org/wp-json` and `WORDPRESS_SITE_URL=https://platform.thepen-and-swordkc.org`. Optionally `NEXT_PUBLIC_SITE_URL`, which defaults to the `armory` host. |
+| The Vercel project behind `armory` — `platform` in the `sharma-crawford` account, built from `apps/web` | `WORDPRESS_API_URL=https://platform.thepen-and-swordkc.org/wp-json` and `WORDPRESS_SITE_URL=https://platform.thepen-and-swordkc.org`. Optionally `NEXT_PUBLIC_SITE_URL`, which defaults to the `armory` host. |
 | `wp-config.php` on the WordPress host behind `platform` | Database credentials, fresh salts, and `JWT_AUTH_SECRET_KEY`. `PCLE_DEMO_USER_PASSWORD` is left unset there, which is what keeps the demo accounts from being created. |
 
 The two halves deploy by different means, which is worth knowing before
 wondering why a change is not live:
 
-- **`armory`** builds itself. The link between this repository and the
-  `platform-ui` project lives in the Vercel dashboard — there is no
-  `vercel.json` here — and that is also where a pull request's preview
-  deployment comes from. A merge to `main` is the whole procedure.
+- **`armory`** builds itself. The `platform` project in the
+  `sharma-crawford` Vercel account is connected to
+  `sharma-crawford/headless-wp` through Vercel's GitHub app — there is no
+  `vercel.json` here, so the root directory (`apps/web`), the environment
+  variables above and the domain all live in the Vercel dashboard. A merge to
+  `main` deploys to production, and a pull request gets a preview deployment.
+  If merges stop reaching the live app, check Settings → Git in that project
+  first: the connection names the repository, and it broke once already when
+  the repository moved from `mariasaavedra` to `sharma-crawford`.
 - **`platform`** does not. SiteGround has no integration with this
   repository, so the plugin directory has to be copied there.
   [`.github/workflows/deploy-plugin.yml`](.github/workflows/deploy-plugin.yml)
-  does it — smoke suite, rsync, cache purge, health check — but only on
-  manual dispatch, and only once its SSH secrets exist. Failing that, or for
-  the first migration,
+  does it — smoke suite, rsync, cache purge, health check — on every merge
+  to `main` that touches the plugin, or by hand from the Actions tab. Failing
+  that, or for the first migration,
   [`DEPLOYMENT.md`](apps/wordpress/plugins/platform-cle/docs/DEPLOYMENT.md)
   is the runbook.
 
