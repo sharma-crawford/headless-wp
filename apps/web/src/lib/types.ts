@@ -27,6 +27,8 @@ type ModuleSummary = {
   completed: boolean;
   /** The colour it shows: its own, else the nearest ancestor's. */
   color: Swatch | null;
+  /** Only ever true in an author's preview, which shows drafts. */
+  draft?: boolean;
 };
 
 type SessionEvent = {
@@ -76,6 +78,10 @@ type Program = {
   progress: Progress;
   format: ProgramFormat;
   color: Swatch | null;
+  /** The cover's URL, or null. */
+  cover?: string | null;
+  /** Approved hours per jurisdiction. */
+  credits?: CreditHours[];
   /** A webinar's one module, once published; 0 otherwise. */
   webinar_module: number;
   units: Unit[];
@@ -346,6 +352,8 @@ type Catalogue = {
 };
 
 export type {
+  ChecklistItem,
+  Cohort,
   HeldPlan,
   Plan,
   ProgramAccess,
@@ -542,6 +550,30 @@ type AuthoringProgram = Authorship & {
   units: number;
   modules: number;
   enrollees: number;
+  /** The cover's URL, or null. */
+  cover?: string | null;
+  cohort?: Cohort;
+  checklist?: ChecklistItem[];
+};
+
+/** Who is taking a programme and how far through it they are, on average. */
+type Cohort = {
+  /** Enrolled, or on a plan that opens it. */
+  participants: number;
+  /** Average progress, 0–100. */
+  percent: number;
+};
+
+/**
+ * One line of a programme's ready-to-publish checklist. Advice, not a gate:
+ * publishing is never refused for an unticked line.
+ */
+type ChecklistItem = {
+  key: string;
+  label: string;
+  done: boolean;
+  /** The first item to open to fix it, or 0. */
+  node_id: number;
 };
 
 type CreditHours = {
@@ -589,6 +621,9 @@ type TreeNode = Authorship & {
   cover?: string | null;
   /** Programmes only: which plans open it, and its price alone. */
   access?: ProgramAccess;
+  /** The programme at the root of a tree only: its checklist and cohort. */
+  checklist?: ChecklistItem[];
+  cohort?: Cohort;
   /** Webinar programmes only: the live session, or null when it has none. */
   live?: WebinarLive | null;
 };

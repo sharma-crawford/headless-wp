@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LockIcon } from "lucide-react";
 import { notFound, redirect } from "next/navigation";
 import type { ReactElement } from "react";
 
@@ -56,23 +57,32 @@ export function renderAccessError(
 
   return (
     <PageShell code="P15">
-      <h1 className="text-2xl font-semibold text-zinc-950">
-        {forbidden?.title ?? "You are not enrolled in this programme"}
-      </h1>
+      <div className="mx-auto mt-6 max-w-lg rounded-2xl border border-zinc-200 bg-white p-8 text-center">
+        <span
+          aria-hidden="true"
+          className="mx-auto grid size-12 place-items-center rounded-full bg-brand-50 text-brand-700"
+        >
+          <LockIcon className="size-5" />
+        </span>
 
-      <p className="mt-3 text-zinc-600">
-        {forbidden?.detail ??
-          "This content is limited to enrolled participants. If you believe you should have access, contact your programme administrator."}
-      </p>
+        <h1 className="mt-4 text-2xl font-semibold text-zinc-950">
+          {forbidden?.title ?? "You are not enrolled in this programme"}
+        </h1>
 
-      <Button
-        variant="link"
-        className="mt-6 h-auto px-0"
-        nativeButton={false}
-        render={<Link href="/my-training" />}
-      >
-        Back to My Training
-      </Button>
+        <p className="mt-3 text-zinc-600">
+          {forbidden?.detail ??
+            "This content is limited to enrolled participants. If you believe you should have access, contact your programme administrator."}
+        </p>
+
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
+          <Button nativeButton={false} render={<Link href="/my-training" />}>
+            Back to My Training
+          </Button>
+          <Button variant="outline" nativeButton={false} render={<Link href="/catalogue" />}>
+            Browse the catalogue
+          </Button>
+        </div>
+      </div>
     </PageShell>
   );
 }

@@ -61,22 +61,13 @@ test.describe("The public catalogue", () => {
 
   test("an author's topics and cover are what a stranger sees", async ({ page, browser }) => {
     await signIn(page, people.instructor);
-    await page.goto(`/builder/programs/${programme.id}`);
+    // Cover and topics are on the programme's Details tab.
+    await page.goto(`/builder/programs/${programme.id}?tab=details`);
 
-    // Folded away like the credit hours; open it once, and it stays open.
-    const listing = page.locator("details", { hasText: "Catalogue:" });
-    const open = async () => {
-      if ((await listing.getAttribute("open")) === null) {
-        await page.getByText(/^Catalogue:/).click();
-      }
-    };
-
-    await open();
     await page.getByLabel("Topics").fill(topic);
     await page.getByRole("button", { name: "Save topics" }).click();
     await expect(page.getByText(new RegExp(`Catalogue: .*${topic}`))).toBeVisible();
 
-    await open();
     await page.getByLabel("Cover image").setInputFiles({
       name: "e2e-cover.png",
       mimeType: "image/png",

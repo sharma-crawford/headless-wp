@@ -75,41 +75,68 @@ export default async function ParticipantProgressPage({
         ]}
       />
 
-      <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
-        {data.participant.name}
-      </h1>
-      <p className="mt-1 text-sm text-zinc-500">{data.participant.email}</p>
+      <div className="mt-4 rounded-2xl border border-zinc-200 bg-white p-6">
+        <div className="flex flex-wrap items-center gap-4">
+          <span
+            aria-hidden="true"
+            className="grid size-14 shrink-0 place-items-center rounded-full bg-brand-100 font-serif text-xl font-semibold text-brand-800"
+          >
+            {data.participant.name
+              .split(/[\s@._-]+/)
+              .filter(Boolean)
+              .slice(0, 2)
+              .map((part) => part[0]?.toUpperCase())
+              .join("") || "·"}
+          </span>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-semibold tracking-[0.14em] text-brand-600 uppercase">
+              Participant · {programTitle}
+            </p>
+            <h1 className="mt-1 text-3xl font-semibold text-zinc-950">{data.participant.name}</h1>
+            <p className="mt-0.5 text-sm text-zinc-500">{data.participant.email}</p>
+          </div>
+          <div className="w-full sm:w-72">
+            <ProgressBar progress={data.progress} label="Programme progress" />
+          </div>
+        </div>
 
-      <div className="mt-6">
-        <ProgressBar progress={data.progress} label="Programme progress" />
+        <p className="mt-5 rounded-lg bg-brand-50 px-4 py-3 text-sm text-brand-900">
+          Participants don&apos;t mark modules themselves. Mark each one here once
+          they have finished it; the record keeps who marked it and when.
+        </p>
       </div>
 
-      <p className="mt-6 text-sm text-zinc-600">
-        Participants no longer mark modules themselves. Mark each one here once
-        they have finished it; the record keeps who marked it and when.
-      </p>
-
       {data.units.length === 0 ? (
-        <p className="mt-8 text-zinc-600">
+        <p className="mt-8 rounded-xl border border-dashed border-zinc-300 bg-white px-6 py-12 text-center text-zinc-600">
           This programme has no published units yet.
         </p>
       ) : (
         data.units.map((unit) => (
-          <Card key={unit.id} className="mt-6 p-6">
+          <Card key={unit.id} className="mt-6 p-0">
             <CardContent className="p-0">
-              <h2 className="text-lg font-semibold text-zinc-900">
+              <h2 className="border-b border-zinc-100 bg-zinc-50/70 px-6 py-3.5 text-lg font-semibold text-zinc-950">
                 {decodeEntities(unit.title)}
               </h2>
 
               {unit.modules.length === 0 ? (
-                <p className="mt-2 text-sm text-zinc-500">No modules.</p>
+                <p className="px-6 py-4 text-sm text-zinc-500">No modules.</p>
               ) : (
-                <ul className="mt-3 divide-y divide-zinc-100">
+                <ul className="divide-y divide-zinc-100">
                   {unit.modules.map((module) => (
                     <li
                       key={module.id}
-                      className="flex flex-wrap items-start gap-3 py-3"
+                      className="flex flex-wrap items-center gap-3 px-6 py-3.5"
                     >
+                      <span
+                        aria-hidden="true"
+                        className={
+                          module.completed
+                            ? "grid size-6 shrink-0 place-items-center rounded-full bg-emerald-600 text-xs font-bold text-white"
+                            : "size-6 shrink-0 rounded-full border-2 border-zinc-300"
+                        }
+                      >
+                        {module.completed ? "✓" : ""}
+                      </span>
                       <div className="min-w-0 flex-1">
                         <div className="flex flex-wrap items-center gap-2">
                           <span className="font-medium text-zinc-900">

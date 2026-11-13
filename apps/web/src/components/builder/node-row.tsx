@@ -1,6 +1,16 @@
 import Link from "next/link";
 
-import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  CircleHelpIcon,
+  ClipboardListIcon,
+  FileTextIcon,
+  LayersIcon,
+  MessagesSquareIcon,
+  RadioIcon,
+  type LucideIcon,
+} from "lucide-react";
 
 import { cn } from "@pcle/ui/lib/utils";
 import { Button } from "@pcle/ui/components/button";
@@ -80,9 +90,9 @@ function MoveButton({
       />
       <Button
         type="submit"
-        variant="outline"
+        variant="ghost"
         size="icon-sm"
-        className="text-zinc-600"
+        className="text-zinc-400 hover:text-zinc-700"
         aria-label={direction === -1 ? "Move up" : "Move down"}
       >
         {direction === -1 ? (
@@ -105,8 +115,8 @@ function MoveButton({
  */
 const TITLE_STYLES: Record<NodeType, string> = {
   pcle_program: "text-base font-semibold text-zinc-950",
-  pcle_unit: "text-base font-semibold text-zinc-900",
-  pcle_module: "text-sm font-medium text-zinc-900",
+  pcle_unit: "font-serif text-lg font-semibold text-zinc-950",
+  pcle_module: "text-[0.95rem] font-medium text-zinc-900",
   pcle_scenario: "text-sm text-zinc-600",
   pcle_quiz: "text-sm text-zinc-600",
   pcle_template: "text-sm text-zinc-600",
@@ -135,57 +145,61 @@ export default function NodeRow({
 
   const hasChildren = node.children.length > 0;
 
+  const isUnit = node.type === "pcle_unit";
+  const summary = summarise(node);
+
   // The left padding is kept on every row, coloured or not, so colouring one
   // item does not shift it sideways from the rest.
   const row = (
-    <div className="relative flex flex-wrap items-center gap-2 py-2 pl-3">
+    <div
+      className={cn(
+        "relative flex flex-wrap items-center gap-x-3 gap-y-1 py-2.5 pr-4 pl-3",
+        isUnit && "py-3.5"
+      )}
+    >
       <ColourStrip swatch={node.color ?? inherited} />
 
       <DragHandle />
 
-      <ColourMenu
-        nodeId={node.id}
-        title={title}
-        own={node.color}
-        inherited={inherited}
-        inheritedFrom={inheritedFrom}
-      />
+      <TypeIcon type={node.type} />
 
-      {/*
-        On hover only. A line under every row would double the height of the
-        tree to answer a question asked of one item at a time; the item's own
-        page says it in full.
-      */}
-      <Link
-        href={`/builder/nodes/${node.id}`}
-        title={authorshipText(node) || undefined}
-        className={cn("hover:underline", TITLE_STYLES[node.type])}
-      >
-        {title}
-      </Link>
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-2">
+          <ColourMenu
+            nodeId={node.id}
+            title={title}
+            own={node.color}
+            inherited={inherited}
+            inheritedFrom={inheritedFrom}
+          />
 
-      {isDraft && (
+          {/*
+            Who made it, on hover only: a line under every row would double
+            the height of the tree to answer a question asked of one item.
+          */}
+          <Link
+            href={`/builder/nodes/${node.id}`}
+            title={authorshipText(node) || undefined}
+            className={cn("hover:text-brand-800 hover:underline", TITLE_STYLES[node.type])}
+          >
+            {title}
+          </Link>
+        </div>
+
+        {summary && <p className="mt-0.5 text-xs text-zinc-500">{summary}</p>}
+      </div>
+
+      {isDraft ? (
         <StateBadge state="draft" />
+      ) : (
+        !isUnit && (
+          <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">
+            Published
+          </span>
+        )
       )}
 
-      {node.type === "pcle_event" && node.starts_at && (
-        <span className="text-xs text-zinc-500">{node.starts_at.slice(0, 16).replace("T", " ")}</span>
-      )}
-
-      {node.type === "pcle_scenario" && !node.has_model_answer && (
-        <span className="text-xs text-zinc-500">no model answer yet</span>
-      )}
-
-      {node.type === "pcle_quiz" && (
-        <span className="text-xs text-zinc-500">
-          {node.questions
-            ? `${node.questions} ${node.questions === 1 ? "question" : "questions"}`
-            : "no questions yet"}
-          {node.gates_completion ? " · required to complete" : ""}
-        </span>
-      )}
-
-      <span className="ml-auto flex items-center gap-1.5">
+      <span className="flex items-center gap-1">
         <MoveButton
           parentId={parentId}
           childType={node.type}
@@ -238,4 +252,73 @@ export default function NodeRow({
       )}
     </>
   );
+}
+
+/** An icon and a tint per kind, so a row says what it is before it is read. */
+const TYPE_ICONS: Record<NodeType, { icon: LucideIcon; className: string }> = {
+  pcle_program: { icon: LayersIcon, className: "bg-brand-50 text-brand-700" },
+  pcle_unit: { icon: LayersIcon, className: "bg-brand-800 text-white" },
+  pcle_module: { icon: FileTextIcon, className: "bg-brand-50 text-brand-700" },
+  pcle_scenario: { icon: MessagesSquareIcon, className: "bg-emerald-50 text-emerald-700" },
+  pcle_quiz: { icon: CircleHelpIcon, className: "bg-violet-50 text-violet-700" },
+  pcle_template: { icon: ClipboardListIcon, className: "bg-amber-50 text-amber-800" },
+  pcle_event: { icon: RadioIcon, className: "bg-red-50 text-red-700" },
+};
+
+export function TypeIcon({ type }: { type: NodeType }) {
+  const { icon: Icon, className } = TYPE_ICONS[type];
+
+  return (
+    <span
+      aria-hidden="true"
+      className={cn("grid size-8 shrink-0 place-items-center rounded-lg", className)}
+    >
+      <Icon className="size-4" />
+    </span>
+  );
+}
+
+function plural(count: number, one: string, many: string): string {
+  return `${count} ${count === 1 ? one : many}`;
+}
+
+/** One line under a row: what is in it, or what is missing from it. */
+function summarise(node: TreeNode): string {
+  const count = (type: NodeType) => node.children.filter((child) => child.type === type).length;
+
+  switch (node.type) {
+    case "pcle_unit": {
+      const parts = [plural(count("pcle_module"), "module", "modules")];
+      const sessions = count("pcle_event");
+      if (sessions) parts.push(plural(sessions, "live session", "live sessions"));
+      return parts.join(" · ");
+    }
+    case "pcle_module": {
+      const parts = [
+        count("pcle_scenario") && plural(count("pcle_scenario"), "scenario", "scenarios"),
+        count("pcle_quiz") && plural(count("pcle_quiz"), "quiz", "quizzes"),
+        count("pcle_template") && plural(count("pcle_template"), "template", "templates"),
+      ].filter(Boolean);
+      return parts.length ? `Module · ${parts.join(", ")}` : "Module";
+    }
+    case "pcle_quiz":
+      return [
+        node.questions ? plural(node.questions, "question", "questions") : "No questions yet",
+        node.gates_completion ? "required to complete" : null,
+      ]
+        .filter(Boolean)
+        .join(" · ");
+    case "pcle_event":
+      return [
+        node.starts_at ? node.starts_at.slice(0, 16).replace("T", " ") : "No date yet",
+        node.duration ? `${node.duration} min` : null,
+        node.join_url ? "join link set" : "no join link",
+      ]
+        .filter(Boolean)
+        .join(" · ");
+    case "pcle_scenario":
+      return node.has_model_answer ? "With a model answer" : "No model answer yet";
+    default:
+      return "";
+  }
 }

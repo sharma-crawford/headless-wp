@@ -7,6 +7,7 @@ import { setMyColourAction } from "@/app/actions/colours";
 import { PasswordForm, UsernameForm } from "@/components/account-forms";
 import { renderAccessError } from "@/components/access-error";
 import SwatchMenu from "@/components/colours/swatch-menu";
+import PageHeading from "@/components/page-heading";
 import PageShell from "@/components/page-shell";
 import { isAuthenticated } from "@/lib/auth";
 import { swatchLabel } from "@/lib/colours";
@@ -67,13 +68,16 @@ export default async function AccountPage() {
 
   return (
     <PageShell code="P7">
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-950">
-        Your account
-      </h1>
-      <p className="mt-2 text-zinc-600">
+      <PageHeading
+        eyebrow="Account"
+        title="Your account"
+        intro={
+          <>
         Signed in as <span className="font-medium text-zinc-900">{account.username}</span>
         {account.email && <> · {account.email}</>}
-      </p>
+          </>
+        }
+      />
 
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-200 bg-white px-5 py-4">
         <p className="text-zinc-700">

@@ -10,6 +10,7 @@ import ColourMenu from "@/components/colours/colour-menu";
 import DisplayControls from "@/components/colours/display-controls";
 import SwatchMenu from "@/components/colours/swatch-menu";
 import { NODE_LABELS } from "@/components/builder/node-labels";
+import PageHeading from "@/components/page-heading";
 import PageShell from "@/components/page-shell";
 import { FormatBadge, KindBadge, StateBadge } from "@/components/state-badge";
 import { isAuthenticated } from "@/lib/auth";
@@ -158,15 +159,11 @@ export default async function ColoursPage() {
 
   return (
     <PageShell code="P16">
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-950">
-        Colours
-      </h1>
-
-      <p className="mt-2 text-zinc-600">
-        How programmes, what is in them, and how far along people are, are
-        coloured across The Armory. Every colour comes from the same 32
-        named swatches; a choice is saved the moment it is made.
-      </p>
+      <PageHeading
+        eyebrow="Administration"
+        title="Colours"
+        intro="How programmes, what is in them, and how far along people are, are coloured across The Armory. Every colour comes from the same 32 named swatches; a choice is saved the moment it is made."
+      />
 
       <Section
         title="Programmes"

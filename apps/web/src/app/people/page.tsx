@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { Card, CardContent } from "@pcle/ui/components/card";
 
 import { renderAccessError } from "@/components/access-error";
+import PageHeading from "@/components/page-heading";
 import PageShell from "@/components/page-shell";
 import PersonPlan from "@/components/plans/person-plan";
 import RoleChooser from "@/components/role-chooser";
@@ -45,24 +46,21 @@ export default async function PeoplePage() {
 
   return (
     <PageShell code="P8" wide>
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-950">
-        People
-      </h1>
-
-      <p className="mt-2 text-zinc-600">
-        Everyone with an account on the platform. Creating accounts is done
-        while enrolling a cohort, on a programme&rsquo;s report.
-      </p>
+      <PageHeading
+        eyebrow="Administration"
+        title="People"
+        intro="Everyone with an account on the platform. Accounts are created while enrolling a cohort, on a programme's report."
+      />
 
       <Card className="mt-8 p-0">
-        <CardContent className="overflow-x-auto p-6">
+        <CardContent className="overflow-x-auto p-0">
           <table className="w-full min-w-[56rem] text-left">
-            <thead>
-              <tr className="text-xs font-semibold uppercase tracking-wide text-zinc-400">
-                <th className="pb-2 pr-4">Person</th>
-                <th className="pb-2 pr-4">Role</th>
-                <th className="pb-2 pr-4">Change</th>
-                {isAdmin && <th className="pb-2">Plan</th>}
+            <thead className="bg-zinc-50">
+              <tr className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                <th className="py-3 pr-4 pl-6">Person</th>
+                <th className="py-3 pr-4">Role</th>
+                <th className="py-3 pr-4">Change</th>
+                {isAdmin && <th className="py-3 pr-6">Plan</th>}
               </tr>
             </thead>
 
@@ -72,7 +70,7 @@ export default async function PeoplePage() {
                   key={person.id}
                   className="border-t border-zinc-100 align-top"
                 >
-                  <td className="py-3 pr-4">
+                  <td className="py-3 pr-4 pl-6">
                     <div className="font-medium text-zinc-900">
                       {person.name}
                     </div>

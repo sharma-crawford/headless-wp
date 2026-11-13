@@ -51,6 +51,7 @@ pointing at the right thing.
 | P19 | Catalogue programme | `/catalogue/:id` | Anyone, signed in or not | `app/catalogue/[id]/page.tsx` |
 | P20 | Plans | `/plans` | Administrators | `app/plans/page.tsx` |
 | P21 | Pricing | `/pricing` | Anyone, signed in or not | `app/pricing/page.tsx` |
+| P22 | Not found | any address with nothing at it | Anyone | `app/not-found.tsx` |
 
 ## Popups
 

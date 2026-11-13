@@ -61,13 +61,26 @@ type SortableRow = { id: number; label: string; content: ReactNode };
  */
 const HandleContext = createContext<ReactNode>(null);
 
+/**
+ * How a group draws its items: rows inside a card (modules, quizzes…), or
+ * each item as a card of its own (a programme's units).
+ */
+type Variant = "rows" | "cards";
+
+const ITEM_CLASS: Record<Variant, string> = {
+  rows: "relative border-t border-zinc-100 bg-white first:border-t-0",
+  cards: "relative overflow-hidden rounded-xl border border-zinc-200 bg-white",
+};
+
 function SortableItem({
   id,
   label,
+  variant,
   children,
 }: {
   id: number;
   label: string;
+  variant: Variant;
   children: ReactNode;
 }) {
   const {
@@ -102,7 +115,7 @@ function SortableItem({
       ref={setNodeRef}
       style={{ transform: CSS.Translate.toString(transform), transition }}
       className={cn(
-        "relative border-t border-zinc-100 bg-white first:border-t-0",
+        ITEM_CLASS[variant],
         isDragging && "z-10 rounded-md shadow-md ring-1 ring-zinc-200"
       )}
     >
@@ -120,10 +133,12 @@ export default function SortableGroup({
   parentId,
   childType,
   rows,
+  variant = "rows",
 }: {
   parentId: number;
   childType: NodeType;
   rows: SortableRow[];
+  variant?: Variant;
 }) {
   const serverOrder = rows.map((row) => row.id);
   const [order, setOrder] = useState(serverOrder);
@@ -216,14 +231,14 @@ export default function SortableGroup({
   }
 
   const list = (
-    <ul aria-busy={saving}>
+    <ul aria-busy={saving} className={variant === "cards" ? "space-y-5" : undefined}>
       {order.map((id) =>
         rows.length > 1 ? (
-          <SortableItem key={id} id={id} label={labels.get(id) ?? ""}>
+          <SortableItem key={id} id={id} label={labels.get(id) ?? ""} variant={variant}>
             {byId.get(id)}
           </SortableItem>
         ) : (
-          <li key={id} className="border-t border-zinc-100 first:border-t-0">
+          <li key={id} className={ITEM_CLASS[variant]}>
             {/*
               Explicitly no handle. Without this the grip would find the
               nearest item above it — this row's parent — and drag that.
@@ -241,6 +256,12 @@ export default function SortableGroup({
     <>
       {rows.length > 1 ? (
         <DndContext
+          /*
+            A stable id, so the server and the browser name the drag
+            instructions the same: without it each counts its own contexts,
+            and the HTML and the hydrated page disagree.
+          */
+          id={`reorder-${parentId}-${childType}`}
           sensors={sensors}
           collisionDetection={closestCenter}
           modifiers={[restrictToVerticalAxis, restrictToParentElement]}

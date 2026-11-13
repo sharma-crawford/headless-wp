@@ -3823,6 +3823,59 @@ unset( $GLOBALS['pcle_plans_backup'] );
 wp_set_current_user( 0 );
 
 /* ------------------------------------------------------------------ */
+pcle_section( '# Builder at a glance' );
+/* ------------------------------------------------------------------ */
+/*
+ * The checklist is advice and the cohort a summary; what matters is that
+ * both describe the programme truthfully, and that they reach the builder.
+ */
+
+$checklist = function ( $program ) {
+	return array_column( pcle_program_checklist( $program ), null, 'key' );
+};
+
+$glance_prog     = pcle_make_post( 'pcle_program', 'TEST Glance Programme' );
+$created_posts[] = $glance_prog;
+$items           = $checklist( $glance_prog );
+pcle_eq( array_keys( $items ), array( 'summary', 'content', 'credits', 'quizzes', 'drafts', 'cover' ), 'the checklist has its six lines, in order' );
+pcle_ok( ! $items['summary']['done'], 'an empty programme has no summary' );
+pcle_ok( ! $items['content']['done'], 'nor any module' );
+
+$glance_unit     = pcle_make_post( 'pcle_unit', 'TEST Glance Unit', array( '_pcle_program_id' => $glance_prog ) );
+$glance_module   = pcle_make_post( 'pcle_module', 'TEST Glance Module', array( '_pcle_unit_id' => $glance_unit ) );
+$glance_quiz     = pcle_make_post( 'pcle_quiz', 'TEST Glance Quiz', array( '_pcle_module_id' => $glance_module ) );
+$created_posts[] = $glance_unit;
+$created_posts[] = $glance_module;
+$created_posts[] = $glance_quiz;
+wp_update_post( array( 'ID' => $glance_module, 'post_status' => 'draft' ) );
+wp_update_post( array( 'ID' => $glance_prog, 'post_excerpt' => 'A programme to test the checklist.' ) );
+
+$items = $checklist( $glance_prog );
+pcle_ok( $items['summary']['done'], 'a summary ticks its line' );
+pcle_ok( $items['content']['done'], 'so does a module, even a draft one' );
+pcle_ok( ! $items['quizzes']['done'], 'a quiz with no questions is flagged' );
+pcle_eq( $items['quizzes']['node_id'], $glance_quiz, 'and named, so the builder can link to it' );
+pcle_ok( ! $items['drafts']['done'], 'a draft inside is flagged' );
+pcle_eq( $items['drafts']['node_id'], $glance_module, 'and named too' );
+
+$glance_tree = pcle_authoring_call( $admin, 'GET', "/platform-cle/v1/authoring/programs/{$glance_prog}/tree" )->get_data();
+pcle_eq( count( $glance_tree['checklist'] ), 6, 'the builder\'s tree carries the checklist' );
+pcle_eq( $glance_tree['cohort'], array( 'participants' => 0, 'percent' => 0 ), 'and an empty cohort' );
+
+$listed = wp_list_filter( pcle_authoring_call( $admin, 'GET', '/platform-cle/v1/authoring/programs' )->get_data()['programs'], array( 'id' => $glance_prog ) );
+pcle_ok( isset( reset( $listed )['checklist'], reset( $listed )['cohort'] ), 'so does the Build list' );
+
+wp_update_post( array( 'ID' => $glance_module, 'post_status' => 'publish' ) );
+pcle_enroll_user( $glance_prog, $student );
+pcle_mark_module_complete( $glance_module, $student, $admin );
+$cohort = pcle_program_cohort( $glance_prog );
+pcle_eq( $cohort['participants'], 1, 'an enrolled participant is in the cohort' );
+pcle_eq( $cohort['percent'], 100, 'and their progress is its average' );
+pcle_unmark_module_complete( $glance_module, $student );
+pcle_unenroll_user( $glance_prog, $student );
+wp_set_current_user( 0 );
+
+/* ------------------------------------------------------------------ */
 /* Teardown                                                           */
 /* ------------------------------------------------------------------ */
 pcle_smoke_teardown();

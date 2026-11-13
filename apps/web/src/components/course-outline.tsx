@@ -79,6 +79,11 @@ export default function CourseOutline({
                         <Tick done={module.completed} current={here} />
                         <span>
                           {decodeEntities(module.title)}
+                          {module.draft && (
+                            <span className="ml-1.5 rounded-full bg-amber-100 px-1.5 py-px text-[10px] font-semibold text-amber-900">
+                              Draft
+                            </span>
+                          )}
                           <span className="sr-only">
                             {module.completed ? " (completed)" : " (not completed)"}
                           </span>
