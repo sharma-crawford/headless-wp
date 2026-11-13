@@ -5,11 +5,15 @@ import { redirect } from "next/navigation";
 import { renderAccessError } from "@/components/access-error";
 import Breadcrumbs from "@/components/breadcrumbs";
 import CompleteToggle from "@/components/complete-toggle";
+import CourseOutline from "@/components/course-outline";
+import CoursePlayer from "@/components/course-player";
+import StepNav from "@/components/step-nav";
 import PageShell from "@/components/page-shell";
 import PreviewBanner from "@/components/preview-banner";
 import WpContent from "@/components/wp-content";
 import { StateBadge } from "@/components/state-badge";
 import { isAuthenticated } from "@/lib/auth";
+import { neighbours, outlineFor } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
 import { decodeEntities } from "@/lib/html";
 import type { ModuleDetail, ModuleResource, QuizSummary } from "@/lib/types";
@@ -125,78 +129,122 @@ export default async function ModulePage({
     return renderAccessError(error);
   }
 
+  const program = await outlineFor(courseModule.program?.id, preview);
+  const { previous, next } = program
+    ? neighbours(program, courseModule.id)
+    : { previous: null, next: null };
+
   return (
-    <PageShell code="P4">
+    <PageShell code="P4" wide>
       {preview && <PreviewBanner programmeId={courseModule.program?.id} />}
 
-      <Breadcrumbs
-        trail={[
-          { label: "My Training", href: "/my-training" },
-          // A webinar's programme and unit screens only lead back here.
-          ...(courseModule.format === "webinar"
-            ? []
-            : courseModule.program
-            ? [
-                {
-                  label: courseModule.program.title,
-                  href: keepPreview(
-                    `/programs/${courseModule.program.id}`,
-                    preview
-                  ),
-                },
-              ]
-            : []),
-          ...(courseModule.unit && courseModule.format !== "webinar"
-            ? [
-                {
-                  label: courseModule.unit.title,
-                  href: keepPreview(`/units/${courseModule.unit.id}`, preview),
-                },
-              ]
-            : []),
-          { label: courseModule.title },
-        ]}
-      />
+      <CoursePlayer
+        outline={
+          program && (
+            <CourseOutline
+              program={program}
+              current={{ module: courseModule.id }}
+              quizzes={courseModule.quizzes}
+              preview={preview}
+            />
+          )
+        }
+      >
+        <Breadcrumbs
+          trail={[
+            { label: "My Training", href: "/my-training" },
+            // A webinar's programme and unit screens only lead back here.
+            ...(courseModule.format === "webinar"
+              ? []
+              : courseModule.program
+              ? [
+                  {
+                    label: courseModule.program.title,
+                    href: keepPreview(
+                      `/programs/${courseModule.program.id}`,
+                      preview
+                    ),
+                  },
+                ]
+              : []),
+            ...(courseModule.unit && courseModule.format !== "webinar"
+              ? [
+                  {
+                    label: courseModule.unit.title,
+                    href: keepPreview(`/units/${courseModule.unit.id}`, preview),
+                  },
+                ]
+              : []),
+            { label: courseModule.title },
+          ]}
+        />
 
-      <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
-        {decodeEntities(courseModule.title)}
-      </h1>
-
-      <div className="mt-6">
-        {courseModule.can_mark ? (
-          <CompleteToggle
-            moduleId={courseModule.id}
-            completed={courseModule.completed}
-          />
-        ) : courseModule.completed ? (
-          <StateBadge state="complete">✓ Completed</StateBadge>
-        ) : (
-          /*
-           * Said, not left blank: without it a participant looks for the
-           * button they used to have and concludes something is broken.
-           */
-          <p className="text-sm text-zinc-500">
-            Your instructor marks this module complete once you have finished
-            it.
+        {program && courseModule.unit && (
+          <p className="mt-5 text-xs font-semibold tracking-[0.14em] text-brand-600 uppercase">
+            {decodeEntities(courseModule.unit.title)}
           </p>
         )}
-      </div>
 
-      <WpContent html={courseModule.content} className="mt-8" />
+        <h1 className="mt-1.5 text-3xl font-semibold text-zinc-950 sm:text-4xl">
+          {decodeEntities(courseModule.title)}
+        </h1>
 
-      <ResourceList
-        title="Practice scenarios"
-        description="Work through these before the live session."
-        resources={courseModule.scenarios}
-      />
+        <div className="mt-6">
+          {courseModule.can_mark ? (
+            <CompleteToggle
+              moduleId={courseModule.id}
+              completed={courseModule.completed}
+            />
+          ) : courseModule.completed ? (
+            <StateBadge state="complete">✓ Completed</StateBadge>
+          ) : (
+            /*
+             * Said, not left blank: without it a participant looks for the
+             * button they used to have and concludes something is broken.
+             */
+            <p className="text-sm text-zinc-500">
+              Your instructor marks this module complete once you have finished
+              it.
+            </p>
+          )}
+        </div>
 
-      <QuizList quizzes={courseModule.quizzes} preview={preview} />
+        <WpContent html={courseModule.content} className="mt-8" />
 
-      <ResourceList
-        title="Templates"
-        description="Starting points you can adapt for a real filing."
-        resources={courseModule.templates}
-      />
+        <ResourceList
+          title="Practice scenarios"
+          description="Work through these before the live session."
+          resources={courseModule.scenarios}
+        />
+
+        <QuizList quizzes={courseModule.quizzes} preview={preview} />
+
+        <ResourceList
+          title="Templates"
+          description="Starting points you can adapt for a real filing."
+          resources={courseModule.templates}
+        />
+
+        {program && (
+          <StepNav
+            previous={
+              previous && {
+                href: `/modules/${previous.module.id}`,
+                title: previous.module.title,
+              }
+            }
+            next={
+              next
+                ? { href: `/modules/${next.module.id}`, title: next.module.title }
+                : {
+                    href: `/programs/${program.id}`,
+                    title: "Back to the programme overview",
+                  }
+            }
+            preview={preview}
+          />
+        )}
+      </CoursePlayer>
     </PageShell>
   );
 }
