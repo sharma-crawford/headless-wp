@@ -44,6 +44,7 @@ require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/health.php';
 require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/credits.php';
 require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/formats.php';
 require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/webinars.php';
+require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/catalogue.php';
 require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/colours.php';
 require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/attendance.php';
 require_once PLATFORM_CLE_PLUGIN_DIR . 'includes/quizzes.php';

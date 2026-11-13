@@ -78,17 +78,43 @@ export default function ProgrammeCard({ program }: { program: TrainingProgram })
 }
 
 /**
- * The drawn cover: the programme's colour (navy when it has none) under a
- * soft highlight and a few faint rings, with a mark for what kind of
- * programme it is.
+ * A programme's cover: its uploaded image when it has one, otherwise drawn —
+ * the programme's colour (navy when it has none) under a soft highlight and
+ * a few faint rings. Either way with a mark for what kind of programme it is.
  */
-function Cover({ colour, webinar }: { colour?: string; webinar: boolean }) {
+export function Cover({
+  colour,
+  webinar,
+  image = null,
+  className = "h-28",
+}: {
+  colour?: string;
+  webinar: boolean;
+  image?: string | null;
+  className?: string;
+}) {
   const base = colour ?? "var(--color-brand-800)";
+
+  if (image) {
+    return (
+      <div aria-hidden="true" className={`relative overflow-hidden bg-zinc-100 ${className}`}>
+        {/*
+          A plain <img>: covers come from WordPress, whose host differs per
+          environment, and next/image would need each one allow-listed.
+        */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={image} alt="" className="absolute inset-0 size-full object-cover" />
+        <span className="absolute bottom-3 left-4 grid size-10 place-items-center rounded-lg bg-white/90 text-zinc-900 shadow-sm">
+          {webinar ? <PlayIcon /> : <BookIcon />}
+        </span>
+      </div>
+    );
+  }
 
   return (
     <div
       aria-hidden="true"
-      className="relative h-28 overflow-hidden"
+      className={`relative overflow-hidden ${className}`}
       style={{
         backgroundColor: base,
         backgroundImage: `radial-gradient(120% 140% at 0% 0%, rgb(255 255 255 / 0.28), transparent 55%), linear-gradient(135deg, transparent 40%, rgb(0 0 0 / 0.22))`,

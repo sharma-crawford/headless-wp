@@ -47,6 +47,8 @@ pointing at the right thing.
 | P15 | Not allowed | any of the above, when WordPress refuses access | Anyone without access | `components/access-error.tsx` |
 | P16 | Colours | `/colours` | Authors (the defaults and display take an administrator) | `app/colours/page.tsx` |
 | P17 | Webinars | `/webinars` | Everyone: upcoming live sessions and on-demand webinars | `app/webinars/page.tsx` |
+| P18 | Catalogue | `/catalogue` | Anyone, signed in or not | `app/catalogue/page.tsx` |
+| P19 | Catalogue programme | `/catalogue/:id` | Anyone, signed in or not | `app/catalogue/[id]/page.tsx` |
 
 ## Popups
 

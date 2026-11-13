@@ -103,8 +103,20 @@ quizzes and marking, the quiz completion gate, reporting and the authoring API.
 They boot WordPress, create isolated fixtures, assert, and clean up.
 
 ```bash
-docker compose exec wordpress php /var/www/html/wp-content/plugins/platform-cle/tests/smoke-test.php
+docker compose exec -u www-data wordpress php /var/www/html/wp-content/plugins/platform-cle/tests/smoke-test.php
 echo "exit=$?"   # 0 = all passed, 1 = a test failed
+```
+
+**As `www-data`, not root.** The suite uploads files, and the first upload of
+a month creates that month's folder (`uploads/2026/11`,
+`uploads/pcle-protected/2026/11`). Run as root, the folder is root's, and
+WordPress — which runs as `www-data` — can no longer write into it: every
+upload through the app fails with *could not be moved* for the rest of the
+month, which looks exactly like a broken builder. To recover a container
+that already has one:
+
+```bash
+docker compose exec wordpress chown -R www-data:www-data wp-content/uploads
 ```
 
 **These run in CI on every push and pull request** (`.github/workflows/ci.yml`),

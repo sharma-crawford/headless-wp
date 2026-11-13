@@ -242,7 +242,13 @@ function pcle_handle_protected_download() {
 	$parent  = (int) $attachment->post_parent;
 	$allowed = false;
 
-	if ( $parent && in_array( get_post_type( $parent ), pcle_protected_post_types(), true ) ) {
+	/*
+	 * The one public exception: a published programme's cover is shown in
+	 * the catalogue to people who have not signed in (catalogue.php).
+	 */
+	if ( pcle_is_public_cover( $attachment_id ) ) {
+		$allowed = true;
+	} elseif ( $parent && in_array( get_post_type( $parent ), pcle_protected_post_types(), true ) ) {
 		$allowed = pcle_can_access_post( $parent );
 	} else {
 		// Not attached to CLE content: only staff may fetch it.

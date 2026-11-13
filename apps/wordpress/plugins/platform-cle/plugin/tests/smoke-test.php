@@ -3600,6 +3600,113 @@ pcle_unenroll_user( $live_prog, $student );
 wp_set_current_user( 0 );
 
 /* ------------------------------------------------------------------ */
+pcle_section( '# The public catalogue' );
+/* ------------------------------------------------------------------ */
+/*
+ * The one place the curriculum is readable signed out. What matters most is
+ * what it does NOT say: no body, no model answer, no join link, no draft.
+ */
+
+$catalogue = function ( $route = '/platform-cle/v1/catalogue' ) {
+	return pcle_rest_get( 0, $route );
+};
+
+$listing = $catalogue();
+pcle_eq( $listing->get_status(), 200, 'the catalogue answers someone signed out' );
+$row = wp_list_filter( $listing->get_data()['programs'], array( 'id' => $prog_a ) );
+pcle_eq( count( $row ), 1, 'listing a published programme' );
+$row = reset( $row );
+pcle_eq(
+	array_keys( $row ),
+	array( 'id', 'title', 'excerpt', 'format', 'color', 'cover', 'topics', 'credits', 'units', 'modules', 'next_live' ),
+	'with exactly the fields chosen for it, and nothing else'
+);
+
+$cat_draft       = pcle_make_post( 'pcle_program', 'TEST Catalogue Draft' );
+$created_posts[] = $cat_draft;
+wp_update_post( array( 'ID' => $cat_draft, 'post_status' => 'draft' ) );
+pcle_ok( ! wp_list_filter( $catalogue()->get_data()['programs'], array( 'id' => $cat_draft ) ), 'a draft programme is not listed' );
+pcle_eq( $catalogue( "/platform-cle/v1/catalogue/{$cat_draft}" )->get_status(), 404, 'nor found by its id' );
+pcle_eq( $catalogue( "/platform-cle/v1/catalogue/{$module}" )->get_status(), 404, 'and a module is not a programme' );
+
+$detail = $catalogue( "/platform-cle/v1/catalogue/{$prog_a}" );
+pcle_eq( $detail->get_status(), 200, 'one programme answers someone signed out' );
+$outline = $detail->get_data()['outline'];
+pcle_eq( $outline[0]['title'], get_the_title( $unit ), 'its outline names its units' );
+pcle_ok( in_array( get_the_title( $module ), $outline[0]['modules'], true ), 'and their modules' );
+
+$serialised = wp_json_encode( $listing->get_data() ) . wp_json_encode( $detail->get_data() );
+pcle_ok( false === strpos( $serialised, 'PCLE_SECRET_ANSWER' ), 'no model answer reaches the catalogue' );
+pcle_ok( false === strpos( $serialised, 'teams.example' ), 'nor any session\'s join link' );
+pcle_ok( false === strpos( $serialised, '"content"' ), 'nor any body' );
+
+// The next live session: a date, never a link.
+update_post_meta( $hub_event, PCLE_EVENT_DATETIME_META, $site_time( '+4 days' ) );
+$next = $catalogue( "/platform-cle/v1/catalogue/{$prog_a}" )->get_data()['next_live'];
+pcle_ok( '' !== $next && strtotime( $next ) > time(), 'the next live session\'s date is shown' );
+
+// Topics, written through the builder.
+pcle_eq(
+	pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$prog_a}", array( 'topics' => 'Detention, Asylum, , Asylum' ) )->get_status(),
+	200,
+	'an author sets a programme\'s topics'
+);
+pcle_eq( pcle_get_program_topics( $prog_a ), array( 'Asylum', 'Detention' ), 'blank and repeated names dropped, in order' );
+pcle_ok( in_array( 'Detention', $catalogue()->get_data()['topics'], true ), 'and the catalogue lists the topic to filter by' );
+
+// Covers: an image uploaded to the programme, behind protected delivery.
+$png = base64_decode( 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' ); // phpcs:ignore
+$make_cover = function ( $parent ) use ( $png, $admin ) {
+	// As an author, the way the builder uploads: routing checks who may edit.
+	wp_set_current_user( $admin );
+	pcle_protected_upload_override( $parent );
+	$bits = wp_upload_bits( 'pcle-test-cover.png', null, $png );
+	pcle_protected_upload_override( 0 );
+	$GLOBALS['created_files'][] = $bits['file'];
+
+	$id = wp_insert_attachment(
+		array(
+			'post_mime_type' => 'image/png',
+			'post_title'     => 'TEST Cover',
+			'post_status'    => 'inherit',
+		),
+		$bits['file'],
+		$parent
+	);
+	$GLOBALS['created_posts'][] = (int) $id;
+
+	return (int) $id;
+};
+
+$cover = $make_cover( $prog_a );
+pcle_ok( pcle_is_protected_attachment( $cover ), 'an image uploaded to a programme is protected' );
+pcle_ok( ! pcle_is_public_cover( $cover ), 'and not public while it is not the cover' );
+
+$elsewhere = $make_cover( $prog_b );
+pcle_eq(
+	pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$prog_a}", array( 'cover' => $elsewhere ) )->get_status(),
+	400,
+	'another programme\'s image cannot be made this one\'s cover'
+);
+pcle_ok( ! pcle_is_public_cover( $elsewhere ), 'so it stays private' );
+
+$covered = pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$prog_a}", array( 'cover' => $cover ) );
+pcle_eq( $covered->get_status(), 200, 'an author sets a programme\'s cover' );
+pcle_ok( is_string( $covered->get_data()['cover'] ), 'the builder reads it back' );
+pcle_ok( pcle_is_public_cover( $cover ), 'a published programme\'s cover is public' );
+pcle_ok( is_string( reset( wp_list_filter( $catalogue()->get_data()['programs'], array( 'id' => $prog_a ) ) )['cover'] ), 'and the catalogue gives its address' );
+
+wp_update_post( array( 'ID' => $prog_a, 'post_status' => 'draft' ) );
+pcle_ok( ! pcle_is_public_cover( $cover ), 'unpublishing the programme takes its cover back' );
+wp_update_post( array( 'ID' => $prog_a, 'post_status' => 'publish' ) );
+
+pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$prog_a}", array( 'cover' => 0 ) );
+pcle_ok( ! pcle_is_public_cover( $cover ), 'and clearing the cover makes the image private again' );
+
+pcle_set_program_topics( $prog_a, array() );
+wp_set_current_user( 0 );
+
+/* ------------------------------------------------------------------ */
 /* Teardown                                                           */
 /* ------------------------------------------------------------------ */
 pcle_smoke_teardown();

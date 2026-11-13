@@ -18,8 +18,10 @@ import PageShell from "@/components/page-shell";
 import { FormatBadge, StateBadge } from "@/components/state-badge";
 import {
   createNodeAction,
+  saveCoverAction,
   saveCreditsAction,
   saveLiveAction,
+  saveTopicsAction,
   setFormatAction,
   setStatusAction,
 } from "@/app/actions/authoring";
@@ -188,6 +190,13 @@ export default async function BuilderProgramPage({
           </span>
         </ActionForm>
       </details>
+
+      <CatalogueListing
+        programmeId={tree.id}
+        cover={tree.cover ?? null}
+        topics={tree.topics ?? []}
+        isDraft={isDraft}
+      />
 
       {/*
         Two submit buttons rather than a select and a save: the choice is the
@@ -393,5 +402,105 @@ function LiveSessionForm({
         </span>
       </ActionForm>
     </Card>
+  );
+}
+
+/**
+ * How the programme appears in the public catalogue: its cover and topics.
+ *
+ * Folded away like the credit hours, because it is set once and rarely
+ * revisited. The summary line says what is set without opening it.
+ */
+function CatalogueListing({
+  programmeId,
+  cover,
+  topics,
+  isDraft,
+}: {
+  programmeId: number;
+  cover: string | null;
+  topics: string[];
+  isDraft: boolean;
+}) {
+  return (
+    <details className="mt-2 text-sm">
+      <summary className="cursor-pointer text-zinc-500 hover:text-zinc-900">
+        Catalogue: {cover ? "cover image" : "no cover"} ·{" "}
+        {topics.length > 0 ? topics.join(", ") : "no topics"}
+        {isDraft && " · not listed while a draft"}
+      </summary>
+
+      <div className="mt-3 grid gap-6 rounded-lg border border-zinc-200 bg-white p-4 sm:grid-cols-[12rem_minmax(0,1fr)]">
+        <div>
+          <div className="aspect-[16/10] overflow-hidden rounded-md border border-zinc-200 bg-zinc-100">
+            {cover ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={cover} alt="The programme's cover" className="size-full object-cover" />
+            ) : (
+              <span className="grid size-full place-items-center px-3 text-center text-xs text-zinc-500">
+                Drawn in the programme&apos;s colour until an image is chosen
+              </span>
+            )}
+          </div>
+        </div>
+
+        <div className="space-y-5">
+          <ActionForm action={saveCoverAction} className="flex flex-wrap items-end gap-2">
+            <input type="hidden" name="id" value={programmeId} />
+            <span className="w-full">
+              <label htmlFor="cover-file" className="block text-xs font-medium text-zinc-600">
+                Cover image
+              </label>
+              <input
+                id="cover-file"
+                type="file"
+                name="cover"
+                accept="image/jpeg,image/png,image/webp"
+                className="mt-1 block w-full text-sm text-zinc-700 file:mr-3 file:rounded-md file:border-0 file:bg-zinc-100 file:px-3 file:py-1.5 file:text-sm file:font-medium file:text-zinc-800 hover:file:bg-zinc-200"
+              />
+            </span>
+            <Button type="submit" name="intent" value="upload" size="sm">
+              {cover ? "Replace cover" : "Upload cover"}
+            </Button>
+            {cover && (
+              <Button type="submit" name="intent" value="remove" size="sm" variant="outline">
+                Remove
+              </Button>
+            )}
+            <span className="w-full text-xs text-zinc-500">
+              Landscape, at least 1200 px wide. Shown to anyone, signed in or
+              not, once the programme is published.
+            </span>
+          </ActionForm>
+
+          {/* Keyed on the saved topics, so a save draws a fresh field. */}
+          <ActionForm
+            key={topics.join("|")}
+            action={saveTopicsAction}
+            className="flex flex-wrap items-end gap-2"
+          >
+            <input type="hidden" name="id" value={programmeId} />
+            <span className="min-w-0 flex-1">
+              <label htmlFor="topics" className="block text-xs font-medium text-zinc-600">
+                Topics
+              </label>
+              <Input
+                id="topics"
+                name="topics"
+                defaultValue={topics.join(", ")}
+                placeholder="Asylum, Detention, Appeals"
+                className="mt-1"
+              />
+            </span>
+            <Button type="submit" size="sm">
+              Save topics
+            </Button>
+            <span className="w-full text-xs text-zinc-500">
+              Separated by commas. Readers filter the catalogue by these.
+            </span>
+          </ActionForm>
+        </div>
+      </div>
+    </details>
   );
 }
