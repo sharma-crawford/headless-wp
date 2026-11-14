@@ -49,7 +49,7 @@ export default function NavLink({
         "relative h-16 rounded-none px-3 text-[0.95rem] font-medium text-zinc-600 hover:bg-transparent hover:text-brand-800",
         /* An underline on the header's bottom edge, the way a tab marks itself. */
         "after:absolute after:inset-x-3 after:bottom-0 after:h-0.5 after:rounded-full after:bg-transparent",
-        current && "text-brand-800 after:bg-amber-400"
+        current && "text-brand-800 after:bg-brand-500"
       )}
       aria-current={current ? "page" : undefined}
       nativeButton={false}

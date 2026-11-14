@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Figtree, Geist_Mono, Jost } from "next/font/google";
 
 import { TooltipProvider } from "@pcle/ui/components/tooltip";
 
@@ -10,17 +10,17 @@ import { getColourSettings } from "@/lib/wordpress";
 import "./globals.css";
 
 /*
- * A serif for headings and a humanist sans for everything else: the pairing
- * reads as an institution rather than a dashboard, which is the point for
- * continuing legal education. Mono stays Geist — it only draws screen codes.
+ * The Pen & Sword's own pairing, so the Armory reads as part of the same
+ * organisation: Jost, a geometric sans, for headings, and Figtree for
+ * everything else. Mono stays Geist — it only draws screen codes.
  */
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
 });
 
@@ -58,7 +58,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${sourceSans.variable} ${sourceSerif.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${figtree.variable} ${jost.variable} ${geistMono.variable} h-full antialiased`}
       data-colour-mark={colours.mark}
     >
       <body className="min-h-full flex flex-col">

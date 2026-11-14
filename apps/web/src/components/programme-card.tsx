@@ -79,7 +79,7 @@ export default function ProgrammeCard({ program }: { program: TrainingProgram })
 
 /**
  * A programme's cover: its uploaded image when it has one, otherwise drawn —
- * the programme's colour (navy when it has none) under a soft highlight and
+ * the programme's colour (the brand teal when it has none) under a soft highlight and
  * a few faint rings. Either way with a mark for what kind of programme it is.
  */
 export function Cover({

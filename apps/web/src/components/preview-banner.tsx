@@ -19,7 +19,7 @@ export default function PreviewBanner({
       role="status"
       className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg bg-brand-900 px-4 py-2.5 text-sm text-brand-100"
     >
-      <EyeIcon aria-hidden="true" className="size-4 text-amber-300" />
+      <EyeIcon aria-hidden="true" className="size-4 text-brand-300" />
       <span>
         <span className="font-semibold text-white">Previewing as a participant.</span>{" "}
         Your own progress doesn&apos;t count here, quiz gates are closed, and
@@ -28,7 +28,7 @@ export default function PreviewBanner({
 
       <Link
         href={programmeId ? `/builder/programs/${programmeId}` : "/builder"}
-        className="ml-auto font-semibold text-amber-300 hover:text-amber-200"
+        className="ml-auto font-semibold text-brand-300 hover:text-brand-200"
       >
         Leave preview →
       </Link>

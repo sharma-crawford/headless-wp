@@ -172,7 +172,7 @@ export function Wordmark({
         aria-hidden="true"
         className={cn(
           "grid size-8 place-items-center rounded-md font-serif text-sm font-semibold",
-          inverted ? "bg-white text-brand-900" : "bg-brand-800 text-white"
+          inverted ? "bg-white text-brand-900" : "bg-brand-600 text-white"
         )}
       >
         A
@@ -183,7 +183,7 @@ export function Wordmark({
           compact && "hidden sm:inline"
         )}
       >
-        The <span className={inverted ? "text-amber-300" : "text-brand-600"}>Armory</span>
+        The <span className={inverted ? "text-brand-300" : "text-brand-600"}>Armory</span>
       </span>
     </Link>
   );

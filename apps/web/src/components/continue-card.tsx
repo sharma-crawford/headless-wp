@@ -65,12 +65,12 @@ export default async function ContinueCard({
       className="mt-8 overflow-hidden rounded-2xl bg-brand-900 text-white"
       style={{
         backgroundImage:
-          "radial-gradient(80% 120% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(50% 90% at 100% 100%, oklch(76.9% 0.188 70.08 / 0.18), transparent 70%)",
+          "radial-gradient(80% 120% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(50% 90% at 100% 100%, oklch(65.5% 0.121 222.8 / 0.45), transparent 70%)",
       }}
     >
       <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
         <div className="min-w-0">
-          <p className="text-xs font-semibold tracking-[0.14em] text-amber-300 uppercase">
+          <p className="text-xs font-semibold tracking-[0.14em] text-brand-300 uppercase">
             {started ? "Continue where you left off" : "Ready to start"}
           </p>
           <h2 className="mt-2 text-2xl leading-snug font-semibold sm:text-3xl">
@@ -87,7 +87,7 @@ export default async function ContinueCard({
               aria-hidden="true"
             >
               <div
-                className="h-full rounded-full bg-amber-400"
+                className="h-full rounded-full bg-brand-400"
                 style={{ width: `${pick.progress.percentage}%` }}
               />
             </div>
@@ -99,7 +99,7 @@ export default async function ContinueCard({
 
         <Link
           href={target.href}
-          className="inline-flex h-11 shrink-0 items-center justify-center gap-1.5 self-start rounded-lg bg-amber-400 px-6 font-semibold text-brand-950 transition hover:bg-amber-300 focus-visible:ring-3 focus-visible:ring-amber-300/50 focus-visible:outline-none sm:self-center"
+          className="inline-flex h-11 shrink-0 items-center justify-center gap-1.5 self-start rounded-lg bg-brand-400 px-6 font-semibold text-brand-950 transition hover:bg-brand-300 focus-visible:ring-3 focus-visible:ring-brand-300/50 focus-visible:outline-none sm:self-center"
         >
           {started ? "Continue" : "Start"}
           <span aria-hidden="true">→</span>

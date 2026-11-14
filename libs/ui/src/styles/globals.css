@@ -15,13 +15,15 @@
  */
 
 /*
- * The palette: professional rather than utilitarian.
+ * The palette: The Pen & Sword's own, so the Armory reads as part of it.
  *
- * A deep navy carries the brand (primary buttons, the header mark, links that
- * matter), a warm amber is the one accent (highlights, "live" and "new"
- * markers), and everything else is a cool, faintly blue neutral. Amber is
- * never a background for small white text: at this lightness that fails
- * contrast, so it pairs with navy text or stays decoration.
+ * thepen-and-swordkc.org is one teal (#05A0C6) on white with near-black text,
+ * and that is the whole brand. Here the teal is a scale: its exact value is
+ * brand-500, kept for decoration and large type, because white text on it
+ * fails contrast (3.1:1). Buttons and links that carry text use the deeper
+ * brand-600 (4.9:1) and up; brand-900 is the deep teal-ink for dark bands.
+ * Amber is kept only for "draft" and warning badges, and is never a
+ * background for white text.
  */
 :root {
   --background: oklch(100% 0 0);
@@ -33,7 +35,7 @@
   --popover: oklch(100% 0 0);
   --popover-foreground: var(--color-zinc-950);
 
-  --primary: var(--color-brand-800);
+  --primary: var(--color-brand-600);
   --primary-foreground: oklch(100% 0 0);
   --secondary: var(--color-zinc-100);
   --secondary-foreground: var(--color-zinc-900);
@@ -53,7 +55,7 @@
    */
   --sidebar: var(--color-zinc-50);
   --sidebar-foreground: var(--color-zinc-950);
-  --sidebar-primary: var(--color-brand-800);
+  --sidebar-primary: var(--color-brand-600);
   --sidebar-primary-foreground: oklch(100% 0 0);
   --sidebar-accent: var(--color-brand-50);
   --sidebar-accent-foreground: var(--color-brand-900);
@@ -102,12 +104,13 @@
  *
  * `zinc` is redefined, not added to: the app writes `text-zinc-600` and
  * friends in some forty files, and the neutral the theme wants is a cool,
- * faintly navy grey rather than Tailwind's flat one. Overriding the scale
+ * faintly teal grey rather than Tailwind's flat one. Overriding the scale
  * here moves every one of those screens at once; renaming the classes would
  * be the same change spread across forty diffs. So in this codebase "zinc"
- * means "the brand neutral" — the values are Tailwind's slate.
+ * means "the brand neutral": near-black and greys, as on the parent site,
+ * with just enough of the teal's hue to sit beside it.
  *
- * `brand` is the navy, `amber` keeps Tailwind's own values and is listed
+ * `brand` is the teal, `amber` keeps Tailwind's own values and is listed
  * only so the one accent is named in the same place as the rest.
  *
  * `static` because the :root tokens read these through var(): Tailwind
@@ -115,29 +118,29 @@
  * pointing at an unemitted variable resolves to nothing.
  */
 @theme static {
-  --color-zinc-50: oklch(98.4% 0.003 247.858);
-  --color-zinc-100: oklch(96.8% 0.007 247.896);
-  --color-zinc-200: oklch(92.9% 0.013 255.508);
-  --color-zinc-300: oklch(86.9% 0.022 252.894);
-  --color-zinc-400: oklch(70.4% 0.04 256.788);
-  --color-zinc-500: oklch(55.4% 0.046 257.417);
-  --color-zinc-600: oklch(44.6% 0.043 257.281);
-  --color-zinc-700: oklch(37.2% 0.044 257.287);
-  --color-zinc-800: oklch(27.9% 0.041 260.031);
-  --color-zinc-900: oklch(20.8% 0.042 265.755);
-  --color-zinc-950: oklch(12.9% 0.042 264.695);
+  --color-zinc-50: oklch(98.5% 0.002 220);
+  --color-zinc-100: oklch(96.8% 0.004 220);
+  --color-zinc-200: oklch(92.8% 0.006 220);
+  --color-zinc-300: oklch(87% 0.009 220);
+  --color-zinc-400: oklch(71% 0.014 220);
+  --color-zinc-500: oklch(55.5% 0.016 220);
+  --color-zinc-600: oklch(44.5% 0.016 220);
+  --color-zinc-700: oklch(37% 0.015 220);
+  --color-zinc-800: oklch(28% 0.013 220);
+  --color-zinc-900: oklch(21% 0.011 220);
+  --color-zinc-950: oklch(14% 0.008 220);
 
-  --color-brand-50: oklch(97% 0.014 254);
-  --color-brand-100: oklch(93.5% 0.03 255);
-  --color-brand-200: oklch(87% 0.056 256);
-  --color-brand-300: oklch(78% 0.09 257);
-  --color-brand-400: oklch(66% 0.13 258);
-  --color-brand-500: oklch(55% 0.15 259);
-  --color-brand-600: oklch(46% 0.14 260);
-  --color-brand-700: oklch(39% 0.12 261);
-  --color-brand-800: oklch(32% 0.1 262);
-  --color-brand-900: oklch(26% 0.08 263);
-  --color-brand-950: oklch(19% 0.06 265);
+  --color-brand-50: oklch(97.5% 0.018 215);
+  --color-brand-100: oklch(94.5% 0.035 217);
+  --color-brand-200: oklch(89% 0.06 219);
+  --color-brand-300: oklch(81% 0.09 221);
+  --color-brand-400: oklch(73% 0.115 222);
+  --color-brand-500: oklch(65.5% 0.121 222.8); /* #05A0C6, the parent site's teal */
+  --color-brand-600: oklch(54% 0.105 224);
+  --color-brand-700: oklch(46% 0.09 226);
+  --color-brand-800: oklch(38% 0.072 228);
+  --color-brand-900: oklch(30% 0.055 230);
+  --color-brand-950: oklch(22% 0.04 232);
 
   --color-amber-300: oklch(87.9% 0.169 91.605);
   --color-amber-400: oklch(82.8% 0.189 84.429);

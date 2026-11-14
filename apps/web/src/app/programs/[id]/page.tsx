@@ -95,7 +95,7 @@ export default async function ProgramPage({
             {next ? (
               <Link
                 href={keepPreview(`/modules/${next.module.id}`, preview)}
-                className="inline-flex h-11 items-center gap-1.5 rounded-lg bg-brand-800 px-5 font-semibold text-white transition hover:bg-brand-900"
+                className="inline-flex h-11 items-center gap-1.5 rounded-lg bg-brand-600 px-5 font-semibold text-white transition hover:bg-brand-700"
               >
                 {started ? "Continue" : "Start"}: {decodeEntities(next.module.title)}
                 <span aria-hidden="true">→</span>

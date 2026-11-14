@@ -110,7 +110,7 @@ export default async function BuilderProgramPage({
               </span>
             )}
             {tree.access?.plan && (
-              <span className="rounded-full bg-brand-800 px-2 py-0.5 text-xs font-semibold text-white">
+              <span className="rounded-full bg-brand-600 px-2 py-0.5 text-xs font-semibold text-white">
                 {tree.access.plan.name}
               </span>
             )}
@@ -328,7 +328,7 @@ function TabLink({
       aria-current={on ? "page" : undefined}
       className={
         on
-          ? "relative px-4 py-3 text-[0.95rem] font-medium whitespace-nowrap text-brand-800 after:absolute after:inset-x-4 after:bottom-0 after:h-0.5 after:rounded-full after:bg-amber-400"
+          ? "relative px-4 py-3 text-[0.95rem] font-medium whitespace-nowrap text-brand-800 after:absolute after:inset-x-4 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-500"
           : "px-4 py-3 text-[0.95rem] font-medium whitespace-nowrap text-zinc-500 hover:text-zinc-900"
       }
     >
