@@ -1,0 +1,607 @@
+[
+  {
+    "id": "agency",
+    "subject": "business-associations",
+    "title": "Consent",
+    "topic": "Agency: consent, acting on behalf, control, authority, and ratification",
+    "sectionIds": [
+      "agency-creation",
+      "agency-authority"
+    ],
+    "versions": [
+      {
+        "id": "c346672b-6a5e-42dc-bb84-5e18286b1e67",
+        "duration": "3:54"
+      },
+      {
+        "id": "098decaf-5566-444b-8b94-650dbf7659b5",
+        "duration": "4:04"
+      }
+    ]
+  },
+  {
+    "id": "veil",
+    "subject": "business-associations",
+    "title": "That Veil Is Coming Down",
+    "topic": "Limited liability and piercing the corporate veil",
+    "sectionIds": [
+      "veil-piercing"
+    ],
+    "versions": [
+      {
+        "id": "f02e24a8-562d-4018-b0e0-64d4fdd0759e",
+        "duration": "5:08"
+      },
+      {
+        "id": "b9c51861-ae7b-4cca-a72f-32fce1db1b52",
+        "duration": "5:19"
+      }
+    ]
+  },
+  {
+    "id": "fiduciary",
+    "subject": "business-associations",
+    "title": "Three Fiduciary Duties",
+    "topic": "Loyalty, care, and good faith",
+    "sectionIds": [
+      "partnership-duties",
+      "llc-duties"
+    ],
+    "versions": [
+      {
+        "id": "2e63f561-8256-4681-bb24-7dd99eb65292",
+        "duration": "2:47"
+      },
+      {
+        "id": "591ac32f-4213-45ca-b749-4fb4ca9f9468",
+        "duration": "2:46"
+      }
+    ]
+  },
+  {
+    "id": "lay-opinion",
+    "subject": "evidence",
+    "title": "Rule Seven-Oh-One",
+    "topic": "Rule 701: lay opinion",
+    "sectionIds": [
+      "personal-knowledge"
+    ],
+    "versions": [
+      {
+        "id": "803d193c-73e7-4e27-8f21-8ce63084246b",
+        "duration": "3:48",
+        "audioSrc": "/study-assets/study-songs/evidence/803d193c-73e7-4e27-8f21-8ce63084246b.m4a"
+      },
+      {
+        "id": "ffe5dd5b-7f7a-4975-bfbf-f1444308aedd",
+        "duration": "3:43",
+        "audioSrc": "/study-assets/study-songs/evidence/ffe5dd5b-7f7a-4975-bfbf-f1444308aedd.m4a"
+      }
+    ]
+  },
+  {
+    "id": "propensity",
+    "subject": "evidence",
+    "title": "Bad Before, Bad Again",
+    "topic": "Character evidence and the propensity trap",
+    "sectionIds": [
+      "other-acts",
+      "character"
+    ],
+    "versions": [
+      {
+        "id": "158c486e-45f9-44ac-b02e-f18c869eda9f",
+        "duration": "4:47",
+        "audioSrc": "/study-assets/study-songs/evidence/158c486e-45f9-44ac-b02e-f18c869eda9f.mp3"
+      },
+      {
+        "id": "90db778d-ccb2-4c9a-9006-fb4c0fe889ec",
+        "duration": "4:38",
+        "audioSrc": "/study-assets/study-songs/evidence/90db778d-ccb2-4c9a-9006-fb4c0fe889ec.m4a"
+      }
+    ]
+  },
+  {
+    "id": "balance",
+    "subject": "evidence",
+    "title": "Substantially Outweighed",
+    "topic": "Rule 403: balancing probative value and unfair prejudice",
+    "sectionIds": [
+      "prejudice"
+    ],
+    "versions": [
+      {
+        "id": "e75572dd-899e-4869-957b-05caf883d1da",
+        "duration": "3:25",
+        "audioSrc": "/study-assets/study-songs/evidence/e75572dd-899e-4869-957b-05caf883d1da.m4a"
+      },
+      {
+        "id": "c4d9d03d-1825-4d63-b206-3efd6bf1c53d",
+        "duration": "3:18",
+        "audioSrc": "/study-assets/study-songs/evidence/c4d9d03d-1825-4d63-b206-3efd6bf1c53d.m4a"
+      }
+    ]
+  },
+  {
+    "id": "expert",
+    "subject": "evidence",
+    "title": "Gatekeep Me",
+    "topic": "Rule 702, Daubert, and Kumho Tire",
+    "sectionIds": [
+      "expert-qualification",
+      "expert-reliability"
+    ],
+    "versions": [
+      {
+        "id": "e7ca24a9-523f-466d-99e0-66ca47429661",
+        "duration": "3:47",
+        "audioSrc": "/study-assets/study-songs/evidence/e7ca24a9-523f-466d-99e0-66ca47429661.m4a"
+      },
+      {
+        "id": "edec1652-10a0-4f8c-a85d-a446192bd047",
+        "duration": "3:39",
+        "audioSrc": "/study-assets/study-songs/evidence/edec1652-10a0-4f8c-a85d-a446192bd047.m4a"
+      }
+    ]
+  },
+  {
+    "id": "character",
+    "subject": "evidence",
+    "title": "Objection! (Bad Character)",
+    "topic": "Rule 404(b), nonpropensity purposes, and doctrine of chances",
+    "sectionIds": [
+      "other-acts",
+      "chances",
+      "character"
+    ],
+    "versions": [
+      {
+        "id": "f0990df8-a2a6-455b-a007-a44dfaef62c1",
+        "duration": "4:50",
+        "audioSrc": "/study-assets/study-songs/evidence/f0990df8-a2a6-455b-a007-a44dfaef62c1.m4a"
+      },
+      {
+        "id": "0b1b9f80-7944-4dd4-92f6-2490614d1d4d",
+        "duration": "4:58",
+        "audioSrc": "/study-assets/study-songs/evidence/0b1b9f80-7944-4dd4-92f6-2490614d1d4d.m4a"
+      },
+      {
+        "id": "38e55103-74de-417f-9262-74717b11629b",
+        "duration": "4:51",
+        "audioSrc": "/study-assets/study-songs/evidence/38e55103-74de-417f-9262-74717b11629b.m4a"
+      },
+      {
+        "id": "9d33e0c5-eb08-4bf9-9907-4ef4a99bc415",
+        "duration": "4:36"
+      }
+    ]
+  },
+  {
+    "id": "witness",
+    "subject": "evidence",
+    "title": "When I Take the Stand",
+    "topic": "Witness impeachment: Rules 607, 608, 609, and 613",
+    "sectionIds": [
+      "truthfulness",
+      "convictions"
+    ],
+    "versions": [
+      {
+        "id": "dc4a744d-9e00-4a3a-b22c-ae245af73740",
+        "duration": "4:40",
+        "audioSrc": "/study-assets/study-songs/evidence/dc4a744d-9e00-4a3a-b22c-ae245af73740.m4a"
+      },
+      {
+        "id": "ec55ca4a-401a-466a-ae26-cc94282a1817",
+        "duration": "4:29",
+        "audioSrc": "/study-assets/study-songs/evidence/ec55ca4a-401a-466a-ae26-cc94282a1817.m4a"
+      }
+    ]
+  },
+  {
+    "id": "rap-pop",
+    "subject": "property",
+    "title": "Vesting Certainty / Twenty-One Vesting",
+    "topic": "Future interests and the common-law Rule Against Perpetuities",
+    "sectionIds": [
+      "future-interests"
+    ],
+    "versions": [
+      {
+        "id": "3672f001-7c4c-4b19-89c5-37218072b3c9",
+        "duration": "4:24"
+      },
+      {
+        "id": "5f0f2b65-8d9e-41e2-bd81-25450457dc0e",
+        "duration": "4:54"
+      },
+      {
+        "id": "b0841fde-6ea3-42c6-b8d2-589f784fcb9a",
+        "duration": "3:31"
+      },
+      {
+        "id": "0351f688-9a23-4a4d-8196-4c469bc6ec00",
+        "duration": "3:55"
+      }
+    ]
+  },
+  {
+    "id": "rap-quick",
+    "subject": "property",
+    "title": "Rule Against Perpetuities · Quick Rap",
+    "topic": "Life in being plus twenty-one years; Suno title: “Yo—”",
+    "sectionIds": [
+      "future-interests"
+    ],
+    "versions": [
+      {
+        "id": "053c0fce-3ddb-4aa1-8f72-bdc762ad3c4f",
+        "duration": "1:08"
+      },
+      {
+        "id": "cabf3b0e-5c9c-4ee0-9323-a6ddc537f607",
+        "duration": "1:05"
+      },
+      {
+        "id": "69ff5b0d-c3d2-4dc0-954e-2239f2f14ec6",
+        "duration": "0:35"
+      },
+      {
+        "id": "1f4b28d5-16f5-49e1-b375-cbbd07db7d97",
+        "duration": "0:37"
+      }
+    ]
+  },
+  {
+    "id": "mylegs",
+    "subject": "contracts",
+    "title": "MYLEGS",
+    "topic": "Statute of Frauds: marriage, one year, land, executor, goods, and surety",
+    "sectionIds": [],
+    "versions": [
+      {
+        "id": "f03fa86a-7436-4687-b770-bfc2a688c8d6",
+        "duration": "2:54"
+      },
+      {
+        "id": "bf177c74-bdc1-4faf-a93c-87014df60daa",
+        "duration": "2:40"
+      }
+    ]
+  },
+  {
+    "id": "rule27",
+    "subject": "civil-procedure",
+    "title": "Rule 27",
+    "topic": "Preserving testimony before suit or during an appeal",
+    "sectionIds": [
+      "kata-08"
+    ],
+    "versions": [
+      {
+        "id": "7c76e01f-55a1-4630-b001-8e3446697a7d",
+        "duration": "4:24"
+      },
+      {
+        "id": "575ce206-c124-41af-a696-ec6bbb365fb8",
+        "duration": "4:40"
+      }
+    ]
+  },
+  {
+    "id": "rule18",
+    "subject": "civil-procedure",
+    "title": "Rule 18 Trap",
+    "topic": "Joinder of claims",
+    "sectionIds": [
+      "kata-12"
+    ],
+    "versions": [
+      {
+        "id": "aa48f4b4-4ba7-4d06-88e0-82b9c05a05f1",
+        "duration": "3:32"
+      },
+      {
+        "id": "3cb281d0-adf8-40a9-90ef-904b6027f0b5",
+        "duration": "3:52"
+      }
+    ]
+  },
+  {
+    "id": "rule13",
+    "subject": "civil-procedure",
+    "title": "Rule 13(a) Trap",
+    "topic": "Compulsory counterclaims and the same transaction or occurrence",
+    "sectionIds": [
+      "kata-12"
+    ],
+    "versions": [
+      {
+        "id": "aae8c0d6-1ef1-4747-b789-e91b3254c22b",
+        "duration": "2:35"
+      },
+      {
+        "id": "e888cbdd-d284-4538-8285-4bb93866e583",
+        "duration": "2:53"
+      }
+    ]
+  },
+  {
+    "id": "class-b",
+    "subject": "civil-procedure",
+    "title": "After Midnight Suitcase / Neon Jury Verdict",
+    "topic": "Rule 23(b): class categories, predominance, and superiority",
+    "sectionIds": [
+      "kata-16"
+    ],
+    "versions": [
+      {
+        "id": "319e88e9-ddfd-43e9-a73e-c4a2c7a38337",
+        "duration": "3:38"
+      },
+      {
+        "id": "cb92d20b-3d51-4a48-a796-dfd322cfb664",
+        "duration": "3:32"
+      },
+      {
+        "id": "53b0c172-fbe4-42e0-b971-dfad5031febd",
+        "duration": "3:58"
+      },
+      {
+        "id": "edd6e6ce-91e1-4d86-af23-1ec8f53b370f",
+        "duration": "4:23"
+      }
+    ]
+  },
+  {
+    "id": "class-certification",
+    "subject": "civil-procedure",
+    "title": "CANT Plus B / Class Action Riot",
+    "topic": "Rule 23(a) certification and Rule 23(b)(3) notice and opt-out protections",
+    "sectionIds": [
+      "kata-16"
+    ],
+    "versions": [
+      {
+        "id": "6beadf12-9499-4304-a133-441fcdcc2178",
+        "duration": "3:38"
+      },
+      {
+        "id": "31a9a341-c849-4be8-979b-5937b1ed3f6f",
+        "duration": "3:25"
+      },
+      {
+        "id": "c6a48fe8-44cb-4f5b-8ab4-972aec30e1ff",
+        "duration": "2:49"
+      },
+      {
+        "id": "520e1cee-c709-45b4-b60c-b402f6e558a4",
+        "duration": "2:56"
+      },
+      {
+        "id": "81c29175-dc0f-4925-82d6-17b5812419f2",
+        "duration": "3:16"
+      },
+      {
+        "id": "d484c95e-dde4-4aa8-a90b-e79856d257be",
+        "duration": "3:08"
+      },
+      {
+        "id": "efdc3e40-7f1e-4c2a-af7d-344354a0911e",
+        "duration": "2:42"
+      },
+      {
+        "id": "466d1dcb-5d4b-4426-a6e2-49dbeda849a2",
+        "duration": "2:42"
+      }
+    ]
+  },
+  {
+    "id": "discovery-sanctions",
+    "subject": "civil-procedure",
+    "title": "Discovery Sanctions 26",
+    "topic": "Rules 26(g) and 37: certification, disclosure, sanctions, and lost ESI",
+    "sectionIds": [
+      "kata-08",
+      "kata-09"
+    ],
+    "versions": [
+      {
+        "id": "be5fd797-00f4-4b78-8829-89f3b00f24b5",
+        "duration": "5:24"
+      },
+      {
+        "id": "e6d036f5-9ec6-48fb-8141-33613e4cbf49",
+        "duration": "4:55"
+      },
+      {
+        "id": "56d74ae6-f99b-42e4-921f-78178f39ed2f",
+        "duration": "4:50"
+      },
+      {
+        "id": "14f8eb54-748e-40fa-b68f-d4101eedec75",
+        "duration": "4:57"
+      }
+    ]
+  },
+  {
+    "id": "discovery-pop",
+    "subject": "civil-procedure",
+    "title": "Produce It · Discovery Rap",
+    "topic": "Rules 26–37: disclosures, discovery tools, work product, and sanctions; Suno title: “🎤 Verse 1”",
+    "sectionIds": [
+      "kata-08",
+      "kata-09"
+    ],
+    "versions": [
+      {
+        "id": "191e63e1-de15-4825-95a4-bb001a3fa83e",
+        "duration": "4:05"
+      },
+      {
+        "id": "4f4291b1-189f-4af5-a04f-38a37155c186",
+        "duration": "3:22"
+      },
+      {
+        "id": "a1e3d9fd-6ab0-42a8-a813-ac822ac8f595",
+        "duration": "3:23"
+      },
+      {
+        "id": "b82c39a7-250d-479a-b33b-a5d19c9888c6",
+        "duration": "3:42"
+      }
+    ]
+  },
+  {
+    "id": "discovery-sea",
+    "subject": "civil-procedure",
+    "title": "Discovery Sea",
+    "topic": "Discovery scope, methods, work product, subpoenas, and sanctions",
+    "sectionIds": [
+      "kata-08",
+      "kata-09"
+    ],
+    "versions": [
+      {
+        "id": "edb33518-8450-440b-89db-0466dde7a824",
+        "duration": "4:43"
+      },
+      {
+        "id": "df079cc2-fa54-4e79-9f65-0db1c79d4be3",
+        "duration": "4:15"
+      },
+      {
+        "id": "9846ed45-aa8a-4f9e-915a-245a866b7ad5",
+        "duration": "4:42"
+      },
+      {
+        "id": "18aa74a0-a59a-47eb-bfea-5389195d2baa",
+        "duration": "4:09"
+      }
+    ]
+  },
+  {
+    "id": "procedure-overview",
+    "subject": "civil-procedure",
+    "title": "Federal Rules of Civil Procedure",
+    "topic": "A quick map of the procedural rules and the civil action",
+    "sectionIds": [
+      "kata-01"
+    ],
+    "versions": [
+      {
+        "id": "2bb75314-6575-43e6-98f4-365469f3bf13",
+        "duration": "0:55"
+      },
+      {
+        "id": "76823fa5-3755-4de9-94b8-15c9ea471877",
+        "duration": "0:58"
+      }
+    ]
+  },
+  {
+    "id": "procedure-timeline",
+    "subject": "civil-procedure",
+    "title": "The Federal Rules of Civil Procedure",
+    "topic": "Service, response, default, discovery, and summary judgment",
+    "sectionIds": [
+      "kata-05"
+    ],
+    "versions": [
+      {
+        "id": "25368f67-15f9-4bce-8587-645407881f2c",
+        "duration": "1:25"
+      },
+      {
+        "id": "18da8af1-b0df-4c94-b975-f3cd48c46562",
+        "duration": "2:32"
+      }
+    ]
+  },
+  {
+    "id": "standing",
+    "subject": "civil-procedure",
+    "title": "Standing “In Court”",
+    "topic": "Article III standing: injury, causation, and redressability",
+    "sectionIds": [
+      "kata-13"
+    ],
+    "versions": [
+      {
+        "id": "8bc6432f-2f68-4b68-9567-2cdcd7108c27",
+        "duration": "4:19"
+      },
+      {
+        "id": "8e86db2f-b4a2-40f3-b521-2e8297419efc",
+        "duration": "4:34"
+      },
+      {
+        "id": "8c6d4693-6543-499e-8454-013e87821f21",
+        "duration": "3:10"
+      },
+      {
+        "id": "5d088a49-c961-43df-8dfa-5f653712cb71",
+        "duration": "4:12"
+      }
+    ]
+  },
+  {
+    "id": "amendments",
+    "subject": "constitutional-law",
+    "title": "Sealed Ballot",
+    "topic": "A memory song for the twenty-seven constitutional amendments",
+    "sectionIds": [],
+    "versions": [
+      {
+        "id": "7b65714f-a7d4-4623-aed4-5ced8d9ca3af",
+        "duration": "1:43"
+      },
+      {
+        "id": "2c0f9a16-72b7-4975-87ef-149470f68ef0",
+        "duration": "2:29"
+      }
+    ]
+  },
+  {
+    "id": "congress",
+    "subject": "constitutional-law",
+    "title": "Congress Powers",
+    "topic": "Article I, Section 8, enumerated powers, and federalism",
+    "sectionIds": [],
+    "versions": [
+      {
+        "id": "daa11c2c-4dfb-4d2f-a604-fad1c1257f68",
+        "duration": "6:23"
+      },
+      {
+        "id": "b33f9733-cc43-42c6-9b15-18b0119195b5",
+        "duration": "8:00"
+      },
+      {
+        "id": "0c647422-e8e1-4658-bc24-035e737774b9",
+        "duration": "5:41"
+      },
+      {
+        "id": "a9ab5a89-4787-4451-9a33-e27ea41579cf",
+        "duration": "5:30"
+      }
+    ]
+  },
+  {
+    "id": "dormant-commerce",
+    "subject": "constitutional-law",
+    "title": "Dormant Commerce Clause",
+    "topic": "State regulation and interstate commerce",
+    "sectionIds": [],
+    "versions": [
+      {
+        "id": "60febb7b-f5e3-4aab-82f5-57ad979af526",
+        "duration": "5:14"
+      },
+      {
+        "id": "7afda151-1c7e-4889-811d-4b4aa81f1198",
+        "duration": "4:12"
+      }
+    ]
+  }
+]

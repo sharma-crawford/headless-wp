@@ -1,0 +1,468 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "A duchess owns a castle but granted a valid path easement. Which statement is strongest?",
+    "options": [
+      "Ownership automatically cancels the easement.",
+      "The easement may limit her power to exclude from that path.",
+      "The neighbor now owns the castle.",
+      "Every visitor may use the path."
+    ],
+    "answer": 1,
+    "explanation": "Identify the stick at issue: the owner retains title while the easement holder has a limited use right.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "A claimant says 'I own it' in a land dispute. What is the best first question?",
+    "options": [
+      "Which specific property right and remedy are in dispute?",
+      "Which noble has the oldest family crest?",
+      "Was the land ever improved?",
+      "Has any tax been paid?"
+    ],
+    "answer": 0,
+    "explanation": "The bundle framework requires identifying the interest and alleged interference before applying a doctrine.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 1,
+    "prompt": "A hunter spots and pursues a wild fox; another captures it first. Under Pierson, who has the stronger initial claim?",
+    "options": [
+      "The first pursuer.",
+      "The captor, absent a special rule or custom.",
+      "The nearest landowner in every case.",
+      "They automatically share title."
+    ],
+    "answer": 1,
+    "explanation": "Pursuit alone normally does not amount to capture.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 1,
+    "prompt": "Two successive possessors seek to combine their periods for adverse possession. What fact is especially important?",
+    "options": [
+      "Privity between them.",
+      "Both possessors' family titles.",
+      "A royal license to hunt.",
+      "The market price of the parcel."
+    ],
+    "answer": 0,
+    "explanation": "Tacking generally requires a voluntary transfer or other privity between successive possessors.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 2,
+    "prompt": "'To Alia so long as the manor remains a school.' If school use ends, what normally happens?",
+    "options": [
+      "The estate ends automatically under a fee simple determinable.",
+      "Alia has a fee simple absolute.",
+      "The neighbor receives title.",
+      "The grantor must always obtain Alia's consent."
+    ],
+    "answer": 0,
+    "explanation": "Durational language ordinarily creates a determinable fee and possibility of reverter.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 2,
+    "prompt": "A life tenant destroys valuable timber with no ordinary-use justification. Which doctrine is implicated?",
+    "options": [
+      "Ouster.",
+      "Waste.",
+      "Race notice.",
+      "Equitable conversion."
+    ],
+    "answer": 1,
+    "explanation": "Affirmative waste concerns conduct that injures the future holder's interest.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 3,
+    "prompt": "'To B for life, then to B's first child who becomes a knight.' B has no children. The child's interest is best classified as:",
+    "options": [
+      "Indefeasibly vested remainder.",
+      "Contingent remainder.",
+      "Possibility of reverter.",
+      "Fee simple absolute."
+    ],
+    "answer": 1,
+    "explanation": "The taker is unascertained and a condition precedent remains.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 3,
+    "prompt": "What is the traditional RAP question?",
+    "options": [
+      "Will possession begin within 10 years?",
+      "Must an affected interest vest or fail within a life in being plus 21 years?",
+      "Was the deed recorded first?",
+      "Will the land increase in value?"
+    ],
+    "answer": 1,
+    "explanation": "The common-law test concerns possible vesting, not when possession actually begins; local reforms may change the result.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 4,
+    "prompt": "Which feature distinguishes joint tenancy from ordinary tenancy in common?",
+    "options": [
+      "A right of survivorship.",
+      "Mandatory equal use every day.",
+      "Automatic immunity from partition.",
+      "A landlord relationship."
+    ],
+    "answer": 0,
+    "explanation": "Survivorship is the defining difference; severance may eliminate it for a share.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 4,
+    "prompt": "One co-tenant occupies the entire empty manor without barring the other. Does sole occupancy alone prove ouster?",
+    "options": [
+      "Always.",
+      "No; wrongful exclusion requires more.",
+      "Yes, after one night.",
+      "Only if rent is unpaid."
+    ],
+    "answer": 1,
+    "explanation": "Possession by one co-tenant is generally consistent with the others' equal right to possess unless exclusion is shown.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 5,
+    "prompt": "A tenant transfers every day left in a lease to another person. Which label generally fits?",
+    "options": [
+      "Sublease.",
+      "Assignment.",
+      "Fee simple.",
+      "Easement."
+    ],
+    "answer": 1,
+    "explanation": "Transfer of the full unexpired term is generally an assignment.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 5,
+    "prompt": "Under the English delivery rule, who ordinarily bears the duty to deliver actual possession at the start?",
+    "options": [
+      "The landlord.",
+      "The incoming tenant alone.",
+      "The record clerk.",
+      "No one."
+    ],
+    "answer": 0,
+    "explanation": "The English rule requires the landlord to deliver legal and actual possession.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 5,
+    "prompt": "A landlord refuses to rent because of a protected characteristic covered by federal law. Which additional source should be checked?",
+    "options": [
+      "The Fair Housing Act.",
+      "The rule against perpetuities.",
+      "The grantor index.",
+      "Pierson v. Post."
+    ],
+    "answer": 0,
+    "explanation": "Federal housing discrimination rules may apply alongside state property rules.",
+    "refs": [
+      "v2",
+      "fha"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 6,
+    "prompt": "A land-sale contract is signed but no deed has been delivered. What remains to analyze?",
+    "options": [
+      "Only the buyer's family status.",
+      "Risk of loss, title, and duties before closing.",
+      "Nothing; legal title always passed on signing.",
+      "Only adverse possession."
+    ],
+    "answer": 1,
+    "explanation": "Contract and deed stages are distinct; the executory period has its own issues.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 6,
+    "prompt": "A seller's title violates an existing recorded covenant. The best initial issue is:",
+    "options": [
+      "Whether title is marketable at closing.",
+      "Whether the fox was captured.",
+      "Whether a tenant was ousted.",
+      "Whether a mortgage was redeemed."
+    ],
+    "answer": 0,
+    "explanation": "A present title defect or violation can make title unmarketable, depending on the agreement and jurisdiction.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 7,
+    "prompt": "A signed deed remains under the grantor's unrestricted control with instructions effective only at death. The strongest issue is:",
+    "options": [
+      "Adverse possession.",
+      "Present intent to deliver.",
+      "Joint-tenancy severance.",
+      "Zoning variance."
+    ],
+    "answer": 1,
+    "explanation": "The delivery inquiry asks whether the grantor intended a present legal effect.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 7,
+    "prompt": "Which deed generally offers the broadest title covenants?",
+    "options": [
+      "Quitclaim.",
+      "Special warranty.",
+      "General warranty.",
+      "All are identical."
+    ],
+    "answer": 2,
+    "explanation": "A general warranty deed generally covers defects beyond the grantor's own period of ownership.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 8,
+    "prompt": "Which recording statute requires the later buyer to lack notice AND record first?",
+    "options": [
+      "Race.",
+      "Notice.",
+      "Race-notice.",
+      "None."
+    ],
+    "answer": 2,
+    "explanation": "Race-notice combines lack of notice with first recording among competing buyers.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 8,
+    "prompt": "A buyer sees another person openly living on the parcel. What should the buyer consider?",
+    "options": [
+      "The occupant may trigger inquiry notice.",
+      "Possession can never matter.",
+      "The deed is automatically void.",
+      "The buyer automatically owns the occupant's furniture."
+    ],
+    "answer": 0,
+    "explanation": "Visible possession may require reasonable inquiry into the occupant's rights.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 9,
+    "prompt": "Which instrument contains the personal promise to repay?",
+    "options": [
+      "The note.",
+      "The zoning map.",
+      "The easement.",
+      "The deed index."
+    ],
+    "answer": 0,
+    "explanation": "The note evidences the debt; the mortgage secures it with land.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 9,
+    "prompt": "A junior mortgage is foreclosed. A senior mortgage generally:",
+    "options": [
+      "Is automatically erased.",
+      "Survives the junior foreclosure.",
+      "Becomes a lease.",
+      "Converts into adverse possession."
+    ],
+    "answer": 1,
+    "explanation": "Foreclosure of a junior lien ordinarily does not eliminate senior interests.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 10,
+    "prompt": "At severance, a rear parcel has no access to a public road. Which theory is most directly implicated?",
+    "options": [
+      "Easement by necessity.",
+      "Fee tail.",
+      "Race notice.",
+      "Constructive eviction."
+    ],
+    "answer": 0,
+    "explanation": "Landlocking at severance can support an easement by necessity if the required unity and necessity are shown.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 10,
+    "prompt": "An easement appurtenant ordinarily benefits:",
+    "options": [
+      "A parcel of land.",
+      "Only a named person's reputation.",
+      "A promissory note.",
+      "The recording clerk."
+    ],
+    "answer": 0,
+    "explanation": "An appurtenant easement benefits the dominant estate and generally travels with it.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 11,
+    "prompt": "Neighbors seek an injunction against a purchaser who violates a land-use restriction. Which doctrine is the usual starting point?",
+    "options": [
+      "Equitable servitude.",
+      "Adverse possession.",
+      "Equitable conversion.",
+      "Foreclosure redemption."
+    ],
+    "answer": 0,
+    "explanation": "Equitable servitudes are associated with injunctive enforcement; check running requirements and notice.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 11,
+    "prompt": "A purchaser had no notice of a claimed restriction. Why does that matter?",
+    "options": [
+      "Notice is a key issue in binding successors in equity.",
+      "It automatically creates a mortgage.",
+      "It proves the land is abandoned.",
+      "It makes every deed void."
+    ],
+    "answer": 0,
+    "explanation": "Traditional equitable-servitude analysis requires qualifying notice to bind a successor.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 12,
+    "prompt": "An unusual lot shape makes the setback unusually burdensome. The owner seeks relief for the same permitted use. Which request fits best?",
+    "options": [
+      "Area variance.",
+      "Use variance.",
+      "Easement by prescription.",
+      "Partition by sale."
+    ],
+    "answer": 0,
+    "explanation": "An area variance changes dimensional requirements while retaining a permitted use.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 12,
+    "prompt": "A land use was lawful before a zoning amendment but is now barred. What issue should be checked?",
+    "options": [
+      "Protection for a lawful nonconforming use.",
+      "Automatic fee tail.",
+      "Title by capture.",
+      "A future interest in the grantor."
+    ],
+    "answer": 0,
+    "explanation": "Local law may allow a lawful preexisting use to continue, subject to restrictions.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 13,
+    "prompt": "Government condemns a strip for a public bridge. Which paired questions are central?",
+    "options": [
+      "Public use and just compensation.",
+      "Capture and adverse possession.",
+      "Delivery and constructive eviction.",
+      "Ouster and partition."
+    ],
+    "answer": 0,
+    "explanation": "Condemnation triggers public-use and compensation inquiries, plus procedure and state-law limits.",
+    "refs": [
+      "v3",
+      "kelo"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 13,
+    "prompt": "A land-use regulation removes all economically beneficial use. Which framework should be considered first?",
+    "options": [
+      "The total-deprivation categorical takings rule, with its limits and exceptions.",
+      "Only recording priority.",
+      "Only fee simple duration.",
+      "The English delivery rule."
+    ],
+    "answer": 0,
+    "explanation": "A claimed total loss points to Lucas-type categorical analysis; the property interest and background principles still matter.",
+    "refs": [
+      "v3"
+    ]
+  }
+]

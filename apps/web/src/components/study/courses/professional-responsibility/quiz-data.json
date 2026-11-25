@@ -1,0 +1,1075 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "A lawyer admitted in State A offers legal services in State B. Which Rule 8.5 statement is most accurate?",
+    "options": [
+      "Only the state where the lawyer has an office may discipline.",
+      "The ABA itself exclusively disciplines all lawyers.",
+      "Only the client may choose the governing disciplinary rules.",
+      "Both jurisdictions may have disciplinary authority; the applicable conduct rules require a separate choice-of-law analysis."
+    ],
+    "answer": 3,
+    "explanation": "Authority and governing law are different inquiries. Rule 8.5 permits overlapping authority.",
+    "refs": [
+      "r8.5"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "A lawyer handles a matter pending before a tribunal in State B while working from State A. What is the Model Rule 8.5 starting point?",
+    "options": [
+      "The rules of the tribunal’s jurisdiction, unless the tribunal’s rules provide otherwise.",
+      "Always the lawyer’s first licensing state.",
+      "Whichever state has the least restrictive rule.",
+      "The client’s residence in every case."
+    ],
+    "answer": 0,
+    "explanation": "Pending-tribunal conduct has a specific choice-of-law provision distinct from the predominant-effect rule for other conduct.",
+    "refs": [
+      "r8.5"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 0,
+    "prompt": "A lawyer violates an ethics rule but causes no compensable injury. Which conclusion is sound?",
+    "options": [
+      "No injury means no ethical violation is possible.",
+      "Discipline may still be possible even though a malpractice damages claim may fail.",
+      "The violation automatically establishes every malpractice element.",
+      "Ethics rules create a fixed damages award."
+    ],
+    "answer": 1,
+    "explanation": "Ethical obligations and civil liability have different requirements. A rule violation does not establish causation or damages by itself.",
+    "refs": [
+      "scope"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 0,
+    "prompt": "A lawyer learns through protected client information of another lawyer’s serious misconduct. Does Rule 8.3 automatically require revealing it?",
+    "options": [
+      "Yes; reporting always overrides confidentiality.",
+      "No; lawyers never have reporting duties.",
+      "No; the reporting rule does not require disclosure of information protected by Rule 1.6.",
+      "Yes, if the client has not expressly requested secrecy."
+    ],
+    "answer": 2,
+    "explanation": "Rule 8.3(c) preserves the confidentiality limitation. Analyze whether disclosure is permitted and whether the reporting elements otherwise apply.",
+    "refs": [
+      "r8.3",
+      "r1.6"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 1,
+    "prompt": "A lawyer licensed only in State A opens a continuing State B practice and advertises as admitted there, with no other authorization. What is the main problem?",
+    "options": [
+      "Only courtroom appearances count as legal practice.",
+      "All interstate practice is automatically permitted if done online.",
+      "The client can waive all licensing rules.",
+      "Home-state admission does not authorize that local presence and representation of admission."
+    ],
+    "answer": 3,
+    "explanation": "Rule 5.5 distinguishes permitted activities from unauthorized local practice and holding out. Technology and consent do not create a license.",
+    "refs": [
+      "r5.5"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 1,
+    "prompt": "An out-of-state lawyer works temporarily with local counsel who actively participates. What is the correct next step?",
+    "options": [
+      "Check the relevant Rule 5.5 exception and any tribunal admission requirements.",
+      "Assume local counsel’s name alone authorizes all work forever.",
+      "Treat every temporary service as forbidden.",
+      "Ask only whether the lawyer crossed a physical border."
+    ],
+    "answer": 0,
+    "explanation": "Active local association may satisfy a temporary-practice pathway, but the facts and local requirements still control.",
+    "refs": [
+      "r5.5"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 1,
+    "prompt": "A supervising lawyer discovers a nonlawyer assistant is mishandling confidential files while corrective action remains possible. What is the appropriate response?",
+    "options": [
+      "Ignore it because only lawyers owe professional duties.",
+      "Take reasonable remedial action and address supervision and confidentiality safeguards.",
+      "Wait until a client proves damages.",
+      "Shift the entire responsibility to the assistant by contract."
+    ],
+    "answer": 1,
+    "explanation": "Rule 5.3 addresses supervision and responsibility for known conduct in the specified circumstances. Confidentiality safeguards remain the lawyer’s concern.",
+    "refs": [
+      "r5.3",
+      "r1.6"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 1,
+    "prompt": "A lawyer offers legal and financial-planning services through one indistinguishable operation. What should the lawyer assess under Rule 5.7?",
+    "options": [
+      "Whether calling the business “consulting” removes all duties.",
+      "Whether financial services always require no disclosure.",
+      "Whether professional rules apply to the law-related services because they are not distinct from legal services.",
+      "Whether a separate invoice automatically defeats every duty."
+    ],
+    "answer": 2,
+    "explanation": "Rule 5.7 looks at separation and, for controlled entities, reasonable steps to explain that the services are not legal services with client protections.",
+    "refs": [
+      "r5.7"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 2,
+    "prompt": "After a genuine consultation, a lawyer declines representation and receives no payment. Can the lawyer freely disclose the consultation information?",
+    "options": [
+      "Yes; protection starts only with a paid retainer.",
+      "Yes; declining the case waives the person’s rights.",
+      "No; the lawyer must accept every consulted matter.",
+      "No; prospective-client information remains protected under Rule 1.18."
+    ],
+    "answer": 3,
+    "explanation": "A prospective-client duty may survive even when no full representation follows.",
+    "refs": [
+      "r1.18"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 2,
+    "prompt": "A lawyer receives significantly harmful information in a consultation, then considers the opponent’s same-matter representation. What is the central issue?",
+    "options": [
+      "Rule 1.18’s adverse-representation restriction and whether a permitted consent or screening pathway is actually satisfied.",
+      "Only whether the prospective client paid.",
+      "Whether the lawyer has forgotten the person’s name.",
+      "Whether the opponent offers a higher fee."
+    ],
+    "answer": 0,
+    "explanation": "Material adversity, relationship of matters, and significantly harmful information trigger a conflict inquiry. A label such as “screened” is not enough without the conditions.",
+    "refs": [
+      "r1.18"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 2,
+    "prompt": "A lawyer gives individualized advice and acts on a person’s behalf but never signs an engagement letter. Which is the safest legal analysis?",
+    "options": [
+      "No signature always means no duty.",
+      "Examine conduct and applicable relationship law; the missing signature does not settle whether duties arose.",
+      "Every social conversation creates a full representation.",
+      "Payment is the sole element of representation."
+    ],
+    "answer": 1,
+    "explanation": "The relationship can arise through conduct. Clear scope and client identification reduce misunderstandings but do not replace the underlying analysis.",
+    "refs": [
+      "scope",
+      "r1.18"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 2,
+    "prompt": "A person sends a stranger-lawyer unsolicited detailed information with no reasonable expectation of a consultation. Which statement is best?",
+    "options": [
+      "Every unsolicited message necessarily disqualifies an entire firm.",
+      "All information on the internet is unprotected.",
+      "Prospective-client status is not automatic; assess the context and expectations under Rule 1.18.",
+      "A lawyer may always invite confidences and then disclaim every duty afterward."
+    ],
+    "answer": 2,
+    "explanation": "The nature of the exchange matters. A genuine consultation differs from an unsolicited unilateral disclosure without a reasonable expectation of engagement discussion.",
+    "refs": [
+      "r1.18"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 3,
+    "prompt": "A lawyer can handle an unfamiliar matter through timely study and experienced consultation. Is unfamiliarity alone a Rule 1.1 violation?",
+    "options": [
+      "Yes; lawyers may accept only matters they have handled before.",
+      "No; willingness to learn excuses any missed deadline.",
+      "Yes; only board-certified specialists may take new matters.",
+      "No; reasonable preparation or association can provide the needed competence."
+    ],
+    "answer": 3,
+    "explanation": "Competence is measured by reasonably necessary knowledge, skill, thoroughness, and preparation. The lawyer must actually obtain what is needed in time.",
+    "refs": [
+      "r1.1"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 3,
+    "prompt": "A lawyer makes a careless error, but the client cannot establish that it caused any compensable loss. Which distinction matters?",
+    "options": [
+      "A negligence damages claim may fail even if the conduct warrants professional discipline.",
+      "Every error guarantees damages.",
+      "Absence of damages proves competent performance.",
+      "Professional discipline always requires a lost lawsuit."
+    ],
+    "answer": 0,
+    "explanation": "Civil malpractice ordinarily needs causation and damages. Professional duties can be violated independently of those elements.",
+    "refs": [
+      "scope"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 3,
+    "prompt": "A convicted defendant shows counsel performed deficiently but offers no basis for finding the result might have changed. Under the ordinary Strickland test, what is missing?",
+    "options": [
+      "A signed fee agreement.",
+      "The required prejudice showing.",
+      "Proof that counsel violated every ethics rule.",
+      "A prior malpractice judgment."
+    ],
+    "answer": 1,
+    "explanation": "Strickland generally requires both deficient performance and prejudice; limited special doctrines should not be assumed.",
+    "refs": [
+      "strickland"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 3,
+    "prompt": "During a genuine emergency, no qualified referral or consultation is practical. An inexperienced lawyer gives narrowly necessary temporary help. What is the best analysis?",
+    "options": [
+      "Emergency conditions authorize unlimited later representation without preparation.",
+      "Any unfamiliar emergency help is automatically prohibited.",
+      "Evaluate whether the assistance was limited to what the emergency reasonably required.",
+      "The client’s gratitude waives competence."
+    ],
+    "answer": 2,
+    "explanation": "The competence comment recognizes limited emergency help, not a permanent exemption from competent preparation.",
+    "refs": [
+      "r1.1"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 4,
+    "prompt": "A lawyer reasonably limits an engagement to reviewing one contract, explains the excluded work and risks, and obtains informed consent. What remains required?",
+    "options": [
+      "No duty of care because the engagement is limited.",
+      "A promise that the client will never sue.",
+      "Independent counsel in every limited-scope engagement under Rule 1.2(c).",
+      "Competent performance of the work actually undertaken."
+    ],
+    "answer": 3,
+    "explanation": "A scope limit defines the task. It does not excuse negligent performance of that task.",
+    "refs": [
+      "r1.2",
+      "r1.1",
+      "lerner"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 4,
+    "prompt": "A client signs a future-malpractice cap after the lawyer recommends consulting independent counsel, but the client has none. Under Model Rule 1.8(h)(1), is that enough?",
+    "options": [
+      "No; the client must actually be independently represented in making that agreement.",
+      "Yes; a written recommendation alone satisfies the rule.",
+      "Yes; informed consent always cures any liability limitation.",
+      "No; the client must first sue the lawyer."
+    ],
+    "answer": 0,
+    "explanation": "The prospective-liability paragraph requires actual independent representation, unlike the existing-claim settlement paragraph.",
+    "refs": [
+      "r1.8"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 4,
+    "prompt": "A lawyer seeks to settle an existing malpractice claim with an unrepresented former client. What does Rule 1.8(h)(2) require?",
+    "options": [
+      "Actual retention of independent counsel in every settlement.",
+      "Written advice on the desirability of independent counsel and a reasonable opportunity to seek it.",
+      "Only an oral warning immediately before signing.",
+      "No special steps because the representation has ended."
+    ],
+    "answer": 1,
+    "explanation": "The rule protects unrepresented current and former clients. The opportunity to seek counsel is required, but actual retention is not required by this paragraph.",
+    "refs": [
+      "r1.8"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 4,
+    "prompt": "A sophisticated client consents to a scope so narrow that competent performance of the proposed task is impossible. Is consent sufficient?",
+    "options": [
+      "Yes; sophisticated clients may waive every professional duty.",
+      "Yes; an email removes the reasonableness requirement.",
+      "No; reasonableness and informed consent are separate conditions.",
+      "No; all limited representation is forbidden."
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.2(c) demands a reasonable limitation as well as informed consent; competence remains relevant.",
+    "refs": [
+      "r1.2",
+      "r1.1"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 5,
+    "prompt": "A client expressly rejects an offered settlement. The lawyer believes accepting is financially best. May the lawyer accept without further authority?",
+    "options": [
+      "Yes; the lawyer’s financial judgment controls objectives.",
+      "Yes; a favorable amount creates implied authority despite rejection.",
+      "Only if opposing counsel promises confidentiality.",
+      "No; the settlement decision belongs to the client."
+    ],
+    "answer": 3,
+    "explanation": "Rule 1.2(a) reserves settlement decisions to the client. Advice and consultation do not equal authority to override an express choice.",
+    "refs": [
+      "r1.2"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 5,
+    "prompt": "A competent criminal defendant expressly insists on maintaining innocence. Counsel wants to concede guilt to avoid a harsher penalty. What controls?",
+    "options": [
+      "Counsel may not override that express objective by conceding guilt.",
+      "Counsel controls every decision if the strategy seems sensible.",
+      "The client controls only witness order.",
+      "The judge may treat silence by counsel as consent from the client."
+    ],
+    "answer": 0,
+    "explanation": "McCoy protects the client’s express objective to maintain innocence. This differs from ordinary tactical choices and from a client who does not object.",
+    "refs": [
+      "mccoy"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 5,
+    "prompt": "Appellate counsel selects the strongest issues and omits weaker nonfrivolous claims requested by the client. Does the Constitution require every requested issue?",
+    "options": [
+      "Yes; every nonfrivolous issue must appear in the brief.",
+      "No; professional selection of issues is generally permitted under Jones.",
+      "No; counsel may abandon the authorized appeal without any procedure.",
+      "Yes; only the client may draft appellate arguments."
+    ],
+    "answer": 1,
+    "explanation": "Jones distinguishes the client’s fundamental decisions from professional judgment in selecting appellate issues. Duties of communication and competent representation remain.",
+    "refs": [
+      "jones",
+      "r1.4"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 5,
+    "prompt": "A client asks how to disguise a knowingly fraudulent transaction. What may the lawyer properly do?",
+    "options": [
+      "Design the disguise because the client chose the objective.",
+      "Assist if the fee agreement includes a disclaimer.",
+      "Explain the legal consequences and counsel lawful conduct, without helping execute the fraud.",
+      "Treat every discussion of unlawful conduct as forbidden."
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.2(d) distinguishes advice about legal consequences or good-faith legal testing from knowing assistance in crime or fraud.",
+    "refs": [
+      "r1.2"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 6,
+    "prompt": "A client misses a substantial fee obligation despite reasonable warning. The lawyer is counsel of record in an active case. What is the best response?",
+    "options": [
+      "Stop appearing immediately because unpaid bills end all duties.",
+      "Disclose the client’s secrets publicly to force payment.",
+      "Assume no lawyer may ever withdraw for nonpayment.",
+      "Assess permissive withdrawal, obtain required tribunal permission, and protect the client’s interests."
+    ],
+    "answer": 3,
+    "explanation": "Rule 1.16(b)(5) can permit withdrawal after reasonable warning, but court requirements and transition duties remain.",
+    "refs": [
+      "r1.16"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 6,
+    "prompt": "The court orders a lawyer to continue despite good cause for withdrawal. What does Rule 1.16(c) generally require?",
+    "options": [
+      "Continue as ordered while pursuing appropriate lawful relief.",
+      "Ignore the order because the client is difficult.",
+      "Terminate by deleting the calendar entry.",
+      "Transfer the matter to anyone without informing the client."
+    ],
+    "answer": 0,
+    "explanation": "Required tribunal permission and orders constrain the timing of withdrawal. A valid ground does not itself end counsel-of-record responsibilities.",
+    "refs": [
+      "r1.16"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 6,
+    "prompt": "A lawyer keeps postponing a filing solely to increase pressure and costs on the opponent. The client requests the delay. What is the best analysis?",
+    "options": [
+      "Any client-requested delay is proper.",
+      "Client preference does not by itself justify delay inconsistent with Rule 3.2.",
+      "Delay is permissible whenever no deadline has yet expired.",
+      "Rule 3.2 applies only to prosecutors."
+    ],
+    "answer": 1,
+    "explanation": "Reasonable efforts to expedite must be consistent with legitimate client interests. Frustrating the opposing party is not itself a proper justification.",
+    "refs": [
+      "r3.2"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 6,
+    "prompt": "A discharged lawyer holds unearned advance fees and the client’s documents. What duty normally follows?",
+    "options": [
+      "Keep everything because discharge ends duties.",
+      "Require the client to abandon all malpractice claims first.",
+      "Take reasonable protective steps, including appropriate surrender and refund, subject to applicable law.",
+      "Destroy the file to preserve secrecy."
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.16(d) expressly addresses transition protection, surrender, and unearned fees or expenses; retention rights depend on other law.",
+    "refs": [
+      "r1.16"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 7,
+    "prompt": "A lawyer learns information relating to a representation from a public court filing. May the lawyer assume Rule 1.6 is irrelevant?",
+    "options": [
+      "Yes; public information never relates to representation.",
+      "Yes; only facts told directly by the client are covered.",
+      "No; every public document is attorney-client privileged.",
+      "No; the duty is broader than privately communicated secrets."
+    ],
+    "answer": 3,
+    "explanation": "Confidentiality and privilege are different. Public-source information can still fall within the ethics duty without being privileged.",
+    "refs": [
+      "r1.6"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 7,
+    "prompt": "A client gives a lawyer an existing physical object and asks that it be hidden. Which statement is sound?",
+    "options": [
+      "Privilege does not automatically shield underlying physical evidence or authorize concealment.",
+      "Everything handed to a lawyer becomes privileged.",
+      "Rule 1.6 requires every requested concealment.",
+      "A fee payment changes the object into work product."
+    ],
+    "answer": 0,
+    "explanation": "Separate protected communications from physical evidence and legal duties. Confidentiality does not license unlawful obstruction or concealment.",
+    "refs": [
+      "r1.6",
+      "r3.4"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 7,
+    "prompt": "A lawyer sends a sensitive file to an unfamiliar online service without checking access or authorization. What duty should be assessed?",
+    "options": [
+      "Only whether the service has an attractive interface.",
+      "Reasonable safeguards against unauthorized disclosure or access under Rule 1.6(c).",
+      "Whether the client specifically banned that service by name.",
+      "Whether any actual harm has already been proved in court."
+    ],
+    "answer": 1,
+    "explanation": "Reasonable preventive safeguards are required; an absence of proven harm does not eliminate the duty.",
+    "refs": [
+      "r1.6"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 7,
+    "prompt": "A subpoena demands confidential legal-advice communications. Which distinction is most useful?",
+    "options": [
+      "Confidentiality and privilege are identical in every respect.",
+      "Work product protects every fact a lawyer knows.",
+      "Privilege addresses compelled disclosure; confidentiality is a broader professional duty that must also be considered.",
+      "A subpoena automatically eliminates all protections without analysis."
+    ],
+    "answer": 2,
+    "explanation": "Identify the legal protection, assert applicable nonfrivolous claims, and analyze disclosure obligations and exceptions rather than treating the concepts as interchangeable.",
+    "refs": [
+      "r1.6",
+      "upjohn",
+      "frcp26"
+    ]
+  },
+  {
+    "id": 33,
+    "section": 8,
+    "prompt": "A lawyer reasonably believes limited disclosure is necessary to prevent reasonably certain substantial bodily harm. The client did not use the lawyer’s services to create the danger. What does Model Rule 1.6(b)(1) provide?",
+    "options": [
+      "It always forbids disclosure unless the lawyer helped create the danger.",
+      "It requires publication of the whole file.",
+      "It applies only after a court has found the client guilty.",
+      "It may permit the necessary disclosure without a lawyer-services condition."
+    ],
+    "answer": 3,
+    "explanation": "The bodily-harm exception differs from specified financial-harm exceptions. It is permissive under the Model Rule and limited to reasonable necessity.",
+    "refs": [
+      "r1.6"
+    ]
+  },
+  {
+    "id": 34,
+    "section": 8,
+    "prompt": "A client admits an old financial crime while seeking defense advice. The lawyer’s services were not used to commit or further it. Does that fact alone satisfy Rule 1.6’s crime-fraud financial exceptions?",
+    "options": [
+      "No; the required connection to use of the lawyer’s services is absent.",
+      "Yes; every admission of crime must be reported.",
+      "Yes; defense representation itself necessarily furthers the completed crime.",
+      "No; no exception ever concerns financial harm."
+    ],
+    "answer": 0,
+    "explanation": "The specific financial/property exceptions are not a general past-crime reporting rule. Analyze each condition and any other applicable duty separately.",
+    "refs": [
+      "r1.6"
+    ]
+  },
+  {
+    "id": 35,
+    "section": 8,
+    "prompt": "A narrow warning would prevent a threatened serious injury, but a lawyer wants to publish all client communications. What is the main limit?",
+    "options": [
+      "Any exception waives the whole file forever.",
+      "Disclosure must stay within what the lawyer reasonably believes necessary for the permitted purpose.",
+      "Public embarrassment is always necessary to deter misconduct.",
+      "The number of documents determines whether confidentiality applies."
+    ],
+    "answer": 1,
+    "explanation": "An exception is a bounded permission. Excess disclosure may remain impermissible.",
+    "refs": [
+      "r1.6"
+    ]
+  },
+  {
+    "id": 36,
+    "section": 8,
+    "prompt": "A lawyer knows material evidence offered by the lawyer was false. Remonstration has failed. What should the lawyer analyze next?",
+    "options": [
+      "Treat confidentiality as an absolute bar to all corrective action.",
+      "Continue relying on the evidence unless the opponent discovers it.",
+      "Rule 3.3’s required reasonable remedial measures, including disclosure if necessary despite Rule 1.6.",
+      "Delete the file and withdraw silently."
+    ],
+    "answer": 2,
+    "explanation": "Candor to the tribunal creates specific remedial obligations. Do not confuse those duties with the discretionary language of ordinary Rule 1.6(b) exceptions.",
+    "refs": [
+      "r3.3"
+    ]
+  },
+  {
+    "id": 37,
+    "section": 9,
+    "prompt": "Two current clients ask one lawyer to assert opposing claims against each other in the same litigation and both sign consent forms. What is the best answer under Rule 1.7?",
+    "options": [
+      "Written consent cures every conflict.",
+      "No conflict exists because both clients requested it.",
+      "Only the fee amount determines consentability.",
+      "That prohibited same-proceeding adversity is not cured merely by their consent."
+    ],
+    "answer": 3,
+    "explanation": "Rule 1.7(b) contains conditions beyond consent, including the restriction on claims by one represented client against another in the same proceeding.",
+    "refs": [
+      "r1.7"
+    ]
+  },
+  {
+    "id": 38,
+    "section": 9,
+    "prompt": "A former client’s opponent seeks representation in the same dispute. The interests are materially adverse. What is ordinarily required by Rule 1.9(a)?",
+    "options": [
+      "The former client’s informed consent confirmed in writing.",
+      "Only the new client’s consent.",
+      "An oral promise not to read the old file.",
+      "No step because all former-client duties ended."
+    ],
+    "answer": 0,
+    "explanation": "Same or substantially related matters plus material adversity trigger the former-client representation restriction.",
+    "refs": [
+      "r1.9"
+    ]
+  },
+  {
+    "id": 39,
+    "section": 9,
+    "prompt": "A lawyer’s business investment creates a significant risk of limiting advice to a client. What should the lawyer do?",
+    "options": [
+      "Ignore it unless financial loss has already occurred.",
+      "Analyze a personal-interest conflict and whether all conditions for consentable representation can be met.",
+      "Assume only conflicts between two clients count.",
+      "Ask the client to waive all future professional rules."
+    ],
+    "answer": 1,
+    "explanation": "Rule 1.7 includes material limitations caused by the lawyer’s own interests, not just obligations to another client.",
+    "refs": [
+      "r1.7"
+    ]
+  },
+  {
+    "id": 40,
+    "section": 9,
+    "prompt": "A lawyer wants to reveal a former client’s information and cites the “generally known” language in Rule 1.9(c)(1). What is the flaw?",
+    "options": [
+      "Former-client information is never protected.",
+      "Public accessibility always waives every duty.",
+      "That language addresses adverse use and is not a blanket disclosure exception.",
+      "Only written communications survive termination."
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.9 separates use from revelation. Read the precise paragraph and applicable confidentiality exceptions.",
+    "refs": [
+      "r1.9"
+    ]
+  },
+  {
+    "id": 41,
+    "section": 10,
+    "prompt": "A company pays an employee’s lawyer and demands control over the employee’s settlement decision. What is the key problem?",
+    "options": [
+      "Any third-party payment is prohibited.",
+      "Payment makes the company the only client automatically.",
+      "Control is allowed if the company pays promptly.",
+      "The payer cannot direct the lawyer’s professional judgment or displace the client’s decision."
+    ],
+    "answer": 3,
+    "explanation": "Third-party compensation can be permitted with conditions, but independence, confidentiality, and the client’s authority remain.",
+    "refs": [
+      "r5.4",
+      "r1.8",
+      "r1.2"
+    ]
+  },
+  {
+    "id": 42,
+    "section": 10,
+    "prompt": "Lawyers in different firms split a fee without proportional services. Which condition can support the arrangement under Rule 1.5(e)?",
+    "options": [
+      "Each assumes joint responsibility, with the required client agreement confirmed in writing and a reasonable total fee.",
+      "The referring lawyer’s name appears on a business card.",
+      "The client never learns the split.",
+      "The lawyers call the payment a gift."
+    ],
+    "answer": 0,
+    "explanation": "Proportional services and joint responsibility are alternatives, but the client-agreement and reasonable-fee conditions remain.",
+    "refs": [
+      "r1.5"
+    ]
+  },
+  {
+    "id": 43,
+    "section": 10,
+    "prompt": "A firm includes nonlawyer employees in a qualifying compensation plan based partly on profits. What is the best Model Rule 5.4 analysis?",
+    "options": [
+      "Any employee bonus based on profits is categorically barred.",
+      "Check the express employee compensation-plan exception rather than assuming every profit-based payment is forbidden.",
+      "All nonlawyer referral payments are therefore allowed.",
+      "The employees become licensed lawyers through the plan."
+    ],
+    "answer": 1,
+    "explanation": "Rule 5.4 includes a defined compensation/retirement-plan exception. It does not erase other fee-sharing and control restrictions.",
+    "refs": [
+      "r5.4"
+    ]
+  },
+  {
+    "id": 44,
+    "section": 10,
+    "prompt": "A parent offers to pay an adult client’s legal bill on condition of receiving every confidential update. What should counsel assess?",
+    "options": [
+      "The parent owns all information because of payment.",
+      "Only the parent’s consent matters.",
+      "Informed consent, confidentiality, and independence; payment alone does not authorize the disclosures.",
+      "Confidentiality ends whenever someone else pays."
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.8(f) requires informed client consent and protection of information, along with freedom from interference.",
+    "refs": [
+      "r1.8",
+      "r1.6"
+    ]
+  },
+  {
+    "id": 45,
+    "section": 11,
+    "prompt": "A lawyer approaches an injured stranger in person to seek paid representation, with no relevant prior relationship. Which facts trigger the central Model Rule concern?",
+    "options": [
+      "Any accurate public advertisement.",
+      "Only the eventual amount of damages.",
+      "Whether the lawyer uses a printed business card.",
+      "Targeted live contact with a significant financial motive and no stated exception."
+    ],
+    "answer": 3,
+    "explanation": "Rule 7.3’s live-solicitation restriction turns on the type of contact, motive, target, and exceptions, not whether the lawyer also supplies a card.",
+    "refs": [
+      "r7.3",
+      "ohralik"
+    ]
+  },
+  {
+    "id": 46,
+    "section": 11,
+    "prompt": "A business officer routinely purchases the type of legal service offered. A lawyer makes a live pitch without coercion. What is the best analysis?",
+    "options": [
+      "Assess the routine-business-user exception along with all remaining communication limits.",
+      "Every live contact is prohibited without exception.",
+      "Routine purchasing makes misleading claims permissible.",
+      "The officer must already have retained this particular lawyer."
+    ],
+    "answer": 0,
+    "explanation": "Rule 7.3(b)(3) provides a relevant exception, but misleading communications and prohibited pressure remain improper.",
+    "refs": [
+      "r7.3",
+      "r7.1"
+    ]
+  },
+  {
+    "id": 47,
+    "section": 11,
+    "prompt": "A former business contact tells a lawyer to stop pitching legal services. May the lawyer continue because a relationship exception would otherwise apply?",
+    "options": [
+      "Yes; relationship exceptions defeat every no-contact request.",
+      "No; the expressed desire not to be solicited remains controlling under Rule 7.3(c).",
+      "Yes; only written refusals count.",
+      "Only if the lawyer reduces the proposed fee."
+    ],
+    "answer": 1,
+    "explanation": "The anti-harassment and expressed-refusal limitations apply even when the live-contact ban would otherwise have an exception.",
+    "refs": [
+      "r7.3"
+    ]
+  },
+  {
+    "id": 48,
+    "section": 11,
+    "prompt": "A civil-rights nonprofit’s lawyer sends a noncoercive letter offering free representation tied to political advocacy. Which analysis is strongest?",
+    "options": [
+      "All offers of legal help are constitutionally unprotected.",
+      "The letter authorizes misleading statements because services are free.",
+      "Consider protected expression and association rather than equating it automatically with a commercial live solicitation.",
+      "Only paid in-person pitches receive First Amendment protection."
+    ],
+    "answer": 2,
+    "explanation": "Primus and Button protect important nonprofit political litigation activity. Fraud, coercion, and other genuine abuses can still be regulated.",
+    "refs": [
+      "primus",
+      "button",
+      "r7.3"
+    ]
+  },
+  {
+    "id": 49,
+    "section": 12,
+    "prompt": "Does organization counsel automatically represent an officer?",
+    "options": [
+      "Yes, whenever the officer speaks for the entity",
+      "No; the entity is the client unless a separate relationship forms",
+      "Only if the officer is senior",
+      "Only in litigation"
+    ],
+    "answer": 1,
+    "explanation": "Rule 1.13 identifies the organization as the client. A constituent can separately become a client, but position alone is insufficient.",
+    "refs": [
+      "r1.13"
+    ]
+  },
+  {
+    "id": 50,
+    "section": 13,
+    "prompt": "May counsel automatically substitute a relative’s wishes for a client with diminished capacity?",
+    "options": [
+      "Yes, if the relative is next of kin",
+      "Yes, if a medical diagnosis exists",
+      "No; maintain the normal relationship so far as possible and use Rule 1.14 carefully",
+      "No, but counsel must always withdraw"
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.14 starts with the ordinary client relationship and allows limited protective action under its stated conditions.",
+    "refs": [
+      "r1.14"
+    ]
+  },
+  {
+    "id": 51,
+    "section": 14,
+    "prompt": "Which fact most directly triggers Rule 8.3 reporting?",
+    "options": [
+      "A rumored minor mistake",
+      "Known misconduct raising a substantial question about fitness, unless protected by Rule 1.6",
+      "Any civil malpractice claim",
+      "A client’s dissatisfaction"
+    ],
+    "answer": 1,
+    "explanation": "Rule 8.3 requires knowledge and a substantial question; Rule 1.6 limits compelled reporting.",
+    "refs": [
+      "r8.1"
+    ]
+  },
+  {
+    "id": 52,
+    "section": 15,
+    "prompt": "A client disputes only part of a settlement fund. What should counsel do?",
+    "options": [
+      "Hold all money indefinitely",
+      "Distribute the undisputed part promptly and safeguard the disputed part",
+      "Deposit all money in the operating account",
+      "Let the lawyer decide the dispute alone"
+    ],
+    "answer": 1,
+    "explanation": "Rule 1.15 requires prompt delivery of undisputed funds and continued protection of contested funds.",
+    "refs": [
+      "r1.5"
+    ]
+  },
+  {
+    "id": 53,
+    "section": 16,
+    "prompt": "Does labeling an ordinary business report “privileged” establish attorney–client privilege?",
+    "options": [
+      "Yes, if counsel signs it",
+      "No; purpose, confidentiality, and legal advice must be shown",
+      "Yes, if the company owns it",
+      "No, because corporations have no privilege"
+    ],
+    "answer": 1,
+    "explanation": "The label is not decisive. Upjohn and Rule 501 require analysis of the communication and legal advice purpose.",
+    "refs": [
+      "r1.6"
+    ]
+  },
+  {
+    "id": 54,
+    "section": 17,
+    "prompt": "Can unrelated matters eliminate a direct-adversity conflict between current clients?",
+    "options": [
+      "Yes, automatically",
+      "Only if fees are modest",
+      "No; direct adversity still requires the Rule 1.7 analysis",
+      "Only if the client is a corporation"
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.7(a)(1) does not require the matters to be related.",
+    "refs": [
+      "r1.7"
+    ]
+  },
+  {
+    "id": 55,
+    "section": 18,
+    "prompt": "What does Rule 1.8(g) require for an aggregate settlement?",
+    "options": [
+      "Consent from a majority",
+      "Each affected client’s informed consent in a signed writing after full allocation disclosure",
+      "Only court approval",
+      "Only a total settlement figure"
+    ],
+    "answer": 1,
+    "explanation": "Each client must know all claims and each person’s participation, then sign informed consent.",
+    "refs": [
+      "r1.7"
+    ]
+  },
+  {
+    "id": 56,
+    "section": 19,
+    "prompt": "Is an oral client approval enough for a lawyer’s business transaction with that client?",
+    "options": [
+      "Yes, if price is fair",
+      "Yes, if a friend witnesses it",
+      "No; Rule 1.8(a) requires specified writing and informed written consent",
+      "Only for stock"
+    ],
+    "answer": 2,
+    "explanation": "Rule 1.8(a) has disclosure, independent-counsel opportunity, and written consent requirements.",
+    "refs": [
+      "r1.7"
+    ]
+  },
+  {
+    "id": 57,
+    "section": 20,
+    "prompt": "Which rule specifically governs a former government lawyer’s switch to private work on a matter handled personally and substantially?",
+    "options": [
+      "Rule 1.11",
+      "Rule 7.3",
+      "Rule 3.6",
+      "Rule 1.5"
+    ],
+    "answer": 0,
+    "explanation": "Rule 1.11 provides the tailored former-government-lawyer rule.",
+    "refs": [
+      "r1.9"
+    ]
+  },
+  {
+    "id": 58,
+    "section": 21,
+    "prompt": "What should a mediator do before representing a former mediation party in that same matter?",
+    "options": [
+      "Proceed if no secrets were learned",
+      "Obtain each party’s informed consent confirmed in writing under Rule 1.12",
+      "Only notify the court",
+      "Charge no fee"
+    ],
+    "answer": 1,
+    "explanation": "Rule 1.12(a) requires informed written consent from all parties to the proceeding.",
+    "refs": [
+      "r1.12"
+    ]
+  },
+  {
+    "id": 59,
+    "section": 22,
+    "prompt": "May Rule 1.6 always prevent disclosure needed to remedy known false evidence?",
+    "options": [
+      "Yes, no exceptions",
+      "No; Rule 3.3(c) makes its candor duties apply despite Rule 1.6",
+      "Only in civil cases",
+      "Only if client consents"
+    ],
+    "answer": 1,
+    "explanation": "Rule 3.3(c) expressly overrides Rule 1.6 for the duties in that rule.",
+    "refs": [
+      "r3.1"
+    ]
+  },
+  {
+    "id": 60,
+    "section": 23,
+    "prompt": "A lawyer receives harmful but responsive evidence under a preservation order. Best first step?",
+    "options": [
+      "Delete it before discovery",
+      "Preserve it and evaluate production or privilege duties",
+      "Ask the client to hide it",
+      "Alter the metadata"
+    ],
+    "answer": 1,
+    "explanation": "Rule 3.4 forbids unlawful obstruction and alteration or destruction of evidence.",
+    "refs": [
+      "r3.4"
+    ]
+  },
+  {
+    "id": 61,
+    "section": 24,
+    "prompt": "May a lawyer advise an unrepresented opposing party on legal strategy when interests conflict?",
+    "options": [
+      "Yes, if the lawyer identifies herself",
+      "No; Rule 4.3 limits legal advice to seeking counsel in that situation",
+      "Yes, if no suit is filed",
+      "Only in writing"
+    ],
+    "answer": 1,
+    "explanation": "Rule 4.3 requires role clarity and generally limits advice to securing counsel where interests conflict.",
+    "refs": [
+      "r3.4"
+    ]
+  },
+  {
+    "id": 62,
+    "section": 25,
+    "prompt": "Which fact matters most under Rule 3.6?",
+    "options": [
+      "The lawyer speaks after office hours",
+      "The lawyer knows or should know a public statement substantially likely materially prejudices the proceeding",
+      "The media requests a comment",
+      "The case is civil"
+    ],
+    "answer": 1,
+    "explanation": "The substantial-likelihood-of-material-prejudice standard anchors Rule 3.6.",
+    "refs": [
+      "r3.5"
+    ]
+  },
+  {
+    "id": 63,
+    "section": 26,
+    "prompt": "What standard commonly triggers judicial disqualification under the Model Code?",
+    "options": [
+      "Any party’s disappointment",
+      "Impartiality might reasonably be questioned",
+      "Only proven bribery",
+      "Only a prior adverse ruling"
+    ],
+    "answer": 1,
+    "explanation": "MCJC Rule 2.11 uses the reasonable-question standard and lists specific grounds.",
+    "refs": [
+      "mcjc"
+    ]
+  },
+  {
+    "id": 64,
+    "section": 27,
+    "prompt": "Does an adverse ruling alone prove a judge lacks integrity under Rule 8.2?",
+    "options": [
+      "Yes",
+      "No; counsel needs a factual basis and must avoid knowing or reckless falsehoods",
+      "Only for federal judges",
+      "Only after appeal"
+    ],
+    "answer": 1,
+    "explanation": "Rule 8.2 targets knowing or reckless false factual statements about judicial qualifications or integrity.",
+    "refs": [
+      "r8.2"
+    ]
+  },
+  {
+    "id": 65,
+    "section": 28,
+    "prompt": "Does Rule 3.8(d) allow a prosecutor to withhold exculpatory evidence until it satisfies a later appellate materiality test?",
+    "options": [
+      "Yes",
+      "No; the ethical disclosure duty is separately stated",
+      "Only in plea cases",
+      "Only if defense asks"
+    ],
+    "answer": 1,
+    "explanation": "Rule 3.8(d) calls for timely disclosure of evidence tending to negate guilt or mitigate offense, with separate constitutional standards.",
+    "refs": [
+      "r3.8"
+    ]
+  },
+  {
+    "id": 66,
+    "section": 29,
+    "prompt": "Is client unpopularity alone good cause to decline a tribunal appointment?",
+    "options": [
+      "Yes, always",
+      "No; Rule 6.2 lists limited good-cause grounds",
+      "Yes, if the media covers it",
+      "Only if the case is civil"
+    ],
+    "answer": 1,
+    "explanation": "Rule 6.2 does not treat ordinary client unpopularity as a free-standing ground to refuse.",
+    "refs": [
+      "r6.1"
+    ]
+  }
+]

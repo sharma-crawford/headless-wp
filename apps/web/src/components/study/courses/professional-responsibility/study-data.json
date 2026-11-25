@@ -1,0 +1,1896 @@
+{
+  "subject": "professional-responsibility",
+  "title": "Counsel of the Fairy Court",
+  "kicker": "Loyalty. Candor. A little fairy dust.",
+  "intro": "A study path through professional duties, cases, hypothetical problems, and cumulative review.",
+  "scope": "Explore admission, client formation, confidentiality, conflicts, advocacy, judicial conduct, prosecution, and public service. The ABA Model Rules supply the baseline; jurisdictions may adopt different language. Each topic gives the governing test and a fresh application.",
+  "flow": [
+    "Identify the relationship",
+    "Name the governing duty",
+    "Test consent and exceptions",
+    "Choose the required response"
+  ],
+  "sections": [
+    {
+      "id": "regulation",
+      "title": "The profession & its rulemakers",
+      "tagline": "The right rule begins with the right jurisdiction.",
+      "points": [
+        {
+          "title": "Several systems can apply",
+          "text": "Professional discipline, civil liability, procedural sanctions, and criminal law are **different systems**. The ABA Model Rules are a model, not automatically binding law everywhere. A violation does not by itself create a malpractice claim, though it may be evidence of breach under applicable law."
+        },
+        {
+          "title": "Authority is not choice of law",
+          "text": "Rule 8.5 can expose an admitted lawyer to home-jurisdiction discipline for conduct elsewhere, and an outside lawyer to local authority for offering services there. For a **pending tribunal matter**, generally use the tribunal jurisdiction’s rules unless its rules say otherwise. Other conduct follows the location or **predominant effect**, with the stated reasonable-belief safe harbor."
+        },
+        {
+          "title": "Candor and reporting",
+          "text": "Rule 8.1 prohibits knowing material falsehoods and specified nondisclosure in admission or discipline matters, subject to protected confidentiality and constitutional rights. Rule 8.3 generally requires reporting **known violations raising a substantial question** about honesty, trustworthiness, or fitness, but excludes information protected by Rule 1.6 and specified assistance-program information."
+        }
+      ],
+      "example": "Rowan practices in the Oak Court but handles a pending case in the Willow Court. Two authorities may be able to discipline him. Which conduct rules apply is a separate question that starts with the tribunal rule, not simply where he keeps his desk.",
+      "tips": [
+        "Identify the **type of consequence** the question asks about.",
+        "Do not confuse **who can discipline** with **which rule governs**."
+      ],
+      "terms": [
+        {
+          "term": "Disciplinary jurisdiction",
+          "definition": "Authority to investigate and discipline a lawyer."
+        },
+        {
+          "term": "Choice of law",
+          "definition": "The method for choosing the applicable jurisdiction’s conduct rules."
+        },
+        {
+          "term": "Predominant effect",
+          "definition": "The main place where conduct has its consequences, relevant to Rule 8.5’s nontribunal analysis."
+        }
+      ],
+      "refs": [
+        "scope",
+        "r8.5",
+        "r8.1",
+        "r8.3"
+      ],
+      "comicCaption": "The council writes the rules; each jurisdiction decides which rules bind its lawyers."
+    },
+    {
+      "id": "practice-authorization",
+      "title": "Who may practice & who must supervise",
+      "tagline": "A border is a legal fact, even when the work is remote.",
+      "points": [
+        {
+          "title": "Authorization is local",
+          "text": "Rule 5.5 prohibits unauthorized practice and assisting it. Admission somewhere is **not a universal license**. Temporary-service exceptions have conditions: association with actively participating local counsel, litigation or ADR-related authority, or qualifying work reasonably related to the home practice."
+        },
+        {
+          "title": "Presence and permission differ",
+          "text": "A physical office is not the only relevant contact. A continuous local practice or holding out as locally admitted can trigger restrictions. Separate temporary practice, in-house authority, federal authorization, and **pro hac vice** requirements. Modern local rules may differ from older cases."
+        },
+        {
+          "title": "Delegation keeps responsibility",
+          "text": "Rule 5.3 requires reasonable systems and supervision so nonlawyer assistance is compatible with professional obligations; ordering, ratifying, or failing to remedy specified known misconduct can create responsibility. Rule 5.7 can extend duties to **law-related services** where separation and adequate warnings are absent."
+        }
+      ],
+      "example": "Thistle asks a clerk to organize documents, supplies confidentiality instructions, and checks the work. That is different from telling an unsupervised clerk to choose the client’s legal strategy. Delegating a task does not transfer the lawyer’s duty.",
+      "tips": [
+        "Find the **specific authorization**, not just a travel itinerary.",
+        "Supervision applies to useful outside assistance as well as people at the next desk."
+      ],
+      "terms": [
+        {
+          "term": "Unauthorized practice",
+          "definition": "Providing legal services without the authorization required in the relevant jurisdiction."
+        },
+        {
+          "term": "Pro hac vice",
+          "definition": "Permission to appear in a particular matter without general admission, subject to local requirements."
+        },
+        {
+          "term": "Law-related services",
+          "definition": "Services related to legal work that are not themselves prohibited legal practice when performed by a nonlawyer."
+        }
+      ],
+      "refs": [
+        "r5.5",
+        "r5.3",
+        "r5.7",
+        "birbrower"
+      ],
+      "comicCaption": "A license opens the gate. Supervising lawyers remain responsible for the team’s work."
+    },
+    {
+      "id": "relationship",
+      "title": "The first consultation & client identity",
+      "tagline": "The relationship may start before the signature.",
+      "points": [
+        {
+          "title": "Conduct can create duties",
+          "text": "An engagement letter clarifies the job but is not the only way to form a relationship. Legal advice, manifested assent, and reasonable reliance can matter under applicable law. **No payment** does not necessarily mean **no client**."
+        },
+        {
+          "title": "Prospective clients have protection",
+          "text": "Under Rule 1.18, a person consulting about possible representation may be a **prospective client** even if no engagement follows. The lawyer generally cannot use or reveal consultation information except as Rule 1.9 allows. Not every unsolicited message creates that status; consider the circumstances and reasonable expectations."
+        },
+        {
+          "title": "Separate confidentiality from disqualification",
+          "text": "Representation adverse to a prospective client in the same or substantially related matter can be barred when the lawyer received information that **could be significantly harmful**. Informed written consent by both affected persons or the rule’s limited-information, screening, no-fee, and notice pathway may permit representation."
+        }
+      ],
+      "example": "A merchant tells Rowan sensitive settlement priorities during a genuine consultation. Rowan declines the matter. He cannot treat those priorities as free intelligence for the opponent simply because no fee agreement was signed.",
+      "tips": [
+        "Ask **whose interests you are undertaking to protect**.",
+        "A conflict restriction can have a narrower trigger than the duty to protect consultation information."
+      ],
+      "terms": [
+        {
+          "term": "Prospective client",
+          "definition": "A person who consults a lawyer about possible representation in a matter."
+        },
+        {
+          "term": "Significantly harmful information",
+          "definition": "Information capable of materially disadvantaging the prospective client in the relevant matter."
+        },
+        {
+          "term": "Screening",
+          "definition": "Procedures isolating a disqualified lawyer from a matter; effective only where the governing rule permits that solution."
+        }
+      ],
+      "refs": [
+        "r1.18",
+        "r1.9"
+      ],
+      "comicCaption": "Before advice begins, identify the client and protect the prospective client’s information."
+    },
+    {
+      "id": "competence",
+      "title": "Competence, malpractice & assistance",
+      "tagline": "Know which standard the problem is asking you to apply.",
+      "points": [
+        {
+          "title": "Competent service",
+          "text": "Rule 1.1 requires **legal knowledge, skill, thoroughness, and preparation** reasonably necessary for the matter. A lawyer can become competent through reasonable study or association; expertise is not always required at intake. Emergency help must stay within what is reasonably necessary when referral or consultation is impractical."
+        },
+        {
+          "title": "Civil malpractice",
+          "text": "A negligence claim ordinarily asks about **duty, breach, causation, and damages**, with details controlled by local law. Proving an error is not enough if it did not cause the claimed loss. A bad outcome alone does not establish negligent work."
+        },
+        {
+          "title": "Constitutional assistance",
+          "text": "Strickland ordinarily requires **deficient performance** and a **reasonable probability of a different result** sufficient to undermine confidence in the outcome. This is not a simple ethics-rule checklist. Presumed-prejudice and structural-error doctrines are limited exceptions, not the default."
+        }
+      ],
+      "example": "Thistle accepts an unfamiliar but manageable boundary dispute, studies the governing law, and consults experienced counsel. Compare that with sending an unprepared advocate into a hearing. Novelty alone is not the violation; inadequate preparation can be.",
+      "tips": [
+        "State the **duty and remedy** before deciding whether harm must be shown.",
+        "Do not infer deficient performance solely from losing the case."
+      ],
+      "terms": [
+        {
+          "term": "Competence",
+          "definition": "The knowledge, skill, thoroughness, and preparation reasonably needed for the service."
+        },
+        {
+          "term": "Malpractice causation",
+          "definition": "The required connection between a lawyer’s breach and the client’s legally recognized loss."
+        },
+        {
+          "term": "Strickland prejudice",
+          "definition": "A reasonable probability that, without deficient performance, the proceeding’s result would have differed."
+        }
+      ],
+      "refs": [
+        "r1.1",
+        "scope",
+        "strickland"
+      ],
+      "comicCaption": "Competence means preparation, skill, and asking for help when the matter demands it."
+    },
+    {
+      "id": "scope",
+      "title": "Limited work & malpractice agreements",
+      "tagline": "Limit the task carefully; read the liability clause separately.",
+      "points": [
+        {
+          "title": "Rule 1.2(c): scope",
+          "text": "A limited engagement must be **reasonable under the circumstances** and supported by **informed consent**. Explain excluded work, material risks, and alternatives. The Model Rule does not universally demand a writing, but another applicable requirement may. Competent work remains required inside the boundary."
+        },
+        {
+          "title": "Rule 1.8(h)(1): future liability",
+          "text": "A prospective malpractice limitation is different. It requires the client to be **independently represented in making the agreement**. A signature, sophisticated client, or suggestion to consult another lawyer is not enough."
+        },
+        {
+          "title": "Rule 1.8(h)(2): existing claim",
+          "text": "For settling a malpractice claim or potential claim with an unrepresented current or former client, provide **written advice about the desirability of independent counsel** and a **reasonable opportunity** to seek that advice. Actual retention is not required by this paragraph. Do not confuse it with the future-liability rule."
+        }
+      ],
+      "example": "Rowan agrees to review a lease’s wording without investigating the building, after explaining that reasonable limitation. A separate clause saying “I am never liable for my mistakes” raises a different rule. Clear scope does not erase responsibility for negligent work within it.",
+      "tips": [
+        "Classify the agreement: **services, future liability, or existing claim**.",
+        "“You may hire a lawyer” is not **actual independent representation**."
+      ],
+      "terms": [
+        {
+          "term": "Informed consent",
+          "definition": "Agreement after adequate explanation of material risks and reasonably available alternatives."
+        },
+        {
+          "term": "Limited-scope representation",
+          "definition": "A reasonable, consented boundary on the legal services undertaken."
+        },
+        {
+          "term": "Prospective liability limitation",
+          "definition": "An agreement reducing responsibility for malpractice that has not yet occurred."
+        }
+      ],
+      "refs": [
+        "r1.2",
+        "r1.8",
+        "r1.0",
+        "lerner"
+      ],
+      "comicCaption": "Draw the boundary of a limited engagement clearly, with informed consent and a reasonable scope."
+    },
+    {
+      "id": "authority",
+      "title": "Client choices & lawyer judgment",
+      "tagline": "Know who holds the decision.",
+      "points": [
+        {
+          "title": "Objectives belong to the client",
+          "text": "Rule 1.2 requires adherence to the client’s decisions about **objectives**, with consultation about means. The client decides **whether to settle**. In a criminal case, after consultation, the client decides the plea, jury waiver, and whether to testify. Legal and procedural requirements still apply."
+        },
+        {
+          "title": "Strategy is not unlimited control",
+          "text": "Counsel ordinarily exercises professional judgment about technical means and may select stronger appellate issues rather than raise every nonfrivolous point. But a competent defendant’s **express objective to maintain innocence** cannot be overridden by a concession of guilt merely because counsel thinks it tactically wise."
+        },
+        {
+          "title": "No assistance in crime or fraud",
+          "text": "Rule 1.2(d) bars counseling or assisting conduct the lawyer **knows is criminal or fraudulent**. A lawyer may explain legal consequences and help make a good-faith effort to determine the law’s validity, scope, meaning, or application. Representation does not mean endorsement of the client’s views."
+        }
+      ],
+      "example": "Thistle believes a settlement is excellent, but her client rejects it. She must advise and explain, not secretly accept. In a separate appeal, she may use professional judgment to omit a weak argument while pursuing the authorized appeal.",
+      "tips": [
+        "Separate **the client’s objective** from **the lawyer’s tactical means**.",
+        "A client’s instruction cannot authorize knowing assistance in fraud."
+      ],
+      "terms": [
+        {
+          "term": "Objective",
+          "definition": "The end the client seeks from the representation."
+        },
+        {
+          "term": "Means",
+          "definition": "The methods used to pursue an authorized objective, developed through consultation and professional judgment."
+        },
+        {
+          "term": "Client autonomy",
+          "definition": "The client’s right to control decisions reserved to the client, including certain fundamental criminal-case choices."
+        }
+      ],
+      "refs": [
+        "r1.2",
+        "r1.4",
+        "jones",
+        "mccoy"
+      ],
+      "comicCaption": "The client chooses the destination; counsel explains the routes and controls lawful technique."
+    },
+    {
+      "id": "diligence-exit",
+      "title": "Diligence, communication & withdrawal",
+      "tagline": "Leaving a matter is also a professional act.",
+      "points": [
+        {
+          "title": "Move the matter and explain it",
+          "text": "Rules 1.3 and 1.4 require **reasonable diligence**, promptness, meaningful consultation, timely status information, and enough explanation for informed client choices. Rule 3.2 requires reasonable efforts to expedite litigation consistent with client interests; delay solely to frustrate an opponent is not justified merely because a client wants it."
+        },
+        {
+          "title": "Required versus permitted departure",
+          "text": "Rule 1.16 requires assessment of the representation and, in specified circumstances, withdrawal: legal or rule violations, material impairment, discharge, and specified continued client misuse after discussion. Permissive grounds include reasonable warning followed by substantial nonpayment, unreasonable burden, or certain fundamental disagreements. **A difficult client alone is not an automatic exit**."
+        },
+        {
+          "title": "Protect the transition",
+          "text": "Comply with **tribunal permission or notice requirements** and continue if ordered despite good cause. On departure, take reasonable steps to protect the client: notice, time for new counsel, papers and property, and refunds of unearned fees or expenses. Confidentiality survives."
+        }
+      ],
+      "example": "Rowan has unpaid bills and wants to leave before a hearing. He must assess the grounds, give appropriate warning, seek required permission, and protect the client’s transition. Silently missing the hearing would not become proper withdrawal.",
+      "tips": [
+        "A ground for withdrawal is not permission to **abandon the file**.",
+        "For an active court matter, check both the ethics rule and **the tribunal’s order**."
+      ],
+      "terms": [
+        {
+          "term": "Diligence",
+          "definition": "Reasonable prompt and committed attention to a client’s matter."
+        },
+        {
+          "term": "Mandatory withdrawal",
+          "definition": "Circumstances requiring refusal or termination, subject to applicable tribunal requirements."
+        },
+        {
+          "term": "Permissive withdrawal",
+          "definition": "Circumstances allowing, but not automatically requiring, departure under the rule."
+        }
+      ],
+      "refs": [
+        "r1.3",
+        "r1.4",
+        "r1.16",
+        "r3.2"
+      ],
+      "comicCaption": "Move diligently, communicate changes, and protect the client when representation ends."
+    },
+    {
+      "id": "confidentiality",
+      "title": "Confidentiality, privilege & work product",
+      "tagline": "Three protections. Three different questions.",
+      "points": [
+        {
+          "title": "Rule 1.6 is broad",
+          "text": "The duty covers **information relating to representation**, whatever its source, not merely a client’s secret communication. Disclosure requires informed consent, implied authorization to carry out representation, or an applicable exception. Public availability alone does not erase the ethics duty."
+        },
+        {
+          "title": "Privilege is a proof protection",
+          "text": "Attorney-client privilege generally protects **confidential communications for legal advice** against compelled disclosure, subject to governing law and exceptions. It does not cloak every underlying fact or physical item. **Work product** concerns litigation preparation and has its own scope and qualified protections."
+        },
+        {
+          "title": "Protect information in practice",
+          "text": "Rule 1.6(c) requires **reasonable efforts** against unauthorized or inadvertent disclosure or access. Match safeguards to sensitivity and circumstances: careful recipients, access limits, secure systems, and supervision. An information-sharing tool does not supply client authorization by itself."
+        }
+      ],
+      "example": "Thistle learns a fact from a public record while handling a client’s case. It can relate to the representation and remain ethically protected even though no privileged communication created it. Before discussing it outside the representation, identify a legitimate disclosure basis.",
+      "tips": [
+        "Ask whether the question concerns **voluntary disclosure**, **compelled testimony**, or **litigation preparation**.",
+        "A fictional nickname may still reveal a client when the surrounding details identify the matter."
+      ],
+      "terms": [
+        {
+          "term": "Confidentiality",
+          "definition": "The professional duty restricting use and disclosure of information related to representation."
+        },
+        {
+          "term": "Attorney-client privilege",
+          "definition": "A legal protection for qualifying confidential legal-advice communications against compelled disclosure."
+        },
+        {
+          "term": "Work product",
+          "definition": "Protection for qualifying litigation-preparation material; its rules differ from both privilege and ethical confidentiality."
+        }
+      ],
+      "refs": [
+        "r1.6",
+        "r1.9",
+        "scope",
+        "frcp26",
+        "fre501",
+        "upjohn"
+      ],
+      "comicCaption": "Keep information relating to representation secure; privilege and work product have separate tests."
+    },
+    {
+      "id": "exceptions",
+      "title": "Disclosure exceptions & competing duties",
+      "tagline": "“May” and “must” change the answer.",
+      "points": [
+        {
+          "title": "Prevent serious harm",
+          "text": "Model Rule 1.6(b)(1) **permits** disclosure to the extent reasonably believed necessary to prevent **reasonably certain death or substantial bodily harm**. The danger need not result from a client crime or the lawyer’s services. Local rules can impose a different duty."
+        },
+        {
+          "title": "Financial harm has extra conditions",
+          "text": "The crime-or-fraud financial/property exceptions require substantial injury and **use of the lawyer’s services** in furtherance. A completed past crime disclosed only to obtain defense advice does not automatically qualify. Other exceptions address ethics advice, certain self-defense needs, law or court orders, and limited conflict detection."
+        },
+        {
+          "title": "Use only what is needed",
+          "text": "Permission is limited by **reasonable necessity**. Separate Rule 3.3 candor duties, which can require remedial disclosure despite Rule 1.6, from ordinary discretionary exceptions. Physical evidence cannot be unlawfully altered or concealed under Rule 3.4; protection of information does not immunize conduct."
+        }
+      ],
+      "example": "Rowan learns that a hidden structural defect poses a reasonably certain danger of serious injury. He analyzes the narrow protective disclosure allowed by the Model Rule. He does not publish the entire client file simply because one exception may permit a warning.",
+      "tips": [
+        "Identify the **exception’s exact facts** before deciding disclosure is permitted.",
+        "After finding permission, ask **how much disclosure is reasonably necessary**."
+      ],
+      "terms": [
+        {
+          "term": "Reasonably certain harm",
+          "definition": "A sufficiently concrete danger under the applicable exception; not necessarily a harm occurring at this instant."
+        },
+        {
+          "term": "Permissive disclosure",
+          "definition": "Disclosure the rule allows, as distinct from a command to disclose."
+        },
+        {
+          "term": "Remedial measure",
+          "definition": "A step to correct misconduct or false evidence; candor rules can require escalating action."
+        }
+      ],
+      "refs": [
+        "r1.6",
+        "r3.3",
+        "r3.4"
+      ],
+      "comicCaption": "A disclosure exception is a narrow gate. Check its trigger, purpose, and scope."
+    },
+    {
+      "id": "loyalty",
+      "title": "Loyalty, former clients & consent",
+      "tagline": "A signature cannot cure every conflict.",
+      "points": [
+        {
+          "title": "Current-client conflicts",
+          "text": "Rule 1.7 asks about **direct adversity** or a **significant risk of material limitation** from duties to someone else or the lawyer’s own interests. Consent works only if the lawyer reasonably believes competent and diligent service remains possible, the representation is lawful, it does not involve prohibited opposing claims in the same proceeding, and each affected client gives **informed consent confirmed in writing**."
+        },
+        {
+          "title": "Former-client matters",
+          "text": "Rule 1.9 generally prohibits a later representation in the **same or a substantially related matter** with **materially adverse interests** unless the former client gives informed consent confirmed in writing. Do not assume time alone removes the connection or duties."
+        },
+        {
+          "title": "Information duties survive",
+          "text": "Former-client information generally cannot be revealed except as the rules permit or require. The **generally known** exception in Rule 1.9(c)(1) concerns using information to the former client’s disadvantage; it is not a broad permission to reveal it. Public availability is not automatically the same as generally known."
+        }
+      ],
+      "example": "Thistle previously handled a merchant’s confidential licensing strategy. An opponent now wants her help attacking the same license. She must examine substantial relationship, adversity, information, and valid consent before accepting—not simply declare the old engagement closed.",
+      "tips": [
+        "Locate the conflict first; then ask whether it is **consentable**.",
+        "The former-client **use** rule and **disclosure** rule are separate."
+      ],
+      "terms": [
+        {
+          "term": "Direct adversity",
+          "definition": "A conflict in which representation is opposed to another current client’s interests in the relevant sense."
+        },
+        {
+          "term": "Material limitation",
+          "definition": "A significant restriction on professional judgment or service due to other duties or interests."
+        },
+        {
+          "term": "Substantially related matter",
+          "definition": "A connection sufficient under Rule 1.9, including relevant risks from confidential information obtained in the former work."
+        }
+      ],
+      "refs": [
+        "r1.7",
+        "r1.9",
+        "r1.0"
+      ],
+      "comicCaption": "Loyalty follows former clients, and consent works only when the conflict is consentable."
+    },
+    {
+      "id": "independence",
+      "title": "Fees, nonlawyers & independent judgment",
+      "tagline": "Follow the money without surrendering the judgment.",
+      "points": [
+        {
+          "title": "No outside control",
+          "text": "Rule 5.4 protects **professional independence** through limits on sharing legal fees with nonlawyers, legal-service partnerships, and ownership or control, subject to stated exceptions. A permitted third-party payer cannot direct legal judgment. Under Rule 1.8(f), third-party compensation also requires **informed client consent**, independence, and protection of information."
+        },
+        {
+          "title": "Different fee divisions",
+          "text": "Rule 1.5(e) permits division between lawyers in different firms only if the division is **proportional to services or each assumes joint responsibility**, the client agrees to the arrangement including each share and the agreement is **confirmed in writing**, and the total fee is reasonable. A pure referral fee without satisfying the requirements is not automatically proper."
+        },
+        {
+          "title": "Defined exceptions, not a blanket ban",
+          "text": "Rule 5.4 allows specified arrangements such as qualifying employee compensation or retirement plans, including profit sharing, certain deceased-lawyer payments, and sharing court-awarded fees with a qualifying nonprofit. Analyze the actual exception. Jurisdictional departures from the Model Rule exist; do not generalize one state’s structure to all others."
+        }
+      ],
+      "example": "A woodland guild pays Thistle to represent a member. Payment does not make the guild the client or authorize it to dictate settlement. Thistle needs the required consent and must protect the member’s information and her own professional judgment.",
+      "tips": [
+        "Identify whether the recipient is **another lawyer, an employee, a nonprofit, or an outside referrer**.",
+        "Who pays the bill is not necessarily **who controls the representation**."
+      ],
+      "terms": [
+        {
+          "term": "Professional independence",
+          "definition": "The lawyer’s ability to exercise legal judgment free from prohibited outside control."
+        },
+        {
+          "term": "Joint responsibility",
+          "definition": "The responsibility assumed by lawyers sharing a fee under Rule 1.5(e), with meaning informed by the rule and applicable law."
+        },
+        {
+          "term": "Third-party payer",
+          "definition": "Someone other than the client who pays for the client’s legal services."
+        }
+      ],
+      "refs": [
+        "r5.4",
+        "r1.5",
+        "r1.8"
+      ],
+      "comicCaption": "Keep client property safe and independent judgment free from outside pressure."
+    },
+    {
+      "id": "outreach",
+      "title": "Advertising, solicitation & public-interest advocacy",
+      "tagline": "How you approach someone matters.",
+      "points": [
+        {
+          "title": "Truthful communication",
+          "text": "Rule 7.1 prohibits **false or misleading communications** about legal services, including material omissions. Truthful advertising has constitutional protection, but that does not license guaranteed outcomes, misleading comparisons, or improper pressure."
+        },
+        {
+          "title": "Targeted live pitches",
+          "text": "Rule 7.3 addresses an offer directed to a specific person known or reasonably understood to need legal services in a particular matter. **Live person-to-person solicitation** significantly motivated by **pecuniary gain** is generally barred unless a stated relationship, lawyer, or routine-business-user exception applies. Letters, email, and texts that can readily be disregarded are treated differently from live pressure."
+        },
+        {
+          "title": "Exceptions do not permit harassment",
+          "text": "A target’s expressed wish not to be solicited, coercion, duress, or harassment remains a bar under Rule 7.3(c). Nonprofit political and civil-rights outreach has important **speech and association protections**. Distinguish protected advocacy from a commercial personal pitch, then apply the actual rule and local requirements."
+        }
+      ],
+      "example": "Rowan sends an accurate public notice about services. Thistle offers free assistance through a civil-rights organization. A third lawyer corners an injured stranger to seek a paid engagement. The medium, target, motive, relationship, and pressure make these different problems.",
+      "tips": [
+        "Use five facts: **target, need, medium, motive, relationship**.",
+        "Even an otherwise permitted contact must stop when the person says **do not solicit me**."
+      ],
+      "terms": [
+        {
+          "term": "Solicitation",
+          "definition": "A lawyer-initiated offer to a specific person known or reasonably known to need legal services in a particular matter."
+        },
+        {
+          "term": "Pecuniary gain",
+          "definition": "A money-making motive; Rule 7.3 asks whether it is a significant motive for the live solicitation."
+        },
+        {
+          "term": "Protected associational advocacy",
+          "definition": "Litigation-related activity tied to political expression and association, illustrated by Button and Primus."
+        }
+      ],
+      "refs": [
+        "r7.1",
+        "r7.3",
+        "bates",
+        "ohralik",
+        "primus",
+        "button"
+      ],
+      "comicCaption": "Public messages must be truthful; direct outreach has special limits and public-interest exceptions."
+    },
+    {
+      "id": "organizations",
+      "title": "The organization as client",
+      "tagline": "Separate the entity from its officers.",
+      "points": [
+        {
+          "title": "Identity",
+          "text": "The lawyer represents the organization acting through constituents; an officer is not automatically a personal client. Give an Upjohn warning when interests may diverge."
+        },
+        {
+          "title": "Escalation",
+          "text": "When an officer acts in a way likely to substantially injure the entity, Rule 1.13 calls for referral to higher authority, ordinarily the board; external disclosure is a narrow last resort."
+        },
+        {
+          "title": "Joint work",
+          "text": "Separate representation of the entity and an officer requires Rule 1.7 analysis, consent where possible, and an exit plan."
+        }
+      ],
+      "example": "A general counsel interviews the CFO about possible accounting fraud. The lawyer explains whom she represents before the CFO reveals private facts.",
+      "tips": [
+        "Name the client and decision maker.",
+        "Check internal reporting, then the limited outside disclosure path."
+      ],
+      "terms": [
+        {
+          "term": "constituent",
+          "definition": "An officer, director, or employee through whom the entity acts"
+        },
+        {
+          "term": "Upjohn warning",
+          "definition": "Notice that organization counsel represents the entity and the entity controls the privilege"
+        },
+        {
+          "term": "reporting up",
+          "definition": "Referral to a higher organizational authority when required by Rule 1.13"
+        }
+      ],
+      "refs": [
+        "r1.13",
+        "r1.7",
+        "r1.18"
+      ],
+      "comicCaption": "The castle is the client. Officers speak for it but are not automatically separate clients."
+    },
+    {
+      "id": "capacity",
+      "title": "Diminished capacity & protective action",
+      "tagline": "Preserve the relationship as far as possible.",
+      "points": [
+        {
+          "title": "Normal relationship",
+          "text": "Maintain an ordinary lawyer client relationship as far as reasonably possible, even when capacity is impaired."
+        },
+        {
+          "title": "Protective action",
+          "text": "If the client has diminished capacity, faces substantial physical, financial, or other harm, and cannot adequately act, Rule 1.14 permits reasonably necessary protective steps."
+        },
+        {
+          "title": "Disclosure",
+          "text": "Reveal only information reasonably necessary to protect the client; a family member or guardian may help, but an adverse third party may not."
+        }
+      ],
+      "example": "A client with dementia signs a transfer after a relative pressures her. The lawyer first assesses her wishes and capacity, then considers limited protective action.",
+      "tips": [
+        "Identify actual harm and inability to act.",
+        "Keep disclosure and intervention proportional."
+      ],
+      "terms": [
+        {
+          "term": "diminished capacity",
+          "definition": "Limited ability to make adequately considered decisions"
+        },
+        {
+          "term": "protective action",
+          "definition": "Reasonably necessary steps to safeguard an impaired client"
+        },
+        {
+          "term": "least disclosure",
+          "definition": "Reveal no more than reasonably necessary for protection"
+        }
+      ],
+      "refs": [
+        "r1.14",
+        "r1.2",
+        "r1.6"
+      ],
+      "comicCaption": "Listen to the client first. Protective action must be necessary and proportionate."
+    },
+    {
+      "id": "discipline",
+      "title": "Discipline, reporting & Kansas procedure",
+      "tagline": "Licensing and discipline are distinct from civil liability.",
+      "points": [
+        {
+          "title": "Admission and candor",
+          "text": "Rule 8.1 bars knowingly false material statements or failures to respond to lawful admissions and disciplinary demands, subject to Rule 1.6."
+        },
+        {
+          "title": "Reporting",
+          "text": "Rule 8.3 requires reporting known misconduct that raises a substantial question about honesty, trustworthiness, or fitness; protected Rule 1.6 information is excepted."
+        },
+        {
+          "title": "Choice of law",
+          "text": "Rule 8.5 separates disciplinary authority from the applicable conduct rule; tribunal conduct generally uses the tribunal jurisdiction, other conduct uses predominant effect."
+        },
+        {
+          "title": "Kansas process",
+          "text": "Review Kansas Supreme Court Rules 202–225 for investigation, hearing, review, sanctions, and reinstatement. Distinguish discipline from fee or malpractice remedies."
+        }
+      ],
+      "example": "A lawyer sees a colleague steal trust funds. She assesses the knowledge and substantial question thresholds, confidentiality, and reporting channel.",
+      "tips": [
+        "Ask who licenses and disciplines.",
+        "Apply the Rule 8.5 choice-of-law test before deciding the rule."
+      ],
+      "terms": [
+        {
+          "term": "substantial question",
+          "definition": "Serious doubt about honesty, trustworthiness, or fitness"
+        },
+        {
+          "term": "disciplinary authority",
+          "definition": "Jurisdiction empowered to regulate lawyer conduct"
+        },
+        {
+          "term": "predominant effect",
+          "definition": "Place with the strongest expected effect of conduct for Rule 8.5"
+        }
+      ],
+      "refs": [
+        "r8.1",
+        "r8.3",
+        "r8.4",
+        "r8.5",
+        "ks"
+      ],
+      "comicCaption": "Discipline has its own forum, reporting thresholds, and choice-of-law rules."
+    },
+    {
+      "id": "trust-fees",
+      "title": "Fees, retainers & safekeeping property",
+      "tagline": "Reasonableness and accounting continue after signature.",
+      "points": [
+        {
+          "title": "Fee formation",
+          "text": "Rule 1.5 requires a reasonable fee and timely communication of basis or rate, preferably in writing; contingency agreements have specific writing and content requirements and subject matter limits."
+        },
+        {
+          "title": "Property",
+          "text": "Rule 1.15 requires segregation, records, prompt notice and delivery, and preservation of disputed funds while distributing undisputed amounts."
+        },
+        {
+          "title": "Special transactions",
+          "text": "Financial assistance, business deals, gifts, and fee sharing require different Rule 1.8 tests; do not collapse them into one consent rule."
+        },
+        {
+          "title": "Awards",
+          "text": "Statutory fee awards and waivers may differ from contractual client fees; analyze the governing statute and settlement terms."
+        }
+      ],
+      "example": "A client disputes $2,000 of a $10,000 trust balance. Counsel promptly pays the uncontested $8,000 and safeguards the rest until resolution.",
+      "tips": [
+        "Calculate whether the fee is reasonable.",
+        "Separate earned fees from client property and disputed funds."
+      ],
+      "terms": [
+        {
+          "term": "client trust account",
+          "definition": "Segregated account for client or third party funds"
+        },
+        {
+          "term": "contingent fee",
+          "definition": "Compensation dependent on outcome and subject to writing and matter limits"
+        },
+        {
+          "term": "disputed funds",
+          "definition": "Property held separate until entitlement is resolved"
+        }
+      ],
+      "refs": [
+        "r1.5",
+        "r1.8",
+        "r1.15"
+      ],
+      "comicCaption": "Keep client money apart, deliver undisputed funds, and preserve the amount in dispute."
+    },
+    {
+      "id": "privilege",
+      "title": "Attorney–client privilege & work product",
+      "tagline": "Different protections, different waiver tests.",
+      "points": [
+        {
+          "title": "Confidentiality",
+          "text": "Rule 1.6 is an ethical duty covering information relating to representation; it is broader than evidentiary privilege."
+        },
+        {
+          "title": "Privilege",
+          "text": "The attorney–client privilege generally protects confidential communications seeking or giving legal advice; the client holds and may waive it. Federal Rule of Evidence 501 determines source of privilege law."
+        },
+        {
+          "title": "Corporate communications",
+          "text": "Upjohn rejects a simple control group limit. Examine employee communications made for corporate legal advice under direction, confidentiality, and subject matter."
+        },
+        {
+          "title": "Work product",
+          "text": "FRCP 26(b)(3) protects material prepared because of litigation, with qualified discovery for ordinary work product and stronger protection for mental impressions."
+        },
+        {
+          "title": "Exceptions",
+          "text": "Analyze crime–fraud, waiver, common interest, and other limits independently; facts themselves do not become privileged."
+        }
+      ],
+      "example": "An internal report quotes employee interviews for counsel’s legal advice. Identify each communication, holder, purpose, and whether litigation was anticipated.",
+      "tips": [
+        "Classify each item: ethical secrecy, privilege, or work product.",
+        "Ask who can waive and what exception applies."
+      ],
+      "terms": [
+        {
+          "term": "privilege",
+          "definition": "Evidence rule shielding qualifying confidential legal advice communications"
+        },
+        {
+          "term": "work product",
+          "definition": "Litigation preparation material protected under Rule 26(b)(3)"
+        },
+        {
+          "term": "crime–fraud",
+          "definition": "Exception for communications furthering future or ongoing wrongdoing"
+        }
+      ],
+      "refs": [
+        "r1.6",
+        "fre501",
+        "frcp26",
+        "upjohn"
+      ],
+      "comicCaption": "Ask who holds the privilege, whether legal advice was sought, and why a document was prepared."
+    },
+    {
+      "id": "current-conflicts",
+      "title": "Current-client conflicts",
+      "tagline": "Direct adversity and material limitation are separate paths.",
+      "points": [
+        {
+          "title": "Identify",
+          "text": "Rule 1.7 covers direct adversity and significant risk that representation will be materially limited by duties to another client, former client, third person, or personal interest."
+        },
+        {
+          "title": "Consentability",
+          "text": "Even with informed written consent, counsel needs reasonable belief in competent diligent representation, no legal prohibition, and no opposing claims between clients in the same litigation."
+        },
+        {
+          "title": "Consent",
+          "text": "Explain reasonably available alternatives and material risks; obtain each affected client’s informed consent confirmed in writing."
+        },
+        {
+          "title": "Screening",
+          "text": "A private firm’s screen ordinarily does not cure a nonconsentable current-client conflict under the Model Rules."
+        }
+      ],
+      "example": "A firm sues its current client on an unrelated matter. Direct adversity arises even without shared confidential information.",
+      "tips": [
+        "Check adversity, then material limitation.",
+        "Run every Rule 1.7(b) condition before asking for consent."
+      ],
+      "terms": [
+        {
+          "term": "direct adversity",
+          "definition": "Representation directly opposed to a current client"
+        },
+        {
+          "term": "material limitation",
+          "definition": "Significant risk other duties or interests restrict the lawyer"
+        },
+        {
+          "term": "informed consent",
+          "definition": "Agreement after adequate disclosure of material risks and alternatives"
+        }
+      ],
+      "refs": [
+        "r1.7",
+        "r1.8"
+      ],
+      "comicCaption": "Direct adversity can exist even when the two matters seem unrelated."
+    },
+    {
+      "id": "joint-clients",
+      "title": "Multiple clients & aggregate settlements",
+      "tagline": "One lawyer cannot promise secrecy inside a joint representation.",
+      "points": [
+        {
+          "title": "Common representation",
+          "text": "Explain shared information, privilege implications, limits of confidentiality between joint clients, and what happens if interests split."
+        },
+        {
+          "title": "Aggregate settlement",
+          "text": "Rule 1.8(g) requires each client’s informed consent in a writing signed by the client after disclosure of all claims or pleas and each participant’s part."
+        },
+        {
+          "title": "Allocation",
+          "text": "Client autonomy over settlement persists for each participant; one majority vote cannot bind the minority without proper consent."
+        }
+      ],
+      "example": "Five plaintiffs want to settle together. Counsel discloses the total and each proposed share to all five and obtains signed informed consent from each.",
+      "tips": [
+        "Identify who decides settlement.",
+        "Ask whether every affected client received every allocation and signed."
+      ],
+      "terms": [
+        {
+          "term": "aggregate settlement",
+          "definition": "Package settlement covering multiple clients"
+        },
+        {
+          "term": "common representation",
+          "definition": "One lawyer representing clients with aligned or potentially diverging interests"
+        },
+        {
+          "term": "allocation",
+          "definition": "Distribution of settlement value among clients"
+        }
+      ],
+      "refs": [
+        "r1.7",
+        "r1.8",
+        "r1.4"
+      ],
+      "comicCaption": "Every client needs the complete allocation before consenting to an aggregate settlement."
+    },
+    {
+      "id": "personal-conflicts",
+      "title": "Personal interests, gifts & lawyer as witness",
+      "tagline": "The lawyer’s own stake can constrain the client.",
+      "points": [
+        {
+          "title": "Business deals",
+          "text": "Rule 1.8(a) calls for fair and reasonable terms in writing, written advice to seek independent counsel and reasonable opportunity, and informed written consent."
+        },
+        {
+          "title": "Gifts and assistance",
+          "text": "Rule 1.8 limits soliciting substantial gifts and financial assistance, with narrow permitted litigation costs and indigent-client aid."
+        },
+        {
+          "title": "Witness",
+          "text": "Rule 3.7 generally bars acting as advocate at trial when likely a necessary witness, subject to specific exceptions; firm colleagues may sometimes continue."
+        },
+        {
+          "title": "Risk",
+          "text": "A fee, family tie, reputation, or financial stake can create a Rule 1.7(a)(2) material limitation."
+        }
+      ],
+      "example": "A lawyer proposes taking stock in a client startup for fees. Disclose the valuation, alternatives, written advice about independent counsel, and obtain written consent if the transaction is permissible.",
+      "tips": [
+        "Separate Rule 1.8’s specific rule from Rule 1.7.",
+        "Identify any trial witness issue under Rule 3.7."
+      ],
+      "terms": [
+        {
+          "term": "business transaction",
+          "definition": "Lawyer client deal subject to Rule 1.8(a)"
+        },
+        {
+          "term": "necessary witness",
+          "definition": "Trial witness whose testimony materially matters and is not readily replaced"
+        },
+        {
+          "term": "personal-interest conflict",
+          "definition": "Material limitation caused by lawyer’s own interests"
+        }
+      ],
+      "refs": [
+        "r1.7",
+        "r1.8",
+        "r3.7"
+      ],
+      "comicCaption": "Your own stake or testimony can limit your ability to advocate for the client."
+    },
+    {
+      "id": "former-government",
+      "title": "Former clients & government service",
+      "tagline": "Substantial relationship and confidential information shape the boundaries.",
+      "points": [
+        {
+          "title": "Former clients",
+          "text": "Rule 1.9 bars materially adverse representation in the same or substantially related matter without former client informed written consent; protected information cannot be misused."
+        },
+        {
+          "title": "Imputation",
+          "text": "Rule 1.10 generally attributes a lawyer’s conflicts to a firm with defined departures, including a qualifying screen for certain lateral former-client matters."
+        },
+        {
+          "title": "Government",
+          "text": "Rule 1.11 has tailored rules for former and current government lawyers, including personal and substantial participation and written agency consent or screening where allowed."
+        },
+        {
+          "title": "Comparison",
+          "text": "Distinguish a lawyer’s personal prior work from a whole firm’s work and from a current-client conflict."
+        }
+      ],
+      "example": "An attorney who personally handled a permit case at an agency joins a firm challenging the permit. Analyze personal substantial participation and Rule 1.11 screening and notice.",
+      "tips": [
+        "Find the earlier client or agency and matter.",
+        "Ask same/substantially related, adversity, and applicable screen."
+      ],
+      "terms": [
+        {
+          "term": "substantially related",
+          "definition": "Matters sharing the same transaction or a substantial risk of material confidential information"
+        },
+        {
+          "term": "imputation",
+          "definition": "Attribution of one lawyer’s conflict to firm colleagues"
+        },
+        {
+          "term": "personal and substantial",
+          "definition": "Meaningful involvement in a specific government matter"
+        }
+      ],
+      "refs": [
+        "r1.9",
+        "r1.10",
+        "r1.11"
+      ],
+      "comicCaption": "Leave former matters and government files behind unless the conflict rules permit the new role."
+    },
+    {
+      "id": "neutral-criminal-conflicts",
+      "title": "Neutrals & criminal defense conflicts",
+      "tagline": "Prior roles and joint defense can narrow loyalty.",
+      "points": [
+        {
+          "title": "Neutral role",
+          "text": "Rule 2.4 requires explaining to unrepresented parties that the neutral does not represent them when confusion is reasonable."
+        },
+        {
+          "title": "Former neutral",
+          "text": "Rule 1.12 restricts representing anyone in a matter in which the lawyer participated personally and substantially as judge, arbitrator, mediator, or other neutral absent informed written consent; screening may protect a firm."
+        },
+        {
+          "title": "Criminal joint representation",
+          "text": "Federal Rule of Criminal Procedure 44(c) calls for prompt inquiry into joint representation and advice on independent counsel; conflicts may justify separate lawyers even if defendants prefer one."
+        }
+      ],
+      "example": "A mediator joins a firm asked to represent one party in the same dispute. Check Rule 1.12 consent and whether the firm can screen and give notice.",
+      "tips": [
+        "Identify earlier role and same matter.",
+        "For criminal co-defendants, assess divergent plea and testimony incentives."
+      ],
+      "terms": [
+        {
+          "term": "third-party neutral",
+          "definition": "Lawyer assisting parties without representing either"
+        },
+        {
+          "term": "Rule 44 inquiry",
+          "definition": "Federal criminal court examination of joint representation"
+        },
+        {
+          "term": "screen",
+          "definition": "Isolation from participation and fees with required notice where permitted"
+        }
+      ],
+      "refs": [
+        "r1.12",
+        "r2.4",
+        "frcr44",
+        "r1.7"
+      ],
+      "comicCaption": "A neutral serves neither side; criminal co-defendants may need separate counsel."
+    },
+    {
+      "id": "meritorious-candor",
+      "title": "Meritorious claims & candor to the tribunal",
+      "tagline": "Advocacy has a floor and a correction duty.",
+      "points": [
+        {
+          "title": "Merit",
+          "text": "Rule 3.1 bars frivolous claims or defenses, though criminal defense may require prosecution to establish every element."
+        },
+        {
+          "title": "Candor",
+          "text": "Rule 3.3 prohibits false statements of law or fact and knowing use of false evidence; a lawyer must take reasonable remedial measures, possibly disclosure despite Rule 1.6."
+        },
+        {
+          "title": "Duration",
+          "text": "The candor duties continue to conclusion of a proceeding; ex parte proceedings require disclosure of material facts needed for informed decision."
+        },
+        {
+          "title": "Tension",
+          "text": "Separate client confidentiality from the overriding tribunal duty in Rule 3.3(c)."
+        }
+      ],
+      "example": "A witness admits testimony was false after the hearing. Counsel remonstrates, seeks correction, and follows Rule 3.3 if private correction fails.",
+      "tips": [
+        "Was the falsehood knowing and material?",
+        "List reasonable remedial steps in order."
+      ],
+      "terms": [
+        {
+          "term": "frivolous claim",
+          "definition": "Position lacking a nonfrivolous basis under Rule 3.1"
+        },
+        {
+          "term": "remedial measures",
+          "definition": "Steps to correct false evidence or statements"
+        },
+        {
+          "term": "ex parte",
+          "definition": "Proceeding where opposing party is absent"
+        }
+      ],
+      "refs": [
+        "r3.1",
+        "r3.3",
+        "r1.6"
+      ],
+      "comicCaption": "Correct known falsehoods to the tribunal through the required remedial steps."
+    },
+    {
+      "id": "evidence-fairness",
+      "title": "Evidence & fairness to the other side",
+      "tagline": "Preserve proof, avoid fabrication, and deal fairly.",
+      "points": [
+        {
+          "title": "Evidence",
+          "text": "Rule 3.4 bars unlawful obstruction or destruction of evidence, falsification, improper witness inducements, and knowing disobedience of tribunal obligations except open refusal on validity grounds."
+        },
+        {
+          "title": "Witness preparation",
+          "text": "Preparing a witness is permitted; coaching false testimony or paying for content is not."
+        },
+        {
+          "title": "Nonadjudicative advocacy",
+          "text": "Rule 3.9 requires disclosure of representative capacity and conformity with selected candor and fairness duties before legislative or administrative bodies."
+        },
+        {
+          "title": "Misconduct",
+          "text": "Rule 8.4 reaches dishonesty, fraud, deceit, misrepresentation, and certain conduct prejudicial to justice."
+        }
+      ],
+      "example": "Counsel discovers an unfavorable document subject to a preservation hold. She preserves it and litigates privilege or production, rather than deleting it.",
+      "tips": [
+        "Identify the item and preservation duty.",
+        "Distinguish legitimate preparation from shaping false evidence."
+      ],
+      "terms": [
+        {
+          "term": "spoliation",
+          "definition": "Improper destruction or alteration of relevant evidence"
+        },
+        {
+          "term": "witness inducement",
+          "definition": "Payment or benefit that can improperly influence testimony"
+        },
+        {
+          "term": "nonadjudicative proceeding",
+          "definition": "Government decision process outside adjudication"
+        }
+      ],
+      "refs": [
+        "r3.4",
+        "r3.5",
+        "r3.9",
+        "r8.4"
+      ],
+      "comicCaption": "Preserve evidence and test admissibility without altering the proof."
+    },
+    {
+      "id": "witness-jury",
+      "title": "Witnesses, jurors & nonclients",
+      "tagline": "Contacts turn on whom the lawyer represents.",
+      "points": [
+        {
+          "title": "Witnesses",
+          "text": "Rule 3.4 and applicable procedural rules govern requests to nonclients, payments, and evidence access; do not induce false testimony."
+        },
+        {
+          "title": "Jurors",
+          "text": "Rule 3.5 limits improper contact with judges, jurors, and prospective jurors; post-discharge contact still has defined boundaries."
+        },
+        {
+          "title": "Represented and unrepresented people",
+          "text": "Rules 4.2 and 4.3 distinguish represented persons from unrepresented people; clarify role and avoid legal advice beyond obtaining counsel when interests conflict."
+        }
+      ],
+      "example": "An investigator interviews a witness who has counsel for this matter. The lawyer pauses to assess Rule 4.2 before any substantive contact.",
+      "tips": [
+        "Is the person represented in this matter?",
+        "Did contact involve a juror, witness payment, or tribunal official?"
+      ],
+      "terms": [
+        {
+          "term": "represented person",
+          "definition": "Person with counsel in the matter within Rule 4.2"
+        },
+        {
+          "term": "unrepresented person",
+          "definition": "Person without counsel to whom Rule 4.3 applies"
+        },
+        {
+          "term": "ex parte juror contact",
+          "definition": "Improper communication with a juror outside authorized process"
+        }
+      ],
+      "refs": [
+        "r3.4",
+        "r3.5",
+        "r8.4"
+      ],
+      "comicCaption": "Know when a witness, juror, or nonclient is off limits for contact."
+    },
+    {
+      "id": "publicity-influence",
+      "title": "Publicity, decorum & improper influence",
+      "tagline": "Protect proceedings from advocacy outside the record.",
+      "points": [
+        {
+          "title": "Trial publicity",
+          "text": "Rule 3.6 restricts extrajudicial statements by participating lawyers that they know or should know have a substantial likelihood of materially prejudicing an adjudicative proceeding, with safe categories and a response exception."
+        },
+        {
+          "title": "Decorum",
+          "text": "Rule 3.5 prohibits improper influence and disruption of a tribunal."
+        },
+        {
+          "title": "Arguments",
+          "text": "Opening and closing must stay within evidence and permissible inferences; attorney opinion or inflammatory appeals risk discipline and reversal."
+        },
+        {
+          "title": "Bias",
+          "text": "Rule 8.4(g), where adopted, addresses harassment or discrimination in law-related activities, subject to its terms and jurisdictional variation."
+        }
+      ],
+      "example": "A prosecutor discusses an unadmitted confession on television before trial. Assess likely prejudice, Rule 3.6 limits, and possible remedial action.",
+      "tips": [
+        "Ask if a proceeding is pending and likely prejudiced.",
+        "Separate court contact, speech, and trial argument."
+      ],
+      "terms": [
+        {
+          "term": "trial publicity",
+          "definition": "Extrajudicial speech potentially prejudicing an adjudication"
+        },
+        {
+          "term": "improper influence",
+          "definition": "Prohibited attempt to affect a tribunal or juror"
+        },
+        {
+          "term": "decorum",
+          "definition": "Orderly conduct required in proceedings"
+        }
+      ],
+      "refs": [
+        "r3.5",
+        "r3.6",
+        "r8.4"
+      ],
+      "comicCaption": "Speak publicly without materially prejudicing the proceeding or pressuring the tribunal."
+    },
+    {
+      "id": "judges",
+      "title": "Judicial impartiality, recusal & outside activity",
+      "tagline": "A judge must protect both fairness and its appearance.",
+      "points": [
+        {
+          "title": "Canon 1",
+          "text": "Judges must uphold independence, integrity, and impartiality and avoid impropriety and its appearance."
+        },
+        {
+          "title": "Canon 2",
+          "text": "Duties include faithful performance, impartiality, restrictions on ex parte communications, public comment, campaign-related behavior, and disqualification when impartiality might reasonably be questioned."
+        },
+        {
+          "title": "Canon 3",
+          "text": "Extrajudicial activities, gifts, financial activity, and compensation have limits; the Code allows some civic and educational activity with safeguards."
+        },
+        {
+          "title": "Recusal",
+          "text": "Analyze objective grounds, required disclosure, and whether remittal is allowed. Judicial rulings alone ordinarily require more than disagreement."
+        }
+      ],
+      "example": "A judge learns a close relative has a financial stake in one litigant. The judge discloses the connection and applies disqualification and remittal rules.",
+      "tips": [
+        "Name the Code provision and decision point.",
+        "Distinguish actual bias, appearance, and permitted outside activity."
+      ],
+      "terms": [
+        {
+          "term": "recusal",
+          "definition": "Judge’s withdrawal from a proceeding where disqualification is required"
+        },
+        {
+          "term": "ex parte communication",
+          "definition": "Communication with a judge outside the other parties’ participation"
+        },
+        {
+          "term": "remittal",
+          "definition": "Permitted waiver of certain disqualification grounds after prescribed disclosure"
+        }
+      ],
+      "refs": [
+        "mcjc",
+        "r1.12"
+      ],
+      "comicCaption": "A judge steps aside when impartiality might reasonably be questioned."
+    },
+    {
+      "id": "criticism-bias",
+      "title": "Criticism of judges, civility & bias",
+      "tagline": "Speech protection coexists with truthfulness and courtroom rules.",
+      "points": [
+        {
+          "title": "Judicial criticism",
+          "text": "Rule 8.2 bars statements about a judge or candidate’s qualifications or integrity made with knowledge of falsity or reckless disregard for truth."
+        },
+        {
+          "title": "Court conduct",
+          "text": "Rule 3.5 and court orders address disruption and decorum; distinguish sharp advocacy from disobedience."
+        },
+        {
+          "title": "Bias and harassment",
+          "text": "Rule 8.4(g) requires careful attention to jurisdictional adoption and the connection to law practice; also consider Rule 8.4(d)."
+        }
+      ],
+      "example": "After an adverse ruling, counsel posts a factual accusation of corruption without checking the readily available record. Analyze knowledge or reckless disregard.",
+      "tips": [
+        "Identify speech, audience, factual basis, and mental state.",
+        "Keep state adoption of Rule 8.4(g) explicit."
+      ],
+      "terms": [
+        {
+          "term": "reckless disregard",
+          "definition": "Serious doubts about truth ignored when making a factual accusation"
+        },
+        {
+          "term": "judicial integrity",
+          "definition": "Fitness and honesty protected by Rule 8.2"
+        },
+        {
+          "term": "courtroom decorum",
+          "definition": "Behavioral requirements during proceedings"
+        }
+      ],
+      "refs": [
+        "r8.2",
+        "r3.5",
+        "r8.4"
+      ],
+      "comicCaption": "Check the factual basis for criticism and keep the courtroom free of bias."
+    },
+    {
+      "id": "prosecutors",
+      "title": "Prosecutors: charging, disclosure & innocence",
+      "tagline": "The prosecutor seeks justice, not only convictions.",
+      "points": [
+        {
+          "title": "Charging and rights",
+          "text": "Rule 3.8(a) bars prosecuting a charge not supported by probable cause; other provisions protect counsel access and limit waivers by unrepresented accused people."
+        },
+        {
+          "title": "Disclosure",
+          "text": "Rule 3.8(d) requires timely disclosure of evidence tending to negate guilt or mitigate offense, plus sentencing mitigation; constitutional Brady doctrine has its own materiality framework."
+        },
+        {
+          "title": "Publicity",
+          "text": "Rule 3.8(f) limits prejudicial extrajudicial comments and asks prosecutors to restrain associated personnel."
+        },
+        {
+          "title": "After conviction",
+          "text": "Rule 3.8(g) and (h) set separate duties for new credible material evidence and clear convincing evidence of wrongful conviction, with jurisdictional variations."
+        }
+      ],
+      "example": "A prosecutor receives exculpatory lab results. She promptly assesses disclosure under Rule 3.8(d), Brady, and any court order rather than awaiting trial strategy.",
+      "tips": [
+        "Separate ethics timing from constitutional remedy.",
+        "For later evidence, distinguish credible/material from clear/convincing."
+      ],
+      "terms": [
+        {
+          "term": "probable cause",
+          "definition": "Minimum basis required by Rule 3.8(a) to prosecute"
+        },
+        {
+          "term": "exculpatory evidence",
+          "definition": "Information tending to negate guilt"
+        },
+        {
+          "term": "postconviction duty",
+          "definition": "Rule 3.8(g) and (h) responses to evidence of wrongful conviction"
+        }
+      ],
+      "refs": [
+        "r3.8",
+        "r3.3",
+        "r3.4"
+      ],
+      "comicCaption": "The prosecutor’s duty of disclosure serves justice beyond a win-loss tally."
+    },
+    {
+      "id": "public-service",
+      "title": "Pro bono, appointments & special responsibility",
+      "tagline": "Professional obligations extend beyond paying clients.",
+      "points": [
+        {
+          "title": "Pro bono",
+          "text": "Rule 6.1 states an aspirational responsibility, commonly 50 hours annually, with substantial service to persons of limited means or qualifying organizations."
+        },
+        {
+          "title": "Appointments",
+          "text": "Rule 6.2 limits refusal of tribunal appointment to good cause, including likely Rule violation, unreasonable financial burden, or repugnance severe enough to impair representation."
+        },
+        {
+          "title": "Special responsibilities",
+          "text": "Review law reform, access to justice, professional institutions, and the state-specific disciplinary framework; ethical ideals and enforceable rules are different categories."
+        },
+        {
+          "title": "Review method",
+          "text": "For each problem: client, duty, trigger, exception, remedy, and jurisdiction."
+        }
+      ],
+      "example": "A lawyer asked to take a difficult appointed case evaluates competence, conflicts, and good cause rather than refusing solely because the client is unpopular.",
+      "tips": [
+        "Distinguish aspiration from discipline.",
+        "Tie refusal to a Rule 6.2 good-cause ground."
+      ],
+      "terms": [
+        {
+          "term": "pro bono",
+          "definition": "Voluntary legal service for public good under Rule 6.1"
+        },
+        {
+          "term": "appointment",
+          "definition": "Representation assigned by a tribunal"
+        },
+        {
+          "term": "good cause",
+          "definition": "Permissible reason under Rule 6.2 to decline an appointment"
+        }
+      ],
+      "refs": [
+        "r6.1",
+        "r6.2",
+        "r8.4"
+      ],
+      "comicCaption": "Public service and careful appointments help keep the courthouse open to all."
+    }
+  ],
+  "cases": [
+    {
+      "id": "birbrower",
+      "section": 1,
+      "name": "Birbrower, Montalbano, Condon & Frank v. Superior Court",
+      "citation": "17 Cal. 4th 119, 949 P.2d 1 (1998)",
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/17/119.html",
+      "facts": "New York lawyers performed substantial California legal work without California authorization and sought their fees.",
+      "issue": "Could they recover for unauthorized California services?",
+      "holding": "They could not recover for unauthorized work but could seek fees for severable lawful work elsewhere.",
+      "reasoning": "The nature and extent of contacts mattered; legal practice was not confined to court appearances or physical presence.",
+      "trap": "This applies California law at the time. Check modern local authorization and arbitration rules before applying its result to current facts."
+    },
+    {
+      "id": "strickland",
+      "section": 3,
+      "name": "Strickland v. Washington",
+      "citation": "466 U.S. 668 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/466/668/",
+      "facts": "A capital defendant challenged counsel’s investigation and presentation of mitigation.",
+      "issue": "What ordinarily establishes constitutionally ineffective assistance?",
+      "holding": "The Court required deficient performance and prejudice and rejected relief on the facts.",
+      "reasoning": "Reasonableness is assessed with deference and context; prejudice requires a reasonable probability of a different result sufficient to undermine confidence.",
+      "trap": "Do not substitute an ethics violation, a poor outcome, or hindsight for the two-part constitutional inquiry."
+    },
+    {
+      "id": "lerner",
+      "section": 4,
+      "name": "Lerner v. Laufer",
+      "citation": "359 N.J. Super. 201, 819 A.2d 471 (App. Div. 2003)",
+      "url": "https://legalmalpracticelawreview.lexblogplatformthree.com/wp-content/uploads/sites/271/2010/07/Lerner-v_-Laufer-819-A_-2d-471-NJ_-Superior-Cou1.pdf",
+      "facts": "A lawyer reviewed a mediated divorce agreement under an explained limited engagement that excluded independent financial investigation.",
+      "issue": "Was the scope limitation valid, and did it defeat the malpractice claim?",
+      "holding": "The court upheld the limited scope and affirmed judgment for the lawyer; it disapproved language attempting to prevent malpractice litigation.",
+      "reasoning": "The agreed task defined the duty, and causation was also lacking because the client later had a renewed opportunity to litigate.",
+      "trap": "This New Jersey decision illustrates the scope/liability distinction. Apply the current Model Rule’s independent-representation requirement separately to a prospective liability limit."
+    },
+    {
+      "id": "jones",
+      "section": 5,
+      "name": "Jones v. Barnes",
+      "citation": "463 U.S. 745 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/463/745/",
+      "facts": "Appellate counsel selected promising issues instead of briefing every nonfrivolous issue requested by the accused.",
+      "issue": "Did the Constitution require all requested nonfrivolous arguments?",
+      "holding": "No; counsel could exercise professional judgment in selecting issues.",
+      "reasoning": "Effective advocacy often requires focusing the appeal rather than diluting it with every possible contention.",
+      "trap": "The client retains fundamental decisions, including whether to appeal; counsel still owes competent service and communication."
+    },
+    {
+      "id": "mccoy",
+      "section": 5,
+      "name": "McCoy v. Louisiana",
+      "citation": "584 U.S. 414 (2018)",
+      "url": "https://supreme.justia.com/cases/federal/us/584/16-8255/",
+      "facts": "Counsel conceded guilt in a capital trial over the defendant’s express insistence on innocence, hoping to avoid a death sentence.",
+      "issue": "Could counsel override that objective as a strategic choice?",
+      "holding": "No. The violation of client autonomy was structural error requiring a new trial.",
+      "reasoning": "Maintaining innocence was a client-controlled objective, distinct from technical tactics or ordinary ineffective-assistance analysis.",
+      "trap": "The express objection matters. Do not assume every concession in every case triggers this holding."
+    },
+    {
+      "id": "bates",
+      "section": 11,
+      "name": "Bates v. State Bar of Arizona",
+      "citation": "433 U.S. 350 (1977)",
+      "url": "https://supreme.justia.com/cases/federal/us/433/350/",
+      "facts": "Lawyers advertised prices for routine legal services in a newspaper and faced discipline under a broad advertising restriction.",
+      "issue": "Could the state impose that blanket ban on truthful price advertising?",
+      "holding": "The First Amendment protected the advertising at issue against the blanket ban.",
+      "reasoning": "Accurate information about legal services can help the public make informed choices.",
+      "trap": "Misleading advertising and improper solicitation remain regulable; the decision is not immunity for every marketing claim."
+    },
+    {
+      "id": "ohralik",
+      "section": 11,
+      "name": "Ohralik v. Ohio State Bar Association",
+      "citation": "436 U.S. 447 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/447/",
+      "facts": "A lawyer personally approached accident victims to obtain paid representation.",
+      "issue": "Could the state discipline this commercial in-person solicitation?",
+      "holding": "Yes. The First Amendment did not prevent discipline in these circumstances.",
+      "reasoning": "Live personal pressure and the risks of overreaching supported prophylactic regulation.",
+      "trap": "Compare medium, motive, and relationship. The decision does not treat all written or nonprofit outreach identically."
+    },
+    {
+      "id": "primus",
+      "section": 11,
+      "name": "In re Primus",
+      "citation": "436 U.S. 412 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/412/",
+      "facts": "An ACLU-associated lawyer sent a letter offering free legal help in a matter connected to the organization’s civil-rights work.",
+      "issue": "Could the state punish this activity as ordinary improper solicitation?",
+      "holding": "Not on the justification and circumstances presented; the discipline violated protected expression and association.",
+      "reasoning": "The outreach advanced political and associational objectives rather than the commercial pressure present in Ohralik.",
+      "trap": "The protection is contextual. It does not authorize deception, coercion, or harassment."
+    },
+    {
+      "id": "button",
+      "section": 11,
+      "name": "NAACP v. Button",
+      "citation": "371 U.S. 415 (1963)",
+      "url": "https://supreme.justia.com/cases/federal/us/371/415/",
+      "facts": "Virginia applied solicitation restrictions to the NAACP’s efforts to connect civil-rights litigants with lawyers.",
+      "issue": "Could the state suppress that litigation-related advocacy through the challenged restriction?",
+      "holding": "The Court held the challenged application unconstitutional.",
+      "reasoning": "Litigation was a means of political expression and association, requiring carefully confined regulation.",
+      "trap": "Identify the expressive and associational context instead of assuming every effort to locate clients is identical."
+    },
+    {
+      "id": "brumbaugh",
+      "section": 1,
+      "name": "Florida Bar v. Brumbaugh",
+      "citation": "355 So. 2d 1186 (Fla. 1978)",
+      "url": "https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/48803/48803.html",
+      "facts": "A nonlawyer sold typing help and divorce forms and gave customers advice on completing them.",
+      "issue": "Where does clerical form assistance become unauthorized legal practice?",
+      "holding": "The Florida Supreme Court enjoined individualized legal advice while allowing sale of forms and purely clerical typing.",
+      "reasoning": "Applying law to a person’s facts crosses the line from transmitting information to exercising legal judgment.",
+      "trap": "Jurisdictions draw UPL boundaries differently; do not treat every form service as practice of law."
+    },
+    {
+      "id": "robbins",
+      "section": 2,
+      "name": "In re Robbins",
+      "citation": "192 A.3d 558 (D.C. 2018)",
+      "url": "https://law.justia.com/cases/district-of-columbia/court-of-appeals/2018/17-bg-767.html",
+      "facts": "A lawyer’s dealings with a person raised questions about whether representation began and whether a personal interest impaired judgment.",
+      "issue": "When does conduct create a lawyer–client relationship, and what duties follow?",
+      "holding": "The D.C. Court of Appeals affirmed discipline including a sixty-day suspension for misconduct in the relationship.",
+      "reasoning": "The client’s reasonable understanding and the lawyer’s conduct matter more than a formal label.",
+      "trap": "Use the case’s D.C. rules and facts; a preliminary conversation alone does not always create full representation."
+    },
+    {
+      "id": "whiting",
+      "section": 6,
+      "name": "Whiting v. Lacara",
+      "citation": "187 F.3d 317 (2d Cir. 1999)",
+      "url": "https://openjurist.org/187/f3d/317/joseph-whiting-v-garrett-r-lacara-the-incorporated-village-of-old-brookville",
+      "facts": "Counsel sought to withdraw when the client’s insistence on conduct threatened counsel’s professional obligations.",
+      "issue": "Was refusal to permit withdrawal proper?",
+      "holding": "The Second Circuit permitted immediate appellate review and held denial of withdrawal was an abuse of discretion.",
+      "reasoning": "A lawyer should not be forced into a position that would compromise professional obligations or expose counsel to discipline.",
+      "trap": "Withdrawal still requires tribunal permission when required and reasonable protection of the client."
+    },
+    {
+      "id": "upjohn-case",
+      "section": 16,
+      "name": "Upjohn Co. v. United States",
+      "citation": "449 U.S. 383 (1981)",
+      "url": "https://supreme.justia.com/cases/federal/us/449/383/",
+      "facts": "Company counsel investigated payments and interviewed employees for legal advice.",
+      "issue": "Is corporate privilege restricted to communications by the corporate control group?",
+      "holding": "The Supreme Court rejected the control-group test and protected qualifying employee communications.",
+      "reasoning": "Legal advice requires information from employees who know the facts; counsel’s work product also receives protection.",
+      "trap": "The underlying facts are not privileged, and privilege depends on purpose and confidentiality."
+    },
+    {
+      "id": "evans",
+      "section": 15,
+      "name": "Evans v. Jeff D.",
+      "citation": "475 U.S. 717 (1986)",
+      "url": "https://supreme.justia.com/cases/federal/us/475/717/",
+      "facts": "A class settlement offered relief while conditioning it on waiver of statutory attorney fees.",
+      "issue": "Could counsel accept a fee waiver as part of a settlement under the civil-rights fee statute?",
+      "holding": "The Supreme Court held the district court could approve the negotiated fee waiver on the case facts.",
+      "reasoning": "The fee statute did not prohibit the waiver; client settlement interests and counsel’s fee interests required careful attention.",
+      "trap": "Do not assume a fee award belongs to counsel independently of settlement authority or that every waiver is ethically unproblematic."
+    },
+    {
+      "id": "brady",
+      "section": 28,
+      "name": "Brady v. Maryland",
+      "citation": "373 U.S. 83 (1963)",
+      "url": "https://supreme.justia.com/cases/federal/us/373/83/",
+      "facts": "The prosecution withheld a co-defendant’s statement relevant to punishment.",
+      "issue": "What constitutional duty applies to favorable prosecution evidence?",
+      "holding": "Suppression of favorable material evidence upon request violated due process.",
+      "reasoning": "Fairness limits the prosecution’s use of its superior access to evidence.",
+      "trap": "Constitutional materiality and Rule 3.8(d)’s ethical disclosure obligation are distinct tests."
+    },
+    {
+      "id": "bordenkircher",
+      "section": 28,
+      "name": "Bordenkircher v. Hayes",
+      "citation": "434 U.S. 357 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/434/357/",
+      "facts": "A prosecutor offered a plea and warned that refusing it would lead to a more serious supported charge.",
+      "issue": "Did that charging decision violate due process in plea bargaining?",
+      "holding": "The Supreme Court found no due-process violation where the defendant was free to accept or reject the offer and the charge had probable cause.",
+      "reasoning": "Plea bargaining permits hard choices within lawful charging bounds.",
+      "trap": "Do not read this as permission to bring charges lacking probable cause or to violate disclosure duties."
+    },
+    {
+      "id": "caperton",
+      "section": 26,
+      "name": "Caperton v. A.T. Massey Coal Co.",
+      "citation": "556 U.S. 868 (2009)",
+      "url": "https://supreme.justia.com/cases/federal/us/556/868/",
+      "facts": "A litigant’s principal supported a judicial election with extraordinary spending before the judge heard that litigant’s appeal.",
+      "issue": "Did due process require recusal despite state procedures?",
+      "holding": "The Supreme Court required recusal because the extreme circumstances created a serious risk of actual bias.",
+      "reasoning": "An objective probability of bias in an exceptional election context can cross the constitutional floor.",
+      "trap": "The due-process floor is narrower than ordinary judicial ethics recusal rules."
+    },
+    {
+      "id": "williams-pa",
+      "section": 26,
+      "name": "Williams v. Pennsylvania",
+      "citation": "579 U.S. 1 (2016)",
+      "url": "https://supreme.justia.com/cases/federal/us/579/15-5040/",
+      "facts": "A state chief justice later reviewed a death-penalty case in which he had earlier participated as district attorney.",
+      "issue": "Can a judge hear a case after significant personal involvement in a critical prosecution decision?",
+      "holding": "Due process required recusal.",
+      "reasoning": "A judge’s earlier significant personal prosecutorial role creates an intolerable risk of bias.",
+      "trap": "Separate constitutional disqualification from the broader Model Code and state recusal provisions."
+    }
+  ],
+  "sources": {
+    "r1.0": {
+      "label": "ABA Model Rule 1.0",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_0_terminology/"
+    },
+    "r1.1": {
+      "label": "ABA Model Rule 1.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_1_competence/"
+    },
+    "r1.2": {
+      "label": "ABA Model Rule 1.2",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_2_scope_of_representation_allocation_of_authority_between_client_lawyer/"
+    },
+    "r1.3": {
+      "label": "ABA Model Rule 1.3",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_3_diligence/"
+    },
+    "r1.4": {
+      "label": "ABA Model Rule 1.4",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_4_communications/"
+    },
+    "r1.5": {
+      "label": "ABA Model Rule 1.5",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_5_fees/"
+    },
+    "r1.6": {
+      "label": "ABA Model Rule 1.6",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_6_confidentiality_of_information/"
+    },
+    "r1.7": {
+      "label": "ABA Model Rule 1.7",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_7_conflict_of_interest_current_clients/"
+    },
+    "r1.8": {
+      "label": "ABA Model Rule 1.8",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_8_current_clients_specific_rules/"
+    },
+    "r1.9": {
+      "label": "ABA Model Rule 1.9",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_9_duties_of_former_clients/"
+    },
+    "r1.16": {
+      "label": "ABA Model Rule 1.16",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_16_declining_or_terminating_representation/"
+    },
+    "r1.18": {
+      "label": "ABA Model Rule 1.18",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_18_duties_of_prospective_client/"
+    },
+    "r3.2": {
+      "label": "ABA Model Rule 3.2",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_2_expediting_litigation/"
+    },
+    "r3.3": {
+      "label": "ABA Model Rule 3.3",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_3_candor_toward_the_tribunal/"
+    },
+    "r3.4": {
+      "label": "ABA Model Rule 3.4",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_4_fairness_to_opposing_party_counsel/"
+    },
+    "r5.3": {
+      "label": "ABA Model Rule 5.3",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_3_responsibilities_regarding_nonlawyer_assistant/"
+    },
+    "r5.4": {
+      "label": "ABA Model Rule 5.4",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_4_professional_independence_of_a_lawyer/"
+    },
+    "r5.5": {
+      "label": "ABA Model Rule 5.5",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_5_unauthorized_practice_of_law_multijurisdictional_practice_of_law/"
+    },
+    "r5.7": {
+      "label": "ABA Model Rule 5.7",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_7_responsibilities_regarding_law_related_services/"
+    },
+    "r7.1": {
+      "label": "ABA Model Rule 7.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_7_1_communication_concerning_a_lawyer_s_services/"
+    },
+    "r7.3": {
+      "label": "ABA Model Rule 7.3",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_7_3_direct_contact_with_prospective_clients/"
+    },
+    "r8.1": {
+      "label": "ABA Model Rule 8.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_1_bar_admission_disciplinary_matters/"
+    },
+    "r8.3": {
+      "label": "ABA Model Rule 8.3",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_3_reporting_professional_misconduct/"
+    },
+    "r8.5": {
+      "label": "ABA Model Rule 8.5",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_5_disciplinary_authority_choice_of_law/"
+    },
+    "scope": {
+      "label": "ABA Model Rules: Preamble & Scope",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/model_rules_of_professional_conduct_preamble_scope/"
+    },
+    "birbrower": {
+      "label": "Birbrower, Montalbano, Condon & Frank v. Superior Court, 17 Cal. 4th 119, 949 P.2d 1 (1998)",
+      "url": "https://law.justia.com/cases/california/supreme-court/4th/17/119.html"
+    },
+    "strickland": {
+      "label": "Strickland v. Washington, 466 U.S. 668 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/466/668/"
+    },
+    "lerner": {
+      "label": "Lerner v. Laufer, 359 N.J. Super. 201, 819 A.2d 471 (App. Div. 2003)",
+      "url": "https://legalmalpracticelawreview.lexblogplatformthree.com/wp-content/uploads/sites/271/2010/07/Lerner-v_-Laufer-819-A_-2d-471-NJ_-Superior-Cou1.pdf"
+    },
+    "jones": {
+      "label": "Jones v. Barnes, 463 U.S. 745 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/463/745/"
+    },
+    "mccoy": {
+      "label": "McCoy v. Louisiana, 584 U.S. 414 (2018)",
+      "url": "https://supreme.justia.com/cases/federal/us/584/16-8255/"
+    },
+    "bates": {
+      "label": "Bates v. State Bar of Arizona, 433 U.S. 350 (1977)",
+      "url": "https://supreme.justia.com/cases/federal/us/433/350/"
+    },
+    "ohralik": {
+      "label": "Ohralik v. Ohio State Bar Association, 436 U.S. 447 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/447/"
+    },
+    "primus": {
+      "label": "In re Primus, 436 U.S. 412 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/412/"
+    },
+    "button": {
+      "label": "NAACP v. Button, 371 U.S. 415 (1963)",
+      "url": "https://supreme.justia.com/cases/federal/us/371/415/"
+    },
+    "frcp26": {
+      "label": "Federal Rule of Civil Procedure 26(b)(3): work product",
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_26"
+    },
+    "fre501": {
+      "label": "Federal Rule of Evidence 501: privilege and governing law",
+      "url": "https://www.law.cornell.edu/rules/fre/rule_501"
+    },
+    "upjohn": {
+      "label": "Upjohn Co. v. United States, 449 U.S. 383 (1981)",
+      "url": "https://supreme.justia.com/cases/federal/us/449/383/"
+    },
+    "r1.10": {
+      "label": "ABA Model Rule 1.10",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_10_imputation_of_conflicts_of_interest_general_rule/"
+    },
+    "r1.11": {
+      "label": "ABA Model Rule 1.11",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_11_special_conflicts_of_interest_for_former_and_current_government_officers_and_employees/"
+    },
+    "r1.12": {
+      "label": "ABA Model Rule 1.12",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_12_former_judge_arbitrator_mediator_or_other_third_party_neutral/"
+    },
+    "r1.13": {
+      "label": "ABA Model Rule 1.13",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_13_organization_as_client/"
+    },
+    "r1.14": {
+      "label": "ABA Model Rule 1.14",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_14_client_with_diminished_capacity/"
+    },
+    "r1.15": {
+      "label": "ABA Model Rule 1.15",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_15_safekeeping_property/"
+    },
+    "r2.1": {
+      "label": "ABA Model Rule 2.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_2_1_advisor/"
+    },
+    "r2.4": {
+      "label": "ABA Model Rule 2.4",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_2_4_lawyer_serving_as_third_party_neutral/"
+    },
+    "r3.1": {
+      "label": "ABA Model Rule 3.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_1_meritorious_claims_contentions/"
+    },
+    "r3.5": {
+      "label": "ABA Model Rule 3.5",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_5_impartiality_decorum_of_the_tribunal/"
+    },
+    "r3.6": {
+      "label": "ABA Model Rule 3.6",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_6_trial_publicity/"
+    },
+    "r3.7": {
+      "label": "ABA Model Rule 3.7",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_7_lawyer_as_witness/"
+    },
+    "r3.8": {
+      "label": "ABA Model Rule 3.8",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_8_special_responsibilities_of_a_prosecutor/"
+    },
+    "r3.9": {
+      "label": "ABA Model Rule 3.9",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_3_9_advocate_in_nonadjudicative_proceedings/"
+    },
+    "r5.1": {
+      "label": "ABA Model Rule 5.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_1_responsibilities_of_partners_managers_and_supervisory_lawyers/"
+    },
+    "r6.1": {
+      "label": "ABA Model Rule 6.1",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_6_1_voluntary_pro_bono_publico_service/"
+    },
+    "r6.2": {
+      "label": "ABA Model Rule 6.2",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_6_2_accepting_appointments/"
+    },
+    "r7.2": {
+      "label": "ABA Model Rule 7.2",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_7_2_communications_concerning_a_lawyers_services_specific_rules/"
+    },
+    "r8.2": {
+      "label": "ABA Model Rule 8.2",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_2_judicial_legal_officials/"
+    },
+    "r8.4": {
+      "label": "ABA Model Rule 8.4",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_8_4_misconduct/"
+    },
+    "mcjc": {
+      "label": "ABA Model Code of Judicial Conduct",
+      "url": "https://www.americanbar.org/groups/professional_responsibility/publications/model_code_of_judicial_conduct/"
+    },
+    "ks": {
+      "label": "Kansas Supreme Court Rules",
+      "url": "https://kscourts.gov/Rules-Orders/Rules"
+    },
+    "frcr44": {
+      "label": "Federal Rule of Criminal Procedure 44",
+      "url": "https://www.law.cornell.edu/rules/frcrmp/rule_44"
+    },
+    "brumbaugh": {
+      "label": "Florida Bar v. Brumbaugh, 355 So. 2d 1186 (Fla. 1978)",
+      "url": "https://library.law.fsu.edu/Digital-Collections/flsupct/dockets/48803/48803.html"
+    },
+    "robbins": {
+      "label": "In re Robbins, 192 A.3d 558 (D.C. 2018)",
+      "url": "https://law.justia.com/cases/district-of-columbia/court-of-appeals/2018/17-bg-767.html"
+    },
+    "whiting": {
+      "label": "Whiting v. Lacara, 187 F.3d 317 (2d Cir. 1999)",
+      "url": "https://openjurist.org/187/f3d/317/joseph-whiting-v-garrett-r-lacara-the-incorporated-village-of-old-brookville"
+    },
+    "upjohn-case": {
+      "label": "Upjohn Co. v. United States, 449 U.S. 383 (1981)",
+      "url": "https://supreme.justia.com/cases/federal/us/449/383/"
+    },
+    "evans": {
+      "label": "Evans v. Jeff D., 475 U.S. 717 (1986)",
+      "url": "https://supreme.justia.com/cases/federal/us/475/717/"
+    },
+    "brady": {
+      "label": "Brady v. Maryland, 373 U.S. 83 (1963)",
+      "url": "https://supreme.justia.com/cases/federal/us/373/83/"
+    },
+    "bordenkircher": {
+      "label": "Bordenkircher v. Hayes, 434 U.S. 357 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/434/357/"
+    },
+    "caperton": {
+      "label": "Caperton v. A.T. Massey Coal Co., 556 U.S. 868 (2009)",
+      "url": "https://supreme.justia.com/cases/federal/us/556/868/"
+    },
+    "williams-pa": {
+      "label": "Williams v. Pennsylvania, 579 U.S. 1 (2016)",
+      "url": "https://supreme.justia.com/cases/federal/us/579/15-5040/"
+    }
+  }
+}

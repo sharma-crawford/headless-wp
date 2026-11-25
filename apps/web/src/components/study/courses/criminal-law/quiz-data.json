@@ -1,0 +1,470 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "The state proves motive but leaves a required element in reasonable doubt. What is the correct verdict on that charge?",
+    "options": [
+      "Guilty because motive is enough.",
+      "Not guilty because every element needs proof beyond reasonable doubt.",
+      "Guilty unless the accused testifies.",
+      "Automatically guilty of attempt."
+    ],
+    "answer": 1,
+    "explanation": "The prosecution bears the burden for each required element.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "Which step should come first when reading a criminal-law hypothetical?",
+    "options": [
+      "Identify the statute and its elements.",
+      "Choose the most dramatic fact.",
+      "Assume all crimes require intent.",
+      "Choose a sentence."
+    ],
+    "answer": 0,
+    "explanation": "Element-by-element analysis prevents facts from replacing law.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 1,
+    "prompt": "A stranger sees a person in danger and does nothing. What is the first omission question?",
+    "options": [
+      "Did the law impose a duty to act?",
+      "Was the weather wet?",
+      "Did the stranger feel guilty?",
+      "Was someone filming?"
+    ],
+    "answer": 0,
+    "explanation": "An omission is not normally criminal without a recognized legal duty and ability to act.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 1,
+    "prompt": "A charged offense requires an act. Which issue belongs in the actus reus analysis?",
+    "options": [
+      "Whether the conduct was voluntary.",
+      "Whether the defendant deserves punishment generally.",
+      "Whether a witness likes the defendant.",
+      "Whether the jury has read the news."
+    ],
+    "answer": 0,
+    "explanation": "Voluntariness concerns the conduct element, apart from culpability and proof.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 2,
+    "prompt": "A captain consciously disregards a substantial unjustifiable flood risk. Under MPC terminology, what mental state is most direct?",
+    "options": [
+      "Negligently.",
+      "Recklessly.",
+      "Purposely as to the harm.",
+      "No mental state."
+    ],
+    "answer": 1,
+    "explanation": "Conscious disregard is the core recklessness distinction.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 2,
+    "prompt": "A statute is silent about knowledge for a serious offense. What is the best approach?",
+    "options": [
+      "Automatically impose strict liability.",
+      "Interpret the statute and relevant precedent before deciding mens rea.",
+      "Assume purpose for every element.",
+      "Let the jury select any standard."
+    ],
+    "answer": 1,
+    "explanation": "Statutory silence does not itself resolve the culpability question.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 2,
+    "prompt": "For a federal prohibited-possession offense, Rehaif illustrates that a knowledge requirement can reach which fact?",
+    "options": [
+      "The defendant's relevant prohibited status.",
+      "The judge's personal preferences.",
+      "The eventual sentence.",
+      "The weapon's market price in every case."
+    ],
+    "answer": 0,
+    "explanation": "Rehaif required knowledge of the status that made possession unlawful under that statute.",
+    "refs": [
+      "v1",
+      "rehaif"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 3,
+    "prompt": "A thief moves a merchant's crate two feet with intent to keep it. Which larceny element may that movement satisfy?",
+    "options": [
+      "Asportation.",
+      "Premeditation.",
+      "Causation of death.",
+      "Conspiracy agreement."
+    ],
+    "answer": 0,
+    "explanation": "Only slight movement is generally needed for common-law carrying away.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 3,
+    "prompt": "At the initial taking, the actor honestly believes the crate is theirs. What element is most directly contested?",
+    "options": [
+      "Intent to steal another's property.",
+      "The existence of a courthouse.",
+      "A mortgage lien.",
+      "An overt act after conspiracy."
+    ],
+    "answer": 0,
+    "explanation": "An honest ownership belief can negate the culpable intent required by a theft offense, depending on its terms.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 4,
+    "prompt": "A pickpocket quietly removes a wallet without the victim noticing. What is most uncertain for robbery?",
+    "options": [
+      "A qualifying force-or-fear element.",
+      "Whether property exists.",
+      "Whether the wallet can move.",
+      "Whether a statute has a title."
+    ],
+    "answer": 0,
+    "explanation": "Stealthy taking may be theft while lacking the force or fear required for robbery.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 4,
+    "prompt": "A taker threatens a merchant with a weapon to obtain a satchel. Which fact most clearly distinguishes this from simple larceny?",
+    "options": [
+      "The threat inducing fear.",
+      "The rain.",
+      "The market's location by water.",
+      "The satchel's color."
+    ],
+    "answer": 0,
+    "explanation": "Robbery adds force or intimidation to a taking from person or presence.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 5,
+    "prompt": "A person enters with permission and only later decides to steal. What must the lawyer check?",
+    "options": [
+      "The statute's timing and unauthorized-remaining terms.",
+      "The weather report only.",
+      "Whether the building is old.",
+      "Whether a judge dislikes theft."
+    ],
+    "answer": 0,
+    "explanation": "Intent timing depends on the governing burglary statute.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 5,
+    "prompt": "Which location can Kansas's modern burglary statute expressly include?",
+    "options": [
+      "A watercraft, if the statutory elements are met.",
+      "Only a nighttime dwelling.",
+      "Only a castle.",
+      "Only federal land."
+    ],
+    "answer": 0,
+    "explanation": "K.S.A. 21-5807 includes listed conveyances such as watercraft, subject to its elements.",
+    "refs": [
+      "v1",
+      "burglary"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 6,
+    "prompt": "A deceived owner intends to transfer title to a vessel. Which traditional offense is most directly implicated?",
+    "options": [
+      "False pretenses.",
+      "Larceny by trick.",
+      "Burglary.",
+      "Manslaughter."
+    ],
+    "answer": 0,
+    "explanation": "The owner's intent to pass title marks the traditional false-pretenses distinction.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 6,
+    "prompt": "A clerk lawfully receives dock fees, then pockets them. Which traditional category fits?",
+    "options": [
+      "Embezzlement.",
+      "Burglary.",
+      "Robbery.",
+      "Felony murder."
+    ],
+    "answer": 0,
+    "explanation": "The initial possession was entrusted rather than trespassory.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 7,
+    "prompt": "A threat is proved but no evidence connects the accused to the fatal fall. What remains unresolved?",
+    "options": [
+      "Causation and required conduct.",
+      "The courthouse location only.",
+      "The victim's occupation only.",
+      "Whether punishment deters crime."
+    ],
+    "answer": 0,
+    "explanation": "A threat may bear on intent but does not by itself prove the accused caused death.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 7,
+    "prompt": "Why should a student avoid saying all intentional killings are first-degree murder?",
+    "options": [
+      "Degree definitions and premeditation requirements vary by statute.",
+      "Intent never matters.",
+      "All murder requires a felony.",
+      "Every death is excused."
+    ],
+    "answer": 0,
+    "explanation": "First-degree classifications are statutory and commonly require additional elements.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 8,
+    "prompt": "A captain consciously disregards a grave risk of death but has no aim to kill. Which murder theory should be evaluated?",
+    "options": [
+      "Depraved-heart murder.",
+      "False pretenses.",
+      "Burglary by remaining.",
+      "Larceny by trick."
+    ],
+    "answer": 0,
+    "explanation": "Extreme risk disregard can support depraved-heart murder if the jurisdiction's threshold is met.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 8,
+    "prompt": "What distinguishes negligence from recklessness in MPC terms?",
+    "options": [
+      "Negligence concerns a risk the actor should perceive; recklessness involves conscious disregard.",
+      "Negligence always requires an intent to kill.",
+      "Recklessness never involves a risk.",
+      "They are identical."
+    ],
+    "answer": 0,
+    "explanation": "Awareness of the risk is the key distinction in the MPC framework.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 9,
+    "prompt": "A death follows a felony but an independent lightning strike appears to be the immediate cause. What must be tested?",
+    "options": [
+      "Actual and legal causation, plus felony-murder limits.",
+      "Only whether the defendant was wet.",
+      "Only the victim's age.",
+      "Only whether a contract was signed."
+    ],
+    "answer": 0,
+    "explanation": "Felony timing alone does not resolve causation or a jurisdiction's limits.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 9,
+    "prompt": "An assault supplies the proposed predicate for felony murder. Which limitation may matter?",
+    "options": [
+      "Merger.",
+      "Asportation.",
+      "Delivery of a deed.",
+      "Race notice."
+    ],
+    "answer": 0,
+    "explanation": "Many jurisdictions restrict use of an assaultive felony that merges with the homicide.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 10,
+    "prompt": "A person acts recklessly but without intent to kill. What is a key obstacle to attempted-murder liability?",
+    "options": [
+      "Attempted murder generally requires specific intent to kill.",
+      "Attempt never requires an act.",
+      "All completed murders are attempts.",
+      "Recklessness proves purpose."
+    ],
+    "answer": 0,
+    "explanation": "Attempted murder commonly demands the intent to kill, even when some completed-murder theories do not.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 10,
+    "prompt": "Buying tools and discussing a crime, without more, most directly raises which issue?",
+    "options": [
+      "Whether conduct has crossed from preparation into attempt.",
+      "Whether a deed was delivered.",
+      "Whether a mortgage is senior.",
+      "Whether the jury can take judicial notice."
+    ],
+    "answer": 0,
+    "explanation": "The act threshold separates preparation from a punishable attempt.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 11,
+    "prompt": "A and B agree on a crime; B buys a map the next day. If an overt act is required, what matters?",
+    "options": [
+      "The purchase followed and furthered the agreement.",
+      "The map was waterproof.",
+      "B was present at trial.",
+      "A owns the dock."
+    ],
+    "answer": 0,
+    "explanation": "An overt act must further an existing agreement where the statute requires one.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 11,
+    "prompt": "A bystander knows of a planned theft but does nothing to help. Is knowledge alone ordinarily enough for accomplice liability?",
+    "options": [
+      "Yes, always.",
+      "No; intentional assistance or encouragement is normally required.",
+      "Only if it rains.",
+      "Only if the theft succeeds."
+    ],
+    "answer": 1,
+    "explanation": "Mere knowledge or presence usually does not make a person an accomplice.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 12,
+    "prompt": "A defendant claims self-defense. Which pair belongs at the center of the analysis?",
+    "options": [
+      "Necessity and proportionality under local law.",
+      "Record notice and deed delivery.",
+      "Asportation and title transfer.",
+      "Mortgage priority and redemption."
+    ],
+    "answer": 0,
+    "explanation": "Self-defense depends on the threat and whether the responsive force was necessary and proportionate.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 12,
+    "prompt": "Which statement about insanity tests is safest?",
+    "options": [
+      "Every state uses exactly the same test.",
+      "Jurisdictions vary; identify the governing law and mental-state evidence.",
+      "Insanity is the same as self-defense.",
+      "A diagnosis always proves the defense."
+    ],
+    "answer": 1,
+    "explanation": "Insanity doctrine varies, and diagnosis alone does not establish a legal defense.",
+    "refs": [
+      "v3",
+      "kahler"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 13,
+    "prompt": "A sexual-offense problem cites a historic common-law case. What is the first source to apply to current facts?",
+    "options": [
+      "The current jurisdiction's statute and controlling cases.",
+      "Only the older case's phrasing.",
+      "A popular slogan.",
+      "The accused person's preferred definition."
+    ],
+    "answer": 0,
+    "explanation": "Modern elements and definitions are jurisdiction-specific and may differ from historical formulations.",
+    "refs": [
+      "v3",
+      "rape"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 13,
+    "prompt": "No physical injury is shown. What follows?",
+    "options": [
+      "The charge automatically fails.",
+      "The court must still assess the statutory consent, force, coercion, and proof elements.",
+      "Consent is conclusively proved.",
+      "Mens rea never matters."
+    ],
+    "answer": 1,
+    "explanation": "Visible injury is not a universal element; the enacted law and evidence control.",
+    "refs": [
+      "v3"
+    ]
+  }
+]

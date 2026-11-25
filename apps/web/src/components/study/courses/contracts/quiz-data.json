@@ -1,0 +1,514 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "What should demon counsel decide first when a deal includes design services and physical seals?",
+    "options": [
+      "Whether Article 2 or common law governs the relevant obligation",
+      "Whether the buyer is angry",
+      "Whether the seller has a law license",
+      "Whether damages exceed the price"
+    ],
+    "answer": 0,
+    "explanation": "Classify the transaction and governing law before applying formation or breach rules.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "Which interest generally seeks the value of performance promised?",
+    "options": [
+      "Restitution",
+      "Expectation",
+      "Reliance",
+      "Punitive damages"
+    ],
+    "answer": 1,
+    "explanation": "Expectation protects the promised bargain, subject to proof and limits.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 1,
+    "prompt": "A promised payment for an act completed before the promise most directly raises what issue?",
+    "options": [
+      "Past consideration",
+      "Mailbox rule",
+      "Parol evidence",
+      "Anticipatory repudiation"
+    ],
+    "answer": 0,
+    "explanation": "A past act generally was not induced by the later promise.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 1,
+    "prompt": "Which is generally sufficient consideration?",
+    "options": [
+      "A future act sought in exchange for a promise",
+      "A purely gratuitous promise",
+      "A completed unsolicited favor",
+      "A recital that no one actually exchanged anything"
+    ],
+    "answer": 0,
+    "explanation": "A requested future act is a bargained-for exchange.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 2,
+    "prompt": "What chiefly limits quantity in a genuine requirements contract?",
+    "options": [
+      "The buyer's good-faith actual requirements",
+      "The seller's favorite number",
+      "No limit at all",
+      "The previous year's order exactly"
+    ],
+    "answer": 0,
+    "explanation": "Good faith supplies a real quantity limit; prior estimates may inform but do not always fix quantity.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 2,
+    "prompt": "A satisfaction clause is automatically illusory.",
+    "options": [
+      "Always true",
+      "True only for land",
+      "False; good-faith or reasonable satisfaction may constrain it",
+      "True only under the UCC"
+    ],
+    "answer": 2,
+    "explanation": "Satisfaction is commonly bounded by an appropriate good-faith or objective standard.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 3,
+    "prompt": "Which fact most strengthens promissory estoppel?",
+    "options": [
+      "Reasonable expense induced by the promise",
+      "A benefit never received by anyone",
+      "The promisor's horn color",
+      "A later unrelated gift"
+    ],
+    "answer": 0,
+    "explanation": "Reasonable detrimental reliance is central to promissory estoppel.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 3,
+    "prompt": "Restitution most directly asks whether the defendant:",
+    "options": [
+      "Retained an unjust benefit",
+      "Sent acceptance by mail",
+      "Made an offer",
+      "Used a seal"
+    ],
+    "answer": 0,
+    "explanation": "Restitution addresses unjust enrichment.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 4,
+    "prompt": "An offer must generally create:",
+    "options": [
+      "A power of acceptance",
+      "A guarantee of profit",
+      "A court filing",
+      "A requirement to negotiate forever"
+    ],
+    "answer": 0,
+    "explanation": "The offeree must reasonably understand that assent will conclude the bargain.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 4,
+    "prompt": "Which is most likely preliminary negotiation?",
+    "options": [
+      "'I may sell my wand; make an offer'",
+      "'I sell you this wand for 40 coins; reply by dusk'",
+      "A signed option",
+      "A definite proposal accepted exactly"
+    ],
+    "answer": 0,
+    "explanation": "'Make an offer' invites the other party to propose terms.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 5,
+    "prompt": "A valid option chiefly protects:",
+    "options": [
+      "The offeree's power to accept during the option period",
+      "The offeror's right to change price hourly",
+      "All future negotiations",
+      "The seller's damages"
+    ],
+    "answer": 0,
+    "explanation": "An option makes the underlying offer irrevocable for its specified period.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 5,
+    "prompt": "Without a stated deadline, an ordinary offer lasts:",
+    "options": [
+      "Forever",
+      "A reasonable time under the circumstances",
+      "Exactly 30 days",
+      "Until the offeror dies, without exception"
+    ],
+    "answer": 1,
+    "explanation": "Lapse depends on the transaction and circumstances.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 6,
+    "prompt": "Under the ordinary mailbox rule, a properly dispatched invited acceptance is usually effective:",
+    "options": [
+      "When sent",
+      "When read by a judge",
+      "When the offeror feels it",
+      "Only after performance"
+    ],
+    "answer": 0,
+    "explanation": "For an ordinary invited noninstant acceptance, proper dispatch often controls.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 6,
+    "prompt": "Which calls for extra care rather than automatic mailbox-rule application?",
+    "options": [
+      "Acceptance under an option contract",
+      "A properly addressed ordinary acceptance",
+      "A timely invited letter",
+      "An offer allowing mail"
+    ],
+    "answer": 0,
+    "explanation": "Option acceptance generally follows a receipt rule unless the option says otherwise.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 7,
+    "prompt": "The first 2-207 question is:",
+    "options": [
+      "Whether the response formed a contract",
+      "Who had prettier stationery",
+      "Whether damages are liquidated",
+      "Whether a tort occurred"
+    ],
+    "answer": 0,
+    "explanation": "Formation comes before deciding what additional or different terms govern.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 7,
+    "prompt": "A new arbitration term in a merchant's acknowledgment:",
+    "options": [
+      "Always controls",
+      "Never matters",
+      "Requires analysis of 2-207's term rules and exceptions",
+      "Automatically voids the sale"
+    ],
+    "answer": 2,
+    "explanation": "Additional terms require a separate term analysis.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 8,
+    "prompt": "Economic duress focuses on an improper threat plus:",
+    "options": [
+      "Lack of a reasonable alternative",
+      "A written seal",
+      "A late letter",
+      "A vague advertisement"
+    ],
+    "answer": 0,
+    "explanation": "The threatened party must generally show that the improper pressure left no reasonable alternative.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 8,
+    "prompt": "A signed contract can still be:",
+    "options": [
+      "Voidable under a proven defense",
+      "Automatically immune from defenses",
+      "Always a gift",
+      "Always governed by Article 2"
+    ],
+    "answer": 0,
+    "explanation": "Capacity and improper pressure can affect enforceability despite a signature.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 9,
+    "prompt": "A classic mutual-mistake question asks whether:",
+    "options": [
+      "Both parties shared a basic mistaken assumption",
+      "A party later regretted price",
+      "A letter arrived late",
+      "The contract was oral"
+    ],
+    "answer": 0,
+    "explanation": "Shared mistake about a basic existing assumption is the starting point.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 9,
+    "prompt": "An express allocation of unknown-defect risk:",
+    "options": [
+      "Can defeat mistake-based avoidance",
+      "Never matters",
+      "Automatically proves fraud",
+      "Creates a warranty"
+    ],
+    "answer": 0,
+    "explanation": "Risk allocation is a key limit on mistake relief.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 10,
+    "prompt": "For misrepresentation, which fact is central?",
+    "options": [
+      "A false assertion that induced justified assent",
+      "A colorful robe",
+      "A late counteroffer",
+      "A fully performed duty"
+    ],
+    "answer": 0,
+    "explanation": "Misrepresentation focuses on a false assertion and its effect on assent.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 10,
+    "prompt": "Unconscionability may lead a court to:",
+    "options": [
+      "Limit an offending clause",
+      "Automatically imprison the drafter",
+      "Ignore all evidence",
+      "Apply the mailbox rule"
+    ],
+    "answer": 0,
+    "explanation": "Courts may refuse or limit enforcement of an unconscionable term.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 11,
+    "prompt": "Evidence of prior dealings may help:",
+    "options": [
+      "Interpret an ambiguous trade phrase",
+      "Erase every signed term",
+      "Make all contracts oral",
+      "Prove capacity automatically"
+    ],
+    "answer": 0,
+    "explanation": "Context can inform meaning without necessarily contradicting a final writing.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 11,
+    "prompt": "Before applying the parol-evidence rule, ask whether the writing is:",
+    "options": [
+      "A final integrated expression",
+      "Written in red ink",
+      "Longer than two pages",
+      "Stamped by a demon"
+    ],
+    "answer": 0,
+    "explanation": "Integration determines the rule's operation.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 12,
+    "prompt": "A specific factual promise about goods can create:",
+    "options": [
+      "An express warranty",
+      "Only a tort",
+      "A mailbox exception",
+      "A property easement"
+    ],
+    "answer": 0,
+    "explanation": "An affirmation of fact that is part of the basis of the bargain may create an express warranty.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 12,
+    "prompt": "Merchantability generally concerns:",
+    "options": [
+      "Ordinary fitness of goods sold by a merchant",
+      "A buyer's undisclosed special purpose",
+      "A land deed",
+      "A previous letter"
+    ],
+    "answer": 0,
+    "explanation": "Merchantability is an implied warranty about ordinary use.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 13,
+    "prompt": "A material breach can generally:",
+    "options": [
+      "Suspend the other party's remaining performance duty",
+      "Erase every past benefit",
+      "Automatically prove fraud",
+      "Create an offer"
+    ],
+    "answer": 0,
+    "explanation": "Materiality affects the other party's duty to continue performing.",
+    "refs": [
+      "v4"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 13,
+    "prompt": "Substantial performance generally leaves room for:",
+    "options": [
+      "Damages for defects",
+      "No claim of any kind",
+      "Automatic punitive damages",
+      "Revocation of an unrelated offer"
+    ],
+    "answer": 0,
+    "explanation": "A performing party may recover subject to damages for defects.",
+    "refs": [
+      "v4"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 14,
+    "prompt": "A later event destroys the known purpose but performance remains possible. The leading issue is:",
+    "options": [
+      "Frustration of purpose",
+      "Past consideration",
+      "Mailbox rule",
+      "Mutual mistake about an existing fact"
+    ],
+    "answer": 0,
+    "explanation": "Frustration addresses loss of the principal purpose despite possible performance.",
+    "refs": [
+      "v4"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 14,
+    "prompt": "A mere rise in ordinary costs usually:",
+    "options": [
+      "Does not alone establish impracticability",
+      "Automatically discharges every contract",
+      "Creates an option",
+      "Proves fraud"
+    ],
+    "answer": 0,
+    "explanation": "The doctrine requires more than ordinary commercial difficulty.",
+    "refs": [
+      "v4"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 15,
+    "prompt": "Which limitation asks whether special loss was within the parties' contemplation at contracting?",
+    "options": [
+      "Foreseeability",
+      "Mailbox rule",
+      "Capacity",
+      "Offer lapse"
+    ],
+    "answer": 0,
+    "explanation": "Foreseeability limits consequential damages.",
+    "refs": [
+      "v4"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 15,
+    "prompt": "Which approach avoids double recovery?",
+    "options": [
+      "Choose and justify the protected interest and offset overlap",
+      "Add expectation, reliance, and restitution in full",
+      "Ignore mitigation",
+      "Award every requested figure"
+    ],
+    "answer": 0,
+    "explanation": "Remedies protect distinct interests, and overlapping amounts should not be stacked.",
+    "refs": [
+      "v4"
+    ]
+  }
+]

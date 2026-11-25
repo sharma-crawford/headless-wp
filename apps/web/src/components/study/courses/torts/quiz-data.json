@@ -1,0 +1,514 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "Intent for battery can be shown by:",
+    "options": [
+      "Purpose or substantial certainty of harmful or offensive contact",
+      "A mere possibility of contact",
+      "Carelessness alone",
+      "The plaintiff's fear alone"
+    ],
+    "answer": 0,
+    "explanation": "Purpose or knowledge of substantial certainty is the key intent concept.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "Transferred intent chiefly asks whether:",
+    "options": [
+      "Intent aimed at one target or tort attaches to a qualifying actual result",
+      "Every negligent act becomes intentional",
+      "All damages disappear",
+      "Only the actor's motive matters"
+    ],
+    "answer": 0,
+    "explanation": "Traditional doctrine may transfer qualifying intent to the actual victim or tort.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 1,
+    "prompt": "A person struck unexpectedly from behind has the strongest initial claim for:",
+    "options": [
+      "Battery",
+      "Assault only",
+      "False imprisonment only",
+      "Nuisance"
+    ],
+    "answer": 0,
+    "explanation": "Battery centers on contact; unseen conduct generally lacks prior apprehension for assault.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 1,
+    "prompt": "Assault requires apprehension of:",
+    "options": [
+      "Imminent harmful or offensive contact",
+      "Any future insult",
+      "A completed property loss",
+      "A vague distant threat"
+    ],
+    "answer": 0,
+    "explanation": "Imminence distinguishes assault from a remote threat.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 2,
+    "prompt": "False imprisonment chiefly requires:",
+    "options": [
+      "Intentional confinement within boundaries",
+      "Physical injury in every case",
+      "A written contract",
+      "A public nuisance"
+    ],
+    "answer": 0,
+    "explanation": "Confinement is the defining interest.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 2,
+    "prompt": "Ordinary insults alone generally:",
+    "options": [
+      "Do not satisfy IIED's extreme-and-outrageous threshold",
+      "Always establish IIED",
+      "Prove battery",
+      "Create strict liability"
+    ],
+    "answer": 0,
+    "explanation": "IIED requires unusually extreme conduct and severe distress.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 3,
+    "prompt": "A continuing intrusive hum most directly implicates:",
+    "options": [
+      "Private nuisance",
+      "Assault",
+      "False imprisonment",
+      "Transferred intent"
+    ],
+    "answer": 0,
+    "explanation": "Nuisance protects use and enjoyment of land.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 3,
+    "prompt": "Conversion requires interference with chattel that is:",
+    "options": [
+      "Sufficiently serious to justify full-value relief",
+      "Merely momentary without harm",
+      "Always accidental",
+      "Only a sound"
+    ],
+    "answer": 0,
+    "explanation": "Conversion differs from lesser interference by its seriousness.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 4,
+    "prompt": "A breach analysis should focus on:",
+    "options": [
+      "Foreseeable risk and feasible precautions before the accident",
+      "Only the injury's later severity",
+      "The color of the ship",
+      "Punishment"
+    ],
+    "answer": 0,
+    "explanation": "Reasonableness is judged in context before the accident.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 4,
+    "prompt": "The Hand-style calculus compares precaution burden with:",
+    "options": [
+      "Probability multiplied by severity of harm",
+      "The plaintiff's salary",
+      "A contract price",
+      "Number of witnesses"
+    ],
+    "answer": 0,
+    "explanation": "Risk magnitude and likelihood help assess reasonable care.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 5,
+    "prompt": "Following industry custom generally:",
+    "options": [
+      "Is relevant but not always conclusive",
+      "Always defeats negligence",
+      "Always proves negligence",
+      "Replaces causation"
+    ],
+    "answer": 0,
+    "explanation": "Custom informs, but does not necessarily determine, reasonable care.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 5,
+    "prompt": "Professional-care disputes may require:",
+    "options": [
+      "Evidence about the applicable specialized standard",
+      "Only a lay person's guess",
+      "A contract seal",
+      "Transferred intent"
+    ],
+    "answer": 0,
+    "explanation": "Professional standards can require specialized evidence and jurisdiction-specific rules.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 6,
+    "prompt": "Negligence per se primarily supplies a possible standard for:",
+    "options": [
+      "Breach",
+      "Damages amount",
+      "Intent to batter",
+      "Conversion"
+    ],
+    "answer": 0,
+    "explanation": "A qualifying safety statute can inform or establish breach under applicable law.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 6,
+    "prompt": "After a statutory violation, plaintiff still needs:",
+    "options": [
+      "Causation and harm",
+      "Only an apology",
+      "A signed offer",
+      "No further proof"
+    ],
+    "answer": 0,
+    "explanation": "A breach theory does not by itself prove the entire negligence claim.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 7,
+    "prompt": "Res ipsa is most useful when:",
+    "options": [
+      "The precise negligent act is unknown but circumstances support an inference",
+      "The act is admitted intentional",
+      "No injury occurred",
+      "A contract expired"
+    ],
+    "answer": 0,
+    "explanation": "It allows circumstantial proof of breach in a suitable case.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 7,
+    "prompt": "Res ipsa generally creates:",
+    "options": [
+      "A permissible inference, subject to jurisdictional rules",
+      "Automatic strict liability",
+      "A criminal conviction",
+      "An assault claim"
+    ],
+    "answer": 0,
+    "explanation": "The doctrine does not automatically decide the entire case.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 8,
+    "prompt": "The ordinary factual-cause question is:",
+    "options": [
+      "Would harm have occurred without this conduct?",
+      "Was the defendant rude?",
+      "Was there an offer?",
+      "Was the harm foreseeable only?"
+    ],
+    "answer": 0,
+    "explanation": "The but-for counterfactual is the normal starting point.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 8,
+    "prompt": "Two concurrent sufficient causes require:",
+    "options": [
+      "A rule adapted to multiple sufficient causes",
+      "Automatic dismissal of both",
+      "No proof of harm",
+      "Transferred intent"
+    ],
+    "answer": 0,
+    "explanation": "Strict but-for logic can fail with independently sufficient concurrent causes.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 9,
+    "prompt": "Scope of liability asks whether harm:",
+    "options": [
+      "Falls within the risks that made conduct negligent",
+      "Occurred after the act in time",
+      "Was expensive",
+      "Was in a different city"
+    ],
+    "answer": 0,
+    "explanation": "Temporal sequence alone is not enough.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 9,
+    "prompt": "An intervening event:",
+    "options": [
+      "Must be analyzed in context; it is not automatically superseding",
+      "Always ends liability",
+      "Always creates strict liability",
+      "Eliminates duty"
+    ],
+    "answer": 0,
+    "explanation": "Its character and relationship to the original risk matter.",
+    "refs": [
+      "v2"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 10,
+    "prompt": "Ordinary nonfeasance generally:",
+    "options": [
+      "Needs a recognized basis before a duty to rescue arises",
+      "Always creates liability",
+      "Is an intentional battery",
+      "Eliminates causation"
+    ],
+    "answer": 0,
+    "explanation": "No general duty to rescue is the starting principle, subject to exceptions.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 10,
+    "prompt": "Which most strengthens a duty claim?",
+    "options": [
+      "The defendant created the peril or undertook aid",
+      "The defendant only witnessed it",
+      "The victim is famous",
+      "A contract ended long ago"
+    ],
+    "answer": 0,
+    "explanation": "Created risk and undertaking are recognized duty pathways.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 11,
+    "prompt": "The first premises question is often:",
+    "options": [
+      "Who controlled the property and why the visitor entered",
+      "Which star is nearest",
+      "Whether a contract was mailed",
+      "Whether contact was offensive"
+    ],
+    "answer": 0,
+    "explanation": "Control and entrant status help identify the applicable duty.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 11,
+    "prompt": "An open-and-obvious hazard:",
+    "options": [
+      "Requires jurisdiction-specific analysis rather than automatic dismissal",
+      "Always bars every claim",
+      "Always proves fraud",
+      "Creates assault"
+    ],
+    "answer": 0,
+    "explanation": "Its effect varies by jurisdiction and context.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 12,
+    "prompt": "Consent is limited by:",
+    "options": [
+      "Its scope and withdrawal",
+      "The defendant's favorite weapon",
+      "Only the location",
+      "The court's calendar"
+    ],
+    "answer": 0,
+    "explanation": "Permission to one kind of contact is not permission to all contact.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 12,
+    "prompt": "Defensive force is generally judged by:",
+    "options": [
+      "Reasonable belief and proportionality",
+      "The actor's anger alone",
+      "A fixed price",
+      "Industry custom only"
+    ],
+    "answer": 0,
+    "explanation": "The privilege has limits tied to the threat.",
+    "refs": [
+      "v1"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 13,
+    "prompt": "Comparative fault addresses:",
+    "options": [
+      "Allocation of causal negligence",
+      "Intent to batter",
+      "Contract formation",
+      "Whether land is movable"
+    ],
+    "answer": 0,
+    "explanation": "It allocates responsibility after each relevant negligence theory is analyzed.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 13,
+    "prompt": "A plaintiff's risky conduct:",
+    "options": [
+      "Must be analyzed under the governing jurisdiction and causal facts",
+      "Always bars recovery",
+      "Never matters",
+      "Proves conversion"
+    ],
+    "answer": 0,
+    "explanation": "Rules and thresholds vary, and the conduct must be legally relevant.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 14,
+    "prompt": "Respondeat superior chiefly depends on:",
+    "options": [
+      "Employee tort within scope of employment",
+      "Any accident near the employer",
+      "A signed waiver",
+      "Premises status alone"
+    ],
+    "answer": 0,
+    "explanation": "Scope of employment is central to ordinary vicarious liability.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 14,
+    "prompt": "In a multi-actor case, counsel should:",
+    "options": [
+      "Separate direct negligence, vicarious liability, and allocation",
+      "Treat everyone as one defendant automatically",
+      "Skip causation",
+      "Assume every contractor is an employee"
+    ],
+    "answer": 0,
+    "explanation": "Distinct liability links need independent analysis.",
+    "refs": [
+      "v3"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 15,
+    "prompt": "Compensatory damages should be linked to:",
+    "options": [
+      "Proven tort-caused loss",
+      "Any number in a demand letter",
+      "A contract's price alone",
+      "The defendant's fame"
+    ],
+    "answer": 0,
+    "explanation": "Causation and proof are essential.",
+    "refs": [
+      "final"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 15,
+    "prompt": "Punitive damages for ordinary carelessness:",
+    "options": [
+      "Are not automatic and generally need a heightened basis",
+      "Always follow every injury",
+      "Replace compensatory damages",
+      "Depend on the mailbox rule"
+    ],
+    "answer": 0,
+    "explanation": "Punitive relief has separate, usually heightened requirements.",
+    "refs": [
+      "final"
+    ]
+  }
+]

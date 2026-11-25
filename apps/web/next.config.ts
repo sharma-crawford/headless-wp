@@ -35,6 +35,7 @@ function version(): string {
 }
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: { "/study-assets/*": ["./course-assets/**/*"] },
   output: process.env.VERCEL ? undefined : 'standalone',
   agentRules: false,
 

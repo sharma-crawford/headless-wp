@@ -1,0 +1,33 @@
+{
+  "civil-procedure": {
+    "kata-01": "The rules of the dojo",
+    "kata-05": "Block, answer, preserve",
+    "kata-08": "Watch the opponent’s form",
+    "kata-09": "Protect the training journal",
+    "kata-12": "Choose your teammates",
+    "kata-13": "Qualify for the federal bracket",
+    "kata-16": "One dojo, many claims"
+  },
+  "business-associations": {
+    "agency-creation": "Agency: who is acting for whom?",
+    "agency-authority": "Authority, contracts & ratification",
+    "partnership-duties": "Partnership duties, property & money",
+    "llc-duties": "LLCs: finances, duties, claims & exits",
+    "veil-piercing": "Limited liability & piercing the veil"
+  },
+  "property": {
+    "future-interests": "Future interests & RAP"
+  },
+  "contracts": {},
+  "evidence": {
+    "prejudice": "Rule 403 & unfair prejudice",
+    "other-acts": "Other acts & the propensity trap",
+    "chances": "Doctrine of chances",
+    "character": "Character doors & methods of proof",
+    "truthfulness": "Truthfulness, bias & cross-examination",
+    "convictions": "Convictions & the four balances",
+    "personal-knowledge": "Competency, personal knowledge & lay opinion",
+    "expert-qualification": "Experts: qualifications, helpfulness & ultimate issues",
+    "expert-reliability": "Expert reliability: Daubert & Kumho Tire"
+  }
+}
