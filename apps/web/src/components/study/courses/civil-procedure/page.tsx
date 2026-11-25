@@ -8,7 +8,7 @@ import '../study.css';
 import '../themed-room.css';
 import './dojo.css';
 export const dynamic='force-dynamic';
-export const metadata:Metadata={title:'Civil Procedure: The Procedure Dojo | renAIssance',description:'Karate Kid inspired civil procedure practice drawn from Edward’s two note volumes: sixteen lessons, written problems, case connections, and graded quizzes.'};
+export const metadata:Metadata={title:'Civil Procedure: The Procedure Dojo | The Armory',description:'Karate Kid inspired civil procedure practice drawn from Edward’s two note volumes: sixteen lessons, written problems, case connections, and graded quizzes.'};
 const safe=questions.map(({id,section,prompt,options})=>({id,section,prompt,options}));
 const names=data.sections.map(s=>s.title);
 export default function ProcedureDojo(){return <main className="study themed-room dojo-room">

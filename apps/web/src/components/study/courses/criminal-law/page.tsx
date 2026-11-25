@@ -8,14 +8,14 @@ import '../themed-room.css';
 import './tidewater.css';
 
 export const dynamic='force-dynamic';
-export const metadata:Metadata={title:'Criminal Law: The Tidewater Docket | renAIssance Legal Education',description:'A storm-soaked Criminal Law study room with original rule summaries, fourteen comics, case lenses, written hypotheticals, and self-grading quizzes.'};
+export const metadata:Metadata={title:'Criminal Law: The Tidewater Docket | The Armory',description:'A storm-soaked Criminal Law study room with original rule summaries, fourteen comics, case lenses, written hypotheticals, and self-grading quizzes.'};
 const safe=questions.map(({id,section,prompt,options})=>({id,section,prompt,options}));
 const names=data.sections.map(s=>s.title);
 function Emphasis({text}:{text:string}){return <>{text.split(/(\*\*.*?\*\*)/g).map((part,i)=>part.startsWith('**')?<strong key={i}>{part.slice(2,-2)}</strong>:part)}</>}
 
 export default function CriminalLawRoom(){return <main className="study themed-room tidewater-room">
  <header className="study-top"><Link href="/castle">The Armory</Link><Link href="/castle#library">← All study rooms</Link><Link href="/my-training">My training</Link></header>
- <section className="room-hero tidewater-hero"><div className="tidewater-hero-grid"><div><p className="study-eyebrow">renAIssance / THE TIDEWATER DOCKET</p><p className="room-kicker">Criminal Law · three-volume review</p><h1>Criminal Law<em>The Tidewater Docket</em></h1><p className="room-intro">{data.intro}</p><div className="room-actions"><a className="study-button" href="#review">Enter the harbor ↓</a><a href="#practice">Take the docket quiz ↗</a></div></div><div className="tidewater-seal" aria-hidden="true"><span>⚓</span><small>ACT · MIND · CAUSE · DEFENSE</small></div></div></section>
+ <section className="room-hero tidewater-hero"><div className="tidewater-hero-grid"><div><p className="study-eyebrow">The Armory / THE TIDEWATER DOCKET</p><p className="room-kicker">Criminal Law · three-volume review</p><h1>Criminal Law<em>The Tidewater Docket</em></h1><p className="room-intro">{data.intro}</p><div className="room-actions"><a className="study-button" href="#review">Enter the harbor ↓</a><a href="#practice">Take the docket quiz ↗</a></div></div><div className="tidewater-seal" aria-hidden="true"><span>⚓</span><small>ACT · MIND · CAUSE · DEFENSE</small></div></div></section>
  <div className="room-stats"><span><b>{data.sections.length}</b> chapters</span><span><b>{questions.length}</b> quiz hypotheticals</span><span><b>{data.sections.length}</b> written problems</span><span><b>{data.sections.length}</b> comic scenes</span></div>
  <nav className="study-tabs" aria-label="Criminal Law study modes"><a href="#review">The docket</a><a href="#chapters">Chapters</a><a href="#vocabulary">Working terms</a><a href="#practice">Quiz</a><a href="#sources">Sources</a></nav>
  <div className="study-layout"><aside className="study-outline"><p>THE HARBOR MAP</p><ol>{data.sections.map((s,i)=><li key={s.id}><a href={'#'+s.id}><span>{String(i+1).padStart(2,'0')}</span>{s.title}</a></li>)}</ol></aside><div className="study-content">

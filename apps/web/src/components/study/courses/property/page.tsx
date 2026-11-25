@@ -9,14 +9,14 @@ import '../themed-room.css';
 import './property.css';
 
 export const dynamic='force-dynamic';
-export const metadata:Metadata={title:'Property: The Noble Estates | renAIssance Legal Education',description:'Property law in a fantasy court: original study notes, fourteen illustrated chapters, case lenses, and self-grading quizzes.'};
+export const metadata:Metadata={title:'Property: The Noble Estates | The Armory',description:'Property law in a fantasy court: original study notes, fourteen illustrated chapters, case lenses, and self-grading quizzes.'};
 const safe=questions.map(({id,section,prompt,options})=>({id,section,prompt,options}));
 const names=data.sections.map(s=>s.title);
 function Emphasis({text}:{text:string}){return <>{text.split(/(\*\*.*?\*\*)/g).map((part,i)=>part.startsWith('**')?<strong key={i}>{part.slice(2,-2)}</strong>:part)}</>}
 
 export default function PropertyRoom(){return <main className="study themed-room noble-room">
  <header className="study-top"><Link href="/castle">The Armory</Link><Link href="/castle#library">← All study rooms</Link><Link href="/my-training">My training</Link></header>
- <section className="room-hero noble-hero"><div className="noble-hero-grid"><div><p className="study-eyebrow">renAIssance / THE NOBLE ESTATES</p><p className="room-kicker">A Property law fantasy court</p><h1>Property<em>The Noble Estates</em></h1><p className="room-intro">{data.intro}</p><div className="room-actions"><a className="study-button" href="#review">Enter the realm ↓</a><a href="#songs">Study songs</a><a href="#practice">Begin the trials ↗</a></div></div><div className="noble-crest" aria-hidden="true"><span>⚜</span><small>CLAIM · HOLD · CONVEY</small></div></div></section>
+ <section className="room-hero noble-hero"><div className="noble-hero-grid"><div><p className="study-eyebrow">The Armory / THE NOBLE ESTATES</p><p className="room-kicker">A Property law fantasy court</p><h1>Property<em>The Noble Estates</em></h1><p className="room-intro">{data.intro}</p><div className="room-actions"><a className="study-button" href="#review">Enter the realm ↓</a><a href="#songs">Study songs</a><a href="#practice">Begin the trials ↗</a></div></div><div className="noble-crest" aria-hidden="true"><span>⚜</span><small>CLAIM · HOLD · CONVEY</small></div></div></section>
  <div className="room-stats"><span><b>{data.sections.length}</b> chapters</span><span><b>{questions.length}</b> quiz hypotheticals</span><span><b>{data.sections.length}</b> written problems</span><span><b>{data.sections.length}</b> comic scenes</span></div>
  <nav className="study-tabs" aria-label="Property study modes"><a href="#review">The realm</a><a href="#chapters">Chapters</a><a href="#vocabulary">Court vocabulary</a><a href="#songs">Study songs</a><a href="#practice">Trials</a><a href="#sources">Notes &amp; sources</a></nav>
  <div className="study-layout"><aside className="study-outline"><p>THE ROYAL MAP</p><ol>{data.sections.map((s,i)=><li key={s.id}><a href={'#'+s.id}><span>{String(i+1).padStart(2,'0')}</span>{s.title}</a></li>)}</ol></aside><div className="study-content"><CourseSongs subject="property"/>

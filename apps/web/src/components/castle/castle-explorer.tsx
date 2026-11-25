@@ -124,7 +124,7 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
               <a className={styles.actionButton} href={program.enrolled ? `/programs/${program.id}` : `/catalogue/${program.id}`}>{program.enrolled ? "Continue course" : "View course & enrollment"} →</a>
               <p className={styles.sampleNotice}>Lessons, quizzes, and saved progress are available through the course page.</p>
             </>}
-            {study && <><ResourceButton item={study} /><p className={styles.sampleNotice}>This course opens on renAIssance while its Armory import is prepared.</p></>}
+            {study && <ResourceButton item={study} />}
             {wing?.id === "library" && <>
               <h2>Armory courses</h2>{catalogueNotice}<div className={styles.resourceGrid}>{programDoors(programs)}</div>
               <h2>The nine law-school courses</h2><div className={styles.resourceGrid}>{studyCourses.map((item) => <a className={styles.resourceButton} href={`#${courseKey(item.path)}`} key={item.path}><strong>{item.title}</strong><b>Enter course room →</b></a>)}</div>
