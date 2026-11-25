@@ -1,0 +1,546 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "What starts a federal civil action?",
+    "options": [
+      "Serving discovery",
+      "Filing the complaint",
+      "Winning the first motion",
+      "Sending a demand letter"
+    ],
+    "answer": 1,
+    "explanation": "Rule 3 makes filing the complaint the commencement event. Service is a separate obligation.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "Is every rule affecting a litigant necessarily substantive?",
+    "options": [
+      "Only a jury can decide",
+      "Rule 1 removes all limits",
+      "No; analyze what the rule regulates",
+      "Yes, any effect makes it substantive"
+    ],
+    "answer": 2,
+    "explanation": "Sibbach concerns a procedural mechanism; effects alone do not settle the classification.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 1,
+    "prompt": "Which paper ordinarily responds to complaint allegations?",
+    "options": [
+      "Rule 56 motion",
+      "Notice of deposition",
+      "Subpoena",
+      "Answer"
+    ],
+    "answer": 3,
+    "explanation": "An answer admits, denies, or states an appropriate lack of knowledge and states defenses.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 1,
+    "prompt": "Can a party plead inconsistent theories?",
+    "options": [
+      "Yes, under Rule 8(d)",
+      "Never",
+      "Only after a verdict",
+      "Only when both are proven"
+    ],
+    "answer": 0,
+    "explanation": "Alternative pleading permits uncertainty at the pleading stage without dispensing with Rule 11.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 2,
+    "prompt": "What does Rule 12(b)(6) principally test?",
+    "options": [
+      "Whether damages have been paid",
+      "The sufficiency of the claim as pleaded",
+      "Which witness is most credible",
+      "Whether discovery is complete"
+    ],
+    "answer": 1,
+    "explanation": "The motion tests legal sufficiency under the pleading standard, not ordinary trial proof.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 2,
+    "prompt": "Which formulation is current?",
+    "options": [
+      "Proof beyond a reasonable doubt",
+      "Automatic heightened pleading for every claim",
+      "Plausibility under Twombly and Iqbal",
+      "Any conceivable claim necessarily survives"
+    ],
+    "answer": 2,
+    "explanation": "The current standard is plausibility; Rule 9 identifies particular matters requiring heightened detail.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 3,
+    "prompt": "What is the ordinary party-motion safe harbor?",
+    "options": [
+      "7 days after judgment",
+      "No waiting period",
+      "90 days after trial",
+      "21 days after service before filing"
+    ],
+    "answer": 3,
+    "explanation": "Rule 11(c)(2) normally gives 21 days to withdraw or correct before a served motion is filed.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 3,
+    "prompt": "Which certification rule applies to discovery requests?",
+    "options": [
+      "Rule 26(g)",
+      "Rule 11 automatically",
+      "Rule 50",
+      "Rule 23"
+    ],
+    "answer": 0,
+    "explanation": "Rule 11(d) excludes discovery requests, responses, objections, and motions under Rules 26–37.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 4,
+    "prompt": "Which defense can be waived through omission from the initial Rule 12 response?",
+    "options": [
+      "None of these",
+      "Personal jurisdiction",
+      "Subject-matter jurisdiction",
+      "A court’s Article III limit by consent"
+    ],
+    "answer": 1,
+    "explanation": "Rule 12(h)(1) identifies waivable threshold defenses including personal jurisdiction.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 4,
+    "prompt": "Filing a complaint automatically completes service?",
+    "options": [
+      "Yes if damages exceed $75,000",
+      "Only in class actions",
+      "No; filing and service are different steps",
+      "Yes in every action"
+    ],
+    "answer": 2,
+    "explanation": "Rule 3 concerns filing; Rule 4 separately governs service.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 5,
+    "prompt": "What does relation back principally address?",
+    "options": [
+      "Automatically proving liability",
+      "Restarting every limitations period",
+      "Removing all notice requirements",
+      "Treating an amendment as filed at the original date"
+    ],
+    "answer": 3,
+    "explanation": "Rule 15(c) can preserve a claim against a limitations problem if its conditions are satisfied.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 5,
+    "prompt": "After a scheduling deadline, which additional standard matters?",
+    "options": [
+      "Rule 16 good cause",
+      "Automatic leave without inquiry",
+      "Criminal probable cause",
+      "Rule 23 numerosity"
+    ],
+    "answer": 0,
+    "explanation": "The scheduling order’s modification standard must be addressed along with Rule 15.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 6,
+    "prompt": "Which governs setting aside an entry of default?",
+    "options": [
+      "Rule 50 renewal",
+      "Rule 55(c) good cause",
+      "Rule 56 no genuine dispute",
+      "Rule 23 commonality"
+    ],
+    "answer": 1,
+    "explanation": "Entry of default is distinct from a final default judgment.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 6,
+    "prompt": "Does a meritorious defense mean guaranteed victory?",
+    "options": [
+      "Only if a jury has accepted it",
+      "It means admitting the complaint",
+      "No; it must be legally sufficient and potentially consequential",
+      "Yes"
+    ],
+    "answer": 2,
+    "explanation": "The notes distinguish a potentially valid defense from a prediction of ultimate success.",
+    "refs": [
+      "v1",
+      "rules"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 7,
+    "prompt": "Is all relevant information automatically discoverable?",
+    "options": [
+      "Yes regardless of burden",
+      "Only if already admissible",
+      "Only if requested by the plaintiff",
+      "No; privilege and proportionality also matter"
+    ],
+    "answer": 3,
+    "explanation": "Rule 26 adds proportionality and excludes privileged matter.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 7,
+    "prompt": "Which device ordinarily requests documents or ESI from a party?",
+    "options": [
+      "Rule 34 request",
+      "Rule 50 motion",
+      "Rule 55 entry",
+      "Rule 23 certification"
+    ],
+    "answer": 0,
+    "explanation": "Rule 34 governs party production requests; nonparty discovery commonly requires Rule 45.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 8,
+    "prompt": "Privilege protects which category most directly?",
+    "options": [
+      "All publicly posted statements",
+      "Qualifying confidential legal communications",
+      "All facts a client tells a lawyer",
+      "Every document in a law office"
+    ],
+    "answer": 1,
+    "explanation": "Communicating a fact to a lawyer does not make the fact itself privileged.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 8,
+    "prompt": "For Rule 37(e)’s adverse-inference remedies, what matters?",
+    "options": [
+      "The largest damages claim",
+      "A Rule 11 motion alone",
+      "Intent to deprive another party of the ESI’s use",
+      "Any accidental deletion suffices"
+    ],
+    "answer": 2,
+    "explanation": "Rule 37(e)(2) requires intent; the rule also has preservation, reasonable-step, and restoration predicates.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 9,
+    "prompt": "Who ordinarily resolves genuine material credibility conflicts?",
+    "options": [
+      "The Rule 56 judge by weighing credibility",
+      "The clerk",
+      "The opposing lawyer",
+      "The factfinder at trial"
+    ],
+    "answer": 3,
+    "explanation": "Rule 56 screens for a genuine dispute rather than resolving competing credible accounts.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 9,
+    "prompt": "A movant without the trial burden can point to what?",
+    "options": [
+      "An absence of evidence on an essential element",
+      "Only evidence disproving every conceivable claim",
+      "Any irrelevant inconsistency",
+      "The mere fact it filed first"
+    ],
+    "answer": 0,
+    "explanation": "Celotex permits identifying evidentiary failure, subject to the record and a proper opportunity to respond.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 10,
+    "prompt": "Which rule is specifically for JMOL in jury trials?",
+    "options": [
+      "Rule 4",
+      "Rule 50",
+      "Rule 52(c)",
+      "Rule 23"
+    ],
+    "answer": 1,
+    "explanation": "Rule 52(c) addresses judgment on partial findings in a bench trial.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 10,
+    "prompt": "Ordinary renewal under Rule 50(b) requires what?",
+    "options": [
+      "A new complaint",
+      "A default entry",
+      "A preserved pre-submission Rule 50(a) motion",
+      "Only disappointment with the verdict"
+    ],
+    "answer": 2,
+    "explanation": "Renewal ordinarily depends on the earlier motion and its grounds.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 11,
+    "prompt": "What best describes Rule 14 impleader?",
+    "options": [
+      "Any unrelated claim against anyone",
+      "Automatic jurisdiction",
+      "Mandatory class certification",
+      "Potential derivative liability to the defendant"
+    ],
+    "answer": 3,
+    "explanation": "Impleader is not a way simply to nominate another direct defendant.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 11,
+    "prompt": "Do joinder rules themselves supply subject-matter jurisdiction?",
+    "options": [
+      "No; analyze jurisdiction independently",
+      "Yes in every case",
+      "Only Rule 18 does",
+      "Only when counsel consents"
+    ],
+    "answer": 0,
+    "explanation": "Permission to join and authority to adjudicate are separate inquiries.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 12,
+    "prompt": "A federal defense alone ordinarily supplies Section 1331 jurisdiction?",
+    "options": [
+      "Only over $75,000",
+      "No",
+      "Yes always",
+      "Only after an answer"
+    ],
+    "answer": 1,
+    "explanation": "Mottley focuses on the plaintiff’s well-pleaded claim.",
+    "refs": [
+      "v2",
+      "code"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 12,
+    "prompt": "For an individual, citizenship generally follows what?",
+    "options": [
+      "Where counsel practices",
+      "Where the complaint is mailed",
+      "Domicile",
+      "Temporary residence alone"
+    ],
+    "answer": 2,
+    "explanation": "Domicile requires physical presence and the appropriate intent; residence alone is insufficient.",
+    "refs": [
+      "v2",
+      "code"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 13,
+    "prompt": "What is the first jurisdictional step?",
+    "options": [
+      "Assume all related claims are federal",
+      "Count defendants only",
+      "Use Rule 18 as a jurisdiction statute",
+      "Find a claim within original jurisdiction"
+    ],
+    "answer": 3,
+    "explanation": "Supplemental jurisdiction requires an original-jurisdiction anchor.",
+    "refs": [
+      "v2",
+      "code"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 13,
+    "prompt": "Exxon Mobil automatically cures incomplete diversity?",
+    "options": [
+      "No",
+      "Yes",
+      "Only for defendants",
+      "Only if one claim exceeds $75,000"
+    ],
+    "answer": 0,
+    "explanation": "The distinction is between a related amount shortfall and contamination by nondiverse parties.",
+    "refs": [
+      "v2",
+      "code"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 14,
+    "prompt": "Who ordinarily may remove under Section 1441(a)?",
+    "options": [
+      "Only the judge",
+      "A defendant",
+      "The original plaintiff",
+      "Any witness"
+    ],
+    "answer": 1,
+    "explanation": "The original plaintiff cannot invoke ordinary defendant removal for its own action.",
+    "refs": [
+      "v2",
+      "code"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 14,
+    "prompt": "Where is the ordinary removal destination?",
+    "options": [
+      "The plaintiff’s home district automatically",
+      "The Supreme Court",
+      "The district and division embracing the pending state action",
+      "Any federal court the defendant prefers"
+    ],
+    "answer": 2,
+    "explanation": "Section 1441(a) specifies the destination, rather than a free choice among federal courts.",
+    "refs": [
+      "v2",
+      "code"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 15,
+    "prompt": "Rule 23(a) alone is enough to certify every class?",
+    "options": [
+      "Yes if more than 100 members",
+      "Yes if damages are high",
+      "Only if all live in one state",
+      "No; a Rule 23(b) category must also be satisfied"
+    ],
+    "answer": 3,
+    "explanation": "Certification requires both the prerequisites and an applicable category.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 15,
+    "prompt": "Which extra criteria belong to 23(b)(3)?",
+    "options": [
+      "Predominance and superiority",
+      "Domicile and personal service",
+      "Good cause and safe harbor",
+      "Substantial need and undue hardship"
+    ],
+    "answer": 0,
+    "explanation": "Damages class treatment includes predominance and superiority plus notice and opt-out safeguards.",
+    "refs": [
+      "v2",
+      "rules"
+    ]
+  }
+]

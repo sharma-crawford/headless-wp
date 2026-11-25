@@ -1,0 +1,1221 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "In a federal criminal trial, the judge properly notices that a courthouse lies within federal territory. Which jury instruction is proper?",
+    "options": [
+      "The jury may accept the noticed fact but is not required to do so.",
+      "The jury must accept the fact because the source is official.",
+      "The defendant must disprove the fact beyond a reasonable doubt.",
+      "The jury may consider it only if the defendant consents."
+    ],
+    "answer": 0,
+    "explanation": "Rule 201(f) preserves the criminal jury’s freedom to reject a noticed fact. The binding instruction applies in civil cases.",
+    "refs": [
+      "fre201"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "A judge remembers personally seeing a disputed traffic light malfunction. A party asks the judge to notice the malfunction. What is the strongest objection?",
+    "options": [
+      "Judicial notice is unavailable in civil cases.",
+      "A traffic light is never an adjudicative fact.",
+      "Only facts admitted by both parties may be noticed.",
+      "Personal recollection is not an indisputable source under Rule 201."
+    ],
+    "answer": 3,
+    "explanation": "The issue is reasonable disputability and the permitted basis for notice, not the judge’s confidence in a memory.",
+    "refs": [
+      "fre201"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 0,
+    "prompt": "A court excludes a witness’s proposed testimony. Counsel says only “I object,” and its substance is not otherwise apparent. What should counsel do to preserve the issue?",
+    "options": [
+      "Wait until appeal to describe the testimony.",
+      "Ask the jury to imagine the missing testimony.",
+      "Make an offer of proof explaining the testimony and its relevance.",
+      "Treat any exclusion as automatic reversible error."
+    ],
+    "answer": 2,
+    "explanation": "Rule 103(a)(2) requires the excluded evidence’s substance to be put on the record unless apparent. A bare objection does not supply it.",
+    "refs": [
+      "fre103"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 0,
+    "prompt": "In a civil trial, a party supplies an unquestionable official source for a fact not reasonably disputable and properly requests notice. What follows?",
+    "options": [
+      "Notice remains forbidden unless both sides agree.",
+      "The court must take notice, and a party may request an opportunity to be heard.",
+      "The court must accept every inference drawn from that fact.",
+      "The fact can be noticed only before trial begins."
+    ],
+    "answer": 1,
+    "explanation": "Rule 201(c), (d), and (e) distinguish mandatory notice on a supported request, timing at any stage, and the opportunity to challenge scope.",
+    "refs": [
+      "fre201"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 1,
+    "prompt": "A disputed letter is offered to prove the defendant’s intent. Its relevance depends on authorship. What is the Rule 104(b) inquiry?",
+    "options": [
+      "Could a reasonable jury find that the defendant authored it by a preponderance?",
+      "Has the judge personally found authorship beyond a reasonable doubt?",
+      "Is authorship stipulated by both sides?",
+      "Does the letter conclusively prove every element?"
+    ],
+    "answer": 0,
+    "explanation": "Conditional relevance uses a sufficiency screen for the jury’s possible finding. It does not demand conclusive proof.",
+    "refs": [
+      "fre104",
+      "huddleston"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 1,
+    "prompt": "A receipt places the accused near a warehouse shortly before a theft but does not prove entry. Is it irrelevant for that reason alone?",
+    "options": [
+      "Yes; each item must independently establish guilt.",
+      "Yes; circumstantial evidence is inadmissible.",
+      "No; anything the prosecutor offers is relevant.",
+      "No; a small rational change in the probability of opportunity can satisfy Rule 401."
+    ],
+    "answer": 3,
+    "explanation": "Rule 401 has a low threshold, but the receipt still needs a logical link to a consequential fact and must survive other rules.",
+    "refs": [
+      "fre401"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 1,
+    "prompt": "The judge is deciding whether a privilege exists under Rule 104(a). Which statement is sound?",
+    "options": [
+      "All hearsay must be excluded at this preliminary stage.",
+      "Privilege rules stop applying because the jury is absent.",
+      "The judge may consider otherwise inadmissible material but remains bound by privilege rules.",
+      "The jury must decide every privilege question first."
+    ],
+    "answer": 2,
+    "explanation": "Rule 104(a) relaxes evidence rules for the preliminary inquiry while expressly retaining privilege.",
+    "refs": [
+      "fre104"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 1,
+    "prompt": "A letter is admitted subject to later proof of authorship. No connecting evidence is ever offered. What is the best response?",
+    "options": [
+      "Keep it because conditional admission is irrevocable.",
+      "Request exclusion or striking for the unsupported purpose and an appropriate instruction.",
+      "Treat the missing link as conclusively established.",
+      "Require the opponent to prove the letter was forged."
+    ],
+    "answer": 1,
+    "explanation": "Conditional admission depends on the promised sufficient foundation. Failure to connect is not merely an automatic inference against the opponent.",
+    "refs": [
+      "fre104"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 2,
+    "prompt": "An exhibit strongly proves a disputed element and makes the opponent look bad for that legitimate reason. Is exclusion required under Rule 403?",
+    "options": [
+      "No; ordinary damage to the opponent’s case is not itself unfair prejudice.",
+      "Yes; damaging evidence is unfair by definition.",
+      "Yes; disputed evidence must be neutral.",
+      "No; relevant evidence can never be excluded."
+    ],
+    "answer": 0,
+    "explanation": "Rule 403 targets specified dangers, especially improper decision paths. Strong legitimate proof is not excluded merely because it is persuasive.",
+    "refs": [
+      "fre403"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 2,
+    "prompt": "A judge finds probative value and unfair-prejudice risk exactly equal under ordinary Rule 403. Which analysis is correct?",
+    "options": [
+      "Equal weights require exclusion.",
+      "The proponent must show value substantially outweighs danger.",
+      "The opponent must prove the evidence false.",
+      "The stated balance does not justify Rule 403 exclusion because the danger must substantially outweigh value."
+    ],
+    "answer": 3,
+    "explanation": "Do not reverse the ordinary Rule 403 balance. Other rules, such as 412 or 609(b), use different directions.",
+    "refs": [
+      "fre403"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 2,
+    "prompt": "The only purpose for a prior conviction’s inflammatory name is proving qualifying felony status; the accused offers an adequate admission of that status. What matters most?",
+    "options": [
+      "The prosecution must always accept every stipulation.",
+      "The conviction becomes irrelevant under Rule 401.",
+      "The admission can supply equal proof of status with less propensity risk.",
+      "The jury is entitled to hear every prior offense regardless of purpose."
+    ],
+    "answer": 2,
+    "explanation": "Old Chief applies contextual Rule 403 analysis to proof of conviction status. It does not erase relevance or create a universal right to stipulate away the prosecution’s narrative.",
+    "refs": [
+      "old-chief",
+      "fre403"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 2,
+    "prompt": "A document is admissible to show notice but not to prove the truth of its accusation. Counsel timely requests a proper restriction. What should the court do?",
+    "options": [
+      "Permit unrestricted use because one purpose is valid.",
+      "Restrict it to the proper scope and instruct the jury accordingly.",
+      "Exclude it automatically because a second purpose is invalid.",
+      "Let counsel decide privately what the jury may infer."
+    ],
+    "answer": 1,
+    "explanation": "Rule 105 requires a limiting instruction on timely request when evidence is admissible for one purpose or party but not another.",
+    "refs": [
+      "fre105"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 3,
+    "prompt": "A defendant disputes ever possessing a package. The prosecutor offers an unrelated prior possession offense “to prove knowledge,” without explaining a link. What is the best objection?",
+    "options": [
+      "The label does not supply a nonpropensity chain relevant to the disputed issue.",
+      "Rule 404(b) permits only prior convictions.",
+      "Knowledge is never a permitted purpose.",
+      "Other acts are automatically admissible whenever a defendant testifies."
+    ],
+    "answer": 0,
+    "explanation": "A listed purpose is not self-executing. Explain how this prior act proves a live issue without reasoning that the person acted in character.",
+    "refs": [
+      "fre404",
+      "caldwell"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 3,
+    "prompt": "A technician claims she did not know a warning code. Records show she previously completed training on that exact code. What is the strongest theory?",
+    "options": [
+      "Any earlier event is forbidden propensity evidence.",
+      "Training establishes guilt conclusively.",
+      "The records are admissible only if training was criminal.",
+      "The training can establish knowledge without relying on bad character."
+    ],
+    "answer": 3,
+    "explanation": "The connection is specific acquired knowledge. Foundation, relevance, and other admissibility rules still apply.",
+    "refs": [
+      "fre404",
+      "fre403"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 3,
+    "prompt": "A federal prosecutor gives written notice listing an old act but says nothing about its permitted purpose or reasoning. What is missing?",
+    "options": [
+      "Only the defendant’s approval is missing.",
+      "Nothing; the act’s date alone is sufficient.",
+      "The notice must articulate the permitted purpose and the reasoning supporting it.",
+      "An earlier conviction is always required."
+    ],
+    "answer": 2,
+    "explanation": "Rule 404(b)(3) requires more than announcing the existence of other-act evidence.",
+    "refs": [
+      "fre404"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 3,
+    "prompt": "A prior dishonest act is offered solely to prove the defendant probably committed the charged fraud because she is dishonest. Which conclusion is strongest?",
+    "options": [
+      "Calling the act “intent evidence” automatically permits it.",
+      "The theory uses the forbidden character-conformity inference.",
+      "The evidence is permitted whenever fraud is charged.",
+      "Rule 403 is the only applicable rule."
+    ],
+    "answer": 1,
+    "explanation": "The stated inferential chain is propensity. A different genuine purpose or applicable exception must be shown before proceeding to balancing.",
+    "refs": [
+      "fre404"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 4,
+    "prompt": "Two store thefts happened at night and involved dark coats. The prosecution offers one to identify the actor in the other. What is the main weakness?",
+    "options": [
+      "The shared details are too commonplace, without more, to form a distinctive signature.",
+      "Identity can never be proved circumstantially.",
+      "Only identical dates establish a signature.",
+      "Any two similarities automatically establish identity."
+    ],
+    "answer": 0,
+    "explanation": "An identity theory needs distinctive shared features supporting common authorship, not ordinary characteristics of many offenses.",
+    "refs": [
+      "fre404",
+      "myers"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 4,
+    "prompt": "Evidence shows a person stole a key specifically to open the safe involved in the charged theft. Which theory best fits?",
+    "options": [
+      "The person has a generally dishonest character.",
+      "Every prior theft is automatically a common plan.",
+      "The key theft proves a habit under Rule 406.",
+      "The key theft was a connected preparatory step in a larger plan."
+    ],
+    "answer": 3,
+    "explanation": "A concrete relationship among acts supplies the plan inference. Repetition of a crime category alone does not.",
+    "refs": [
+      "fre404"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 4,
+    "prompt": "An accused offers evidence that another person used the same unusual encoded demand and custom tool in a nearby offense. What should the court examine?",
+    "options": [
+      "Whether the defense has proved the other person guilty beyond a reasonable doubt.",
+      "Only whether the accused has a prior conviction.",
+      "The real link to identity, foundation, and Rule 403, rather than treating defense evidence as automatically admissible.",
+      "Whether all defense evidence must satisfy the prosecution’s notice duty."
+    ],
+    "answer": 2,
+    "explanation": "Reverse other-act evidence can support a defense, but still requires a reasoned evidentiary connection and applicable safeguards.",
+    "refs": [
+      "fre404",
+      "fre403"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 4,
+    "prompt": "A party claims that five unrelated similar transactions were one plan but offers no connection among them. What is the best response?",
+    "options": [
+      "Five events are always enough to prove a plan.",
+      "Similarity alone does not show that the transactions were steps in one overarching scheme.",
+      "The word “plan” removes the need for Rule 403.",
+      "The acts become admissible only if every participant confesses."
+    ],
+    "answer": 1,
+    "explanation": "A common-plan theory needs a relationship among the acts beyond the tendency to repeat similar conduct.",
+    "refs": [
+      "fre404"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 5,
+    "prompt": "Four products from the same defective batch fail. Counsel multiplies their separate failure rates as if unrelated. What is the strongest criticism?",
+    "options": [
+      "A common defect undermines the assumption that the failures are independent.",
+      "All repeated events are inadmissible.",
+      "Four failures always prove intentional conduct.",
+      "A mathematical claim cannot be challenged under Rule 403."
+    ],
+    "answer": 0,
+    "explanation": "The chance calculation depends on its assumptions. A shared cause can make a cluster unsurprising without wrongdoing.",
+    "refs": [
+      "fre404",
+      "fre403"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 5,
+    "prompt": "A series of unusual incidents supports an inference that the latest was not accidental. What still may be missing?",
+    "options": [
+      "Nothing; lack of accident necessarily proves identity.",
+      "A conviction for every prior incident is always required.",
+      "The jury must reject every innocent explanation as a preliminary admissibility condition.",
+      "Evidence identifying the actor and establishing the remaining elements."
+    ],
+    "answer": 3,
+    "explanation": "One inference does not establish every proposition. Explain precisely what the pattern can and cannot support.",
+    "refs": [
+      "fre404"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 5,
+    "prompt": "An investigator presents only three failures while omitting 5,000 similar successful operations. Which issue deserves attention?",
+    "options": [
+      "Successful operations are always irrelevant.",
+      "Only the number of accusations matters.",
+      "The selected examples may exaggerate the significance of the supposed pattern.",
+      "The evidence automatically becomes habit."
+    ],
+    "answer": 2,
+    "explanation": "The comparison set affects the probability inference. Context can expose selection bias and change both relevance and Rule 403 analysis.",
+    "refs": [
+      "fre401",
+      "fre403"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 5,
+    "prompt": "Counsel argues, “He had several suspicious incidents, so he is a bad person and did this one.” Calling this the doctrine of chances does what?",
+    "options": [
+      "Makes the theory automatically admissible.",
+      "Nothing to remove the explicit propensity step.",
+      "Eliminates any need for a limiting instruction.",
+      "Converts accusations into judicially noticed facts."
+    ],
+    "answer": 1,
+    "explanation": "Courts examine the reasoning, not its label. The stated argument expressly depends on bad character and conformity.",
+    "refs": [
+      "fre404"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 6,
+    "prompt": "A criminal defendant offers reputation testimony about her pertinent peacefulness trait. What follows under the character exception?",
+    "options": [
+      "The prosecution may offer proper rebuttal evidence of that trait.",
+      "All prior misconduct of any kind becomes admissible.",
+      "The prosecution may not respond because the defense opened the issue.",
+      "The jury must accept the reputation testimony as true."
+    ],
+    "answer": 0,
+    "explanation": "The defendant can open a specified character door, but the permitted response and methods remain limited.",
+    "refs": [
+      "fre404",
+      "fre405"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 6,
+    "prompt": "A character witness on direct examination proposes to list six specific peaceful acts to show the defendant acted peacefully this time. What is the usual Rule 405(a) problem?",
+    "options": [
+      "Character may be proved only by documents.",
+      "Peacefulness can never be pertinent.",
+      "Six examples conclusively establish admissibility.",
+      "Reputation or opinion is the ordinary direct method for this circumstantial character use."
+    ],
+    "answer": 3,
+    "explanation": "Specific acts are not the ordinary direct method when character is used circumstantially. The essential-element exception is different.",
+    "refs": [
+      "fre405"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 6,
+    "prompt": "A negligent-entrustment claim makes the entrusted person’s incompetence an element. Which method may be available to prove that trait?",
+    "options": [
+      "Only reputation, regardless of the substantive claim.",
+      "No character evidence because this is civil.",
+      "Relevant specific instances under Rule 405(b), subject to other rules.",
+      "Only conduct resulting in a conviction."
+    ],
+    "answer": 2,
+    "explanation": "Where character itself is an essential element, Rule 405(b) permits specific instances. This differs from simply predicting conduct from character.",
+    "refs": [
+      "fre405"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 6,
+    "prompt": "A defendant knew of a specific threat before acting in alleged self-defense and offers it to explain her fear. What is the best initial analysis?",
+    "options": [
+      "Treat all victim conduct as categorically forbidden.",
+      "Examine its effect on her state of mind rather than assuming it is propensity evidence.",
+      "Use Rule 405(b) automatically because every self-defense case makes character essential.",
+      "Admit it to prove every accusation in the threat is true."
+    ],
+    "answer": 1,
+    "explanation": "The offered purpose controls. Knowledge of a threat can explain fear without proving action in conformity with a violent character.",
+    "refs": [
+      "fre401",
+      "fre404",
+      "fre405"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 7,
+    "prompt": "A witness says a courier is “a safe person.” Which added fact most strongly supports a habit theory?",
+    "options": [
+      "On hundreds of departures, the courier follows the same specific strap-check sequence.",
+      "The courier is popular with colleagues.",
+      "The courier has never been sued.",
+      "The witness personally likes the courier."
+    ],
+    "answer": 0,
+    "explanation": "A concrete, repeated response to a recurring situation is a stronger habit foundation than a broad character assessment.",
+    "refs": [
+      "fre406"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 7,
+    "prompt": "No one saw whether a driver fastened a seat belt on the disputed trip. A sufficient regular-use foundation is offered. Is the lack of an eyewitness fatal under Rule 406?",
+    "options": [
+      "Yes; habit requires direct observation of the event.",
+      "Yes; only organizational routines qualify.",
+      "No; the judge must conclusively find the belt was fastened.",
+      "No; Rule 406 does not require an eyewitness or corroboration."
+    ],
+    "answer": 3,
+    "explanation": "Habit can support the inference without observation of the specific occasion, but it remains rebuttable.",
+    "refs": [
+      "fre406",
+      "babcock"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 7,
+    "prompt": "A manager observed an employee perform a safety check twice and calls it an unvarying routine. What is the best challenge?",
+    "options": [
+      "Human behavior can never be habitual.",
+      "Safety procedures are inadmissible character in every case.",
+      "The small and unexplained sample may not establish sufficient regularity.",
+      "A written policy conclusively proves actual compliance."
+    ],
+    "answer": 2,
+    "explanation": "Assess actual frequency and uniformity. A label or policy does not itself prove an established practice.",
+    "refs": [
+      "fre406"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 7,
+    "prompt": "A business proves that each incoming parcel is scanned through the same documented procedure. Why might that matter to one disputed parcel?",
+    "options": [
+      "It shifts every burden of proof to the opponent.",
+      "The routine can support an inference that the procedure was followed on that occasion.",
+      "It eliminates all authentication and hearsay questions for every record.",
+      "It conclusively proves the parcel’s contents."
+    ],
+    "answer": 1,
+    "explanation": "Rule 406 authorizes a conduct inference from routine practice, not automatic admission of every related document or proof of unrelated facts.",
+    "refs": [
+      "fre406"
+    ]
+  },
+  {
+    "id": 33,
+    "section": 8,
+    "prompt": "A witness denies an old dishonest act. Counsel offers a document solely to prove that act and show untruthful character. What does Rule 608(b) generally do?",
+    "options": [
+      "Bars that extrinsic proof, while discretionary questioning about the act may have been permitted.",
+      "Requires admission because the witness denied it.",
+      "Bars every question about dishonest conduct.",
+      "Admits it automatically if no conviction resulted."
+    ],
+    "answer": 0,
+    "explanation": "The distinction is between permissible inquiry and outside proof used solely for truthfulness character. Convictions receive separate Rule 609 treatment.",
+    "refs": [
+      "fre608",
+      "dawson"
+    ]
+  },
+  {
+    "id": 34,
+    "section": 8,
+    "prompt": "A witness is challenged only because she was paid by a party. Is truthful-character bolstering automatically available?",
+    "options": [
+      "Yes; any challenge opens all character support.",
+      "Yes; payment proves general dishonesty as a matter of law.",
+      "No witness may ever be supported with reputation evidence.",
+      "No; bias impeachment is not necessarily an attack on truthful character under Rule 608(a)."
+    ],
+    "answer": 3,
+    "explanation": "Identify whether character for truthfulness was attacked. The bias theory concerns an incentive in this case.",
+    "refs": [
+      "fre608"
+    ]
+  },
+  {
+    "id": 35,
+    "section": 8,
+    "prompt": "Counsel offers a payment record to show a witness’s financial bias. Is it automatically barred as extrinsic evidence under Rule 608(b)?",
+    "options": [
+      "Yes; all outside evidence about credibility is barred.",
+      "Yes; bias may be proved only by confession.",
+      "No; the rule’s character bar does not automatically govern independently relevant bias evidence.",
+      "No; all payment records are automatically admissible."
+    ],
+    "answer": 2,
+    "explanation": "Purpose matters. A bias record must still satisfy other applicable rules, including foundation and Rule 403.",
+    "refs": [
+      "fre608",
+      "fre403"
+    ]
+  },
+  {
+    "id": 36,
+    "section": 8,
+    "prompt": "A lawyer argues a witness is unreliable simply because of the witness’s religion. Which objection is strongest?",
+    "options": [
+      "Religious beliefs are always judicially noticed.",
+      "Rule 610 bars religious beliefs offered to attack credibility.",
+      "The argument is automatically permitted on cross-examination.",
+      "Only criminal witnesses receive Rule 610 protection."
+    ],
+    "answer": 1,
+    "explanation": "Rule 610 prohibits religion as a credibility proxy. A specific and genuine bias link is a different inquiry, not a license for prejudice.",
+    "refs": [
+      "fre610"
+    ]
+  },
+  {
+    "id": 37,
+    "section": 9,
+    "prompt": "A testifying criminal defendant has a recent felony conviction that does not involve a dishonest-act element. Which balance governs impeachment under 609(a)(1)(B)?",
+    "options": [
+      "Probative value must outweigh its prejudicial effect to that defendant.",
+      "Prejudice must substantially outweigh value before exclusion.",
+      "Value must substantially outweigh prejudice in every recent-felony case.",
+      "All felony convictions must be admitted without balancing."
+    ],
+    "answer": 0,
+    "explanation": "The defendant-specific balance differs from ordinary 403 and from the heightened older-conviction rule.",
+    "refs": [
+      "fre609"
+    ]
+  },
+  {
+    "id": 38,
+    "section": 9,
+    "prompt": "Conviction occurred fourteen years ago; release from confinement for it occurred six years ago. Which timing statement is correct?",
+    "options": [
+      "The conviction date alone controls.",
+      "Every conviction older than five years is barred.",
+      "The ten-year period begins when trial counsel discovers the record.",
+      "The later release date means the conviction is not yet in Rule 609(b)’s more-than-ten-year category."
+    ],
+    "answer": 3,
+    "explanation": "Rule 609(b) measures from conviction or release from confinement for it, whichever is later.",
+    "refs": [
+      "fre609"
+    ]
+  },
+  {
+    "id": 39,
+    "section": 9,
+    "prompt": "A witness’s conviction and release both occurred more than ten years ago. The proponent offers it for truthfulness impeachment. What is required?",
+    "options": [
+      "Only ordinary Rule 403.",
+      "Automatic admission if the crime was a felony.",
+      "Specific supporting facts showing value substantially outweighs prejudice, plus reasonable written notice.",
+      "Only oral notice when the witness takes the stand."
+    ],
+    "answer": 2,
+    "explanation": "Rule 609(b) imposes a demanding balance and written-notice requirement, including for older dishonest-act convictions.",
+    "refs": [
+      "fre609"
+    ]
+  },
+  {
+    "id": 40,
+    "section": 9,
+    "prompt": "After an adverse pretrial Rule 609 ruling, a federal defendant chooses not to testify. What is the ordinary appellate consequence for that ruling?",
+    "options": [
+      "The ruling is automatically reversible.",
+      "The defendant generally cannot preserve the Rule 609 impeachment claim without testifying.",
+      "An offer of proof always replaces testimony for this issue.",
+      "The prosecution must call the defendant to cure the problem."
+    ],
+    "answer": 1,
+    "explanation": "Luce requires testimony for review of this threatened impeachment ruling because the actual testimony, use, and prejudice otherwise remain speculative.",
+    "refs": [
+      "luce",
+      "fre609"
+    ]
+  },
+  {
+    "id": 41,
+    "section": 10,
+    "prompt": "A qualifying civil claim alleges sexual assault. Which special rule addresses the defendant’s other qualifying sexual-assault acts?",
+    "options": [
+      "Rule 415, subject to its conditions and other applicable safeguards.",
+      "Rule 413 because every civil claim is criminal.",
+      "Rule 412 as an unrestricted character exception for defendants.",
+      "Rule 609 regardless of whether anyone testifies."
+    ],
+    "answer": 0,
+    "explanation": "Rule 415 governs specified civil claims. Rules 413 and 414 govern their specified criminal settings.",
+    "refs": [
+      "fre415"
+    ]
+  },
+  {
+    "id": 42,
+    "section": 10,
+    "prompt": "A proponent has reliable evidence of a qualifying other act but no conviction. Is the lack of conviction alone fatal under Rule 413?",
+    "options": [
+      "Yes; only certified convictions qualify.",
+      "Yes; the accused must first testify.",
+      "No; the act is therefore admitted without further review.",
+      "No; the rule is not limited to convictions, although foundation and other conditions remain."
+    ],
+    "answer": 3,
+    "explanation": "The rule concerns commission of qualifying acts. Sufficient evidence, relevance, disclosure, and Rule 403 still need attention.",
+    "refs": [
+      "fre413",
+      "fre403"
+    ]
+  },
+  {
+    "id": 43,
+    "section": 10,
+    "prompt": "A judge finds that a qualifying Rule 414 item presents overwhelming unfair-prejudice and confusion dangers compared with slight value. Is Rule 403 displaced?",
+    "options": [
+      "Yes; all qualifying acts are automatically admitted.",
+      "Yes; only the jury may assess any danger.",
+      "No; the judge must still apply Rule 403.",
+      "No, but exclusion requires the defendant’s admission of guilt."
+    ],
+    "answer": 2,
+    "explanation": "The special propensity provision does not eliminate the general balancing safeguard.",
+    "refs": [
+      "fre414",
+      "fre403"
+    ]
+  },
+  {
+    "id": 44,
+    "section": 10,
+    "prompt": "Without a good-cause justification for later disclosure, a party plans to offer evidence under Rule 415. What baseline timing applies?",
+    "options": [
+      "A motion at least fourteen days before trial is the only applicable requirement.",
+      "Disclosure at least fifteen days before trial.",
+      "No notice until cross-examination.",
+      "Disclosure is optional in civil cases."
+    ],
+    "answer": 1,
+    "explanation": "Rule 415 incorporates Rule 413(b)’s disclosure requirement. Do not confuse it with the different Rule 412 motion procedure.",
+    "refs": [
+      "fre415",
+      "fre413"
+    ]
+  },
+  {
+    "id": 45,
+    "section": 11,
+    "prompt": "In a civil misconduct case, protected evidence has value equal to the combined risk of harm to the victim and unfair prejudice. Does it satisfy Rule 412(b)(2)?",
+    "options": [
+      "No; its value must substantially outweigh those risks.",
+      "Yes; equal value favors admission under every evidence rule.",
+      "Yes; all relevant civil evidence is admissible.",
+      "Only if the proponent calls it impeachment."
+    ],
+    "answer": 0,
+    "explanation": "The civil Rule 412 balance favors protection and includes harm to any victim as well as unfair prejudice to any party.",
+    "refs": [
+      "fre412"
+    ]
+  },
+  {
+    "id": 46,
+    "section": 11,
+    "prompt": "A party plans to offer covered Rule 412 evidence and no good cause supports a later filing. What procedure is required?",
+    "options": [
+      "Only a fifteen-day informal disclosure.",
+      "An oral offer directly to the jury.",
+      "The opponent’s silence automatically establishes admissibility.",
+      "A specific-purpose motion at least fourteen days before trial, notice, and the required private hearing before admission."
+    ],
+    "answer": 3,
+    "explanation": "Rule 412(c) requires a described purpose, service, victim notice, and an in camera hearing before admission, with sealing protections.",
+    "refs": [
+      "fre412"
+    ]
+  },
+  {
+    "id": 47,
+    "section": 11,
+    "prompt": "In a qualifying criminal case, evidence identifies someone else as the source of disputed physical evidence. What is the best analysis?",
+    "options": [
+      "Exclude it automatically because Rule 412 has no exceptions.",
+      "Admit it automatically with no procedure.",
+      "Assess Rule 412’s specific alternative-source exception and the remaining rules.",
+      "Use it to prove the alleged victim’s general character."
+    ],
+    "answer": 2,
+    "explanation": "The alternative-source exception concerns specified physical evidence. It does not authorize stereotypes or eliminate procedural and other evidentiary limits.",
+    "refs": [
+      "fre412"
+    ]
+  },
+  {
+    "id": 48,
+    "section": 11,
+    "prompt": "A civil defendant offers reputation evidence about the alleged victim, who has not placed that reputation in controversy. What does Rule 412 say?",
+    "options": [
+      "A civil defendant may always open the victim’s reputation issue.",
+      "The reputation evidence fails that specific condition for civil admission.",
+      "The evidence is admitted if the lawyer promises to be discreet.",
+      "Reputation evidence is exempt from Rule 412."
+    ],
+    "answer": 1,
+    "explanation": "Civil reputation evidence is allowed only if the victim placed that reputation in controversy; the special balancing standard also applies.",
+    "refs": [
+      "fre412"
+    ]
+  },
+  {
+    "id": 49,
+    "section": 12,
+    "prompt": "A survivor cannot remember a collision but dreams months later that a red truck struck her. She remembers only the dream. What does Rule 602 require?",
+    "options": [
+      "A foundation connecting her testimony to an actual perception of the collision.",
+      "Automatic admission because she was physically present.",
+      "Automatic exclusion of every memory ever refreshed by a dream.",
+      "An expert designation for all eyewitness testimony."
+    ],
+    "answer": 0,
+    "explanation": "Like Ladd, presence and a later dream do not alone establish recalled perception. The question is foundation, not a categorical prohibition on every recovered memory.",
+    "refs": [
+      "fre601",
+      "fre602",
+      "fre603",
+      "fre701"
+    ]
+  },
+  {
+    "id": 50,
+    "section": 13,
+    "prompt": "A criminal-trial expert proposes: “This defendant knew the suitcase contained drugs.” Which objection most directly applies?",
+    "options": [
+      "Rule 704(a) bans every opinion touching an ultimate issue.",
+      "Rule 704(b) bars an expert opinion on the defendant’s required mental state.",
+      "Only an objection to the expert’s diploma is possible.",
+      "The statement is admissible whenever the expert is qualified."
+    ],
+    "answer": 1,
+    "explanation": "The statement addresses this defendant’s elemental mental state. Diaz’s treatment of “most couriers” does not authorize that direct conclusion.",
+    "refs": [
+      "fre702",
+      "fre704"
+    ]
+  },
+  {
+    "id": 51,
+    "section": 14,
+    "prompt": "A tire specialist says twenty years of experience makes his unexplained method immune from reliability review. The judge should:",
+    "options": [
+      "Exempt technical experience from Daubert entirely.",
+      "Demand every Daubert factor in identical form in every field.",
+      "Apply Rule 702 and a flexible reliability inquiry suited to the tire analysis.",
+      "Admit first and leave every foundation question to the jury."
+    ],
+    "answer": 2,
+    "explanation": "Kumho Tire applies gatekeeping beyond laboratory science. Experience can qualify an expert but the method and its application still need support.",
+    "refs": [
+      "fre702",
+      "fre104"
+    ]
+  },
+  {
+    "id": 52,
+    "section": 15,
+    "prompt": "An expert reasonably relies on an inadmissible report. May the proponent automatically read the report to the jury?",
+    "options": [
+      "Yes, reliance makes every underlying statement admissible.",
+      "No expert may ever use inadmissible information.",
+      "Yes, provided the report is printed on official stationery.",
+      "No; Rule 703 imposes a separate, demanding disclosure balance."
+    ],
+    "answer": 3,
+    "explanation": "Reasonable reliance supports use as an input. Proponent disclosure to the jury requires explanatory probative value substantially outweighing prejudice.",
+    "refs": [
+      "fre703",
+      "fre702",
+      "fre403"
+    ]
+  },
+  {
+    "id": 53,
+    "section": 16,
+    "prompt": "A landlord denies ever receiving a safety warning. A tenant’s email saying “the stairs are unsafe” is offered only to prove notice. Is it hearsay for that use?",
+    "options": [
+      "No, the relevant receipt of a warning does not require its contents to be true.",
+      "Yes, every email is hearsay for every purpose.",
+      "No, because tenants are opposing parties in every case.",
+      "Yes, unless the tenant was under oath when writing."
+    ],
+    "answer": 0,
+    "explanation": "The nontruth purpose is genuinely disputed notice. Proving the stairs were actually unsafe would require a different hearsay analysis.",
+    "refs": [
+      "fre801",
+      "fre802",
+      "fre105"
+    ]
+  },
+  {
+    "id": 54,
+    "section": 17,
+    "prompt": "To prove icy weather, a driver describes strangers quietly spreading salt outside their homes for safety, without communicating to anyone. Under Rule 801(a):",
+    "options": [
+      "Every act reflecting a belief is automatically hearsay.",
+      "Their conduct ordinarily is not a statement because no assertion was intended.",
+      "Salt spreading is a sworn assertion.",
+      "All conduct is admissible without relevance or prejudice review."
+    ],
+    "answer": 1,
+    "explanation": "This changes the book’s umbrellas/captain setting while keeping the key issue: inference from nonassertive behavior. Other admissibility rules remain.",
+    "refs": [
+      "fre801",
+      "fre802"
+    ]
+  },
+  {
+    "id": 55,
+    "section": 18,
+    "prompt": "A witness testifies the signal was green but earlier told a friend it was red. The unsworn remark is offered solely to show inconsistency. The jury may:",
+    "options": [
+      "Automatically use red as substantive evidence under 801(d)(1)(A).",
+      "Ignore the current Rule 613 procedure.",
+      "Use the contradiction to assess credibility, subject to other limits, without treating red as proved by that route.",
+      "Assume all prior statements of testifying witnesses are exempt from hearsay."
+    ],
+    "answer": 2,
+    "explanation": "Impeachment use is a nontruth use; an unsworn conversation ordinarily does not satisfy 801(d)(1)(A)’s proceeding-and-oath requirement.",
+    "refs": [
+      "fre607",
+      "fre613",
+      "fre801",
+      "fre403"
+    ]
+  },
+  {
+    "id": 56,
+    "section": 19,
+    "prompt": "A witness testifies and can be cross-examined about a sworn deposition where she identified the opposite driver. Her trial account conflicts. The deposition statement:",
+    "options": [
+      "Is admissible only to impeach under every circumstance.",
+      "Qualifies only if the witness is unavailable.",
+      "Needs a business-record custodian.",
+      "Can qualify for substantive admission under Rule 801(d)(1)(A)."
+    ],
+    "answer": 3,
+    "explanation": "The declarant testifies, is subject to cross, and the inconsistent deposition statement was under penalty of perjury. Those conditions distinguish it from an unsworn interview.",
+    "refs": [
+      "fre801"
+    ]
+  },
+  {
+    "id": 57,
+    "section": 20,
+    "prompt": "A restaurant employee, while employed, says “we skipped the refrigerator checks,” about her inspection duties. A customer offers it against the restaurant. The strongest route is:",
+    "options": [
+      "Rule 801(d)(2)(D), with employment, timing, and scope established.",
+      "Rule 804(b)(3), because all admissions require unavailability.",
+      "Rule 801(d)(2) permits the restaurant to introduce every favorable employee statement.",
+      "Automatic admission simply because the statement concerns food."
+    ],
+    "answer": 0,
+    "explanation": "Employment and subject-matter scope are the key foundations. It need not be an authorized press statement or against the employee’s interest.",
+    "refs": [
+      "fre801",
+      "fre104"
+    ]
+  },
+  {
+    "id": 58,
+    "section": 21,
+    "prompt": "A calm witness describes an accident to a friend three days afterward. Which claim is strongest on these facts?",
+    "options": [
+      "All descriptions of accidents are excited utterances.",
+      "Neither elapsed timing nor calm narration supports 803(1) or 803(2) without additional facts.",
+      "Three days always counts as immediately after perception.",
+      "803 exceptions require the speaker to be unavailable."
+    ],
+    "answer": 1,
+    "explanation": "Present sense impression requires contemporaneity; excited utterance requires continuing stress. Rule 803 does not require unavailability, but its individual conditions still matter.",
+    "refs": [
+      "fre803"
+    ]
+  },
+  {
+    "id": 59,
+    "section": 22,
+    "prompt": "A witness cannot now recall a delivery but made and verified an accurate log that evening. The Rule 803(5) foundation is established. The proponent may ordinarily:",
+    "options": [
+      "Automatically give the log to the jury as the proponent’s exhibit.",
+      "Use only Rule 612 even if recollection never revives.",
+      "Have the log read into evidence; the adverse party may offer it as an exhibit.",
+      "Admit it without proving accuracy when fresh."
+    ],
+    "answer": 2,
+    "explanation": "Recorded recollection is not the same as refreshing memory. Rule 803(5) specifically limits exhibit admission to an adverse-party offer.",
+    "refs": [
+      "fre803",
+      "fre612"
+    ]
+  },
+  {
+    "id": 60,
+    "section": 23,
+    "prompt": "An unavailable suspect’s confession admits his own theft and adds an unrelated accusation against a neighbor. Under Williamson:",
+    "options": [
+      "Every sentence is admissible once any sentence is against interest.",
+      "No confession can ever be against penal interest.",
+      "Unavailability alone makes every interview admissible.",
+      "Evaluate each assertion’s self-inculpatory character rather than admit the entire narrative automatically."
+    ],
+    "answer": 3,
+    "explanation": "The exception rests on the disserving character of the particular statement in context. A separate blame-shifting assertion needs independent justification.",
+    "refs": [
+      "fre804"
+    ]
+  },
+  {
+    "id": 61,
+    "section": 24,
+    "prompt": "A routine repair log records an anonymous customer’s claim that a third person saw the brake fail. The log qualifies under 803(6). Is that sufficient?",
+    "options": [
+      "No; each embedded assertion still needs its own exception, exemption, or nontruth purpose.",
+      "Yes, every quoted statement becomes a business record.",
+      "Yes, anonymity removes hearsay concerns.",
+      "No business record can contain quotations."
+    ],
+    "answer": 0,
+    "explanation": "Rule 805 prevents a reliable recording system from laundering unsupported third-party assertions. Work through the nested statements separately.",
+    "refs": [
+      "fre804",
+      "fre805",
+      "fre806",
+      "fre807"
+    ]
+  },
+  {
+    "id": 62,
+    "section": 25,
+    "prompt": "Police take a formal recorded accusation for a future prosecution. The speaker is unavailable and was never cross-examined. A judge calls it very reliable. Under Crawford:",
+    "options": [
+      "Reliability automatically substitutes for cross-examination.",
+      "Reliability alone does not permit testimonial hearsay against the accused.",
+      "Every hearsay exception eliminates confrontation objections.",
+      "The Sixth Amendment governs only civil cases."
+    ],
+    "answer": 1,
+    "explanation": "Crawford makes confrontation a procedural protection. Ordinary exception eligibility and judicial confidence do not alone satisfy it.",
+    "refs": [
+      "fre801",
+      "fre803",
+      "fre804"
+    ]
+  },
+  {
+    "id": 63,
+    "section": 26,
+    "prompt": "An expert repeats an absent analyst’s finding to support his opinion, which works only if that finding is true. Smith v. Arizona requires:",
+    "options": [
+      "Treating every expert basis as automatically nonhearsay.",
+      "Finding every laboratory note testimonial without examining purpose.",
+      "Recognizing truth use and separately analyzing whether the assertion is testimonial.",
+      "Ignoring confrontation because Rule 703 allows reliance."
+    ],
+    "answer": 2,
+    "explanation": "Smith resolves the truth-use issue and leaves the testimonial inquiry distinct. Rule 703 does not independently defeat confrontation.",
+    "refs": [
+      "fre702",
+      "fre703",
+      "fre801"
+    ]
+  },
+  {
+    "id": 64,
+    "section": 27,
+    "prompt": "A nontestifying codefendant’s confession expressly names the accused at their joint trial. It is inadmissible against the accused, but the judge says to use it only against its maker. Under Bruton:",
+    "options": [
+      "Any instruction always cures direct naming.",
+      "Samia abolished every Bruton protection.",
+      "Only authentication matters.",
+      "The instruction ordinarily does not cure the direct implication."
+    ],
+    "answer": 3,
+    "explanation": "Bruton addresses precisely the risk of a directly accusatory confession at a joint trial. Samia’s neutral-reference circumstances are different.",
+    "refs": [
+      "fre403",
+      "fre105"
+    ]
+  },
+  {
+    "id": 65,
+    "section": 28,
+    "prompt": "A social-media printout carries a defendant’s name and photo, but no evidence links him to creation or control. The authentication problem is:",
+    "options": [
+      "The proponent has not supplied a sufficient basis to attribute the page to him.",
+      "Every internet page is self-authenticating.",
+      "A name conclusively proves authorship.",
+      "Best evidence automatically proves who wrote the page."
+    ],
+    "answer": 0,
+    "explanation": "Zhyltsou separates the existence of a page from proof that the defendant created or controlled it. Authentication does not resolve hearsay or contents issues.",
+    "refs": [
+      "fre901",
+      "fre902",
+      "fre1001",
+      "fre1002",
+      "fre1003",
+      "fre1004",
+      "fre1005",
+      "fre1006",
+      "fre1007",
+      "fre1008"
+    ]
+  },
+  {
+    "id": 66,
+    "section": 29,
+    "prompt": "After a visitor falls, a theater adds a handrail. Offered solely to prove prior negligence, the measure is:",
+    "options": [
+      "Automatically admissible as an admission of fault.",
+      "Ordinarily excluded by Rule 407.",
+      "Excluded for every conceivable purpose.",
+      "Admissible simply because all relevant evidence must be admitted."
+    ],
+    "answer": 1,
+    "explanation": "The book’s safety-change problem transfers to a different setting. Rule 407 bars this negligence use while leaving defined other-purpose possibilities.",
+    "refs": [
+      "fre407",
+      "fre408",
+      "fre409",
+      "fre411"
+    ]
+  },
+  {
+    "id": 67,
+    "section": 30,
+    "prompt": "The prosecution offers an oral statement excerpt that falsely suggests a confession. The omitted continuation is necessary to understand it. Under current Rule 106:",
+    "options": [
+      "Completeness applies only to written documents.",
+      "All of the defendant’s unrelated favorable remarks become admissible.",
+      "The adverse party may require the necessary completion at that time, even over a hearsay objection.",
+      "A hearsay objection always defeats necessary completion."
+    ],
+    "answer": 2,
+    "explanation": "The amended rule covers all statements and expressly permits fairness-required completion over a hearsay objection. The need to cure distortion limits the scope.",
+    "refs": [
+      "fre410",
+      "fre106"
+    ]
+  },
+  {
+    "id": 68,
+    "section": 31,
+    "prompt": "A client privately tells counsel where a transaction occurred to obtain legal advice. Privilege generally protects:",
+    "options": [
+      "Every underlying fact forever.",
+      "Every business document copied to any lawyer.",
+      "Only statements made under oath.",
+      "The confidential legal-advice communication, without making the underlying location undiscoverable by other means."
+    ],
+    "answer": 3,
+    "explanation": "Distinguish the communication from the fact. Confidentiality and legal purpose matter, and applicable governing law must be identified.",
+    "refs": [
+      "fre501"
+    ]
+  },
+  {
+    "id": 69,
+    "section": 32,
+    "prompt": "A federal discovery production inadvertently includes one privileged memo despite reasonable review. Counsel promptly takes reasonable corrective steps. Under 502(b):",
+    "options": [
+      "The specified conditions support preservation of privilege despite the mistake.",
+      "Any disclosure automatically waives the entire subject matter.",
+      "A bold privilege label alone always prevents waiver.",
+      "Reasonable prevention and prompt correction are irrelevant."
+    ],
+    "answer": 0,
+    "explanation": "Carmody illustrates the three-part inquiry: inadvertence, reasonable preventive steps, and prompt reasonable rectification. The full factual foundation still matters.",
+    "refs": [
+      "fre501",
+      "fre502"
+    ]
+  },
+  {
+    "id": 70,
+    "section": 33,
+    "prompt": "At a federal sentencing hearing, counsel assumes every trial evidence rule applies unchanged. Rule 1101 provides:",
+    "options": [
+      "Privilege never applies outside a jury trial.",
+      "Ordinary rules generally do not apply at sentencing, while privilege rules continue to apply.",
+      "All hearsay must always be excluded at sentencing under 802.",
+      "Rule 102 repeals every scope exception."
+    ],
+    "answer": 1,
+    "explanation": "The introduction’s scope problem requires identifying the proceeding before applying trial rules. Other sentencing protections remain separate.",
+    "refs": [
+      "fre102",
+      "fre1101",
+      "fre103",
+      "fre104",
+      "fre105"
+    ]
+  },
+  {
+    "id": 71,
+    "section": 34,
+    "prompt": "A prosecutor offers a prior gun-possession conviction to prove the accused possessed a gun now and to impeach him if he testifies. The best approach is:",
+    "options": [
+      "Treat an impeachment ruling as automatic substantive admission.",
+      "Call both uses knowledge without explaining a nonpropensity inference.",
+      "Analyze substantive use under 404(b)/403 separately from conditional impeachment under 609.",
+      "Admit because any prior crime conclusively proves dishonesty."
+    ],
+    "answer": 2,
+    "explanation": "Caldwell illustrates why purpose matters: an approved label is not a nonpropensity chain, and a defendant’s felony impeachment has its own balance.",
+    "refs": [
+      "fre401",
+      "fre403",
+      "fre404",
+      "fre609",
+      "fre702"
+    ]
+  },
+  {
+    "id": 72,
+    "section": 35,
+    "prompt": "A lab report is authenticated and satisfies a record exception. In a criminal trial, what remains possible?",
+    "options": [
+      "Authentication conclusively proves constitutional admissibility.",
+      "A record exception eliminates every constitutional limit.",
+      "All expert testimony is exempt from hearsay.",
+      "A separate Confrontation Clause objection to testimonial assertions."
+    ],
+    "answer": 3,
+    "explanation": "Authentication and exception foundation do not replace confrontation. Analyze each human assertion and its use before deciding the constitutional question.",
+    "refs": [
+      "fre801",
+      "fre805",
+      "fre901",
+      "fre702",
+      "fre501"
+    ]
+  }
+]

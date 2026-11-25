@@ -1,0 +1,230 @@
+{
+  "sources": {
+    "v1": {
+      "label": "Edward’s Civil Procedure Volume 1",
+      "url": "#sources"
+    },
+    "v2": {
+      "label": "Edward’s Civil Procedure Volume 2",
+      "url": "#sources"
+    },
+    "rules": {
+      "label": "U.S. Courts: current Federal Rules of Civil Procedure",
+      "url": "https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-civil-procedure"
+    },
+    "code": {
+      "label": "Official U.S. Code, Title 28",
+      "url": "https://uscode.house.gov/browse/prelim@title28&edition=prelim"
+    }
+  },
+  "sections": [
+    {
+      "id": "kata-01",
+      "title": "The rules of the dojo",
+      "tag": "Learn the form before the fight",
+      "refresher": "The Rules Enabling Act authorizes procedural rules, but those rules may not abridge, enlarge, or modify substantive rights. Rule 1 guides just, speedy, inexpensive resolution; Rule 3 starts a civil action by filing a complaint.",
+      "case": "Sibbach v. Wilson & Co.: distinguish regulation of judicial procedure from alteration of substantive rights.",
+      "hypo": [
+        "Daniel files a negligence complaint over a tournament injury. The court orders a Rule 35 examination because his injured knee is in controversy and good cause is shown. Is the exam automatically invalid because it affects his body?",
+        "No. A properly supported Rule 35 order regulates the proof process. The physical impact does not itself make the rule invalid. Analyze the specific procedural requirements and the Rules Enabling Act separately.",
+        "The requested exam concerns a spectator who is neither a party nor in a party’s custody or legal control. Rule 35 does not authorize an exam simply because that person may be a witness."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-02",
+      "title": "Enter the tournament",
+      "tag": "Complaint, answer, motion",
+      "refresher": "Rule 7(a) identifies pleadings; motions request orders under Rule 7(b). Rule 8(a) requires jurisdiction, a short and plain statement showing entitlement to relief, and a demand for relief. Rule 10 organizes the caption and numbered paragraphs.",
+      "case": "Your Volume 1 distinguishes a counterclaim from its container: it is a claim asserted within a pleading, not a separate category of pleading.",
+      "hypo": [
+        "Daniel labels a request for dismissal an “answer,” but it merely asks the judge to dismiss and does not admit or deny allegations. What matters?",
+        "Classify the document by its function and governing rule. An answer responds to allegations; a motion asks for a court order. A mislabeled paper may require correction rather than relying on its title.",
+        "Daniel adds an alternative contract theory inconsistent with negligence. Rule 8(d) permits alternative and inconsistent theories; each must satisfy the applicable standard."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-03",
+      "title": "Wax on: plead facts",
+      "tag": "Plausibility is the first technique",
+      "refresher": "Twombly and Iqbal require enough factual matter, accepted as true, to support a plausible claim. Legal conclusions do not receive that assumption. Rule 9(b) requires particularity for fraud or mistake. Plausibility is not a requirement to prove the case now.",
+      "case": "Swierkiewicz rejects imposing the full evidentiary prima facie test at pleading. Conley’s no-set-of-facts formulation is not the current plausibility standard.",
+      "hypo": [
+        "Daniel alleges only “the rival dojo conspired illegally.” He supplies no acts, communications, or circumstances connecting its members. Is the label enough?",
+        "No. Strip away the conclusion and ask what factual allegations plausibly support the elements. This does not require trial evidence, but the bare label alone does not show entitlement to relief.",
+        "He describes a dated meeting, a message assigning roles, and coordinated acts. Those factual allegations strengthen plausibility; they are still allegations rather than established facts."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-04",
+      "title": "Sweep the unsupported allegation",
+      "tag": "Rule 11 discipline",
+      "refresher": "Signing, filing, submitting, or later advocating a paper certifies proper purpose, warranted legal contentions, and supported factual assertions or appropriately identified assertions likely to gain support after reasonable discovery. A party sanctions motion must be served separately and ordinarily wait 21 days before filing. Discovery requests are governed by Rule 26(g), not Rule 11.",
+      "case": "The Volume 1 Rule 11 exercises emphasize reasonable prefiling inquiry and distinguishing a party motion from a court-initiated show-cause process.",
+      "hypo": [
+        "Counsel accuses the rival dojo of destroying records based on rumor without investigating. Can later discovery automatically cure the initial certification?",
+        "No. Judge the reasonableness of the inquiry when the paper was presented. A specifically identified assertion expected to gain support may be permissible, but unsupported speculation is not a substitute for reasonable inquiry.",
+        "The rival serves a separate sanctions motion, then Daniel withdraws the challenged paper within the safe-harbor period. Ordinarily the rival cannot file that motion afterward."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-05",
+      "title": "Block, answer, preserve",
+      "tag": "Service and Rule 12 defenses",
+      "refresher": "Rule 4 governs summons and complaint service; ordinary domestic service generally has a 90-day limit under Rule 4(m), with exceptions and extensions. A response is ordinarily due 21 days after service unless another rule applies. Rule 12(h)(1) can waive personal jurisdiction, venue, and process/service defenses omitted from the first Rule 12 response. Subject-matter jurisdiction cannot be created by waiver.",
+      "case": "Volume 1 separates dismissal on the pleadings from judgment after proof. Rule 12(d) ordinarily converts a 12(b)(6) or 12(c) motion when outside material is considered, with a reasonable opportunity to present pertinent material.",
+      "hypo": [
+        "Johnny first moves under Rule 12(b)(6) but omits his available personal-jurisdiction objection. Can he save it for an answer?",
+        "Ordinarily no. Rule 12(g) and 12(h)(1) require consolidation of those available threshold defenses. Do not confuse this waiver with subject-matter jurisdiction, which the court must examine whenever its absence appears.",
+        "The objection is lack of subject-matter jurisdiction instead. That defense is not waived by the first motion."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-06",
+      "title": "Repair your stance",
+      "tag": "Amendments and relation back",
+      "refresher": "Rule 15 allows one amendment as of course within specified 21-day windows; otherwise obtain written consent or leave, which should be freely given when justice requires. After a scheduling deadline, also analyze Rule 16(b)(4) good cause. Relation back under 15(c) has separate requirements.",
+      "case": "Krupski centers what the intended defendant knew or should have known about a mistaken identity, rather than treating the plaintiff’s knowledge as the sole test.",
+      "hypo": [
+        "Daniel sues the wrong tournament company. After limitations expires, he seeks to substitute the actual organizer, which learned of the action during the Rule 4(m) period. Does timely notice alone suffice?",
+        "No. For a changed defendant, examine same conduct, transaction, or occurrence; timely notice without prejudice; and knowledge that but for an identity mistake the action would have been brought against it. Also check any more favorable relation-back rule supplied by applicable limitations law.",
+        "The organizer first receives notice years after the relevant period. That undermines the federal changed-party route even if the underlying accident is the same."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-07",
+      "title": "Missing the match",
+      "tag": "Default is not the same as judgment",
+      "refresher": "Rule 55 distinguishes entry of default from default judgment. Entry may be set aside for good cause; a final default judgment requires Rule 60(b) relief. A meritorious defense need not guarantee victory. Standards and factors vary by circuit.",
+      "case": "United Coin Meter and Shepard Claims Service emphasize prejudice, culpability, and a meritorious defense in their circuit. Ordinary delay differs from loss of evidence or a serious impairment of proof.",
+      "hypo": [
+        "Johnny misses an answer deadline through a documented clerical mistake and promptly moves to set aside an entry of default, offering a legally sufficient defense. What test starts the analysis?",
+        "Rule 55(c) good cause because only an entry exists. Examine the applicable circuit’s factors; do not assume the missed deadline automatically proves the plaintiff’s entitlement to every requested remedy.",
+        "A final default judgment already exists. Now Rule 60(b) grounds and timing must also be satisfied."
+      ],
+      "source": "v1"
+    },
+    {
+      "id": "kata-08",
+      "title": "Watch the opponent’s form",
+      "tag": "Discovery tools and proportionality",
+      "refresher": "Rule 26(b)(1) permits nonprivileged information relevant to claims or defenses and proportional to the needs of the case. Discoverability does not require trial admissibility. Rules 30, 33, 34, 35, and 36 govern depositions, interrogatories, production, exams, and admissions. Protective orders and motions to compel involve good-faith conferral requirements.",
+      "case": "Davis v. Ross illustrates that relevance does not automatically defeat burden or privacy objections. Its particular state-law and financial-discovery treatment is not a universal rule.",
+      "hypo": [
+        "Daniel requests every email any rival student ever sent, although the dispute concerns one tournament collision. Is possible relevance enough?",
+        "No. Define the claims and defenses, relevant custodians, dates, and subjects, then evaluate proportionality and privilege. Narrowing the request may obtain useful material while avoiding needless burden.",
+        "He requests footage of the collision from the event camera. That targeted request more directly connects to the disputed occurrence."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-09",
+      "title": "Protect the training journal",
+      "tag": "Privilege, work product, and ESI",
+      "refresher": "Attorney-client privilege protects qualifying confidential legal communications, not underlying facts. Rule 26(b)(3) protects qualifying litigation-preparation materials; substantial need and undue hardship may permit discovery of fact work product, while mental impressions receive special protection. Rule 37(e) addresses lost ESI that should have been preserved and cannot be restored or replaced.",
+      "case": "Hickman v. Taylor is the foundational work-product case. The Human Tissue discussion distinguishes state privilege law in relevant diversity issues from the federal work-product standard.",
+      "hypo": [
+        "Counsel interviews tournament witnesses and writes strategy notes. The rival demands all notes solely because they concern the injury. Must counsel turn them over?",
+        "Not merely because they are relevant. Identify privilege and work product separately. Facts may be discoverable through ordinary tools; protected litigation-preparation material requires the appropriate exception, with extra protection for mental impressions.",
+        "A unique factual witness statement cannot be recreated despite diligent effort. Analyze substantial need and undue hardship rather than treating all work product as absolutely immune."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-10",
+      "title": "Before the final round",
+      "tag": "Summary judgment",
+      "refresher": "Rule 56 asks whether there is a genuine dispute of material fact and whether the movant is entitled to judgment as a matter of law. A material fact affects the governing legal result. The judge does not weigh credibility. Rule 56(d) allows a supported request for necessary discovery.",
+      "case": "Celotex addresses evidentiary failure on an essential element; Anderson ties genuine dispute to the applicable proof standard. Arnstein and Dyer sharpen the distinction between real credibility evidence and mere hope of disbelief.",
+      "hypo": [
+        "Daniel produces a witness account that Johnny struck him after the whistle. Johnny offers contradictory footage testimony. If that timing changes liability, should the judge simply choose the more believable witness on Rule 56?",
+        "No. A genuine material factual conflict for a reasonable jury ordinarily prevents summary judgment. Do not confuse allegations with supporting evidence or assume every conflict is material.",
+        "Both disagree only about shirt color, which has no effect under the governing rule. That factual disagreement alone does not defeat summary judgment."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-11",
+      "title": "The tournament judge",
+      "tag": "JMOL and post-trial motions",
+      "refresher": "Rule 50 applies in jury trials after a party has been fully heard on an issue and lacks a legally sufficient evidentiary basis for a reasonable jury finding. A Rule 50(a) motion before submission ordinarily preserves renewal under 50(b), due no later than 28 days after judgment. Rule 59 new-trial relief is distinct.",
+      "case": "Volume 2 contrasts older directed-verdict and JNOV terminology with modern Rule 50, and contrasts jury-trial Rule 50 with Rule 52(c) in bench trials.",
+      "hypo": [
+        "The rival dojo moves for JMOL after Daniel has been fully heard on damages but presents no evidence supporting an essential element. What must the court examine?",
+        "The legally sufficient evidentiary basis for a reasonable jury, viewed under the governing standard. A judge does not simply replace the jury’s credibility choice with personal preference. State the specific law and facts supporting the motion.",
+        "Counsel never made a pre-submission Rule 50(a) motion. Ordinary Rule 50(b) renewal is not a free-standing substitute for preservation."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-12",
+      "title": "Choose your teammates",
+      "tag": "Claims, parties, and impleader",
+      "refresher": "Rule 18 broadly permits multiple claims against an opposing party. Rule 20 party joinder requires the same transaction or occurrence (or series) and a common legal or factual question. Rule 14 concerns derivative liability to the defending party, not merely another possible wrongdoer. Rule 19 examines required parties and whether the action can proceed if joinder is infeasible.",
+      "case": "Janney Montgomery Scott distinguishes inconsistent adjudications from inconsistent obligations; Rule 19 requires a specific interest and prejudice analysis rather than reflexively adding every related actor.",
+      "hypo": [
+        "The organizer impleads a contractor for contractual indemnity if the organizer owes Daniel damages. Is that different from merely saying the contractor alone injured Daniel?",
+        "Yes. Rule 14 requires a theory that the third party is or may be liable to the defending party for all or part of the plaintiff’s claim. Separate questions of subject-matter jurisdiction remain.",
+        "The contractor’s dispute is an unrelated unpaid catering bill. That is not by itself a derivative Rule 14 claim."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-13",
+      "title": "Qualify for the federal bracket",
+      "tag": "Subject-matter jurisdiction",
+      "refresher": "Article III supplies the constitutional outer boundary; a federal district court also needs a statutory grant. Section 1331 normally requires a federal issue in the well-pleaded complaint. Section 1332 ordinarily requires complete diversity and an amount exceeding $75,000, exclusive of interest and costs. Citizenship of individuals is domicile, not merely residence.",
+      "case": "Sheldon v. Sill concerns statutory limits; Mottley rejects federal jurisdiction based only on an anticipated defense; Mas v. Perry illustrates domicile. Corporate citizenship includes incorporation and principal place of business.",
+      "hypo": [
+        "Daniel and the organizer are both California citizens. He sues on a state negligence claim for $90,000 and anticipates a federal defense. Does either fact automatically create federal jurisdiction?",
+        "No. The amount cannot cure lack of complete diversity, and an anticipated federal defense ordinarily does not satisfy the well-pleaded-complaint rule. Examine any actual federal cause of action or carefully qualified embedded federal issue separately.",
+        "Daniel is domiciled in New Jersey and every defendant is a California citizen. Assuming a good-faith amount over the threshold, diversity may supply jurisdiction."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-14",
+      "title": "Bring a related teammate",
+      "tag": "Supplemental jurisdiction",
+      "refresher": "Section 1367(a) generally reaches claims forming the same Article III case or controversy. In diversity-only actions, 1367(b) excludes specified plaintiff claims and parties; the exclusions are precise. Section 1367(c) provides grounds for declining supplemental jurisdiction. First identify an original-jurisdiction anchor.",
+      "case": "Gibbs provides the common-nucleus framework. Exxon Mobil allows certain related additional-plaintiff claims below the amount threshold where complete diversity remains and 1367(b) does not bar them. It does not cure nondiverse parties.",
+      "hypo": [
+        "Daniel has a qualifying diversity claim. A completely diverse co-plaintiff joins under Rule 20 with a related $20,000 claim. Is the smaller amount automatically fatal?",
+        "Not automatically. Under Exxon Mobil, evaluate 1367(a) and the exact exclusions in 1367(b), plus complete diversity and potential discretionary decline. Do not assume every joined party or plaintiff claim is permitted.",
+        "The co-plaintiff is a citizen of the defendant’s state. Supplemental jurisdiction cannot be used to erase that complete-diversity problem."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-15",
+      "title": "Move to the right arena",
+      "tag": "Removal and remand",
+      "refresher": "Sections 1441 and 1446 generally allow defendants to remove qualifying actions to the federal district and division embracing the state action. Diversity-only removal has the properly joined and served forum-defendant restriction. The ordinary initial deadline is 30 days after the triggering service or receipt described by statute. Section 1447 distinguishes timely procedural remand objections from lack of subject-matter jurisdiction.",
+      "case": "Volume 2’s removal exercises emphasize who may remove, the geographically proper court, the forum-defendant rule, consent, and timing. Ordinary later diversity removal has a one-year limitation with a statutory bad-faith exception.",
+      "hypo": [
+        "Daniel files in California state court and later prefers federal court. May he remove his own case under ordinary Section 1441(a)?",
+        "No. That removal mechanism belongs to defendants. A qualifying defendant must also satisfy the jurisdictional, geographic, consent, and timing requirements; original jurisdiction alone does not answer every removal question.",
+        "A properly joined and served California defendant attempts removal based solely on diversity from a California state court. The forum-defendant restriction matters even if complete diversity otherwise exists."
+      ],
+      "source": "v2"
+    },
+    {
+      "id": "kata-16",
+      "title": "One dojo, many claims",
+      "tag": "Class actions",
+      "refresher": "Rule 23(a) requires numerosity, commonality, typicality, and adequacy. A class must also satisfy a Rule 23(b) category. Damages classes under 23(b)(3) require predominance and superiority, with appropriate notice and opt-out protections. Certification is not established by a large number of injuries alone.",
+      "case": "The class-action chapter’s medical-device exercises ask whether individualized issues defeat the proposed common treatment; analyze the exact claim and category rather than treating every shared product as enough.",
+      "hypo": [
+        "Hundreds of students allege the organizer used the same misleading fee contract. What must a proposed class representative establish beyond the headcount?",
+        "All Rule 23(a) requirements and a Rule 23(b) route. For a damages class, examine whether common issues predominate and class treatment is superior, while testing representation, variations in contract terms, reliance, and damages as relevant.",
+        "Each student signed a separately negotiated contract and alleges a different oral promise. Individualized issues may undermine commonality or predominance depending on the claims and proof."
+      ],
+      "source": "v2"
+    }
+  ]
+}

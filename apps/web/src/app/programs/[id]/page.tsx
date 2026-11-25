@@ -14,6 +14,7 @@ import { swatchSolid } from "@/lib/colours";
 import { decodeEntities } from "@/lib/html";
 import { firstUnfinished } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
+import { studyPrograms } from "@/lib/study-courses";
 import type { Program } from "@/lib/types";
 import { WordPressApiError, getProgram } from "@/lib/wordpress";
 
@@ -61,6 +62,7 @@ export default async function ProgramPage({
   const started = completed > 0;
   const finished = total > 0 && completed === total;
   const credits = (program.credits ?? []).filter((credit) => credit.hours > 0);
+  const studySubject = Object.entries(studyPrograms).find(([, programmeId]) => programmeId === program.id)?.[0];
 
   return (
     <PageShell code="P3" wide>
@@ -92,6 +94,11 @@ export default async function ProgramPage({
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
+            {studySubject && (
+              <Link href={`/study/${studySubject}`} className="inline-flex min-h-11 items-center rounded-lg bg-brand-600 px-5 py-2 font-semibold text-white transition hover:bg-brand-700">
+                Explore the interactive course →
+              </Link>
+            )}
             {next ? (
               <Link
                 href={keepPreview(`/modules/${next.module.id}`, preview)}

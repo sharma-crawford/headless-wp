@@ -1,0 +1,1333 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "A shop owner asks a friend to purchase inventory under the owner’s instructions. The friend agrees but receives no pay. Which is best?",
+    "options": [
+      "Agency is impossible without compensation.",
+      "Agency can arise from assent, acting on behalf, and control.",
+      "Only a signed power of attorney creates agency.",
+      "Friendship automatically establishes agency."
+    ],
+    "answer": 1,
+    "explanation": "Payment and a formal writing are not required. The manifestations and relationship supply the elements; friendship alone supplies none.",
+    "refs": [
+      "agency",
+      "gorton"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "A contract says “no agency,” but one party agrees to act for the other subject to interim directions. What should you do?",
+    "options": [
+      "Treat the label as conclusive.",
+      "Ignore all contract terms.",
+      "Apply the agency elements to the actual relationship.",
+      "Require shared profits."
+    ],
+    "answer": 2,
+    "explanation": "Labels are relevant context but do not override a relationship that satisfies § 1.01. Profit sharing is not an agency element.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 0,
+    "prompt": "A financier goes beyond loan covenants: it directs a grain buyer’s daily operations, controls major purchases, and uses the buyer to obtain grain for itself. A seller seeks payment from the financier. Which argument is strongest?",
+    "options": [
+      "A creditor can never be a principal, regardless of control.",
+      "A loan automatically makes the borrower the lender’s agent.",
+      "Only a written contract using the word agency can bind the financier.",
+      "The operational control and acting-on-behalf facts may establish agency, making the financier liable on authorized purchases."
+    ],
+    "answer": 3,
+    "explanation": "Apply assent, acting on behalf, and control to the entire relationship. Extensive operational direction can support agency; ordinary protective lending terms alone do not. A. Gay Jenson Farms Co. v. Cargill illustrates the distinction.",
+    "refs": [
+      "cargill"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 0,
+    "prompt": "A vendor knows Morgan acts for a client, but does not know the client’s identity. The principal is:",
+    "options": [
+      "Unidentified.",
+      "Undisclosed.",
+      "Disclosed.",
+      "Necessarily nonexistent."
+    ],
+    "answer": 0,
+    "explanation": "Existence known but identity unknown is unidentified. Undisclosed means the third party does not know there is a principal.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 1,
+    "prompt": "An agent secretly takes a supplier’s commission connected to the principal’s purchase. The purchase price is fair. Best analysis?",
+    "options": [
+      "A fair price always cures the conflict.",
+      "Only care is relevant.",
+      "The undisclosed personal benefit raises a loyalty problem.",
+      "No problem unless the principal lost money."
+    ],
+    "answer": 2,
+    "explanation": "A secret material benefit connected to the agency can violate loyalty even if the deal appears economically fair. Informed consent must meet its conditions.",
+    "refs": [
+      "agency",
+      "singer"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 1,
+    "prompt": "A sales manager believes the employer cannot fill a large order. Without asking, she sends the order to another company and keeps a commission. What should she have done?",
+    "options": [
+      "Disclosed the opportunity and conflict and let the employer decide.",
+      "Kept the commission because her capacity assessment ends the inquiry.",
+      "Checked only whether a written noncompete exists.",
+      "Asked only whether the customer received a fair price."
+    ],
+    "answer": 0,
+    "explanation": "The manager cannot secretly resolve the conflict in favor of personal gain. The employer could subcontract, expand, or decline after disclosure.",
+    "refs": [
+      "singer"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 1,
+    "prompt": "An agent promises specialized expertise. Which care standard is most accurate?",
+    "options": [
+      "Only the care of an untrained volunteer.",
+      "No duty if unpaid.",
+      "Strict liability for every bad outcome.",
+      "Reasonable care, competence, and diligence, accounting for special skills or knowledge."
+    ],
+    "answer": 3,
+    "explanation": "§ 8.08 considers relevant special skills. A duty of care is not a guarantee of successful results.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 1,
+    "prompt": "An authorized purchasing agent properly pays a vendor from personal funds for the principal’s order. The principal says agents alone owe duties. Which response is best?",
+    "options": [
+      "No reimbursement duty can exist without the word indemnify in a signed contract.",
+      "The principal may owe indemnification under the agreement or applicable default duties.",
+      "The principal must reimburse every payment, including unauthorized illegal conduct.",
+      "An agent loses all reimbursement rights by choosing to use personal funds."
+    ],
+    "answer": 1,
+    "explanation": "Principal obligations include qualifying indemnification and contractual and fair-dealing duties. Analyze authorization and the circumstances of the payment; reimbursement is neither universally barred nor unlimited.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 2,
+    "prompt": "The owner privately tells Morgan to purchase 50 chairs. The seller has never heard from the owner. Morgan’s authority is most directly:",
+    "options": [
+      "Apparent only.",
+      "Ratification only.",
+      "Actual express authority.",
+      "No authority."
+    ],
+    "answer": 2,
+    "explanation": "The principal’s instruction to the agent creates actual authority. The seller need not know the internal instruction for it to exist.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 2,
+    "prompt": "A church has repeatedly allowed its painter to hire a helper and the new job needs two people. No restriction is communicated. The painter’s reasonable understanding supports:",
+    "options": [
+      "Implied actual authority.",
+      "Automatic partnership.",
+      "Apparent authority based solely on his own assertion.",
+      "Ratification before any act."
+    ],
+    "answer": 0,
+    "explanation": "Hogan treats past practice and the work’s needs as manifestations supporting implied actual authority.",
+    "refs": [
+      "hogan"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 2,
+    "prompt": "Morgan tells a seller “I can bind the company.” The company has made no relevant manifestation, directly or indirectly. On those facts alone:",
+    "options": [
+      "Morgan’s statement establishes apparent authority.",
+      "Authority exists if Morgan sounds confident.",
+      "The seller’s belief need not be reasonable.",
+      "The unsupported assertion does not establish apparent authority."
+    ],
+    "answer": 3,
+    "explanation": "Apparent authority must be traceable to the principal; an actor cannot manufacture it solely by claiming authority.",
+    "refs": [
+      "agency",
+      "paychex"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 2,
+    "prompt": "A principal fully identified to the vendor authorizes an agent to sign, and the parties agree to no personal undertaking by the agent. Ordinarily, the contract binds:",
+    "options": [
+      "Only the agent.",
+      "The principal and vendor, not the agent.",
+      "No one unless the principal signs personally.",
+      "Every employee."
+    ],
+    "answer": 1,
+    "explanation": "§ 6.01 ordinarily makes the disclosed principal and third party contract parties when the agent acts with actual or apparent authority.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 2,
+    "prompt": "An agent with actual authority contracts for a principal whose existence is hidden. Unless the contract excludes the principal, who ordinarily can be parties?",
+    "options": [
+      "Only the principal.",
+      "Only the agent, always.",
+      "The principal, agent, and third party.",
+      "Neither principal nor agent."
+    ],
+    "answer": 2,
+    "explanation": "§ 6.03 ordinarily includes both agent and undisclosed principal. The route is actual authority, not ordinary apparent authority.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 2,
+    "prompt": "An owner, with material facts known and other ratification conditions met, affirms an unauthorized act done on her behalf. The doctrine is:",
+    "options": [
+      "Dissociation.",
+      "Veil piercing.",
+      "Automatic novation.",
+      "Ratification."
+    ],
+    "answer": 3,
+    "explanation": "Ratification can supply retroactive effect within its limits. It differs from releasing an original contracting party by novation.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 2,
+    "prompt": "A hidden principal knows an agent is making unauthorized promises on its behalf. It could correct the situation but stays silent while a customer foreseeably relies to her detriment. Which is the best analysis?",
+    "options": [
+      "The principal’s knowing failure to take reasonable corrective steps may create liability even though ordinary apparent authority is unavailable.",
+      "The agent’s own promises alone establish apparent authority from the hidden principal.",
+      "A hidden principal can never be liable for an agent’s conduct.",
+      "The customer must prove the exact amount of the agent’s salary."
+    ],
+    "answer": 0,
+    "explanation": "An undisclosed principal can face liability for specified reliance-inducing conduct it knows about and fails reasonably to correct. Distinguish this route from apparent authority, which requires a belief traceable to the principal’s manifestations.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 3,
+    "prompt": "An employee negligently injures a customer while carrying out assigned deliveries. Employer liability without employer fault is most directly:",
+    "options": [
+      "Ratification of a contract.",
+      "Respondeat superior, if the employee acted within scope.",
+      "Partnership by estoppel.",
+      "Corporate veil piercing."
+    ],
+    "answer": 1,
+    "explanation": "Vicarious liability for an employee’s tort within scope does not require separately proving negligent hiring.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 3,
+    "prompt": "A resort negligently supervises unsafe employee skiing. The scope-of-employment question is disputed. Which is correct?",
+    "options": [
+      "Negligent supervision is unavailable unless scope is conclusively established.",
+      "The resort is automatically liable.",
+      "Direct negligent-supervision liability is a distinct theory.",
+      "Only the employee can ever be sued."
+    ],
+    "answer": 2,
+    "explanation": "Clover distinguishes direct supervision liability from vicarious liability. Each theory still requires its own elements and proof.",
+    "refs": [
+      "clover",
+      "agency"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 3,
+    "prompt": "A resort employee injures a guest while skiing between work assignments. Evidence conflicts about whether he was furthering the resort’s business or on a personal detour. The resort seeks judgment without a trial. Which approach is best?",
+    "options": [
+      "Impose liability because every act on the employer’s property is within scope.",
+      "Reject liability because skiing always counts as recreation.",
+      "Treat the job title as conclusive regardless of purpose and circumstances.",
+      "Apply the scope-of-employment factors to the disputed facts; unresolved material facts can prevent summary judgment."
+    ],
+    "answer": 3,
+    "explanation": "Analyze the employee’s assigned work, the time and place, the purpose of the conduct, and any personal departure. A genuine dispute over material scope facts can require further factfinding; it does not establish final liability.",
+    "refs": [
+      "clover"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 3,
+    "prompt": "A landowner hires a contractor to demolish a wall beside an occupied building. The work requires special precautions to protect neighbors. The landowner argues contractor status ends all possible liability. Which response is best?",
+    "options": [
+      "A recognized nondelegable-duty exception may preserve the landowner’s responsibility.",
+      "The contractor label always eliminates the landowner’s liability.",
+      "All demolition automatically imposes strict liability under every theory.",
+      "Hiring a contractor transfers every legal duty owed to neighbors."
+    ],
+    "answer": 0,
+    "explanation": "The nature of the work and required precautions can implicate an inherently dangerous work exception. No blanket immunity follows from the label.",
+    "refs": [
+      "majestic"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 4,
+    "prompt": "The principal fires an agent but leaves principal-created appearances unchanged. An existing customer reasonably remains unaware. Which is best?",
+    "options": [
+      "Actual and apparent authority necessarily ended together.",
+      "Apparent authority may persist while the customer’s belief remains reasonable.",
+      "The customer must accept every deal the former agent makes.",
+      "Firing is legally ineffective."
+    ],
+    "answer": 1,
+    "explanation": "§ 3.11 separates the two forms of authority. Notice and the continuing reasonableness of reliance matter.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 4,
+    "prompt": "An agent renounces actual authority in breach of a service contract. Which is best?",
+    "options": [
+      "The breach makes renunciation impossible.",
+      "All third-party liability necessarily disappears.",
+      "The principal must consent to any departure.",
+      "Actual authority may end, while contract damages remain possible."
+    ],
+    "answer": 3,
+    "explanation": "Power to end actual authority and a contractual right to end without consequences are different issues.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 4,
+    "prompt": "An agent completes an otherwise authorized transaction before learning that the principal has died. You are applying the Restatement (Third) agency rules. Which fact is central to the authority analysis?",
+    "options": [
+      "Whether the agent wore the principal’s uniform.",
+      "Whether the transaction earned a profit, which alone determines authority.",
+      "Whether the agent had notice of the death when acting, alongside other applicable termination rules.",
+      "Whether the principal’s estate prefers the result, which automatically controls retroactively."
+    ],
+    "answer": 2,
+    "explanation": "Under the Restatement (Third), death terminates actual authority when the agent has notice. Apply the governing event-specific rule and analyze any separate apparent-authority issue; do not assume death instantly resolves every transaction against every party.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 5,
+    "prompt": "Two people operate a profitable shop as co-owners without a written agreement or filing. Under RUPA:",
+    "options": [
+      "A general partnership may exist.",
+      "A corporation necessarily exists.",
+      "No entity relationship is possible.",
+      "A filing is always needed for a general partnership."
+    ],
+    "answer": 0,
+    "explanation": "§ 202 focuses on co-ownership of a business for profit, not an intent to use a legal label or a general-partnership filing.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 5,
+    "prompt": "A lender receives profit-linked interest and veto rights protecting its loan, but does not operate the business as a co-owner. A creditor argues that profit participation alone makes it a partner. Best response?",
+    "options": [
+      "Any percentage of profits conclusively creates a partnership.",
+      "A lender can never become a partner regardless of how it operates.",
+      "A partnership can exist only after a state filing.",
+      "Examine the whole relationship; qualifying profit-linked interest and protective rights need not establish co-ownership."
+    ],
+    "answer": 3,
+    "explanation": "Profit participation has exceptions and is not decisive. Protective loan rights can stop short of co-ownership.",
+    "refs": [
+      "martin",
+      "rupa"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 5,
+    "prompt": "Two equal partners run a grocery. Their agreement does not change the defaults. One tells the other to stop buying bread, but the other places a normal bread order with a supplier. Which is best?",
+    "options": [
+      "One objection always revokes the other partner’s statutory authority.",
+      "The ordinary-course purchase can bind the partnership; one of two partners is not a majority able to change the default authority.",
+      "Every routine purchase requires both signatures.",
+      "A disagreement automatically dissolves the partnership."
+    ],
+    "answer": 1,
+    "explanation": "Bread buying was ordinary business and half the partners could not form a majority to restrict it.",
+    "refs": [
+      "stroud"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 5,
+    "prompt": "Three partners have no agreement altering the defaults. Two want the partnership to abandon its grocery business and enter an unrelated venture; the third objects. Is a two-to-one vote enough for this outside-the-ordinary-course act?",
+    "options": [
+      "Yes; every partnership decision uses a simple headcount majority.",
+      "Yes, if the two contribute more than half the capital.",
+      "No; the default requires consent of all partners.",
+      "Yes, if a nonpartner accountant recommends it."
+    ],
+    "answer": 2,
+    "explanation": "Unanimity is the default for outside-course acts; ordinary disputes use majority-of-partners rules.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 5,
+    "prompt": "A partner lacks actual authority for an apparently ordinary transaction. The seller knows that authority is lacking. Under § 301:",
+    "options": [
+      "Ordinary appearance always binds the partnership.",
+      "The seller’s knowledge is irrelevant.",
+      "The seller becomes a partner.",
+      "The usual ordinary-course binding rule does not protect that seller."
+    ],
+    "answer": 3,
+    "explanation": "The § 301 exception combines lack of authority with the third party’s knowledge or notice.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 6,
+    "prompt": "A managing venturer receives an offer for a valuable new lease because of the existing venture, then secretly takes it for himself. Which analysis is strongest?",
+    "options": [
+      "The opportunity’s connection to the venture and his role raise a loyalty duty to disclose and allow the co-venturer to participate.",
+      "Every new lease is automatically personal because the old term is ending.",
+      "Only the venture’s current cash balance matters.",
+      "A manager may take any opportunity absent a written noncompete."
+    ],
+    "answer": 0,
+    "explanation": "The connection to the existing venture and the manager’s role supported disclosure and an opportunity for the co-venturer.",
+    "refs": [
+      "meinhard"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 6,
+    "prompt": "A partnership agreement is silent. Alex contributes $80,000 and Blair $20,000. Default profit shares are:",
+    "options": [
+      "80/20 automatically.",
+      "100/0 because Alex contributed more.",
+      "50/50.",
+      "Determined solely by work hours."
+    ],
+    "answer": 2,
+    "explanation": "The default is equal profit shares, not proportional capital shares. An agreement can change this.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 6,
+    "prompt": "A partner sells only her transferable economic interest. The buyer automatically receives:",
+    "options": [
+      "All management and records rights.",
+      "The distribution interest, not automatic partner status.",
+      "Personal title to each partnership asset.",
+      "Authority to amend the agreement alone."
+    ],
+    "answer": 1,
+    "explanation": "An economic transfer is distinct from admission as a partner and management rights.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 6,
+    "prompt": "A supplier obtains a judgment naming only the partnership and immediately seeks execution on a partner’s personal bank account. What further issue must it address?",
+    "options": [
+      "The partnership judgment automatically authorizes execution on every partner’s property.",
+      "Partners are never personally liable for general-partnership debts.",
+      "Execution is permitted solely because the partner is wealthy.",
+      "An entity judgment is not automatically an individual judgment; individual liability, a judgment against the partner, and collection rules matter."
+    ],
+    "answer": 3,
+    "explanation": "§ 307 distinguishes the entity judgment and partner judgment, and supplies collection rules and exceptions.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 6,
+    "prompt": "A new general partner joins after a supplier debt was incurred. Solely from admission, the new partner:",
+    "options": [
+      "Is generally not personally liable for that earlier obligation.",
+      "Assumes all earlier debts personally.",
+      "Becomes immune from future own torts.",
+      "Can seize partnership assets for personal use."
+    ],
+    "answer": 0,
+    "explanation": "§ 306 distinguishes pre-admission obligations from those incurred during partnership status.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 33,
+    "section": 6,
+    "prompt": "Under the statutory partnership care floor, which is most clearly prohibited?",
+    "options": [
+      "Any mistaken forecast.",
+      "Every unsuccessful investment.",
+      "Grossly negligent or reckless conduct.",
+      "Any decision benefiting the partnership."
+    ],
+    "answer": 2,
+    "explanation": "The statutory floor differs from ordinary reasonable-care negligence. Do not infer breach solely from an adverse result.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 34,
+    "section": 7,
+    "prompt": "A partner is judicially dissociated while the business continues. Which follows most naturally under RUPA?",
+    "options": [
+      "The business must automatically liquidate.",
+      "Analyze continuation and the statutory buyout.",
+      "Every partnership creditor loses its claim.",
+      "The partner keeps full management rights forever."
+    ],
+    "answer": 1,
+    "explanation": "Dissociation and dissolution are distinct. A continuing partnership ordinarily owes a § 701 buyout subject to statutory conditions.",
+    "refs": [
+      "rupa",
+      "giles"
+    ]
+  },
+  {
+    "id": 35,
+    "section": 7,
+    "prompt": "A term partner leaves early in breach of the agreement. Which is best?",
+    "options": [
+      "Departure is legally impossible.",
+      "Departure is always free of damages.",
+      "Departure automatically creates a corporation.",
+      "The partner has power to dissociate but may owe damages for wrongful dissociation."
+    ],
+    "answer": 3,
+    "explanation": "Power to leave and right to leave without consequences are separate questions under § 602.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 36,
+    "section": 7,
+    "prompt": "Partners in an ongoing venture reach a sustained impasse after serious threats and conduct undermining trust. A court is asked to remove one partner while the business continues. Which inquiry matters?",
+    "options": [
+      "Whether the departing partner once requested records, which automatically forfeits all rights.",
+      "Whether the partners are relatives, which always requires dissolution.",
+      "Whether the statutory grounds, including impracticability of carrying on with that partner, are established by the conduct and circumstances.",
+      "Whether one partner dislikes another, which alone always compels expulsion."
+    ],
+    "answer": 2,
+    "explanation": "Judicial dissociation requires a statutory ground and supporting facts. Serious misconduct and persistent impasse can matter; neither a records request nor ordinary friction automatically establishes the test.",
+    "refs": [
+      "giles"
+    ]
+  },
+  {
+    "id": 37,
+    "section": 7,
+    "prompt": "During winding up, the correct general sequence is:",
+    "options": [
+      "Address creditors, then settle and distribute partner accounts under the statute.",
+      "Distribute all property equally, then ask creditors to waive debts.",
+      "Pay only outside creditors and never partner-creditors.",
+      "Keep operating unrelated new ventures indefinitely."
+    ],
+    "answer": 0,
+    "explanation": "Winding up resolves obligations before residual distribution; qualifying partner-creditors are creditors too.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 38,
+    "section": 7,
+    "prompt": "A general partnership registers for LLP status. A client sues a partner for that partner’s own negligent work. Which statement is best?",
+    "options": [
+      "Registration makes all personal conduct immune.",
+      "The status shield does not ordinarily erase liability for the partner’s own wrongful conduct.",
+      "The claimant must prove that the partner is a limited partner in an LP.",
+      "LLP status automatically terminates every preexisting debt."
+    ],
+    "answer": 1,
+    "explanation": "Separate liability based solely on partnership status from liability for one’s own conduct. Also distinguish an LLP registration from an LP’s general/limited partner structure.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 39,
+    "section": 8,
+    "prompt": "An LLC operating agreement is silent about a disputed subject. Start with:",
+    "options": [
+      "The members’ favorite rule from any state.",
+      "Corporate bylaws from an unrelated company.",
+      "A presumption that no law applies.",
+      "The governing LLC statute’s default and mandatory rules."
+    ],
+    "answer": 3,
+    "explanation": "The agreement and the applicable statute work together. The entity label alone is not the governing rule.",
+    "refs": [
+      "llc",
+      "delllc"
+    ]
+  },
+  {
+    "id": 40,
+    "section": 8,
+    "prompt": "A member personally commits fraud while acting for an LLC. Limited liability means:",
+    "options": [
+      "The member is immune.",
+      "Only other members are liable.",
+      "Status-based protection does not erase liability for the member’s own fraud.",
+      "A creditor must pierce before suing for the individual’s own tort."
+    ],
+    "answer": 2,
+    "explanation": "An independent personal wrong can create liability without veil piercing.",
+    "refs": [
+      "llc"
+    ]
+  },
+  {
+    "id": 41,
+    "section": 8,
+    "prompt": "In a state using harmonized ULLCA (2013), a member signs a supplier contract and relies only on the title member. No authority facts are established. Is membership alone enough?",
+    "options": [
+      "No; identify actual authority, apparent authority, or another valid basis.",
+      "Yes; every LLC member has unlimited statutory agency power.",
+      "Yes; ownership always equals authority in every entity.",
+      "No LLC can ever act through an agent."
+    ],
+    "answer": 0,
+    "explanation": "ULLCA rejects automatic agency solely from membership. Identify actual authority, apparent authority, or another statutory basis.",
+    "refs": [
+      "llc"
+    ]
+  },
+  {
+    "id": 42,
+    "section": 8,
+    "prompt": "A member-managed Delaware LLC has a silent operating agreement. One member holds 60% of current profit interests and two others hold 20% each. For a management decision governed by the default rule, which is best?",
+    "options": [
+      "The two 20% holders automatically prevail by headcount.",
+      "The 60% holder has a controlling interest under the profit-interest-weighted default.",
+      "The oldest member controls.",
+      "A single member may never control an LLC decision."
+    ],
+    "answer": 1,
+    "explanation": "Delaware’s default differs from ULLCA’s equal-management approach. The agreement may change it.",
+    "refs": [
+      "delman"
+    ]
+  },
+  {
+    "id": 43,
+    "section": 8,
+    "prompt": "Members agree to a broad arbitration clause covering their LLC disputes. One later brings a derivative suit in court and argues that the derivative label alone avoids arbitration. Which is best?",
+    "options": [
+      "Every derivative claim is categorically exempt from arbitration.",
+      "Any member can disregard a forum agreement by changing a pleading’s title.",
+      "Only claims seeking less than the member’s investment can be arbitrated.",
+      "The label alone does not defeat an otherwise enforceable dispute-resolution agreement covering the claim."
+    ],
+    "answer": 3,
+    "explanation": "Analyze the clause’s scope, parties, and enforceability. A derivative characterization does not itself create an escape from agreed dispute-resolution terms.",
+    "refs": [
+      "elf"
+    ]
+  },
+  {
+    "id": 44,
+    "section": 9,
+    "prompt": "A Delaware LLC agreement requires a manager’s conflicted sale to satisfy a contractual fairness standard. The manager arranges a self-interested sale at an unfair price. What is the strongest starting point?",
+    "options": [
+      "Ignore the agreement and assume every fiduciary duty was waived.",
+      "Impose liability merely because any buyer later earns money.",
+      "Apply the agreement’s express fairness obligation to the transaction.",
+      "Treat all manager transactions as immune from review."
+    ],
+    "answer": 2,
+    "explanation": "An express contractual protection supplies a concrete basis for analysis independent of a broader dispute about default fiduciary duties. Apply its language and the transaction facts.",
+    "refs": [
+      "auriga",
+      "gatz"
+    ]
+  },
+  {
+    "id": 45,
+    "section": 9,
+    "prompt": "A Delaware LLC agreement says all fiduciary duties and the implied covenant of good faith and fair dealing are eliminated. Which part cannot be eliminated under Delaware law?",
+    "options": [
+      "The implied contractual covenant of good faith and fair dealing.",
+      "Every managerial power.",
+      "Any arbitration clause.",
+      "All rights to receive distributions."
+    ],
+    "answer": 0,
+    "explanation": "The implied covenant is a mandatory contractual constraint, distinct from the fiduciary duties that Delaware permits parties to alter.",
+    "refs": [
+      "delllc"
+    ]
+  },
+  {
+    "id": 46,
+    "section": 9,
+    "prompt": "An LLC under harmonized ULLCA (2013) adopts a clause allowing a defined category of manager conflicts. A member challenges it. What analysis is required?",
+    "options": [
+      "Enforce it automatically because it was signed.",
+      "Examine the permitted modifications, manifest-unreasonableness limit, and mandatory statutory constraints.",
+      "Invalidate every loyalty modification without reading it.",
+      "Substitute Delaware’s different statute regardless of governing law."
+    ],
+    "answer": 1,
+    "explanation": "The harmonized model allows specified alterations or eliminations within limits. Avoid mixing this with older text or Delaware’s different regime.",
+    "refs": [
+      "llc"
+    ]
+  },
+  {
+    "id": 47,
+    "section": 9,
+    "prompt": "An LLC manager steals money belonging to the LLC. A member sues to recover that money for the LLC. The claim is ordinarily:",
+    "options": [
+      "Direct solely because share value declined.",
+      "A personal distribution request.",
+      "An automatic dissolution.",
+      "Derivative."
+    ],
+    "answer": 3,
+    "explanation": "The entity suffered the direct injury and owns the recovery. A reduction in membership value does not alone convert the entity’s claim into a direct claim.",
+    "refs": [
+      "llc",
+      "elf"
+    ]
+  },
+  {
+    "id": 48,
+    "section": 9,
+    "prompt": "A member leaves an LLC governed by ULLCA; the agreement has no departure buyout clause. She demands immediate payment of her interest solely because she dissociated. Best answer?",
+    "options": [
+      "Departure always triggers the partnership continuation buyout formula.",
+      "Leaving transfers all LLC assets to the departing member.",
+      "Dissociation alone generally does not create an automatic statutory buyout right.",
+      "Any departure automatically dissolves the LLC."
+    ],
+    "answer": 2,
+    "explanation": "The dissociated person typically retains the economic interest as a transferee. Do not import RUPA’s continuation buyout.",
+    "refs": [
+      "llc"
+    ]
+  },
+  {
+    "id": 49,
+    "section": 9,
+    "prompt": "A Delaware LLC agreement provides no right for a member to resign before dissolution. A member announces resignation and demands a payout solely on that basis. Under the default rule, which is best?",
+    "options": [
+      "The member generally may not resign before dissolution unless the agreement permits it.",
+      "Every member has an unconditional immediate resignation-and-cashout right.",
+      "The RUPA partner-withdrawal rule controls all LLCs.",
+      "A manager’s separate resignation rules necessarily control membership rights."
+    ],
+    "answer": 0,
+    "explanation": "Delaware distinguishes member resignation from manager resignation. Read the agreement and separate roles.",
+    "refs": [
+      "delexit"
+    ]
+  },
+  {
+    "id": 50,
+    "section": 9,
+    "prompt": "An LLC has no cash to pay debts as they come due. Members vote to distribute its remaining cash. Under ULLCA distribution limits:",
+    "options": [
+      "A unanimous vote always makes it lawful.",
+      "The solvency limits must still be satisfied.",
+      "Only the company’s name matters.",
+      "Distribution rules apply only to public corporations."
+    ],
+    "answer": 1,
+    "explanation": "Contractual and voting arrangements do not erase mandatory protections against prohibited distributions.",
+    "refs": [
+      "llc"
+    ]
+  },
+  {
+    "id": 51,
+    "section": 10,
+    "prompt": "Organizers write bylaws and issue themselves stock certificates but never file the required Delaware formation document. What important step is missing?",
+    "options": [
+      "Signing an office handbook.",
+      "Obtaining a federal partnership tax return.",
+      "Adding a corporate logo to the website.",
+      "Filing the certificate of incorporation in compliance with the statute."
+    ],
+    "answer": 3,
+    "explanation": "DGCL formation uses the certificate and statutory filing requirements. Bylaws govern internal procedures but are not the formation filing.",
+    "refs": [
+      "dgclform"
+    ]
+  },
+  {
+    "id": 52,
+    "section": 10,
+    "prompt": "Shareholders disagree with a corporation’s ordinary business plan and say each owner has personal power to manage corporate operations. With no special charter provision, what is the starting rule?",
+    "options": [
+      "Every shareholder independently manages corporate operations.",
+      "The largest creditor automatically manages.",
+      "The board manages or directs the corporation’s business and affairs, with officers exercising delegated functions.",
+      "The incorporator retains exclusive permanent management power."
+    ],
+    "answer": 2,
+    "explanation": "The board has the statutory management role, subject to the Act and valid certificate provisions. Officers execute delegated functions.",
+    "refs": [
+      "dgclboard"
+    ]
+  },
+  {
+    "id": 53,
+    "section": 10,
+    "prompt": "A five-director board uses unmodified DGCL defaults. Three attend a properly convened meeting; two vote yes. Ordinary board action:",
+    "options": [
+      "Can pass because there is quorum and a majority of those present votes yes.",
+      "Always requires all five votes.",
+      "Fails because four must attend.",
+      "Requires an employee referendum."
+    ],
+    "answer": 0,
+    "explanation": "A majority of the total board is the default quorum; a majority present with quorum can approve ordinary action.",
+    "refs": [
+      "dgclboard"
+    ]
+  },
+  {
+    "id": 54,
+    "section": 10,
+    "prompt": "A five-person Delaware board tries to approve action by email without holding a meeting. Four consent; one does not. The governing documents leave statutory defaults unchanged. Is four enough?",
+    "options": [
+      "Yes; any majority email response replaces a meeting.",
+      "No; action without a meeting generally requires all directors’ consent.",
+      "Yes; only the CEO’s consent matters.",
+      "Yes; written board action follows a majority-shareholder rule."
+    ],
+    "answer": 1,
+    "explanation": "Director written consent differs from shareholder consent. Do not substitute a majority email poll for unanimous board consent.",
+    "refs": [
+      "dgclboard"
+    ]
+  },
+  {
+    "id": 55,
+    "section": 10,
+    "prompt": "A shareholder owning 70% signs a supplier contract solely in the capacity of shareholder, with no other authority facts. Which is best?",
+    "options": [
+      "Ownership alone conclusively binds the company.",
+      "Every shareholder is an officer.",
+      "A contract can never bind a corporation.",
+      "Ownership alone does not establish the power to bind the corporation."
+    ],
+    "answer": 3,
+    "explanation": "Look for actual or apparent authority, ratification, or another basis. Ownership and agency are different.",
+    "refs": [
+      "dgclboard",
+      "agency"
+    ]
+  },
+  {
+    "id": 56,
+    "section": 10,
+    "prompt": "A promoter contracts for a corporation that does not yet exist. Which issue remains distinct from later corporate adoption?",
+    "options": [
+      "Whether the promoter likes the business.",
+      "Whether the contract is printed in color.",
+      "Whether the promoter has been released, such as through a novation.",
+      "Whether the corporation has a logo."
+    ],
+    "answer": 2,
+    "explanation": "Adoption of an obligation and release of the promoter are different. Do not assume later formation itself retroactively creates prior authority or a release.",
+    "refs": [
+      "agency",
+      "dgclform"
+    ]
+  },
+  {
+    "id": 57,
+    "section": 11,
+    "prompt": "A Delaware corporation is headquartered in Kansas. A dispute concerns its board voting. The ordinary starting point for internal affairs is:",
+    "options": [
+      "Delaware law as the law of incorporation.",
+      "Kansas law solely because headquarters are there.",
+      "Any law the plaintiff chooses.",
+      "Federal law exclusively."
+    ],
+    "answer": 0,
+    "explanation": "The internal affairs doctrine ordinarily selects the incorporating jurisdiction for corporate governance.",
+    "refs": [
+      "mcdermott"
+    ]
+  },
+  {
+    "id": 58,
+    "section": 11,
+    "prompt": "A corporation faces four disputes. Which should ordinarily begin with the law of incorporation under the internal-affairs doctrine?",
+    "options": [
+      "A visitor’s injury from a wet store floor.",
+      "A driver’s speeding ticket.",
+      "Compliance with local minimum-wage law.",
+      "A dispute over shareholder voting rights."
+    ],
+    "answer": 3,
+    "explanation": "Governance relations among the entity and insiders are classic internal affairs. External conduct can invoke other legal regimes.",
+    "refs": [
+      "mcdermott"
+    ]
+  },
+  {
+    "id": 59,
+    "section": 11,
+    "prompt": "A Delaware court hears a challenge to a Panamanian corporation’s internal shareholder voting arrangement. Which law is the ordinary starting point?",
+    "options": [
+      "Delaware law automatically because the lawsuit was filed there.",
+      "Panamanian law as the corporation’s law of incorporation, subject to applicable exceptions.",
+      "The law of whichever country has the most customers.",
+      "The law of the plaintiff’s lawyer’s home state."
+    ],
+    "answer": 1,
+    "explanation": "Identify the entity whose internal governance is at issue. Forum location alone does not displace the ordinary law-of-incorporation rule.",
+    "refs": [
+      "mcdermott"
+    ]
+  },
+  {
+    "id": 60,
+    "section": 12,
+    "prompt": "A company defaults on a debt. The owner owns all shares. Without more, those facts:",
+    "options": [
+      "Always establish piercing.",
+      "Make corporate formation unlawful.",
+      "Do not automatically overcome limited liability.",
+      "Require imprisonment."
+    ],
+    "answer": 2,
+    "explanation": "Ownership and unpaid debt are not a substitute for the jurisdiction’s requirements of misuse, control, and any required causal connection.",
+    "refs": [
+      "walkovszky",
+      "freeman"
+    ]
+  },
+  {
+    "id": 61,
+    "section": 12,
+    "prompt": "A taxi fleet uses several corporations. A complaint alleges common ownership and thin assets but no facts showing the shareholder used the entities for personal business or a relevant wrong. What is the strongest critique of personal veil-piercing liability?",
+    "options": [
+      "The pleading must connect the shareholder to legally sufficient misuse; fragmentation and ownership alone may be insufficient.",
+      "Separate taxi corporations are always unlawful.",
+      "Every unpaid injury claim automatically establishes owner liability.",
+      "An allegation about affiliated entities always proves an individual shareholder’s liability."
+    ],
+    "answer": 0,
+    "explanation": "Distinguish enterprise-level theories from personal liability. The applicable piercing test demands more than a label or a disappointing recovery; plead the legally relevant misuse.",
+    "refs": [
+      "walkovszky"
+    ]
+  },
+  {
+    "id": 62,
+    "section": 12,
+    "prompt": "A subsidiary has modest balance-sheet capital but substantial liability insurance when it operates. Its insurer later becomes insolvent. A claimant says the later failure alone proves abusive undercapitalization. Best response?",
+    "options": [
+      "Insurance categorically defeats every possible piercing claim.",
+      "Insurance is never relevant to capitalization.",
+      "Any later insolvency retroactively proves fraudulent intent.",
+      "Financial responsibility can include insurance; later insurer failure does not itself establish prior misuse."
+    ],
+    "answer": 3,
+    "explanation": "The court rejected the claimed inference of improper undercapitalization in light of insurance; later insurer failure did not itself establish abuse.",
+    "refs": [
+      "radaszewski"
+    ]
+  },
+  {
+    "id": 63,
+    "section": 12,
+    "prompt": "A controller holds no formal shares but exercises ownership-like domination and diverts entity assets to defeat a creditor. Does the absence of stock necessarily end the piercing inquiry?",
+    "options": [
+      "Yes; only a name on a stock certificate can ever matter.",
+      "No; equitable ownership may suffice if the governing test’s domination and wrongful-use requirements are met.",
+      "No; domination alone automatically establishes every element.",
+      "No; every outside consultant is automatically an owner."
+    ],
+    "answer": 1,
+    "explanation": "The court accepted potential equitable ownership but required further findings about wrongful use.",
+    "refs": [
+      "freeman"
+    ]
+  },
+  {
+    "id": 64,
+    "section": 12,
+    "prompt": "Sophisticated contract creditors knowingly deal with a corporation, obtain no personal guarantee, and show informal operations but no fraud or illegality in the transaction. Under a piercing test requiring abuse and injustice, what is the key weakness?",
+    "options": [
+      "Piercing is never allowed for contract creditors.",
+      "A guarantee is always legally required for a corporate contract to exist.",
+      "Informality and nonpayment alone may not show the required misuse or injustice; the voluntary bargain matters.",
+      "Any informal recordkeeping automatically establishes personal liability."
+    ],
+    "answer": 2,
+    "explanation": "Apply the jurisdiction’s test to the alleged abuse and resulting injustice. Sophisticated voluntary dealing can matter, but it is not a universal bar to piercing.",
+    "refs": [
+      "theberge"
+    ]
+  },
+  {
+    "id": 65,
+    "section": 12,
+    "prompt": "A parent and subsidiary share a brand, reservation system, and routine administrative services. The claimant identifies no diversion or other misuse. Is common affiliation alone enough to disregard separateness?",
+    "options": [
+      "Ordinary coordination alone generally does not establish the required piercing elements.",
+      "Yes; shared logos automatically merge all liabilities.",
+      "Yes; every subsidiary is a sham.",
+      "No parent can ever be liable regardless of its own conduct."
+    ],
+    "answer": 0,
+    "explanation": "Look for facts satisfying the governing misuse test. Branding and routine coordination alone do not supply them.",
+    "refs": [
+      "gardemal"
+    ]
+  },
+  {
+    "id": 66,
+    "section": 12,
+    "prompt": "A parent keeps subsidiaries as judgment-proof shells and routes their receipts away to prevent payment of known obligations. Why is this materially different from shared branding alone?",
+    "options": [
+      "Having subsidiaries is itself prohibited.",
+      "Common ownership conclusively proves fraud in every case.",
+      "Unpaid debt always creates parent liability even without misuse.",
+      "The diversion and use of shells can support the required misuse and connection to creditor harm."
+    ],
+    "answer": 3,
+    "explanation": "The important facts connect control to wrongful use and the claimed loss. Do not stop at affiliation or an unpaid bill.",
+    "refs": [
+      "otr",
+      "gardemal"
+    ]
+  },
+  {
+    "id": 67,
+    "section": 12,
+    "prompt": "A founder personally guarantees a company’s loan. A lender seeks to enforce the guarantee. It must necessarily:",
+    "options": [
+      "First pierce the veil.",
+      "Analyze the guarantee as an independent contractual basis for personal liability.",
+      "Ignore the guarantee because of incorporation.",
+      "Sue all employees."
+    ],
+    "answer": 1,
+    "explanation": "A personal guarantee is distinct from status-based liability. Piercing need not supply a right the owner separately undertook.",
+    "refs": [
+      "theberge"
+    ]
+  },
+  {
+    "id": 68,
+    "section": 0,
+    "prompt": "A freelance purchasing representative follows a shop’s instructions when ordering stock but chooses her own working methods. Which is best?",
+    "options": [
+      "Every contractor is a nonagent.",
+      "A nonemployee agent can bind the principal through authority.",
+      "Agency requires employee status.",
+      "Only payment creates agency."
+    ],
+    "answer": 1,
+    "explanation": "Authority and employee status answer different questions. A contractor can be an agent without being an employee.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 69,
+    "section": 1,
+    "prompt": "An agent tells the principal only that a supplier deal is convenient, while concealing a personal commission. The principal agrees. Which is best?",
+    "options": [
+      "Consent necessarily cures the conflict.",
+      "Only the size of the commission matters.",
+      "Consent requires the relevant disclosure and fair dealing under § 8.06.",
+      "Profitable deals never breach loyalty."
+    ],
+    "answer": 2,
+    "explanation": "The principal must receive the material conflict information required by § 8.06; a vague description is not informed consent.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 70,
+    "section": 3,
+    "prompt": "A sailor returning to a docked ship drunkenly opens dock valves and causes damage. Under Bushey’s analysis, which fact matters most?",
+    "options": [
+      "The sailor specifically intended to benefit the employer.",
+      "Any drunken act is automatically within scope.",
+      "A foreseeable enterprise risk arose from the sailor’s return to the vessel.",
+      "The employer expressly ordered the valve opening."
+    ],
+    "answer": 2,
+    "explanation": "Bushey allocated a characteristic enterprise risk to the employer without requiring that this act be motivated by service. That historical approach must be distinguished from other scope tests.",
+    "refs": [
+      "bushey",
+      "agency"
+    ]
+  },
+  {
+    "id": 71,
+    "section": 4,
+    "prompt": "An actor falsely purports to have authority to contract for a disclosed business. The third party reasonably relies. Which possible liability is distinct from making the business a party?",
+    "options": [
+      "Implied warranty of authority against the actor.",
+      "Automatic liability against every shareholder.",
+      "No liability can arise unless the actor was paid.",
+      "Ratification by an entity that never exists."
+    ],
+    "answer": 0,
+    "explanation": "Restatement § 6.10 addresses the actor’s implied warranty of authority, subject to its exceptions. It is separate from whether the principal was bound.",
+    "refs": [
+      "agency"
+    ]
+  },
+  {
+    "id": 72,
+    "section": 5,
+    "prompt": "A registered LLP has no limited partners. A student says it must therefore be a defective limited partnership. Which response is best?",
+    "options": [
+      "An LLP is a general partnership with qualifying limited liability status.",
+      "Every LLP must have a general and a limited partner.",
+      "An LLP is automatically a corporation.",
+      "Its partners cannot commit personal torts."
+    ],
+    "answer": 0,
+    "explanation": "LLP and LP are different forms. The LLP shield does not excuse a partner’s own wrongful conduct.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 73,
+    "section": 6,
+    "prompt": "Two partners share profits equally. Their business earns $12,000 and retains all cash. Which is best?",
+    "options": [
+      "No allocation can occur until cash is paid.",
+      "Each may receive a $6,000 profit allocation without a current $6,000 distribution.",
+      "The partner with more capital always gets every dollar.",
+      "Retaining cash makes all profit a loan."
+    ],
+    "answer": 1,
+    "explanation": "Allocation adjusts economic accounts; distribution transfers cash or property. These need not occur at the same time.",
+    "refs": [
+      "rupa"
+    ]
+  },
+  {
+    "id": 74,
+    "section": 9,
+    "prompt": "Under ULLCA, a member assigns only the transferable interest to an investor. Which follows by default?",
+    "options": [
+      "The investor automatically becomes manager.",
+      "The transfer automatically dissolves the LLC.",
+      "The investor receives the transferred economic rights, without automatic management or general record access.",
+      "The investor automatically becomes liable for all company debts."
+    ],
+    "answer": 2,
+    "explanation": "A transferable interest consists of distribution rights. Membership admission and management rights are separate.",
+    "refs": [
+      "llc"
+    ]
+  },
+  {
+    "id": 75,
+    "section": 10,
+    "prompt": "A charter permits both common and preferred shares. What should you inspect before deciding the preferred holder’s voting and liquidation rights?",
+    "options": [
+      "The word preferred alone decides everything.",
+      "The applicable charter terms and governing statute.",
+      "The directors’ personal wealth.",
+      "The office address alone."
+    ],
+    "answer": 1,
+    "explanation": "Classes and series may have different rights and limitations. The label is not a substitute for the charter and statute.",
+    "refs": [
+      "dgclstock"
+    ]
+  },
+  {
+    "id": 76,
+    "section": 10,
+    "prompt": "A director attends a special board meeting, participates throughout, and never objects that it was unlawfully called. Under DGCL § 229, which is best?",
+    "options": [
+      "Attendance generally waives required notice.",
+      "Attendance destroys the quorum.",
+      "All notice defects are impossible to waive.",
+      "Shareholder notice periods automatically govern."
+    ],
+    "answer": 0,
+    "explanation": "Section 229 generally treats attendance as waiver, except attendance for the express purpose of objecting at the beginning. Quorum and voting still require separate analysis.",
+    "refs": [
+      "dgclnotice",
+      "dgclboard"
+    ]
+  },
+  {
+    "id": 77,
+    "section": 10,
+    "prompt": "An informed, disinterested board chooses a business strategy in good faith; it later loses money. Which is best?",
+    "options": [
+      "The loss automatically proves a care breach.",
+      "The business judgment presumption can protect the decision despite a poor result.",
+      "Every director guarantees corporate profits.",
+      "The rule eliminates the duty of loyalty."
+    ],
+    "answer": 1,
+    "explanation": "The business judgment rule protects qualifying decision processes rather than promising successful outcomes. Conflicts or bad faith require different analysis.",
+    "refs": [
+      "aronson",
+      "dgclboard"
+    ]
+  },
+  {
+    "id": 78,
+    "section": 10,
+    "prompt": "A founder signs a lease for a corporation before formation. The later corporation adopts the lease. Has the founder necessarily been released?",
+    "options": [
+      "Yes, adoption always creates a novation.",
+      "Yes, every promoter has limited liability immediately.",
+      "No; examine the contract and any novation or other release.",
+      "No corporation can ever adopt an earlier transaction."
+    ],
+    "answer": 2,
+    "explanation": "Corporate adoption and promoter release are distinct. Ratification terminology also requires attention to whether a principal existed at the time.",
+    "refs": [
+      "dgclform",
+      "agency"
+    ]
+  },
+  {
+    "id": 79,
+    "section": 10,
+    "prompt": "A group tries to incorporate, but required formation steps were not completed. What is the best first approach?",
+    "options": [
+      "Assume limited liability because they used Inc.",
+      "Identify the statutory requirements and applicable rules for defective incorporation.",
+      "Treat every participant as a limited partner.",
+      "Apply veil piercing before deciding whether any corporation exists."
+    ],
+    "answer": 1,
+    "explanation": "Formation status comes first. De facto corporation, estoppel, statutory personal liability, and validation rules vary by jurisdiction.",
+    "refs": [
+      "dgclform",
+      "dgclnotice"
+    ]
+  },
+  {
+    "id": 80,
+    "section": 10,
+    "prompt": "A director says a charter exculpation clause eliminates every duty and every possible remedy. Which is best?",
+    "options": [
+      "Correct: exculpation means no duties.",
+      "Incorrect: it can limit specified monetary liability subject to statutory exceptions, without eliminating every duty or remedy.",
+      "Correct whenever the corporation loses money.",
+      "Incorrect because no statute permits exculpation."
+    ],
+    "answer": 1,
+    "explanation": "DGCL § 102(b)(7) permits limited exculpation with exceptions. It differs from indemnification, insurance, and elimination of duties.",
+    "refs": [
+      "dgclform"
+    ]
+  },
+  {
+    "id": 81,
+    "section": 11,
+    "prompt": "A corporation chooses Delaware incorporation but operates stores in Kansas. Which is best?",
+    "options": [
+      "All external torts are governed by Delaware solely because of incorporation.",
+      "The internal affairs doctrine ordinarily points internal governance questions to Delaware; external obligations need separate analysis.",
+      "Kansas must govern all director voting.",
+      "Charter competition eliminates conflicts rules."
+    ],
+    "answer": 1,
+    "explanation": "Incorporation law generally supplies internal governance; it does not displace every law governing external business activity.",
+    "refs": [
+      "mcdermott"
+    ]
+  },
+  {
+    "id": 82,
+    "section": 12,
+    "prompt": "A thinly funded business causes tort harm that exceeds its assets. Which analysis is sound?",
+    "options": [
+      "The shortfall automatically makes every shareholder liable.",
+      "Externalized costs raise policy concerns, but piercing still requires the governing legal test and facts.",
+      "Tort creditors always negotiated the risk.",
+      "Insurance always bars every piercing theory."
+    ],
+    "answer": 1,
+    "explanation": "Policy arguments about limited liability explain the concern, but do not replace jurisdiction specific elements or causal requirements.",
+    "refs": [
+      "walkovszky",
+      "radaszewski"
+    ]
+  }
+]

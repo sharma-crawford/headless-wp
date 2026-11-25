@@ -1,0 +1,170 @@
+[
+  {
+    "term": "Agency",
+    "definition": "A fiduciary relationship in which an agent acts on a principal’s behalf and subject to the principal’s control, with mutual assent."
+  },
+  {
+    "term": "Principal",
+    "definition": "The person for whom an agent acts."
+  },
+  {
+    "term": "Agent",
+    "definition": "A person authorized to act for another within an agency relationship."
+  },
+  {
+    "term": "Actual authority",
+    "definition": "Authority based on the agent’s reasonable understanding of the principal’s manifestations to the agent."
+  },
+  {
+    "term": "Apparent authority",
+    "definition": "Power arising from a third party’s reasonable belief traceable to the principal’s manifestations."
+  },
+  {
+    "term": "Ratification",
+    "definition": "A principal’s later affirmance of an act, giving it effect as if originally authorized when the legal requirements are met."
+  },
+  {
+    "term": "Respondeat superior",
+    "definition": "An employer’s vicarious liability for an employee’s tort within the scope of employment."
+  },
+  {
+    "term": "Fiduciary duty",
+    "definition": "An obligation arising from a relationship of trust, including applicable duties of loyalty and care."
+  },
+  {
+    "term": "Duty of loyalty",
+    "definition": "A duty to protect the beneficiary’s interests against prohibited self-dealing, competition, or appropriation of opportunities."
+  },
+  {
+    "term": "Duty of care",
+    "definition": "The applicable standard of diligence and conduct; the precise rule depends on the relationship and governing law."
+  },
+  {
+    "term": "Partnership",
+    "definition": "An association of two or more persons carrying on as co-owners a business for profit, whether or not they intend the legal label."
+  },
+  {
+    "term": "Joint and several liability",
+    "definition": "Liability under which a claimant may, subject to applicable rules, collect the entire obligation from any liable partner."
+  },
+  {
+    "term": "Dissociation",
+    "definition": "A partner’s departure from the association; it does not invariably require dissolution."
+  },
+  {
+    "term": "Dissolution",
+    "definition": "The event that starts winding up a partnership when the governing rules require it."
+  },
+  {
+    "term": "Winding up",
+    "definition": "Completing the business’s unfinished affairs, settling liabilities, and distributing remaining assets."
+  },
+  {
+    "term": "Limited liability",
+    "definition": "Protection against personal liability solely because of ownership status; it does not excuse one’s own wrongful conduct."
+  },
+  {
+    "term": "LLC",
+    "definition": "A limited liability company: a statutory entity whose governance depends on applicable law and its operating agreement."
+  },
+  {
+    "term": "Operating agreement",
+    "definition": "An LLC’s governing agreement, subject to the mandatory limits of the applicable statute."
+  },
+  {
+    "term": "Member-managed",
+    "definition": "An LLC structure in which members generally exercise management authority under the governing law and agreement."
+  },
+  {
+    "term": "Manager-managed",
+    "definition": "An LLC structure assigning management to designated managers rather than automatically to every member."
+  },
+  {
+    "term": "Articles of incorporation",
+    "definition": "The corporation’s public formation document, sometimes called its certificate or charter."
+  },
+  {
+    "term": "Bylaws",
+    "definition": "Internal corporate governance rules subordinate to controlling law and the charter."
+  },
+  {
+    "term": "Board of directors",
+    "definition": "The body generally charged with managing or directing the corporation’s business and affairs."
+  },
+  {
+    "term": "Shareholder",
+    "definition": "An owner of corporate shares; ownership does not itself grant authority to act as the corporation’s agent."
+  },
+  {
+    "term": "Business judgment rule",
+    "definition": "A presumption protecting qualifying informed, disinterested, good-faith board decisions from judicial second-guessing."
+  },
+  {
+    "term": "Corporate opportunity",
+    "definition": "A business opportunity that fiduciary law may require a fiduciary to present to the entity rather than take personally."
+  },
+  {
+    "term": "Derivative action",
+    "definition": "A suit by an owner on the entity’s behalf to redress an injury to the entity, subject to procedural requirements."
+  },
+  {
+    "term": "Piercing the corporate veil",
+    "definition": "An exceptional basis for disregarding entity separateness and imposing owner liability under the jurisdiction’s test."
+  },
+  {
+    "term": "Commingling",
+    "definition": "Mixing entity and personal funds or assets, which can undermine evidence of genuine separateness."
+  },
+  {
+    "term": "Promoter",
+    "definition": "A person who helps organize a corporation and may incur personal obligations on pre-incorporation contracts."
+  },
+  {
+    "term": "Allocation",
+    "definition": "Crediting profit or charging loss to an owner’s economic account; it need not involve a current cash payment."
+  },
+  {
+    "term": "Distribution",
+    "definition": "A transfer of money or property from an entity to an owner in the owner’s capacity as owner, subject to the agreement and statutory limits."
+  },
+  {
+    "term": "Equitable owner",
+    "definition": "A person treated as an owner based on the actual control and ownership relationship despite lacking formal share title; wrongful use remains a separate veil piercing requirement."
+  },
+  {
+    "term": "Common stock",
+    "definition": "Equity shares carrying the rights specified by the charter and statute, commonly including residual economic and voting rights."
+  },
+  {
+    "term": "Preferred stock",
+    "definition": "An equity class or series with specified preferences or special rights; examine the charter rather than assuming a universal bundle."
+  },
+  {
+    "term": "Debt security",
+    "definition": "An instrument representing a creditor claim, rather than an equity ownership interest."
+  },
+  {
+    "term": "Novation",
+    "definition": "An agreement substituting a new obligation or obligor and releasing the old obligation or obligor; corporate adoption alone does not necessarily release a promoter."
+  },
+  {
+    "term": "De facto corporation",
+    "definition": "A traditional doctrine recognizing certain good faith incorporation attempts with actual corporate use, where the governing jurisdiction permits it."
+  },
+  {
+    "term": "Corporation by estoppel",
+    "definition": "A doctrine that can prevent a party who dealt with a business as a corporation from denying its corporate status in the relevant dispute; its availability and effects vary."
+  },
+  {
+    "term": "Exculpation",
+    "definition": "A permitted limitation on specified liability, such as certain monetary fiduciary liability under a charter provision; it differs from eliminating duties or providing indemnification."
+  },
+  {
+    "term": "Externality",
+    "definition": "A cost or benefit borne outside the decision maker’s transaction, such as uncompensated harm where corporate assets cannot satisfy a claim."
+  },
+  {
+    "term": "Enterprise risk",
+    "definition": "A risk characteristic of the employer’s enterprise; Bushey used this concept in its historical scope of employment analysis."
+  }
+]

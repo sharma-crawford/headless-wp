@@ -1,0 +1,946 @@
+{
+  "sources": {
+    "agency": {
+      "label": "Restatement (Third) of Agency (2006), §§ 1.01–1.04, 2.01–2.06, 3.01–3.15, 4.01–4.02, 6.01–6.03, 6.10, 7.01–7.07, 8.01–8.15",
+      "url": "https://www.ali.org/publications/restatement-law-third/agency"
+    },
+    "rupa": {
+      "label": "ULC, Uniform Partnership Act (1997), last amended 2013 — official act library",
+      "url": "https://www.uniformlaws.org/committees/community-home/librarydocuments?communitykey=52456941-7883-47a5-91b6-d2f086d0bb44"
+    },
+    "llc": {
+      "label": "ULC, Uniform Limited Liability Company Act (2006), last amended 2013 — final act",
+      "url": "https://www.uniformlaws.org/viewdocument/final-act-83?CommunityKey=bbea059c-6853-4f45-b69b-7ca2e49cf740&tab=librarydocuments"
+    },
+    "delllc": {
+      "label": "Delaware LLC Act, § 18-1101 (freedom of contract and duties), § 18-1104 (equity)",
+      "url": "https://delcode.delaware.gov/title6/c018/sc11/"
+    },
+    "delman": {
+      "label": "Delaware LLC Act, § 18-402 (management and authority)",
+      "url": "https://delcode.delaware.gov/title6/c018/sc04/"
+    },
+    "delexit": {
+      "label": "Delaware LLC Act, §§ 18-601–18-607 (distributions and resignation)",
+      "url": "https://delcode.delaware.gov/title6/c018/sc06/"
+    },
+    "dgclform": {
+      "label": "DGCL §§ 101–109 (formation and bylaws)",
+      "url": "https://www.delcode.delaware.gov/title8/c001/sc001/index.html"
+    },
+    "dgclboard": {
+      "label": "DGCL §§ 141–142 (directors, board action, officers)",
+      "url": "https://delcode.delaware.gov/title8/c001/sc04/"
+    },
+    "gorton": {
+      "label": "Gorton v. Doty · 69 P.2d 136 (Idaho 1937)",
+      "url": "https://openjurist.org/57/idaho/792/gorton-v-doty"
+    },
+    "cargill": {
+      "label": "A. Gay Jenson Farms Co. v. Cargill, Inc. · 309 N.W.2d 285 (Minn. 1981)",
+      "url": "https://tortwell.com/cases/309-nw2d-285"
+    },
+    "singer": {
+      "label": "General Automotive Manufacturing Co. v. Singer · 120 N.W.2d 659 (Wis. 1963)",
+      "url": "https://app.midpage.ai/document/general-automotive-manufacturing-co-v-8200935"
+    },
+    "hogan": {
+      "label": "Mill Street Church of Christ v. Hogan · 785 S.W.2d 263 (Ky. Ct. App. 1990)",
+      "url": "https://law.justia.com/cases/kentucky/court-of-appeals/1990/89-ca-380-wc-1.html"
+    },
+    "paychex": {
+      "label": "Ophthalmic Surgeons, Ltd. v. Paychex, Inc. · 632 F.3d 31 (1st Cir. 2011)",
+      "url": "https://cases.justia.com/federal/appellate-courts/ca1/09-2291/09-2291p-01a-2011-01-31.pdf"
+    },
+    "clover": {
+      "label": "Clover v. Snowbird Ski Resort · 808 P.2d 1037 (Utah 1991)",
+      "url": "https://law.justia.com/cases/utah/supreme-court/1991/890070.html"
+    },
+    "majestic": {
+      "label": "Majestic Realty Associates, Inc. v. Toti Contracting Co. · 153 A.2d 321 (N.J. 1959)",
+      "url": "https://law.justia.com/cases/new-jersey/supreme-court/1959/30-n-j-425-0.html"
+    },
+    "martin": {
+      "label": "Martin v. Peyton · 158 N.E. 77 (N.Y. 1927)",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1927/246-n-y-213-158-n-e-77-1927.html"
+    },
+    "stroud": {
+      "label": "National Biscuit Co. v. Stroud · 106 S.E.2d 692 (N.C. 1959)",
+      "url": "https://law.justia.com/cases/north-carolina/supreme-court/1959/100-1-9.html"
+    },
+    "meinhard": {
+      "label": "Meinhard v. Salmon · 164 N.E. 545 (N.Y. 1928)",
+      "url": "https://www.nycourts.gov/reporter/archives/meinhard_salmon.htm"
+    },
+    "giles": {
+      "label": "Giles v. Giles Land Co. · 279 P.3d 139 (Kan. Ct. App. 2012)",
+      "url": "https://law.justia.com/cases/kansas/court-of-appeals/2012/105537.html"
+    },
+    "elf": {
+      "label": "Elf Atochem North America, Inc. v. Jaffari · 727 A.2d 286 (Del. 1999)",
+      "url": "https://law.justia.com/cases/delaware/supreme-court/1999/269-1998-3.html"
+    },
+    "auriga": {
+      "label": "Auriga Capital Corp. v. Gatz Properties, LLC · 40 A.3d 839 (Del. Ch. 2012)",
+      "url": "https://law.justia.com/cases/delaware/court-of-chancery/2012/ca-4390-cs.html"
+    },
+    "gatz": {
+      "label": "Gatz Properties, LLC v. Auriga Capital Corp., 59 A.3d 1206 (Del. 2012) — appellate opinion",
+      "url": "https://law.justia.com/cases/delaware/supreme-court/2012/148-2012.html"
+    },
+    "mcdermott": {
+      "label": "McDermott Inc. v. Lewis · 531 A.2d 206 (Del. 1987)",
+      "url": "https://law.justia.com/cases/delaware/supreme-court/1987/531-a-2d-206-4.html"
+    },
+    "walkovszky": {
+      "label": "Walkovszky v. Carlton · 223 N.E.2d 6 (N.Y. 1966)",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1966/18-n-y-2d-414-1966.html"
+    },
+    "radaszewski": {
+      "label": "Radaszewski v. Telecom Corp. · 981 F.2d 305 (8th Cir. 1992)",
+      "url": "https://openjurist.org/981/f2d/305/radaszewski-radaszewski-v-telecom-corporation-radaszewski-radaszewski"
+    },
+    "freeman": {
+      "label": "Freeman v. Complex Computing Co. · 119 F.3d 1044 (2d Cir. 1997)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/119/1044/486494/"
+    },
+    "theberge": {
+      "label": "Theberge v. Darbro, Inc. · 684 A.2d 1298 (Me. 1996)",
+      "url": "https://law.justia.com/cases/maine/supreme-court/1996/684-a-2d-1298-0.html"
+    },
+    "gardemal": {
+      "label": "Gardemal v. Westin Hotel Co. · 186 F.3d 588 (5th Cir. 1999)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/186/588/569426/"
+    },
+    "otr": {
+      "label": "OTR Associates v. IBC Services, Inc. · 801 A.2d 407 (N.J. Super. Ct. App. Div. 2002)",
+      "url": "https://law.justia.com/cases/new-jersey/appellate-division-published/2002/a2826-00-opn.html"
+    },
+    "bushey": {
+      "label": "Ira S. Bushey & Sons, Inc. v. United States · 398 F.2d 167 (2d Cir. 1968)",
+      "url": "https://openjurist.org/398/f2d/167"
+    },
+    "dgclstock": {
+      "label": "DGCL §§ 151–174 (stock and dividends)",
+      "url": "https://delcode.delaware.gov/title8/c001/sc05/"
+    },
+    "dgclnotice": {
+      "label": "DGCL § 229 (waiver of notice), § 202 (transfer restrictions), §§ 204–205 (defective corporate acts)",
+      "url": "https://delcode.delaware.gov/title8/c001/sc07/"
+    },
+    "aronson": {
+      "label": "Aronson v. Lewis · 473 A.2d 805 (Del. 1984) (business judgment presumption)",
+      "url": "https://law.justia.com/cases/delaware/supreme-court/1984/473-a-2d-805-4.html"
+    }
+  },
+  "sections": [
+    {
+      "id": "agency-creation",
+      "title": "Agency: who is acting for whom?",
+      "tagline": "Three elements. No magic words.",
+      "points": [
+        {
+          "title": "Assent + behalf + control",
+          "text": "A principal manifests assent that another act on the principal’s behalf and subject to the principal’s control; the agent consents. Conduct can supply assent. Payment, a written contract, or the label “agent” is unnecessary. Restatement §§ 1.01–1.03."
+        },
+        {
+          "title": "Separate the questions",
+          "text": "Agency establishes a relationship. Authority asks whether an act binds the principal. Employee status asks whether control over manner and means supports respondeat superior. Proving one does not automatically prove the others."
+        },
+        {
+          "title": "Read the relationship",
+          "text": "Control can be a right to give interim directions, not constant supervision. Ordinary lending protections or a simple sale do not automatically establish agency. Cargill illustrates when the total relationship crosses that line."
+        },
+        {
+          "title": "Three principal labels",
+          "text": "Disclosed: the third party knows both the principal’s existence and identity. Unidentified: existence known, identity unknown. Undisclosed: even the existence is unknown. “Partially disclosed” is older terminology for unidentified. § 1.04."
+        },
+        {
+          "title": "Types of agents",
+          "text": "An employee agent is subject to control over the manner and means of work; a nonemployee agent can still have authority to bind a principal. An independent contractor may be an agent or a nonagent. A subagent acts for an appointing agent and, when authorized, the principal. Keep these classifications separate from disclosed, unidentified, and undisclosed principal status. Restatement §§ 1.01, 1.04, 3.15, 7.07."
+        }
+      ],
+      "example": "A boutique owner asks Morgan to buy supplies for the boutique, within instructions Morgan accepts. That can be agency even if Morgan volunteers.",
+      "trap": "Start with the actual conduct; contractual labels cannot decide the issue.",
+      "refs": [
+        "agency",
+        "gorton",
+        "cargill"
+      ],
+      "comic": "ba-agency-creation.png",
+      "comicAlt": "A shop owner asks an agent to buy inventory for the shop and follow instructions: assent, acting on behalf, and control.",
+      "comicWidth": 2170,
+      "comicHeight": 725
+    },
+    {
+      "id": "agency-duties",
+      "title": "The principal–agent relationship",
+      "tagline": "Loyalty is not optional accessorizing.",
+      "points": [
+        {
+          "title": "Loyalty, §§ 8.01–8.06",
+          "text": "Act for the principal’s benefit in matters connected to the agency. Avoid undisclosed material benefits, adverse dealing, competition during the agency, and misuse of confidential information or property. Informed consent can authorize otherwise prohibited conduct when the section’s conditions are met."
+        },
+        {
+          "title": "Performance, §§ 8.07–8.12",
+          "text": "Honor the contract; use the care, competence, and diligence normally exercised in similar circumstances, including promised special skills; obey lawful instructions; act within actual authority; provide material information; keep and account for the principal’s property separately."
+        },
+        {
+          "title": "The principal owes duties too, §§ 8.13–8.15",
+          "text": "Perform contractual promises; indemnify in the circumstances the agreement or law requires; deal fairly and in good faith. Indemnification is not a promise to reimburse every personal or unauthorized act."
+        },
+        {
+          "title": "Why disclosure matters",
+          "text": "In Singer, the agent could not secretly decide that the employer was incapable of taking an opportunity. Disclosure preserved the employer’s ability to choose and consent."
+        },
+        {
+          "title": "Consent to a loyalty conflict",
+          "text": "For consent under § 8.06, the agent must act in good faith, disclose material facts that would reasonably affect the principal’s judgment unless the principal has manifested that they are already known or not wished, and otherwise deal fairly. Consent concerns the particular act or transaction, or a specified type reasonably expected in the agency. A general undisclosed conflict is not cured by the agent’s belief that the deal helps everyone."
+        }
+      ],
+      "example": "If a supplier offers a purchasing agent a secret commission, analyze the personal benefit and conflict. Approval requires meaningful disclosure, not a vague “trust me.”",
+      "trap": "Care and loyalty are different duties. A careful, profitable secret diversion can still be disloyal.",
+      "refs": [
+        "agency",
+        "singer"
+      ],
+      "comic": "ba-agency-duties.png",
+      "comicAlt": "An agent offered a secret commission discloses the conflict: a fair price does not cure a loyalty problem.",
+      "comicWidth": 2171,
+      "comicHeight": 724
+    },
+    {
+      "id": "agency-authority",
+      "title": "Authority, contracts & ratification",
+      "tagline": "Follow the manifestation.",
+      "points": [
+        {
+          "title": "Actual authority: principal → agent",
+          "text": "Ask whether the agent reasonably believes, from the principal’s manifestations, that the principal wants the act. Express instructions and implied authority for necessary or incidental acts both fit. §§ 2.01–2.02, 3.01."
+        },
+        {
+          "title": "Apparent authority: principal → third party",
+          "text": "Ask whether a third party reasonably believes the actor is authorized and whether that belief is traceable to the principal. A job title, prior dealings, or acquiescence can matter. The agent’s unsupported claim is insufficient. §§ 2.03, 3.03."
+        },
+        {
+          "title": "Ratification: a later yes",
+          "text": "A principal can affirm a prior act through assent or conduct justifying that inference. The actor must have acted or purported to act on the principal’s behalf. Material knowledge, capacity, timing, and third-party protections limit retroactive effect. §§ 4.01–4.02; do not automatically treat every retained benefit as informed ratification."
+        },
+        {
+          "title": "Who is a contract party?",
+          "text": "With actual or apparent authority, a disclosed principal and the third party are ordinarily parties; the agent ordinarily is not, unless agreed otherwise (§ 6.01). For an unidentified principal, the agent ordinarily is also a party (§ 6.02). With actual authority for an undisclosed principal, principal and agent ordinarily are parties unless excluded by the contract (§ 6.03)."
+        },
+        {
+          "title": "The hidden-principal exception",
+          "text": "An undisclosed principal cannot create apparent authority in the ordinary way when the third party does not know a principal exists. § 2.06 separately addresses knowing failure to prevent detrimental reliance and secret authority limitations. Do not collapse it into § 6.03."
+        }
+      ],
+      "example": "An owner privately authorizes a $500 order: actual authority. The owner tells a vendor that Morgan runs purchasing: possible apparent authority. The owner later knowingly approves an unauthorized purchase: possible ratification.",
+      "trap": "Ask whose belief matters before choosing an authority doctrine.",
+      "refs": [
+        "agency",
+        "hogan",
+        "paychex"
+      ],
+      "comic": "comic-agency.png",
+      "comicAlt": "Actual authority comes from principal to agent; apparent authority depends on the principal’s manifestations to a third party.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "agency-torts",
+      "title": "Tort liability: whose conduct?",
+      "tagline": "Two routes to a principal’s liability.",
+      "points": [
+        {
+          "title": "Direct liability",
+          "text": "A principal may be liable for its own negligence in selection, supervision, or control, or for other recognized direct-liability grounds. These do not require treating the principal as an innocent party paying only because of employment. § 7.03."
+        },
+        {
+          "title": "Vicarious liability",
+          "text": "An employer can be liable for an employee’s tort within the scope of employment. The employee test examines the right to control manner and means. Scope includes assigned work or a course of conduct subject to employer control; an independent personal course not intended to serve the employer falls outside. §§ 2.04, 7.07."
+        },
+        {
+          "title": "Detours and forbidden acts",
+          "text": "A forbidden or careless way of performing work is not automatically outside scope. Consider purpose, time, place, kind of work, departure, and return. Clover left disputed scope and supervision questions for further proceedings."
+        },
+        {
+          "title": "Independent contractors",
+          "text": "Nonemployee status usually defeats employment-based respondeat superior, but not every liability theory. Negligent selection, retained control, apparent-authority tort rules, and nondelegable duties may apply. Majestic illustrates the inherently dangerous work exception."
+        },
+        {
+          "title": "The agent still answers for personal torts",
+          "text": "An agent is generally liable for the agent’s own tortious conduct even when acting for a principal. § 7.01. An employer’s liability does not automatically replace the employee’s."
+        },
+        {
+          "title": "Bushey and enterprise risk",
+          "text": "Bushey treated a returning sailor’s drunken damage to a dry dock as a foreseeable risk of the enterprise, although the act did not serve the employer. This is foreseeability in allocating employment risks, not simply negligence foreseeability. Compare that historical Second Circuit approach with the governing jurisdiction’s scope test and Restatement § 7.07; do not silently replace one with the other."
+        }
+      ],
+      "example": "A delivery driver negligently turns while making a delivery: analyze scope. A business knowingly hires an unsafe driver: separately analyze negligent hiring.",
+      "trap": "Do not answer “employee, therefore liable.” You still need a tort and scope.",
+      "refs": [
+        "agency",
+        "clover",
+        "majestic",
+        "bushey"
+      ],
+      "comic": "ba-agency-torts.png",
+      "comicAlt": "A courier’s assignment and purpose are compared with a personal errand to explain scope of employment.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "agency-ending",
+      "title": "Ending agency without loose ends",
+      "tagline": "Two authorities, two endings.",
+      "points": [
+        {
+          "title": "Actual authority ends",
+          "text": "Apply §§ 3.06–3.10 to the relevant event: death, loss of capacity, changed circumstances, agreement, revocation, or renunciation. Notice and knowledge rules matter; do not assume an unknown death or incapacity instantly defeats every act."
+        },
+        {
+          "title": "Power versus right",
+          "text": "A principal can generally revoke and an agent can renounce actual authority by communicating the decision, even if doing so breaches a contract. Contract damages are a different question. Special powers given as security require separate treatment."
+        },
+        {
+          "title": "Apparent authority may linger",
+          "text": "Under § 3.11, ending actual authority does not itself end apparent authority. It ends when continued third-party belief becomes unreasonable. Notice to people who dealt with the agent can be critical."
+        },
+        {
+          "title": "Contract liability after an unauthorized act",
+          "text": "An agent for a disclosed principal ordinarily is not a contract party when acting with authority. An actor who purports to bind another without power can instead face liability for breach of an implied warranty of authority, subject to exceptions such as the third party knowing authority is absent. The agent’s own torts and contractual promises remain separate bases of liability. Restatement §§ 6.01–6.03, 6.10, 7.01."
+        }
+      ],
+      "example": "Firing the purchasing manager ends the internal permission, but a vendor who reasonably relies on unchanged principal-created appearances may still have an apparent-authority argument.",
+      "trap": "“Fired yesterday” does not answer what the vendor reasonably knew today.",
+      "refs": [
+        "agency"
+      ],
+      "comic": "ba-agency-ending.png",
+      "comicAlt": "After an agent is fired, a seller still sees old signs of authority: ask what the seller knows and correct the appearances.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "partnership-formation",
+      "title": "Partnership creation & management",
+      "tagline": "You can become partners without saying so.",
+      "points": [
+        {
+          "title": "Formation",
+          "text": "Two or more persons carrying on as co-owners a business for profit can form a partnership whether or not they intend the legal label. Sharing gross returns or co-owning property alone is not enough. Profit sharing raises a presumption subject to exceptions such as wages, rent, debt payments, and qualifying loan interest. § 202."
+        },
+        {
+          "title": "Separate entity; flexible agreement",
+          "text": "The partnership is distinct from its partners (§ 201). The agreement can change many internal defaults but is subject to mandatory limits. A general partnership normally does not require a formation filing; LLP status and limited partnerships do."
+        },
+        {
+          "title": "Who decides?",
+          "text": "Default: equal management rights. Ordinary-course disputes are decided by a majority of partners; matters outside the ordinary course and agreement amendments require all partners. Older RUPA § 401(f), (j); harmonized 2013 § 401."
+        },
+        {
+          "title": "Who binds it?",
+          "text": "A partner’s apparently ordinary-course act binds the partnership unless the partner lacks authority and the other party knows or has notice of that lack. An outside-course act requires authorization. § 301. Internal voting rules and external binding power are related, not identical."
+        },
+        {
+          "title": "General partnership LP and LLP",
+          "text": "A general partnership arises from the co-ownership relationship. A limited partnership requires statutory formation and has at least one general and one limited partner. An LLP is a general partnership with a qualifying liability shield obtained through statutory registration; it is not a limited partnership and does not turn all partners into limited partners. Always check the applicable statute and effective registration."
+        }
+      ],
+      "example": "Two equal bakery partners disagree over routine flour orders. One partner is not a majority able to revoke the other’s ordinary-course power merely by announcing an objection.",
+      "trap": "Martin is a lender-protection case; Cargill involves creditor control creating agency. A lender need not become a partner to incur agency liability.",
+      "refs": [
+        "rupa",
+        "martin",
+        "stroud"
+      ],
+      "comic": "ba-partnership-formation.png",
+      "comicAlt": "Two people run a bakery as co-owners for profit: a partnership can arise from their conduct.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "partnership-duties",
+      "title": "Partnership duties, property & money",
+      "tagline": "The opportunity belongs in the group chat.",
+      "points": [
+        {
+          "title": "Loyalty and care",
+          "text": "Account for partnership benefits and opportunities; avoid adverse dealing and competition before dissolution. The statutory care floor targets gross negligence, recklessness, intentional misconduct, or knowing law violations. Exercise rights consistently with good faith and fair dealing. Older § 404; harmonized 2013 § 409."
+        },
+        {
+          "title": "Information rights",
+          "text": "Partners have access to books and material partnership information. The agreement cannot unreasonably restrict statutory access. Older § 403; harmonized § 408. A management disagreement does not erase information rights."
+        },
+        {
+          "title": "Property and transfer",
+          "text": "Partnership property belongs to the entity, not each partner (§§ 203, 501). A transferable interest ordinarily carries distributions, not management or a general right to records. Admission as a partner is a separate step. §§ 502–503."
+        },
+        {
+          "title": "Economics",
+          "text": "Default profits are shared equally; losses track profit shares. Distinguish a contribution from a loan or advance. Reimbursement and indemnification rules protect qualifying partnership expenditures. No default salary for ordinary services; reasonable winding-up compensation is a distinct rule."
+        },
+        {
+          "title": "Liability",
+          "text": "General partners ordinarily are jointly and severally liable for partnership obligations. An incoming partner is not personally liable merely by joining for earlier debts. An LLP changes status-based liability, not liability for one’s own wrong. A partnership judgment is not automatically a judgment against a partner; collection has additional rules. §§ 305–307."
+        },
+        {
+          "title": "Allocation versus distribution",
+          "text": "Allocation credits profits or charges losses to a partner’s account; distribution pays out money or property. A $10,000 profit allocated equally to two partners credits $5,000 to each, even if the partnership retains the cash. Unequal contributions do not by themselves override equal profit shares. Partner advances, reimbursement, account balances, and final settlement are separate questions."
+        }
+      ],
+      "example": "If one partner contributed 80% of the capital but the agreement says nothing about profits, do not automatically award 80% of profits. Apply the default and identify any agreement changing it.",
+      "trap": "Authorities may use both pre-2013 and harmonized numbering. Match section text and edition; do not assume § 404 and § 409 are interchangeable citations in every statute.",
+      "refs": [
+        "rupa",
+        "meinhard"
+      ],
+      "comic": "comic-partnership.png",
+      "comicAlt": "A partner discloses a connected business opportunity and gives the co-venturer a chance to participate.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "partnership-exit",
+      "title": "Dissociation, dissolution & winding up",
+      "tagline": "Leaving the team is not always closing the store.",
+      "points": [
+        {
+          "title": "Dissociation",
+          "text": "A partner leaves through a statutory event such as express withdrawal, death, or judicial expulsion (§ 601). A partner has the power to dissociate; the agreement and timing determine whether it is wrongful and creates damages (§ 602)."
+        },
+        {
+          "title": "If the business continues",
+          "text": "A non-dissolving dissociation generally triggers a statutory buyout, subject to valuation rules, offsets, and possible deferred payment for wrongful early departure (§ 701). Management rights end, but some duties and external liability can persist (§§ 603, 702–703)."
+        },
+        {
+          "title": "Dissolution",
+          "text": "Identify a specific § 801 trigger. In an at-will partnership, notice of a partner’s will to withdraw can trigger dissolution; a term partnership has different rules. Judicial dissociation is not automatically dissolution."
+        },
+        {
+          "title": "Winding up",
+          "text": "The entity continues for winding up (§ 802). Finish affairs, handle claims, liquidate where appropriate, pay creditors including qualifying partner-creditors, and settle partner accounts (§§ 803–807). Do not simply split gross assets before paying obligations."
+        },
+        {
+          "title": "Other forms",
+          "text": "A limited partnership has general and limited partners under its statute; it requires filing. Do not confuse LP with LLP. Modern limited-partnership statutes often protect a limited partner even when participating in management; older control-rule versions differ."
+        }
+      ],
+      "example": "One partner is judicially removed while the farm continues. Analyze dissociation and buyout rather than assuming all land must be sold.",
+      "trap": "The power to withdraw does not mean a cost-free right to breach a term agreement.",
+      "refs": [
+        "rupa",
+        "giles"
+      ],
+      "comic": "ba-partnership-exit.png",
+      "comicAlt": "A partner leaves, the business may continue, and winding up is considered separately: dissociation is not dissolution.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "llc-formation",
+      "title": "LLCs: formation, liability & management",
+      "tagline": "Read the operating agreement first. Then the statute.",
+      "points": [
+        {
+          "title": "Formation and separate personality",
+          "text": "An LLC is a limited liability company. Filing the required formation document is distinct from agreeing on internal governance. The statute specifies when the entity comes into existence and any member requirements. ULLCA § 201."
+        },
+        {
+          "title": "Operating agreement",
+          "text": "Use the agreement for ownership, voting, management, economics, exits, and dispute resolution; then identify statutory defaults and mandatory limits. Elf shows why arbitration and forum provisions must be read before suing."
+        },
+        {
+          "title": "Liability shield",
+          "text": "Members and managers are not personally liable solely because of their status (§ 304). A personal tort, guarantee, or other independent basis of liability is a separate question. Sole ownership does not itself remove the shield."
+        },
+        {
+          "title": "Management and authority vary",
+          "text": "Under ULLCA, member-managed is the default with equal management rights; designated managers govern a manager-managed LLC (§ 407). Membership alone does not confer agency power (§ 301). Delaware § 18-402 instead defaults to profit-interest-weighted management and includes a default binding-authority rule, subject to the agreement. Never merge these rules."
+        }
+      ],
+      "example": "A passive member in a manager-managed ULLCA company signs a supply contract. Ownership alone does not prove authority. Look for actual authority, apparent authority, or another valid basis.",
+      "trap": "“LLC” tells you the entity form, not the governing state, voting rule, or signatory’s authority.",
+      "refs": [
+        "llc",
+        "delman",
+        "elf"
+      ],
+      "comic": "ba-llc-formation.png",
+      "comicAlt": "LLC founders form the entity, read the operating agreement, and check who has authority to sign.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "llc-duties",
+      "title": "LLCs: finances, duties, claims & exits",
+      "tagline": "Flexibility has a governing law.",
+      "points": [
+        {
+          "title": "Money and information",
+          "text": "Contributions may include money, property, services, or other permitted benefits (§ 402). Under the 2013 ULLCA default, interim distributions are in equal shares among members and dissociated members, subject to transfers or charging orders (§ 404); they are due only if the company decides to distribute. Solvency limits apply (§§ 405–406). Information rights depend on management form and the statutory request (§ 410). The operating agreement can change many economic defaults."
+        },
+        {
+          "title": "Duties and version control",
+          "text": "ULLCA § 409 supplies loyalty and care rules. The 2013 harmonized text uses a gross-negligence/recklessness/intentional-misconduct/knowing-illegality care floor. The 2006 original used different care language. Under 2013 § 105, specified duty alterations or eliminations are possible if not manifestly unreasonable; mandatory limits and good faith remain. Do not apply an absolute “no modification” slogan."
+        },
+        {
+          "title": "Delaware’s contractual approach",
+          "text": "Delaware § 18-1101 permits restricting or eliminating fiduciary duties, but not eliminating the implied contractual covenant of good faith and fair dealing. Auriga’s appellate result rests on the actual agreement. Current § 18-1104 also preserves equitable rules, including fiduciary duties, where the Act is silent."
+        },
+        {
+          "title": "Direct or derivative?",
+          "text": "Ask who suffered the injury and owns the right. Misappropriation from the LLC generally belongs to the LLC, so a member’s suit is derivative. Violation of an individual contractual right can support a direct claim. ULLCA §§ 801–806 address standing, demand or its statutory exception, and recovery; the derivative label does not defeat agreed arbitration."
+        },
+        {
+          "title": "Exit is not automatic cash",
+          "text": "Under ULLCA §§ 601–603, a person can dissociate, possibly wrongfully; management rights cease and the economic interest is held as a transferee. Unlike the RUPA continuation buyout, there is no general automatic buyout solely on dissociation. Delaware § 18-603 generally bars member resignation before dissolution unless the agreement permits it. Manager resignation has a different rule (§ 18-602)."
+        },
+        {
+          "title": "Dissolution and winding up",
+          "text": "Apply the agreement and statutory triggers rather than treating any departure as closure. ULLCA § 701 includes specified judicial grounds, including certain unlawful or oppressive conduct; Delaware § 18-802 uses its own not-reasonably-practicable standard. Pay creditors before distributing the remainder."
+        },
+        {
+          "title": "Transferability",
+          "text": "Under ULLCA §§ 501–503, a transferable interest is the right to receive distributions. Transferring it alone does not grant management rights or general access to company records, and does not by itself dissolve the LLC or dissociate the transferor. Admission as a member requires the applicable consent or operating agreement mechanism. Distinguish transfer of economic rights from transfer of membership status."
+        }
+      ],
+      "example": "If a manager engineers a bargain purchase for herself, examine the agreement’s conflict standard, disclosure and fairness, applicable default duties, and any valid exculpation.",
+      "trap": "Older and harmonized model acts differ. Every test item specifies the version or governing law when the difference could change the answer.",
+      "refs": [
+        "llc",
+        "delllc",
+        "delexit",
+        "auriga",
+        "gatz"
+      ],
+      "comic": "ba-llc-duties.png",
+      "comicAlt": "A manager diverts company money. Ask who suffered the injury and who receives the recovery; company injury suggests a derivative claim.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "corporate-basics",
+      "title": "Corporations: formation & authority",
+      "tagline": "Shareholders own. Directors govern. Officers act.",
+      "points": [
+        {
+          "title": "Formation documents",
+          "text": "Under the DGCL, file the certificate under §§ 101–103; existence begins under § 106. The certificate and bylaws have different roles. Organizational action under § 108 installs governance; bylaws under § 109 must remain consistent with law and the certificate."
+        },
+        {
+          "title": "People and powers",
+          "text": "Shareholders elect directors and vote on specified fundamental matters; they do not ordinarily run daily business. The board manages or directs the business (§ 141(a)); officers have duties and authority from governing documents and board action (§ 142), plus applicable agency rules."
+        },
+        {
+          "title": "Board formalities",
+          "text": "Under default DGCL § 141(b), a majority of the total board is a quorum, and a majority present at a meeting with quorum decides. The statute and valid governing documents can alter some thresholds. § 141(f) generally requires all directors’ consent for action without a meeting; § 141(i) permits meetings using communications equipment when all participants can hear each other."
+        },
+        {
+          "title": "Binding the corporation",
+          "text": "A director acting alone is not automatically the board. An officer’s signature requires actual authority, apparent authority, ratification, or another legal basis. Stock ownership is not agency authority."
+        },
+        {
+          "title": "Pre-incorporation and exam method",
+          "text": "A nonexistent corporation cannot be a principal that already authorized a promoter. Later adoption and release of a promoter are distinct issues under applicable law. For the bar-exercise approach: identify the entity, governing law, actor, source of authority, duty or liability, then apply each element to facts."
+        },
+        {
+          "title": "Corporate characteristics and securities",
+          "text": "A corporation has separate legal personality, ordinarily perpetual duration, centralized board management, and a shareholder liability shield. Shares represent equity ownership; debt securities create creditor claims. Common and preferred shares can have different voting, dividend, conversion, and liquidation rights specified in the charter and applicable law. Authorized shares, issued shares, and outstanding shares are different quantities. Transferability can be subject to lawful restrictions; a share certificate is evidence of rights rather than the corporation itself. DGCL §§ 151–159, 202."
+        },
+        {
+          "title": "Board notice and waiver",
+          "text": "Read the statute, certificate, and bylaws for regular and special meeting notice. Do not assume shareholder meeting notice periods apply to directors. Under DGCL § 229, written or electronic waiver can cure required notice; attendance generally waives it unless a director attends specifically to object at the outset that the meeting was not lawfully called or convened. Then separately determine quorum and the vote required for the action."
+        },
+        {
+          "title": "Fiduciary duties and the business judgment rule",
+          "text": "Directors and officers owe duties of care and loyalty to the corporation under the governing law. Care examines the decision process and information; loyalty examines conflicts and use of corporate position. The business judgment rule generally presumes that directors making a business decision acted on an informed basis, in good faith, and honestly believed it served the corporation. A disappointing result alone does not rebut that protection. Conflicts, bad faith, or a seriously deficient process require further analysis; the rule is not a blanket defense to every fiduciary claim."
+        },
+        {
+          "title": "Liability and exculpation",
+          "text": "Keep corporate liability, personal liability for one’s own conduct, and status based liability distinct. Shareholders normally risk their investment; directors and officers are not personally liable for every corporate debt. A valid charter provision under DGCL § 102(b)(7) can limit specified monetary liability for fiduciary breaches, subject to statutory exceptions and different rules for officers. Exculpation, indemnification, advancement, and insurance do different jobs; none automatically eliminates the underlying duty."
+        },
+        {
+          "title": "Promoters and adoption",
+          "text": "A promoter who contracts for an entity not yet formed may be personally liable under the applicable rule and contract. A later corporation can adopt the transaction expressly or through qualifying conduct. Adoption does not ordinarily release the promoter by itself; look for a novation or other agreement releasing that party. Strictly distinguish adoption by a newly formed corporation from ratification by a principal that already existed when the act occurred."
+        },
+        {
+          "title": "Defective incorporation",
+          "text": "Start with whether statutory formation requirements were met. If not, identify the governing approach rather than assuming every attempted corporation exists. Traditional de facto incorporation generally requires an available incorporation statute, a good faith colorable attempt to comply, and actual corporate use; corporation by estoppel can prevent a party who dealt with a business as a corporation from denying that status in the relevant dispute. Jurisdictions limit or reject these doctrines. Modern statutory liability and validation rules may govern instead; DGCL §§ 204–205 address certain defective corporate acts and are not a blanket cure for every nonexistent entity."
+        }
+      ],
+      "example": "A five-person board has three directors present. Under the unmodified DGCL defaults, there is a quorum and two affirmative votes can approve ordinary board action. Two directors emailing agreement without a meeting is not unanimous board consent.",
+      "trap": "Do not apply shareholder written-consent rules to directors’ written consent.",
+      "refs": [
+        "dgclform",
+        "dgclboard",
+        "agency",
+        "dgclstock",
+        "dgclnotice",
+        "aronson"
+      ],
+      "comic": "ba-corporate-basics.png",
+      "comicAlt": "A five-director board has three directors present and two vote yes: check quorum, then the voting threshold.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "internal-affairs",
+      "title": "Corporate federalism & internal affairs",
+      "tagline": "Choose the law before applying the rule.",
+      "points": [
+        {
+          "title": "Internal affairs doctrine",
+          "text": "Internal relationships among corporation, directors, officers, and shareholders ordinarily follow the law of incorporation. Headquarters, operating locations, and the litigation forum do not automatically change that law."
+        },
+        {
+          "title": "Internal versus external",
+          "text": "Voting rights and director governance are internal examples. A store’s local employment, tort, or contract obligations can invoke other law. Classify the issue; the doctrine does not displace all laws where the business operates."
+        },
+        {
+          "title": "How corporate law is made",
+          "text": "State statutes, judicial opinions, the certificate, and bylaws work together; federal law can independently govern subjects such as securities. Distinguish a default enabling rule from a mandatory constraint. McDermott illustrates the value placed on consistent internal governance."
+        },
+        {
+          "title": "The market for state charters",
+          "text": "Businesses can incorporate in one state while operating elsewhere. States compete through statutes, courts, predictability, and fees; Delaware’s specialized courts and developed precedent are common reasons for selecting it. Internal affairs generally follow the chosen incorporation law, while external conduct can remain subject to local regulation. The race to the top and race to the bottom accounts describe competing views of whose interests charter competition serves, not legal elements deciding a case."
+        }
+      ],
+      "example": "A Delaware corporation runs stores in Kansas. A board-voting issue ordinarily starts with Delaware corporate law; a Kansas slip-and-fall is a different conflicts problem.",
+      "trap": "Place of suit, place of business, and place of incorporation are three different facts.",
+      "refs": [
+        "mcdermott",
+        "dgclform"
+      ],
+      "comic": "ba-internal-affairs.png",
+      "comicAlt": "A corporation is formed in Delaware and works in Kansas: internal governance ordinarily starts with Delaware law.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    },
+    {
+      "id": "veil-piercing",
+      "title": "Limited liability & piercing the veil",
+      "tagline": "The shield is real. So are its limits.",
+      "points": [
+        {
+          "title": "Start with separateness",
+          "text": "The company generally pays its own debts. Ownership, control, a loss, or an unpaid judgment alone does not make every shareholder liable. Liability for one’s own tort or guarantee does not require piercing."
+        },
+        {
+          "title": "Build the governing test",
+          "text": "Veil piercing is exceptional and jurisdiction-specific. Identify control or unity, misuse, and any required connection to the plaintiff’s injury. Consider commingling, siphoning, capitalization, formalities, and misleading conduct in context. No universal factor checklist replaces the governing test."
+        },
+        {
+          "title": "Distinguish the target",
+          "text": "Vertical piercing seeks an owner’s assets. Enterprise theories seek related entities. A parent can also incur direct liability for its own conduct. Walkovszky warns against leaping from a corporate group’s integration to an individual shareholder’s liability."
+        },
+        {
+          "title": "Contract versus tort",
+          "text": "A voluntary contract creditor may have bargained for guarantees or security; an involuntary tort victim had no such choice. Theberge emphasizes the bargain, while OTR shows that contract creditors can still prevail on evidence of misuse."
+        },
+        {
+          "title": "Compare the six cases",
+          "text": "Walkovszky: pleading insufficient against owner. Radaszewski: insurance mattered. Freeman: equitable ownership possible, but wrongful use still necessary. Theberge: contract expectations mattered. Gardemal: ordinary affiliation insufficient. OTR: shell structure and misuse supported piercing."
+        },
+        {
+          "title": "Limited liability and externalities",
+          "text": "Limited liability can support diversified investment and reduce the need to monitor every shareholder’s wealth. It can also leave some costs with creditors or the public when corporate assets are insufficient. Contract creditors can negotiate some protections; involuntary tort creditors usually cannot. These policy concerns explain debates over capitalization, insurance, regulation, and veil piercing, but do not replace the governing legal test."
+        },
+        {
+          "title": "Equitable ownership and corporate groups",
+          "text": "Freeman permits looking beyond formal stock title to a person who exercises ownership like control. Still ask whether domination was used to cause the required wrong. For corporate groups, identify the target entity and the specific relationship: parent liability, enterprise liability among affiliates, and direct liability for the parent’s own acts are distinct. Normal shared branding or oversight does not automatically erase separate personality."
+        }
+      ],
+      "example": "If a founder pays personal rent from the corporate account, that is evidence of misuse. Still connect the evidence to the jurisdiction’s full test and the specific debt; one fact is not an automatic outcome.",
+      "trap": "Historical case holdings are not universal rules. Identify the governing jurisdiction and connect the evidence of misuse to the particular claim.",
+      "refs": [
+        "walkovszky",
+        "radaszewski",
+        "freeman",
+        "theberge",
+        "gardemal",
+        "otr"
+      ],
+      "comic": "comic-liability.png",
+      "comicAlt": "Separate business and personal funds; misuse can put the liability shield at risk.",
+      "comicWidth": 2172,
+      "comicHeight": 724
+    }
+  ],
+  "cases": [
+    {
+      "id": "gorton",
+      "section": 0,
+      "name": "Gorton v. Doty",
+      "citation": "69 P.2d 136 (Idaho 1937)",
+      "url": "https://openjurist.org/57/idaho/792/gorton-v-doty",
+      "facts": "Doty let a school coach use her car to transport football players, on the condition that he drive. A player was injured.",
+      "issue": "Did the arrangement create agency despite the absence of payment?",
+      "rule": "Agency can arise through conduct and need not involve a paid business arrangement.",
+      "holding": "The majority upheld the agency finding and judgment against Doty.",
+      "reasoning": "The court treated her condition about who would drive as evidence of control and consent; the dissent saw only a loan.",
+      "trap": "This fact-sensitive historical decision does not make every car lender a principal. Analyze assent, behalf, and control."
+    },
+    {
+      "id": "cargill",
+      "section": 0,
+      "name": "A. Gay Jenson Farms Co. v. Cargill, Inc.",
+      "citation": "309 N.W.2d 285 (Minn. 1981)",
+      "url": "https://tortwell.com/cases/309-nw2d-285",
+      "facts": "Farmers sold grain to Warren. Cargill financed Warren and exercised extensive oversight of its operations. Warren failed to pay.",
+      "issue": "Had a creditor become a principal responsible for Warren’s grain purchases?",
+      "rule": "A creditor that takes over management may become a principal; the relationship as a whole matters.",
+      "holding": "The court affirmed liability against Cargill on an agency theory.",
+      "reasoning": "Financing, operational involvement, recommendations, and control together went beyond ordinary creditor protection. Warren procured grain for Cargill.",
+      "trap": "A loan alone is insufficient. Compare protective covenants with pervasive operational control."
+    },
+    {
+      "id": "singer",
+      "section": 1,
+      "name": "General Automotive Manufacturing Co. v. Singer",
+      "citation": "120 N.W.2d 659 (Wis. 1963)",
+      "url": "https://app.midpage.ai/document/general-automotive-manufacturing-co-v-8200935",
+      "facts": "A general manager secretly sent customer work to other shops and kept the margin, believing his employer could not handle the orders.",
+      "issue": "Could he privately profit without first disclosing the opportunities?",
+      "rule": "An agent must disclose conflicts and account for secret profits earned through disloyal competition.",
+      "holding": "Liability was affirmed; the recovery was reduced to reflect a stipulation.",
+      "reasoning": "The employer was entitled to decide whether to take, subcontract, or decline the orders after disclosure.",
+      "trap": "“The principal could not do it” does not give an agent permission to decide secretly for personal gain."
+    },
+    {
+      "id": "hogan",
+      "section": 2,
+      "name": "Mill Street Church of Christ v. Hogan",
+      "citation": "785 S.W.2d 263 (Ky. Ct. App. 1990)",
+      "url": "https://law.justia.com/cases/kentucky/court-of-appeals/1990/89-ca-380-wc-1.html",
+      "facts": "Bill Hogan hired his brother to help paint the church, as he had on earlier jobs. His brother was injured.",
+      "issue": "Did Bill have implied authority to hire him?",
+      "rule": "Actual authority can be inferred from prior practice, the job’s needs, and the principal’s manifestations.",
+      "holding": "The court affirmed the board’s conclusion that the brother was an employee.",
+      "reasoning": "The work needed help; prior hiring was allowed; the church did not communicate a binding restriction.",
+      "trap": "Implied authority is actual authority. Ask what Bill reasonably understood, not only what a third party believed."
+    },
+    {
+      "id": "paychex",
+      "section": 2,
+      "name": "Ophthalmic Surgeons, Ltd. v. Paychex, Inc.",
+      "citation": "632 F.3d 31 (1st Cir. 2011)",
+      "url": "https://cases.justia.com/federal/appellate-courts/ca1/09-2291/09-2291p-01a-2011-01-31.pdf",
+      "facts": "A practice’s payroll contact directed Paychex to issue excessive payments to herself. The practice failed to act on payroll reports.",
+      "issue": "Could Paychex rely on the contact’s apparent authority?",
+      "rule": "Apparent authority requires reasonable belief traceable to the principal’s manifestations, including contextual acquiescence.",
+      "holding": "Summary judgment for Paychex was affirmed.",
+      "reasoning": "The practice designated the payroll contact and did not object to reports over time; the contract did not require Paychex to independently police the payroll.",
+      "trap": "An agent cannot create apparent authority solely by asserting it. Connect the belief to the principal."
+    },
+    {
+      "id": "clover",
+      "section": 3,
+      "name": "Clover v. Snowbird Ski Resort",
+      "citation": "808 P.2d 1037 (Utah 1991)",
+      "url": "https://law.justia.com/cases/utah/supreme-court/1991/890070.html",
+      "facts": "A resort employee inspected a restaurant, took recreational ski runs, and collided with Clover while heading toward work.",
+      "issue": "Was he outside the scope of employment as a matter of law?",
+      "rule": "Scope can remain a factual question despite a personal detour; negligent supervision is a separate direct-liability theory.",
+      "holding": "Summary judgment for Snowbird was reversed and the case remanded.",
+      "reasoning": "A factfinder could view the employee as returning to work-related travel. Evidence also supported a supervision dispute.",
+      "trap": "The court permitted the claims to proceed; it did not finally find Snowbird liable."
+    },
+    {
+      "id": "majestic",
+      "section": 3,
+      "name": "Majestic Realty Associates, Inc. v. Toti Contracting Co.",
+      "citation": "153 A.2d 321 (N.J. 1959)",
+      "url": "https://law.justia.com/cases/new-jersey/supreme-court/1959/30-n-j-425-0.html",
+      "facts": "An independent demolition contractor damaged neighboring property while demolishing buildings for a parking authority.",
+      "issue": "Did hiring an independent contractor automatically shield the authority?",
+      "rule": "Exceptions to contractor nonliability include retained control, negligent hiring, and certain inherently dangerous work carrying a nondelegable duty.",
+      "holding": "The judgment dismissing the authority was reversed and a new trial ordered.",
+      "reasoning": "Demolition next to an occupied building could present a peculiar danger requiring precautions. The employer could not necessarily delegate away that duty.",
+      "trap": "Do not equate “independent contractor” with “no possible liability,” or every dangerous job with strict liability."
+    },
+    {
+      "id": "bushey",
+      "section": 3,
+      "name": "Ira S. Bushey & Sons, Inc. v. United States",
+      "citation": "398 F.2d 167 (2d Cir. 1968)",
+      "url": "https://openjurist.org/398/f2d/167",
+      "facts": "A Coast Guard sailor returning drunk to his ship opened dry dock valves, damaging the dock and the vessel. The ship was in the dock for repairs.",
+      "issue": "Was the United States responsible for conduct that did not aim to further its business but arose from an employment related enterprise risk?",
+      "rule": "The Second Circuit used enterprise risk foreseeability in assessing scope of employment; the employee’s purpose to serve the employer was not decisive in this setting.",
+      "holding": "The court affirmed the United States’ liability, with further proceedings on the amount of damages.",
+      "reasoning": "A sailor’s returning to the docked vessel and causing this kind of damage was a characteristic risk of the enterprise, even though the particular wrongful act was unauthorized and purposeless from the employer’s perspective.",
+      "trap": "Do not equate enterprise risk foreseeability with negligence foreseeability, or assume every off duty act falls within scope. Apply the governing jurisdiction’s test."
+    },
+    {
+      "id": "martin",
+      "section": 5,
+      "name": "Martin v. Peyton",
+      "citation": "158 N.E. 77 (N.Y. 1927)",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1927/246-n-y-213-158-n-e-77-1927.html",
+      "facts": "Lenders supplied securities to a troubled brokerage for profit-linked compensation and protective rights.",
+      "issue": "Did the arrangement make the lenders partners?",
+      "rule": "Examine the entire bargain for co-ownership; profit participation can compensate a loan without creating partnership.",
+      "holding": "The court affirmed that the lenders were not partners.",
+      "reasoning": "Inspection and veto protections safeguarded a loan without giving the lenders ordinary management as co-owners.",
+      "trap": "Labels are not conclusive, but neither is receiving a percentage of profits."
+    },
+    {
+      "id": "stroud",
+      "section": 5,
+      "name": "National Biscuit Co. v. Stroud",
+      "citation": "106 S.E.2d 692 (N.C. 1959)",
+      "url": "https://law.justia.com/cases/north-carolina/supreme-court/1959/100-1-9.html",
+      "facts": "One of two grocery partners told a supplier he would not pay for more bread; the other continued ordering it.",
+      "issue": "Could one equal partner unilaterally remove the other’s ordinary-course authority?",
+      "rule": "Equal partners have equal management rights; half is not a majority capable of restricting ordinary business.",
+      "holding": "The bread purchases bound the partnership and Stroud; judgment was affirmed.",
+      "reasoning": "Buying bread was ordinary grocery business and no partnership agreement limited the ordering partner.",
+      "trap": "The supplier’s knowledge of a disagreement is not necessarily knowledge of an effective restriction."
+    },
+    {
+      "id": "meinhard",
+      "section": 6,
+      "name": "Meinhard v. Salmon",
+      "citation": "164 N.E. 545 (N.Y. 1928)",
+      "url": "https://www.nycourts.gov/reporter/archives/meinhard_salmon.htm",
+      "facts": "A managing joint venturer secretly obtained a larger lease opportunity connected to the property the venture operated.",
+      "issue": "Was he required to disclose it to his co-venturer?",
+      "rule": "A managing co-venturer owes loyalty concerning opportunities arising from the venture.",
+      "holding": "The opportunity was subjected to a trust for the venture; the judgment was modified to preserve Salmon’s control.",
+      "reasoning": "The management position brought the opportunity to Salmon. Secrecy denied Meinhard the chance to compete or participate.",
+      "trap": "The holding turns on the opportunity’s connection and timing. It is not a claim to every future venture."
+    },
+    {
+      "id": "giles",
+      "section": 7,
+      "name": "Giles v. Giles Land Co.",
+      "citation": "279 P.3d 139 (Kan. Ct. App. 2012)",
+      "url": "https://law.justia.com/cases/kansas/court-of-appeals/2012/105537.html",
+      "facts": "A family farming partnership deteriorated into threats, animosity, distrust, and an impasse. Kelly requested records; the others sought his removal.",
+      "issue": "Was judicial dissociation justified?",
+      "rule": "Judicial dissociation can be appropriate when it is not reasonably practicable to continue with the partner.",
+      "holding": "The court affirmed dissociation.",
+      "reasoning": "The record showed more than ordinary disagreement: the combined hostility and conduct obstructed the relationship.",
+      "trap": "Seeking records is not itself grounds for expulsion. Distinguish the information right from the conduct supporting removal."
+    },
+    {
+      "id": "elf",
+      "section": 8,
+      "name": "Elf Atochem North America, Inc. v. Jaffari",
+      "citation": "727 A.2d 286 (Del. 1999)",
+      "url": "https://law.justia.com/cases/delaware/supreme-court/1999/269-1998-3.html",
+      "facts": "Members formed an LLC and agreed to California arbitration and forum clauses. Elf later sued in Delaware, including derivatively.",
+      "issue": "Could the LLC’s lack of a separate signature or the derivative label avoid the agreement?",
+      "rule": "Delaware LLC law strongly favors enforcement of the members’ contractual governance and dispute-resolution bargain.",
+      "holding": "Dismissal of the Delaware suit was affirmed.",
+      "reasoning": "The broad clauses covered the dispute; neither the LLC’s missing signature nor the claim label defeated them.",
+      "trap": "Freedom of contract is broad, but mandatory statutory limits still matter."
+    },
+    {
+      "id": "auriga",
+      "section": 9,
+      "name": "Auriga Capital Corp. v. Gatz Properties, LLC",
+      "citation": "40 A.3d 839 (Del. Ch. 2012)",
+      "url": "https://law.justia.com/cases/delaware/court-of-chancery/2012/ca-4390-cs.html",
+      "facts": "An LLC manager discouraged a third-party buyer and arranged a flawed auction through which he acquired the LLC cheaply.",
+      "issue": "Did the conflicted buyout breach duties to the minority?",
+      "rule": "The agreement imposed a fairness standard; the trial court also discussed default fiduciary duties.",
+      "holding": "The trial court awarded damages and part of the fees for breaches.",
+      "reasoning": "The manager’s bad-faith process and unfair price benefited himself; contractual exculpation did not protect that conduct.",
+      "trap": "Appellate limit: Gatz Properties, 59 A.3d 1206 (Del. 2012), affirmed on contractual grounds and treated the unnecessary default-duty discussion as dictum."
+    },
+    {
+      "id": "mcdermott",
+      "section": 11,
+      "name": "McDermott Inc. v. Lewis",
+      "citation": "531 A.2d 206 (Del. 1987)",
+      "url": "https://law.justia.com/cases/delaware/supreme-court/1987/531-a-2d-206-4.html",
+      "facts": "A Delaware subsidiary held voting shares of its Panamanian parent after a reorganization.",
+      "issue": "Did Delaware’s restriction displace Panama’s law governing the parent’s voting arrangements?",
+      "rule": "The law of the place of incorporation ordinarily governs internal corporate affairs.",
+      "holding": "The court reversed the ruling barring the vote and applied Panamanian law.",
+      "reasoning": "The issue concerned the Panamanian parent’s internal affairs; uniform governance avoids conflicting legal demands.",
+      "trap": "The state where a lawsuit is filed does not automatically supply the internal corporate law."
+    },
+    {
+      "id": "walkovszky",
+      "section": 12,
+      "name": "Walkovszky v. Carlton",
+      "citation": "223 N.E.2d 6 (N.Y. 1966)",
+      "url": "https://law.justia.com/cases/new-york/court-of-appeals/1966/18-n-y-2d-414-1966.html",
+      "facts": "An injured pedestrian sued a shareholder whose taxi fleet was divided among thinly capitalized corporations with minimum insurance.",
+      "issue": "Did those allegations adequately state personal liability against Carlton?",
+      "rule": "Entity integration differs from using corporations as an individual’s personal business. Particularized misuse matters.",
+      "holding": "The complaint against Carlton was dismissed with leave to amend.",
+      "reasoning": "The pleaded corporate structure and minimum insurance did not sufficiently allege that he personally conducted business through a sham.",
+      "trap": "The dissent favored liability. Do not present the dissent’s undercapitalization approach as the majority holding."
+    },
+    {
+      "id": "radaszewski",
+      "section": 12,
+      "name": "Radaszewski v. Telecom Corp.",
+      "citation": "981 F.2d 305 (8th Cir. 1992)",
+      "url": "https://openjurist.org/981/f2d/305/radaszewski-radaszewski-v-telecom-corporation-radaszewski-radaszewski",
+      "facts": "A truck collision victim sought to reach the parent of a subsidiary that had substantial liability insurance; the excess carrier later became insolvent.",
+      "issue": "Did accounting undercapitalization establish improper use despite the insurance?",
+      "rule": "Under the Missouri test applied, control must be used for a wrong that causes injury; insurance can demonstrate financial responsibility.",
+      "holding": "Dismissal for lack of personal jurisdiction was affirmed on the failure to establish improper use.",
+      "reasoning": "The insurance mattered when the business operated; later insurer insolvency did not itself prove a deliberately irresponsible structure.",
+      "trap": "Insurance is relevant evidence, not universal immunity from veil piercing."
+    },
+    {
+      "id": "freeman",
+      "section": 12,
+      "name": "Freeman v. Complex Computing Co.",
+      "citation": "119 F.3d 1044 (2d Cir. 1997)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/119/1044/486494/",
+      "facts": "Glazier dominated a software company without formally owning its shares. A consultant sought to compel him to arbitrate the company’s obligation.",
+      "issue": "Could an equitable owner be reached, and was domination alone sufficient?",
+      "rule": "New York piercing requires domination used to commit a wrong causing injury; formal title is not decisive.",
+      "holding": "The court accepted possible equitable ownership but remanded for findings of wrongful use.",
+      "reasoning": "Control can overcome the absence of formal ownership, but the district court had not made the additional necessary finding.",
+      "trap": "“No shares” is not a complete defense; “complete control” is not a complete plaintiff’s case."
+    },
+    {
+      "id": "theberge",
+      "section": 12,
+      "name": "Theberge v. Darbro, Inc.",
+      "citation": "684 A.2d 1298 (Me. 1996)",
+      "url": "https://law.justia.com/cases/maine/supreme-court/1996/684-a-2d-1298-0.html",
+      "facts": "Sophisticated sellers dealt with a corporation without obtaining personal guarantees, then sought to reach individuals after default.",
+      "issue": "Did informality and sharp business practice warrant piercing in this contract dispute?",
+      "rule": "Piercing is exceptional; knowing contract creditors’ bargains and the absence of fraud matter.",
+      "holding": "The piercing judgment was vacated and judgment for defendants ordered.",
+      "reasoning": "The trial court found no fraud or illegality, and the sellers understood guarantees but failed to obtain them.",
+      "trap": "Failure to observe formalities did not automatically produce liability on this record."
+    },
+    {
+      "id": "gardemal",
+      "section": 12,
+      "name": "Gardemal v. Westin Hotel Co.",
+      "citation": "186 F.3d 588 (5th Cir. 1999)",
+      "url": "https://law.justia.com/cases/federal/appellate-courts/F3/186/588/569426/",
+      "facts": "After a drowning near a Mexican resort, the plaintiff sought to hold a parent hotel company liable for its subsidiary’s alleged negligence.",
+      "issue": "Did shared branding and normal parent oversight justify disregarding separateness?",
+      "rule": "Common ownership and ordinary coordination alone do not establish alter ego.",
+      "holding": "Summary judgment for the parent and jurisdictional dismissal of the subsidiary were affirmed.",
+      "reasoning": "Shared manuals, branding, and reservations did not show the required domination and injustice.",
+      "trap": "Study the piercing holding; the case’s historical jurisdiction language is not a complete statement of today’s general-jurisdiction law."
+    },
+    {
+      "id": "otr",
+      "section": 12,
+      "name": "OTR Associates v. IBC Services, Inc.",
+      "citation": "801 A.2d 407 (N.J. Super. Ct. App. Div. 2002)",
+      "url": "https://law.justia.com/cases/new-jersey/appellate-division-published/2002/a2826-00-opn.html",
+      "facts": "Blimpie used judgment-proof leaseholding subsidiaries for franchise premises; the landlord sought unpaid rent from the parent.",
+      "issue": "Did the subsidiary arrangement warrant parent liability?",
+      "rule": "New Jersey piercing requires domination and use of the corporate form to perpetrate fraud, injustice, or circumvention of law.",
+      "holding": "The court affirmed piercing and the rent judgment against the parent.",
+      "reasoning": "The shell entities insulated the parent from liabilities while serving its franchising interests; the record supported misuse beyond ordinary affiliation.",
+      "trap": "Contrast Gardemal: identify the wrongful use, not just the parent-subsidiary relationship."
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "title": "Tort Station",
+  "intro": "An interstellar torts academy where advocates and androids trace intent, risk, causation, duty, defenses, and damages. Every hearing has a fast refresher, a comic memory cue, a changed-facts problem, and graded practice.",
+  "sources": {
+    "v1": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v2": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v3": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "final": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    }
+  },
+  "sections": [
+    {
+      "volume": "I",
+      "title": "Intent and transferred intent",
+      "tag": "The launch command",
+      "source": "v1",
+      "refresher": "For an intentional tort, identify the desired consequence or knowledge that it is substantially certain—not merely foreseeable. Then ask whether a recognized transferred-intent rule applies.",
+      "rule": "Intent is directed to the legally relevant contact, apprehension, confinement, or entry; the actor need not intend the full extent of injury. Traditional transferred intent can move between certain intentional torts and victims, but its scope differs by jurisdiction.",
+      "scene": "Vale maps the arc of a training orb: a cadet aimed at one crew member, missed, and struck another. AX-7 marks the intended contact and the actual victim separately.",
+      "memory": "Trace the intended consequence first; then trace where it landed.",
+      "hypo": [
+        "A cadet throws a harmless-looking stun orb to strike A, misses, and hits B. She says she never meant to hurt B. What matters?",
+        "The intended harmful or offensive contact with A may support battery against B through transferred intent under traditional doctrine. Separate intent to contact from intent to cause a particular injury; check the governing jurisdiction's scope.",
+        "If she merely tossed the orb near A to frighten A, analyze assault intent and whether transfer to B is recognized."
+      ],
+      "id": "chapter-01",
+      "art": "/study-assets/study-art/orbit-01.webp"
+    },
+    {
+      "volume": "I",
+      "title": "Battery and assault",
+      "tag": "Contact and apprehension",
+      "source": "v1",
+      "refresher": "Battery protects against harmful or offensive contact; assault protects against imminent apprehension of such contact. Analyze each separately.",
+      "rule": "Contact may be direct or indirect and need not cause physical injury if objectively offensive. Assault requires reasonable apprehension of imminent contact, not necessarily fear or eventual contact. Words and context matter.",
+      "scene": "A pulse grazes a cadet's helmet after AX-7 warns of an imminent strike. Vale asks whether the cadet saw the threat before impact—and whether the contact itself was offensive.",
+      "memory": "Battery is contact; assault is apprehension before contact.",
+      "hypo": [
+        "A pilot silently fires a stun pulse from behind. It harmlessly taps another pilot, who only learns what happened afterward. Which torts?",
+        "Potential battery depends on intentional harmful or offensive contact. Assault is weak because the target did not perceive an imminent contact before it occurred. An innocent tap may not be offensive under the circumstances.",
+        "If the target sees the pilot raise the blaster and reasonably expects an immediate shot, assault becomes plausible even if it misses."
+      ],
+      "id": "chapter-02",
+      "art": "/study-assets/study-art/orbit-02.webp"
+    },
+    {
+      "volume": "I",
+      "title": "Confinement and severe distress",
+      "tag": "The sealed hatch",
+      "source": "v1",
+      "refresher": "False imprisonment asks whether the defendant intentionally confined someone within boundaries with awareness or harm. IIED asks whether extreme and outrageous conduct intentionally or recklessly caused severe distress.",
+      "rule": "Confinement may arise from barriers, force, threats, or asserted authority; a known safe exit may defeat it. IIED sets a high threshold and is not a catchall for insults or ordinary disputes.",
+      "scene": "A crew member is sealed behind a force-field hatch. Across the station, another faces a campaign of cruel transmissions. Vale keeps the confinement and distress theories distinct.",
+      "memory": "Find the boundaries for imprisonment; find the extremity and severity for IIED.",
+      "hypo": [
+        "A supervisor locks a cadet in a repair bay for ten minutes as a prank. The cadet sees no exit and panics. Analyze.",
+        "The locked bay supports intentional confinement if no reasonable known escape exists and the cadet was aware of it or harmed. The prank may cause distress, but IIED needs conduct and distress that meet a much higher threshold.",
+        "If an obvious, safe, unlocked second hatch is available, confinement becomes harder to establish."
+      ],
+      "id": "chapter-03",
+      "art": "/study-assets/study-art/orbit-03.webp"
+    },
+    {
+      "volume": "I",
+      "title": "Land, chattels, conversion, nuisance",
+      "tag": "The colony boundary",
+      "source": "v1",
+      "refresher": "Identify the protected interest: exclusive possession of land, possessory interest in a movable item, serious dominion over it, or use and enjoyment of land.",
+      "rule": "Trespass to land focuses on intentional entry; trespass to chattels generally requires harm or dispossession. Conversion is serious interference warranting full-value relief. Private nuisance concerns substantial, unreasonable interference with use and enjoyment.",
+      "scene": "A rover crosses a settlement line, damages a survey drone, and leaves a reactor hum that ruins evenings. AX-7 labels three different invasions rather than one giant tort.",
+      "memory": "Land possession, movable possession, serious dominion, and enjoyment are four different targets.",
+      "hypo": [
+        "A delivery drone briefly enters a neighbor's pad, dents a parked scanner, and emits noise every night for a month. Which theories?",
+        "Analyze intentional entry as trespass to land; harm to the scanner as trespass to chattels or possibly conversion if interference is sufficiently serious; persistent noise as private nuisance if substantial and unreasonable. Match each harm to its interest and remedy.",
+        "If the scanner is taken and sold, conversion grows stronger."
+      ],
+      "id": "chapter-04",
+      "art": "/study-assets/study-art/orbit-04.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Reasonable care and the risk calculus",
+      "tag": "The shield decision",
+      "source": "v2",
+      "refresher": "Negligence requires duty, breach, factual cause, scope of liability, and legally cognizable harm. For breach, ask what a reasonable actor would do with foreseeable risk and practical precautions.",
+      "rule": "The Hand-style comparison weighs burden of precautions against probability and magnitude of loss. It is a tool, not a substitute for facts about the actual precaution, risk, and setting.",
+      "scene": "Vale compares the cost of a cargo shield against a hologram of likely injuries. AX-7 asks whether the shield was feasible before the accident, not obvious afterward.",
+      "memory": "Name the precaution, probability, and severity before announcing breach.",
+      "hypo": [
+        "A low-cost shield would prevent cargo from drifting into a busy corridor. A carrier skips it and a crate hits a visitor. What proves breach?",
+        "Assess the reasonably foreseeable likelihood and severity of harm against the burden of the shield, using facts known before the event. Then separately prove causation and damages. The accident alone does not automatically prove negligent conduct.",
+        "If shielding would shut down emergency oxygen flow, the burden side changes materially."
+      ],
+      "id": "chapter-05",
+      "art": "/study-assets/study-art/orbit-05.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Custom and professional care",
+      "tag": "The scanner protocol",
+      "source": "v2",
+      "refresher": "Industry custom is evidence of reasonable care but usually does not conclusively set it. Professional negligence can use specialized standards, with jurisdiction-specific proof and informed-consent rules.",
+      "rule": "Compliance with custom may still be unreasonable; departure may be reasonable under circumstances. Medical or technical expertise may alter the applicable standard and require qualified evidence.",
+      "scene": "Every ship medic uses the old scanner, yet a known cheaper scan prevents a dangerous miss. Vale asks whether universal practice excuses the omission.",
+      "memory": "Custom is evidence, not an automatic verdict.",
+      "hypo": [
+        "A station clinic follows the usual scan protocol, although a simple second scan would catch a serious known failure mode. Is custom decisive?",
+        "Custom supports the clinic's position but is not necessarily dispositive. Examine the specific risk, burden, professional standard, and the governing jurisdiction's proof requirements. Do not assume the new scan is mandatory solely because it exists.",
+        "If the second scan creates substantial new risk or lacks validation, its reasonableness is less clear."
+      ],
+      "id": "chapter-06",
+      "art": "/study-assets/study-art/orbit-06.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Statutes and negligence per se",
+      "tag": "The crossing beacon",
+      "source": "v2",
+      "refresher": "Ask whether a safety rule supplies a standard of care, whether the plaintiff is in its protected class, whether the harm is the kind it aims to prevent, and whether a violation is excused.",
+      "rule": "Negligence per se addresses breach, not the full negligence claim. The plaintiff must still establish factual causation, scope of liability, and damages. Jurisdictions differ on how statutes affect breach.",
+      "scene": "A pilot ignores a glowing beacon at a rover crossing. AX-7 reads the beacon rule's purpose while Vale reconstructs how the collision happened.",
+      "memory": "Protected person, protected harm, violation, excuse—then causation.",
+      "hypo": [
+        "A dock rule requires warning lights at active cargo crossings. A carrier leaves them dark; a pedestrian rover is struck by a load. Analyze.",
+        "Check that the rover user is within the protected class and collision is the kind of harm the rule addresses. Test whether noncompliance was excused. Even if the statute supplies breach, prove that the dark lights factually and legally caused injury.",
+        "If the rover approached from a place no warning light could be seen, factual causation becomes contested."
+      ],
+      "id": "chapter-07",
+      "art": "/study-assets/study-art/orbit-07.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Res ipsa loquitur",
+      "tag": "The falling cargo",
+      "source": "v2",
+      "refresher": "When direct proof of the negligent act is missing, circumstantial evidence may permit an inference if the kind of event ordinarily does not occur without negligence and the defendant is sufficiently linked to its cause.",
+      "rule": "Control, other plausible causes, and the event's ordinary character matter; modern formulations vary. The doctrine generally permits an inference rather than automatically winning the case.",
+      "scene": "A sealed cargo crane drops a crate onto an empty dock. Mira and AX-7 inspect maintenance logs and ask who controlled the crane's critical components.",
+      "memory": "The event speaks only after alternative explanations are tested.",
+      "hypo": [
+        "A sealed lift in a station's exclusive maintenance area drops a crate. No one saw the mechanism fail. May a visitor reach a jury?",
+        "A falling crate from equipment normally maintained by defendant may support a negligence inference if such events ordinarily imply negligence and competing causes are sufficiently addressed. It does not replace proof that the crate caused the visitor's harm.",
+        "If an independent saboteur controlled the lift immediately before the fall, the inference weakens."
+      ],
+      "id": "chapter-08",
+      "art": "/study-assets/study-art/orbit-08.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Factual causation",
+      "tag": "The reactor sequence",
+      "source": "v2",
+      "refresher": "Ask whether the harm would have occurred without the defendant's conduct; when multiple sufficient causes complicate that test, apply the jurisdiction's alternative formulation.",
+      "rule": "Cause in fact requires evidence connecting conduct to harm, not merely temporal order. Multiple sufficient causes, alternative liability, and loss of chance each require separate doctrinal treatment.",
+      "scene": "Two drones spark near a reactor. Vale slows the recording frame by frame; AX-7 asks whether either spark alone would have produced the same fire.",
+      "memory": "Run the counterfactual, then check whether concurrent causes break it.",
+      "hypo": [
+        "Two repair drones negligently emit sparks into the same fuel cloud at the same instant. Either spark alone would have ignited it. Can each escape under a simple but-for test?",
+        "A rigid but-for test gives a misleading answer for concurrent sufficient causes. Analyze the applicable multiple-sufficient-causes rule and whether each spark was a factual cause, then separately address scope and apportionment.",
+        "If only one spark could ignite the cloud but no one knows which, analyze proof and any alternative-liability rule instead."
+      ],
+      "id": "chapter-09",
+      "art": "/study-assets/study-art/orbit-09.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Scope of liability",
+      "tag": "The chain through space",
+      "source": "v2",
+      "refresher": "After factual cause, ask whether this harm falls within the risks that made the conduct negligent. Intervening events and remoteness belong in that analysis.",
+      "rule": "Foreseeability, type of harm, and intervening conduct can shape the scope of liability. Different formulations exist; avoid treating every later event as an automatic superseding cause.",
+      "scene": "A routine docking bump leads through an odd sequence of debris and maneuvers. The adjudicator highlights the foreseeable collision risk and the stranger asteroid detour.",
+      "memory": "A causal chain can be real yet outside the risk that made the act careless.",
+      "hypo": [
+        "A pilot negligently blocks an emergency route. A rescue vehicle diverts and injures a pedestrian. Is the pilot within the scope of liability?",
+        "A rescue diversion can be among the foreseeable risks of blocking an emergency route. Prove factual causation and evaluate whether the resulting injury is within the risk, including any extraordinary intervening event. Jurisdiction-specific rules control.",
+        "If a wholly unrelated intentional attack occurs hours later at the diversion site, the scope argument is much weaker."
+      ],
+      "id": "chapter-10",
+      "art": "/study-assets/study-art/orbit-10.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Duty to act and rescue",
+      "tag": "The distress signal",
+      "source": "v3",
+      "refresher": "Distinguish creating a risk from merely failing to help. There is usually no general duty to rescue, but relationships, undertakings, prior conduct, and statutes can create duties.",
+      "rule": "Misfeasance creates or increases danger; nonfeasance is failure to aid. Special relationships or voluntary undertakings may support a duty, and the exact scope depends on the jurisdiction.",
+      "scene": "Vale sees a rover stalled beyond a station gate. AX-7 asks whether the station caused the hazard, promised rescue, or had a special relationship with the crew.",
+      "memory": "Ask who made the danger, who undertook help, and who depended on whom.",
+      "hypo": [
+        "A station employee sees an unrelated rover stranded but does nothing. The station earlier announced a rescue service and the rover relied on it. Duty?",
+        "Mere observation may not create a general rescue duty. The announced and relied-on undertaking may, depending on its scope and whether reliance or increased risk is shown. Identify the exact conduct and jurisdictional standard.",
+        "If the station's own drone disabled the rover, the created-risk theory is stronger."
+      ],
+      "id": "chapter-11",
+      "art": "/study-assets/study-art/orbit-11.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Premises and visitors",
+      "tag": "The loose deck plate",
+      "source": "v3",
+      "refresher": "Identify who controlled the premises, why the visitor entered, what hazard was known or discoverable, and which jurisdictional duty framework governs.",
+      "rule": "Some jurisdictions use invitee, licensee, and trespasser categories; others use a general reasonable-care approach or modified rules. Open-and-obvious hazards, children, recreation statutes, and third-party acts need separate attention.",
+      "scene": "A visitor steps onto a loose plate at a public spaceport. Mira checks inspection logs while AX-7 asks whether the plate was visible and who controlled the walkway.",
+      "memory": "Control, visitor purpose, hazard, notice, and applicable framework.",
+      "hypo": [
+        "A paying visitor trips over a loose floor plate the operator's crew reported yesterday. What matters?",
+        "The visitor's status and operator's control, notice, opportunity to repair or warn, and visibility of the hazard all matter. Apply the jurisdiction's premises framework, then prove causation and damages.",
+        "If the platform is opened free for recreation, a specific recreational-use statute may alter the duty."
+      ],
+      "id": "chapter-12",
+      "art": "/study-assets/study-art/orbit-12.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Consent and protective privileges",
+      "tag": "The shield exception",
+      "source": "v1",
+      "refresher": "Consent can authorize contact within its scope. Self-defense, defense of others or property, and necessity may justify conduct, but each has limits of reasonable belief, force, and scope.",
+      "rule": "Consent may be express or implied and can be limited or withdrawn. Protective force must be proportionate to the threatened harm; deadly force solely to protect property is generally impermissible. Necessity has distinct public and private forms.",
+      "scene": "Two cadets agree to a padded duel. A third activates a shield to stop an apparent attack. Vale asks what conduct was agreed to and how much force was needed.",
+      "memory": "Privilege is a boundary: who agreed, what threat, what force, what necessity?",
+      "hypo": [
+        "During a consented training duel, one cadet uses a prohibited live blade after the other signals stop. Can the blade user invoke consent?",
+        "Consent to padded sparring does not necessarily extend to a live blade, and withdrawal matters. Test any self-defense claim against reasonable belief and proportionality. The facts may support battery.",
+        "If the other cadet unexpectedly draws a live blade first, reasonable defensive force becomes a stronger argument."
+      ],
+      "id": "chapter-13",
+      "art": "/study-assets/study-art/orbit-13.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Comparative fault and assumption of risk",
+      "tag": "Two distracted pilots",
+      "source": "v3",
+      "refresher": "Identify each party's causal negligence, the jurisdiction's comparative-fault rule, and any distinct assumption-of-risk doctrine. Do not apply one state's threshold everywhere.",
+      "rule": "Comparative fault can reduce or bar recovery depending on the jurisdiction and percentages. Express risk agreements and implied risk acceptance may be analyzed separately; consent to a risk is not always consent to negligence.",
+      "scene": "Two hovercraft pilots glance away from their dashboards before a collision. The adjudicator assigns separate fault shares instead of treating one mistake as a full defense.",
+      "memory": "Allocate causal fault under the chosen jurisdiction's rule.",
+      "hypo": [
+        "A delivery pilot ignores a warning, while another pilot fails to activate an inexpensive collision sensor. Both contribute to a crash. What next?",
+        "Prove each actor's duty, breach, and causal contribution, then apply the jurisdiction's fault allocation rule. In Kansas, recovery and proportion depend on K.S.A. 60-258a; other states differ. Examine any genuine risk agreement separately.",
+        "If one pilot's supposed fault did not causally contribute, it should not be assigned merely because the conduct looked careless."
+      ],
+      "id": "chapter-14",
+      "art": "/study-assets/study-art/orbit-14.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Employers and multiple actors",
+      "tag": "The responsibility network",
+      "source": "v3",
+      "refresher": "When several people or entities may be liable, separate each actor's direct conduct from vicarious responsibility and allocation among responsible parties.",
+      "rule": "Respondeat superior can make an employer liable for an employee's tort within scope of employment. Independent-contractor and nondelegable-duty exceptions require care. Joint, several, contribution, and indemnity rules differ by jurisdiction.",
+      "scene": "A cargo driver, station employer, and two maintenance drones appear on the tribunal's hologram. Mira draws one line for each direct act and another for employment.",
+      "memory": "Name each actor, each theory, and each liability link.",
+      "hypo": [
+        "An employed courier negligently crashes while delivering station cargo. A contractor's defective repair also contributed. Who might answer?",
+        "Analyze the courier's direct negligence and whether delivery fell within scope of employment. Assess the contractor's own breach and causation. Then apply jurisdictional rules on allocation and any basis for station direct negligence or nondelegable duty.",
+        "If the courier was on a purely personal detour unrelated to work, vicarious liability becomes more contested."
+      ],
+      "id": "chapter-15",
+      "art": "/study-assets/study-art/orbit-15.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Damages and the verdict",
+      "tag": "The final holo-ledger",
+      "source": "final",
+      "refresher": "A tort remedy must be tied to a legally recognized injury and supported by proof. Separate economic loss, noneconomic harm, future loss, and any exceptional punitive claim.",
+      "rule": "Compensatory damages aim to repair proven loss, with causation and reasonable certainty. Mitigation, collateral-source rules, caps, and punitive standards vary. Do not add incompatible or duplicate awards.",
+      "scene": "Vale arranges repair invoices, treatment records, and a future-care projection. AX-7 challenges assumptions; the adjudicator asks which losses the tort actually caused.",
+      "memory": "Connect each line of the verdict to harm, proof, and legal limit.",
+      "hypo": [
+        "A collision causes a broken arm, six weeks of missed work, and claimed future therapy. The plaintiff also seeks punitive damages for ordinary carelessness. What should be tested?",
+        "Document medical, wage, and future-care losses; connect each to the collision and establish a sound future estimate. Noneconomic harm may be available under governing law. Ordinary negligence does not automatically support punitive damages; a heightened standard generally applies.",
+        "If the defendant consciously disregarded a known grave hazard, the punitive inquiry changes, subject to state law."
+      ],
+      "id": "chapter-16",
+      "art": "/study-assets/study-art/orbit-16.webp"
+    }
+  ]
+}

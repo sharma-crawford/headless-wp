@@ -1,0 +1,424 @@
+{
+  "title": "The Infernal Bar",
+  "intro": "Contracts taught by demon lawyers: find the bargain, read the fine print, argue the defense, and account for the loss. Each chapter starts with a quick refresher and ends with a changed-facts problem and graded practice.",
+  "sources": {
+    "v1": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v2": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v3": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v4": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    }
+  },
+  "sections": [
+    {
+      "volume": "I",
+      "title": "Choose the law; name the remedy",
+      "tag": "The first gate",
+      "source": "v1",
+      "refresher": "First classify the transaction. Article 2 ordinarily governs sales of goods; common-law principles generally govern services and land. Then identify the promise, claimed breach, and requested remedy.",
+      "rules": [
+        [
+          "Goods or services?",
+          "Goods are movable things. A mixed transaction calls for the jurisdiction's governing test, often its predominant purpose. Do not assume that a service contract follows Article 2."
+        ],
+        [
+          "What does the claimant want?",
+          "Expectation aims at the value of the promised performance; reliance addresses expenditures made because of the promise; restitution addresses a benefit conferred. The remedy shapes what facts matter."
+        ]
+      ],
+      "scene": "Advocate Vesper rolls a carriage deed and a crate of enchanted ink onto Judge Cinder's desk. 'We cannot argue the breach,' she says, 'until we know which bargain governs.'",
+      "hypo": [
+        "A scribe agrees to design a sigil and deliver 200 printed seals for one price. The seals fail, but the design was sound. What law and remedy questions start the analysis?",
+        "Identify the mixed goods/services transaction and apply the jurisdiction's mixed-contract approach before choosing Article 2 or common law. Separate the failed seals from the successful design; then ask what performance value, expenditures, or conferred benefit is proved.",
+        "If the contract separately prices the design and the seals, analyze whether the obligations can be treated separately."
+      ],
+      "id": "chapter-01",
+      "art": "/study-assets/study-art/infernal-01.webp"
+    },
+    {
+      "volume": "I",
+      "title": "Consideration: the bargain",
+      "tag": "The exchange ritual",
+      "source": "v1",
+      "refresher": "Ask whether each side's promise or performance was sought in exchange for the other's. A hard bargain can be sufficient; a gift, past act, or preexisting duty raises a different problem.",
+      "rules": [
+        [
+          "Bargained-for exchange",
+          "Consideration may be a return promise, an act, or forbearance. The promise must induce the exchange, not merely accompany it."
+        ],
+        [
+          "Past acts and adequacy",
+          "An earlier act ordinarily is not newly bargained-for consideration. Courts usually do not weigh the economic adequacy of a real exchange."
+        ]
+      ],
+      "scene": "Counsel Ash offers a ruby to Vesper for abstaining from a forbidden spell. Judge Cinder asks whether the promise caused the restraint or merely thanked her afterward.",
+      "hypo": [
+        "A demon promises 100 coins after a familiar already saved his library. The next day he offers 10 coins if the familiar delivers a new manuscript. Which promise has conventional consideration?",
+        "The rescue preceded the first promise and was not bargained for; examine any narrow alternative basis separately. Delivery of the new manuscript is sought in exchange for the second promise and ordinarily supplies consideration.",
+        "If the familiar promised the rescue in exchange for payment before acting, the first bargain changes."
+      ],
+      "id": "chapter-02",
+      "art": "/study-assets/study-art/infernal-02.webp"
+    },
+    {
+      "volume": "I",
+      "title": "Illusory promises and good faith",
+      "tag": "The hollow oath",
+      "source": "v1",
+      "refresher": "A party must be meaningfully bound. A promise with unlimited discretion may be illusory, but an implied good-faith or reasonable-efforts duty can supply real obligation.",
+      "rules": [
+        [
+          "Apparent discretion",
+          "Ask what performance the promisor actually committed to provide. A stated condition can differ from an unrestricted option to perform nothing."
+        ],
+        [
+          "Implied obligation",
+          "Requirements, output, satisfaction, and exclusive-dealing arrangements can carry good-faith or efforts limits. Identify the source of that limit rather than inventing one."
+        ]
+      ],
+      "scene": "The indigo advocate says, 'I will buy as many potion bottles as I desire.' Vesper opens the ledger: 'Is desire bounded by a genuine requirements business?'",
+      "hypo": [
+        "A retailer promises to buy all the salamander oil it needs from one supplier, then orders none after secretly switching to a cheaper rival. Is the promise empty?",
+        "A genuine requirements contract is normally constrained by good faith. Zero orders are not automatically a breach, but the secret switch to evade the bargain supports one. Ask whether the retailer's requirements truly ended.",
+        "If a fire permanently closes the retailer's shop, zero good-faith requirements may be permissible."
+      ],
+      "id": "chapter-03",
+      "art": "/study-assets/study-art/infernal-03.webp"
+    },
+    {
+      "volume": "I",
+      "title": "Reliance and restitution",
+      "tag": "Promises beyond exchange",
+      "source": "v1",
+      "refresher": "If consideration fails, test promissory estoppel and restitution separately. Reliance focuses on a promise and induced action; restitution focuses on an unjustly retained benefit.",
+      "rules": [
+        [
+          "Promissory estoppel",
+          "Identify a promise, reasonably foreseeable and actual reliance, and whether enforcement is needed to avoid injustice. Relief may be limited as justice requires."
+        ],
+        [
+          "Restitution",
+          "Ask whether one party conferred a benefit and whether retaining it without payment would be unjust. This is not simply a way to recover every disappointed hope."
+        ]
+      ],
+      "scene": "A bridge-builder trusted an infernal duke's promise and completed half a span. Demon counsel separates the builder's reliance costs from the duke's benefit.",
+      "hypo": [
+        "A duke promises a mason a commission. Relying on it, she rents a kiln and begins work. The duke cancels before receiving any stone. Which theories deserve attention?",
+        "Without a bargain, analyze whether the promise reasonably induced the kiln expense and whether relief is needed to avoid injustice. Restitution is weaker if the duke received no benefit. If there was an accepted contract, analyze contract remedies first.",
+        "If the duke keeps completed stonework, restitution gains a concrete conferred benefit."
+      ],
+      "id": "chapter-04",
+      "art": "/study-assets/study-art/infernal-04.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Offer and objective assent",
+      "tag": "The invitation",
+      "source": "v2",
+      "refresher": "An offer gives the offeree reason to believe that assent will conclude the bargain. Interpret words and conduct objectively, considering certainty and whether further approval was reserved.",
+      "rules": [
+        [
+          "Power of acceptance",
+          "Distinguish a committed proposal from preliminary negotiation, invitation to bid, or advertisement. Specificity and language of commitment matter."
+        ],
+        [
+          "Objective manifestation",
+          "A secret intention ordinarily does not control if outward words and acts reasonably convey assent. Context can show that a joke or negotiation was apparent."
+        ]
+      ],
+      "scene": "Vesper sets a scroll on the table: 'One obsidian key for 40 coins, accepted by sundown.' Her counterpart asks whether a signature is still reserved.",
+      "hypo": [
+        "A dealer posts 'Rare phoenix feather, 40 coins; inquire within.' A buyer says 'I accept' before the dealer checks stock. Contract?",
+        "The posting looks like an invitation to negotiate, not necessarily an offer empowering immediate acceptance. Examine specificity, quantity, and whether the dealer manifested commitment. The buyer's statement cannot accept a nonexistent offer.",
+        "If the dealer privately sends the buyer a signed message promising one identified feather for 40 coins until dusk, assent may complete the deal."
+      ],
+      "id": "chapter-05",
+      "art": "/study-assets/study-art/infernal-05.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Revocation, lapse, and options",
+      "tag": "When the portal closes",
+      "source": "v2",
+      "refresher": "Track a timeline: offers may end through revocation, rejection, counteroffer, lapse, or other events. An option or UCC firm offer can keep the power of acceptance open despite attempted revocation.",
+      "rules": [
+        [
+          "Effective termination",
+          "Ordinary revocation generally must reach the offeree before acceptance; reliable indirect notice can matter. An offer also lapses after its stated or reasonable time."
+        ],
+        [
+          "Irrevocability",
+          "A supported option, certain reliance, beginning invited performance, or a qualifying Article 2 firm offer may limit revocation. Each has its own requirements."
+        ]
+      ],
+      "scene": "The seller sends a raven to revoke a rune sale; the buyer has already paid for an option. Judge Cinder checks the clocks, then the option seal.",
+      "hypo": [
+        "A merchant offers a cauldron until Friday and revokes on Wednesday. The buyer paid 5 coins for a signed option through Friday. Can the buyer accept Thursday?",
+        "A supported option ordinarily preserves the buyer's power of acceptance through its term. The attempted revocation should not end it. Check the precise option language and timely acceptance.",
+        "If no option consideration or other basis for irrevocability exists, ordinary revocation received before acceptance may terminate the offer."
+      ],
+      "id": "chapter-06",
+      "art": "/study-assets/study-art/infernal-06.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Acceptance and the mailbox",
+      "tag": "The return spell",
+      "source": "v2",
+      "refresher": "Accept in the manner the offer invites. For an invited acceptance by noninstant communication, the mailbox rule can make properly dispatched acceptance effective on sending; options and other exceptions require care.",
+      "rules": [
+        [
+          "Mode of acceptance",
+          "An offer may invite promise, performance, or either. If it prescribes an exclusive method, follow it. Silence usually is not acceptance absent a recognized exception."
+        ],
+        [
+          "Timing",
+          "Distinguish acceptance from revocation and rejection. Proper dispatch matters; an option acceptance is generally effective on receipt, unless its terms provide otherwise."
+        ]
+      ],
+      "scene": "A horned courier releases a glowing acceptance letter before the seller's raven brings revocation. Vesper pins both times to the trial board.",
+      "hypo": [
+        "A buyer properly mails acceptance of an ordinary goods offer Monday. The seller's revocation reaches the buyer Tuesday. The acceptance arrives Thursday. Contract?",
+        "If the offer invited mail acceptance and no exception applies, acceptance can be effective on proper dispatch Monday. The revocation received Tuesday is too late. Confirm the offer did not require receipt or a different method.",
+        "If this was an option contract requiring receipt before expiration, dispatch alone may not be enough."
+      ],
+      "id": "chapter-07",
+      "art": "/study-assets/study-art/infernal-07.webp"
+    },
+    {
+      "volume": "II",
+      "title": "Forms and UCC 2-207",
+      "tag": "The battle of scrolls",
+      "source": "v2",
+      "refresher": "For goods, an acceptance can form a contract despite additional or different terms if it is definite and seasonable and not expressly conditional. Then analyze which terms govern.",
+      "rules": [
+        [
+          "Formation first",
+          "Ask whether the response is a definite and seasonable expression of acceptance, or expressly conditional on assent to new terms. Conduct can form a contract even if writings do not."
+        ],
+        [
+          "Terms second",
+          "Additional terms are proposals; between merchants, some may enter unless an exception applies. Different terms and conduct contracts require careful jurisdiction-specific analysis."
+        ]
+      ],
+      "scene": "Two demon firms exchange scrolls: one has a warranty; the other a disclaimer. Judge Cinder separates whether they made a deal from which clause survived.",
+      "hypo": [
+        "A merchant buyer orders 100 enchanted lamps. Seller's acknowledgment agrees to quantity and price but adds arbitration. Both ship and pay. Is there a contract, and is arbitration included?",
+        "The acknowledgment may be a definite acceptance under 2-207(1) if not expressly conditional. Then analyze arbitration as an additional term, merchant status, material alteration, objection, and applicable jurisdictional approach. Do not assume the added clause wins just because the goods shipped.",
+        "If the acknowledgment expressly makes acceptance conditional on arbitration and buyer never assents, the parties' conduct may still establish a contract, with terms determined under 2-207(3)."
+      ],
+      "id": "chapter-08",
+      "art": "/study-assets/study-art/infernal-08.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Capacity, duress, and undue influence",
+      "tag": "A signature under shadow",
+      "source": "v3",
+      "refresher": "A signature does not end the inquiry. Ask whether a party had legal capacity and whether improper pressure or domination made assent voidable.",
+      "rules": [
+        [
+          "Capacity",
+          "Minority and mental incapacity can make agreements voidable under applicable rules. Identify the particular legal standard and possible duties after avoidance."
+        ],
+        [
+          "Improper pressure",
+          "Duress tests an improper threat and absence of a reasonable alternative; undue influence looks at unfair persuasion of a vulnerable party in a relationship of influence."
+        ]
+      ],
+      "scene": "Vesper pulls a client away from a looming creditor who threatens to shut the only portal unless a new price is signed.",
+      "hypo": [
+        "A potion supplier threatens to stop a promised delivery needed to save the buyer's business unless the buyer signs a 50% increase immediately. The buyer has no alternate source. Defense?",
+        "Analyze whether the threatened breach is improper, whether the buyer had a reasonable alternative, and whether the threat induced assent. Consider economic duress and the separate rules for modification. A mere hard bargain without improper threat is different.",
+        "If the supplier genuinely faces unexpected costs and the parties voluntarily negotiate a fair change, the pressure analysis weakens."
+      ],
+      "id": "chapter-09",
+      "art": "/study-assets/study-art/infernal-09.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Mistake and allocated risk",
+      "tag": "The cracked crystal",
+      "source": "v3",
+      "refresher": "Identify whether the mistaken assumption existed at contracting, whether it was basic and material, and who bore its risk. Reformation for a drafting error is distinct from avoidance.",
+      "rules": [
+        [
+          "Mutual or unilateral",
+          "Mutual mistake concerns both parties' shared error about a basic assumption with material effect. Unilateral mistake has additional limits, including serious hardship or the other's knowledge/fault."
+        ],
+        [
+          "Risk and remedy",
+          "A party may bear risk by agreement, conscious ignorance, or judicial allocation. Avoidance and reformation answer different problems."
+        ]
+      ],
+      "scene": "Both advocates thought a jewel was unbroken; Judge Cinder turns it and reveals a hidden fissure. The contract's 'as is' seal becomes decisive.",
+      "hypo": [
+        "Both sides sell a supposedly flawless dragon crystal for 1,000 coins. It was cracked before sale, making it worth 50. Contract allocates unknown-defect risk to buyer. Can buyer avoid?",
+        "The error concerns an existing fact, appears basic, and materially affects value. But the agreed allocation of unknown-defect risk may bar avoidance. Read the risk clause carefully and analyze any separate misrepresentation.",
+        "If seller knew of and concealed the crack, misrepresentation becomes an additional, potentially stronger theory."
+      ],
+      "id": "chapter-10",
+      "art": "/study-assets/study-art/infernal-10.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Misrepresentation and unconscionability",
+      "tag": "The concealed rune",
+      "source": "v3",
+      "refresher": "Examine false assertions or concealment that induced assent, then separately consider whether the process and terms were so unfair as to trigger unconscionability.",
+      "rules": [
+        [
+          "Misrepresentation",
+          "Identify the false assertion, materiality or fraud, justified reliance, and effect on assent. Nondisclosure can matter in recognized circumstances; not every omission is actionable."
+        ],
+        [
+          "Unconscionability",
+          "Look at the contracting process and the substance of the challenged term. Available remedies may target the clause rather than the entire agreement."
+        ]
+      ],
+      "scene": "An artifact dealer paints over a warning rune. Vesper scrapes away the paint while another advocate unfolds an onerous hidden clause.",
+      "hypo": [
+        "A seller says a wand is safe, despite a known unstable core, and places a sweeping liability waiver in fine print. Buyer signs after relying on the safety claim. Analyze.",
+        "Test a knowingly false material assertion and justified reliance. Examine the waiver's disclosure, bargaining context, and substance separately. The false statement may support avoidance or other relief; the waiver's effect depends on governing law.",
+        "If the buyer discovered the defect before signing and expressly accepted it, reliance and allocation arguments change."
+      ],
+      "id": "chapter-11",
+      "art": "/study-assets/study-art/infernal-11.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Interpretation and parol evidence",
+      "tag": "What the parchment means",
+      "source": "v3",
+      "refresher": "First interpret the agreement's words in context; then decide whether prior or contemporaneous evidence may add to or contradict a final writing. Keep interpretation and integration distinct.",
+      "rules": [
+        [
+          "Whose meaning?",
+          "Read language as a whole, with relevant course of performance, dealing, and usage. If parties attached different meanings, knowledge and reason-to-know can matter."
+        ],
+        [
+          "Integrated writing",
+          "Determine whether the writing was final and whether it was complete. Prior or contemporaneous terms generally cannot contradict a final writing; consistent additional terms may be treated differently, and exceptions remain."
+        ]
+      ],
+      "scene": "Demon counsel lays three prior scrolls beside the signed parchment. Judge Cinder asks whether they explain a word or try to rewrite the final bargain.",
+      "hypo": [
+        "A signed sale says delivery at 'the old gate.' Both parties used that phrase in earlier dealings for the west gate. Seller now insists on east gate. Can prior dealings matter?",
+        "Prior dealings may illuminate the phrase's meaning. This is an interpretation question, not automatically a forbidden attempt to add a contradictory term. Still examine the writing's integration and governing law.",
+        "If a side letter requires a different delivery date that contradicts an unambiguous final date, the parol-evidence problem is sharper."
+      ],
+      "id": "chapter-12",
+      "art": "/study-assets/study-art/infernal-12.webp"
+    },
+    {
+      "volume": "III",
+      "title": "Warranties in a sale of goods",
+      "tag": "The promised enchantment",
+      "source": "v3",
+      "refresher": "For goods, identify any express affirmation, description, or sample that becomes part of the basis of the bargain. Then test implied merchantability or fitness and any effective disclaimer.",
+      "rules": [
+        [
+          "Express warranty",
+          "Specific factual promises, descriptions, and samples can create express warranties; mere opinion or puffery ordinarily does not."
+        ],
+        [
+          "Implied and disclaimed",
+          "Merchantability concerns ordinary fitness from a merchant seller. Particular-purpose fitness concerns seller knowledge of a buyer's special purpose and reliance. Disclaimer rules differ by warranty and wording."
+        ]
+      ],
+      "scene": "Vesper tests a potion kettle against the merchant's glowing demonstration. It boils soup but fails the promised moonlight spell.",
+      "hypo": [
+        "A merchant says its kettle 'will keep medicine at exactly 60 degrees.' Buyer relies on that feature; kettle heats normally but varies widely. What warranty issues arise?",
+        "The specific temperature claim may be an express warranty. Ordinary heating does not answer whether the promised feature was delivered. Also examine any implied fitness theory if seller knew the buyer's particular purpose and reliance, plus the effect of any disclaimer.",
+        "If the seller merely said 'best kettle in the realm,' that sounds more like opinion or puffery."
+      ],
+      "id": "chapter-13",
+      "art": "/study-assets/study-art/infernal-13.webp"
+    },
+    {
+      "volume": "IV",
+      "title": "Performance, conditions, and breach",
+      "tag": "The ledgers of performance",
+      "source": "v4",
+      "refresher": "Identify each promised duty, any condition to its due date, and the sequence of performance. Then classify the failure: minor, material, total, or anticipatory.",
+      "rules": [
+        [
+          "Conditions and promises",
+          "A condition affects when a duty arises; breach of a promise may produce damages. Distinguish a true condition from a mere timing term and consider prevention or waiver."
+        ],
+        [
+          "Material breach",
+          "Assess the gravity of the shortfall, possibility of cure, and benefit lost. A material breach can suspend the other side's duty; substantial performance can leave a damages claim."
+        ]
+      ],
+      "scene": "Two demon advocates compare delivery ledgers. One received 99 of 100 seals; the other received none. Judge Cinder refuses to call them the same failure.",
+      "hypo": [
+        "A builder finishes a tower on time but uses a comparable blue tile instead of specified green tile. Owner refuses the entire price. What should counsel analyze?",
+        "Determine whether the tile term is an express condition or a promise, then assess materiality and substantial performance. A nonmaterial deviation can still support damages, often measured with proportionality and economic-waste concerns.",
+        "If the owner made green tile an unmistakable condition essential to a public ritual, the analysis changes."
+      ],
+      "id": "chapter-14",
+      "art": "/study-assets/study-art/infernal-14.webp"
+    },
+    {
+      "volume": "IV",
+      "title": "Excuse: mistake, impracticability, frustration",
+      "tag": "When the ritual fails",
+      "source": "v4",
+      "refresher": "Ask when the disruptive fact arose. Existing mistaken assumptions point toward mistake; later events preventing performance toward impracticability; later events destroying the transaction's principal purpose toward frustration.",
+      "rules": [
+        [
+          "Impracticability",
+          "An extraordinary later event may excuse performance when a basic assumption failed and the party did not bear the risk. Increased expense alone ordinarily is insufficient."
+        ],
+        [
+          "Frustration of purpose",
+          "Performance may remain possible, but the principal shared purpose is substantially frustrated by an event whose risk the party did not bear."
+        ]
+      ],
+      "scene": "A storm destroys the only bridge where the parties planned to stage a tournament. Vesper asks whether a spell cannot be cast or merely has no point.",
+      "hypo": [
+        "A prince rents a balcony solely to view a once-only dragon parade. The parade is canceled, but the balcony remains usable. Which doctrine is more apt?",
+        "The owner can still provide the balcony, so impracticability is weak. Frustration may apply if viewing the parade was the known principal purpose, the cancellation substantially destroys it, and the prince did not assume the risk.",
+        "If the contract says rent is due even if the parade is canceled, that risk allocation is crucial."
+      ],
+      "id": "chapter-15",
+      "art": "/study-assets/study-art/infernal-15.webp"
+    },
+    {
+      "volume": "IV",
+      "title": "Remedies and their limits",
+      "tag": "The final accounting",
+      "source": "v4",
+      "refresher": "Choose the protected interest, calculate loss, and then test certainty, foreseeability, mitigation, and any agreed damages term. Explain why each item belongs in the award.",
+      "rules": [
+        [
+          "Measure the loss",
+          "Expectation generally puts the injured party in the position performance would have produced. Reliance and restitution are alternatives for different interests; avoid double recovery."
+        ],
+        [
+          "Limits and agreed terms",
+          "Consequential loss must satisfy foreseeability, loss must be proved with reasonable certainty, and the claimant must reasonably mitigate. Liquidated damages require an enforceable agreed measure rather than a penalty."
+        ]
+      ],
+      "scene": "Judge Cinder sets three brass scales before the demon lawyers: promised value, wasted reliance, and benefit retained. 'Show me the receipts,' she orders.",
+      "hypo": [
+        "A publisher breaches a contract to deliver a spellbook. The buyer pays 20 extra coins for a substitute and claims 500 in lost festival sales never mentioned to publisher. What can be recovered?",
+        "The 20-coin cover difference is a natural starting point, subject to the governing sales rules. The 500-coin consequential claim needs proof of foreseeability at contracting, causation, reasonable certainty, and mitigation. Do not assume all claimed profit is recoverable.",
+        "If the publisher knew the book was for a named festival booth and buyer has reliable sales records, the consequential claim improves."
+      ],
+      "id": "chapter-16",
+      "art": "/study-assets/study-art/infernal-16.webp"
+    }
+  ]
+}

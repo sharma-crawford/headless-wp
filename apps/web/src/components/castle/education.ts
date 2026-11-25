@@ -27,5 +27,6 @@ const localResources: Record<string, string> = {
 };
 
 export function educationHref(path: string) {
+  if (path.startsWith("/what-like-its-hard/")) return path.replace("/what-like-its-hard/", "/study/");
   return localResources[path] ?? `https://legal-renaissance.com${path}`;
 }

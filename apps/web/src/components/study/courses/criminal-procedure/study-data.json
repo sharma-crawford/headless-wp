@@ -1,0 +1,2039 @@
+{
+  "sections": [
+    {
+      "id": "foundations",
+      "title": "Build the shield wall: constitutional foundations",
+      "tagline": "Rights limit the method, not just the outcome.",
+      "points": [
+        {
+          "title": "Follow the case",
+          "text": "Investigation leads to arrest, charging, initial judicial proceedings, discovery and motions, then a plea or trial, sentencing, and review. These stages have different standards. Probable cause to arrest is not proof beyond a reasonable doubt."
+        },
+        {
+          "title": "Know each defender",
+          "text": "The Fourth Amendment regulates searches and seizures; the Fifth protects against compelled self-incrimination and double jeopardy; the Sixth addresses trial rights and counsel; the Eighth limits punishment. Fourteenth Amendment due process carries most of these protections into state prosecutions."
+        },
+        {
+          "title": "A national floor",
+          "text": "Selective incorporation applies particular Bill of Rights guarantees to the states. State constitutions and statutes may provide more protection. The Fifth Amendment grand-jury requirement has not been incorporated; a state need not use the federal charging method."
+        },
+        {
+          "title": "Rights need a remedy",
+          "text": "A constitutional violation does not automatically dismiss a prosecution. Identify the affected right, procedural posture, preserved issue, and available remedy. A civil ruling allowing allegations to proceed is not a finding that those allegations are proven."
+        }
+      ],
+      "example": "A village watch arrests a trader. Ask separately whether the arrest was supported, whether counsel was required at the relevant stage, and what the government must prove at trial.",
+      "tipMale": "Name the amendment before swinging the argument. Different rights protect different stages.",
+      "tipFemale": "Keep the federal floor and any stronger state protection on separate lines.",
+      "terms": [
+        {
+          "term": "Incorporation",
+          "definition": "Applying a Bill of Rights protection to state and local governments through the Fourteenth Amendment."
+        },
+        {
+          "term": "Due process",
+          "definition": "Constitutional limits requiring fair government procedures and protecting certain substantive interests."
+        },
+        {
+          "term": "Exculpatory evidence",
+          "definition": "Evidence favorable to the accused; material favorable evidence can trigger constitutional disclosure duties."
+        }
+      ],
+      "refs": [
+        "powell",
+        "duncan",
+        "timbs",
+        "constitution",
+        "brady"
+      ]
+    },
+    {
+      "id": "retroactivity",
+      "title": "Which cases get the new rule?",
+      "tagline": "Finality changes the route.",
+      "points": [
+        {
+          "title": "Direct review",
+          "text": "Under Griffith, new constitutional criminal-procedure rules apply to cases still pending on direct review or not yet final. The fact that trial already happened does not settle the question."
+        },
+        {
+          "title": "Collateral review",
+          "text": "A collateral challenge attacks a conviction outside the ordinary direct appeal. Under the Teague framework, new procedural rules generally do not reopen final convictions on federal habeas review."
+        },
+        {
+          "title": "Substance versus procedure",
+          "text": "A substantive rule narrows what conduct or which people may be punished, or removes a punishment from the government’s power. Such rules generally apply retroactively. A procedural rule changes how guilt or punishment is decided."
+        },
+        {
+          "title": "No watershed escape hatch",
+          "text": "Edwards ended the proposed watershed-procedure exception. It held Ramos nonretroactive on federal collateral review. States may use broader rules for their own collateral proceedings; other habeas restrictions also matter."
+        }
+      ],
+      "example": "Two defendants challenge nonunanimous serious-offense verdicts. One is on direct appeal; the other has a final conviction on federal habeas. The posture changes the retroactivity analysis.",
+      "tipMale": "Put the finality date on the map before choosing the doctrine.",
+      "tipFemale": "“Important new right” does not automatically mean “retroactive on federal habeas.”",
+      "terms": [
+        {
+          "term": "Direct review",
+          "definition": "The ordinary appellate review of a conviction before it becomes final."
+        },
+        {
+          "term": "Collateral review",
+          "definition": "A separate attack on an already final judgment, including habeas proceedings."
+        },
+        {
+          "term": "New rule",
+          "definition": "For this framework, a result not dictated by precedent when the conviction became final."
+        }
+      ],
+      "refs": [
+        "griffith",
+        "teague",
+        "edwards",
+        "ramos"
+      ]
+    },
+    {
+      "id": "search-framework",
+      "title": "What counts as a search?",
+      "tagline": "Check both privacy and property.",
+      "points": [
+        {
+          "title": "Government action",
+          "text": "The Fourth Amendment generally regulates the government and private people acting as its agents. A purely private search is different; later government expansion can raise a new issue."
+        },
+        {
+          "title": "Your protected interest",
+          "text": "A defendant normally must show an invasion of the defendant’s own protected interest. Being harmed by evidence against you is not enough. Ask about possession, use, privacy, property, and the circumstances."
+        },
+        {
+          "title": "Katz: privacy",
+          "text": "Ask whether the person actually sought privacy and whether the expectation is one society recognizes as reasonable. The familiar two-part formulation comes from Justice Harlan’s concurrence."
+        },
+        {
+          "title": "Jones: property",
+          "text": "A government physical intrusion on a protected person, house, paper, or effect to obtain information can also be a search. This test supplements Katz. Finding a search starts the reasonableness inquiry; it does not itself finish it."
+        }
+      ],
+      "example": "A watch officer secretly attaches a tracking rune to a traveler’s wagon. In the real-law analogy, analyze the physical intrusion to obtain information even if the travel occurs on public roads.",
+      "tipMale": "Use two doors: protected privacy and information-gathering intrusion.",
+      "tipFemale": "Ask “whose right?” A suppression motion cannot simply borrow someone else’s privacy.",
+      "terms": [
+        {
+          "term": "Search",
+          "definition": "A government intrusion that triggers Fourth Amendment search protection under an applicable privacy or property test."
+        },
+        {
+          "term": "Reasonable expectation of privacy",
+          "definition": "Privacy actually sought by a person and recognized as legitimate under the governing doctrine."
+        },
+        {
+          "term": "Protected effect",
+          "definition": "A personal item, such as a vehicle or bag, covered by the Fourth Amendment’s reference to effects."
+        }
+      ],
+      "refs": [
+        "katz",
+        "jones",
+        "rakas",
+        "jacobsen"
+      ]
+    },
+    {
+      "id": "home-and-curtilage",
+      "title": "Homes, fields, and what outsiders can see",
+      "tagline": "A fence is a fact, not a universal answer.",
+      "points": [
+        {
+          "title": "Home and curtilage",
+          "text": "The home receives especially strong protection. Curtilage is the area closely tied to domestic life. Dunn considers proximity, enclosure, use, and efforts to shield the area from observation; no single factor decides every case."
+        },
+        {
+          "title": "Open fields",
+          "text": "Oliver allows entry into open fields outside curtilage under federal Fourth Amendment doctrine despite fences or signs. That does not erase property law, state constitutional protections, or protections for a building on the land."
+        },
+        {
+          "title": "Looking from above",
+          "text": "Ciraolo allowed naked-eye observation from lawful public airspace. Florida v. Riley was fractured; lawful flight alone is not a universal license. Public use of the vantage and interference with domestic activity matter."
+        },
+        {
+          "title": "Technology and discarded items",
+          "text": "Kyllo treats certain technology not in general public use that reveals home-interior details as a search. Greenwood rejected a privacy claim in garbage left for collection outside curtilage. Neither means every modern sensor or every trash container is automatically unprotected."
+        }
+      ],
+      "example": "A chest on a sheltered domestic porch, a crop in a distant field, and a bag placed at the curb present different privacy questions. Describe the location before naming the rule.",
+      "tipMale": "PEEP: proximity, enclosure, everyday domestic use, protection from observation.",
+      "tipFemale": "Do not turn an old aircraft case into a blanket rule for every drone or sensor.",
+      "terms": [
+        {
+          "term": "Curtilage",
+          "definition": "The area immediately surrounding and associated with the home’s intimate domestic life."
+        },
+        {
+          "term": "Open fields",
+          "definition": "Land outside constitutionally protected curtilage; it need not be literally open or used as a field."
+        },
+        {
+          "term": "Sense-enhancing technology",
+          "definition": "Equipment that reveals information beyond ordinary unaided perception; its constitutional treatment depends on context."
+        }
+      ],
+      "refs": [
+        "oliver",
+        "dunn",
+        "ciraolo",
+        "florida-riley",
+        "kyllo",
+        "greenwood"
+      ]
+    },
+    {
+      "id": "information-and-tracking",
+      "title": "Informants, records, and digital trails",
+      "tagline": "One conversation is not a life’s location history.",
+      "points": [
+        {
+          "title": "False friends",
+          "text": "White permits use of an informant’s electronically relayed conversations with a suspect. Risk that a conversational partner will disclose what was said differs from government interception of a private exchange between others."
+        },
+        {
+          "title": "Third-party records",
+          "text": "Smith treated dialed phone numbers given to the phone company differently from call contents. Traditional doctrine often denies privacy in information voluntarily disclosed to businesses, but the type and depth of information matter."
+        },
+        {
+          "title": "Location in public and private",
+          "text": "Knotts involved limited beeper tracking along public roads. Karo distinguished monitoring that revealed a container inside a home. Jones separately addresses physical installation of a tracker."
+        },
+        {
+          "title": "Carpenter’s narrow holding",
+          "text": "Government acquisition of at least seven days of historical cell-site location records was a search and generally required a warrant. Carpenter did not decide every question about real-time tracking, tower dumps, or other business records."
+        }
+      ],
+      "example": "A messenger repeating your words differs from a company giving the watch a detailed record of your movements for weeks. Identify the actual information the government obtained.",
+      "tipMale": "Name the data: content, dialed numbers, bank records, or location history.",
+      "tipFemale": "Carpenter is a limit on automatic third-party reasoning, not the end of every third-party rule.",
+      "terms": [
+        {
+          "term": "Third-party doctrine",
+          "definition": "The traditional rule often denying Fourth Amendment privacy in information voluntarily shared with another."
+        },
+        {
+          "term": "CSLI",
+          "definition": "Cell-site location information generated through a phone’s connections with cellular infrastructure."
+        },
+        {
+          "term": "Assumption of risk",
+          "definition": "In informant cases, the risk that a person you speak to will reveal the conversation to authorities."
+        }
+      ],
+      "refs": [
+        "white",
+        "smith",
+        "knotts",
+        "karo",
+        "carpenter"
+      ]
+    },
+    {
+      "id": "stops-and-dogs",
+      "title": "Stops, frisks, and the hound at the gate",
+      "tagline": "Separate the stop, the sniff, and the search.",
+      "points": [
+        {
+          "title": "Brief stop versus arrest",
+          "text": "Terry permits a brief investigatory stop on reasonable suspicion supported by specific facts that criminal activity is afoot. Arrest ordinarily needs probable cause. Suspicion must fit the action and its duration."
+        },
+        {
+          "title": "Frisk is for weapons",
+          "text": "A frisk needs a reasonable basis to suspect the person is armed and dangerous. A lawful stop alone does not justify a frisk, and a protective pat-down is not a general evidence search."
+        },
+        {
+          "title": "A sniff can still involve a seizure",
+          "text": "Place treated a trained dog’s luggage sniff in a public place as not a search, but found the prolonged luggage detention unreasonable. Caballes permitted a dog sniff during a lawful traffic stop without unlawfully extending it."
+        },
+        {
+          "title": "Time and place matter",
+          "text": "Rodriguez forbids adding time to a completed traffic mission for a dog sniff without independent reasonable suspicion. Jardines treated a drug dog’s investigation on a home’s porch as a search because it exceeded the ordinary invitation to approach."
+        }
+      ],
+      "example": "The watch finishes a traffic warning but holds the traveler for an extra hound inspection. Even if the sniff itself is not a search, analyze the added detention.",
+      "tipMale": "A lawful stop is not a free pass to frisk. Identify the armed-and-dangerous facts.",
+      "tipFemale": "The same trained nose raises different issues at a roadside and on a home’s porch.",
+      "terms": [
+        {
+          "term": "Reasonable suspicion",
+          "definition": "Specific, articulable facts supporting a reasonable inference of wrongdoing; more than a hunch and less than probable cause."
+        },
+        {
+          "term": "Seizure of a person",
+          "definition": "A restraint of liberty through qualifying force or a show of authority to which the person submits."
+        },
+        {
+          "term": "Frisk",
+          "definition": "A limited protective search for weapons, ordinarily a pat-down of outer clothing."
+        }
+      ],
+      "refs": [
+        "terry",
+        "place",
+        "caballes",
+        "jardines",
+        "rodriguez"
+      ]
+    },
+    {
+      "id": "probable-cause",
+      "title": "How much proof opens the gate?",
+      "tagline": "Facts together. Not guesses dressed as facts.",
+      "points": [
+        {
+          "title": "Probability, not certainty",
+          "text": "Probable cause uses a practical totality of the circumstances. A search asks whether there is a fair probability evidence will be in the place; an arrest asks whether there is a sufficient basis to believe this person committed an offense."
+        },
+        {
+          "title": "Informant tips",
+          "text": "Gates abandoned Aguilar’s rigid two-prong method. Veracity, basis of knowledge, detail, and police corroboration remain important; strong information on one dimension may compensate for weakness on another."
+        },
+        {
+          "title": "Objectivity and reasonable mistakes",
+          "text": "Whren generally makes objectively justified traffic stops valid under the Fourth Amendment despite ulterior motives. Equal-protection issues are separate. Heien permits only objectively reasonable mistakes of law, not every misunderstanding."
+        },
+        {
+          "title": "Individualize the inference",
+          "text": "Pringle permitted an inference of a common enterprise among car occupants on its facts. Ybarra rejected searches of tavern patrons merely because police had a warrant for the premises and bartender. Mere proximity is not enough."
+        }
+      ],
+      "example": "A detailed tip predicts a traveler’s unusual itinerary and police corroborate it. Explain why those facts make the accusation reliable; do not just write “totality” and stop.",
+      "tipMale": "Connect evidence to this person or this place. Suspicion cannot travel by friendship alone.",
+      "tipFemale": "Use facts known before the intrusion. A discovery cannot retroactively justify the search that found it.",
+      "terms": [
+        {
+          "term": "Probable cause",
+          "definition": "A practical, fact-based probability sufficient for the particular arrest or search; not proof beyond a reasonable doubt."
+        },
+        {
+          "term": "Totality of the circumstances",
+          "definition": "Evaluating relevant facts together and in context, rather than requiring isolated facts each to prove a crime."
+        },
+        {
+          "term": "Corroboration",
+          "definition": "Independent information that supports an informant’s account or another asserted fact."
+        }
+      ],
+      "refs": [
+        "gates",
+        "whren",
+        "pringle",
+        "heien",
+        "ybarra"
+      ]
+    },
+    {
+      "id": "warrant-design",
+      "title": "Read the warrant like a battle plan",
+      "tagline": "Who, where, what, and why here?",
+      "points": [
+        {
+          "title": "Four essentials",
+          "text": "A warrant needs probable cause, oath or affirmation, particular descriptions of the place and things or persons, and a neutral, detached issuing official. The warrant’s actual terms matter."
+        },
+        {
+          "title": "Nexus and freshness",
+          "text": "Explain why the evidence is likely at the specified location when the warrant issues. Staleness depends on time, the object, and whether the conduct is continuing; there is no universal expiry period for all information."
+        },
+        {
+          "title": "Scope follows the object",
+          "text": "A warrant for a large stolen shield does not authorize opening a tiny jewelry box where it cannot fit. A warrant for small records may support looking in more places, subject to its wording and other limits."
+        },
+        {
+          "title": "Third-party premises",
+          "text": "Zurcher focuses on evidence at the place, not necessarily wrongdoing by its owner. Later statutes can add protections, particularly for journalistic materials; the constitutional case alone is not the entire modern statutory answer."
+        }
+      ],
+      "example": "The affidavit names stolen coins, but the warrant fails to identify anything to seize. Groh warns that an unincorporated application does not simply cure the warrant itself.",
+      "tipMale": "Read the signed authorization. Do not substitute the officer’s intentions.",
+      "tipFemale": "Ask why the evidence should still be there today. Explain staleness with facts.",
+      "terms": [
+        {
+          "term": "Particularity",
+          "definition": "A sufficiently specific description of the place to search and the persons or things to seize."
+        },
+        {
+          "term": "Nexus",
+          "definition": "The factual link between suspected evidence and the location or person to be searched."
+        },
+        {
+          "term": "Staleness",
+          "definition": "The risk that older information no longer establishes present probable cause."
+        }
+      ],
+      "refs": [
+        "groh",
+        "zurcher",
+        "franks"
+      ]
+    },
+    {
+      "id": "warrant-execution",
+      "title": "Executing the warrant",
+      "tagline": "Lawful permission still has limits.",
+      "points": [
+        {
+          "title": "Knock and announce",
+          "text": "Wilson made announcement part of Fourth Amendment reasonableness. Richards rejects a blanket drug-case exception: specific reasonable suspicion of danger, futility, or evidence destruction can justify dispensing with announcement."
+        },
+        {
+          "title": "How long to wait?",
+          "text": "Banks approved a roughly 15–20 second wait in its circumstances, including readily disposable drug evidence. It is not a universal stopwatch rule for every home or object."
+        },
+        {
+          "title": "Detaining occupants",
+          "text": "Summers permits limited detention of occupants during a valid contraband search. Muehler allowed handcuffs during a dangerous weapons search on its facts. The authority is not limitless in location, force, or duration."
+        },
+        {
+          "title": "Mistakes and changing facts",
+          "text": "Garrison recognizes objectively reasonable mistakes about premises. Officers must reassess when they learn the warrant does not cover the area. Rettele permitted brief safety measures during a reasonable mistaken-occupant search, not needless humiliation or prolonged restraint."
+        }
+      ],
+      "example": "The watch discovers that the floor named in its warrant contains two separate apartments. The next question is what it reasonably knew then and when it recognized the error.",
+      "tipMale": "An exception to knocking is not an exception to having lawful entry authority.",
+      "tipFemale": "Authority can shrink during the search. Notice when officers learn new facts.",
+      "terms": [
+        {
+          "term": "Knock and announce",
+          "definition": "The general practice of identifying authority and purpose before forced home entry, subject to justified exceptions."
+        },
+        {
+          "term": "Objective reasonableness",
+          "definition": "Judging conduct against an external reasonable-officer standard in its factual setting."
+        },
+        {
+          "term": "Execution",
+          "definition": "The way officers carry out an authorized search or seizure, including timing, scope, force, and duration."
+        }
+      ],
+      "refs": [
+        "summers",
+        "muehler",
+        "wilson",
+        "richards",
+        "banks",
+        "garrison",
+        "rettele"
+      ]
+    },
+    {
+      "id": "exigency",
+      "title": "Emergencies at the longhouse",
+      "tagline": "Urgency needs facts.",
+      "points": [
+        {
+          "title": "Recognized emergencies",
+          "text": "A genuine need to help someone, prevent serious harm, pursue a fleeing suspect in appropriate circumstances, or stop imminent evidence destruction can justify action without waiting for a warrant. The intrusion must fit the emergency."
+        },
+        {
+          "title": "Pursuit is not a slogan",
+          "text": "Hayden involved immediate pursuit of an armed robber. Lange rejects a categorical rule allowing home entry whenever a suspected misdemeanant flees. Assess danger, escape, destruction, and practical urgency."
+        },
+        {
+          "title": "Police-created exigency",
+          "text": "King asks whether officers created the exigency by engaging or threatening to engage in conduct that violates the Fourth Amendment. Lawful knocking does not itself disqualify later emergency action."
+        },
+        {
+          "title": "Caretaking is not a home-search license",
+          "text": "Caniglia rejects a freestanding community-caretaking exception for homes. Actual emergency aid and other recognized exceptions remain distinct grounds to analyze."
+        }
+      ],
+      "example": "An officer hears calls for immediate help from inside a home. The reason for entry and what may reasonably be searched differ from a general desire to check on property.",
+      "tipMale": "Name the emergency, its evidence, and why waiting for a warrant is impractical.",
+      "tipFemale": "When the emergency ends, the emergency justification may end too.",
+      "terms": [
+        {
+          "term": "Exigent circumstances",
+          "definition": "Urgent facts making delay for a warrant unreasonable under a recognized exception."
+        },
+        {
+          "term": "Hot pursuit",
+          "definition": "Immediate or continuous pursuit relevant to exigency; its legal effect depends on the offense and surrounding facts."
+        },
+        {
+          "term": "Emergency aid",
+          "definition": "Action supported by an objectively reasonable basis to address serious injury or an imminent threat of it."
+        }
+      ],
+      "refs": [
+        "hayden",
+        "king",
+        "lange",
+        "caniglia",
+        "brigham"
+      ]
+    },
+    {
+      "id": "body-and-blood",
+      "title": "Breath, blood, and bodily privacy",
+      "tagline": "Different tests impose different intrusions.",
+      "points": [
+        {
+          "title": "Alcohol dissipation alone",
+          "text": "McNeely rejects an automatic blood-draw exigency merely because alcohol naturally dissipates. Whether a warrant is impractical depends on all the circumstances."
+        },
+        {
+          "title": "Breath versus blood",
+          "text": "Birchfield permits warrantless breath tests incident to lawful drunk-driving arrests but not blood tests on that basis alone. Blood usually requires a warrant or a separate exception."
+        },
+        {
+          "title": "Implied consent has limits",
+          "text": "A state cannot justify a warrantless blood test simply by attaching a criminal penalty to refusal under implied consent. Civil licensing consequences and other lawful testing grounds raise distinct questions."
+        },
+        {
+          "title": "Unconscious suspects",
+          "text": "The Mitchell plurality described circumstances in which an unconscious suspected drunk driver taken to a hospital ordinarily presents exigency, while allowing an unusual-case showing. It was a fractured decision and a remand, not unlimited authority over every unconscious person."
+        }
+      ],
+      "example": "A lawful DUI arrest supports one analysis for a breath test and a different analysis for a needle blood draw. Identify the precise exception asserted for each.",
+      "tipMale": "Do not say “alcohol disappears, therefore no warrant.” Explain the actual delay problem.",
+      "tipFemale": "Keep the fractured Mitchell reasoning separate from a sweeping claim of universal consent.",
+      "terms": [
+        {
+          "term": "Bodily intrusion",
+          "definition": "A search involving the body, evaluated with attention to its nature, justification, and manner."
+        },
+        {
+          "term": "Implied consent",
+          "definition": "A statutory testing framework tied to activities such as driving; it does not erase constitutional limits."
+        },
+        {
+          "term": "Plurality opinion",
+          "definition": "Reasoning supported by fewer than a majority of the Justices; distinguish it from a majority holding."
+        }
+      ],
+      "refs": [
+        "mcneely",
+        "birchfield",
+        "mitchell"
+      ]
+    },
+    {
+      "id": "plain-view-and-sweeps",
+      "title": "What is in view—and who could be hiding?",
+      "tagline": "A glimpse is not permission to rummage.",
+      "points": [
+        {
+          "title": "Plain view",
+          "text": "Horton requires lawful vantage, lawful access, and probable cause that an item is evidence or contraband. Discovery need not be inadvertent. Seeing an object from the street does not itself authorize crossing a protected threshold to seize it."
+        },
+        {
+          "title": "Do not manufacture the view",
+          "text": "Hicks treats moving stereo equipment to expose concealed serial numbers as an additional search. A suspicious appearance alone did not supply the required probable cause."
+        },
+        {
+          "title": "Plain feel",
+          "text": "Dickerson permits seizure during a lawful frisk when the item’s contraband identity is immediately apparent. Further squeezing or manipulation after the weapon concern is resolved exceeds that rationale."
+        },
+        {
+          "title": "Protective sweep",
+          "text": "Under Buie, incident to an in-home arrest, immediately adjoining spaces from which an attack could launch may be checked. A wider sweep needs articulable facts supporting a reasonable belief a dangerous person is hiding. Look only where a person could be, and only as long as safety requires."
+        }
+      ],
+      "example": "A closet can hide a person; a coin purse cannot. A protective sweep cannot become a search of every small container.",
+      "tipMale": "Plain view needs both a lawful place to stand and a lawful route to the item.",
+      "tipFemale": "Ask what the search is for: a person, a weapon, or evidence. Scope follows the answer.",
+      "terms": [
+        {
+          "term": "Plain view",
+          "definition": "A seizure doctrine for incriminating objects discovered from a lawful vantage with lawful access and probable cause."
+        },
+        {
+          "term": "Plain feel",
+          "definition": "Recognition of contraband by touch during a lawful limited pat-down, without impermissible further manipulation."
+        },
+        {
+          "term": "Protective sweep",
+          "definition": "A brief safety inspection for dangerous people who may be hiding near an arrest scene."
+        }
+      ],
+      "refs": [
+        "horton",
+        "hicks",
+        "dickerson",
+        "buie"
+      ]
+    },
+    {
+      "id": "vehicles-and-containers",
+      "title": "Vehicles and the locked chest",
+      "tagline": "Probable cause sets the search’s boundaries.",
+      "points": [
+        {
+          "title": "Automobile exception",
+          "text": "Carroll permits a warrantless search of a readily mobile vehicle on probable cause. Carney explains how mobility and reduced vehicle privacy can include a motor home used in a transportation setting."
+        },
+        {
+          "title": "What can be opened?",
+          "text": "Ross allows a vehicle search of places and containers capable of holding the object when probable cause reaches the vehicle generally. Acevedo permits a container search when probable cause is limited to that container in the vehicle; that does not automatically authorize searching everything else."
+        },
+        {
+          "title": "Home protection remains",
+          "text": "Collins holds that the automobile exception does not authorize entering a home’s curtilage to reach a vehicle. Identify lawful access before applying vehicle-search scope."
+        },
+        {
+          "title": "Historical luggage rule",
+          "text": "Chadwick’s secured-footlocker search was not justified as incident to arrest. Acevedo displaced the old special rule for containers in vehicles; do not apply that earlier vehicle-container distinction as current law."
+        }
+      ],
+      "example": "A reliable tip establishes probable cause only for a particular bag in a car trunk. Start with that bag; explain any additional facts before broadening the search.",
+      "tipMale": "Mobility is not the entire rule. The automobile exception still requires probable cause.",
+      "tipFemale": "A vehicle parked within curtilage does not erase the home’s shield.",
+      "terms": [
+        {
+          "term": "Automobile exception",
+          "definition": "Warrant exception permitting a qualifying vehicle search on probable cause, with scope defined by that cause and the object."
+        },
+        {
+          "term": "Container",
+          "definition": "A receptacle such as a bag, box, or suitcase; authority to open it depends on the legal basis and scope."
+        },
+        {
+          "term": "Lawful access",
+          "definition": "A lawful basis to reach the item or area, distinct from merely being able to see it."
+        }
+      ],
+      "refs": [
+        "carroll",
+        "carney",
+        "ross",
+        "acevedo",
+        "chadwick",
+        "collins"
+      ]
+    },
+    {
+      "id": "arrest-searches",
+      "title": "Search incident to arrest",
+      "tagline": "An arrest is not a warrant for everything.",
+      "points": [
+        {
+          "title": "Person and immediate control",
+          "text": "Chimel permits the arrestee’s person and immediate grabbing area to be searched after a lawful custodial arrest. Robinson recognizes a full search of the person incident to a lawful custodial arrest without a separate weapons suspicion."
+        },
+        {
+          "title": "Citation is different",
+          "text": "Knowles does not allow a full search incident to arrest when the officer only issues a citation. The unused authority to arrest is insufficient by itself."
+        },
+        {
+          "title": "Vehicle limits",
+          "text": "Gant permits a passenger-compartment search incident to arrest when the arrestee can reach it at the time, or when it is reasonable to believe evidence of the offense of arrest is inside. A secured driver arrested for a license violation does not automatically satisfy either route."
+        },
+        {
+          "title": "Digital information",
+          "text": "Riley generally requires a warrant to examine phone data even when police can seize the phone during an arrest. A genuine independent exception can still apply. Digital storage is not just another pocket."
+        }
+      ],
+      "example": "The watch arrests a traveler for driving with a suspended license and secures them away from the car. Ask what Gant actually permits, rather than assuming the entire car is searchable.",
+      "tipMale": "Name the offense of arrest when using Gant’s evidence route.",
+      "tipFemale": "Seizing a phone and reading its contents are separate acts.",
+      "terms": [
+        {
+          "term": "Search incident to arrest",
+          "definition": "A limited warrant exception tied to a lawful custodial arrest; its scope varies for persons, surrounding areas, vehicles, and digital data."
+        },
+        {
+          "term": "Immediate control",
+          "definition": "The area from which an arrestee could obtain a weapon or destructible evidence under Chimel."
+        },
+        {
+          "term": "Custodial arrest",
+          "definition": "Taking a person into custody, distinct from merely issuing a citation."
+        }
+      ],
+      "refs": [
+        "chimel",
+        "robinson",
+        "knowles",
+        "gant",
+        "riley"
+      ]
+    },
+    {
+      "id": "consent",
+      "title": "Consent: who opened the gate?",
+      "tagline": "Voluntary. Authorized. Within scope.",
+      "points": [
+        {
+          "title": "Free choice under the circumstances",
+          "text": "Schneckloth uses the totality of the circumstances to determine voluntariness. Knowledge of the right to refuse is relevant, but not a mandatory warning prerequisite in that setting."
+        },
+        {
+          "title": "Submission is not agreement",
+          "text": "Under Bumper, yielding to an assertion that officers have a warrant does not prove voluntary consent. The government bears the burden when relying on consent."
+        },
+        {
+          "title": "Authority and limits",
+          "text": "The consenting person needs actual authority or an objectively reasonable appearance of authority. Consent is bounded by what a reasonable person would understand was permitted. Clear limits or withdrawal matter."
+        },
+        {
+          "title": "Co-occupant disagreement",
+          "text": "Randolph protects a physically present, expressly objecting resident against a search based on another resident’s consent as to that objector. Fernandez permits later consent by the remaining occupant after objectively justified lawful removal. Do not invent an arrest simply to defeat an objection."
+        }
+      ],
+      "example": "One resident says yes, the other stands beside them and says no. That differs from a later request after the objector has been lawfully arrested and removed for independent reasons.",
+      "tipMale": "Work through three separate gates: voluntariness, authority, and scope.",
+      "tipFemale": "A nod after “we have a warrant” may be submission to authority, not consent.",
+      "terms": [
+        {
+          "term": "Voluntary consent",
+          "definition": "Permission freely given under all the circumstances, rather than produced by coercion or a claim of compulsory authority."
+        },
+        {
+          "term": "Common authority",
+          "definition": "Mutual use and joint access or control sufficient to permit third-party consent over the relevant area."
+        },
+        {
+          "term": "Apparent authority",
+          "definition": "A reasonable factual belief that the person granting permission has authority, even if that belief proves mistaken."
+        }
+      ],
+      "refs": [
+        "schneckloth",
+        "bumper",
+        "randolph",
+        "fernandez",
+        "illinois-rodriguez",
+        "jimeno"
+      ]
+    },
+    {
+      "id": "administrative-and-inventory",
+      "title": "Inspections and inventories",
+      "tagline": "A different purpose is not unlimited permission.",
+      "points": [
+        {
+          "title": "Administrative warrants",
+          "text": "Camara protects homes during routine code inspections. A warrant may rest on reasonable inspection-program standards rather than individualized suspicion of a violation. Barlow’s protects ordinary businesses from warrantless nonconsensual OSHA entry."
+        },
+        {
+          "title": "Closely regulated industries",
+          "text": "Burger requires a substantial regulatory interest, necessity for warrantless inspections, and a statute supplying notice and limits on time, place, and scope. The Supreme Court’s recognized examples include liquor, firearms, mining, and vehicle dismantling; not every licensed business qualifies."
+        },
+        {
+          "title": "A chance to object",
+          "text": "Patel rejected a hotel-records demand system lacking an opportunity for precompliance review. Hotels are not a closely regulated industry under that decision. Calling a search an inspection does not settle its constitutionality."
+        },
+        {
+          "title": "Inventory is caretaking",
+          "text": "Opperman allows reasonable inventories of lawfully impounded vehicles under standardized procedures for legitimate protective purposes. It is not a pretextual evidence hunt. Container policies and impoundment itself must also satisfy applicable law."
+        }
+      ],
+      "example": "A hall inspector follows a neutral inspection schedule. That can support an administrative warrant; it does not automatically authorize forcing entry without one.",
+      "tipMale": "Ask what makes the selection neutral and what limits the inspector’s discretion.",
+      "tipFemale": "Inventory and automobile searches have different justifications. Do not swap their elements.",
+      "terms": [
+        {
+          "term": "Administrative warrant",
+          "definition": "Judicial authorization for a regulatory inspection, often based on neutral inspection standards."
+        },
+        {
+          "term": "Precompliance review",
+          "definition": "An opportunity to challenge an inspection demand before being penalized for refusing it."
+        },
+        {
+          "term": "Inventory search",
+          "definition": "A standardized caretaking examination of property lawfully in police custody."
+        }
+      ],
+      "refs": [
+        "camara",
+        "barlows",
+        "burger",
+        "patel",
+        "opperman",
+        "wells"
+      ]
+    },
+    {
+      "id": "remedies-and-proof",
+      "title": "Finish the argument: proof and remedies",
+      "tagline": "A breach in the wall still needs a remedy analysis.",
+      "points": [
+        {
+          "title": "Match the proof to the decision",
+          "text": "A hunch, reasonable suspicion, probable cause, preponderance, clear and convincing evidence, and proof beyond a reasonable doubt are not interchangeable. The prosecution must prove every criminal offense element beyond a reasonable doubt."
+        },
+        {
+          "title": "Suppression is a separate step",
+          "text": "The exclusionary rule can bar unlawfully obtained evidence in the prosecution’s case. It protects the defendant’s own rights and has substantial limits. It does not automatically erase charges or require acquittal."
+        },
+        {
+          "title": "Trace the evidence",
+          "text": "Derivative evidence can be fruit of an unlawful act. Analyze independent source, inevitable discovery, and attenuation separately rather than assuming any later evidence is automatically excluded."
+        },
+        {
+          "title": "Good faith is bounded",
+          "text": "Leon limits exclusion for objectively reasonable reliance on a warrant. Important exceptions include knowing or reckless falsity, an abandoning magistrate, a bare-bones probable-cause showing, and a facially deficient warrant. Remedies also differ across criminal proceedings and civil claims."
+        }
+      ],
+      "example": "A warrant is invalid. First explain the violation, then ask whether the particular evidence must be excluded and whether a recognized limit on exclusion applies.",
+      "tipMale": "Never jump from “violation” straight to “case dismissed.” Identify the evidence and remedy.",
+      "tipFemale": "Build the timeline. Causation, independent information, and intervening events matter.",
+      "terms": [
+        {
+          "term": "Exclusionary rule",
+          "definition": "A doctrine restricting use of certain evidence obtained through violations of constitutional rights, subject to exceptions."
+        },
+        {
+          "term": "Fruit of the poisonous tree",
+          "definition": "Evidence derived from an earlier illegality; its use depends on causation and applicable exceptions."
+        },
+        {
+          "term": "Beyond a reasonable doubt",
+          "definition": "The prosecution’s burden for each element of a criminal offense at trial."
+        },
+        {
+          "term": "Attenuation",
+          "definition": "A sufficiently weakened link between unlawful conduct and evidence to permit use despite the earlier illegality."
+        }
+      ],
+      "refs": [
+        "mapp",
+        "leon",
+        "winship",
+        "murray",
+        "nix",
+        "brown"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "section": 0,
+      "id": "powell",
+      "name": "Powell v. Alabama",
+      "citation": "287 U.S. 45 (1932)",
+      "url": "https://supreme.justia.com/cases/federal/us/287/45/",
+      "facts": "Young defendants faced a capital trial after a hurried and ineffective appointment of counsel.",
+      "issue": "Did those proceedings provide due process?",
+      "holding": "The convictions were reversed; the defendants needed a meaningful opportunity for counsel’s assistance under the circumstances.",
+      "reasoning": "A nominal appointment without time and opportunity to prepare did not supply the necessary aid.",
+      "trap": "This was a capital-case due-process decision; do not describe it as the full later Gideon rule."
+    },
+    {
+      "section": 0,
+      "id": "duncan",
+      "name": "Duncan v. Louisiana",
+      "citation": "391 U.S. 145 (1968)",
+      "url": "https://supreme.justia.com/cases/federal/us/391/145/",
+      "facts": "Louisiana denied a jury for an offense carrying a possible two-year prison term.",
+      "issue": "Does the jury-trial guarantee apply to serious state criminal prosecutions?",
+      "holding": "Yes. The conviction was reversed.",
+      "reasoning": "The jury right is fundamental to the American scheme of justice and applies through the Fourteenth Amendment.",
+      "trap": "Petty offenses remain outside the constitutional jury requirement."
+    },
+    {
+      "section": 0,
+      "id": "timbs",
+      "name": "Timbs v. Indiana",
+      "citation": "586 U.S. 146 (2019)",
+      "url": "https://supreme.justia.com/cases/federal/us/586/17-1091/",
+      "facts": "Indiana sought forfeiture of a vehicle used in a drug offense.",
+      "issue": "Does the Excessive Fines Clause bind the states?",
+      "holding": "Yes; the Court vacated and remanded.",
+      "reasoning": "Protection against excessive punitive economic sanctions is deeply rooted and fundamental.",
+      "trap": "The Court incorporated the clause; it did not itself finally decide whether this forfeiture was excessive."
+    },
+    {
+      "section": 1,
+      "id": "griffith",
+      "name": "Griffith v. Kentucky",
+      "citation": "479 U.S. 314 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/479/314/",
+      "facts": "Defendants with cases still on direct review sought the benefit of a newly announced jury-selection rule.",
+      "issue": "Which pending cases receive a new constitutional criminal-procedure rule?",
+      "holding": "New rules apply to all cases on direct review or not yet final.",
+      "reasoning": "Selective application would treat similarly situated defendants unequally.",
+      "trap": "Direct review is different from collateral review of a final conviction."
+    },
+    {
+      "section": 1,
+      "id": "teague",
+      "name": "Teague v. Lane",
+      "citation": "489 U.S. 288 (1989)",
+      "url": "https://supreme.justia.com/cases/federal/us/489/288/",
+      "facts": "A prisoner sought a new constitutional jury rule on federal habeas review.",
+      "issue": "May a new procedural rule generally reopen a final conviction?",
+      "holding": "Generally no. Teague established the framework restricting new rules on collateral review.",
+      "reasoning": "Finality and the limited role of habeas review constrain retroactive changes.",
+      "trap": "Edwards later eliminated the proposed watershed-procedure exception; substantive rules remain distinct."
+    },
+    {
+      "section": 1,
+      "id": "edwards",
+      "name": "Edwards v. Vannoy",
+      "citation": "593 U.S. 255 (2021)",
+      "url": "https://supreme.justia.com/cases/federal/us/593/19-5807/",
+      "facts": "A prisoner with a final conviction sought Ramos’s unanimous-jury rule on federal collateral review.",
+      "issue": "Does Ramos apply retroactively in that setting?",
+      "holding": "No. The Court also rejected a continuing watershed-procedural-rule exception.",
+      "reasoning": "The unanimous-jury rule was procedural, not a substantive change in who or what the government could punish.",
+      "trap": "States may offer broader retroactive relief under their own law."
+    },
+    {
+      "section": 2,
+      "id": "katz",
+      "name": "Katz v. United States",
+      "citation": "389 U.S. 347 (1967)",
+      "url": "https://supreme.justia.com/cases/federal/us/389/347/",
+      "facts": "Agents electronically listened to calls made from a public telephone booth.",
+      "issue": "Could surveillance be a search without a physical intrusion into the booth?",
+      "holding": "Yes. The warrantless electronic surveillance violated the Fourth Amendment.",
+      "reasoning": "The Amendment protects people, not simply places. Justice Harlan’s concurrence articulated the familiar reasonable-expectation-of-privacy test.",
+      "trap": "The two-part expectation formulation is Harlan’s concurrence, not a quotation of the majority’s test."
+    },
+    {
+      "section": 2,
+      "id": "jones",
+      "name": "United States v. Jones",
+      "citation": "565 U.S. 400 (2012)",
+      "url": "https://supreme.justia.com/cases/federal/us/565/400/",
+      "facts": "Agents installed a GPS device on a vehicle and tracked it beyond the warrant’s authorized conditions.",
+      "issue": "Was that information-gathering physical intrusion a search?",
+      "holding": "Yes. Installation and use of the device constituted a search.",
+      "reasoning": "Physical intrusion on a protected effect to obtain information supplied a property-based ground.",
+      "trap": "Jones supplements privacy analysis; it does not abolish Katz."
+    },
+    {
+      "section": 3,
+      "id": "oliver",
+      "name": "Oliver v. United States",
+      "citation": "466 U.S. 170 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/466/170/",
+      "facts": "Officers entered private land beyond the home’s curtilage despite barriers and signs.",
+      "issue": "Are open fields covered by the Fourth Amendment’s search protection?",
+      "holding": "The open-fields doctrine allowed the observations.",
+      "reasoning": "Open fields are outside the Amendment’s specified protected areas and lack the relevant reasonable privacy expectation.",
+      "trap": "Private ownership and no-trespassing signs do not make all acreage curtilage."
+    },
+    {
+      "section": 3,
+      "id": "dunn",
+      "name": "United States v. Dunn",
+      "citation": "480 U.S. 294 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/480/294/",
+      "facts": "Officers viewed a barn located away from the house and outside its surrounding fence.",
+      "issue": "Was the barn inside the home’s curtilage?",
+      "holding": "No on these facts.",
+      "reasoning": "Consider proximity, inclusion within the home’s enclosure, uses, and measures shielding the area from observation.",
+      "trap": "The four factors guide judgment; they are not a mechanical point system."
+    },
+    {
+      "section": 3,
+      "id": "ciraolo",
+      "name": "California v. Ciraolo",
+      "citation": "476 U.S. 207 (1986)",
+      "url": "https://supreme.justia.com/cases/federal/us/476/207/",
+      "facts": "Officers saw plants in a fenced backyard from an aircraft at 1,000 feet.",
+      "issue": "Was naked-eye observation from lawful public airspace a search?",
+      "holding": "Not in these circumstances.",
+      "reasoning": "The observations were available from a public vantage despite the ground-level privacy barriers.",
+      "trap": "This does not authorize every aerial technology or every flight condition."
+    },
+    {
+      "section": 3,
+      "id": "florida-riley",
+      "name": "Florida v. Riley",
+      "citation": "488 U.S. 445 (1989)",
+      "url": "https://supreme.justia.com/cases/federal/us/488/445/",
+      "facts": "An officer viewed a greenhouse from a helicopter at 400 feet.",
+      "issue": "Did this aerial observation violate the Fourth Amendment?",
+      "holding": "The Court upheld the observation in a fractured decision.",
+      "reasoning": "The plurality emphasized lawful flight; Justice O’Connor’s concurrence focused on sufficiently routine public use of the vantage point.",
+      "trap": "FAA compliance alone is not the whole constitutional analysis."
+    },
+    {
+      "section": 3,
+      "id": "kyllo",
+      "name": "Kyllo v. United States",
+      "citation": "533 U.S. 27 (2001)",
+      "url": "https://supreme.justia.com/cases/federal/us/533/27/",
+      "facts": "Agents used a thermal imager from outside a home to detect heat patterns.",
+      "issue": "Was technologically obtained information about the home a search?",
+      "holding": "Yes.",
+      "reasoning": "Using technology not in general public use to obtain home details otherwise unavailable without physical intrusion triggers search protection.",
+      "trap": "The rule is not limited to revealing intimate activities."
+    },
+    {
+      "section": 3,
+      "id": "greenwood",
+      "name": "California v. Greenwood",
+      "citation": "486 U.S. 35 (1988)",
+      "url": "https://supreme.justia.com/cases/federal/us/486/35/",
+      "facts": "Police examined trash left at the curb for collection.",
+      "issue": "Was there a reasonable privacy expectation in that exposed trash?",
+      "holding": "No under the federal Fourth Amendment on these facts.",
+      "reasoning": "The bags were exposed to others and placed for conveyance to a third party.",
+      "trap": "State law can provide greater protection; location and exposure matter."
+    },
+    {
+      "section": 4,
+      "id": "white",
+      "name": "United States v. White",
+      "citation": "401 U.S. 745 (1971)",
+      "url": "https://supreme.justia.com/cases/federal/us/401/745/",
+      "facts": "An informant transmitted conversations with the defendant to government agents.",
+      "issue": "Did participant monitoring require a warrant under the Fourth Amendment?",
+      "holding": "The Court allowed the evidence.",
+      "reasoning": "The plurality treated the risk of an informant transmitting a conversation like the risk of later repeating it.",
+      "trap": "This concerns a participant’s cooperation, not an uninvited third party tapping every conversation."
+    },
+    {
+      "section": 4,
+      "id": "smith",
+      "name": "Smith v. Maryland",
+      "citation": "442 U.S. 735 (1979)",
+      "url": "https://supreme.justia.com/cases/federal/us/442/735/",
+      "facts": "Police used a pen register to record dialed phone numbers.",
+      "issue": "Was recording those numbers a search?",
+      "holding": "No under the facts and technology presented.",
+      "reasoning": "The numbers were conveyed to the phone company; the device did not record conversation contents.",
+      "trap": "Carpenter limits mechanical extension of this reasoning to comprehensive digital location records."
+    },
+    {
+      "section": 4,
+      "id": "knotts",
+      "name": "United States v. Knotts",
+      "citation": "460 U.S. 276 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/460/276/",
+      "facts": "Police used a beeper to help follow a container along public roads.",
+      "issue": "Did this monitoring of a public journey require a warrant?",
+      "holding": "No on the limited facts presented.",
+      "reasoning": "The movements could have been observed by people in public.",
+      "trap": "The Court reserved broader surveillance questions; this is not a blanket rule for prolonged GPS tracking."
+    },
+    {
+      "section": 4,
+      "id": "karo",
+      "name": "United States v. Karo",
+      "citation": "468 U.S. 705 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/468/705/",
+      "facts": "A beeper disclosed a container’s presence inside a private residence.",
+      "issue": "Did monitoring reveal protected information unavailable from outside?",
+      "holding": "Yes. That monitoring required constitutional justification.",
+      "reasoning": "Information about the home’s interior received protection even without a physical entry.",
+      "trap": "Public-road tracking and interior-home monitoring are different events."
+    },
+    {
+      "section": 4,
+      "id": "carpenter",
+      "name": "Carpenter v. United States",
+      "citation": "585 U.S. 296 (2018)",
+      "url": "https://supreme.justia.com/cases/federal/us/585/16-402/",
+      "facts": "The government obtained extensive historical cell-site location information from wireless carriers.",
+      "issue": "Does the third-party doctrine automatically remove privacy protection?",
+      "holding": "No. Acquisition of at least seven days of historical CSLI was a search; a warrant is generally required.",
+      "reasoning": "Comprehensive, retrospective location tracking differs from ordinary voluntarily shared business records.",
+      "trap": "The decision is narrow; it did not settle real-time CSLI, tower dumps, or every business record."
+    },
+    {
+      "section": 5,
+      "id": "terry",
+      "name": "Terry v. Ohio",
+      "citation": "392 U.S. 1 (1968)",
+      "url": "https://supreme.justia.com/cases/federal/us/392/1/",
+      "facts": "An officer observed conduct suggesting a planned robbery and conducted a limited weapons frisk.",
+      "issue": "Can a brief stop and protective frisk occur without probable cause to arrest?",
+      "holding": "Yes when the distinct suspicion requirements and limited scope are satisfied.",
+      "reasoning": "Specific facts supported suspected crime and a reasonable belief the men were armed and dangerous.",
+      "trap": "Reasonable suspicion for a stop does not automatically justify a frisk."
+    },
+    {
+      "section": 5,
+      "id": "place",
+      "name": "United States v. Place",
+      "citation": "462 U.S. 696 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/462/696/",
+      "facts": "Officers held luggage about 90 minutes and took it for a dog sniff.",
+      "issue": "Did the limited dog sniff excuse the extended luggage detention?",
+      "holding": "No. The prolonged seizure exceeded the permissible investigative detention.",
+      "reasoning": "Although the described contraband-only sniff was not a search, the seizure’s duration and handling were unreasonable.",
+      "trap": "Analyze the sniff and the detention separately."
+    },
+    {
+      "section": 5,
+      "id": "caballes",
+      "name": "Illinois v. Caballes",
+      "citation": "543 U.S. 405 (2005)",
+      "url": "https://supreme.justia.com/cases/federal/us/543/405/",
+      "facts": "A dog sniffed a car during a lawful traffic stop without extending it.",
+      "issue": "Did that contraband-detection sniff itself violate the Fourth Amendment?",
+      "holding": "No on those facts.",
+      "reasoning": "A properly conducted sniff revealed no legitimate private information, and the lawful stop was not prolonged.",
+      "trap": "Rodriguez controls added time; Caballes does not authorize delaying every driver for a dog."
+    },
+    {
+      "section": 5,
+      "id": "jardines",
+      "name": "Florida v. Jardines",
+      "citation": "569 U.S. 1 (2013)",
+      "url": "https://supreme.justia.com/cases/federal/us/569/1/",
+      "facts": "Officers brought a drug-detection dog onto a home’s porch to investigate.",
+      "issue": "Was this within the ordinary implied license to approach a home?",
+      "holding": "No. It was a search.",
+      "reasoning": "The physical entry into curtilage for a specialized investigation exceeded the usual visitor’s license.",
+      "trap": "A sniff at a home is not governed only by the contraband rationale used for public luggage."
+    },
+    {
+      "section": 5,
+      "id": "rodriguez",
+      "name": "Rodriguez v. United States",
+      "citation": "575 U.S. 348 (2015)",
+      "url": "https://supreme.justia.com/cases/federal/us/575/348/",
+      "facts": "An officer extended a traffic stop to conduct a dog sniff after completing the traffic mission.",
+      "issue": "Is a small added delay automatically permissible?",
+      "holding": "No. Added time requires independent reasonable suspicion or another lawful basis.",
+      "reasoning": "Traffic-stop authority ends when its tasks are, or reasonably should be, completed.",
+      "trap": "There is no general de minimis exception for dog-sniff delay."
+    },
+    {
+      "section": 6,
+      "id": "gates",
+      "name": "Illinois v. Gates",
+      "citation": "462 U.S. 213 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/462/213/",
+      "facts": "Police corroborated predictive details of an anonymous drug-trafficking tip.",
+      "issue": "How should a magistrate evaluate probable cause from informant information?",
+      "holding": "Use the totality of circumstances; the warrant had a substantial basis.",
+      "reasoning": "Veracity, reliability, and basis of knowledge remain relevant but interact rather than operate as rigid independent hurdles.",
+      "trap": "Corroborating innocent details can matter when they demonstrate unusual predictive knowledge."
+    },
+    {
+      "section": 6,
+      "id": "whren",
+      "name": "Whren v. United States",
+      "citation": "517 U.S. 806 (1996)",
+      "url": "https://supreme.justia.com/cases/federal/us/517/806/",
+      "facts": "Officers used observed traffic violations to stop a vehicle while suspecting drug activity.",
+      "issue": "Does an officer’s additional subjective motive invalidate an objectively justified stop?",
+      "holding": "Not under ordinary Fourth Amendment analysis.",
+      "reasoning": "Probable cause for the traffic violation supplied an objective basis.",
+      "trap": "Selective enforcement can raise Equal Protection issues even when Fourth Amendment justification exists."
+    },
+    {
+      "section": 6,
+      "id": "pringle",
+      "name": "Maryland v. Pringle",
+      "citation": "540 U.S. 366 (2003)",
+      "url": "https://supreme.justia.com/cases/federal/us/540/366/",
+      "facts": "Drugs and cash were found in a car with three occupants, none claiming ownership.",
+      "issue": "Did the facts support probable cause to arrest the passenger?",
+      "holding": "Yes in this shared, confined setting.",
+      "reasoning": "A reasonable officer could infer a common enterprise from the circumstances.",
+      "trap": "Do not treat mere proximity to wrongdoing in every public place as probable cause."
+    },
+    {
+      "section": 6,
+      "id": "heien",
+      "name": "Heien v. North Carolina",
+      "citation": "574 U.S. 54 (2014)",
+      "url": "https://supreme.justia.com/cases/federal/us/574/54/",
+      "facts": "An officer stopped a car based on a reasonable but mistaken reading of an ambiguous brake-light law.",
+      "issue": "Can an objectively reasonable mistake of law support reasonable suspicion?",
+      "holding": "Yes.",
+      "reasoning": "Reasonableness can encompass limited legal mistakes where the law genuinely admits the interpretation.",
+      "trap": "Ignorance of a clear law or an unreasonable interpretation does not qualify."
+    },
+    {
+      "section": 6,
+      "id": "ybarra",
+      "name": "Ybarra v. Illinois",
+      "citation": "444 U.S. 85 (1979)",
+      "url": "https://supreme.justia.com/cases/federal/us/444/85/",
+      "facts": "Police searching a tavern and its bartender also searched a patron without individualized justification.",
+      "issue": "Does a premises warrant authorize searching everyone present?",
+      "holding": "No.",
+      "reasoning": "Probable cause must be particularized to the person; no adequate basis supported this patron’s frisk.",
+      "trap": "Contrast a public patron’s presence with the particular shared-enterprise facts in Pringle."
+    },
+    {
+      "section": 7,
+      "id": "groh",
+      "name": "Groh v. Ramirez",
+      "citation": "540 U.S. 551 (2004)",
+      "url": "https://supreme.justia.com/cases/federal/us/540/551/",
+      "facts": "A warrant failed to describe the things to be seized although the application listed them.",
+      "issue": "Did the unincorporated application cure the warrant?",
+      "holding": "No. The search violated the Fourth Amendment.",
+      "reasoning": "Particularity must appear in the warrant or validly incorporated materials; the executing officer could not rely on the obvious defect.",
+      "trap": "Probable cause in an application cannot replace particularity in the operative authorization."
+    },
+    {
+      "section": 7,
+      "id": "zurcher",
+      "name": "Zurcher v. Stanford Daily",
+      "citation": "436 U.S. 547 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/547/",
+      "facts": "Police sought photographs at a newspaper office whose staff were not suspected of crime.",
+      "issue": "Must the owner of a search location be a criminal suspect?",
+      "holding": "No. A proper warrant can seek evidence at a third party’s premises.",
+      "reasoning": "The key connection is between the evidence and the place to be searched.",
+      "trap": "Later statutes, including the Privacy Protection Act, add protections for certain press materials."
+    },
+    {
+      "section": 7,
+      "id": "franks",
+      "name": "Franks v. Delaware",
+      "citation": "438 U.S. 154 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/438/154/",
+      "facts": "A defendant sought to challenge statements in the affidavit supporting a search warrant.",
+      "issue": "When can a defendant obtain a hearing on affidavit falsity?",
+      "holding": "A substantial preliminary showing of knowing or reckless material falsehood can require a hearing.",
+      "reasoning": "Probable cause cannot rest on deliberate or reckless material falsity. If proved by a preponderance and the remaining affidavit is insufficient, the warrant is void and fruits excluded.",
+      "trap": "Negligent errors alone do not satisfy Franks."
+    },
+    {
+      "section": 8,
+      "id": "summers",
+      "name": "Michigan v. Summers",
+      "citation": "452 U.S. 692 (1981)",
+      "url": "https://supreme.justia.com/cases/federal/us/452/692/",
+      "facts": "Officers detained an occupant while executing a contraband search warrant at his home.",
+      "issue": "Was this limited detention permissible without a separate arrest justification?",
+      "holding": "Yes.",
+      "reasoning": "Preventing flight, protecting officers, and orderly completion supported the limited detention.",
+      "trap": "The rule is tied to execution and the premises; it is not unlimited power to detain former occupants elsewhere."
+    },
+    {
+      "section": 8,
+      "id": "muehler",
+      "name": "Muehler v. Mena",
+      "citation": "544 U.S. 93 (2005)",
+      "url": "https://supreme.justia.com/cases/federal/us/544/93/",
+      "facts": "Officers detained occupants in handcuffs during a dangerous search involving weapons and suspected gang activity.",
+      "issue": "Were the detention methods and unrelated questioning necessarily unconstitutional?",
+      "holding": "No on these facts.",
+      "reasoning": "The safety interests justified the restraints; questioning that did not extend the detention was not an additional seizure.",
+      "trap": "Handcuffs are not automatically reasonable in every warrant search; duration and circumstances matter."
+    },
+    {
+      "section": 8,
+      "id": "wilson",
+      "name": "Wilson v. Arkansas",
+      "citation": "514 U.S. 927 (1995)",
+      "url": "https://supreme.justia.com/cases/federal/us/514/927/",
+      "facts": "Police entered a home without the usual prior announcement.",
+      "issue": "Does knock-and-announce matter to Fourth Amendment reasonableness?",
+      "holding": "Yes, though the requirement is not absolute.",
+      "reasoning": "Common-law entry principles inform reasonableness, subject to countervailing interests.",
+      "trap": "A reasonableness requirement does not mean every violation produces suppression."
+    },
+    {
+      "section": 8,
+      "id": "richards",
+      "name": "Richards v. Wisconsin",
+      "citation": "520 U.S. 385 (1997)",
+      "url": "https://supreme.justia.com/cases/federal/us/520/385/",
+      "facts": "Wisconsin applied a blanket no-knock rule for felony drug investigations.",
+      "issue": "Is that categorical exception valid?",
+      "holding": "No, although this entry was reasonable on its particular facts.",
+      "reasoning": "Police need reasonable suspicion that announcement would be dangerous, futile, or inhibit the investigation, such as by allowing evidence destruction.",
+      "trap": "A drug allegation alone does not automatically authorize no-knock entry."
+    },
+    {
+      "section": 8,
+      "id": "banks",
+      "name": "United States v. Banks",
+      "citation": "540 U.S. 31 (2003)",
+      "url": "https://supreme.justia.com/cases/federal/us/540/31/",
+      "facts": "Officers waited roughly 15–20 seconds after announcing before forcing entry in a cocaine search.",
+      "issue": "Was that wait unreasonable?",
+      "holding": "No under the circumstances.",
+      "reasoning": "The reasonable risk of quick evidence destruction mattered more than how long a resident might take to reach the door.",
+      "trap": "There is no universal stopwatch rule for every home and search object."
+    },
+    {
+      "section": 8,
+      "id": "garrison",
+      "name": "Maryland v. Garrison",
+      "citation": "480 U.S. 79 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/480/79/",
+      "facts": "Officers reasonably believed a floor contained one apartment but it contained two.",
+      "issue": "Did the mistaken breadth necessarily invalidate the warrant and initial execution?",
+      "holding": "No while the mistake remained objectively reasonable.",
+      "reasoning": "Assess knowledge when the warrant issued and as execution unfolds. Officers must limit the search when the error becomes apparent.",
+      "trap": "A reasonable initial mistake does not license continuing after discovering the problem."
+    },
+    {
+      "section": 8,
+      "id": "rettele",
+      "name": "Los Angeles County v. Rettele",
+      "citation": "550 U.S. 609 (2007)",
+      "url": "https://supreme.justia.com/cases/federal/us/550/609/",
+      "facts": "Officers briefly secured surprised occupants while searching a home recently sold by the suspects.",
+      "issue": "Was the short safety-related detention unreasonable solely because occupants plainly differed from the suspects?",
+      "holding": "No on the facts presented.",
+      "reasoning": "Other suspects could still have been present; officers acted promptly to resolve the safety concern.",
+      "trap": "The decision does not excuse gratuitous humiliation or detention beyond reasonable safety needs."
+    },
+    {
+      "section": 9,
+      "id": "hayden",
+      "name": "Warden v. Hayden",
+      "citation": "387 U.S. 294 (1967)",
+      "url": "https://supreme.justia.com/cases/federal/us/387/294/",
+      "facts": "Police arrived minutes after an armed robber entered a house.",
+      "issue": "Could they enter and search immediately for the suspect and weapons?",
+      "holding": "Yes.",
+      "reasoning": "Immediate pursuit and danger supplied exigency; the permissible search reflected those needs.",
+      "trap": "Urgency has a scope. It is not permission for an unrelated exploratory search."
+    },
+    {
+      "section": 9,
+      "id": "king",
+      "name": "Kentucky v. King",
+      "citation": "563 U.S. 452 (2011)",
+      "url": "https://supreme.justia.com/cases/federal/us/563/452/",
+      "facts": "Officers knocked, smelled drugs, and heard sounds suggesting evidence destruction.",
+      "issue": "Do police impermissibly create an exigency merely by knocking?",
+      "holding": "Not if they did not create it through conduct violating or threatening to violate the Fourth Amendment.",
+      "reasoning": "Lawful investigative steps do not become unconstitutional merely because occupants react.",
+      "trap": "The existence of an actual exigency remains a separate question."
+    },
+    {
+      "section": 9,
+      "id": "lange",
+      "name": "Lange v. California",
+      "citation": "594 U.S. 295 (2021)",
+      "url": "https://supreme.justia.com/cases/federal/us/594/20-18/",
+      "facts": "An officer followed a suspected misdemeanant into his garage after an attempted traffic stop.",
+      "issue": "Does pursuit of every fleeing misdemeanant automatically authorize home entry?",
+      "holding": "No; evaluate the total circumstances for exigency.",
+      "reasoning": "The home’s protection requires a case-specific assessment of danger, destruction, escape, or other urgent needs.",
+      "trap": "Do not convert “pursuit” into an automatic home-entry exception."
+    },
+    {
+      "section": 9,
+      "id": "caniglia",
+      "name": "Caniglia v. Strom",
+      "citation": "593 U.S. 194 (2021)",
+      "url": "https://supreme.justia.com/cases/federal/us/593/20-157/",
+      "facts": "Officers seized firearms from a home after a welfare-related encounter.",
+      "issue": "Does vehicle community-caretaking doctrine create a standalone home-search exception?",
+      "holding": "No.",
+      "reasoning": "The home has distinct constitutional protection; the vehicle rationale does not transfer automatically.",
+      "trap": "Emergency aid can still justify appropriate home entry on its own facts."
+    },
+    {
+      "section": 10,
+      "id": "mcneely",
+      "name": "Missouri v. McNeely",
+      "citation": "569 U.S. 141 (2013)",
+      "url": "https://supreme.justia.com/cases/federal/us/569/141/",
+      "facts": "Police obtained a nonconsensual blood draw in a routine impaired-driving investigation without a warrant.",
+      "issue": "Does alcohol’s natural dissipation always create exigency?",
+      "holding": "No. Analyze the totality of circumstances.",
+      "reasoning": "Dissipation matters, but the practical possibility of obtaining a warrant also matters.",
+      "trap": "No categorical rule that every DUI permits a warrantless blood draw."
+    },
+    {
+      "section": 10,
+      "id": "birchfield",
+      "name": "Birchfield v. North Dakota",
+      "citation": "579 U.S. 438 (2016)",
+      "url": "https://supreme.justia.com/cases/federal/us/579/14-1468/",
+      "facts": "Drivers challenged criminal penalties for refusing warrantless chemical tests.",
+      "issue": "Are breath and blood tests treated alike as searches incident to DUI arrest?",
+      "holding": "No. Breath tests generally may be required incident to a lawful DUI arrest; blood tests generally may not rest on that exception.",
+      "reasoning": "Blood draws intrude more deeply and retain a biological sample containing additional information.",
+      "trap": "Criminal refusal penalties for an otherwise unauthorized warrantless blood test differ from civil license consequences."
+    },
+    {
+      "section": 10,
+      "id": "mitchell",
+      "name": "Mitchell v. Wisconsin",
+      "citation": "588 U.S. 840 (2019)",
+      "url": "https://supreme.justia.com/cases/federal/us/588/18-6210/",
+      "facts": "An unconscious suspected drunk driver was taken to a hospital and blood was drawn without a warrant.",
+      "issue": "How does exigency apply to unconscious-driver circumstances?",
+      "holding": "A plurality described exigency as generally permitting a blood draw in the circumstances addressed, with an opportunity to show an unusual case on remand.",
+      "reasoning": "Unconsciousness, medical needs, and competing law-enforcement duties could make obtaining a warrant impractical.",
+      "trap": "This is a fractured decision, not a majority holding that unconsciousness always permits any blood draw."
+    },
+    {
+      "section": 11,
+      "id": "horton",
+      "name": "Horton v. California",
+      "citation": "496 U.S. 128 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/496/128/",
+      "facts": "An officer lawfully searching for robbery proceeds saw weapons not listed in the warrant.",
+      "issue": "Must discovery be inadvertent for plain-view seizure?",
+      "holding": "No.",
+      "reasoning": "Lawful vantage, lawful access, and immediately apparent incriminating character are the key requirements.",
+      "trap": "Seeing an item from a lawful place does not by itself establish lawful access to seize it."
+    },
+    {
+      "section": 11,
+      "id": "hicks",
+      "name": "Arizona v. Hicks",
+      "citation": "480 U.S. 321 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/480/321/",
+      "facts": "An officer moved stereo equipment to read serial numbers during a lawful emergency entry.",
+      "issue": "Was the additional manipulation justified by reasonable suspicion?",
+      "holding": "No. Moving the equipment was a separate search requiring adequate justification; plain view required probable cause.",
+      "reasoning": "The authorized emergency entry did not authorize investigative manipulation unrelated to the emergency.",
+      "trap": "Merely recording numbers already visible is different from moving an object to expose them."
+    },
+    {
+      "section": 11,
+      "id": "dickerson",
+      "name": "Minnesota v. Dickerson",
+      "citation": "508 U.S. 366 (1993)",
+      "url": "https://supreme.justia.com/cases/federal/us/508/366/",
+      "facts": "During a frisk an officer manipulated a small lump after recognizing it was not a weapon.",
+      "issue": "Can contraband be seized through plain feel?",
+      "holding": "The doctrine can apply, but this search exceeded a lawful frisk.",
+      "reasoning": "The contraband character must become immediately apparent through lawful touching without extra probing.",
+      "trap": "A frisk is for weapons; it is not a general evidence squeeze."
+    },
+    {
+      "section": 11,
+      "id": "buie",
+      "name": "Maryland v. Buie",
+      "citation": "494 U.S. 325 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/494/325/",
+      "facts": "Officers arrested a suspect at home and checked other spaces for dangerous people.",
+      "issue": "What protective sweep is allowed incident to a home arrest?",
+      "holding": "Immediately adjoining attack spaces may be checked; a broader sweep requires articulable suspicion of a dangerous person.",
+      "reasoning": "The intrusion is limited to a quick inspection of places where a person might hide.",
+      "trap": "Do not use a protective sweep to open a small jewelry box."
+    },
+    {
+      "section": 12,
+      "id": "carroll",
+      "name": "Carroll v. United States",
+      "citation": "267 U.S. 132 (1925)",
+      "url": "https://supreme.justia.com/cases/federal/us/267/132/",
+      "facts": "Officers stopped and searched a vehicle believed to transport illegal liquor.",
+      "issue": "Can probable cause justify a vehicle search without a warrant?",
+      "holding": "Yes under the automobile exception.",
+      "reasoning": "Vehicle mobility supported a practical distinction from fixed premises.",
+      "trap": "Probable cause still matters; mobility alone is not a license to search."
+    },
+    {
+      "section": 12,
+      "id": "carney",
+      "name": "California v. Carney",
+      "citation": "471 U.S. 386 (1985)",
+      "url": "https://supreme.justia.com/cases/federal/us/471/386/",
+      "facts": "Officers searched a motor home in a public lot with probable cause to believe it contained drugs.",
+      "issue": "Could the automobile exception apply to a motor home?",
+      "holding": "Yes in this readily mobile, vehicle-like setting.",
+      "reasoning": "Mobility and the reduced expectation of privacy associated with regulated vehicles supported the exception.",
+      "trap": "Do not assume every motor home, regardless of location and residential configuration, is treated identically."
+    },
+    {
+      "section": 12,
+      "id": "ross",
+      "name": "United States v. Ross",
+      "citation": "456 U.S. 798 (1982)",
+      "url": "https://supreme.justia.com/cases/federal/us/456/798/",
+      "facts": "Police with probable cause to search a car opened containers that could hold the suspected contraband.",
+      "issue": "How far does a vehicle search supported by probable cause extend?",
+      "holding": "To places and containers where the object of the search may be found.",
+      "reasoning": "The search object and probable cause define scope, not a container’s label.",
+      "trap": "A search for a large rifle does not authorize opening a tiny coin purse."
+    },
+    {
+      "section": 12,
+      "id": "acevedo",
+      "name": "California v. Acevedo",
+      "citation": "500 U.S. 565 (1991)",
+      "url": "https://supreme.justia.com/cases/federal/us/500/565/",
+      "facts": "Police had probable cause directed at a bag placed in a car trunk.",
+      "issue": "Was a separate warrant required to open that container?",
+      "holding": "No. The automobile exception permits a search of the container supported by probable cause.",
+      "reasoning": "A unified vehicle-container rule replaced the former distinction based on where probable cause originated.",
+      "trap": "Probable cause limited to one bag does not automatically permit searching the entire vehicle."
+    },
+    {
+      "section": 12,
+      "id": "chadwick",
+      "name": "United States v. Chadwick",
+      "citation": "433 U.S. 1 (1977)",
+      "url": "https://supreme.justia.com/cases/federal/us/433/1/",
+      "facts": "Agents opened a locked footlocker after taking exclusive control of it.",
+      "issue": "Did mobility or arrest alone justify the delayed warrantless search?",
+      "holding": "The Court held that search unlawful.",
+      "reasoning": "The secured luggage retained privacy protection and no emergency justified the search.",
+      "trap": "Historical treatment matters: Acevedo displaced the separate-warrant rule for containers within its vehicle context."
+    },
+    {
+      "section": 12,
+      "id": "collins",
+      "name": "Collins v. Virginia",
+      "citation": "584 U.S. 586 (2018)",
+      "url": "https://supreme.justia.com/cases/federal/us/584/16-1027/",
+      "facts": "An officer entered a home’s curtilage and lifted a cover to inspect a motorcycle.",
+      "issue": "Does the automobile exception itself authorize entry into curtilage?",
+      "holding": "No.",
+      "reasoning": "The exception addresses a vehicle search; it does not erase the separate protection of the home and curtilage.",
+      "trap": "Probable cause about a vehicle is not permission to cross every protected boundary."
+    },
+    {
+      "section": 13,
+      "id": "chimel",
+      "name": "Chimel v. California",
+      "citation": "395 U.S. 752 (1969)",
+      "url": "https://supreme.justia.com/cases/federal/us/395/752/",
+      "facts": "Officers searched an entire home after arresting its occupant.",
+      "issue": "How far does a search incident to arrest extend?",
+      "holding": "To the arrestee and the area within immediate control, not the whole house.",
+      "reasoning": "Officer safety and preservation of reachable evidence define the basic rationale.",
+      "trap": "The arrest location does not automatically become a general search zone."
+    },
+    {
+      "section": 13,
+      "id": "robinson",
+      "name": "United States v. Robinson",
+      "citation": "414 U.S. 218 (1973)",
+      "url": "https://supreme.justia.com/cases/federal/us/414/218/",
+      "facts": "An officer searched an arrestee and opened a cigarette package found on him after a lawful custodial arrest.",
+      "issue": "Was additional case-specific suspicion necessary for this ordinary person search?",
+      "holding": "No.",
+      "reasoning": "A lawful custodial arrest authorizes a full search of the person under the traditional rule.",
+      "trap": "Riley creates a distinct rule for digital phone contents; do not treat a phone database like a cigarette pack."
+    },
+    {
+      "section": 13,
+      "id": "knowles",
+      "name": "Knowles v. Iowa",
+      "citation": "525 U.S. 113 (1998)",
+      "url": "https://supreme.justia.com/cases/federal/us/525/113/",
+      "facts": "An officer issued a traffic citation and then searched the car without consent or probable cause.",
+      "issue": "Does a citation authorize a full search incident to arrest?",
+      "holding": "No.",
+      "reasoning": "The safety and evidence-preservation rationales do not support the same categorical authority after a citation alone.",
+      "trap": "The power to arrest is different from an actual custodial arrest."
+    },
+    {
+      "section": 13,
+      "id": "gant",
+      "name": "Arizona v. Gant",
+      "citation": "556 U.S. 332 (2009)",
+      "url": "https://supreme.justia.com/cases/federal/us/556/332/",
+      "facts": "Police searched a car after its driver had been handcuffed and secured away from it following a license-related arrest.",
+      "issue": "When can arrest justify a vehicle passenger-compartment search?",
+      "holding": "When the arrestee could reach it at the time, or it is reasonable to believe it contains evidence of the arrest offense. Neither basis applied here.",
+      "reasoning": "The exception must stay connected to safety or offense-related evidence.",
+      "trap": "The automobile exception based on probable cause is a separate route with different scope."
+    },
+    {
+      "section": 13,
+      "id": "riley",
+      "name": "Riley v. California",
+      "citation": "573 U.S. 373 (2014)",
+      "url": "https://supreme.justia.com/cases/federal/us/573/373/",
+      "facts": "Officers searched digital information on phones seized during arrests.",
+      "issue": "Does search incident to arrest generally authorize digital-content searches?",
+      "holding": "No. A warrant is generally required, subject to a genuinely applicable exception.",
+      "reasoning": "Phones hold immense quantities of revealing data and do not present the same rationale as ordinary physical containers.",
+      "trap": "Seizing and securing a phone is different from searching its data."
+    },
+    {
+      "section": 14,
+      "id": "schneckloth",
+      "name": "Schneckloth v. Bustamonte",
+      "citation": "412 U.S. 218 (1973)",
+      "url": "https://supreme.justia.com/cases/federal/us/412/218/",
+      "facts": "An occupant agreed to a vehicle search during an encounter with officers.",
+      "issue": "Must the government prove the person knew consent could be refused?",
+      "holding": "Not as an absolute prerequisite. Voluntariness turns on the totality of circumstances.",
+      "reasoning": "Knowledge of the right to refuse is relevant but is one factor among many.",
+      "trap": "A “yes” obtained through coercion is not voluntary consent."
+    },
+    {
+      "section": 14,
+      "id": "bumper",
+      "name": "Bumper v. North Carolina",
+      "citation": "391 U.S. 543 (1968)",
+      "url": "https://supreme.justia.com/cases/federal/us/391/543/",
+      "facts": "Officers claimed to have a warrant and the resident allowed entry.",
+      "issue": "Did acquiescence to asserted legal authority establish voluntary consent?",
+      "holding": "No.",
+      "reasoning": "Claiming lawful power to search communicates that refusal is unavailable.",
+      "trap": "Do not label submission to an asserted warrant as freely given permission."
+    },
+    {
+      "section": 14,
+      "id": "randolph",
+      "name": "Georgia v. Randolph",
+      "citation": "547 U.S. 103 (2006)",
+      "url": "https://supreme.justia.com/cases/federal/us/547/103/",
+      "facts": "One resident consented while a physically present co-resident expressly refused.",
+      "issue": "Can the consent override that present resident’s refusal for an evidentiary home search?",
+      "holding": "Not as against the objecting resident in the circumstances presented.",
+      "reasoning": "Ordinary shared social expectations do not allow one resident to override a present co-occupant’s express objection.",
+      "trap": "This is a narrow rule; absence, emergency, and lawful removal change the analysis."
+    },
+    {
+      "section": 14,
+      "id": "fernandez",
+      "name": "Fernandez v. California",
+      "citation": "571 U.S. 292 (2014)",
+      "url": "https://supreme.justia.com/cases/federal/us/571/292/",
+      "facts": "After an objecting occupant was lawfully arrested and removed, another resident consented to a search.",
+      "issue": "Did the earlier objection permanently bar later consent?",
+      "holding": "No on these facts.",
+      "reasoning": "Randolph depends on physical presence; objectively lawful removal does not give the absent person a continuing veto.",
+      "trap": "Removal itself must be lawful; do not assume police may manufacture consent by unlawfully removing an objector."
+    },
+    {
+      "section": 14,
+      "id": "illinois-rodriguez",
+      "name": "Illinois v. Rodriguez",
+      "citation": "497 U.S. 177 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/497/177/",
+      "facts": "A person who no longer had joint access admitted police to an apartment.",
+      "issue": "Can reasonable apparent authority justify reliance on consent?",
+      "holding": "Yes if the officer’s belief in authority is objectively reasonable; the case was remanded for that inquiry.",
+      "reasoning": "Reasonable factual mistakes about shared authority can be consistent with the Fourth Amendment.",
+      "trap": "Ambiguity may require further inquiry; a bare claim of access is not always enough."
+    },
+    {
+      "section": 15,
+      "id": "camara",
+      "name": "Camara v. Municipal Court",
+      "citation": "387 U.S. 523 (1967)",
+      "url": "https://supreme.justia.com/cases/federal/us/387/523/",
+      "facts": "A resident refused a warrantless housing-code inspection and faced prosecution.",
+      "issue": "Are routine administrative home inspections exempt from the Fourth Amendment?",
+      "holding": "No. A warrant is generally required absent consent or another exception.",
+      "reasoning": "Administrative probable cause may rest on reasonable area-inspection standards rather than individualized criminal suspicion.",
+      "trap": "Administrative purpose changes the probable-cause inquiry; it does not eliminate all safeguards."
+    },
+    {
+      "section": 15,
+      "id": "barlows",
+      "name": "Marshall v. Barlow’s, Inc.",
+      "citation": "436 U.S. 307 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/307/",
+      "facts": "A business owner refused an OSHA inspection of nonpublic work areas without a warrant.",
+      "issue": "May ordinary commercial premises be routinely inspected without consent or a warrant merely because they are businesses?",
+      "holding": "No.",
+      "reasoning": "Commercial premises retain Fourth Amendment protection, with limited exceptions for closely regulated industries.",
+      "trap": "Working in commerce is not the same as operating in a closely regulated industry."
+    },
+    {
+      "section": 15,
+      "id": "burger",
+      "name": "New York v. Burger",
+      "citation": "482 U.S. 691 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/482/691/",
+      "facts": "Officials inspected a vehicle dismantling business under a regulatory statute.",
+      "issue": "When can a closely regulated industry inspection proceed without a warrant?",
+      "holding": "The particular scheme satisfied the exception.",
+      "reasoning": "A substantial regulatory interest, necessity for warrantless inspection, and an adequate statutory substitute limiting discretion supported reasonableness.",
+      "trap": "A regulatory label alone does not authorize unconstrained criminal investigation."
+    },
+    {
+      "section": 15,
+      "id": "patel",
+      "name": "City of Los Angeles v. Patel",
+      "citation": "576 U.S. 409 (2015)",
+      "url": "https://supreme.justia.com/cases/federal/us/576/409/",
+      "facts": "An ordinance required hotel operators to produce guest registries for inspection on demand, with punishment for refusing.",
+      "issue": "Was the scheme valid without an opportunity for precompliance review?",
+      "holding": "No. The Court also rejected treating hotels as a closely regulated industry.",
+      "reasoning": "Neutral review is a safeguard against arbitrary inspection demands when no exception supplies an alternative.",
+      "trap": "Do not place hotels automatically in Burger’s closely regulated category."
+    },
+    {
+      "section": 15,
+      "id": "opperman",
+      "name": "South Dakota v. Opperman",
+      "citation": "428 U.S. 364 (1976)",
+      "url": "https://supreme.justia.com/cases/federal/us/428/364/",
+      "facts": "Police inventoried a lawfully impounded vehicle under standard procedures.",
+      "issue": "Was that caretaking inventory unreasonable?",
+      "holding": "No in the circumstances.",
+      "reasoning": "Protecting property, addressing claims of loss, and safety supported the standardized inventory.",
+      "trap": "Lawful impoundment and a genuine inventory procedure matter; “inventory” is not a magic label for an evidence hunt."
+    },
+    {
+      "section": 16,
+      "id": "mapp",
+      "name": "Mapp v. Ohio",
+      "citation": "367 U.S. 643 (1961)",
+      "url": "https://supreme.justia.com/cases/federal/us/367/643/",
+      "facts": "A state conviction relied on evidence obtained through an unlawful home search.",
+      "issue": "Does the exclusionary rule apply in state criminal prosecutions?",
+      "holding": "Yes.",
+      "reasoning": "The Fourth Amendment’s protection required an effective exclusion remedy in state court.",
+      "trap": "Later decisions recognize important limits and exceptions to exclusion."
+    },
+    {
+      "section": 16,
+      "id": "leon",
+      "name": "United States v. Leon",
+      "citation": "468 U.S. 897 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/468/897/",
+      "facts": "Officers relied on a warrant later held unsupported by probable cause.",
+      "issue": "Must evidence always be suppressed when a warrant is invalid?",
+      "holding": "No. Objectively reasonable good-faith reliance can prevent exclusion.",
+      "reasoning": "Exclusion is a deterrent remedy; suppression is not justified by every judicial error.",
+      "trap": "Knowing or reckless falsity, an abandoning magistrate, bare-bones affidavits, and facially deficient warrants limit the rule."
+    },
+    {
+      "section": 16,
+      "id": "winship",
+      "name": "In re Winship",
+      "citation": "397 U.S. 358 (1970)",
+      "url": "https://supreme.justia.com/cases/federal/us/397/358/",
+      "facts": "A juvenile delinquency finding rested on a preponderance standard for conduct that would be a crime if committed by an adult.",
+      "issue": "What proof does due process require for criminal offense elements?",
+      "holding": "Proof beyond a reasonable doubt.",
+      "reasoning": "The high burden protects against wrongful condemnation and the serious consequences of criminal findings.",
+      "trap": "Probable cause authorizes earlier steps; it is not the burden for a conviction."
+    }
+  ],
+  "sources": {
+    "powell": {
+      "label": "Powell v. Alabama · 287 U.S. 45 (1932)",
+      "url": "https://supreme.justia.com/cases/federal/us/287/45/"
+    },
+    "duncan": {
+      "label": "Duncan v. Louisiana · 391 U.S. 145 (1968)",
+      "url": "https://supreme.justia.com/cases/federal/us/391/145/"
+    },
+    "timbs": {
+      "label": "Timbs v. Indiana · 586 U.S. 146 (2019)",
+      "url": "https://supreme.justia.com/cases/federal/us/586/17-1091/"
+    },
+    "griffith": {
+      "label": "Griffith v. Kentucky · 479 U.S. 314 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/479/314/"
+    },
+    "teague": {
+      "label": "Teague v. Lane · 489 U.S. 288 (1989)",
+      "url": "https://supreme.justia.com/cases/federal/us/489/288/"
+    },
+    "edwards": {
+      "label": "Edwards v. Vannoy · 593 U.S. 255 (2021)",
+      "url": "https://supreme.justia.com/cases/federal/us/593/19-5807/"
+    },
+    "katz": {
+      "label": "Katz v. United States · 389 U.S. 347 (1967)",
+      "url": "https://supreme.justia.com/cases/federal/us/389/347/"
+    },
+    "jones": {
+      "label": "United States v. Jones · 565 U.S. 400 (2012)",
+      "url": "https://supreme.justia.com/cases/federal/us/565/400/"
+    },
+    "oliver": {
+      "label": "Oliver v. United States · 466 U.S. 170 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/466/170/"
+    },
+    "dunn": {
+      "label": "United States v. Dunn · 480 U.S. 294 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/480/294/"
+    },
+    "ciraolo": {
+      "label": "California v. Ciraolo · 476 U.S. 207 (1986)",
+      "url": "https://supreme.justia.com/cases/federal/us/476/207/"
+    },
+    "florida-riley": {
+      "label": "Florida v. Riley · 488 U.S. 445 (1989)",
+      "url": "https://supreme.justia.com/cases/federal/us/488/445/"
+    },
+    "kyllo": {
+      "label": "Kyllo v. United States · 533 U.S. 27 (2001)",
+      "url": "https://supreme.justia.com/cases/federal/us/533/27/"
+    },
+    "greenwood": {
+      "label": "California v. Greenwood · 486 U.S. 35 (1988)",
+      "url": "https://supreme.justia.com/cases/federal/us/486/35/"
+    },
+    "white": {
+      "label": "United States v. White · 401 U.S. 745 (1971)",
+      "url": "https://supreme.justia.com/cases/federal/us/401/745/"
+    },
+    "smith": {
+      "label": "Smith v. Maryland · 442 U.S. 735 (1979)",
+      "url": "https://supreme.justia.com/cases/federal/us/442/735/"
+    },
+    "knotts": {
+      "label": "United States v. Knotts · 460 U.S. 276 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/460/276/"
+    },
+    "karo": {
+      "label": "United States v. Karo · 468 U.S. 705 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/468/705/"
+    },
+    "carpenter": {
+      "label": "Carpenter v. United States · 585 U.S. 296 (2018)",
+      "url": "https://supreme.justia.com/cases/federal/us/585/16-402/"
+    },
+    "terry": {
+      "label": "Terry v. Ohio · 392 U.S. 1 (1968)",
+      "url": "https://supreme.justia.com/cases/federal/us/392/1/"
+    },
+    "place": {
+      "label": "United States v. Place · 462 U.S. 696 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/462/696/"
+    },
+    "caballes": {
+      "label": "Illinois v. Caballes · 543 U.S. 405 (2005)",
+      "url": "https://supreme.justia.com/cases/federal/us/543/405/"
+    },
+    "jardines": {
+      "label": "Florida v. Jardines · 569 U.S. 1 (2013)",
+      "url": "https://supreme.justia.com/cases/federal/us/569/1/"
+    },
+    "rodriguez": {
+      "label": "Rodriguez v. United States · 575 U.S. 348 (2015)",
+      "url": "https://supreme.justia.com/cases/federal/us/575/348/"
+    },
+    "gates": {
+      "label": "Illinois v. Gates · 462 U.S. 213 (1983)",
+      "url": "https://supreme.justia.com/cases/federal/us/462/213/"
+    },
+    "whren": {
+      "label": "Whren v. United States · 517 U.S. 806 (1996)",
+      "url": "https://supreme.justia.com/cases/federal/us/517/806/"
+    },
+    "pringle": {
+      "label": "Maryland v. Pringle · 540 U.S. 366 (2003)",
+      "url": "https://supreme.justia.com/cases/federal/us/540/366/"
+    },
+    "heien": {
+      "label": "Heien v. North Carolina · 574 U.S. 54 (2014)",
+      "url": "https://supreme.justia.com/cases/federal/us/574/54/"
+    },
+    "ybarra": {
+      "label": "Ybarra v. Illinois · 444 U.S. 85 (1979)",
+      "url": "https://supreme.justia.com/cases/federal/us/444/85/"
+    },
+    "groh": {
+      "label": "Groh v. Ramirez · 540 U.S. 551 (2004)",
+      "url": "https://supreme.justia.com/cases/federal/us/540/551/"
+    },
+    "zurcher": {
+      "label": "Zurcher v. Stanford Daily · 436 U.S. 547 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/547/"
+    },
+    "franks": {
+      "label": "Franks v. Delaware · 438 U.S. 154 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/438/154/"
+    },
+    "summers": {
+      "label": "Michigan v. Summers · 452 U.S. 692 (1981)",
+      "url": "https://supreme.justia.com/cases/federal/us/452/692/"
+    },
+    "muehler": {
+      "label": "Muehler v. Mena · 544 U.S. 93 (2005)",
+      "url": "https://supreme.justia.com/cases/federal/us/544/93/"
+    },
+    "wilson": {
+      "label": "Wilson v. Arkansas · 514 U.S. 927 (1995)",
+      "url": "https://supreme.justia.com/cases/federal/us/514/927/"
+    },
+    "richards": {
+      "label": "Richards v. Wisconsin · 520 U.S. 385 (1997)",
+      "url": "https://supreme.justia.com/cases/federal/us/520/385/"
+    },
+    "banks": {
+      "label": "United States v. Banks · 540 U.S. 31 (2003)",
+      "url": "https://supreme.justia.com/cases/federal/us/540/31/"
+    },
+    "garrison": {
+      "label": "Maryland v. Garrison · 480 U.S. 79 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/480/79/"
+    },
+    "rettele": {
+      "label": "Los Angeles County v. Rettele · 550 U.S. 609 (2007)",
+      "url": "https://supreme.justia.com/cases/federal/us/550/609/"
+    },
+    "hayden": {
+      "label": "Warden v. Hayden · 387 U.S. 294 (1967)",
+      "url": "https://supreme.justia.com/cases/federal/us/387/294/"
+    },
+    "king": {
+      "label": "Kentucky v. King · 563 U.S. 452 (2011)",
+      "url": "https://supreme.justia.com/cases/federal/us/563/452/"
+    },
+    "lange": {
+      "label": "Lange v. California · 594 U.S. 295 (2021)",
+      "url": "https://supreme.justia.com/cases/federal/us/594/20-18/"
+    },
+    "caniglia": {
+      "label": "Caniglia v. Strom · 593 U.S. 194 (2021)",
+      "url": "https://supreme.justia.com/cases/federal/us/593/20-157/"
+    },
+    "mcneely": {
+      "label": "Missouri v. McNeely · 569 U.S. 141 (2013)",
+      "url": "https://supreme.justia.com/cases/federal/us/569/141/"
+    },
+    "birchfield": {
+      "label": "Birchfield v. North Dakota · 579 U.S. 438 (2016)",
+      "url": "https://supreme.justia.com/cases/federal/us/579/14-1468/"
+    },
+    "mitchell": {
+      "label": "Mitchell v. Wisconsin · 588 U.S. 840 (2019)",
+      "url": "https://supreme.justia.com/cases/federal/us/588/18-6210/"
+    },
+    "horton": {
+      "label": "Horton v. California · 496 U.S. 128 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/496/128/"
+    },
+    "hicks": {
+      "label": "Arizona v. Hicks · 480 U.S. 321 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/480/321/"
+    },
+    "dickerson": {
+      "label": "Minnesota v. Dickerson · 508 U.S. 366 (1993)",
+      "url": "https://supreme.justia.com/cases/federal/us/508/366/"
+    },
+    "buie": {
+      "label": "Maryland v. Buie · 494 U.S. 325 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/494/325/"
+    },
+    "carroll": {
+      "label": "Carroll v. United States · 267 U.S. 132 (1925)",
+      "url": "https://supreme.justia.com/cases/federal/us/267/132/"
+    },
+    "carney": {
+      "label": "California v. Carney · 471 U.S. 386 (1985)",
+      "url": "https://supreme.justia.com/cases/federal/us/471/386/"
+    },
+    "ross": {
+      "label": "United States v. Ross · 456 U.S. 798 (1982)",
+      "url": "https://supreme.justia.com/cases/federal/us/456/798/"
+    },
+    "acevedo": {
+      "label": "California v. Acevedo · 500 U.S. 565 (1991)",
+      "url": "https://supreme.justia.com/cases/federal/us/500/565/"
+    },
+    "chadwick": {
+      "label": "United States v. Chadwick · 433 U.S. 1 (1977)",
+      "url": "https://supreme.justia.com/cases/federal/us/433/1/"
+    },
+    "collins": {
+      "label": "Collins v. Virginia · 584 U.S. 586 (2018)",
+      "url": "https://supreme.justia.com/cases/federal/us/584/16-1027/"
+    },
+    "chimel": {
+      "label": "Chimel v. California · 395 U.S. 752 (1969)",
+      "url": "https://supreme.justia.com/cases/federal/us/395/752/"
+    },
+    "robinson": {
+      "label": "United States v. Robinson · 414 U.S. 218 (1973)",
+      "url": "https://supreme.justia.com/cases/federal/us/414/218/"
+    },
+    "knowles": {
+      "label": "Knowles v. Iowa · 525 U.S. 113 (1998)",
+      "url": "https://supreme.justia.com/cases/federal/us/525/113/"
+    },
+    "gant": {
+      "label": "Arizona v. Gant · 556 U.S. 332 (2009)",
+      "url": "https://supreme.justia.com/cases/federal/us/556/332/"
+    },
+    "riley": {
+      "label": "Riley v. California · 573 U.S. 373 (2014)",
+      "url": "https://supreme.justia.com/cases/federal/us/573/373/"
+    },
+    "schneckloth": {
+      "label": "Schneckloth v. Bustamonte · 412 U.S. 218 (1973)",
+      "url": "https://supreme.justia.com/cases/federal/us/412/218/"
+    },
+    "bumper": {
+      "label": "Bumper v. North Carolina · 391 U.S. 543 (1968)",
+      "url": "https://supreme.justia.com/cases/federal/us/391/543/"
+    },
+    "randolph": {
+      "label": "Georgia v. Randolph · 547 U.S. 103 (2006)",
+      "url": "https://supreme.justia.com/cases/federal/us/547/103/"
+    },
+    "fernandez": {
+      "label": "Fernandez v. California · 571 U.S. 292 (2014)",
+      "url": "https://supreme.justia.com/cases/federal/us/571/292/"
+    },
+    "illinois-rodriguez": {
+      "label": "Illinois v. Rodriguez · 497 U.S. 177 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/497/177/"
+    },
+    "camara": {
+      "label": "Camara v. Municipal Court · 387 U.S. 523 (1967)",
+      "url": "https://supreme.justia.com/cases/federal/us/387/523/"
+    },
+    "barlows": {
+      "label": "Marshall v. Barlow’s, Inc. · 436 U.S. 307 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/436/307/"
+    },
+    "burger": {
+      "label": "New York v. Burger · 482 U.S. 691 (1987)",
+      "url": "https://supreme.justia.com/cases/federal/us/482/691/"
+    },
+    "patel": {
+      "label": "City of Los Angeles v. Patel · 576 U.S. 409 (2015)",
+      "url": "https://supreme.justia.com/cases/federal/us/576/409/"
+    },
+    "opperman": {
+      "label": "South Dakota v. Opperman · 428 U.S. 364 (1976)",
+      "url": "https://supreme.justia.com/cases/federal/us/428/364/"
+    },
+    "mapp": {
+      "label": "Mapp v. Ohio · 367 U.S. 643 (1961)",
+      "url": "https://supreme.justia.com/cases/federal/us/367/643/"
+    },
+    "leon": {
+      "label": "United States v. Leon · 468 U.S. 897 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/468/897/"
+    },
+    "winship": {
+      "label": "In re Winship · 397 U.S. 358 (1970)",
+      "url": "https://supreme.justia.com/cases/federal/us/397/358/"
+    },
+    "constitution": {
+      "label": "U.S. Constitution · Amendments IV, V, VI, VIII, XIV",
+      "url": "https://constitution.congress.gov/constitution/"
+    },
+    "brady": {
+      "label": "Brady v. Maryland · 373 U.S. 83 (1963)",
+      "url": "https://supreme.justia.com/cases/federal/us/373/83/"
+    },
+    "murray": {
+      "label": "Murray v. United States · 487 U.S. 533 (1988)",
+      "url": "https://supreme.justia.com/cases/federal/us/487/533/"
+    },
+    "nix": {
+      "label": "Nix v. Williams · 467 U.S. 431 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/467/431/"
+    },
+    "brown": {
+      "label": "Brown v. Illinois · 422 U.S. 590 (1975)",
+      "url": "https://supreme.justia.com/cases/federal/us/422/590/"
+    },
+    "jimeno": {
+      "label": "Florida v. Jimeno · 500 U.S. 248 (1991)",
+      "url": "https://supreme.justia.com/cases/federal/us/500/248/"
+    },
+    "ramos": {
+      "label": "Ramos v. Louisiana · 590 U.S. 83 (2020)",
+      "url": "https://supreme.justia.com/cases/federal/us/590/18-5924/"
+    },
+    "rakas": {
+      "label": "Rakas v. Illinois · 439 U.S. 128 (1978)",
+      "url": "https://supreme.justia.com/cases/federal/us/439/128/"
+    },
+    "jacobsen": {
+      "label": "United States v. Jacobsen · 466 U.S. 109 (1984)",
+      "url": "https://supreme.justia.com/cases/federal/us/466/109/"
+    },
+    "brigham": {
+      "label": "Brigham City v. Stuart · 547 U.S. 398 (2006)",
+      "url": "https://supreme.justia.com/cases/federal/us/547/398/"
+    },
+    "wells": {
+      "label": "Florida v. Wells · 495 U.S. 1 (1990)",
+      "url": "https://supreme.justia.com/cases/federal/us/495/1/"
+    }
+  }
+}

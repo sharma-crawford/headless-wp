@@ -16,6 +16,7 @@ import { isAuthenticated } from "@/lib/auth";
 import { neighbours, outlineFor } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
 import { decodeEntities } from "@/lib/html";
+import { studyPrograms } from "@/lib/study-courses";
 import type { ModuleDetail, ModuleResource, QuizSummary } from "@/lib/types";
 import { getModule } from "@/lib/wordpress";
 
@@ -130,6 +131,11 @@ export default async function ModulePage({
   }
 
   const program = await outlineFor(courseModule.program?.id, preview);
+  const studySubject = Object.entries(studyPrograms).find(([, id]) => id === courseModule.program?.id)?.[0];
+  // These exact wrappers are metadata emitted by the course import, not lesson prose.
+  const lessonContent = studySubject
+    ? courseModule.content.replace(/<section>\s*<h4>(?:Id|Source|Section|ComicSheet|ComicCell)<\/h4>[\s\S]*?<\/section>/g, "")
+    : courseModule.content;
   const { previous, next } = program
     ? neighbours(program, courseModule.id)
     : { previous: null, next: null };
@@ -209,7 +215,8 @@ export default async function ModulePage({
           )}
         </div>
 
-        <WpContent html={courseModule.content} className="mt-8" />
+        {studySubject && <Link href={`/study/${studySubject}`} className="mt-6 inline-flex min-h-11 items-center rounded-lg bg-brand-600 px-5 py-2 font-semibold text-white hover:bg-brand-700">Open the interactive course →</Link>}
+        <WpContent html={lessonContent} className="mt-8" />
 
         <ResourceList
           title="Practice scenarios"

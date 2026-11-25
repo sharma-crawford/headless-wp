@@ -1,0 +1,670 @@
+{
+  "title": "The Noble Estates",
+  "intro": "A fantasy court through the law of possession, land, and power. Follow fourteen chapters from the castle gate to the crown's taking.",
+  "sections": [
+    {
+      "id": "the-royal-bundle",
+      "title": "The royal bundle",
+      "subtitle": "Property is a collection of powers, not a single crown.",
+      "rules": [
+        [
+          "The bundle",
+          "Possession, use, exclusion, transfer, and sometimes destruction are separable interests. Ask **which right** the claimant asserts."
+        ],
+        [
+          "Exclusion has limits",
+          "The right to exclude is central, but statutes, consent, necessity, and other doctrines can limit it. A trespass claim starts with an unpermitted physical invasion."
+        ],
+        [
+          "First possession",
+          "A claim of first possession needs more than a story about wanting the thing; identify the act that establishes control."
+        ]
+      ],
+      "scene": "Duchess Aria bars a visitor from the castle gate, yet the visitor holds a valid access easement. Her title alone does not settle the right to cross.",
+      "comic": "The duchess points to her gate. The visitor unrolls a recorded right of way. The right in dispute is access, not ownership of the whole castle.",
+      "written": [
+        "A duchess owns a manor. A neighbor enters through a gate to repair a shared wall under a recorded easement. She sues solely because she owns the land. What must the court identify?",
+        "Separate the ownership bundle from the particular right to exclude. The easement may authorize entry within its scope; entry outside that scope may still be trespass. Check the instrument and facts of use.",
+        "The neighbor crosses a different field to save time. Does that exceed the easement?"
+      ],
+      "terms": [
+        [
+          "Bundle of rights",
+          "Property can allocate possession, use, exclusion, and transfer to different people."
+        ],
+        [
+          "Trespass",
+          "An unauthorized physical invasion of another's possessory interest."
+        ],
+        [
+          "Easement",
+          "A nonpossessory right to use another's land for a defined purpose."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/property-nobles-01.webp"
+    },
+    {
+      "id": "first-possession",
+      "title": "First possession & adverse claims",
+      "subtitle": "The fox, the jewel, and the occupied borderland.",
+      "rules": [
+        [
+          "Capture",
+          "Under **Pierson v. Post**, pursuit of a wild animal alone does not establish ownership; actual capture or comparable certain control matters."
+        ],
+        [
+          "Finders and gifts",
+          "A finder generally has a superior claim against later possessors but not the true owner. Lost, mislaid, and abandoned property invite different claims. A gift requires intent, delivery, and acceptance."
+        ],
+        [
+          "Adverse possession",
+          "Test actual, open and notorious, exclusive, adverse, and continuous possession for the statutory period. Tacking requires privity; disabilities and color of title have distinct rules."
+        ]
+      ],
+      "scene": "Two barons chase a fox. One captures it while the other merely pursued. Later, a jeweled ring appears on a banquet table: classify the ring before choosing its custodian.",
+      "comic": "A fox outruns two riders while a villager holds a found ring. Pursuit, capture, and finding are different paths to a claim.",
+      "written": [
+        "A countess openly gardens a strip across the boundary for the entire statutory period, believing it is hers. Her predecessor did the same for five earlier years. What facts decide ownership?",
+        "Check each adverse-possession element, the jurisdiction's hostility test, the limitations period, and privity for tacking. A mistaken belief does not automatically defeat hostility under many approaches; the jurisdiction matters.",
+        "Now she used the strip only two weekends a year. Reassess continuity in light of the land's ordinary use."
+      ],
+      "terms": [
+        [
+          "Adverse possession",
+          "Title acquired after qualifying possession for the required limitations period."
+        ],
+        [
+          "Tacking",
+          "Adding successive periods of possession when the possessors have the required legal relationship."
+        ],
+        [
+          "Color of title",
+          "A written instrument that appears to convey title but is defective."
+        ]
+      ],
+      "case": [
+        "Pierson v. Post",
+        "Post's fox pursuit did not defeat Pierson's later capture. The case sharpens the line between effort and possession."
+      ],
+      "source": "v1",
+      "art": "/study-assets/study-art/property-nobles-02.webp"
+    },
+    {
+      "id": "estates-in-land",
+      "title": "Estates in land",
+      "subtitle": "A crown can last forever, for a lifetime, or until a condition fails.",
+      "rules": [
+        [
+          "Fee simple and life estate",
+          "A fee simple absolute has potentially infinite duration. A life estate ends at the measuring life, leaving a future interest in another or the grantor."
+        ],
+        [
+          "Defeasible fees",
+          "Duration language such as **so long as** signals automatic termination and a possibility of reverter. A condition subsequent typically gives the grantor a right of entry, which must be exercised."
+        ],
+        [
+          "Waste",
+          "A life tenant may not unreasonably impair the future holder's interest. Classify affirmative, permissive, or ameliorative waste before considering remedies."
+        ]
+      ],
+      "scene": "A monarch grants the rose castle to a daughter for life, then to a grandchild. The daughter may possess now; the grandchild waits and may object to destructive mining.",
+      "comic": "An elder king gives a charter to a young heir. The gardener tends the castle. The words on the charter, not the crown's shine, define duration.",
+      "written": [
+        "The king grants Blackkeep 'to Elara for life, then to Nia.' Elara proposes to strip the ancient forest for timber. Identify both interests and the likely objection.",
+        "Elara holds a life estate; Nia has a remainder. Cutting timber beyond ordinary husbandry may be affirmative waste, subject to facts and exceptions. Analyze impact on the remainder.",
+        "If the grant instead says 'to Elara so long as the land is used as a school,' identify the different present and future interests."
+      ],
+      "terms": [
+        [
+          "Life estate",
+          "A possessory estate measured by a person's life."
+        ],
+        [
+          "Possibility of reverter",
+          "The grantor's future interest after a fee simple determinable."
+        ],
+        [
+          "Waste",
+          "Improper change or neglect by a present possessor that harms a future interest."
+        ]
+      ],
+      "case": [
+        "Baker v. Weedon",
+        "The life tenant's need for support did not justify an unconditional sale without considering the remaindermen's interests and alternatives."
+      ],
+      "source": "v1",
+      "art": "/study-assets/study-art/property-nobles-03.webp"
+    },
+    {
+      "id": "future-interests",
+      "title": "Future interests & RAP",
+      "subtitle": "Who inherits next, and can the future ever become too remote?",
+      "rules": [
+        [
+          "Classify before timing",
+          "Start with the present estate. The grantor may retain a reversion, possibility of reverter, or right of entry. A transferee may hold a remainder or executory interest."
+        ],
+        [
+          "Vested or contingent",
+          "A remainder is vested when its taker is ascertained and no condition precedent remains. A condition precedent or unascertained taker makes it contingent."
+        ],
+        [
+          "Traditional RAP",
+          "For interests subject to the common-law Rule Against Perpetuities, ask whether vesting **must** occur, if at all, within a life in being plus 21 years. Statutory reforms vary by jurisdiction."
+        ]
+      ],
+      "scene": "The queen says, 'To Rowan for life, then to Rowan's first grandchild to become a knight.' A future grandchild may qualify too late; identify the interest and test the possible timing.",
+      "comic": "An hourglass sits beside a royal family tree. The court asks who is alive at creation and when the promised interest must vest.",
+      "written": [
+        "The queen grants land to B for life, then to B's first child who becomes a knight. B is alive and has no children. Classify the future interest and discuss traditional RAP.",
+        "The child is unascertained and the knighthood condition is precedent, so the remainder is contingent. Under traditional RAP, a child born during B's life might become a knight more than 21 years after B dies; test for invalidity and then check any statutory reform.",
+        "Replace 'becomes a knight' with 'turns 18.' Does a child born before B dies necessarily satisfy the timing test?"
+      ],
+      "terms": [
+        [
+          "Remainder",
+          "A future interest in a transferee that can become possessory at the natural end of the prior estate."
+        ],
+        [
+          "Executory interest",
+          "A transferee's future interest that divests another interest or follows a gap."
+        ],
+        [
+          "Validating life",
+          "A life in being that makes timely vesting certain under the traditional RAP test."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/property-nobles-04.webp"
+    },
+    {
+      "id": "coownership",
+      "title": "Co-ownership & partition",
+      "subtitle": "Several nobles, one manor, competing powers.",
+      "rules": [
+        [
+          "Tenancy in common",
+          "Co-tenants share possession, possibly in unequal shares; a share can ordinarily pass by will. There is no survivorship right."
+        ],
+        [
+          "Joint tenancy",
+          "A properly created joint tenancy includes survivorship. Severance can turn a joint tenant's share into a tenancy in common; identify jurisdictional rules and the severing act."
+        ],
+        [
+          "Co-tenant remedies",
+          "Each co-tenant generally may use the whole. Ouster, rent accounting, contribution, and partition require their own factual showings."
+        ]
+      ],
+      "scene": "Duke A and Duchess B jointly own a fortress. B deeds her share to herself as tenant in common before death. Does A's survivorship claim survive the severance?",
+      "comic": "Two nobles study a map split down the middle. Their undivided interests are legal shares, not necessarily a physical wall across the land.",
+      "written": [
+        "Two siblings hold a manor as joint tenants. One secretly conveys her interest to herself as tenant in common, then dies leaving that share to a friend. Who argues for the share?",
+        "Under Riddle v. Harmon, a self-conveyance can sever without a straw person, so the friend may take the severed share. Confirm the jurisdiction and any recording or notice rule. The surviving sibling retains their own share.",
+        "Change the instrument to a mortgage. Does lien theory or title theory affect severance?"
+      ],
+      "terms": [
+        [
+          "Joint tenancy",
+          "Co-ownership with a right of survivorship when validly created and not severed."
+        ],
+        [
+          "Ouster",
+          "Wrongful exclusion of a co-tenant from possession."
+        ],
+        [
+          "Partition",
+          "Judicial division of co-owned property in kind or by sale."
+        ]
+      ],
+      "case": [
+        "Riddle v. Harmon",
+        "A California joint tenant could sever by conveying her interest to herself; a straw intermediary was unnecessary."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/property-nobles-05.webp"
+    },
+    {
+      "id": "leasehold-court",
+      "title": "Leaseholds & habitability",
+      "subtitle": "The lord, the tenant, and the leaking tower.",
+      "rules": [
+        [
+          "Four leaseholds",
+          "Distinguish a term of years, periodic tenancy, tenancy at will, and tenancy at sufferance. Duration and termination rules differ."
+        ],
+        [
+          "Delivery and transfer",
+          "Under the English rule, a landlord must deliver actual possession; the American rule requires the legal right only. Assignment normally transfers the whole remaining term; sublease reserves a reversion."
+        ],
+        [
+          "Landlord duties",
+          "Evaluate mitigation, quiet enjoyment, constructive eviction, and the implied warranty of habitability separately. The Fair Housing Act imposes additional federal limits on discrimination."
+        ]
+      ],
+      "scene": "A noble leases a tower chamber, but a holdover knight remains inside. The new tenant's remedy depends on which delivery-of-possession rule governs.",
+      "comic": "A royal landlord offers a key as water leaks from the tower ceiling. The tenant has possession questions and a separate habitability problem.",
+      "written": [
+        "A new tenant arrives on the first day of a one-year lease and finds a holdover occupant. The landlord gave a valid lease but no empty room. Compare the two delivery rules.",
+        "The English rule requires actual possession and gives a claim against the landlord. Under the American rule adopted in Hannan v. Dusch, the landlord need only deliver the legal right, leaving the new tenant to proceed against the holdover. Check local law and lease terms.",
+        "The holdover leaves, but water and mold make the room unsafe. Shift to the implied warranty of habitability and appropriate remedies."
+      ],
+      "terms": [
+        [
+          "Assignment",
+          "Transfer of the tenant's entire remaining leasehold interest."
+        ],
+        [
+          "Sublease",
+          "Transfer of less than the tenant's whole remaining term, retaining a reversion."
+        ],
+        [
+          "Constructive eviction",
+          "Serious landlord-caused interference that can justify leaving after required notice and opportunity to cure, as local law requires."
+        ]
+      ],
+      "case": [
+        "Hannan v. Dusch",
+        "Virginia adopted the American rule: delivery of the legal right to possession, without a general duty to remove a holdover."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/property-nobles-06.webp"
+    },
+    {
+      "id": "land-sale",
+      "title": "Sale of the kingdom",
+      "subtitle": "Signing is only the beginning of the transfer.",
+      "rules": [
+        [
+          "Contract and writing",
+          "A land-sale contract generally needs a signed writing satisfying the statute of frauds; part performance and estoppel may offer equitable exceptions."
+        ],
+        [
+          "Between contract and closing",
+          "Equitable conversion and risk-of-loss rules allocate consequences before deed delivery. Many modern statutes alter common-law results."
+        ],
+        [
+          "Marketable title and disclosure",
+          "The seller ordinarily must tender marketable title at closing. Known, latent, material defects can trigger disclosure duties under modern rules; separate title defects from physical conditions."
+        ]
+      ],
+      "scene": "A baron signs to sell a castle, then a storm damages it before closing. Ask who had possession, what the contract says, and which risk-of-loss approach applies.",
+      "comic": "At a candlelit table, nobles sign a castle contract. The signed scroll begins duties; it is not the deed itself.",
+      "written": [
+        "A buyer signs for a keep. Before closing, a fire destroys a wing while the seller remains in possession. The contract is silent. Who bears the loss?",
+        "State the common-law equitable-conversion approach, then check whether the jurisdiction follows the Uniform Vendor and Purchaser Risk Act or another rule placing risk on the seller until transfer of title or possession. Do not assume the same rule everywhere.",
+        "A prior building-code violation also surfaces. Analyze marketable title separately from the fire."
+      ],
+      "terms": [
+        [
+          "Equitable conversion",
+          "A doctrine treating the buyer as equitable owner after an enforceable land-sale contract for some purposes."
+        ],
+        [
+          "Marketable title",
+          "Title reasonably free from substantial doubt or litigation risk at the required time."
+        ],
+        [
+          "Part performance",
+          "Acts sufficiently referable to an oral land contract that may justify equitable enforcement in some jurisdictions."
+        ]
+      ],
+      "case": [
+        "Lohmeyer v. Bower",
+        "Existing zoning and covenant violations impaired marketability; a mere restriction, without a violation, requires separate analysis."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/property-nobles-07.webp"
+    },
+    {
+      "id": "deeds",
+      "title": "The deed ceremony",
+      "subtitle": "The parchment must carry a present transfer.",
+      "rules": [
+        [
+          "Valid instrument",
+          "A deed generally needs an identified grantor and grantee, words of conveyance, adequate description, grantor signature, and delivery."
+        ],
+        [
+          "Delivery means intent",
+          "Physical handoff is evidence but not the whole test. Ask whether the grantor intended the deed to have **present legal effect**; a revocable, death-only plan may fail."
+        ],
+        [
+          "Warranties",
+          "General warranty, special warranty, and quitclaim deeds offer different protection. Separate present covenants from future covenants and their accrual."
+        ]
+      ],
+      "scene": "A queen gives her niece a sealed deed but says it can be recalled whenever she wishes. The seal and ceremony cannot substitute for present intent.",
+      "comic": "A queen hands over a sealed deed. The receiver has parchment; the legal question is whether the queen intended present transfer.",
+      "written": [
+        "A grantor signs a deed, places it in a family desk, and tells the grantee, 'You may have this when I die, unless I change my mind.' Has delivery occurred?",
+        "Delivery requires present intent to transfer an interest, not merely signing or storage. Retained unilateral control and a revocable death-only direction point against delivery; compare Rosengrant and check escrow details.",
+        "The grantor deposits the deed with an independent escrow agent under irrevocable instructions. How does that change the analysis?"
+      ],
+      "terms": [
+        [
+          "Delivery",
+          "The grantor's act manifesting intent that a deed have present legal effect."
+        ],
+        [
+          "General warranty deed",
+          "A deed promising broad covenants against title defects, including earlier ones."
+        ],
+        [
+          "Quitclaim deed",
+          "A deed conveying whatever interest the grantor has without title warranties."
+        ]
+      ],
+      "case": [
+        "Rosengrant v. Rosengrant",
+        "A deed arrangement intended as a revocable transfer at death failed the present-delivery requirement."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/property-nobles-08.webp"
+    },
+    {
+      "id": "recording",
+      "title": "The royal archive",
+      "subtitle": "Who bought first, who recorded, and who had notice?",
+      "rules": [
+        [
+          "Choose the statute",
+          "Race, notice, and race-notice statutes protect different later purchasers. Identify the jurisdiction's statute before ranking claimants."
+        ],
+        [
+          "Bona fide purchaser",
+          "A later buyer generally needs value and lack of legally relevant notice. Actual, inquiry, and constructive notice are distinct routes."
+        ],
+        [
+          "Search the chain",
+          "A recorded instrument outside the searchable chain may be a wild deed. Vague descriptions can fail to give effective record notice even when the parties remain bound."
+        ]
+      ],
+      "scene": "A noble buys a valley from a seller who had secretly deeded it to someone else. The royal archive's order and the buyer's notice determine priority.",
+      "comic": "Rival purchasers search the archive and find conflicting deeds. The clerk asks which recording statute rules the realm.",
+      "written": [
+        "O deeds land to A, who does not record. O then deeds to B for value without notice; B records first. Compare B's position under race, notice, and race-notice statutes.",
+        "B commonly prevails under all three on these facts: B recorded first, paid value, and lacked notice. Change one fact at a time to expose the statutes' differences. Verify the jurisdiction's exact wording and chain-of-title rules.",
+        "Now A records before B buys. Is B still without constructive notice?"
+      ],
+      "terms": [
+        [
+          "Bona fide purchaser",
+          "A purchaser for value without the notice that defeats statutory protection."
+        ],
+        [
+          "Inquiry notice",
+          "Notice imputed from facts that would prompt a reasonable investigation."
+        ],
+        [
+          "Wild deed",
+          "A recorded deed outside the searchable chain of title."
+        ]
+      ],
+      "case": [
+        "Luthi v. Evans",
+        "A broad Mother Hubbard clause failed to give constructive notice of an unlisted lease to a later purchaser."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/property-nobles-09.webp"
+    },
+    {
+      "id": "mortgage",
+      "title": "The mortgaged manor",
+      "subtitle": "A debt, a lien, and a sale under pressure.",
+      "rules": [
+        [
+          "Debt and security",
+          "The note is the repayment promise; the mortgage or deed of trust secures it with the land. Lien and title theories differ on technical title and possession."
+        ],
+        [
+          "Priority and foreclosure",
+          "Identify senior and junior interests. Foreclosure generally extinguishes junior interests joined or properly noticed, not senior ones; sale proceeds follow priority."
+        ],
+        [
+          "Fair sale and redemption",
+          "Equitable redemption normally exists before the foreclosure sale. Some states add statutory redemption after. A lender conducting a power-of-sale foreclosure may owe duties of good faith and due diligence."
+        ]
+      ],
+      "scene": "Lord A pledges his manor for a loan. At foreclosure, a suspiciously tiny auction price raises questions about the lender's sale efforts, not just the final number.",
+      "comic": "A lord signs beside a model castle and a coin purse. The debt and the land security are related but distinct instruments.",
+      "written": [
+        "A lender gives formal notice, conducts a nearly unadvertised foreclosure sale, and buys the manor for a fraction of fair value. What should the borrower argue?",
+        "Under Murphy v. Financial Development Corp., statutory notice alone did not end the inquiry; the lender had duties of good faith and due diligence to obtain a fair price. Check the governing state's foreclosure statute, sale method, causation, and remedy.",
+        "If a senior mortgage remains on the land, what happens to that interest after a junior foreclosure?"
+      ],
+      "terms": [
+        [
+          "Promissory note",
+          "The borrower's debt obligation."
+        ],
+        [
+          "Mortgage",
+          "Security interest in land supporting repayment."
+        ],
+        [
+          "Equity of redemption",
+          "The mortgagor's pre-sale right to redeem by satisfying the debt and proper charges."
+        ]
+      ],
+      "case": [
+        "Murphy v. Financial Development Corp.",
+        "A power-of-sale mortgagee had to act with good faith and due diligence to obtain a fair price; notice compliance alone was insufficient."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/property-nobles-10.webp"
+    },
+    {
+      "id": "easements",
+      "title": "Roads through noble lands",
+      "subtitle": "A right to cross is not a right to own.",
+      "rules": [
+        [
+          "Name the estates",
+          "An easement appurtenant benefits a dominant parcel and burdens a servient parcel; an easement in gross benefits a person or entity."
+        ],
+        [
+          "How it arose",
+          "Test express grant or reservation, implication from prior use, necessity at severance, prescription, or estoppel. Each path has different elements."
+        ],
+        [
+          "Scope and end",
+          "Read the grant and reasonable use. Excess burden can exceed scope. Release, merger, abandonment with appropriate conduct, prescription, estoppel, or end of necessity may terminate an easement."
+        ]
+      ],
+      "scene": "A landlocked baron seeks a road over a neighbor's estate. He must show the prior common ownership and necessity at severance, not merely a shorter route.",
+      "comic": "One noble traces a road across a map while another asks why it exists. The origin determines the breadth of the path.",
+      "written": [
+        "A landowner splits a parcel. The rear parcel has no road access, and the deed says nothing about passage. What theory may supply access?",
+        "An easement by necessity may arise if the parcels were under common ownership, severance created the landlock, and necessity met the jurisdiction's required degree at that time. A merely convenient route is insufficient.",
+        "A visible lane had served the rear parcel for decades before severance, but another route exists. Consider implied prior use separately."
+      ],
+      "terms": [
+        [
+          "Dominant estate",
+          "Land benefited by an appurtenant easement."
+        ],
+        [
+          "Servient estate",
+          "Land burdened by an easement."
+        ],
+        [
+          "Easement by necessity",
+          "An implied right arising from qualifying necessity when commonly owned land is severed."
+        ]
+      ],
+      "case": [
+        "Van Sandt v. Royster",
+        "An existing shared sewer line supported an implied easement from prior use after severance."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/property-nobles-11.webp"
+    },
+    {
+      "id": "servitudes",
+      "title": "Covenants of the realm",
+      "subtitle": "Promises can bind later owners, but only through the right doctrine.",
+      "rules": [
+        [
+          "Real covenant",
+          "A covenant seeking damages against successors historically requires intent and other running elements, including notice and applicable privity requirements; the rules vary by jurisdiction."
+        ],
+        [
+          "Equitable servitude",
+          "Injunctions may be available for a land-use promise with intent, notice, and a land-related burden/benefit under traditional analysis. Implied reciprocal restrictions require a common scheme and notice."
+        ],
+        [
+          "Communities",
+          "Recorded declarations may create common-interest-community obligations. Analyze validity, scope, enforcement, defenses, and statutes rather than treating every neighborhood preference as binding."
+        ]
+      ],
+      "scene": "A duchess buys a village lot and raises a tower despite a recorded height covenant. Neighbors seek an injunction; the court asks about notice, benefit, burden, and the remedy.",
+      "comic": "Nobles point to a village charter while a tower rises behind them. A promise becomes a successor's burden only if the legal requirements are met.",
+      "written": [
+        "A developer sells lots under a common plan limiting buildings to one story, but omits the restriction from the last deed. The buyer saw uniformly one-story homes. Can neighbors seek relief?",
+        "Consider an implied reciprocal negative servitude: common plan, intended restriction, and actual, inquiry, or record notice under local law. Distinguish an injunction in equity from damages on a real covenant.",
+        "What if no common plan was ever recorded or communicated and several taller buildings already existed?"
+      ],
+      "terms": [
+        [
+          "Real covenant",
+          "A land-related promise potentially enforceable for damages against successors when running requirements are met."
+        ],
+        [
+          "Equitable servitude",
+          "A land-related promise potentially enforceable in equity against a successor with the required notice."
+        ],
+        [
+          "Common scheme",
+          "A development plan that can support reciprocal land-use restrictions when notice and other requirements exist."
+        ]
+      ],
+      "case": [
+        "Neponsit Property Owners' Ass'n v. Emigrant Bank",
+        "A homeowners' association could enforce a running assessment covenant for common-area maintenance on behalf of benefited owners."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/property-nobles-12.webp"
+    },
+    {
+      "id": "zoning",
+      "title": "The zoning council",
+      "subtitle": "A tower plan meets the public land-use map.",
+      "rules": [
+        [
+          "Police power",
+          "Land-use regulation commonly divides uses and form through zoning. Start with the ordinance and the government's authorized procedure."
+        ],
+        [
+          "Relief and existing uses",
+          "A lawful preexisting nonconforming use may continue subject to limits. Variances and conditional-use permits have different statutory standards."
+        ],
+        [
+          "Challenge the right rule",
+          "Separate facial and as-applied challenges, spot-zoning concerns, and equal-protection or Fair Housing Act issues where facts support them."
+        ]
+      ],
+      "scene": "A noble architect asks to build a taller tower than the district allows. The council must apply the local variance standard, not a personal preference for the skyline.",
+      "comic": "An architect brings tower plans to a council. The map and the ordinance, rather than noble rank, frame the dispute.",
+      "written": [
+        "A parcel's unusual triangular shape makes the permitted setback leave almost no buildable area. The owner seeks relief for a modest home. What land-use mechanism should counsel examine?",
+        "An area variance may be available if the jurisdiction's hardship or practical-difficulty criteria are met. Compare a use variance, which would authorize a prohibited use and often requires a stronger showing. Apply the local ordinance and findings.",
+        "Replace the home with a commercial tavern forbidden throughout the district. Does the requested variance change type?"
+      ],
+      "terms": [
+        [
+          "Variance",
+          "Permission to depart from a zoning requirement under defined local standards."
+        ],
+        [
+          "Nonconforming use",
+          "A lawful existing use that no longer conforms after a zoning change, subject to local limits."
+        ],
+        [
+          "Conditional use",
+          "A use allowed if specified ordinance conditions are met."
+        ]
+      ],
+      "case": [
+        "Village of Euclid v. Ambler Realty Co.",
+        "The Supreme Court upheld comprehensive zoning against a facial due-process challenge, allowing reasonable land-use districts."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/property-nobles-13.webp"
+    },
+    {
+      "id": "takings",
+      "title": "The crown takes the land",
+      "subtitle": "Public purpose, compensation, and regulatory limits.",
+      "rules": [
+        [
+          "Direct condemnation",
+          "Eminent domain requires a qualifying public use and just compensation under federal and state law. Kelo read federal public use broadly for an integrated redevelopment plan; states may impose tighter limits."
+        ],
+        [
+          "Categorical rules",
+          "A permanent physical occupation and a regulation that removes all economically beneficial use trigger distinct categorical analyses, subject to doctrinal exceptions."
+        ],
+        [
+          "Balancing and conditions",
+          "Other regulatory claims often use Penn Central's factors. Permit exactions call for an essential nexus and rough proportionality, with recent doctrine addressing monetary conditions too."
+        ]
+      ],
+      "scene": "The crown takes a strip of orchard for a public bridge. The project may satisfy public use, but the owner can still contest valuation and any state-law limits.",
+      "comic": "Royal surveyors mark a bridge route and offer payment. Public purpose answers one question; just compensation answers another.",
+      "written": [
+        "A royal government condemns a narrow strip for a public bridge. The owner argues that any taking is illegal because a private contractor will build it. Analyze the claim.",
+        "A public bridge is a classic public-purpose example; hiring a private contractor does not itself defeat public use. The government still must pay just compensation, obey applicable procedures, and satisfy any stricter state constitutional or statutory limits.",
+        "The government instead bans all building on the remaining orchard. Identify the additional regulatory-takings questions."
+      ],
+      "terms": [
+        [
+          "Eminent domain",
+          "Government power to take private property for public use with just compensation."
+        ],
+        [
+          "Regulatory taking",
+          "A land-use restriction so burdensome that compensation may be constitutionally required."
+        ],
+        [
+          "Exaction",
+          "A permit condition requiring property or payment in connection with development approval."
+        ]
+      ],
+      "case": [
+        "Kelo v. City of New London",
+        "A planned economic-development taking satisfied the federal public-use standard, while states remained free to restrict such takings further."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/property-nobles-14.webp"
+    }
+  ],
+  "sources": {
+    "v1": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v2": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v3": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "outline": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "fha": {
+      "label": "Fair Housing Act · 42 U.S.C. § 3604",
+      "url": "https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title42%2Fchapter45"
+    },
+    "kelo": {
+      "label": "Kelo v. New London · U.S. Reports 545",
+      "url": "https://www.supremecourt.gov/opinions/boundvolumes/545bv.pdf"
+    }
+  }
+}

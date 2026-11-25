@@ -1,0 +1,1179 @@
+[
+  {
+    "id": 1,
+    "section": 0,
+    "prompt": "A state prosecutes a serious offense but denies a jury because its own constitution permits a bench trial. Which response is best?",
+    "options": [
+      "The incorporated federal jury right sets a minimum the state must respect.",
+      "Only the state constitution matters.",
+      "Every petty offense must also have a jury.",
+      "The Fourth Amendment alone supplies the jury right."
+    ],
+    "answer": 0,
+    "explanation": "Duncan applies the Sixth Amendment jury guarantee to serious state criminal prosecutions through the Fourteenth Amendment.",
+    "refs": [
+      "duncan"
+    ]
+  },
+  {
+    "id": 2,
+    "section": 0,
+    "prompt": "A state seeks a punitive forfeiture of a driver’s vehicle and argues that the federal Excessive Fines Clause restricts only federal officials. What is the best response?",
+    "options": [
+      "The state is correct because forfeiture is always outside the Bill of Rights.",
+      "The clause also binds state and local governments; excessiveness must then be assessed on the facts.",
+      "Every forfeiture is automatically excessive.",
+      "The federal clause applies only if the owner was acquitted."
+    ],
+    "answer": 1,
+    "explanation": "Timbs decided incorporation and remanded; applying the excessiveness standard to particular property is a separate step.",
+    "refs": [
+      "timbs"
+    ]
+  },
+  {
+    "id": 3,
+    "section": 0,
+    "prompt": "A capital defendant meets appointed counsel only as a rushed trial begins. What is the strongest constitutional inquiry?",
+    "options": [
+      "Whether any lawyer’s name appeared in the file, ending the inquiry.",
+      "Whether the defendant can prove innocence before requesting preparation time.",
+      "Whether the defendant received a meaningful opportunity for counsel’s assistance.",
+      "Whether the appointment alone substitutes for all actual assistance."
+    ],
+    "answer": 2,
+    "explanation": "Powell looked beyond nominal appointment to effective opportunity for assistance under its serious circumstances.",
+    "refs": [
+      "powell"
+    ]
+  },
+  {
+    "id": 4,
+    "section": 0,
+    "prompt": "Police have probable cause to arrest a suspect. At trial, the prosecutor argues that this same showing is enough to convict. What is wrong?",
+    "options": [
+      "An arrest conclusively proves the offense.",
+      "Reasonable suspicion suffices whenever the officer is credible.",
+      "A fair probability is the trial burden for every element.",
+      "Conviction requires proof of each offense element beyond a reasonable doubt, a higher burden."
+    ],
+    "answer": 3,
+    "explanation": "Procedural stages serve different purposes and demand different levels of proof.",
+    "refs": [
+      "pringle",
+      "winship"
+    ]
+  },
+  {
+    "id": 5,
+    "section": 1,
+    "prompt": "A new constitutional criminal-procedure rule is announced while a defendant’s ordinary direct appeal remains pending. What generally happens?",
+    "options": [
+      "The new rule generally applies because the conviction is not yet final.",
+      "Only arrests made after the decision benefit.",
+      "The rule applies only if it changes which conduct is criminal.",
+      "Every pending appeal is treated as a final collateral case."
+    ],
+    "answer": 0,
+    "explanation": "Griffith applies new rules to cases on direct review or not yet final.",
+    "refs": [
+      "griffith"
+    ]
+  },
+  {
+    "id": 6,
+    "section": 1,
+    "prompt": "A defendant’s state conviction was already final before the new jury-unanimity rule. He seeks that rule’s benefit on federal habeas review. What is the best analysis?",
+    "options": [
+      "Every significant jury rule automatically reopens every final conviction.",
+      "The new procedural unanimity rule does not apply retroactively in that federal collateral proceeding.",
+      "The rule necessarily is substantive because jury trials are important.",
+      "Direct-review retroactivity automatically controls federal habeas."
+    ],
+    "answer": 1,
+    "explanation": "Edwards treats Ramos as a new procedural rule and rejects retroactivity on federal collateral review.",
+    "refs": [
+      "edwards"
+    ]
+  },
+  {
+    "id": 7,
+    "section": 1,
+    "prompt": "A prisoner argues that a newly announced procedural right must reopen her final conviction on federal habeas because it is exceptionally important. Which response is best?",
+    "options": [
+      "Any important procedural rule automatically qualifies for a watershed exception.",
+      "A new rule is substantive whenever a defendant strongly values it.",
+      "There is no continuing watershed-procedural-rule exception; importance alone does not supply retroactivity.",
+      "Finality never affects federal habeas analysis."
+    ],
+    "answer": 2,
+    "explanation": "Edwards eliminated the proposed watershed-procedural-rule exception. Do not use the old Teague formulation without that update.",
+    "refs": [
+      "edwards",
+      "teague"
+    ]
+  },
+  {
+    "id": 8,
+    "section": 1,
+    "prompt": "Two defendants invoke the same new rule. One is on ordinary direct appeal; the other is challenging a final conviction on federal habeas. Why can their results differ?",
+    "options": [
+      "Only the defendants’ preferences matter.",
+      "Every rule applies identically in every proceeding.",
+      "The side with the older lawyer receives the new rule.",
+      "Finality and review posture determine different retroactivity frameworks."
+    ],
+    "answer": 3,
+    "explanation": "Posture and finality identify the governing framework; then classify the rule and examine the relevant exceptions.",
+    "refs": [
+      "griffith",
+      "teague",
+      "edwards"
+    ]
+  },
+  {
+    "id": 9,
+    "section": 2,
+    "prompt": "An officer physically installs a tracker on a suspect’s car to obtain information. Which analysis is necessary?",
+    "options": [
+      "A physical intrusion on a protected effect to obtain information can itself be a search.",
+      "Public-road travel automatically excuses the physical installation.",
+      "No search is possible without property damage.",
+      "Only the owner’s subjective desire to hide the license plate matters."
+    ],
+    "answer": 0,
+    "explanation": "An information-gathering physical intrusion on a protected effect can itself be a search.",
+    "refs": [
+      "jones"
+    ]
+  },
+  {
+    "id": 10,
+    "section": 2,
+    "prompt": "Police electronically listen to a private call from outside a booth without physically entering it. Which proposition answers “no trespass, no search”?",
+    "options": [
+      "A public location eliminates all privacy in conversations.",
+      "A reasonable expectation of privacy can be invaded without a physical trespass.",
+      "Only homes can be protected against listening.",
+      "A microphone outside the booth can never conduct a search."
+    ],
+    "answer": 1,
+    "explanation": "The absence of a physical entry does not end the search inquiry.",
+    "refs": [
+      "katz"
+    ]
+  },
+  {
+    "id": 11,
+    "section": 2,
+    "prompt": "An investigator both physically intrudes on a person’s protected property to obtain information and uses a method implicating reasonable privacy expectations. How should you analyze whether there was a search?",
+    "options": [
+      "Require both routes to be satisfied in every case.",
+      "Ignore property whenever privacy is disputed.",
+      "Consider the property and privacy routes; either can independently establish a search.",
+      "Ignore privacy whenever there is no lasting physical damage."
+    ],
+    "answer": 2,
+    "explanation": "Jones retained the reasonable-expectation framework and recognized an independent property-based ground.",
+    "refs": [
+      "katz",
+      "jones"
+    ]
+  },
+  {
+    "id": 12,
+    "section": 2,
+    "prompt": "After finding that government conduct was a search, what is the next useful inquiry?",
+    "options": [
+      "Automatically dismiss all charges.",
+      "Automatically conclude the search was lawful.",
+      "Ignore the search’s scope.",
+      "Whether a valid warrant or a recognized justification made it reasonable."
+    ],
+    "answer": 3,
+    "explanation": "“Search” triggers constitutional analysis; it does not decide reasonableness or the suppression remedy by itself.",
+    "refs": [
+      "katz",
+      "leon"
+    ]
+  },
+  {
+    "id": 13,
+    "section": 3,
+    "prompt": "Officers enter private farmland far beyond the home’s curtilage. The owner points only to no-trespassing signs. Do the signs alone establish a protected federal Fourth Amendment interest in the open field?",
+    "options": [
+      "No; signs and private ownership alone do not defeat the open-fields doctrine.",
+      "Yes; every private acre is constitutionally a house.",
+      "Yes; a sign automatically creates curtilage regardless of location and use.",
+      "No; private ownership never matters anywhere, even inside the home."
+    ],
+    "answer": 0,
+    "explanation": "Ownership, fences, and signs do not automatically create a Fourth Amendment privacy expectation in open fields.",
+    "refs": [
+      "oliver"
+    ]
+  },
+  {
+    "id": 14,
+    "section": 3,
+    "prompt": "A shed is near a home, inside its domestic fence, used for household activities, and screened from the road. Which analysis best addresses curtilage?",
+    "options": [
+      "Count only the number of feet from the house.",
+      "Evaluate proximity, enclosure, use, and shielding together.",
+      "Treat every outbuilding on privately owned land as curtilage.",
+      "Ignore domestic use because the shed has a separate roof."
+    ],
+    "answer": 1,
+    "explanation": "Dunn also considers enclosure and efforts to shield observation; the factors guide an overall judgment.",
+    "refs": [
+      "dunn"
+    ]
+  },
+  {
+    "id": 15,
+    "section": 3,
+    "prompt": "Officers use technology not in general public use to obtain details of a home’s interior otherwise unavailable without entry. They rely only on the fact that they stood on a public street. Best analysis?",
+    "options": [
+      "Standing in public automatically makes every sensing technique constitutional.",
+      "The government must physically damage the house before a search occurs.",
+      "The described technological observation is a search despite the public vantage.",
+      "Only details that officers consider intimate receive protection."
+    ],
+    "answer": 2,
+    "explanation": "Kyllo protects home information against the described sense-enhancing technology.",
+    "refs": [
+      "kyllo"
+    ]
+  },
+  {
+    "id": 16,
+    "section": 3,
+    "prompt": "An officer uses a novel aerial surveillance method and argues that compliance with aviation rules alone defeats any Fourth Amendment objection. Which response is best?",
+    "options": [
+      "Every lawful flight permits any kind of home surveillance.",
+      "Every observation from the air is automatically a search.",
+      "A backyard fence conclusively prevents all aerial observation.",
+      "Aviation legality alone is insufficient; the vantage, public use, technology, and intrusion into domestic privacy matter."
+    ],
+    "answer": 3,
+    "explanation": "Aerial-observation cases are fact-specific. Evaluate the public vantage and method instead of treating aviation compliance or a fence as conclusive.",
+    "refs": [
+      "greenwood",
+      "ciraolo",
+      "florida-riley"
+    ]
+  },
+  {
+    "id": 17,
+    "section": 4,
+    "prompt": "A suspect voluntarily tells an informant about a plan; the informant transmits the conversation to police. Does the suspect’s misplaced trust alone establish a Fourth Amendment violation?",
+    "options": [
+      "No; a cooperating participant may relay the conversation without the same privacy claim as an outsider intercepting it.",
+      "Yes; a conversational partner can never disclose what was said.",
+      "Yes; electronic transmission always receives different treatment from participant disclosure.",
+      "No; this means police may intercept every private conversation between noncooperating people."
+    ],
+    "answer": 0,
+    "explanation": "White addresses the risk that a conversation partner will cooperate with government; it differs from an outsider intercepting a private call.",
+    "refs": [
+      "white"
+    ]
+  },
+  {
+    "id": 18,
+    "section": 4,
+    "prompt": "A tracker reveals that a container is inside a residence, information unavailable from public observation. Police rely on the rule for tracking a limited public-road trip. Best response?",
+    "options": [
+      "All tracking signals are abandoned property.",
+      "Learning otherwise unavailable information about the home’s interior presents a distinct protected intrusion.",
+      "Anything once transported on a road loses all later privacy.",
+      "Public-road tracking doctrine authorizes every interior-home observation."
+    ],
+    "answer": 1,
+    "explanation": "Separate public movement from information about the inside of a home.",
+    "refs": [
+      "karo",
+      "knotts"
+    ]
+  },
+  {
+    "id": 19,
+    "section": 4,
+    "prompt": "The government obtains at least seven days of historical cell-site location records from a carrier without a warrant or exception. Is third-party possession enough to defeat a search claim?",
+    "options": [
+      "Yes; all business records receive exactly the same constitutional treatment.",
+      "Yes; location history can never reveal private activity.",
+      "No; this extensive historical location acquisition is a search and generally requires a warrant.",
+      "No search can occur unless police enter the carrier’s premises."
+    ],
+    "answer": 2,
+    "explanation": "Carpenter declined mechanical application of the third-party doctrine to comprehensive historical location data.",
+    "refs": [
+      "carpenter",
+      "smith"
+    ]
+  },
+  {
+    "id": 20,
+    "section": 4,
+    "prompt": "Investigators want to use real-time cell tracking. They argue that a decision concerning historical location records conclusively approves their method. Which analytical response is best?",
+    "options": [
+      "Assume every form of cell tracking is categorically approved.",
+      "Assume every form of cell tracking is categorically forbidden.",
+      "Ignore whether the requested data is historical or real-time.",
+      "Identify the technology and relevant authority; a narrow historical-records holding does not decide every tracking method."
+    ],
+    "answer": 3,
+    "explanation": "Carpenter expressly left several technologies and circumstances unresolved.",
+    "refs": [
+      "carpenter"
+    ]
+  },
+  {
+    "id": 21,
+    "section": 5,
+    "prompt": "A lawful stop is supported by suspected fare evasion. Does that alone permit a weapons frisk?",
+    "options": [
+      "No. The officer also needs a reasonable basis to suspect the person is armed and dangerous.",
+      "Yes; every stop authorizes a full pocket search.",
+      "Yes; every offense is treated as an armed robbery.",
+      "No frisk is ever possible without an arrest warrant."
+    ],
+    "answer": 0,
+    "explanation": "Terry separates the basis for a stop from the additional safety basis and limited scope of a frisk.",
+    "refs": [
+      "terry"
+    ]
+  },
+  {
+    "id": 22,
+    "section": 5,
+    "prompt": "A dog sniff adds several minutes after the traffic mission is complete, with no independent reasonable suspicion. What result?",
+    "options": [
+      "Any delay under 30 minutes is automatically valid.",
+      "The added detention is not justified merely because the sniff is brief.",
+      "A limited sniff automatically validates every seizure supporting it.",
+      "Car ownership supplies independent reasonable suspicion."
+    ],
+    "answer": 1,
+    "explanation": "A sniff may be limited in informational scope yet the added seizure can still be unlawful.",
+    "refs": [
+      "rodriguez",
+      "caballes"
+    ]
+  },
+  {
+    "id": 23,
+    "section": 5,
+    "prompt": "Officers bring a drug dog to the front porch to investigate the home. What is the strongest relevant rule?",
+    "options": [
+      "Every visitor may conduct any investigation on the porch.",
+      "The limited information from a sniff automatically defeats all property-based analysis.",
+      "The specialized investigative intrusion into curtilage exceeds the ordinary license to approach and constitutes a search.",
+      "A porch is always an open field."
+    ],
+    "answer": 2,
+    "explanation": "The ordinary implied license to approach a door does not include a specialized detection investigation.",
+    "refs": [
+      "jardines"
+    ]
+  },
+  {
+    "id": 24,
+    "section": 5,
+    "prompt": "Police detain luggage for roughly 90 minutes to arrange a dog sniff. They argue the sniff reveals only contraband. Which objection remains?",
+    "options": [
+      "The informational scope of the sniff automatically cures any detention.",
+      "Police always receive an automatic 90-minute allowance.",
+      "Luggage can never be detained under any circumstances.",
+      "The prolonged luggage seizure can be unreasonable even if the sniff itself is not a search."
+    ],
+    "answer": 3,
+    "explanation": "Place rejected the extended detention rather than treating a contraband-only sniff as a cure for seizure problems.",
+    "refs": [
+      "place"
+    ]
+  },
+  {
+    "id": 25,
+    "section": 6,
+    "prompt": "An anonymous tip accurately predicts unusual future travel, which officers corroborate. How should probable cause be evaluated?",
+    "options": [
+      "Consider the totality, including corroboration, basis of knowledge, and reliability.",
+      "Reject every anonymous tip automatically.",
+      "Require proof beyond a reasonable doubt before requesting a warrant.",
+      "Use only the informant’s name and ignore predictive detail."
+    ],
+    "answer": 0,
+    "explanation": "Gates replaced rigid independent informant prongs with a practical totality inquiry.",
+    "refs": [
+      "gates"
+    ]
+  },
+  {
+    "id": 26,
+    "section": 6,
+    "prompt": "An officer observes a real traffic violation but also hopes to investigate drugs. Which statement is correct?",
+    "options": [
+      "An unspoken additional motive always invalidates the stop.",
+      "The additional motive generally does not invalidate an objectively justified traffic stop under the Fourth Amendment.",
+      "An objectively justified stop eliminates every possible Equal Protection claim.",
+      "Drug curiosity alone justifies a stop without objective facts."
+    ],
+    "answer": 1,
+    "explanation": "Objective Fourth Amendment justification and an Equal Protection challenge are different questions.",
+    "refs": [
+      "whren"
+    ]
+  },
+  {
+    "id": 27,
+    "section": 6,
+    "prompt": "Police have a warrant for a tavern and its bartender. They search an uninvolved patron solely because he is present. What is the strongest objection?",
+    "options": [
+      "Every patron joins a criminal enterprise by entering the tavern.",
+      "A premises warrant authorizes all searches of all people present.",
+      "The search needs individualized justification; mere presence does not automatically supply it.",
+      "Only a patron who objects aloud retains Fourth Amendment rights."
+    ],
+    "answer": 2,
+    "explanation": "Probable cause must be particularized; context explains the different outcomes.",
+    "refs": [
+      "pringle",
+      "ybarra"
+    ]
+  },
+  {
+    "id": 28,
+    "section": 6,
+    "prompt": "An officer stops a car based on a mistaken interpretation of an ambiguous traffic law. Which question controls whether the legal mistake can support reasonable suspicion?",
+    "options": [
+      "Whether the officer sincerely believed it, regardless of clarity.",
+      "Whether contraband was later found, retroactively validating the stop.",
+      "Whether the officer has ever made a traffic stop before.",
+      "Whether the mistake was objectively reasonable."
+    ],
+    "answer": 3,
+    "explanation": "Heien permits a limited class of objectively reasonable mistakes of law.",
+    "refs": [
+      "heien"
+    ]
+  },
+  {
+    "id": 29,
+    "section": 7,
+    "prompt": "A warrant’s application lists items, but the warrant itself omits them and does not incorporate the application. What is the concern?",
+    "options": [
+      "The warrant lacks the required particularity; an unincorporated application does not cure that defect.",
+      "Probable cause replaces every description requirement.",
+      "The officer’s memory supplies any missing warrant terms.",
+      "The application always becomes part of the warrant automatically."
+    ],
+    "answer": 0,
+    "explanation": "The operative warrant must meet particularity; unincorporated supporting papers do not cure the omission.",
+    "refs": [
+      "groh"
+    ]
+  },
+  {
+    "id": 30,
+    "section": 7,
+    "prompt": "Evidence is probably stored at a third party’s office, but the owner is innocent. Does that alone prohibit a warrant?",
+    "options": [
+      "Yes; every premises owner must first be charged with a crime.",
+      "No; a sufficient evidence-place connection can support a warrant, subject to applicable safeguards.",
+      "Yes; warrants may never reach third-party evidence.",
+      "No protections apply because the owner is innocent."
+    ],
+    "answer": 1,
+    "explanation": "An innocent owner is not a categorical Fourth Amendment bar; press materials can receive additional statutory protection.",
+    "refs": [
+      "zurcher"
+    ]
+  },
+  {
+    "id": 31,
+    "section": 7,
+    "prompt": "A defendant substantially shows that an officer knowingly inserted a false statement essential to the warrant’s probable cause. What should the court consider?",
+    "options": [
+      "Refusing any inquiry because a warrant can never be challenged.",
+      "Automatically acquitting without identifying the evidence.",
+      "A hearing on the affidavit’s material falsity; if proved and the remaining affidavit is insufficient, suppression may follow.",
+      "Treating deliberate falsity as protected whenever the officer hoped to solve a crime."
+    ],
+    "answer": 2,
+    "explanation": "Franks provides a path to challenge deliberate or reckless falsehood material to probable cause.",
+    "refs": [
+      "franks"
+    ]
+  },
+  {
+    "id": 32,
+    "section": 7,
+    "prompt": "An officer knowingly included a false statement in a warrant affidavit, but the remaining truthful facts independently establish probable cause. Why does that matter to suppression based on affidavit falsity?",
+    "options": [
+      "It makes the deliberate lie acceptable professional conduct.",
+      "It automatically validates every separate search in the investigation.",
+      "It eliminates the need for a neutral issuing official.",
+      "The falsehood’s materiality to probable cause is required for that suppression theory."
+    ],
+    "answer": 3,
+    "explanation": "The Franks suppression inquiry asks whether the warrant depends on the deliberate or reckless falsehood.",
+    "refs": [
+      "franks"
+    ]
+  },
+  {
+    "id": 33,
+    "section": 8,
+    "prompt": "Officers executing a valid contraband warrant briefly detain an occupant at the searched home to secure the operation. Is a separate arrest justification invariably required?",
+    "options": [
+      "No; limited occupant detention incident to that search can be reasonable, subject to its limits.",
+      "Yes; every brief detention is a full custodial arrest.",
+      "No; the warrant authorizes detention anywhere for any duration.",
+      "No; every occupant is automatically guilty of the suspected crime."
+    ],
+    "answer": 0,
+    "explanation": "Summers recognizes limited detention authority tied to executing the premises search.",
+    "refs": [
+      "summers"
+    ]
+  },
+  {
+    "id": 34,
+    "section": 8,
+    "prompt": "Police invoke a blanket policy of never knocking in drug cases. What is the problem?",
+    "options": [
+      "All drug searches automatically qualify for no-knock entry.",
+      "Dispensing with announcement requires case-specific reasonable suspicion of danger, futility, or interference such as evidence destruction.",
+      "No-knock entry is forbidden even in genuine danger.",
+      "Announcement has no connection to Fourth Amendment reasonableness."
+    ],
+    "answer": 1,
+    "explanation": "Wilson recognizes the principle; Richards rejects a categorical felony-drug exception. Banks also makes timing contextual.",
+    "refs": [
+      "wilson",
+      "richards",
+      "banks"
+    ]
+  },
+  {
+    "id": 35,
+    "section": 8,
+    "prompt": "Officers reasonably think a floor is one apartment but discover two during the search. What should they do?",
+    "options": [
+      "Continue throughout both because the initial mistake was reasonable.",
+      "Treat both occupants as automatically guilty.",
+      "Limit the search once the mistake becomes apparent.",
+      "Destroy the warrant and deny that any search occurred."
+    ],
+    "answer": 2,
+    "explanation": "Garrison evaluates both initial reasonableness and execution as new facts emerge.",
+    "refs": [
+      "garrison"
+    ]
+  },
+  {
+    "id": 36,
+    "section": 8,
+    "prompt": "Officers use handcuffs on occupants during a dangerous weapons search, then keep everyone restrained long after the safety need and search end. What is the best analysis?",
+    "options": [
+      "A warrant validates all later restraint indefinitely.",
+      "Every use of handcuffs during a search is unconstitutional.",
+      "A dangerous search suspends all limits on treatment of occupants.",
+      "Assess the restraints’ reasonableness as circumstances and duration change; an initial safety basis is not unlimited authority."
+    ],
+    "answer": 3,
+    "explanation": "Muehler and Rettele uphold particular safety measures on particular facts, not unlimited force.",
+    "refs": [
+      "muehler",
+      "rettele"
+    ]
+  },
+  {
+    "id": 37,
+    "section": 9,
+    "prompt": "Police follow a fleeing suspected misdemeanant into a home. They identify flight but no further emergency facts. Which analysis is required?",
+    "options": [
+      "Evaluate actual exigency under all the circumstances; misdemeanor flight does not create an automatic entry exception.",
+      "Every misdemeanor pursuit automatically permits home entry.",
+      "No misdemeanor can ever create any emergency.",
+      "A pursuing officer’s preference to enter settles reasonableness."
+    ],
+    "answer": 0,
+    "explanation": "Lange rejects both an automatic pursuit exception and a rule ignoring genuinely urgent circumstances.",
+    "refs": [
+      "lange"
+    ]
+  },
+  {
+    "id": 38,
+    "section": 9,
+    "prompt": "Officers invoke general community caretaking to enter a home and seize firearms, without identifying consent, a warrant, or an actual emergency. What is missing?",
+    "options": [
+      "Nothing; all firearms eliminate home protection.",
+      "A recognized justification for the home intrusion; vehicle caretaking alone does not supply one.",
+      "Only proof that the officers acted politely.",
+      "Nothing; welfare-related purposes automatically authorize all home searches."
+    ],
+    "answer": 1,
+    "explanation": "Analyze emergency aid or another actual exception separately from general community caretaking.",
+    "refs": [
+      "caniglia"
+    ]
+  },
+  {
+    "id": 39,
+    "section": 9,
+    "prompt": "Officers lawfully knock and then hear evidence apparently being destroyed. Does the knock alone improperly create the exigency?",
+    "options": [
+      "Yes; officers may never lawfully knock on a door.",
+      "No; an unlawful threatened entry always creates a valid exception.",
+      "No, if the officers did not create it through conduct violating or threatening to violate the Fourth Amendment.",
+      "Yes; an evidence emergency can never follow an officer’s lawful approach."
+    ],
+    "answer": 2,
+    "explanation": "Lawful investigation can prompt a reaction without disqualifying the exception; an actual exigency must still exist.",
+    "refs": [
+      "king"
+    ]
+  },
+  {
+    "id": 40,
+    "section": 9,
+    "prompt": "Police immediately pursue an armed robber into a house. What limits the resulting search?",
+    "options": [
+      "Nothing; they may search for any unrelated evidence indefinitely.",
+      "Only the owner’s choice of paint color.",
+      "They must ignore all immediate danger until a trial begins.",
+      "The urgent need to find the suspect, weapons, and address the emergency."
+    ],
+    "answer": 3,
+    "explanation": "Hayden permits action responsive to urgency; scope remains tied to justification.",
+    "refs": [
+      "hayden"
+    ]
+  },
+  {
+    "id": 41,
+    "section": 10,
+    "prompt": "A routine DUI investigation leaves practical time to obtain a warrant, but an officer draws blood without consent based solely on natural alcohol dissipation. Best analysis?",
+    "options": [
+      "Dissipation alone is not a categorical exigency; evaluate the actual circumstances and warrant practicality.",
+      "Every DUI automatically authorizes a warrantless blood draw.",
+      "Dissipation may never be considered, even in a genuine emergency.",
+      "All biological samples fall outside the Fourth Amendment."
+    ],
+    "answer": 0,
+    "explanation": "Dissipation is a factor, not a universal substitute for analyzing practical circumstances.",
+    "refs": [
+      "mcneely"
+    ]
+  },
+  {
+    "id": 42,
+    "section": 10,
+    "prompt": "After a lawful DUI arrest, police request a breath test and a needle blood draw, relying solely on search incident to arrest. Which distinction matters?",
+    "options": [
+      "Both tests always fit the exception in exactly the same way.",
+      "The breath test generally fits that exception; the blood draw generally needs a warrant or a separate justification.",
+      "Neither test can ever proceed without a warrant.",
+      "The more intrusive test automatically gets fewer protections."
+    ],
+    "answer": 1,
+    "explanation": "Birchfield distinguishes breath from the more intrusive blood test.",
+    "refs": [
+      "birchfield"
+    ]
+  },
+  {
+    "id": 43,
+    "section": 10,
+    "prompt": "A suspected drunk driver becomes unconscious and is taken to a hospital while officers face urgent medical and investigative demands. Which is the most careful approach to a warrantless blood draw?",
+    "options": [
+      "Unconsciousness conclusively authorizes every bodily search.",
+      "The driver’s inability to object is voluntary consent.",
+      "Analyze the unconscious-driver exigency framework and its qualifications, including whether unusual facts made a warrant practical.",
+      "Hospital admission automatically eliminates all Fourth Amendment rights."
+    ],
+    "answer": 2,
+    "explanation": "The opinion was fractured and its factual qualifications matter.",
+    "refs": [
+      "mitchell"
+    ]
+  },
+  {
+    "id": 44,
+    "section": 10,
+    "prompt": "A state criminally punishes refusal of a warrantless blood test justified only by legally implied consent to drive. What is the central problem?",
+    "options": [
+      "Driving automatically waives every bodily privacy interest.",
+      "A state may impose any penalty to manufacture consent.",
+      "Blood and breath tests always receive identical search-incident treatment.",
+      "Criminal refusal penalties cannot by themselves justify the otherwise unauthorized blood search."
+    ],
+    "answer": 3,
+    "explanation": "Birchfield distinguishes criminal punishment for refusing an otherwise unauthorized blood test from civil licensing and evidentiary consequences.",
+    "refs": [
+      "birchfield"
+    ]
+  },
+  {
+    "id": 45,
+    "section": 11,
+    "prompt": "An officer lawfully sees an object but must enter a separately protected space to grab it. Which requirement remains unresolved?",
+    "options": [
+      "Lawful access to the object.",
+      "Whether discovery was surprising.",
+      "Whether the officer can name the object’s color.",
+      "Whether the owner dislikes police."
+    ],
+    "answer": 0,
+    "explanation": "Plain view requires lawful vantage, lawful access, and probable cause regarding incriminating character.",
+    "refs": [
+      "horton"
+    ]
+  },
+  {
+    "id": 46,
+    "section": 11,
+    "prompt": "During a lawful emergency entry, an officer moves stereo equipment to expose serial numbers based only on reasonable suspicion. What is the strongest objection?",
+    "options": [
+      "Every object may be moved whenever officers enter lawfully.",
+      "The manipulation is an additional search not justified by plain view alone.",
+      "Reasonable suspicion always satisfies the plain-view seizure standard.",
+      "The emergency authorizes unrelated evidence exploration indefinitely."
+    ],
+    "answer": 1,
+    "explanation": "Distinguish seeing what is exposed from manipulating to reveal more.",
+    "refs": [
+      "hicks"
+    ]
+  },
+  {
+    "id": 47,
+    "section": 11,
+    "prompt": "During a lawful frisk, an officer knows a lump is not a weapon but squeezes it to identify drugs. What is the issue?",
+    "options": [
+      "Every frisk authorizes a general evidence search.",
+      "Officers must ignore contraband even when immediately apparent through lawful touching.",
+      "Extra probing after the weapon concern ends exceeds the lawful frisk.",
+      "All pocket contents are unprotected once a stop begins."
+    ],
+    "answer": 2,
+    "explanation": "Plain feel can support seizure only when incriminating character becomes apparent through lawful touching.",
+    "refs": [
+      "dickerson"
+    ]
+  },
+  {
+    "id": 48,
+    "section": 11,
+    "prompt": "Officers conducting a protective sweep open a coin box too small to hold a person. What is wrong?",
+    "options": [
+      "A safety sweep always includes every container.",
+      "All post-arrest searches have identical scope.",
+      "A search for people is automatically a search for documents.",
+      "A protective sweep is limited to spaces where a dangerous person could hide."
+    ],
+    "answer": 3,
+    "explanation": "A sweep is a limited safety check of places a dangerous person could hide.",
+    "refs": [
+      "buie"
+    ]
+  },
+  {
+    "id": 49,
+    "section": 12,
+    "prompt": "Police have probable cause only that one identified bag in a readily mobile car contains drugs. How far does that justification extend?",
+    "options": [
+      "To searching that bag under the automobile exception, not automatically the entire car.",
+      "To every compartment regardless of the object-specific probable cause.",
+      "To every nearby residence.",
+      "To every occupant’s digital phone contents."
+    ],
+    "answer": 0,
+    "explanation": "Object-specific probable cause can define a narrower search than whole-vehicle probable cause.",
+    "refs": [
+      "acevedo",
+      "ross"
+    ]
+  },
+  {
+    "id": 50,
+    "section": 12,
+    "prompt": "Officers have probable cause about a motorcycle covered inside home curtilage. Does the automobile exception alone allow entry there?",
+    "options": [
+      "Yes; any motor vehicle cancels curtilage protection.",
+      "No; the vehicle exception does not itself authorize crossing protected curtilage to reach the motorcycle.",
+      "Yes; probable cause removes every location-based limit.",
+      "No; a vehicle on a public road can never be searched without a warrant."
+    ],
+    "answer": 1,
+    "explanation": "The authority to search a vehicle does not automatically supply authority to enter protected curtilage.",
+    "refs": [
+      "collins"
+    ]
+  },
+  {
+    "id": 51,
+    "section": 12,
+    "prompt": "Officers have probable cause directed at a bag in a car. The owner argues that every closed container in a vehicle always needs its own warrant. Which answer is best?",
+    "options": [
+      "Every closed bag is categorically immune from the automobile exception.",
+      "Placing a bag in a car eliminates all limits on its search.",
+      "The automobile exception can authorize the bag search within the scope of probable cause; a separate-container warrant is not categorically required.",
+      "Probable cause is unnecessary whenever a container is portable."
+    ],
+    "answer": 2,
+    "explanation": "A brief should distinguish the earlier holding from later doctrinal change.",
+    "refs": [
+      "chadwick",
+      "acevedo"
+    ]
+  },
+  {
+    "id": 52,
+    "section": 12,
+    "prompt": "A readily mobile motor home sits in a public lot and probable cause supports a contraband search. Does its possible use for sleeping automatically defeat the automobile exception?",
+    "options": [
+      "Yes; any sleeping capacity always makes a vehicle a fixed home.",
+      "No; wheels alone permit a search without probable cause.",
+      "Yes; a vehicle must actually be moving when searched.",
+      "No; mobility and its vehicle-like setting can bring it within the exception."
+    ],
+    "answer": 3,
+    "explanation": "Carney stresses mobility and vehicle-associated privacy expectations in its circumstances.",
+    "refs": [
+      "carney",
+      "carroll"
+    ]
+  },
+  {
+    "id": 53,
+    "section": 13,
+    "prompt": "Police arrest a person in a living room and invoke search incident to arrest to search every room and drawer. What is the strongest response?",
+    "options": [
+      "The basic exception reaches the arrestee and immediate control area, not the entire house.",
+      "The whole address automatically becomes part of the arrestee’s person.",
+      "The exception permits any search if requesting a warrant is inconvenient.",
+      "No search of the arrestee’s person can occur without another warrant."
+    ],
+    "answer": 0,
+    "explanation": "Search-incident scope must remain connected to the applicable arrest doctrine.",
+    "refs": [
+      "chimel"
+    ]
+  },
+  {
+    "id": 54,
+    "section": 13,
+    "prompt": "An officer issues only a traffic citation, then searches the car solely because she could have made an arrest. Best analysis?",
+    "options": [
+      "Potential arrest authority is always equivalent to an actual custodial arrest.",
+      "Unused authority to arrest does not create a search-incident exception after a citation alone.",
+      "Every traffic citation permits a full vehicle search.",
+      "A driver loses all privacy by accepting the ticket."
+    ],
+    "answer": 1,
+    "explanation": "An available power to arrest is not the same as exercising it.",
+    "refs": [
+      "knowles"
+    ]
+  },
+  {
+    "id": 55,
+    "section": 13,
+    "prompt": "An arrested driver is secured away from the car, and the arrest offense supplies no reason to expect evidence inside. Does search incident to arrest authorize a passenger-compartment search?",
+    "options": [
+      "Yes; any recent occupant’s arrest automatically permits it.",
+      "Yes; all cars contain evidence of every offense.",
+      "No on those facts; another independent justification would be needed.",
+      "No; cars are immune from every recognized search exception."
+    ],
+    "answer": 2,
+    "explanation": "Gant requires reachability at the time or a reasonable belief of evidence of the arrest offense.",
+    "refs": [
+      "gant"
+    ]
+  },
+  {
+    "id": 56,
+    "section": 13,
+    "prompt": "Police seize a smartphone during a lawful arrest. Can they generally browse its stored messages under search incident to arrest alone?",
+    "options": [
+      "Yes; all digital data is treated exactly like an ordinary physical pocket container.",
+      "Yes; lawful seizure automatically authorizes every content search.",
+      "No phone may ever be secured as evidence.",
+      "No; a warrant is generally required for the digital contents unless an independent exception applies."
+    ],
+    "answer": 3,
+    "explanation": "Riley distinguishes securing the device from exploring its extensive digital information.",
+    "refs": [
+      "riley",
+      "robinson"
+    ]
+  },
+  {
+    "id": 57,
+    "section": 14,
+    "prompt": "A resident allows entry after officers assert that they have a warrant. The government later relies only on consent. What is the problem?",
+    "options": [
+      "Submission to asserted legal authority does not establish voluntary consent.",
+      "Every consent search must use a notarized form.",
+      "Every spoken agreement is automatically voluntary.",
+      "An officer’s assertion creates a valid judicial warrant."
+    ],
+    "answer": 0,
+    "explanation": "Analyze whether permission was freely given, not just whether words of agreement were spoken.",
+    "refs": [
+      "bumper"
+    ]
+  },
+  {
+    "id": 58,
+    "section": 14,
+    "prompt": "An occupant agrees to a vehicle search without being told she can refuse. Which approach best tests consent?",
+    "options": [
+      "The absence of a warning automatically invalidates every consent.",
+      "Examine voluntariness under all the circumstances; lack of a refusal warning is relevant but not automatically decisive.",
+      "Saying yes conclusively establishes voluntariness despite threats.",
+      "Consent is valid only if a lawyer was present."
+    ],
+    "answer": 1,
+    "explanation": "Knowledge of the right to refuse is relevant, but Schneckloth does not impose it as an absolute prerequisite.",
+    "refs": [
+      "schneckloth"
+    ]
+  },
+  {
+    "id": 59,
+    "section": 14,
+    "prompt": "One physically present co-resident expressly refuses an evidentiary home search while another consents. With no other justification, which is best?",
+    "options": [
+      "A consenting co-resident always overrides a present express objection.",
+      "The objection permanently bars every later consent even after lawful removal.",
+      "The other resident’s consent does not override the present objector’s refusal as against that objector.",
+      "Officers may automatically arrest the objector solely to avoid the refusal."
+    ],
+    "answer": 2,
+    "explanation": "Fernandez separately addresses consent after objectively lawful removal of an objector.",
+    "refs": [
+      "randolph",
+      "fernandez"
+    ]
+  },
+  {
+    "id": 60,
+    "section": 14,
+    "prompt": "A person seems to share access to a home but actually lacks authority. Can apparent authority ever justify police reliance?",
+    "options": [
+      "Yes, whenever the person sounds confident, regardless of contrary facts.",
+      "No reasonable factual mistake can ever be considered.",
+      "Only the property’s titled owner can ever consent.",
+      "Yes, if the belief is objectively reasonable; unresolved ambiguity may require inquiry."
+    ],
+    "answer": 3,
+    "explanation": "Illinois v. Rodriguez focuses on objectively reasonable beliefs about common authority.",
+    "refs": [
+      "illinois-rodriguez"
+    ]
+  },
+  {
+    "id": 61,
+    "section": 15,
+    "prompt": "A city demands hotel guest records immediately, punishing refusal without any opportunity for precompliance review. It relies only on calling hotels closely regulated. Best analysis?",
+    "options": [
+      "Hotels are not automatically in that category; the missing opportunity for neutral review creates a constitutional problem.",
+      "Every licensed business is a closely regulated industry.",
+      "Administrative purpose eliminates all safeguards.",
+      "Operating a hotel waives all Fourth Amendment protection."
+    ],
+    "answer": 0,
+    "explanation": "Administrative inspection authority must include the required safeguards or rest on an actual exception.",
+    "refs": [
+      "patel"
+    ]
+  },
+  {
+    "id": 62,
+    "section": 15,
+    "prompt": "A statute permits inspections in a closely regulated industry but gives inspectors unlimited discretion over time, place, and scope. What is the strongest concern?",
+    "options": [
+      "The industry label alone validates unlimited discretion.",
+      "The scheme lacks an adequate substitute for a warrant’s notice and limits, even if a substantial regulatory interest exists.",
+      "Any warrantless regulatory inspection is forbidden in all circumstances.",
+      "Only the owner’s willingness to cooperate matters."
+    ],
+    "answer": 1,
+    "explanation": "All parts of the framework matter; regulation alone does not suffice.",
+    "refs": [
+      "burger"
+    ]
+  },
+  {
+    "id": 63,
+    "section": 15,
+    "prompt": "A routine housing inspection lacks individual suspicion of a crime. Is a warrant necessarily impossible?",
+    "options": [
+      "Yes; a warrant always needs individualized criminal suspicion.",
+      "No warrant or consent is ever required for a housing inspection.",
+      "No; reasonable inspection-program standards can supply administrative probable cause.",
+      "Inspectors must first prove a code crime beyond a reasonable doubt."
+    ],
+    "answer": 2,
+    "explanation": "Administrative probable cause differs from ordinary criminal probable cause, while preserving review safeguards.",
+    "refs": [
+      "camara",
+      "barlows"
+    ]
+  },
+  {
+    "id": 64,
+    "section": 15,
+    "prompt": "Police inventory a lawfully impounded vehicle under standard caretaking procedures. What is the best analysis?",
+    "options": [
+      "Calling it inventory automatically excuses any evidence hunt.",
+      "A missing criminal warrant automatically defeats every inventory.",
+      "Every inventory permits searches of unrelated homes.",
+      "Evaluate lawful impoundment, genuine inventory purpose, and standardized scope under the relevant doctrine."
+    ],
+    "answer": 3,
+    "explanation": "Opperman recognizes a legitimate caretaking inventory in its circumstances, not a free-standing label that cures pretextual searches.",
+    "refs": [
+      "opperman"
+    ]
+  },
+  {
+    "id": 65,
+    "section": 16,
+    "prompt": "A search violated the Fourth Amendment. Which conclusion is premature?",
+    "options": [
+      "The entire criminal case must automatically be dismissed.",
+      "The particular evidence and requested remedy need analysis.",
+      "The defendant’s own affected rights matter.",
+      "Limits on exclusion may affect admissibility."
+    ],
+    "answer": 0,
+    "explanation": "The violation, suppression remedy, and ability to prosecute with other evidence are separate questions.",
+    "refs": [
+      "mapp",
+      "leon"
+    ]
+  },
+  {
+    "id": 66,
+    "section": 16,
+    "prompt": "An officer relies on a warrant plainly missing its description of things to be seized and claims good faith. What is the strongest obstacle?",
+    "options": [
+      "Every signed warrant guarantees good faith regardless of defects.",
+      "An obvious facial defect may make reliance objectively unreasonable.",
+      "Good faith eliminates the particularity requirement itself.",
+      "Subjective sincerity alone ends the inquiry."
+    ],
+    "answer": 1,
+    "explanation": "Leon’s limits include facial deficiency; Groh illustrates why an obvious particularity problem matters.",
+    "refs": [
+      "leon",
+      "groh"
+    ]
+  },
+  {
+    "id": 67,
+    "section": 16,
+    "prompt": "At trial the prosecutor proves that the defendant probably committed the charged crime, but a reasonable doubt remains about an essential element. Is that enough to convict?",
+    "options": [
+      "Yes; a fair probability is sufficient at trial.",
+      "Yes; reasonable suspicion is the highest criminal burden.",
+      "No; each offense element must be proved beyond a reasonable doubt.",
+      "Yes; an earlier arrest relieves the prosecution of proving elements."
+    ],
+    "answer": 2,
+    "explanation": "Winship requires the high criminal burden; earlier investigation and arrest standards are lower.",
+    "refs": [
+      "winship"
+    ]
+  },
+  {
+    "id": 68,
+    "section": 16,
+    "prompt": "Officers reasonably rely on a warrant later found unsupported by probable cause. There are no material lies, obvious defects, abandoned judicial neutrality, or bare-bones support. Must the evidence always be excluded?",
+    "options": [
+      "Yes; every constitutional defect automatically requires exclusion.",
+      "No; the defect becomes constitutionally valid retroactively.",
+      "No; subjective politeness alone would cure any deliberate violation.",
+      "No; objectively reasonable reliance can limit exclusion even though the warrant was defective."
+    ],
+    "answer": 3,
+    "explanation": "Leon concerns the exclusionary remedy and has important exceptions; it does not erase the underlying warrant defect.",
+    "refs": [
+      "leon",
+      "franks"
+    ]
+  },
+  {
+    "id": 69,
+    "section": 16,
+    "prompt": "An earlier unlawful search is followed by a valid warrant based on genuinely independent information, and the decision to seek it was not prompted by the illegal search. What is the best argument for admitting the later-acquired evidence?",
+    "options": [
+      "The independent-source doctrine can apply if the lawful acquisition is genuinely independent.",
+      "Every later event is permanently tainted regardless of independence.",
+      "The successful illegal search retroactively became lawful.",
+      "Any second officer automatically supplies independence."
+    ],
+    "answer": 0,
+    "explanation": "Murray asks whether the later lawful acquisition is genuinely independent of the earlier illegality.",
+    "refs": [
+      "murray"
+    ]
+  },
+  {
+    "id": 70,
+    "section": 16,
+    "prompt": "Police unlawfully find an object, but claim a lawful ongoing investigation would inevitably have located it anyway. What must that argument establish?",
+    "options": [
+      "The object existed, so discovery was inevitable.",
+      "The lawful route would inevitably have produced the evidence; mere possibility is not enough.",
+      "Any officer believes it might have been found someday.",
+      "The illegal search was efficient."
+    ],
+    "answer": 1,
+    "explanation": "Nix recognizes inevitable discovery with proof of the lawful route, not speculation based on the search’s success.",
+    "refs": [
+      "nix"
+    ]
+  },
+  {
+    "id": 71,
+    "section": 14,
+    "prompt": "A resident consents to a search for a missing full-size shield. Can officers rely solely on that consent to open a tiny ring box?",
+    "options": [
+      "Yes; consent to any search always permits every container.",
+      "Yes; the word search has no limits.",
+      "No; objectively reasonable scope is tied to what was authorized.",
+      "No consent search can ever include containers."
+    ],
+    "answer": 2,
+    "explanation": "Jimeno uses objective reasonableness to assess scope. The stated object limits places it could reasonably be found.",
+    "refs": [
+      "jimeno"
+    ]
+  },
+  {
+    "id": 72,
+    "section": 1,
+    "prompt": "A state seeks conviction for a serious criminal offense despite one juror voting not guilty. What constitutional issue should the defense raise?",
+    "options": [
+      "A right to a grand jury in every state prosecution.",
+      "An automatic right to choose the verdict personally.",
+      "A rule abolishing all state juries.",
+      "The jury-unanimity requirement for a serious criminal conviction."
+    ],
+    "answer": 3,
+    "explanation": "Keep the underlying unanimity holding separate from the later question of which final cases receive its benefit.",
+    "refs": [
+      "ramos",
+      "edwards"
+    ]
+  }
+]

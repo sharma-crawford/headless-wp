@@ -1,0 +1,656 @@
+{
+  "title": "The Tidewater Docket",
+  "intro": "Criminal law in a wild, rain-soaked harbor. Follow the charge from first element to final defense across the three note volumes.",
+  "sections": [
+    {
+      "id": "the-burden",
+      "title": "The burden in the storm",
+      "subtitle": "Begin with the charge, each element, and the presumption of innocence.",
+      "rules": [
+        [
+          "Name the offense",
+          "Break a charge into conduct, circumstance, result, and mental-state elements. The prosecutor must prove every required element; a compelling story does not fill a missing one."
+        ],
+        [
+          "Proof beyond reasonable doubt",
+          "The criminal burden is beyond a reasonable doubt, a high level of rational certainty rather than absolute certainty. A reasonable doubt about any element requires acquittal on that charge."
+        ],
+        [
+          "Why punish?",
+          "Retribution, deterrence, incapacitation, and rehabilitation offer different reasons for punishment. Distinguish policy arguments from the elements of an offense."
+        ]
+      ],
+      "scene": "In the tidewater courthouse, the state shows that a cargo chest vanished. The judge asks who took it and with what state of mind, one element at a time.",
+      "comic": "A storm-lit judge weighs two scales. Suspicion must still become proof of every required element.",
+      "written": [
+        "A locked chest disappears after a festival. The accused was near the dock, but no witness saw a taking. The prosecutor proves opportunity and motive. What remains?",
+        "Opportunity and motive may support an inference, but the state must prove the charged conduct and mental state beyond a reasonable doubt. Identify the statute's elements and test each inference; do not shift the burden to the accused.",
+        "The accused admits moving the chest but says it was to keep it safe. Which mental-state question now matters?"
+      ],
+      "terms": [
+        [
+          "Element",
+          "A fact the prosecution must prove to establish the charged offense."
+        ],
+        [
+          "Reasonable doubt",
+          "A doubt grounded in reason that prevents the required level of certainty."
+        ],
+        [
+          "Presumption of innocence",
+          "The accused starts without a burden to prove innocence."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-01.webp"
+    },
+    {
+      "id": "acts-and-omissions",
+      "title": "Acts, omissions & duties",
+      "subtitle": "The tide moves; liability still needs conduct the law recognizes.",
+      "rules": [
+        [
+          "Voluntary act",
+          "Most offenses require a voluntary act. Separate a bodily movement from a result, and identify any statutory conduct requirement."
+        ],
+        [
+          "Omission",
+          "Failure to act is criminal only when the law imposes a duty to act, the person can perform it, and the remaining elements are met. A moral wish to help is not automatically a legal duty."
+        ],
+        [
+          "Status is not conduct",
+          "Punishing a status alone raises a different issue from punishing an act. Analyze the actual charge rather than assuming a person's condition supplies actus reus."
+        ]
+      ],
+      "scene": "At a flood channel, a harbor worker assigned to rescue duty has equipment and a safe route; a passerby has no comparable legal duty. Their silence raises different questions.",
+      "comic": "A rescue worker wades toward a rope while a bystander watches. Duty, ability, and risk matter before an omission becomes criminal.",
+      "written": [
+        "A paid harbor guard watches a child fall from a dock. A safe rescue rope is at hand, but the guard does nothing. A passerby also watches. Analyze the omission issue.",
+        "The guard may have a duty from employment or statute and an apparent ability to act; the passerby ordinarily has no general duty to rescue absent another duty source. For each, identify the charged result, mental state, causation, and jurisdictional rule.",
+        "The guard cannot reach the rope without certain serious danger. How does ability to act change the analysis?"
+      ],
+      "terms": [
+        [
+          "Actus reus",
+          "The prohibited conduct, including a qualifying omission where a duty exists."
+        ],
+        [
+          "Legal duty",
+          "A duty from statute, relationship, contract, creation of peril, or another recognized source."
+        ],
+        [
+          "Voluntary act",
+          "A bodily movement attributable to the actor's control under the governing law."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-02.webp"
+    },
+    {
+      "id": "mental-current",
+      "title": "The mental current",
+      "subtitle": "Purpose, knowledge, recklessness, and negligence pull in different directions.",
+      "rules": [
+        [
+          "MPC ladder",
+          "The Model Penal Code distinguishes purposely, knowingly, recklessly, and negligently. Apply the required level to each **material element** rather than treating the crime as one undifferentiated intent."
+        ],
+        [
+          "Risk is not knowledge",
+          "Recklessness requires conscious disregard of a substantial, unjustifiable risk; negligence asks whether the person should have perceived that risk. Knowledge addresses awareness of a fact or practical certainty of a result."
+        ],
+        [
+          "Statutory silence and mistakes",
+          "Do not assume a silent statute removes mens rea. Interpret text, structure, and precedent. Mistake of fact can matter when it negates the mental state an element requires; true strict liability is narrower and statute-specific."
+        ]
+      ],
+      "scene": "A pilot deliberately opens a tide gate, knows a boat is downstream, and disregards a flood warning. Different elements may require different mental-state findings.",
+      "comic": "The pilot sees a lit warning beacon and chooses the dangerous channel. The court distinguishes awareness of risk from a conscious goal to cause harm.",
+      "written": [
+        "A dock operator opens a gate to save a vessel, sees a warning that small boats may be nearby, and proceeds without looking. A boat is damaged. Compare knowledge, recklessness, and negligence.",
+        "Damage was not necessarily the operator's conscious object. Knowledge requires awareness of the relevant circumstance or practical certainty of a result; recklessness requires conscious disregard of a substantial unjustifiable risk; negligence may fit if the operator should have perceived it but did not. Match the charged statute's element and required culpability.",
+        "The operator honestly believed the warning light was broken. Which element might that mistake negate?"
+      ],
+      "terms": [
+        [
+          "Purposely",
+          "Conduct or result is the actor's conscious object under the MPC."
+        ],
+        [
+          "Recklessly",
+          "Conscious disregard of a substantial unjustifiable risk under the MPC."
+        ],
+        [
+          "Strict liability",
+          "An offense or element for which the law dispenses with proof of a culpable mental state."
+        ]
+      ],
+      "case": [
+        "Staples v. United States",
+        "The Court resisted reading a serious firearms offense as dispensing with mens rea about a feature that made possession criminal."
+      ],
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-03.webp"
+    },
+    {
+      "id": "the-stolen-crate",
+      "title": "The stolen crate",
+      "subtitle": "Taking, carrying away, and intent to deprive.",
+      "rules": [
+        [
+          "Common-law larceny",
+          "Identify a trespassory taking and carrying away of another's personal property with intent to permanently deprive. Even slight movement may satisfy asportation."
+        ],
+        [
+          "Consent and claim of right",
+          "Permission or an honest claim can affect trespass or intent, depending on the law and facts. A later decision to keep property differs from intent at the initial taking."
+        ],
+        [
+          "Modern theft",
+          "Many jurisdictions consolidate common-law categories. Start with the enacted statute, then use the historical distinctions to analyze possession and intent."
+        ]
+      ],
+      "scene": "Someone lifts a sealed crate from a merchant's rain-swept stall intending to sell it. The crate moves only a few feet before guards arrive.",
+      "comic": "A hooded figure removes a crate from the dock. The short distance does not erase the taking; intent and permission remain disputed.",
+      "written": [
+        "A worker moves a crate two feet from a dock stall, intending to keep it. A guard stops the worker before departure. Can common-law larceny be complete?",
+        "The slight movement can satisfy carrying away after a trespassory taking; completion does not require leaving the dock. Prove that the crate belonged to another and that intent to permanently deprive existed at the taking.",
+        "The worker believed the crate was abandoned. Reassess trespass and intent."
+      ],
+      "terms": [
+        [
+          "Asportation",
+          "The carrying-away component of common-law larceny; slight movement can suffice."
+        ],
+        [
+          "Trespassory taking",
+          "Taking possession without valid consent or privilege."
+        ],
+        [
+          "Intent to deprive",
+          "The required purpose to withhold property, often permanently under common-law larceny."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-04.webp"
+    },
+    {
+      "id": "force-at-the-dock",
+      "title": "Force at the dock",
+      "subtitle": "Robbery joins taking to force or fear.",
+      "rules": [
+        [
+          "Robbery",
+          "Common-law robbery is larceny from a person or presence by force or intimidation. The degree and timing of force matter, and statutes vary."
+        ],
+        [
+          "A snatch is not always robbery",
+          "A stealthy pickpocket or quick grab may lack the force needed under some jurisdictions; resistance, struggle, or fear can change the analysis."
+        ],
+        [
+          "Extortion and claim of right",
+          "Threats used to obtain property can implicate extortion. A claimed debt does not create a license to use violence; analyze statutory intent and any narrow defense separately."
+        ]
+      ],
+      "scene": "A dock merchant clutches a satchel. One taker slips it away unnoticed; another points a weapon and demands it. Those are different force narratives.",
+      "comic": "In a rain-swept market, a merchant raises both hands as a taker demands a satchel. The threat belongs in the robbery analysis.",
+      "written": [
+        "A person quickly lifts an unattended satchel from beside a merchant. Later the merchant notices and chases. Compare with a second scenario where the taker shoves the merchant to seize it.",
+        "The first may be theft without robbery if no qualifying force or fear accompanied the taking. The shove more directly supports force, but examine the jurisdiction's degree and timing requirements. A later struggle over escape may be treated differently across statutes.",
+        "The taker says the merchant owed a debt. Does that excuse using a threat?"
+      ],
+      "terms": [
+        [
+          "Robbery",
+          "Taking property from a person or presence through legally sufficient force or fear."
+        ],
+        [
+          "Intimidation",
+          "Threat causing the required fear under the governing robbery or extortion law."
+        ],
+        [
+          "Claim of right",
+          "A belief of entitlement that may affect some theft intent questions but does not freely justify violent collection."
+        ]
+      ],
+      "case": [
+        "Commonwealth v. Brown",
+        "The notes use a purse-snatching dispute to test whether the taking involved enough force for robbery under Pennsylvania law."
+      ],
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-05.webp"
+    },
+    {
+      "id": "the-locked-warehouse",
+      "title": "The locked warehouse",
+      "subtitle": "Entry plus criminal intent at the required moment.",
+      "rules": [
+        [
+          "Common-law baseline",
+          "Common-law burglary focused on breaking and entering another's dwelling at night with intent to commit a felony inside. Modern statutes often broaden places, conduct, and intended offenses."
+        ],
+        [
+          "Timing of intent",
+          "The required criminal intent must exist at the entry or remaining-without-authority point specified by the statute. Later formation of intent may change the charge."
+        ],
+        [
+          "Read the local text",
+          "Kansas, for example, includes unauthorized entry or remaining in listed structures or conveyances with intent to commit specified offenses. Identify the precise subsection rather than importing every common-law limit."
+        ]
+      ],
+      "scene": "A dockworker enters a closed warehouse to escape a storm, then decides to steal cargo. Compare that with entering already planning the theft.",
+      "comic": "A figure opens a warehouse door at night. The court asks what intent existed when entry or unauthorized remaining occurred.",
+      "written": [
+        "A person enters a dock warehouse with permission to shelter from a storm. After seeing rare cargo, they decide to steal it. What burglary questions follow?",
+        "Start with the jurisdiction's entry or remaining language. If the offense requires intent at entry, later intent may not suffice; a modern remaining-without-authority theory may differ if permission ends. Analyze theft separately.",
+        "The person brought bolt cutters and a cargo map before entry. How does that change the intent inference?"
+      ],
+      "terms": [
+        [
+          "Burglary",
+          "An unlawful entry or remaining with specified criminal intent under the governing statute."
+        ],
+        [
+          "Breaking",
+          "A common-law element involving creation of an opening, often slight, but not universal in modern statutes."
+        ],
+        [
+          "Remaining without authority",
+          "A modern statutory route that can differ from entry-based burglary."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-06.webp"
+    },
+    {
+      "id": "false-cargo-papers",
+      "title": "False cargo papers",
+      "subtitle": "Was possession entrusted, or was title transferred by deception?",
+      "rules": [
+        [
+          "Larceny by trick",
+          "Fraud induces transfer of possession only; the taker intends to keep the property. The owner has not meant to pass title."
+        ],
+        [
+          "False pretenses",
+          "A material false representation induces transfer of title, traditionally distinguishing false pretenses from larceny by trick."
+        ],
+        [
+          "Embezzlement",
+          "Property lawfully entrusted to an actor is fraudulently converted. The original lawful possession makes the path different from trespassory taking."
+        ]
+      ],
+      "scene": "A broker lies to buy a cargo vessel, gaining title. At the same dock, an entrusted clerk pockets the shipping fees. The two frauds begin with different possession.",
+      "comic": "A broker presents false papers while a trusted clerk pockets coins. Who held possession and when title passed control the category.",
+      "written": [
+        "A broker lies to persuade an owner to sell a vessel and sign over title. A separate clerk entrusted with sale proceeds diverts them. Classify each under traditional property-crime categories.",
+        "The broker's acquisition of title by material deceit points to false pretenses. The clerk's lawful initial possession followed by fraudulent conversion points to embezzlement. A modern consolidated theft statute may use different labels; prove each element.",
+        "The owner merely loans the vessel for a day after the broker lies about the purpose. Compare larceny by trick."
+      ],
+      "terms": [
+        [
+          "False pretenses",
+          "Obtaining title to property through material deception with required fraudulent intent."
+        ],
+        [
+          "Larceny by trick",
+          "Obtaining possession, not title, by deception while intending to steal."
+        ],
+        [
+          "Embezzlement",
+          "Fraudulent conversion of property already lawfully entrusted to the actor."
+        ]
+      ],
+      "case": null,
+      "source": "v1",
+      "art": "/study-assets/study-art/tidewater-07.webp"
+    },
+    {
+      "id": "death-at-the-lighthouse",
+      "title": "Death at the lighthouse",
+      "subtitle": "Classify the killing before assigning a degree.",
+      "rules": [
+        [
+          "Elements first",
+          "Homicide requires a death caused by the defendant's conduct and the culpability specified by the offense. Justification or excuse may change liability."
+        ],
+        [
+          "Intent and deliberation",
+          "Many degree statutes distinguish intentional, premeditated murder from other murder. Do not assume every brief interval proves deliberation; use the jurisdiction's definition."
+        ],
+        [
+          "MPC comparison",
+          "The MPC organizes murder, manslaughter, and negligent homicide differently from common-law labels. Avoid mixing terms from different systems in one conclusion."
+        ]
+      ],
+      "scene": "Investigators find a broken lighthouse lantern after a fatal fall. They can prove a confrontation, but must still distinguish accident, intent, and causation.",
+      "comic": "Investigators inspect a rain-soaked lighthouse. A death has occurred off-panel; evidence of intent and cause remains to be tested.",
+      "written": [
+        "After a fight at the lighthouse, a person dies from a fall. The accused had threatened the person hours earlier but says the fall was accidental. Outline the homicide analysis.",
+        "Prove actual and legal causation, then match evidence to the charged mental state. Threats can support intent but do not alone settle what caused the fall or whether any killing was premeditated. Analyze lesser homicide and defenses under the governing statute.",
+        "A camera shows a deliberate push after time to reflect. Reassess the strongest homicide theory."
+      ],
+      "terms": [
+        [
+          "Malice aforethought",
+          "A traditional murder concept that encompasses several culpable mental states, not merely hatred."
+        ],
+        [
+          "Premeditation",
+          "Prior formation of an intent to kill under a jurisdiction's degree statute."
+        ],
+        [
+          "Deliberation",
+          "Reflection or considered decision required by some first-degree murder laws."
+        ]
+      ],
+      "case": null,
+      "source": "v2",
+      "art": "/study-assets/study-art/tidewater-08.webp"
+    },
+    {
+      "id": "risk-in-the-gale",
+      "title": "Risk in the gale",
+      "subtitle": "Manslaughter, provocation, and extreme recklessness.",
+      "rules": [
+        [
+          "Voluntary manslaughter",
+          "Some jurisdictions mitigate an intentional killing after adequate provocation or under an extreme-emotional-disturbance framework. Cooling time and the governing test matter."
+        ],
+        [
+          "Involuntary manslaughter",
+          "An unintended death can follow criminal negligence, recklessness, or another statutory predicate; identify the offense's precise culpability."
+        ],
+        [
+          "Depraved-heart murder",
+          "Extreme disregard for human life can support murder without a purpose to kill. The gulf from ordinary recklessness is a question of degree and statutory wording."
+        ]
+      ],
+      "scene": "A captain ignores a warning beacon and steers into a crowded channel. No one intended harm, but the known risk may be far beyond ordinary carelessness.",
+      "comic": "A boat captain grips the wheel under a red warning lantern. A risky choice is not automatically intent to kill, yet extreme disregard may elevate the offense.",
+      "written": [
+        "A captain sees that a storm has closed a crowded channel but races through to win a wager. A passenger dies. Compare reckless manslaughter and depraved-heart murder.",
+        "Both require causation. Depraved-heart murder asks whether the conscious disregard of a grave risk manifested extreme indifference to human life; reckless manslaughter is a lower culpability category. Apply the jurisdiction's language and distinguish negligence if the captain did not perceive the risk.",
+        "The captain never saw the warning because the lamp failed. How does the mental-state analysis change?"
+      ],
+      "terms": [
+        [
+          "Voluntary manslaughter",
+          "A mitigated intentional homicide under qualifying provocation or related statutory doctrine."
+        ],
+        [
+          "Involuntary manslaughter",
+          "An unintentional homicide based on the culpability or predicate the law specifies."
+        ],
+        [
+          "Depraved-heart murder",
+          "Murder based on extreme disregard of a lethal risk rather than a purpose to kill."
+        ]
+      ],
+      "case": null,
+      "source": "v2",
+      "art": "/study-assets/study-art/tidewater-09.webp"
+    },
+    {
+      "id": "broken-chain",
+      "title": "The broken chain",
+      "subtitle": "Actual cause, proximate cause, and felony murder.",
+      "rules": [
+        [
+          "Cause in fact",
+          "Ask whether the result would have occurred but for the defendant's conduct; multiple sufficient causes require more careful analysis."
+        ],
+        [
+          "Legal cause",
+          "Foreseeability, intervening acts, and the scope of the risk help decide whether a result is too remote for criminal attribution."
+        ],
+        [
+          "Felony murder",
+          "A death during a qualifying felony can support murder without ordinary intent-to-kill proof, but merger, agency/proximate-cause theories, timing, and statutory limits vary sharply."
+        ]
+      ],
+      "scene": "After a warehouse break-in, a guard flees into a storm and a rescue boat crashes. Trace each event before treating every death as part of the felony.",
+      "comic": "Broken chain links float beside an empty lifebuoy. The legal issue is whether the fatal result belongs to the charged conduct.",
+      "written": [
+        "A crew breaks into a warehouse. A guard runs outside; lightning strikes a nearby mast, causing a fatal accident. Analyze felony murder and causation.",
+        "Check whether the underlying offense qualifies, the felony's temporal scope, actual cause, and whether the lightning-related death is too remote under the jurisdiction's legal-cause rule. Agency and proximate-cause approaches can differ; merger may matter for assaultive predicates.",
+        "The guard instead dies in a collision caused directly by the fleeing crew's boat. Reassess foreseeability and felony scope."
+      ],
+      "terms": [
+        [
+          "But-for cause",
+          "A cause without which the result would not have occurred, subject to special multiple-cause problems."
+        ],
+        [
+          "Intervening cause",
+          "A later event that may affect legal attribution of a result."
+        ],
+        [
+          "Merger limitation",
+          "A restriction preventing certain assaultive felonies from serving as independent felony-murder predicates."
+        ]
+      ],
+      "case": [
+        "People v. Washington",
+        "The notes use this case to contrast felony-murder theories when a killing is committed by someone other than a felon."
+      ],
+      "source": "v2",
+      "art": "/study-assets/study-art/tidewater-10.webp"
+    },
+    {
+      "id": "the-threshold",
+      "title": "The threshold of attempt",
+      "subtitle": "Intent to commit the target offense plus action beyond preparation.",
+      "rules": [
+        [
+          "Specific intent",
+          "Attempt generally requires purpose to commit the target crime, even where the completed offense could be committed with less culpability. Attempted murder commonly requires intent to kill."
+        ],
+        [
+          "Act threshold",
+          "Jurisdictions use substantial-step, dangerous-proximity, or other tests. Mere preparation is insufficient, but the line depends on conduct and context."
+        ],
+        [
+          "Abandonment",
+          "Voluntary and complete renunciation may be a defense under some statutes; turning back because detection is likely usually does not qualify."
+        ]
+      ],
+      "scene": "A person reaches the ship hold with tools and a plan, then turns away. The court must locate the legal threshold and the reason for stopping.",
+      "comic": "A would-be offender stands at a locked hold with tools. The moment between planning and execution is the attempt question.",
+      "written": [
+        "A person plans to steal rare cargo, buys tools, arrives at the ship, and begins working a lock before a guard appears. Has attempt begun?",
+        "Purpose to steal is plausible. Working the lock is stronger than buying tools under a substantial-step test and may satisfy proximity tests too. Identify the jurisdiction's threshold and whether the act strongly corroborates the purpose. Stopping on seeing a guard is unlikely voluntary renunciation.",
+        "The person instead never leaves home after buying tools. Does the result change?"
+      ],
+      "terms": [
+        [
+          "Attempt",
+          "An inchoate offense requiring the target intent and a legally sufficient step toward commission."
+        ],
+        [
+          "Substantial step",
+          "Conduct strongly corroborative of criminal purpose under the MPC approach."
+        ],
+        [
+          "Renunciation",
+          "Voluntary, complete abandonment recognized as a defense by some statutes."
+        ]
+      ],
+      "case": [
+        "Smallwood v. State",
+        "Maryland rejected attempted-murder liability where the proof did not establish the specific intent to kill required for attempt."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/tidewater-11.webp"
+    },
+    {
+      "id": "harbor-conspiracy",
+      "title": "Harbor conspiracy & helpers",
+      "subtitle": "Agreement is not the same as aiding a completed offense.",
+      "rules": [
+        [
+          "Conspiracy",
+          "Identify an agreement to commit a crime, the required intent, and any overt act the jurisdiction requires. An overt act ordinarily must follow the agreement."
+        ],
+        [
+          "Accomplice liability",
+          "A person may be liable for aiding or encouraging an offense with the required mental state even without a separate agreement. Mere presence or knowledge is usually not enough."
+        ],
+        [
+          "Separate questions",
+          "Ask what each participant agreed to, what they did, and which substantive crimes fall within the jurisdiction's accomplice or conspiracy rules."
+        ]
+      ],
+      "scene": "Two dockworkers plan a cargo theft and one obtains a map. A third quietly supplies a key without joining their agreement. Analyze the third person's aid separately.",
+      "comic": "Two figures exchange a harbor map while a lookout watches. Agreement, overt act, and intentional aid are distinct findings.",
+      "written": [
+        "A and B agree to steal cargo. B buys a map afterward. C knows the plan and intentionally lends a key but never speaks to A or B. Analyze conspiracy and accomplice theories.",
+        "A and B have an agreement; B's map purchase may satisfy an overt-act requirement where one applies. C's intentional assistance may support accomplice liability for the substantive offense, but knowledge and aid do not automatically prove C joined the agreement; apply the jurisdiction's conspiracy doctrine.",
+        "C merely watches from the pier and says nothing. Which inference becomes weaker?"
+      ],
+      "terms": [
+        [
+          "Conspiracy",
+          "Agreement to pursue a criminal objective with the required mental state and, in some jurisdictions, an overt act."
+        ],
+        [
+          "Overt act",
+          "An act in furtherance of an agreement when a conspiracy statute requires one."
+        ],
+        [
+          "Accomplice",
+          "A person who intentionally aids or encourages a principal offense under the governing law."
+        ]
+      ],
+      "case": null,
+      "source": "v3",
+      "art": "/study-assets/study-art/tidewater-12.webp"
+    },
+    {
+      "id": "the-defenses",
+      "title": "Defenses in the downpour",
+      "subtitle": "Justification, excuse, and the limits of each.",
+      "rules": [
+        [
+          "Self-defense",
+          "Ask about an unlawful threat, necessity, imminence, proportionality, and the actor's reasonable belief as the jurisdiction defines them. Retreat and initial-aggressor rules vary."
+        ],
+        [
+          "Necessity and duress",
+          "Necessity concerns choosing a lesser harm under pressure from circumstances; duress concerns coercive human threats. Their availability for homicide and other charges varies."
+        ],
+        [
+          "Insanity",
+          "M'Naghten and other tests address mental disease and wrongfulness or cognition; jurisdictions vary. Kansas's approach was upheld against a federal due-process challenge in Kahler, but the case does not make one test universal."
+        ]
+      ],
+      "scene": "On a flooded pier, one person backs away from an approaching threat. The court maps the escape route and the force used before calling it self-defense.",
+      "comic": "A person retreats on a wet pier while another advances. Distance, threat, and available choices—not the storm's drama—control the defense.",
+      "written": [
+        "A defender is threatened on a narrow pier. A safe exit appears behind them, yet they use deadly force against an unarmed pursuer. What questions govern self-defense?",
+        "Check the imminence and nature of the threat, reasonable belief, proportionality, any duty to retreat, and initial-aggressor rules under local law. The mere presence of an exit or lack of a weapon does not alone decide the case; facts about ability to retreat and threat severity matter.",
+        "The pursuer instead displays a weapon and blocks the exit. Reassess necessity and proportionality."
+      ],
+      "terms": [
+        [
+          "Justification",
+          "A defense asserting that conduct was permissible under the circumstances."
+        ],
+        [
+          "Excuse",
+          "A defense that may avoid blame despite an otherwise wrongful act."
+        ],
+        [
+          "M'Naghten test",
+          "An insanity formulation focused on knowing the act's nature or wrongfulness because of mental disease."
+        ]
+      ],
+      "case": [
+        "Kahler v. Kansas",
+        "The Supreme Court held that due process did not require Kansas to adopt a particular moral-incapacity insanity test."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/tidewater-13.webp"
+    },
+    {
+      "id": "consent-in-court",
+      "title": "Consent before the sea court",
+      "subtitle": "Analyze the enacted offense with care for force, coercion, and agency.",
+      "rules": [
+        [
+          "Start with the statute",
+          "Sexual-offense definitions differ by jurisdiction and have changed over time. Identify the charged act, consent or coercion element, age or incapacity provision, and specified mens rea."
+        ],
+        [
+          "Force and fear",
+          "Threats can be implied by conduct and context; do not assume only visible injury counts. Historic cases such as Rusk illuminate older statutory language, not every current rule."
+        ],
+        [
+          "Avoid false shortcuts",
+          "Silence, a relationship, prior contact, or lack of physical resistance does not automatically establish consent. Apply the governing law and the evidence without stereotypes."
+        ]
+      ],
+      "scene": "At a tidewater hearing, the court examines the words, actions, and surrounding coercive circumstances rather than treating a complainant's lack of visible injury as a shortcut.",
+      "comic": "A judge and counsel hear both sides in a coastal courtroom. The legal questions concern the statute, consent, force or coercion, and proof.",
+      "written": [
+        "An adult complainant says an accused person blocked the only exit, took their car keys, and demanded sexual contact without an explicit verbal threat. The accused says there was no physical force. What must be analyzed?",
+        "Identify the jurisdiction's precise offense and definition of consent, force, threat, and mens rea. Blocking an exit and taking keys can support an implied-threat or coercion argument even without injury; assess all evidence rather than assuming resistance or an express threat is required. Do not use older case language as a substitute for current law.",
+        "The exit was open and the keys were never taken. What evidence still bears on whether consent was freely given?"
+      ],
+      "terms": [
+        [
+          "Consent",
+          "A legally effective agreement to the act under the governing jurisdiction's definition."
+        ],
+        [
+          "Coercion",
+          "Pressure or threat that may undermine valid consent or satisfy a statutory element."
+        ],
+        [
+          "Incapacity",
+          "A condition the statute treats as preventing legally effective consent, subject to its precise terms."
+        ]
+      ],
+      "case": [
+        "State v. Rusk",
+        "A Maryland court held that implied threats and surrounding circumstances could support the force-and-fear element under the statute then in force."
+      ],
+      "source": "v3",
+      "art": "/study-assets/study-art/tidewater-14.webp"
+    }
+  ],
+  "sources": {
+    "v1": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v2": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "v3": {
+      "label": "Study notes and topic summaries",
+      "url": "#source-note"
+    },
+    "rehaif": {
+      "label": "Rehaif v. United States · Supreme Court opinion",
+      "url": "https://www.supremecourt.gov/opinions/18pdf/17-9560_new_onkq.pdf"
+    },
+    "burglary": {
+      "label": "Kansas burglary statute · K.S.A. 21-5807",
+      "url": "https://kslegislature.gov/b2025_26/laws/021_000_0000_chapter/021_058_0000_article/021_058_0007_section/021_058_0007_k/"
+    },
+    "rape": {
+      "label": "Kansas rape statute · K.S.A. 21-5503",
+      "url": "https://kslegislature.gov/b2025_26/laws/021_000_0000_chapter/021_055_0000_article/021_055_0003_section/021_055_0003_k/"
+    },
+    "kahler": {
+      "label": "Kahler v. Kansas · U.S. Reports",
+      "url": "https://www.supremecourt.gov/opinions/preliminaryprint/589US2PP_web.pdf"
+    }
+  }
+}

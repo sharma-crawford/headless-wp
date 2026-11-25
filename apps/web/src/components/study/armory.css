@@ -1,0 +1,11 @@
+.armory-study { background: #f4f9fc; color: #082641; }
+.armory-study-nav { display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem; padding:1rem 5%; background:#082641; color:white; font-weight:700; }
+.armory-study-nav a { text-underline-offset:4px; }
+.armory-study .study { --pink:#127cad; --ink:#082641; --paper:#f4f9fc; }
+.armory-study .study-top,.armory-study .study-footer { background:#082641 !important; color:white !important; border-color:#20aeea; }
+.armory-study .study-button,.armory-study .quiz button { background:#126d99 !important; border-color:#126d99 !important; color:white !important; }
+.armory-study .room-hero,.armory-study .viking-hero { background:linear-gradient(120deg,#082641,#164968) !important; color:white !important; border-color:#20aeea; }
+.armory-study .room-hero h1,.armory-study .viking-hero h1,.armory-study .room-hero p,.armory-study .viking-hero p { color:white !important; }
+.armory-study .room-hero h1 em,.armory-study .viking-hero h1 em,.armory-study .room-hero .study-eyebrow { color:#9cdff1 !important; }
+.armory-study .study-eyebrow,.armory-study .study-number { color:#126d99; }
+.armory-study .study :focus-visible { outline-color:#20aeea; }
