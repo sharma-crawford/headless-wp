@@ -53,6 +53,7 @@ export default async function PageShell({
   const paths: Path[] = signedIn
     ? await pathsFor()
     : [
+        { href: "/castle", label: "Castle", description: "" },
         { href: "/catalogue", label: "Catalogue", description: "" },
         { href: "/pricing", label: "Pricing", description: "" },
       ];

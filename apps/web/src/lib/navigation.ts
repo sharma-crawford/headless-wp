@@ -59,6 +59,8 @@ async function pathsFor(): Promise<Path[]> {
     },
   ];
 
+  paths.push({ href: "/castle", label: "Castle", description: "Explore course rooms, immigration resources, and the courtroom tour." });
+
   if (author) {
     paths.push(
       {

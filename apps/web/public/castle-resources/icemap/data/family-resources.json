@@ -1,0 +1,106 @@
+{
+  "asOf": "2026-10-26",
+  "privacyNote": "Use the government locator on its own website. This map should not collect, store, or publish a living person's A-number, birth date, immigration status, or medical information.",
+  "resources": [
+    {
+      "id": "ice-locator",
+      "title": "Locate an adult in immigration custody",
+      "organization": "U.S. Immigration and Customs Enforcement",
+      "url": "https://locator.ice.gov/odls/",
+      "phone": null,
+      "summary": "Search ICE's Online Detainee Locator System using a nine-digit A-number and country of birth, or exact biographical information.",
+      "limitations": "The locator does not show people under 18. Records may be missing or delayed. A no-result search does not establish that someone is not detained. Follow up with ICE ERO and the person's lawyer.",
+      "sourceUrls": ["https://locator.ice.gov/odls/", "https://www.ice.gov/detain/attorney-information-resources"],
+      "verifiedAt": "2026-10-26"
+    },
+    {
+      "id": "dril",
+      "title": "ICE detention questions and serious concerns",
+      "organization": "ICE ERO Detention Reporting and Information Line (DRIL)",
+      "url": "https://www.ice.gov/contact",
+      "phone": "+1-888-351-4024",
+      "summary": "Contact ICE ERO about detention, location inquiries, or serious and unresolved detention concerns. This is an agency line, not independent legal representation.",
+      "limitations": "Do not use as a substitute for urgent medical attention. Agency response and information availability vary. Official source pages conflict on operating hours; no hours are asserted here.",
+      "sourceUrls": ["https://www.ice.gov/contact", "https://www.ice.gov/doclib/detention/LegalAccessAtAGlance.pdf"],
+      "verifiedAt": "2026-10-26"
+    },
+    {
+      "id": "ero-offices",
+      "title": "Contact the responsible ICE field office",
+      "organization": "ICE Enforcement and Removal Operations",
+      "url": "https://www.ice.gov/contact/ero",
+      "phone": null,
+      "summary": "Use the official field-office directory for detention and removal case inquiries when the person is not found in the locator.",
+      "limitations": "A field office and a detention facility are different. Confirm the correct office and contact details in the official directory.",
+      "sourceUrls": ["https://www.ice.gov/doclib/detention/LegalAccessAtAGlance.pdf"],
+      "verifiedAt": "2026-10-26"
+    },
+    {
+      "id": "eoir-legal-help",
+      "title": "Find pro bono immigration legal help",
+      "organization": "U.S. Department of Justice, Executive Office for Immigration Review",
+      "url": "https://www.justice.gov/eoir/list-pro-bono-legal-service-providers",
+      "phone": null,
+      "summary": "Find organizations, lawyers and referral services listed by immigration court location. Ask whether they serve the detention facility and can take the particular case.",
+      "limitations": "Inclusion is not an endorsement, an availability guarantee or a promise of representation. EOIR says the directory is published quarterly.",
+      "sourceUrls": ["https://www.justice.gov/eoir/list-pro-bono-legal-service-providers"],
+      "sourcePageUpdated": "2026-09-24",
+      "verifiedAt": "2026-10-26"
+    },
+    {
+      "id": "eoir-case-status",
+      "title": "Check immigration court case information",
+      "organization": "Executive Office for Immigration Review",
+      "url": "https://www.justice.gov/eoir/contact-eoir",
+      "phone": "+1-800-898-7180",
+      "summary": "EOIR provides automated immigration court case information online and by telephone. Have the person's nine-digit A-number available for the official service.",
+      "limitations": "Court case information is separate from detention location. Confirm case-specific deadlines and hearing notices with the court or a lawyer.",
+      "sourceUrls": ["https://www.justice.gov/eoir/contact-eoir", "https://www.justice.gov/eoir/customer-service-initiatives"],
+      "sourcePageUpdated": "2026-10-05",
+      "verifiedAt": "2026-10-26"
+    },
+    {
+      "id": "orr-children",
+      "title": "Parent or guardian looking for a child in HHS custody",
+      "organization": "Office of Refugee Resettlement National Call Center",
+      "url": "https://www.hhs.gov/programs/social-services/unaccompanied-children/index.html",
+      "phone": "+1-800-203-7001",
+      "summary": "HHS directs parents and guardians trying to find a child in its custody to this helpline. ICE's adult locator does not cover children under 18.",
+      "limitations": "The call center may forward a message to a shelter without disclosing the child's location. Identity and relationship verification apply. This family helpline is not for general public, lawmakers or media inquiries.",
+      "sourceUrls": ["https://www.hhs.gov/programs/social-services/unaccompanied-children/index.html"],
+      "sourcePageUpdated": "2025-04-24",
+      "verifiedAt": "2026-10-26"
+    },
+    {
+      "id": "oig-concerns",
+      "title": "Report alleged misconduct to DHS oversight",
+      "organization": "DHS Office of Inspector General",
+      "url": "https://www.oig.dhs.gov/hotline",
+      "phone": "+1-800-323-8603",
+      "summary": "An oversight reporting channel for alleged misconduct, fraud, waste or abuse involving DHS programs, employees or contractors.",
+      "limitations": "A complaint does not replace a request for urgent care, legal advice, a court filing or a request to stop a removal. This is not a facility switchboard.",
+      "sourceUrls": ["https://www.oig.dhs.gov/hotline", "https://www.ice.gov/detain/detention-facilities/federal-detention-center-honolulu-fdc-honolulu"],
+      "verifiedAt": "2026-10-26"
+    }
+  ],
+  "callChecklist": {
+    "title": "Questions to ask before visiting or sending money or mail",
+    "items": [
+      "Confirm that the person is currently held at this facility and ask how to verify a recent transfer.",
+      "Ask for the current family and legal visitation rules, approved IDs, appointment requirements, accessibility and interpretation arrangements.",
+      "Confirm the correct mailing address and required identifier format. A facility street address may differ from the address for detainee mail.",
+      "Ask how the person can call family or counsel and which official provider handles phone accounts or deposits.",
+      "For an urgent medical or safety concern, tell facility staff immediately, contact counsel if available, and record who received the concern and when.",
+      "Record dates, names, extensions, reference numbers and promised follow-up. Keep this information privately; do not post living people's identifying or medical information on the map."
+    ],
+    "note": "This is a practical question checklist, not a statement that every facility follows the same rules or provides the same services. Confirm directly using the linked official facility page before travel or payment."
+  },
+  "timelyCaveat": {
+    "title": "A missing locator result is not proof of release",
+    "summary": "In September 2026, the Associated Press reported that ICE had removed some people with final removal orders from the public locator. The map should not promise that the official locator includes everyone.",
+    "sourceType": "attributed reporting",
+    "sourceUrl": "https://apnews.com/article/c3329a70bce424879bc5880b286c019c",
+    "publishedAt": "2026-09-21",
+    "verifiedAt": "2026-10-26"
+  }
+}

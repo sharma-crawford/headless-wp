@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-26",
+  "datasets": [
+    {
+      "value": 506,
+      "label": "U.S. citizens documented by ProPublica",
+      "period": "January 2025\u2013September 2026",
+      "publishedAt": "2026-10-06",
+      "agencyScope": "Immigration agents across agencies, not ICE alone",
+      "sourceUrl": "https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/",
+      "method": "Persons held against their will, including brief holds, handcuffing and at gunpoint; investigative tally, incomplete."
+    },
+    {
+      "value": 121,
+      "label": "Potential U.S. citizens detained by ICE",
+      "period": "FY2015\u2013FY2020 Q2 (March 2020)",
+      "publishedAt": "2021-07-20",
+      "sourceUrl": "https://www.gao.gov/products/gao-21-487",
+      "method": "Available ICE data reviewed by GAO. Potential citizenship is not a finding confirming citizenship."
+    }
+  ],
+  "limitations": [
+    "Different periods, populations and definitions: do not sum or interpret as a trend.",
+    "No facility-level attribution or currently detained citizen locator."
+  ]
+}

@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Upstream Leaflet distribution; lint our integration, not minified vendor code.
+    "public/castle-resources/icemap/vendor/**",
   ]),
 ]);
 
