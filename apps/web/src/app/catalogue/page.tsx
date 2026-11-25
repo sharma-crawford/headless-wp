@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import CatalogueBrowser from "@/components/catalogue/catalogue-browser";
 import CatalogueCard from "@/components/catalogue/catalogue-card";
@@ -50,6 +51,8 @@ export default async function CataloguePage() {
         title="Courses and webinars"
         intro="Practical training for immigration practitioners, accredited for continuing legal education."
       />
+
+      <Link href="/castle#library" className="mt-6 inline-flex rounded-md bg-brand-900 px-5 py-3 font-semibold text-white hover:bg-brand-800">Explore these courses in the castle →</Link>
 
       <div className="mt-8">
         {catalogue.programs.length === 0 ? (

@@ -1,0 +1,41 @@
+{
+  "asOf": "2026-10-26",
+  "scope": "Federal civil immigration detention challenges; general educational source directory",
+  "legalContentAuditDate": null,
+  "sourceDirectoryCheckedAt": "2026-10-26",
+  "nationalForm": {
+    "label": "AO 242 \u2014 Petition under 28 U.S.C. \u00a72241",
+    "url": "https://www.uscourts.gov/forms-rules/forms/petition-a-writ-habeas-corpus-under-28-usc-ss-2241"
+  },
+  "points": [
+    {
+      "title": "Different paths for different claims",
+      "text": "A challenge to immigration detention under \u00a72241 differs from a state-conviction \u00a72254 petition, a federal-sentence \u00a72255 motion and a petition for review of a final removal order. Check which procedure applies.",
+      "sources": [
+        "https://www.uscourts.gov/forms-rules/forms/petition-a-writ-habeas-corpus-under-28-usc-ss-2241",
+        "https://www.govinfo.gov/link/uscode/8/1252"
+      ]
+    },
+    {
+      "title": "Find the court sources for the place of confinement",
+      "text": "Core physical-custody habeas ordinarily starts with the district of confinement and immediate custodian. Respondent and venue questions require controlling law and current orders; a map boundary alone does not decide them.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/USREPORTS-542/pdf/USREPORTS-542-426.pdf",
+        "https://www.supremecourt.gov/opinions/24pdf/24a931_2c83.pdf"
+      ]
+    },
+    {
+      "title": "Use current local instructions",
+      "text": "Check local rules, \u00a72241 forms, standing orders, judge procedures, filing and emergency instructions. An older form or state-conviction packet may not address immigration detention.",
+      "sources": [
+        "https://www.uscourts.gov/forms-rules/current-rules-practice-procedure",
+        "https://www.uscourts.gov/forms-rules/forms/petition-a-writ-habeas-corpus-under-28-usc-ss-2241"
+      ]
+    }
+  ],
+  "limits": [
+    "Court source retrieval is not a complete district-specific substantive rules or citator audit.",
+    "Filing a petition does not itself guarantee release or automatically stay removal or transfer.",
+    "Case-specific court orders govern actual response and briefing deadlines."
+  ]
+}

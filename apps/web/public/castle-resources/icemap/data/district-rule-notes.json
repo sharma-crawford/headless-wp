@@ -1,0 +1,3620 @@
+{
+  "alabama-middle": {
+    "districtId": "alabama-middle",
+    "districtName": "Middle District of Alabama",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules, Orders & Procedures",
+        "url": "https://www.almd.uscourts.gov/about/rules-orders-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General & Standing Orders",
+        "url": "https://www.almd.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.almd.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.almd.uscourts.gov/forms?name=&category=14",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Filing",
+        "url": "https://www.almd.uscourts.gov/clerks-services/electronic-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "alabama-northern": {
+    "districtId": "alabama-northern",
+    "districtName": "Northern District of Alabama",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.alnd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.alnd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders - Sorted By Title",
+        "url": "https://www.alnd.uscourts.gov/general-orders-sorted-title",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "For Pro Se Parties",
+        "url": "https://www.alnd.uscourts.gov/pro-se-parties",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Revised Plan For The Administration of Non-Appropriated Funds",
+        "url": "https://www.alnd.uscourts.gov/forms/revised-plan-administration-non-appropriated-funds",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Email Addresses for CM/ECF Helpdesks",
+        "url": "https://www.alnd.uscourts.gov/email-addresses-cmecf-helpdesks",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "alabama-southern": {
+    "districtId": "alabama-southern",
+    "districtName": "Southern District of Alabama",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules and Orders",
+        "url": "https://www.alsd.uscourts.gov/rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules & General Orders",
+        "url": "https://www.alsd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney Applications",
+        "url": "https://www.alsd.uscourts.gov/forms/all-forms/atty_app",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.alsd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "alaska": {
+    "districtId": "alaska",
+    "districtName": "District of Alaska",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.akd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.akd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.akd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.akd.uscourts.gov/cmecf-info",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "arizona": {
+    "districtId": "arizona",
+    "districtName": "District of Arizona",
+    "summary": "General Order 26-09 creates immigration-habeas assignment, service and briefing procedures, subject to the assigned judge.",
+    "requirements": [
+      "Consent to magistrate jurisdiction is voluntary; paper pro se petitions without consent go to a district judge. The United States has consented subject to withdrawal under the order.",
+      "The clerk serves the USAO and issues a schedule: appearance in 3 calendar days, answer in 7 calendar days; reply in 3 calendar days for represented petitioners or 14 days from service for self-represented petitioners. The assigned judge may modify it.",
+      "Dismissal arguments belong in the answer. A TRO application must be separate and comply with Rule 65; it does not suspend the habeas briefing schedule.",
+      "The government must give at least two business days\u2019 notice before removal from the United States during proceedings. The order provides automatic substitution of the facility warden when a proper respondent was omitted."
+    ],
+    "sources": [
+      {
+        "label": "General Order 26-09, filed June 15, 2026",
+        "url": "https://www.azd.uscourts.gov/sites/azd/files/general-orders/26-09.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "arkansas-eastern": {
+    "districtId": "arkansas-eastern",
+    "districtName": "Eastern District of Arkansas",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.are.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.are.uscourts.gov/court-info/local-rules-and-orders/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.are.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing",
+        "url": "https://www.are.uscourts.gov/case-info/cm-ecf-case-info",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "arkansas-western": {
+    "districtId": "arkansas-western",
+    "districtName": "Western District of Arkansas",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.arwd.uscourts.gov/sites/arwd/files/ARWD%20Local%20Rules.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules & General Orders",
+        "url": "https://www.arwd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Habeas Corpus Cases",
+        "url": "https://www.arwd.uscourts.gov/habeas-corpus-cases",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.arwd.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.arwd.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.arwd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "california-central": {
+    "districtId": "california-central",
+    "districtName": "Central District of California",
+    "summary": "General Order 26-05 supplies a standard immigration-habeas schedule and special TRO, service and removal-notice procedures.",
+    "requirements": [
+      "The clerk serves the USAO and issues notice: appearance in 3 calendar days; answer in 7 calendar days; reply in 3 calendar days after filing the answer for represented petitioners, or 14 days after service for pro se petitioners. Judge may modify.",
+      "Put dismissal arguments in the answer rather than a separate motion. File TRO applications separately under Federal Rule 65 and Local Rules 65-1 and 7-19; filing one does not suspend briefing.",
+      "The government must give at least two court days\u2019 notice before removing a petitioner from the Central District during the case.",
+      "Magistrate consent is voluntary. Appointed \u00a72241 counsel receive a limited admission/pro hac vice fee waiver."
+    ],
+    "sources": [
+      {
+        "label": "General Order 26-05, filed April 1, 2026",
+        "url": "https://www.cacd.uscourts.gov/sites/default/files/documents/GO-26-05.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "california-eastern": {
+    "districtId": "california-eastern",
+    "districtName": "Eastern District of California",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.caed.uscourts.gov/caednew/index.cfm/rules/local-rules/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.caed.uscourts.gov/caednew/index.cfm/rules/general-orders/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CJA Capital Habeas Forms",
+        "url": "https://www.caed.uscourts.gov/caednew/index.cfm/forms/cja-capital-habeas-forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself (Pro Se Litigant)",
+        "url": "https://www.caed.uscourts.gov/caednew/index.cfm/cmecf-e-filing/representing-yourself-pro-se-litigant/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.caed.uscourts.gov/caednew/index.cfm/forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF E-Filing",
+        "url": "https://www.caed.uscourts.gov/caednew/index.cfm/cmecf-e-filing/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "california-northern": {
+    "districtId": "california-northern",
+    "districtName": "Northern District of California",
+    "summary": "The retrieved Habeas Corpus Local Rules concern state-conviction \u00a72254 matters; this review has not verified a special immigration \u00a72241 procedure.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Habeas Corpus Local Rules",
+        "url": "https://cand.uscourts.gov/rules-forms-fees/local-rules/habeas-corpus-local-rules",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Scope check only: \u00a72254 local rules are not a verified immigration \u00a72241 rule",
+    "limitations": [
+      "Do not apply the retrieved capital/state-conviction provisions as an immigration filing rule. Further \u00a72241-specific research remains."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "california-southern": {
+    "districtId": "california-southern",
+    "districtName": "Southern District of California",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Chambers Rules",
+        "url": "https://www.casd.uscourts.gov/judges/chambers-rules.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "RULES",
+        "url": "https://www.casd.uscourts.gov/rules/local-rules.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Capital Habeas Case Materials",
+        "url": "https://www.casd.uscourts.gov/attorney/capital-habeas-case.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing YourSelf",
+        "url": "https://www.casd.uscourts.gov/ProSe.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "colorado": {
+    "districtId": "colorado",
+    "districtName": "District of Colorado",
+    "summary": "The court\u2019s posted \u00a72241 instructions impose a 30-page application limit and specific formatting and service requirements.",
+    "requirements": [
+      "Absent prior court order, the application including attachments answering questions may not exceed 30 pages. Type or write legibly on one-sided 8\u00bd\u00d711-inch paper with1\u00bd-inch top margin and1-inch other margins.",
+      "Sign each form. Submit the original application and keep a copy. Papers other than the original application require a certificate stating the date/address of service on respondents or counsel.",
+      "Pay$5 or use the proper IFP motion/affidavit. The instructions discuss prisoner institutional-account certificates; check the distinct civil-immigration situation before applying prisoner-specific requirements."
+    ],
+    "sources": [
+      {
+        "label": "Posted \u00a72241 instructions, revisionAugust 24,2015",
+        "url": "https://www.cod.uscourts.gov/Portals/0/Documents/Forms/CivilForms/Application_for_Writ_of_Habeas_Corpus_2241_Instructions.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Posted instructions expressly include immigration claims but contain old INS terminology. Current statutory jurisdiction and local amendments require separate review."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "connecticut": {
+    "districtId": "connecticut",
+    "districtName": "District of Connecticut",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "NOTICE of proposed revision to the District of Connecticut\u2019s Local Rules",
+        "url": "https://www.ctd.uscourts.gov/news/notice-proposed-revision-district-connecticut%E2%80%99s-local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules and Orders",
+        "url": "https://www.ctd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing a Case without an Attorney / Pro Se",
+        "url": "https://www.ctd.uscourts.gov/forms/all-forms/prose_forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms and Instructions",
+        "url": "https://www.ctd.uscourts.gov/forms-and-instructions",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.ctd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "delaware": {
+    "districtId": "delaware",
+    "districtName": "District of Delaware",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules, Policies & Standing Orders",
+        "url": "https://www.ded.uscourts.gov/rules-policies-standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "HERE",
+        "url": "https://www.ded.uscourts.gov/sites/ded/files/general-orders/Standing%20Order%20Procedures%20Regarding%20the%20Possession%20and%20Use%20of%20Electronic%20Devices.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Privacy Notice for Pro Se Filers",
+        "url": "https://www.ded.uscourts.gov/privacy-notice-pro-se-filers",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ded.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Information",
+        "url": "https://www.ded.uscourts.gov/cmecf-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "district-of-columbia": {
+    "districtId": "district-of-columbia",
+    "districtName": "District of Columbia",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules & Forms",
+        "url": "https://www.dcd.uscourts.gov/rules-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.dcd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.dcd.uscourts.gov/standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Help",
+        "url": "https://www.dcd.uscourts.gov/pro-se-help",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "ECF Forms, Instructions, and Other Information",
+        "url": "https://www.dcd.uscourts.gov/ecf-forms-instructions-and-other-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "After Hours Filing",
+        "url": "https://www.dcd.uscourts.gov/after-hours-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "florida-middle": {
+    "districtId": "florida-middle",
+    "districtName": "Middle District of Florida",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.flmd.uscourts.gov/local-rules/filing-a-case",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.flmd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders/Plans/ Procedures",
+        "url": "https://www.flmd.uscourts.gov/standing-orders-plans-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Litigants without Lawyers",
+        "url": "https://www.flmd.uscourts.gov/litigants-without-lawyers",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.flmd.uscourts.gov/forms/all/filing-a-case-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing a Case",
+        "url": "https://www.flmd.uscourts.gov/filing-case",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "florida-northern": {
+    "districtId": "florida-northern",
+    "districtName": "Northern District of Florida",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.flnd.uscourts.gov/local-rules-1",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Administrative Orders",
+        "url": "https://www.flnd.uscourts.gov/court-info/local-rules-and-orders/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Information",
+        "url": "https://www.flnd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney Forms",
+        "url": "https://www.flnd.uscourts.gov/forms/all-forms/attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney Frequently Asked Questions",
+        "url": "https://www.flnd.uscourts.gov/faqs/cm_ecf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "florida-southern": {
+    "districtId": "florida-southern",
+    "districtName": "Southern District of Florida",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Procedures",
+        "url": "https://www.flsd.uscourts.gov/local-rules-and-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Amendments to the Local Rules",
+        "url": "https://www.flsd.uscourts.gov/sites/flsd/files/adminorders/2026-94.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.flsd.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Emergency Court Filings (After Hours)",
+        "url": "https://www.flsd.uscourts.gov/emergency-filings",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "georgia-middle": {
+    "districtId": "georgia-middle",
+    "districtName": "Middle District of Georgia",
+    "summary": "October 21, 2026 Standing Order 2026-04 vacated the earlier Stewart Detention Center bond-hearing procedures.",
+    "requirements": [
+      "Do not rely on Standing Orders 2026-01 or 2026-03 as an operative streamlined Stewart bond-hearing process: Order 2026-04 expressly vacates both.",
+      "The new order addresses \u00a72241 petitions for bond hearings at Stewart Detention Center in the Columbus Division. Obtain current case-specific directions and check controlling Eleventh Circuit and Supreme Court developments."
+    ],
+    "sources": [
+      {
+        "label": "Standing Order 2026-04, October 21, 2026",
+        "url": "https://www.gamd.uscourts.gov/sites/gamd/files/general-ordes/2026-04-StandingOrderReImmigration.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Stewart Detention Center \u00a72241 immigration petitions for bond hearings",
+    "limitations": [
+      "The order\u2019s procedural vacatur was verified. The underlying appellate merits, pending Supreme Court proceeding and subsequent developments have not received a full citator audit."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "georgia-northern": {
+    "districtId": "georgia-northern",
+    "districtName": "Northern District of Georgia",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules, Orders & Forms",
+        "url": "https://www.gand.uscourts.gov/rules-orders-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.gand.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Prisoner and Pro Se Guidance",
+        "url": "https://www.gand.uscourts.gov/prisoner-and-pro-se-guidance",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Commonly Used Forms",
+        "url": "https://www.gand.uscourts.gov/commonly-used-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing",
+        "url": "https://www.gand.uscourts.gov/electronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "georgia-southern": {
+    "districtId": "georgia-southern",
+    "districtName": "Southern District of Georgia",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules for the Southern District of Georgia",
+        "url": "https://www.gasd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Notice of and Opportunity for Comment on Amendments to The Rules of The United States Court of Appeals for The Eleventh Circuit",
+        "url": "https://www.gasd.uscourts.gov/news/notice-and-opportunity-comment-amendments-rules-united-states-court-appeals-eleventh-circuit-2",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.gasd.uscourts.gov/forms-main",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Walk-In Payment / Filing Information",
+        "url": "https://www.gasd.uscourts.gov/walk-payment-filing-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "guam": {
+    "districtId": "guam",
+    "districtName": "District Court of Guam",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "for Attorneys",
+        "url": "https://www.gud.uscourts.gov/Local_Rules_of_Practice",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Orders",
+        "url": "https://www.gud.uscourts.gov/court-info/local-rules-and-orders/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Order 26-0037 - Typhoon Champi Reopening",
+        "url": "https://www.gud.uscourts.gov/news/general-order-26-0037-typhoon-champi-reopening",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.gud.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Help for Filing Without an Attorney",
+        "url": "https://www.gud.uscourts.gov/help-filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "hawaii": {
+    "districtId": "hawaii",
+    "districtName": "District of Hawaii",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "idaho": {
+    "districtId": "idaho",
+    "districtName": "District of Idaho",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "General Orders",
+        "url": "https://www.id.uscourts.gov/clerks/rules_orders/General_Orders.cfm?lni=315",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Bankruptcy Local Rules",
+        "url": "https://www.id.uscourts.gov/clerks/rules_orders/Bankruptcy_Local_Rules.cfm?lni=316",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self Representation",
+        "url": "https://www.id.uscourts.gov/district/pro_se/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "illinois-central": {
+    "districtId": "illinois-central",
+    "districtName": "Central District of Illinois",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.ilcd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "People are being targeted by phone call, email, and messaging scams threatening them with prosecution",
+        "url": "https://www.ilcd.uscourts.gov/warning-beware-scams-related-court-business-including-jury-service-and-arrest-warrants",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ilcd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Prisoner E-Filing",
+        "url": "https://www.ilcd.uscourts.gov/prisoner-e-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "illinois-northern": {
+    "districtId": "illinois-northern",
+    "districtName": "Northern District of Illinois",
+    "summary": "Local Rule 81.3(a) expressly requires approved forms for in-custody \u00a72241 petitions.",
+    "requirements": [
+      "In-custody \u00a72241 petitions must use forms approved by the Executive Committee; the clerk supplies them on request.",
+      "The same rule discusses advance emergency coordination for counsel, but confirm the court\u2019s current emergency contact and applicability rather than relying solely on this older rule-page contact."
+    ],
+    "sources": [
+      {
+        "label": "Local Rule 81.3 \u2014 Habeas Corpus Proceedings by Persons in Custody",
+        "url": "https://www.ilnd.uscourts.gov/_assets/_documents/_forms/_legal/newrules/New00069.htm",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "In-custody \u00a72241 petitions; do not import capital \u00a72254/\u00a72255 provisions",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "illinois-southern": {
+    "districtId": "illinois-southern",
+    "districtName": "Southern District of Illinois",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules, Orders, & Forms",
+        "url": "https://www.ilsd.uscourts.gov/local-court-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself (Pro Se)",
+        "url": "https://www.ilsd.uscourts.gov/representing-yourself-pro-se-litigant",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ilsd.uscourts.gov/forms-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing",
+        "url": "https://www.ilsd.uscourts.gov/electronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "indiana-northern": {
+    "districtId": "indiana-northern",
+    "districtName": "Northern District of Indiana",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.innd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.innd.uscourts.gov/usdc-general-orders?order=field_go_date_filed&sort=desc",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.innd.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Court Interpreter Information",
+        "url": "https://www.innd.uscourts.gov/forms/InterpreterForms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Admission to Practice and CM/ECF Registration",
+        "url": "https://www.innd.uscourts.gov/admission-practice-and-cmecf-registration",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "indiana-southern": {
+    "districtId": "indiana-southern",
+    "districtName": "Southern District of Indiana",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.insd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "http://www.insd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.insd.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.insd.uscourts.gov/representing-yourself-united-states-district-court",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Guides & Forms for Prisoner Claims",
+        "url": "https://www.insd.uscourts.gov/guides-forms-prisoner-claims",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "E-Filing Resources",
+        "url": "https://www.insd.uscourts.gov/e-filing-resources",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "iowa-northern": {
+    "districtId": "iowa-northern",
+    "districtName": "Northern District of Iowa",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules, Federal Rules & Administrative Orders",
+        "url": "https://www.iand.uscourts.gov/local-rules-federal-rules-administrative-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules, Federal Rules & Administrative Orders",
+        "url": "https://www.iand.uscourts.gov/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Preferences, Conflict Lists & Standing Orders",
+        "url": "https://www.iand.uscourts.gov/preferences-conflict-lists-standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Introduction/Guide to Pro Se",
+        "url": "https://www.iand.uscourts.gov/introductionguide-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Online Request Forms",
+        "url": "https://www.iand.uscourts.gov/online-request-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF User",
+        "url": "https://www.iand.uscourts.gov/cmecf-user",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "iowa-southern": {
+    "districtId": "iowa-southern",
+    "districtName": "Southern District of Iowa",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules and Orders",
+        "url": "https://www.iasd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Federal Rules",
+        "url": "https://www.iasd.uscourts.gov/federal-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self-Representation Links",
+        "url": "https://www.iasd.uscourts.gov/self-representation-links",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.iasd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.iasd.uscourts.gov/policies-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "kansas": {
+    "districtId": "kansas",
+    "districtName": "District of Kansas",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.ksd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "For Self-Represented",
+        "url": "https://www.ksd.uscourts.gov/self-represented-litigants",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ksd.uscourts.gov/forms-home",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney Registration for E-Filing",
+        "url": "https://www.ksd.uscourts.gov/attorney-registration-e-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "kentucky-eastern": {
+    "districtId": "kentucky-eastern",
+    "districtName": "Eastern District of Kentucky",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules & Forms",
+        "url": "https://www.kyed.uscourts.gov/rules-and-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.kyed.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.kyed.uscourts.gov/general-orders-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.kyed.uscourts.gov/atty-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.kyed.uscourts.gov/case-info",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "kentucky-western": {
+    "districtId": "kentucky-western",
+    "districtName": "Western District of Kentucky",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.kywd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.kywd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Forms",
+        "url": "https://www.kywd.uscourts.gov/forms/all-forms/pro_se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Receive Documents Electronically Form - Civil Cases Only",
+        "url": "https://www.kywd.uscourts.gov/sites/kywd/files/forms/Electronic_Notice_Registration_Form_0_0.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "After Hours Filing",
+        "url": "https://www.kywd.uscourts.gov/after-hours-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "louisiana-eastern": {
+    "districtId": "louisiana-eastern",
+    "districtName": "Eastern District of Louisiana",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules & General Orders",
+        "url": "https://www.laed.uscourts.gov/localrules/localrules.htm",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Federal and Local Rules of Civil Procedure",
+        "url": "https://www.laed.uscourts.gov/pro-se/federal-and-local-rules-civil-procedure",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Civil Complaint and Habeas Petition Forms",
+        "url": "https://www.laed.uscourts.gov/pro-se/civil-complaint-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Bankruptcy Reference",
+        "url": "https://www.laed.uscourts.gov/sites/default/files/pdfs/General%20Order%2021-5%20re%20Bankruptcy%20Referrals.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.laed.uscourts.gov/filing-without-attorney-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Forms",
+        "url": "https://www.laed.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "2241 Writ of Habeas Corpus Petition",
+        "url": "https://www.laed.uscourts.gov/pro-se/2241-writ-habeas-corpus-petition",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "louisiana-middle": {
+    "districtId": "louisiana-middle",
+    "districtName": "Middle District of Louisiana",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules",
+        "url": "https://www.lamd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Proposed Rules Amendments Published for Public Comment Until Feb. 15, 2027",
+        "url": "https://www.lamd.uscourts.gov/news/proposed-rules-amendments-published-public-comment-until-feb-15-2027",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.lamd.uscourts.gov/pro-se-filing-without-attorney-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.lamd.uscourts.gov/lamd-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "E-Filing",
+        "url": "https://www.lamd.uscourts.gov/cmecf-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "louisiana-western": {
+    "districtId": "louisiana-western",
+    "districtName": "Western District of Louisiana",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Court Rules",
+        "url": "https://www.lawd.uscourts.gov/court-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "FRCP 4(i)(1)(A) Notice of U.S. Attorney's Office Regarding Acceptance of Service",
+        "url": "https://www.lawd.uscourts.gov/sites/lawd/files/UPLOADS/Rule4_Notice.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Order re Highly Sensitive Documents",
+        "url": "https://www.lawd.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "TEMPORARY PRO SE LAW CLERK - LOCATION PREFERENCE WILL BE CONSIDERED",
+        "url": "https://www.lawd.uscourts.gov/news/temporary-pro-se-law-clerk-location-preference-will-be-considered",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.lawd.uscourts.gov/forms-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney E-Filing Access & Training",
+        "url": "https://www.lawd.uscourts.gov/attorney-e-filing-access-training",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "maine": {
+    "districtId": "maine",
+    "districtName": "District of Maine",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules of Practice for the District of Maine",
+        "url": "https://www.med.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules",
+        "url": "https://www.med.uscourts.gov/rules-opinions",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.med.uscourts.gov/representing-yourself-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.med.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Emergency Contact Info",
+        "url": "https://www.med.uscourts.gov/after-hours-emergency-filings",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "maryland": {
+    "districtId": "maryland",
+    "districtName": "District of Maryland",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.mdd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.mdd.uscourts.gov/standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self-Represented Forms",
+        "url": "https://www.mdd.uscourts.gov/forms/all-forms/self_rep",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.mdd.uscourts.gov/forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "After Hours Filings",
+        "url": "https://www.mdd.uscourts.gov/after-hours-filings",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "massachusetts": {
+    "districtId": "massachusetts",
+    "districtName": "District of Massachusetts",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.mad.uscourts.gov/general/rules-home.htm",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se",
+        "url": "https://www.mad.uscourts.gov",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.mad.uscourts.gov/resources/forms-local.htm",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "E-Filing",
+        "url": "https://www.mad.uscourts.gov/caseinfo/cmecf-general.htm",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "michigan-eastern": {
+    "districtId": "michigan-eastern",
+    "districtName": "Eastern District of Michigan",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules, Plans & Administrative Orders",
+        "url": "https://www.mied.uscourts.gov/attorneys/localrules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Model ESI Order",
+        "url": "https://www.mied.uscourts.gov/pdffiles/ModelESIDiscoveryOrderAndRule26fChecklist.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Information",
+        "url": "https://www.mied.uscourts.gov/prose/information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.mied.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Information and Resources",
+        "url": "https://www.mied.uscourts.gov/efiling/information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "michigan-western": {
+    "districtId": "michigan-western",
+    "districtName": "Western District of Michigan",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules and Policies",
+        "url": "https://www.miwd.uscourts.gov/local-rules-governing-electronic-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules Orders & Policies",
+        "url": "https://www.miwd.uscourts.gov/rules-orders-policies",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Forms",
+        "url": "https://www.miwd.uscourts.gov/pro-se-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Civil Case Information",
+        "url": "https://www.miwd.uscourts.gov/attorney-information-civil",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Filing",
+        "url": "https://www.miwd.uscourts.gov/electronic-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "minnesota": {
+    "districtId": "minnesota",
+    "districtName": "District of Minnesota",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Standing Orders",
+        "url": "https://www.mnd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Federal Rules",
+        "url": "https://www.mnd.uscourts.gov/federal-rules-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.mnd.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Court Forms",
+        "url": "https://www.mnd.uscourts.gov/forms/all-forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Filing Tools",
+        "url": "https://www.mnd.uscourts.gov/electronic-filing-tools",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "mississippi-northern": {
+    "districtId": "mississippi-northern",
+    "districtName": "Northern District of Mississippi",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Judicial Misconduct and Disability Rules",
+        "url": "https://www.msnd.uscourts.gov/nodeblock/judicial-misconduct-and-disability-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules and General Orders",
+        "url": "https://www.msnd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.msnd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "NDMS Jury Plan",
+        "url": "https://www.msnd.uscourts.gov/sites/msnd/files/forms/Doc_JuryPlan%282013%29.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing (ECF) and PACER",
+        "url": "https://www.msnd.uscourts.gov/ecf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "mississippi-southern": {
+    "districtId": "mississippi-southern",
+    "districtName": "Southern District of Mississippi",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.mssd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules & General Orders",
+        "url": "https://www.mssd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Judicial Misconduct Notice",
+        "url": "https://www.mssd.uscourts.gov/forms/judicial-misconduct-notice",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing",
+        "url": "https://www.mssd.uscourts.gov/case-managementelectronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "missouri-eastern": {
+    "districtId": "missouri-eastern",
+    "districtName": "Eastern District of Missouri",
+    "summary": "The court provides a \u00a72241-specific filing packet with additional original-filing and cover-sheet forms.",
+    "requirements": [
+      "Read the district\u2019s complete \u00a72241 instructions before preparing the filing. Its packet lists a \u00a72241 petition, habeas-specific IFP motion/affidavit, Original Filing Form and Civil Cover Sheet."
+    ],
+    "sources": [
+      {
+        "label": "2241 Petition for Writ of Habeas Corpus \u2014 court packet page",
+        "url": "https://www.moed.uscourts.gov/2241-petition-writ-habeas-corpus",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "\u00a72241 source packet; individual instruction PDF not yet substantively reviewed",
+    "limitations": [
+      "Packet availability verified. This note does not establish every item is mandatory in every immigration case. Read the linked instructions."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "missouri-western": {
+    "districtId": "missouri-western",
+    "districtName": "Western District of Missouri",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules, ESI Principles, Procedures & Fees",
+        "url": "https://www.mow.uscourts.gov/district/rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Bankruptcy Local Rules, General Orders, and Fee Schedule",
+        "url": "https://www.mow.uscourts.gov/bankruptcy/rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Prisoner Pro Se Office",
+        "url": "https://www.mow.uscourts.gov/district/prisoner-pro-se-office",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.mow.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "NextGen CM/ECF",
+        "url": "https://www.mow.uscourts.gov/attorney/nextgen-cmecf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "montana": {
+    "districtId": "montana",
+    "districtName": "District of Montana",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules, Orders & Statutes",
+        "url": "https://www.mtd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Archived Local Rules",
+        "url": "https://www.mtd.uscourts.gov/archived-local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.mtd.uscourts.gov/standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself (Pro Se)",
+        "url": "https://www.mtd.uscourts.gov/representing-yourself-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.mtd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Emergency Filings",
+        "url": "https://www.mtd.uscourts.gov/emergency-filings",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "nebraska": {
+    "districtId": "nebraska",
+    "districtName": "District of Nebraska",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.ned.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.ned.uscourts.gov/attorney/general-orders-content",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms for Self-Represented and IFP Litigants",
+        "url": "https://www.ned.uscourts.gov/public/proceeding-without-an-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ned.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Procedures and Training Materials",
+        "url": "https://www.ned.uscourts.gov/attorney/electronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "nevada": {
+    "districtId": "nevada",
+    "districtName": "District of Nevada",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "General Orders",
+        "url": "https://www.nvd.uscourts.gov/court-information/rules-and-orders/general-orders/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.nvd.uscourts.gov/wp-content/uploads/2020/04/Local-Rules-of-Practice-Amended-2020.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.nvd.uscourts.gov/self-help-portal/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nvd.uscourts.gov/court-information/forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF NEXTGEN Information",
+        "url": "https://www.nvd.uscourts.gov/next-generation-of-cm-ecf-information-resources/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-hampshire": {
+    "districtId": "new-hampshire",
+    "districtName": "District of New Hampshire",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.nhd.uscourts.gov/Local-Rules-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Proposed Local Rule Amendments Published for Public Comment",
+        "url": "https://www.nhd.uscourts.gov/content/proposed-local-rule-amendments-published-public-comment",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Guide",
+        "url": "https://www.nhd.uscourts.gov/pro-se-guide",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nhd.uscourts.gov/forms-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.nhd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-jersey": {
+    "districtId": "new-jersey",
+    "districtName": "District of New Jersey",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules & Standing Orders",
+        "url": "https://www.njd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Order Amending Local Civil Rule 5.3",
+        "url": "https://www.njd.uscourts.gov/news/order-amending-local-civil-rule-53",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.njd.uscourts.gov/standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Procedural Guide for Pro Se Litigants",
+        "url": "http://www.njd.uscourts.gov/sites/njd/files/ProSePacket_1.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms: All",
+        "url": "https://www.njd.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Court Fees",
+        "url": "https://www.njd.uscourts.gov/filing-fees-and-rates-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-mexico": {
+    "districtId": "new-mexico",
+    "districtName": "District of New Mexico",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules and Orders",
+        "url": "https://www.nmd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "View all \u00bb",
+        "url": "https://www.nmd.uscourts.gov/court-info/local-rules-and-orders/general-orders/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se",
+        "url": "https://www.nmd.uscourts.gov/representing-yourself-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nmd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing",
+        "url": "https://www.nmd.uscourts.gov/filing-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-york-eastern": {
+    "districtId": "new-york-eastern",
+    "districtName": "Eastern District of New York",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Joint Notice to the Bar 2026 Amendments\r\nThe Eastern and Southern Districts of New York Invite Public Comment on Proposed Changes to the Courts\u2019 Joint Local Rules",
+        "url": "https://www.nyed.uscourts.gov/sites/default/files/uploads/joint%20notice%20to%20bar%202026%20amendments%2020260701.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Federal Court Rules Stay informed with rules, forms and other court info",
+        "url": "https://www.nyed.uscourts.gov/federal-court-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.nyed.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney Forms Attorney Forms",
+        "url": "https://www.nyed.uscourts.gov/forms-search",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Scam Alerts: Fake Notices of Electronic Filing, Fraudulent Website/Advance-Fee Scams and Scammers are Impersonating the U.S. Courts",
+        "url": "https://www.nyed.uscourts.gov/scam-alerts",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-york-northern": {
+    "districtId": "new-york-northern",
+    "districtName": "Northern District of New York",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Federal Rules, Local Rules & General Orders",
+        "url": "https://www.nynd.uscourts.gov/federal-rules-local-rules-general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.nynd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.nynd.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se/Self Representation",
+        "url": "https://www.nynd.uscourts.gov/representing-yourself-federal-court",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nynd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Court Information",
+        "url": "https://www.nynd.uscourts.gov/cmecf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-york-southern": {
+    "districtId": "new-york-southern",
+    "districtName": "Southern District of New York",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.nysd.uscourts.gov/rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "ECF Rules",
+        "url": "https://www.nysd.uscourts.gov/rules/ecf-related-instructions",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Updated Procedures for Immigration-Related Habeas Corpus Petitions",
+        "url": "https://www.nysd.uscourts.gov/sites/default/files/2025-12/Notice%20to%20Bar%20-%20Updated%20Procedures%20for%20Immigration-Related%20Habeas%20Corpus%20Petitions.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Resources for Attorneys - ECF",
+        "url": "https://www.nysd.uscourts.gov/prose/electronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Resources for Attorneys - Forms",
+        "url": "https://www.nysd.uscourts.gov/forms?field_form_category_target_id=23&title=&sort_by=title",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "new-york-western": {
+    "districtId": "new-york-western",
+    "districtName": "Western District of New York",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules: Individual, Local & Federal",
+        "url": "https://www.nywd.uscourts.gov/rules-individual-local-federal",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders and District Plans",
+        "url": "https://www.nywd.uscourts.gov/standing-orders-and-district-plans",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se/Self Representation",
+        "url": "https://www.nywd.uscourts.gov/pro-se-self-representation",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nywd.uscourts.gov/forms-3",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Information",
+        "url": "https://www.nywd.uscourts.gov/cmecf-information-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules: Individual, Local & Federal",
+        "url": "https://www.nywd.uscourts.gov/rules-individual-local-federal",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "north-carolina-eastern": {
+    "districtId": "north-carolina-eastern",
+    "districtName": "Eastern District of North Carolina",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules/Standing Orders",
+        "url": "https://www.nced.uscourts.gov#!",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules/Standing Orders Home",
+        "url": "https://www.nced.uscourts.gov/rules/Default.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "In Re: Plan for Lapse in Appropriations, United States District for the Eastern District of North Carolina",
+        "url": "https://www.nced.uscourts.gov/pdfs/StandingOrders/25-SO-2.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self Representation",
+        "url": "https://www.nced.uscourts.gov/prose/Default.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nced.uscourts.gov/forms/Default.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.nced.uscourts.gov/cmecf/Default.aspx",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "north-carolina-middle": {
+    "districtId": "north-carolina-middle",
+    "districtName": "Middle District of North Carolina",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Standing Orders",
+        "url": "https://www.ncmd.uscourts.gov/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Non-Prisoner Pro Se Information and Forms",
+        "url": "https://www.ncmd.uscourts.gov/pro-se-non-prisoner-information-and-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Prisoner Information and Forms",
+        "url": "https://www.ncmd.uscourts.gov/prisoner-information-and-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.ncmd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "north-carolina-western": {
+    "districtId": "north-carolina-western",
+    "districtName": "Western District of North Carolina",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.ncwd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Information",
+        "url": "https://www.ncwd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ncwd.uscourts.gov/national-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Account",
+        "url": "https://www.ncwd.uscourts.gov/cmecf-account",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "north-dakota": {
+    "districtId": "north-dakota",
+    "districtName": "District of North Dakota",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules & General Orders",
+        "url": "https://www.ndd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ndd.uscourts.gov/forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.ndd.uscourts.gov/case-management-electronic-case-files",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "northern-mariana-islands": {
+    "districtId": "northern-mariana-islands",
+    "districtName": "District Court for the Northern Mariana Islands",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local and Federal Rules",
+        "url": "https://www.nmid.uscourts.gov/local-and-federal-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.nmid.uscourts.gov/generalorders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.nmid.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.nmid.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "ohio-northern": {
+    "districtId": "ohio-northern",
+    "districtName": "Northern District of Ohio",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules and Orders",
+        "url": "https://www.ohnd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self-Representation",
+        "url": "https://www.ohnd.uscourts.gov/pro-se-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ohnd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Hours",
+        "url": "https://www.ohnd.uscourts.gov/filing-hours",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "ohio-southern": {
+    "districtId": "ohio-southern",
+    "districtName": "Southern District of Ohio",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.ohsd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.ohsd.uscourts.gov/Local-Rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.ohsd.uscourts.gov/content/general-orders-ohio-southern-district",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.ohsd.uscourts.gov/pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.ohsd.uscourts.gov/ohio-southern-district-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing CM/ECF",
+        "url": "https://www.ohsd.uscourts.gov/electronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "oklahoma-eastern": {
+    "districtId": "oklahoma-eastern",
+    "districtName": "Eastern District of Oklahoma",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.oked.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "2022 Federal Rules Changes",
+        "url": "https://www.oked.uscourts.gov/2022-federal-rules-changes",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Litigant - Case Submission Portal",
+        "url": "https://www.oked.uscourts.gov/pro-se-litigant-document-submission",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Certificate of Service (for electronic service in social security)",
+        "url": "https://www.oked.uscourts.gov/forms/certificate-service-electronic-service-social-security",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "ESI Discovery Production in Criminal Cases",
+        "url": "https://www.oked.uscourts.gov/content/electroniclly-stored-information-discovery-production-cr-cases",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "oklahoma-northern": {
+    "districtId": "oklahoma-northern",
+    "districtName": "Northern District of Oklahoma",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.oknd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.oknd.uscourts.gov/court-info/local-rules-and-orders/oknd-general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Order 26-06",
+        "url": "https://www.oknd.uscourts.gov/news/general-order-26-06",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.oknd.uscourts.gov/forms/ndok-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing/Practice Information",
+        "url": "https://www.oknd.uscourts.gov/filing-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "oklahoma-western": {
+    "districtId": "oklahoma-western",
+    "districtName": "Western District of Oklahoma",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules & Procedures",
+        "url": "https://www.okwd.uscourts.gov/rules-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.okwd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.okwd.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self Representation",
+        "url": "https://www.okwd.uscourts.gov/forms/Self%20Representation",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.okwd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing",
+        "url": "https://www.okwd.uscourts.gov/electronic-case-filing-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "oregon": {
+    "districtId": "oregon",
+    "districtName": "District of Oregon",
+    "summary": "Local Rule 81-1 expressly includes \u00a72241 and requires court-supplied forms and verification.",
+    "requirements": [
+      "Petitions under \u00a72241 must be legibly written or typed on court-supplied forms, signed under penalty of perjury by the petitioner or an authorized person, with the original sent to the clerk.",
+      "For a prisoner seeking IFP, LR 81-1 requires financial affidavit/declaration and an institutional-account certificate. Check immigration-specific applicability and court instructions before applying prisoner-account requirements to civil detainees."
+    ],
+    "sources": [
+      {
+        "label": "Local Rule 81 \u2014 Habeas Corpus Petitions",
+        "url": "https://ord.uscourts.gov/index.php/rules-orders-and-notices/local-rules/civil-procedure/1779-lr-81-habeas-corpus-petitions",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "LR 81-1 expressly includes \u00a72241; LR 81-2\u2019s incorporation provision addresses \u00a72254/\u00a72255",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "pennsylvania-eastern": {
+    "districtId": "pennsylvania-eastern",
+    "districtName": "Eastern District of Pennsylvania",
+    "summary": "The September 2026 immigration-specific instructions provide a local packet, warden naming, clerk service and court-set briefing.",
+    "requirements": [
+      "Type or neatly write, answer all questions, and sign/date under penalty of perjury. Hard copies use one-sided 8\u00bd\u00d711-inch paper; relevant immigration documents may be attached.",
+      "For a detained petitioner name the facility warden; if unknown the instructions permit \u201cWarden of [facility]\u201d.",
+      "Include the $5 fee or signed habeas IFP application. Mail to the Clerk, 601 Market Street, Room 2609, Philadelphia PA 19106, attention Immigration Habeas.",
+      "After legal review the court arranges service if not already accomplished and sets response/reply deadlines. Report contact changes in writing; failure can cause dismissal."
+    ],
+    "sources": [
+      {
+        "label": "Immigration habeas instructions, revision September 2026",
+        "url": "https://www.paed.uscourts.gov/sites/paed/files/documents/forms/ProSe_Habeas_Instructions-eng.pdf",
+        "reviewStatus": "Relevant operative text read"
+      },
+      {
+        "label": "Immigration Habeas Cases \u2014 form and English/Spanish instructions",
+        "url": "https://www.paed.uscourts.gov/immigration-habeas-cases",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "pennsylvania-middle": {
+    "districtId": "pennsylvania-middle",
+    "districtName": "Middle District of Pennsylvania",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.pamd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney / Pro Se",
+        "url": "https://www.pamd.uscourts.gov/filing-without-attorney-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Petition for Admission to Practice",
+        "url": "https://www.pamd.uscourts.gov/forms/petition-admission-practice",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "EMERGENCY ELECTION CASE FILINGS",
+        "url": "https://www.pamd.uscourts.gov/emergency-election-case-filings-and-media-inquiries",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "pennsylvania-western": {
+    "districtId": "pennsylvania-western",
+    "districtName": "Western District of Pennsylvania",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.pawd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules and Standing Orders",
+        "url": "https://www.pawd.uscourts.gov/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.pawd.uscourts.gov/administrative-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.pawd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Bono Forms and Instructions",
+        "url": "https://www.pawd.uscourts.gov/pro-bono-forms-and-instructions-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Emergency Filing Procedures",
+        "url": "https://www.pawd.uscourts.gov/after-business-hours-emergency-filing-procedures",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "puerto-rico": {
+    "districtId": "puerto-rico",
+    "districtName": "District of Puerto Rico",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.prd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Order re. Request for Public Comments for Amendment to Local Civil Rule 7(e)",
+        "url": "https://www.prd.uscourts.gov/news/order-re-request-public-comments-amendment-local-civil-rule-7e",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Standing Orders",
+        "url": "https://www.prd.uscourts.gov/case-info/cm-ecf-case-info",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.prd.uscourts.gov/pro-se-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.prd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.prd.uscourts.gov/cmecf-nextgen",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "rhode-island": {
+    "districtId": "rhode-island",
+    "districtName": "District of Rhode Island",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.rid.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules and Resources",
+        "url": "https://www.rid.uscourts.gov/rules-and-resources",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.rid.uscourts.gov/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.rid.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.rid.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Information",
+        "url": "https://www.rid.uscourts.gov/cmecf-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "south-carolina": {
+    "districtId": "south-carolina",
+    "districtName": "District of South Carolina",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "RULES",
+        "url": "https://www.scd.uscourts.gov/navtop/rules.asp",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "STANDING ORDERS",
+        "url": "https://www.scd.uscourts.gov/StandingOrders/index.asp",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se WARNING",
+        "url": "https://www.scd.uscourts.gov/docs/Warning_to_Pro_Se.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "FORMS",
+        "url": "https://www.scd.uscourts.gov/FORMS/index.asp",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Announcements",
+        "url": "https://www.scd.uscourts.gov/CMECF/annoucements.asp",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "south-dakota": {
+    "districtId": "south-dakota",
+    "districtName": "District of South Dakota",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.sdd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Rules History",
+        "url": "https://www.sdd.uscourts.gov/RulesHistory",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.sdd.uscourts.gov/standing_orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.sdd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF Info",
+        "url": "https://www.sdd.uscourts.gov/case-info/cm-ecf-case-info",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "tennessee-eastern": {
+    "districtId": "tennessee-eastern",
+    "districtName": "Eastern District of Tennessee",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Standing Orders",
+        "url": "https://www.tned.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Public Notice of Proposed Rule Change",
+        "url": "https://www.tned.uscourts.gov/sites/tned/files/ECF%20Rules%202.3%20and%205_NOTICE%20%282026%29.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Order: Access, Service, and Management of Sealed Documents",
+        "url": "https://www.tned.uscourts.gov/sites/tned/files/SO-25-13.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.tned.uscourts.gov/filing-without-attorney-pro-se",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.tned.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Case Filing",
+        "url": "https://www.tned.uscourts.gov/electronic-case-filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "tennessee-middle": {
+    "districtId": "tennessee-middle",
+    "districtName": "Middle District of Tennessee",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.tnmd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "http://www.tnmd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Electronic Filing",
+        "url": "https://www.tnmd.uscourts.gov/pro-se-electronic-filing-portal",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.tnmd.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Information",
+        "url": "https://www.tnmd.uscourts.gov/filing-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "tennessee-western": {
+    "districtId": "tennessee-western",
+    "districtName": "Western District of Tennessee",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.tnwd.uscourts.gov/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.tnwd.uscourts.gov/pro-se-litigants",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Employment Forms",
+        "url": "https://www.tnwd.uscourts.gov/court-employment",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Getting CM/ECF Help",
+        "url": "https://www.tnwd.uscourts.gov/getting-cmecf-help",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "texas-eastern": {
+    "districtId": "texas-eastern",
+    "districtName": "Eastern District of Texas",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules and General Orders \u00bb",
+        "url": "https://www.txed.uscourts.gov/?q=rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se",
+        "url": "https://www.txed.uscourts.gov/?q=pro-se-litigants",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.txed.uscourts.gov/?q=court-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing",
+        "url": "https://www.txed.uscourts.gov/?q=filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "texas-northern": {
+    "districtId": "texas-northern",
+    "districtName": "Northern District of Texas",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.txnd.uscourts.gov/rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Request for Comments on Proposed Amendments to the Federal Rules",
+        "url": "https://www.txnd.uscourts.gov/news/request-comments-proposed-amendments-federal-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se",
+        "url": "https://www.txnd.uscourts.gov/pro-se-litigants",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms & Records",
+        "url": "https://www.txnd.uscourts.gov/court-forms-records",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing",
+        "url": "https://www.txnd.uscourts.gov/filing",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "texas-southern": {
+    "districtId": "texas-southern",
+    "districtName": "Southern District of Texas",
+    "summary": "The court\u2019s immigration-habeas guidance specifies divisional filing and restricted electronic access for non-attorneys.",
+    "requirements": [
+      "File with the clerk\u2019s divisional office covering the county where the detention facility is physically located. Sending a petition to the USAO does not file it and the USAO will not forward it.",
+      "Non-attorney parties need the presiding judge\u2019s approval before registering for electronic filing access.",
+      "Temporary electronic filing privileges are unavailable for emergencies. The court recommends expedited delivery and clearly identifying the emergency request.",
+      "Filing fees go to the clerk. Processing may occur after receipt; the clerk or PACER can provide the case number. A wrong-division filing will generally be processed and transferred."
+    ],
+    "sources": [
+      {
+        "label": "Habeas Corpus Petitions \u2014 English/Spanish procedural guidance",
+        "url": "https://www.txs.uscourts.gov/page/habeas-corpus-petitions",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "texas-western": {
+    "districtId": "texas-western",
+    "districtName": "Western District of Texas",
+    "summary": "The court requires separate motions and warns against sending petitions to the USAO; emergency electronic privileges are unavailable.",
+    "requirements": [
+      "Mail to the appropriate divisional clerk. A petition mailed to the USAO is not filed or forwarded. Pending pro hac vice admission, the listed filing options are mail or in person.",
+      "No temporary electronic privileges for emergency filings; guidance recommends overnight delivery with a cover letter identifying the emergency.",
+      "The court asks for the A-number, detainee\u2019s signature, and fee or IFP application. Its guidance says pro se next-friend submissions also need the detainee\u2019s signature.",
+      "File a TRO or other motion as a separate document, not inside the petition.",
+      "For cases assigned to Judge Xavier Rodriguez, the October 23,2026 order stays government response deadlines for immigration petitions asserting a substantive due-process right to freedom from \u00a7 1225(b)(2)(A) custody during immigration proceedings, pending further order. This is claim- and judge-specific."
+    ],
+    "sources": [
+      {
+        "label": "Habeas Corpus Petitions \u2014 English/Spanish",
+        "url": "https://www.txwd.uscourts.gov/cmecf/habeas-corpus-petitions/",
+        "reviewStatus": "Relevant operative text read"
+      },
+      {
+        "label": "Judge Xavier Rodriguez Order Staying Certain Response Deadlines,October 23,2026",
+        "url": "https://www.txwd.uscourts.gov/wp-content/uploads/2026/10/Sosnava-Rodriguez-En-Banc-Post-Mandate-Stay-of-Response-Deadlines-002.pdf",
+        "reviewStatus": "Operative1pageorderread"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "FAQ andOctober 23deadlineorder reviewed. Stay is limited to described claims in cases assigned to JudgeRodriguez; check later orders and case docket.",
+      "The underlying Fifth Circuit merits decision has not received a complete citator audit. Do not submit private detainee information to the public map."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "utah": {
+    "districtId": "utah",
+    "districtName": "District of Utah",
+    "summary": "General Order 26-005 authorizes provisional federal-defender representation for qualifying immigration detainees.",
+    "requirements": [
+      "The individual must contact the Federal Public Defender, be detained in immigration custody within Utah, appear financially eligible, and have a colorable \u00a72241 claim.",
+      "The defender may screen, investigate and file appropriate petitions/motions. Filing fee is provisionally waived for petitions prepared under this appointment; defender also files IFP motion.",
+      "The assigned judge reviews financial eligibility and interests of justice and can request information, require payment or rescind appointment."
+    ],
+    "sources": [
+      {
+        "label": "General Order 26-005, April 20,2026",
+        "url": "https://www.utd.uscourts.gov/sites/utd/files/general-orders/26-005%20GO%20Appointing%20FPD%20on%202241%20Petitions.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "vermont": {
+    "districtId": "vermont",
+    "districtName": "District of Vermont",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.vtd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.vtd.uscourts.gov/General-Order",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Position Announcement - Temporary Pro Se Law Clerk",
+        "url": "https://www.vtd.uscourts.gov/news/position-announcement-temporary-pro-se-law-clerk",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.vtd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without An Attorney",
+        "url": "https://www.vtd.uscourts.gov/filing-without-attorney",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "virgin-islands": {
+    "districtId": "virgin-islands",
+    "districtName": "District Court of the Virgin Islands",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Orders",
+        "url": "https://www.vid.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Initiative",
+        "url": "https://www.vid.uscourts.gov/pro-se-initiative-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.vid.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Guidance",
+        "url": "https://www.vid.uscourts.gov/filing-guidance",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "virginia-eastern": {
+    "districtId": "virginia-eastern",
+    "districtName": "Eastern District of Virginia",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "E-Filing Registration for Government Attorneys Pursuant to Local Civil Rule 83.1 and Local Criminal Rule 57.4",
+        "url": "https://www.vaed.uscourts.gov/content/e-filing-registration-government-attorneys-pursuant-local-civil-rule-831-and-local-criminal",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.vaed.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Orders",
+        "url": "https://www.vaed.uscourts.gov/standing-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Forms",
+        "url": "https://www.vaed.uscourts.gov/pro-se-litigant-information",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.vaed.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF",
+        "url": "https://www.vaed.uscourts.gov/ecf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "virginia-western": {
+    "districtId": "virginia-western",
+    "districtName": "Western District of Virginia",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Standing Orders",
+        "url": "https://www.vawd.uscourts.gov/court-information/local-rules-and-standing-orders/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Appointment of the Members of the Local Rules Advisory Committee S.O. 2026-14",
+        "url": "https://www.vawd.uscourts.gov/sites/Public/assets/File/StandingOrders/Court/localrulesadvisorycomm.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Referral of Civil Cases Assigned to Judge",
+        "url": "https://www.vawd.uscourts.gov/sites/Public/assets/File/StandingOrders/MagistrateJudges/RefCivilCasesAssignedToJones.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Pro Se Handbook",
+        "url": "https://www.vawd.uscourts.gov/filing-without-an-attorney/pro-se-handbook/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Jury Forms",
+        "url": "https://www.vawd.uscourts.gov/jurors/jury-forms/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Without an Attorney",
+        "url": "https://www.vawd.uscourts.gov/filing-without-an-attorney/",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "washington-eastern": {
+    "districtId": "washington-eastern",
+    "districtName": "Eastern District of Washington",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Rules & Policies",
+        "url": "https://www.waed.uscourts.gov/about-court/rules-policy",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.waed.uscourts.gov/rules-policies/general-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.waed.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Fees/Rates",
+        "url": "https://www.waed.uscourts.gov/forms-fees-payments-copies",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Filing System Info",
+        "url": "https://www.waed.uscourts.gov/court-records/electronic-filing-system-info",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "washington-western": {
+    "districtId": "washington-western",
+    "districtName": "Western District of Washington",
+    "summary": "The court supplies a dedicated pro se immigration packet for Northwest ICE Processing Center, separate from non-immigration habeas.",
+    "requirements": [
+      "Use the immigration packet for detention at Northwest ICE Processing Center. Mail hard copies to 700 Stewart Street, Suite 2310, Seattle WA 98101, or use the packet\u2019s stated electronic route; use one-sided 8\u00bd\u00d711-inch paper.",
+      "Sign/date under penalty of perjury, remove identifying information as directed, and pay $5 or submit the habeas IFP application.",
+      "The packet normally lists the warden and specified federal officials as respondents; follow the local instructions rather than importing another district\u2019s respondent list.",
+      "Court notifies respondents and sets briefing; magistrate consent is voluntary. The packet includes a counsel application, without guaranteeing appointment."
+    ],
+    "sources": [
+      {
+        "label": "Immigration habeas packet, instruction sheet revised July 2026; file August14,2026",
+        "url": "https://www.wawd.uscourts.gov/sites/wawd/files/Immigration_Habeas_forms_LRD08.14.2026F.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Pro se immigration detention at Northwest ICE Processing Center",
+    "limitations": [
+      "Selected operative provisions reviewed; not a complete local-rule, standing-order, judge-procedure or controlling-case audit.",
+      "The assigned judge\u2019s orders and later amendments control."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "west-virginia-northern": {
+    "districtId": "west-virginia-northern",
+    "districtName": "Northern District of West Virginia",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules \u00bb",
+        "url": "http://www.wvnd.uscourts.gov/sites/wvnd/files/NDWV%20Local%20Rules%202018%20MASTER.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Order Administrative Order Re Local Rule of Criminal Procedure 58.01 - Eff. 10/7/2026",
+        "url": "https://www.wvnd.uscourts.gov/news/standing-order-administrative-order-re-local-rule-criminal-procedure-5801-eff-1072026",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Standing Order Ceasing Submission of Payments to the Elkins Point of Holding Court - Effective 10/1/2026",
+        "url": "https://www.wvnd.uscourts.gov/news/standing-order-ceasing-submission-payments-elkins-point-holding-court-effective-1012026%C2%A0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Self Representation",
+        "url": "https://www.wvnd.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Attorney Admission Forms",
+        "url": "https://www.wvnd.uscourts.gov/attorney-admission-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "CM/ECF NextGen",
+        "url": "https://www.wvnd.uscourts.gov/cmecf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "west-virginia-southern": {
+    "districtId": "west-virginia-southern",
+    "districtName": "Southern District of West Virginia",
+    "summary": "The court directs filers to substitute its local \u00a72241 instructions for the national AO242 cover instructions.",
+    "requirements": [
+      "The local instructions expressly include illegal immigration detention and distinguish final removal-order review. Use one-sided 8\u00bd\u00d711-inch paper, sign, answer all questions and number any continuation pages.",
+      "Put any brief/legal argument in a separate memorandum. Send available challenged decisions, briefs and administrative-remedy forms with the petition.",
+      "Pay$5 or submit the court IFP form with the institutional financial certificate described in the instructions. Mail the original, retain a copy and promptly report transfer/release or address changes.",
+      "The judge determines whether an answer is required; no automatic default response deadline is promised."
+    ],
+    "sources": [
+      {
+        "label": "Local \u00a72241 instructions, revisionJanuary 2014",
+        "url": "https://www.wvsd.uscourts.gov/sites/wvsd/files/SDWV_28USC2241Instructions-1-2014.pdf",
+        "reviewStatus": "Relevant operative text read"
+      }
+    ],
+    "contentReviewedAt": "2026-10-26",
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "Selected source reviewed; not a complete rules/standing-orders or controlling-case audit. Check assigned judge and later amendments."
+    ],
+    "reviewStatus": "Selected district-specific provisions verified"
+  },
+  "wisconsin-eastern": {
+    "districtId": "wisconsin-eastern",
+    "districtName": "Eastern District of Wisconsin",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules and Guidance",
+        "url": "https://www.wied.uscourts.gov/local-rules-and-guidance",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules and Guidance",
+        "url": "https://www.wied.uscourts.gov/local-rules-and-guidance-0",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.wied.uscourts.gov/gen-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.wied.uscourts.gov/representing-yourself",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.wied.uscourts.gov/forms/all-forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "E-Filing Restricted and Sealed Documents",
+        "url": "https://www.wied.uscourts.gov/e-filing-restricted-and-sealed-documents",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "wisconsin-western": {
+    "districtId": "wisconsin-western",
+    "districtName": "Western District of Wisconsin",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Procedures",
+        "url": "https://www.wiwd.uscourts.gov/local-rules.html",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Representing Yourself",
+        "url": "https://www.wiwd.uscourts.gov/representing-yourself.html",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.wiwd.uscourts.gov/forms.html",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Electronic Filing Procedures",
+        "url": "https://www.wiwd.uscourts.gov/electronic-filing-procedures.html",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Local Rules",
+        "url": "https://www.wiwd.uscourts.gov/local-rules.html",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  },
+  "wyoming": {
+    "districtId": "wyoming",
+    "districtName": "District of Wyoming",
+    "summary": "No district-specific \u00a72241 procedural requirement has been verified in this review. Use the national framework and inspect the linked current court sources.",
+    "requirements": [],
+    "sources": [
+      {
+        "label": "Local Rules",
+        "url": "https://www.wyd.uscourts.gov/court-info/local-rules-and-orders/local-rules",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Orders",
+        "url": "https://www.wyd.uscourts.gov/court-info/local-rules-and-orders",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "General Order 25-02",
+        "url": "https://www.wyd.uscourts.gov/sites/wyd/files/General%20Order%202025-02.pdf",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Forms",
+        "url": "https://www.wyd.uscourts.gov/forms",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      },
+      {
+        "label": "Filing Fees",
+        "url": "https://www.wyd.uscourts.gov/current-filing-fees",
+        "reviewStatus": "Retrieved source directory; substantive rule not reviewed"
+      }
+    ],
+    "contentReviewedAt": null,
+    "sourceDirectoryCheckedAt": "2026-10-26",
+    "scope": "Immigration detention under 28 U.S.C. \u00a72241",
+    "limitations": [
+      "This is an explicit research gap, not a finding that the district has no special habeas rules.",
+      "Case-specific orders and later amendments may change procedure."
+    ],
+    "reviewStatus": "District-specific review incomplete"
+  }
+}

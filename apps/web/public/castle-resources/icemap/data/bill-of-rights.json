@@ -1,0 +1,139 @@
+{
+  "sourceUrl": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+  "checkedAt": "2026-10-26",
+  "type": "Plain-language explanations, not constitutional text",
+  "languages": {
+    "en": [
+      "Protects religious exercise, speech, the press, peaceful assembly and petitions to government; prohibits laws establishing religion.",
+      "Protects the right to keep and bear arms. The text refers to a well-regulated militia.",
+      "Restricts housing soldiers in private homes: owner consent in peacetime; wartime rules must be set by law.",
+      "Protects against unreasonable searches and seizures. Warrants require probable cause, an oath or affirmation, and particular descriptions. Exceptions and remedies depend on law.",
+      "Addresses grand juries for serious federal crimes, with military exceptions; double jeopardy; compelled self-incrimination in criminal cases; due process; and compensation when private property is taken for public use.",
+      "In criminal prosecutions, protects speedy, public trials, an impartial jury, notice of charges, confrontation of witnesses, obtaining defense witnesses, and assistance of counsel.",
+      "Preserves jury trial in certain common-law civil suits exceeding twenty dollars and limits reexamination of jury findings. It is not a jury right in immigration removal proceedings.",
+      "Prohibits excessive bail, excessive fines, and cruel and unusual punishments. It does not promise bail in every case.",
+      "Listing some rights in the Constitution does not deny or diminish other rights retained by the people.",
+      "Powers not delegated to the federal government, and not prohibited to the states, are reserved to the states or the people."
+    ],
+    "es": [
+      "Protege la práctica religiosa, la expresión, la prensa, la reunión pacífica y las peticiones al gobierno; prohíbe leyes que establezcan una religión.",
+      "Protege el derecho a poseer y portar armas. El texto se refiere a una milicia bien regulada.",
+      "Restringe el alojamiento de soldados en viviendas privadas: consentimiento del propietario en tiempo de paz y reglas fijadas por ley en tiempo de guerra.",
+      "Protege contra registros, detenciones e incautaciones irrazonables. Las órdenes requieren causa probable, juramento o declaración solemne y descripciones específicas. Las excepciones y los remedios dependen de la ley.",
+      "Trata del gran jurado para delitos federales graves, con excepciones militares; el doble enjuiciamiento; la autoincriminación forzada en causas penales; el debido proceso; y la compensación por expropiaciones para uso público.",
+      "En procesos penales, protege el juicio rápido y público, el jurado imparcial, la notificación de cargos, la confrontación de testigos, la obtención de testigos de defensa y la asistencia de abogado.",
+      "Conserva el juicio por jurado en ciertas demandas civiles de common law superiores a veinte dólares y limita la revisión de hechos decididos por el jurado. No da derecho a jurado en procesos de expulsión migratoria.",
+      "Prohíbe fianzas y multas excesivas y penas crueles e inusuales. No promete fianza en todos los casos.",
+      "Enumerar algunos derechos en la Constitución no niega ni reduce otros derechos que conserva el pueblo.",
+      "Los poderes no delegados al gobierno federal ni prohibidos a los estados se reservan a los estados o al pueblo."
+    ],
+    "zh": [
+      "保护宗教活动、言论、出版、和平集会及向政府请愿的权利；禁止立法确立国教。",
+      "保护持有和携带武器的权利。原文提到纪律良好的民兵。",
+      "限制在私人住宅安置士兵：和平时期须经屋主同意，战时须依法律规定。",
+      "保护人身、住宅、文件和财物免受不合理搜查、人身拘束和财物扣押。令状须有合理根据、宣誓或郑重声明及具体描述。例外及救济取决于法律。",
+      "涉及严重联邦罪行的大陪审团程序及军事例外、禁止重复追诉、刑事案件中不得强迫自证其罪、正当程序，以及私人财产被征作公共用途时的补偿。",
+      "刑事诉讼中保障迅速公开的审判、公正陪审团、获知指控、质询对方证人、传唤辩方证人及律师协助。",
+      "保留争议金额超过20美元的某些普通法民事诉讼的陪审团审判，并限制重新审查陪审团认定的事实。不赋予移民遣返程序中的陪审团权利。",
+      "禁止过高的保释金、过重的罚款及残酷和异常的惩罚。不保证所有案件都可保释。",
+      "宪法列举某些权利，不表示否认或贬低人民保留的其他权利。",
+      "宪法未授予联邦政府、也未禁止各州行使的权力，保留给各州或人民。"
+    ],
+    "tl": [
+      "Pinoprotektahan ang pagsasagawa ng relihiyon, pananalita, pamamahayag, mapayapang pagtitipon at pagpetisyon sa pamahalaan; ipinagbabawal ang batas na nagtatatag ng relihiyon.",
+      "Pinoprotektahan ang karapatang magmay-ari at magdala ng armas. Binabanggit ng teksto ang isang maayos na pinangangasiwaang milisya.",
+      "Nililimitahan ang pagpapatira sa mga sundalo sa pribadong tahanan: kailangan ang pahintulot ng may-ari sa panahon ng kapayapaan; dapat itakda ng batas ang tuntunin sa panahon ng digmaan.",
+      "Pinoprotektahan laban sa hindi makatwirang paghahalughog, pagdakip sa tao at pagsamsam ng ari-arian. Kailangan ng warrant ang probable cause, panunumpa o pagpapatibay at tiyak na paglalarawan. Nakabatay sa batas ang mga eksepsiyon at remedyo.",
+      "Tumutukoy sa grand jury para sa mabibigat na pederal na krimen, na may eksepsiyong militar; double jeopardy; sapilitang pagsaksi laban sa sarili sa kasong kriminal; due process; at kabayaran sa pribadong ari-ariang kinukuha para sa pampublikong gamit.",
+      "Sa kasong kriminal, pinoprotektahan ang mabilis at pampublikong paglilitis, walang-kinikilingang hurado, kaalaman sa sakdal, pagharap sa mga saksi, pagpapatawag sa mga saksi ng depensa at tulong ng abogado.",
+      "Pinananatili ang paglilitis sa hurado sa ilang sibil na kasong common law na lampas dalawampung dolyar at nililimitahan ang muling pagsusuri sa natuklasang katotohanan ng hurado. Hindi ito karapatang magkaroon ng hurado sa paglilitis sa deportasyon.",
+      "Ipinagbabawal ang labis na piyansa, multa, at malupit at di-karaniwang parusa. Hindi nito ipinapangako ang piyansa sa bawat kaso.",
+      "Ang paglista ng ilang karapatan sa Konstitusyon ay hindi nag-aalis o nagpapababa sa ibang karapatang nananatili sa mamamayan.",
+      "Ang mga kapangyarihang hindi ipinagkaloob sa pamahalaang pederal at hindi ipinagbabawal sa mga estado ay nakalaan sa mga estado o sa mamamayan."
+    ],
+    "vi": [
+      "Bảo vệ thực hành tôn giáo, ngôn luận, báo chí, hội họp ôn hòa và kiến nghị chính phủ; cấm luật thiết lập quốc giáo.",
+      "Bảo vệ quyền sở hữu và mang vũ khí. Văn bản đề cập đến lực lượng dân quân được tổ chức quy củ.",
+      "Hạn chế việc cho binh lính ở trong nhà riêng: cần chủ nhà đồng ý khi hòa bình; thời chiến phải theo luật.",
+      "Bảo vệ chống khám xét, bắt giữ người và thu giữ tài sản một cách bất hợp lý. Lệnh phải dựa trên căn cứ xác đáng, lời tuyên thệ hoặc xác nhận và mô tả cụ thể. Ngoại lệ và biện pháp khắc phục phụ thuộc pháp luật.",
+      "Đề cập đại bồi thẩm đoàn đối với tội liên bang nghiêm trọng, có ngoại lệ quân sự; cấm truy tố hai lần; cấm ép tự buộc tội trong vụ án hình sự; thủ tục pháp lý đúng đắn; và bồi thường khi lấy tài sản tư dùng cho công ích.",
+      "Trong truy tố hình sự, bảo vệ xét xử nhanh và công khai, bồi thẩm đoàn vô tư, thông báo cáo buộc, đối chất nhân chứng, triệu tập nhân chứng bào chữa và trợ giúp luật sư.",
+      "Giữ quyền xét xử bằng bồi thẩm đoàn trong một số vụ kiện dân sự thông luật vượt hai mươi đô la và hạn chế xét lại tình tiết thực tế do bồi thẩm đoàn xác định. Không tạo quyền bồi thẩm đoàn trong thủ tục trục xuất di trú.",
+      "Cấm tiền bảo lãnh và tiền phạt quá mức, hình phạt tàn bạo và bất thường. Không bảo đảm bảo lãnh trong mọi vụ việc.",
+      "Việc liệt kê một số quyền trong Hiến pháp không phủ nhận hay giảm giá trị các quyền khác mà người dân giữ lại.",
+      "Quyền lực không giao cho chính phủ liên bang và không cấm các tiểu bang thì dành cho các tiểu bang hoặc người dân."
+    ],
+    "ar": [
+      "يحمي ممارسة الدين والتعبير والصحافة والتجمع السلمي وتقديم الالتماسات للحكومة؛ ويحظر قوانين إقامة دين رسمي.",
+      "يحمي حق حيازة الأسلحة وحملها. ويشير النص إلى ميليشيا منظمة تنظيمًا جيدًا.",
+      "يقيد إسكان الجنود في المنازل الخاصة: بموافقة المالك وقت السلم، ووفق قواعد يحددها القانون وقت الحرب.",
+      "يحمي من التفتيش والضبط غير المعقولين. تتطلب الأوامر سببًا مرجحًا وقسمًا أو إقرارًا ووصفًا محددًا. تعتمد الاستثناءات ووسائل الانتصاف على القانون.",
+      "يتناول هيئة المحلفين الكبرى للجرائم الفدرالية الخطيرة مع استثناءات عسكرية؛ وعدم المحاكمة مرتين عن الجرم نفسه؛ وعدم إجبار الشخص على تجريم نفسه جنائيًا؛ والإجراءات القانونية الواجبة؛ والتعويض عن أخذ الملكية الخاصة للمنفعة العامة.",
+      "في الملاحقات الجنائية يحمي المحاكمة السريعة والعلنية وهيئة المحلفين المحايدة والإبلاغ بالتهمة ومواجهة الشهود واستدعاء شهود الدفاع ومساعدة المحامي.",
+      "يحفظ المحاكمة بهيئة محلفين في بعض الدعاوى المدنية وفق نظام القانون العام (common law) التي تتجاوز عشرين دولارًا، ويقيد إعادة بحث الوقائع التي قررتها الهيئة. لا يمنح حق هيئة محلفين في إجراءات الترحيل.",
+      "يحظر الكفالة المفرطة والغرامات المفرطة والعقوبات القاسية وغير المعتادة. لا يضمن الكفالة في كل قضية.",
+      "تعداد بعض الحقوق في الدستور لا ينفي الحقوق الأخرى التي يحتفظ بها الشعب ولا ينتقص منها.",
+      "الصلاحيات التي لم يفوضها الدستور للحكومة الفدرالية ولم يحظرها على الولايات محفوظة للولايات أو للشعب."
+    ],
+    "fr": [
+      "Protège la pratique religieuse, la parole, la presse, les réunions pacifiques et les pétitions au gouvernement ; interdit les lois établissant une religion.",
+      "Protège le droit de détenir et de porter des armes. Le texte fait référence à une milice bien réglementée.",
+      "Limite le logement de soldats dans les maisons privées : consentement du propriétaire en temps de paix, règles fixées par la loi en temps de guerre.",
+      "Protège contre les fouilles et les saisies de personnes ou de biens déraisonnables. Les mandats exigent des motifs probables, un serment ou une déclaration solennelle et des descriptions précises. Exceptions et recours dépendent du droit.",
+      "Traite du grand jury pour les crimes fédéraux graves, avec exceptions militaires ; du double jugement ; de l’auto-incrimination forcée au pénal ; de la procédure régulière ; et de l’indemnisation des biens privés pris pour un usage public.",
+      "Au pénal, protège le procès rapide et public, le jury impartial, la connaissance des accusations, la confrontation des témoins, la convocation de témoins à décharge et l’assistance d’un avocat.",
+      "Préserve le jury dans certains procès civils de common law dépassant vingt dollars et limite le réexamen des faits décidés par le jury. Il ne donne pas de droit au jury en procédure d’éloignement migratoire.",
+      "Interdit cautions et amendes excessives, ainsi que peines cruelles et inhabituelles. Ne promet pas de caution dans toute affaire.",
+      "L’énumération de certains droits dans la Constitution ne nie ni ne diminue les autres droits conservés par le peuple.",
+      "Les pouvoirs non délégués au gouvernement fédéral et non interdits aux États sont réservés aux États ou au peuple."
+    ],
+    "ko": [
+      "종교 활동, 표현, 언론, 평화적 집회와 정부 청원을 보호하며 국교를 정하는 법을 금지합니다.",
+      "무기 소유와 휴대의 권리를 보호합니다. 원문은 잘 규율된 민병대를 언급합니다.",
+      "사유 주택에 군인을 숙영시키는 것을 제한합니다. 평시에는 소유자의 동의가 필요하고 전시에는 법률에 따라야 합니다.",
+      "불합리한 수색, 신체 구속 및 물건의 압수로부터 보호합니다. 영장에는 상당한 이유, 선서 또는 확약 및 구체적인 명시가 필요합니다. 예외와 구제수단은 법에 따라 다릅니다.",
+      "중대한 연방 범죄의 대배심 및 군사 예외, 동일 범죄에 대한 이중 소추·처벌 금지, 형사 사건의 강제 자기부죄 금지, 적법절차, 공공용도로 사유 재산을 취할 때의 보상을 다룹니다.",
+      "형사 기소에서 신속하고 공개적인 재판, 공정한 배심원, 혐의 통지, 증인 대면, 변호 측 증인 소환과 변호인의 조력을 보호합니다.",
+      "분쟁 금액이 20달러를 초과하는 특정 보통법상 민사소송의 배심 재판을 보장하고 배심원이 판단한 사실의 재심사를 제한합니다. 이민 추방 절차의 배심원 권리는 아닙니다.",
+      "과도한 보석금과 벌금, 잔혹하고 이례적인 형벌을 금지합니다. 모든 사건에서 보석을 약속하지 않습니다.",
+      "헌법에 특정 권리를 열거했다고 해서 사람들이 보유하는 다른 권리를 부인하거나 축소하는 것은 아닙니다.",
+      "연방정부에 위임되지 않고 주에 금지되지 않은 권한은 주 또는 사람들에게 유보됩니다."
+    ],
+    "ru": [
+      "Защищает исповедание религии, свободу слова и печати, мирные собрания и обращения к правительству; запрещает законы об установлении религии.",
+      "Защищает право хранить и носить оружие. В тексте упоминается хорошо организованное ополчение.",
+      "Ограничивает размещение солдат в частных домах: в мирное время нужно согласие владельца, в военное — правила, установленные законом.",
+      "Защищает от необоснованных обысков, задержаний и изъятий. Для ордера нужны достаточные основания, присяга или заверение и конкретное описание. Исключения и средства защиты зависят от закона.",
+      "Касается большого жюри по тяжким федеральным преступлениям с военными исключениями; запрета повторного уголовного преследования; принудительного самообвинения в уголовных делах; надлежащей правовой процедуры; компенсации за частную собственность, изъятую для общественных нужд.",
+      "В уголовном процессе защищает быстрое и открытое разбирательство, беспристрастных присяжных, уведомление об обвинении, очную встречу со свидетелями обвинения, вызов свидетелей защиты и помощь адвоката.",
+      "Сохраняет суд присяжных в некоторых гражданских делах общего права на сумму свыше двадцати долларов и ограничивает пересмотр установленных присяжными фактов. Не дает права на присяжных при иммиграционном выдворении.",
+      "Запрещает чрезмерный залог, чрезмерные штрафы, жестокие и необычные наказания. Не обещает залог по каждому делу.",
+      "Перечисление некоторых прав в Конституции не отрицает и не умаляет других прав, сохраняемых народом.",
+      "Полномочия, не переданные федеральному правительству и не запрещенные штатам, сохраняются за штатами или народом."
+    ],
+    "pt": [
+      "Protege a prática religiosa, a expressão, a imprensa, a reunião pacífica e petições ao governo; proíbe leis que estabeleçam uma religião.",
+      "Protege o direito de possuir e portar armas. O texto se refere a uma milícia bem regulamentada.",
+      "Restringe o alojamento de soldados em casas particulares: consentimento do proprietário em tempo de paz e regras legais em tempo de guerra.",
+      "Protege contra buscas, detenções e apreensões irrazoáveis. Mandados exigem causa provável, juramento ou declaração solene e descrições específicas. Exceções e medidas de reparação dependem da lei.",
+      "Trata do grande júri para crimes federais graves, com exceções militares; da dupla persecução penal; da autoincriminação forçada em casos criminais; do devido processo; e da indenização por propriedade privada tomada para uso público.",
+      "Em processos criminais, protege julgamento rápido e público, júri imparcial, ciência da acusação, confronto de testemunhas, obtenção de testemunhas de defesa e assistência de advogado.",
+      "Preserva o júri em certas ações civis de common law acima de vinte dólares e limita a revisão dos fatos decididos pelo júri. Não concede júri em processos de remoção migratória.",
+      "Proíbe fianças e multas excessivas, além de penas cruéis e incomuns. Não promete fiança em todos os casos.",
+      "A enumeração de alguns direitos na Constituição não nega nem diminui outros direitos mantidos pelo povo.",
+      "Os poderes não delegados ao governo federal e não proibidos aos estados ficam reservados aos estados ou ao povo."
+    ],
+    "hi": [
+      "धार्मिक आचरण, अभिव्यक्ति, प्रेस, शांतिपूर्ण सभा और सरकार को याचिका देने की रक्षा करता है; किसी धर्म की स्थापना करने वाले कानूनों पर रोक लगाता है।",
+      "हथियार रखने और ले जाने के अधिकार की रक्षा करता है। पाठ में सुव्यवस्थित मिलिशिया का उल्लेख है।",
+      "निजी घरों में सैनिकों को ठहराने पर सीमा लगाता है: शांति के समय मालिक की सहमति और युद्ध के समय कानून द्वारा तय नियम आवश्यक हैं।",
+      "अनुचित तलाशी और जब्ती से रक्षा करता है। वारंट के लिए संभावित कारण, शपथ या प्रतिज्ञान और विशिष्ट विवरण आवश्यक हैं। अपवाद और उपचार कानून पर निर्भर हैं।",
+      "गंभीर संघीय अपराधों में ग्रैंड जूरी और सैन्य अपवाद, एक ही अपराध के लिए दोहरे अभियोजन से रक्षा, आपराधिक मामलों में जबरन स्वयं को दोषी ठहराने वाली गवाही से रक्षा, उचित कानूनी प्रक्रिया और सार्वजनिक उपयोग हेतु निजी संपत्ति लेने पर मुआवज़े से संबंधित है।",
+      "आपराधिक अभियोजन में शीघ्र और सार्वजनिक सुनवाई, निष्पक्ष जूरी, आरोप की सूचना, गवाहों से आमना-सामना, बचाव के गवाह बुलाने और वकील की सहायता की रक्षा करता है।",
+      "बीस डॉलर से अधिक के कुछ कॉमन लॉ दीवानी मुकदमों में जूरी सुनवाई बनाए रखता है और जूरी द्वारा तय तथ्यों की दोबारा जाँच सीमित करता है। यह आव्रजन निष्कासन कार्यवाही में जूरी का अधिकार नहीं देता।",
+      "अत्यधिक जमानत, अत्यधिक जुर्माने और क्रूर व असामान्य दंड पर रोक लगाता है। हर मामले में जमानत का वादा नहीं करता।",
+      "संविधान में कुछ अधिकार गिनाने का अर्थ लोगों के अन्य सुरक्षित अधिकारों को नकारना या कम करना नहीं है।",
+      "जो शक्तियाँ संघीय सरकार को नहीं दी गईं और राज्यों के लिए निषिद्ध नहीं हैं, वे राज्यों या लोगों के पास सुरक्षित हैं।"
+    ]
+  }
+}

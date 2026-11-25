@@ -1,0 +1,1985 @@
+{
+  "title": "Immigration 101",
+  "subtitle": "The Advocate’s Crash Course",
+  "edition": "2026-10-07",
+  "version": "1.0",
+  "duration": "2–3 hours, at your own pace",
+  "purpose": "Listen carefully. Read the record. Preserve the options.",
+  "intro": "An original Pen & Sword learning experience for new advocates, volunteers, students, and attorneys. Learn through fictional comic scenes, practical explanations, and understanding checks woven into every lesson.",
+  "review": "Source and teaching checks completed for this introductory edition. Independent immigration-practitioner review is pending. Changing eligibility details and litigation-sensitive rules require a fresh case-specific check.",
+  "attribution": "AILA resources inform the professional perspective. This is an original Pen & Sword course, not an AILA publication or endorsement. Commentary is identified separately from statutes, regulations, and agency instructions.",
+  "privacy": "Only quiz progress and scores are saved in this browser. Do not enter client names, identifiers, or case details. Progress is not synchronized to Armory and is not proof of CLE credit.",
+  "sources": [
+    {
+      "id": "aila-status",
+      "title": "AILA: status, authorized stay, and unlawful presence",
+      "url": "https://www.aila.org/aila-files/54AE08D8-1064-4B8A-891E-615706459BB6/lawful-v-unlawful-flyer.pdf",
+      "kind": "Professional explanation",
+      "published": "2026-08-12",
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "aila-fraud",
+      "title": "AILA: consumer protection and unauthorized practice",
+      "url": "https://www.aila.org/library/consumer-protection-public",
+      "kind": "Advocacy perspective",
+      "published": "2014-04-01",
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "aila-habeas",
+      "title": "AILA: why advocates should consider habeas in 2026",
+      "url": "https://www.aila.org/library/think-immigration-why-every-immigration-attorney-should-consider-habeas-in-2026",
+      "kind": "Practitioner commentary",
+      "published": "2026-03-31",
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "aila-issues",
+      "title": "AILA: featured issues and current developments",
+      "url": "https://www.aila.org/featured-issues",
+      "kind": "Professional research index",
+      "published": "2026-10-07",
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "visa",
+      "title": "State Department: what visa expiration means",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visa-expiration-date.html",
+      "kind": "Agency guidance",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "bulletin",
+      "title": "State Department: Visa Bulletin",
+      "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
+      "kind": "Monthly agency publication",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "definitions",
+      "title": "INA § 101 / 8 U.S.C. § 1101: definitions",
+      "url": "https://www.govinfo.gov/link/uscode/8/1101",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "petition",
+      "title": "INA § 204 / 8 U.S.C. § 1154: petitions",
+      "url": "https://www.govinfo.gov/link/uscode/8/1154",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "categories",
+      "title": "INA § 203 / 8 U.S.C. § 1153: immigrant visa allocation",
+      "url": "https://www.govinfo.gov/link/uscode/8/1153",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "adjustment",
+      "title": "INA § 245 / 8 U.S.C. § 1255: adjustment",
+      "url": "https://www.govinfo.gov/link/uscode/8/1255",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "adjustment-reg",
+      "title": "8 C.F.R. § 245.1: adjustment eligibility",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-245/section-245.1",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "asylum",
+      "title": "INA § 208 / 8 U.S.C. § 1158: asylum",
+      "url": "https://www.govinfo.gov/link/uscode/8/1158",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "protection",
+      "title": "8 C.F.R. Part 208: asylum, withholding, and CAT",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-208",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "TPS",
+      "title": "INA § 244 / 8 U.S.C. § 1254a: TPS",
+      "url": "https://www.govinfo.gov/link/uscode/8/1254a",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "inadmissibility",
+      "title": "INA § 212 / 8 U.S.C. § 1182: inadmissibility and parole",
+      "url": "https://www.govinfo.gov/link/uscode/8/1182",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "deportability",
+      "title": "INA § 237 / 8 U.S.C. § 1227: deportability",
+      "url": "https://www.govinfo.gov/link/uscode/8/1227",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "proceedings",
+      "title": "INA § 240 / 8 U.S.C. § 1229a: removal proceedings",
+      "url": "https://www.govinfo.gov/link/uscode/8/1229a",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "court",
+      "title": "EOIR: proceedings, hearings, and rights",
+      "url": "https://www.justice.gov/eoir/learn-about-immigration-court",
+      "kind": "Agency procedural guide",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "nta",
+      "title": "EOIR Practice Manual: commencement of proceedings",
+      "url": "https://www.justice.gov/eoir/policy-manual-eoir/part-II/icpm/chapter-3-2",
+      "kind": "Agency procedural guide",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "cancellation",
+      "title": "INA § 240A / 8 U.S.C. § 1229b: cancellation",
+      "url": "https://www.govinfo.gov/link/uscode/8/1229b",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "bond",
+      "title": "8 C.F.R. § 1003.19: custody and bond",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-V/subchapter-A/part-1003/subpart-C/section-1003.19",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "detention",
+      "title": "INA § 236 / 8 U.S.C. § 1226: detention",
+      "url": "https://www.govinfo.gov/link/uscode/8/1226",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "habeas",
+      "title": "28 U.S.C. § 2241: habeas corpus",
+      "url": "https://www.govinfo.gov/link/uscode/28/2241",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "work",
+      "title": "8 C.F.R. § 274a.12: employment authorization categories",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-274a/section-274a.12",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "representation",
+      "title": "8 C.F.R. § 292.1: authorized representatives before DHS",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-292/section-292.1",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "accreditation",
+      "title": "EOIR: recognition and accreditation",
+      "url": "https://www.justice.gov/eoir/recognition-and-accreditation-program",
+      "kind": "Agency guidance",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "address",
+      "title": "EOIR-33/IC: change of contact information instructions",
+      "url": "https://respondentaccess.eoir.justice.gov/en/forms/eoir33ic/",
+      "kind": "Form instructions",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "appearances",
+      "title": "EOIR: representation and address obligations",
+      "url": "https://www.justice.gov/eoir/policy-manual-eoir/part-I/chapter-5-1",
+      "kind": "Agency procedural guide",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "deadlines",
+      "title": "EOIR: deadlines appendix",
+      "url": "https://www.justice.gov/eoir/policy-manual-eoir/part-VII/appendices/c",
+      "kind": "Agency procedural guide",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "registration",
+      "title": "8 C.F.R. § 264.1: registration and fingerprinting",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-264/section-264.1",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "naturalization",
+      "title": "INA § 316 / 8 U.S.C. § 1427: naturalization",
+      "url": "https://www.govinfo.gov/link/uscode/8/1427",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "nat-reg",
+      "title": "8 C.F.R. § 316.2: naturalization eligibility",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-C/part-316/section-316.2",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "child-citizenship",
+      "title": "INA § 320 / 8 U.S.C. § 1431: citizenship for children",
+      "url": "https://www.govinfo.gov/link/uscode/8/1431",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "child-reg",
+      "title": "8 C.F.R. § 320.2: citizenship eligibility for children",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-C/part-320/section-320.2",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "proposal",
+      "title": "Federal Register: February 2026 asylum EAD proposed rule",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-02-23/pdf/2026-03595.pdf",
+      "kind": "Proposed rule — historical publication, not proof of current effect",
+      "published": "2026-02-23",
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "agencies-law",
+      "title": "6 U.S.C. § 271: USCIS functions",
+      "url": "https://www.govinfo.gov/link/uscode/6/271",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "CBP-law",
+      "title": "6 U.S.C. § 211: CBP functions",
+      "url": "https://www.govinfo.gov/link/uscode/6/211",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "enforcement-law",
+      "title": "6 U.S.C. § 251: enforcement functions",
+      "url": "https://www.govinfo.gov/link/uscode/6/251",
+      "kind": "Statute",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "civics",
+      "title": "8 C.F.R. Part 312: language and civics requirements",
+      "url": "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-C/part-312",
+      "kind": "Regulation",
+      "published": null,
+      "accessed": "2026-10-07"
+    },
+    {
+      "id": "aila-rights",
+      "title": "AILA: know your rights if ICE visits your home",
+      "url": "https://www.aila.org/aila-files/20036845-F2B6-4749-9E38-E47CBA77C3EE/Know-Your-Rights-2025-Update-2.pdf",
+      "kind": "Client education",
+      "published": null,
+      "accessed": "2026-10-07"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "start",
+      "title": "Start with the person",
+      "subtitle": "Listen. Clarify your role. Protect choice.",
+      "goal": "Conduct a respectful first conversation and distinguish support from legal representation.",
+      "art": "intake",
+      "comic": [
+        [
+          "Luis",
+          "Before we talk about forms, I want to know whether my family can stay together."
+        ],
+        [
+          "Maya",
+          "What matters most to you today? Which language would you prefer for this conversation?"
+        ],
+        [
+          "Sofia",
+          "Can I help my father understand the documents?"
+        ],
+        [
+          "Maya",
+          "With his agreement, yes. We will also ask whether a qualified interpreter would help, explain our roles, and make a plan together."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "An advocate works with the person",
+          "text": "Start with the person’s priorities, preferred language, safe contact method, and permission to discuss sensitive matters. Explain who you are and what you can do. Ask open questions and allow breaks. Record uncertainty as uncertainty. Do not coach a story to fit a benefit. A useful first conversation ends with a shared understanding of the immediate concern, documents needed, and next contact—not a promised immigration result.",
+          "sources": [],
+          "check": {
+            "stem": "Luis is nervous and has not explained why he came. What is the best opening?",
+            "options": [
+              "Ask Sofia to answer every question for him.",
+              "Ask his priorities, preferred language, and permission to discuss his records.",
+              "Tell him which application he needs."
+            ],
+            "answer": 1,
+            "explanation": "Begin by learning the person’s goals and communication needs. A form choice requires facts and authorized legal analysis.",
+            "sources": [],
+            "id": "start-check-1"
+          }
+        },
+        {
+          "title": "Know the boundary of your role",
+          "text": "Legal representation is regulated. Attorneys and appropriately accredited representatives may represent people subject to the rules for the forum. Accreditation has a scope; partial accreditation is not authorization to appear in immigration court. Volunteers can help organize records, arrange interpretation, and connect people to qualified help within their role. Completing this course does not authorize legal practice. Verify the representative and organization rather than assuming a job title or notarization proves qualification.",
+          "sources": [
+            "representation",
+            "accreditation",
+            "aila-fraud"
+          ],
+          "check": {
+            "stem": "A volunteer finishes this course. May they now represent someone in immigration court?",
+            "options": [
+              "No; course completion does not supply authorization to represent others.",
+              "Yes, if they do not charge.",
+              "Yes, if the person consents."
+            ],
+            "answer": 0,
+            "explanation": "Training and permission to practice are different. Representation requires the applicable authorization and scope.",
+            "sources": [
+              "representation",
+              "accreditation"
+            ],
+            "id": "start-check-2"
+          }
+        },
+        {
+          "title": "Make consent and communication concrete",
+          "text": "Ask who may receive updates, which phone number is safe, and whether voicemail or messages could expose the person to harm. Preserve original records and document who supplied each item. A family member’s participation should not replace the person’s voice. Use a qualified interpreter for important conversations when needed; do not assume a child or relative can accurately interpret legal concepts. These are course practice recommendations, not a promise that every conversation has attorney–client privilege.",
+          "sources": [],
+          "check": {
+            "stem": "The family says messages might be read by an abusive partner. What should the advocate do?",
+            "options": [
+              "Agree on a safe contact method and recipients with the person.",
+              "Use the usual household email anyway.",
+              "Post the issue in a public group."
+            ],
+            "answer": 0,
+            "explanation": "A communication plan should reflect the person’s safety and consent. Share only what the person authorized through an appropriate channel.",
+            "sources": [],
+            "id": "start-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "A consultant guarantees a green card and says no records are needed. What is the best response?",
+          "options": [
+            "Submit whatever the consultant suggests.",
+            "Treat the guarantee as proof of skill.",
+            "Check qualification, obtain the file, and arrange independent qualified review."
+          ],
+          "answer": 2,
+          "explanation": "AILA identifies fraud and unauthorized practice as client protection issues. A guarantee is a reason to investigate, not evidence of eligibility.",
+          "sources": [
+            "aila-fraud"
+          ],
+          "id": "start-quiz-1"
+        },
+        {
+          "stem": "What belongs in a first-conversation note?",
+          "options": [
+            "A conclusion that the person qualifies for asylum before reviewing facts.",
+            "Verified facts, uncertainties, stated goals, and agreed next steps.",
+            "Only the form you plan to file."
+          ],
+          "answer": 1,
+          "explanation": "A useful note keeps evidence and assumptions separate and preserves the person’s own priorities.",
+          "sources": [],
+          "id": "start-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "How would you explain your role in two sentences?",
+        "model": "“I can help organize your records and connect you to authorized legal help. Before we discuss details, let’s agree on your priorities, language needs, and a safe way to contact you.”"
+      },
+      "action": [
+        "Explain your role and its limits.",
+        "Ask about goals, language, safety, and consent.",
+        "Verify the qualifications of anyone giving legal advice.",
+        "Agree on a concrete next contact."
+      ],
+      "sources": [
+        "representation",
+        "accreditation",
+        "aila-fraud"
+      ],
+      "number": 1
+    },
+    {
+      "id": "agencies",
+      "title": "Find the right decision-maker",
+      "subtitle": "A system map is an advocacy tool.",
+      "goal": "Identify the agency or court involved without treating one case number as the whole case.",
+      "art": "intake",
+      "comic": [
+        [
+          "Luis",
+          "The letter says USCIS. Does that mean it is my immigration court hearing?"
+        ],
+        [
+          "Maya",
+          "Let’s read the sender and the action requested before deciding."
+        ],
+        [
+          "Sofia",
+          "This second document says Department of Justice."
+        ],
+        [
+          "Maya",
+          "Different institutions have different jobs. We will map each notice and deadline separately."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Benefits, borders, and enforcement",
+          "text": "USCIS generally handles immigration benefit requests such as petitions and naturalization. CBP performs inspection at ports of entry and border functions. ICE carries out interior enforcement and detention functions; its attorneys may represent DHS in immigration court. The Department of State handles visa issuance through consular posts. These are orientation descriptions, not exclusive jurisdiction rules: the correct decision-maker depends on the request and procedural posture.",
+          "sources": [
+            "visa",
+            "court",
+            "agencies-law",
+            "CBP-law",
+            "enforcement-law"
+          ],
+          "check": {
+            "stem": "Who generally issues a visa at a U.S. consular post?",
+            "options": [
+              "The BIA.",
+              "The immigration judge.",
+              "Department of State."
+            ],
+            "answer": 2,
+            "explanation": "Visa issuance abroad generally belongs to the Department of State; admission is a separate decision.",
+            "sources": [
+              "visa"
+            ],
+            "id": "agencies-check-1"
+          }
+        },
+        {
+          "title": "Immigration court is a different forum",
+          "text": "EOIR sits within the Department of Justice. Immigration judges decide cases within their authority; the BIA reviews certain immigration decisions. A USCIS receipt and an EOIR case can coexist. Identify the sender, form number, case or receipt number, hearing notice, and any order. Do not assume an agency application cancels a court date.",
+          "sources": [
+            "court",
+            "nta"
+          ],
+          "check": {
+            "stem": "Luis has a USCIS receipt and a separate hearing notice. What should you assume?",
+            "options": [
+              "Both tracks must be checked; the receipt does not itself cancel the court date.",
+              "Only the most recent document matters.",
+              "The receipt cancels the hearing."
+            ],
+            "answer": 0,
+            "explanation": "A benefit filing and a court proceeding can be separate tracks. Obtain and verify the notices and any governing order.",
+            "sources": [
+              "court",
+              "nta"
+            ],
+            "id": "agencies-check-2"
+          }
+        },
+        {
+          "title": "Federal courts are not the same as EOIR",
+          "text": "Federal district courts and courts of appeals have different roles and jurisdiction rules. A custody challenge, review of a removal order, and a challenge to agency action are not interchangeable. Habeas is one possible tool for challenging custody, subject to jurisdiction and other limits. The advocate’s task is to identify the problem and connect the person with qualified counsel who can evaluate the correct forum.",
+          "sources": [
+            "habeas",
+            "aila-habeas"
+          ],
+          "check": {
+            "stem": "A detained person asks about habeas. What is the best first explanation?",
+            "options": [
+              "It is a possible federal custody remedy that counsel must evaluate.",
+              "It automatically grants asylum.",
+              "It is another name for a USCIS petition."
+            ],
+            "answer": 0,
+            "explanation": "Habeas addresses custody issues within the court’s authority; it is not an automatic immigration benefit or release order.",
+            "sources": [
+              "habeas"
+            ],
+            "id": "agencies-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "What should an agency map include?",
+          "options": [
+            "Each pending matter, decision-maker, identifying number, next event, and deadline.",
+            "Only the person’s A-number.",
+            "Every rumor about agency policy."
+          ],
+          "answer": 0,
+          "explanation": "Organize the actual procedural tracks so an urgent event is not lost among unrelated filings.",
+          "sources": [],
+          "id": "agencies-quiz-1"
+        },
+        {
+          "stem": "Which question helps locate the correct forum?",
+          "options": [
+            "Which agency logo is easiest to recognize?",
+            "Which forum sounds most favorable?",
+            "What exactly is being requested, and what is the current procedural posture?"
+          ],
+          "answer": 2,
+          "explanation": "The request and posture control the forum analysis; branding or preference cannot substitute for jurisdiction.",
+          "sources": [],
+          "id": "agencies-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "Luis asks whether you can call “immigration” to fix everything. What would you say?",
+        "model": "“There may be more than one matter. Let’s identify who sent each document, what it asks you to do, and which qualified representative handles each track.”"
+      },
+      "action": [
+        "Separate benefit, enforcement, court, and custody tracks.",
+        "Record the sender and identifiers on each notice.",
+        "Never cancel a deadline based on an unrelated receipt."
+      ],
+      "sources": [
+        "visa",
+        "court",
+        "nta",
+        "habeas",
+        "aila-habeas",
+        "agencies-law",
+        "CBP-law",
+        "enforcement-law"
+      ],
+      "number": 2
+    },
+    {
+      "id": "documents",
+      "title": "Separate the questions; read the papers",
+      "subtitle": "A document is evidence, not a complete diagnosis.",
+      "goal": "Distinguish visa validity, admission, status, authorized stay, work permission, and identity.",
+      "art": "intake",
+      "comic": [
+        [
+          "Luis",
+          "My visa is valid for years. So I can stay that long?"
+        ],
+        [
+          "Maya",
+          "Visa validity and permitted stay are different questions. Let’s look at your entry record."
+        ],
+        [
+          "Sofia",
+          "And this work card?"
+        ],
+        [
+          "Maya",
+          "We will check its category and any applicable notices. Work authorization is a separate question again."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Visa validity versus permitted stay",
+          "text": "A visa generally permits travel to a port of entry to seek admission; it does not guarantee admission. Its expiration date is not the length of every permitted stay. Read the admission or parole record, category, and any later decision. An I-94 may show a date or another notation requiring further analysis. A passport establishes identity and nationality information; it does not by itself establish U.S. immigration permission.",
+          "sources": [
+            "visa",
+            "definitions"
+          ],
+          "check": {
+            "stem": "A visa is valid until 2029. Does that alone establish permission to stay until 2029?",
+            "options": [
+              "Only if the passport is also valid.",
+              "Yes.",
+              "No; the entry record, category, and later decisions must be examined."
+            ],
+            "answer": 2,
+            "explanation": "The visa’s validity period and the authorized period of stay are different.",
+            "sources": [
+              "visa"
+            ],
+            "id": "documents-check-1"
+          }
+        },
+        {
+          "title": "Status, authorized stay, and unlawful presence",
+          "text": "AILA’s August 2026 flyer emphasizes that these concepts have different legal meanings. A pending application may affect authorized stay or unlawful-presence analysis without creating lawful status. Do not assume every pending filing has the same effect. Unlawful presence and being out of status are not interchangeable calculations. Preserve entry, departure, filing, and decision dates so counsel can apply the correct rule and exceptions.",
+          "sources": [
+            "aila-status",
+            "inadmissibility"
+          ],
+          "check": {
+            "stem": "Does every pending application automatically create lawful status?",
+            "options": [
+              "Yes, once there is a receipt.",
+              "Yes, if an attorney filed it.",
+              "No; analyze the specific application and applicable rules."
+            ],
+            "answer": 2,
+            "explanation": "A receipt does not collapse distinct legal questions. The type of filing, timing, and rules matter.",
+            "sources": [
+              "aila-status"
+            ],
+            "id": "documents-check-2"
+          }
+        },
+        {
+          "title": "Work permission is its own inquiry",
+          "text": "Employment authorization depends on the relevant category and conditions. Some categories authorize employment incident to status; others require an approved EAD. A card, receipt, or extension notice must be read in context. An A-number identifies a person’s immigration record; it is not a status. A Social Security number is not itself proof of present employment authorization. Avoid deciding permission from one identifier or from the appearance of a card.",
+          "sources": [
+            "work"
+          ],
+          "check": {
+            "stem": "An intake form includes an A-number. What does that establish?",
+            "options": [
+              "Permission to work.",
+              "An immigration record identifier, not a status or work authorization by itself.",
+              "U.S. citizenship."
+            ],
+            "answer": 1,
+            "explanation": "Identifiers organize records. The actual category, decision, and applicable rules answer permission questions.",
+            "sources": [
+              "work",
+              "definitions"
+            ],
+            "id": "documents-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "A person has an EAD and wants to travel. What should you say?",
+          "options": [
+            "An EAD alone guarantees reentry.",
+            "Travel needs a separate review of documents, status, history, and applicable rules.",
+            "Every EAD holder must leave first."
+          ],
+          "answer": 1,
+          "explanation": "Do not substitute work permission for an admission or travel analysis.",
+          "sources": [
+            "visa",
+            "work"
+          ],
+          "id": "documents-quiz-1"
+        },
+        {
+          "stem": "Two dates conflict across records. What is the advocate’s next step?",
+          "options": [
+            "Erase the older date.",
+            "Choose the more favorable date.",
+            "Preserve both records, flag the discrepancy, and seek clarification."
+          ],
+          "answer": 2,
+          "explanation": "A reliable timeline preserves discrepancies for investigation rather than resolving them through wishful assumptions.",
+          "sources": [],
+          "id": "documents-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "How would you respond to “I have papers, so I am safe”?",
+        "model": "“Let’s identify what each document actually shows. Staying, working, traveling, and a pending case are separate questions; we should review them before drawing a conclusion.”"
+      },
+      "action": [
+        "Collect complete copies, including both sides and attachments.",
+        "Build an entry, departure, filing, and decision timeline.",
+        "Keep status, work, travel, and custody questions separate."
+      ],
+      "sources": [
+        "visa",
+        "definitions",
+        "aila-status",
+        "inadmissibility",
+        "work"
+      ],
+      "number": 3
+    },
+    {
+      "id": "pathways",
+      "title": "Map possible pathways without promising one",
+      "subtitle": "Eligibility, availability, procedure, discretion.",
+      "goal": "Recognize common benefit pathways and the facts that must be checked before selecting a process.",
+      "art": "intake",
+      "comic": [
+        [
+          "Sofia",
+          "My aunt says marrying a citizen fixes everything."
+        ],
+        [
+          "Maya",
+          "A relationship can be important, but it is not the complete analysis."
+        ],
+        [
+          "Luis",
+          "What do you need to know?"
+        ],
+        [
+          "Maya",
+          "Entry history, prior filings and orders, family facts, available categories, and possible obstacles. Counsel will evaluate the route."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "A petition is one piece of a process",
+          "text": "Family and employment immigration use different categories and requirements. A petition may establish a qualifying basis, but approval is not the same as permanent residence. In categories subject to numerical limits, visa availability is a separate question. Family relationships, employer facts, qualifications, age, and prior records can matter. The advocate should gather facts and documents, not infer that a relationship or job offer guarantees a benefit.",
+          "sources": [
+            "petition",
+            "categories"
+          ],
+          "check": {
+            "stem": "A family petition is approved. What can you safely conclude?",
+            "options": [
+              "The approved petition is a step; the remaining eligibility and process must be reviewed.",
+              "No further documents can be required.",
+              "The person is automatically a permanent resident."
+            ],
+            "answer": 0,
+            "explanation": "Petition approval and obtaining permanent residence are distinct steps.",
+            "sources": [
+              "petition",
+              "categories"
+            ],
+            "id": "pathways-check-1"
+          }
+        },
+        {
+          "title": "Availability is not the same as eligibility",
+          "text": "The Visa Bulletin provides monthly information about numerically limited immigrant visa categories. Read the category, country of chargeability, priority date, chart, and applicable filing instructions. Some categories follow different allocation rules. A date becoming current does not erase inadmissibility or other requirements. The beginner’s skill is knowing what to look up and what not to infer, rather than memorizing dates that will change.",
+          "sources": [
+            "bulletin",
+            "categories"
+          ],
+          "check": {
+            "stem": "What should a Visa Bulletin exercise teach?",
+            "options": [
+              "How to identify the category, priority date, country, chart, and current instructions.",
+              "That a current date guarantees approval.",
+              "That every category has identical waiting times."
+            ],
+            "answer": 0,
+            "explanation": "The bulletin answers an availability question in context. It does not establish every element of eligibility.",
+            "sources": [
+              "bulletin"
+            ],
+            "id": "pathways-check-2"
+          }
+        },
+        {
+          "title": "Adjustment and consular processing require separate review",
+          "text": "Adjustment concerns obtaining permanent residence from within the United States under applicable eligibility rules. Consular processing concerns the visa process abroad. Entry history, category, admissibility, prior orders, and exceptions matter. Do not tell someone to depart to “finish the paperwork” without qualified review; departure may create or expose significant obstacles. Verify current agency policy and controlling decisions before advising which procedure applies.",
+          "sources": [
+            "adjustment",
+            "adjustment-reg",
+            "inadmissibility"
+          ],
+          "check": {
+            "stem": "A person is told to leave the country to complete a case. What is the advocate’s best action?",
+            "options": [
+              "Arrange qualified review of the route and departure consequences before travel.",
+              "Assume a marriage eliminates every obstacle.",
+              "Encourage immediate departure."
+            ],
+            "answer": 0,
+            "explanation": "Procedure and travel consequences require a complete, current review.",
+            "sources": [
+              "adjustment",
+              "inadmissibility"
+            ],
+            "id": "pathways-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "Which intake fact is relevant to pathway screening?",
+          "options": [
+            "Only whether the person has money for a fee.",
+            "Only the year they arrived.",
+            "Entry and departure history, prior orders, and the qualifying family or employment facts."
+          ],
+          "answer": 2,
+          "explanation": "A pathway analysis needs facts across multiple legal elements, not one attractive fact.",
+          "sources": [
+            "adjustment",
+            "categories"
+          ],
+          "id": "pathways-quiz-1"
+        },
+        {
+          "stem": "Which statement is responsible?",
+          "options": [
+            "An approved petition makes all prior orders disappear.",
+            "You definitely qualify because your spouse is a citizen.",
+            "This relationship may be relevant; qualified counsel must review the complete case."
+          ],
+          "answer": 2,
+          "explanation": "Recognize a possible basis while preserving the need to analyze the full record.",
+          "sources": [
+            "petition",
+            "adjustment"
+          ],
+          "id": "pathways-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "What questions would you ask before discussing a family-based pathway?",
+        "model": "Who is the relative and what is their citizenship or status? What are the relationship and age facts? What is the full entry/departure history? Are there prior orders, arrests, filings, or other obstacles?"
+      },
+      "action": [
+        "Separate qualifying basis, visa availability, and admissibility.",
+        "Obtain the actual approval and prior case records.",
+        "Escalate any proposed departure for qualified review."
+      ],
+      "sources": [
+        "petition",
+        "categories",
+        "bulletin",
+        "adjustment",
+        "adjustment-reg",
+        "inadmissibility"
+      ],
+      "number": 4
+    },
+    {
+      "id": "protection",
+      "title": "Listen for protection needs",
+      "subtitle": "Recognize possibilities; do not force the story.",
+      "goal": "Distinguish protection tools and gather facts sensitively without declaring eligibility.",
+      "art": "care",
+      "comic": [
+        [
+          "Luis",
+          "There are things I am afraid to talk about."
+        ],
+        [
+          "Maya",
+          "You can choose the pace. Tell us what you feel able to share; we can arrange qualified help and interpretation."
+        ],
+        [
+          "Sofia",
+          "Does being afraid mean asylum is guaranteed?"
+        ],
+        [
+          "Maya",
+          "No. Counsel must evaluate the facts, legal requirements, procedure, and other possible protections."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Asylum has legal elements and time concerns",
+          "text": "Asylum screening asks about persecution or fear of persecution connected to race, religion, nationality, political opinion, or membership in a particular social group. The statute generally requires filing within one year of arrival, with specified exceptions. Ask about dates promptly without assuming a late filing ends every protection option. Bars, jurisdiction, applicable rules, and evidence must also be reviewed. A fear-screening result is not a final grant of asylum.",
+          "sources": [
+            "asylum",
+            "definitions",
+            "protection"
+          ],
+          "check": {
+            "stem": "Someone reports serious harm. What is the sound next step?",
+            "options": [
+              "Promise asylum immediately.",
+              "Gather relevant facts and arrange timely qualified protection screening.",
+              "Reject the case because they have no police report."
+            ],
+            "answer": 1,
+            "explanation": "A protection claim requires legal and factual evaluation. A single description or missing document does not decide eligibility.",
+            "sources": [
+              "asylum"
+            ],
+            "id": "protection-check-1"
+          }
+        },
+        {
+          "title": "Asylum, withholding, and CAT are different",
+          "text": "Withholding and Convention Against Torture protection have distinct requirements, bars, and consequences. CAT focuses on the risk of torture and the required government connection; it does not require an asylum protected-ground nexus. Do not describe withholding or CAT as the same status or benefit package as asylum. Current procedure and controlling case law must be evaluated for the person’s circumstances.",
+          "sources": [
+            "protection"
+          ],
+          "check": {
+            "stem": "Are asylum, withholding, and CAT interchangeable?",
+            "options": [
+              "Yes, once a person passes fear screening.",
+              "No; they have different requirements and consequences.",
+              "Yes, all provide identical status and family benefits."
+            ],
+            "answer": 1,
+            "explanation": "These are separate forms of protection. Screening and final adjudication are also different.",
+            "sources": [
+              "protection"
+            ],
+            "id": "protection-check-2"
+          }
+        },
+        {
+          "title": "Screen more broadly and preserve choice",
+          "text": "TPS concerns designated countries and statutory eligibility; country dates and litigation need current checking. Parole is distinct from admission and permanent residence. U and T categories, VAWA self-petitions, and SIJS may be relevant to certain crime victims, trafficking survivors, abuse survivors, or young people, with category-specific requirements. This is a referral map, not an eligibility checklist. Ask sensitive questions privately, avoid demanding immediate disclosure, and consult specialized counsel.",
+          "sources": [
+            "TPS",
+            "inadmissibility",
+            "definitions",
+            "petition"
+          ],
+          "check": {
+            "stem": "An advocate hears possible trafficking facts. What should happen?",
+            "options": [
+              "Offer confidential, sensitive screening and specialized referral with the person’s consent.",
+              "Treat every difficult job as automatic T eligibility.",
+              "Insist the person report immediately before receiving any support."
+            ],
+            "answer": 0,
+            "explanation": "Recognize a possible issue without imposing a conclusion or one compulsory course of action.",
+            "sources": [
+              "definitions"
+            ],
+            "id": "protection-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "A person arrived more than a year ago. Which statement is appropriate?",
+          "options": [
+            "The deadline can be ignored.",
+            "Arrange prompt review of asylum exceptions and other protection options.",
+            "Every protection claim is impossible."
+          ],
+          "answer": 1,
+          "explanation": "The asylum time limit has exceptions, and other protection forms require separate analysis.",
+          "sources": [
+            "asylum",
+            "protection"
+          ],
+          "id": "protection-quiz-1"
+        },
+        {
+          "stem": "A temporary programme appears in a social-media post. What must be checked?",
+          "options": [
+            "Whether a friend received approval last year.",
+            "The designation, eligibility dates, official notices, and current court orders.",
+            "Only the post’s popularity."
+          ],
+          "answer": 1,
+          "explanation": "Programme availability and eligibility can change. Historical approval does not establish the rule for today.",
+          "sources": [
+            "TPS"
+          ],
+          "id": "protection-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "How would you ask about fear without coaching an answer?",
+        "model": "Use open prompts: “What happened? Who was involved? Why do you think you were targeted? What do you fear if you return?” Record the person’s words and uncertainty rather than suggesting a protected ground."
+      },
+      "action": [
+        "Flag arrival and filing dates early.",
+        "Distinguish screening from final eligibility.",
+        "Refer for all potentially relevant protection tools.",
+        "Do not force disclosure or promise a result."
+      ],
+      "sources": [
+        "asylum",
+        "definitions",
+        "protection",
+        "TPS",
+        "inadmissibility",
+        "petition"
+      ],
+      "number": 5
+    },
+    {
+      "id": "removal",
+      "title": "Spot the risk; preserve the options",
+      "subtitle": "Charges are questions to analyze.",
+      "goal": "Identify removal issues and possible relief without equating one fact with an automatic outcome.",
+      "art": "court",
+      "comic": [
+        [
+          "Luis",
+          "This notice lists allegations. Are they already proven?"
+        ],
+        [
+          "Maya",
+          "No. We need the document, the record, and counsel’s analysis."
+        ],
+        [
+          "Sofia",
+          "He has lived here a long time. Doesn’t that settle it?"
+        ],
+        [
+          "Maya",
+          "Time can matter, but it does not decide the case alone. We should identify both the charges and possible relief."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Inadmissibility and deportability differ",
+          "text": "The INA contains separate inadmissibility and deportability provisions. Entry and admission history, the requested benefit, and procedural posture help determine which rules apply. Misrepresentation, certain criminal matters, status violations, and prior removal history may raise issues. An allegation on a charging document is not itself a completed legal analysis. Obtain the exact charge and supporting records.",
+          "sources": [
+            "inadmissibility",
+            "deportability"
+          ],
+          "check": {
+            "stem": "An NTA alleges a ground of removability. Is the allegation alone the final decision?",
+            "options": [
+              "Yes.",
+              "No; the charge and supporting facts require review in the applicable process.",
+              "Only if it is printed in bold."
+            ],
+            "answer": 1,
+            "explanation": "A charging allegation and an adjudicated conclusion are different.",
+            "sources": [
+              "proceedings",
+              "nta"
+            ],
+            "id": "removal-check-1"
+          }
+        },
+        {
+          "title": "Criminal history needs exact records",
+          "text": "Do not decide immigration consequences from a label such as “minor offense,” “dismissed,” or “expunged.” Obtain the charging document, plea, judgment, sentence, and relevant disposition records for qualified review. Immigration definitions and consequences do not always track everyday descriptions or state labels. Criminal defense and immigration counsel should coordinate before a plea or other consequential decision.",
+          "sources": [
+            "definitions",
+            "inadmissibility",
+            "deportability"
+          ],
+          "check": {
+            "stem": "A person says a case was expunged. What should you do?",
+            "options": [
+              "Obtain the records and arrange qualified immigration review.",
+              "Assume it automatically requires removal.",
+              "Ignore it completely."
+            ],
+            "answer": 0,
+            "explanation": "Neither dismissal language nor a label substitutes for analysis of the actual disposition under immigration law.",
+            "sources": [
+              "definitions",
+              "deportability"
+            ],
+            "id": "removal-check-2"
+          }
+        },
+        {
+          "title": "Relief is another analysis",
+          "text": "Cancellation of removal has separate statutory paths and multiple requirements. Living in the United States for ten years alone does not guarantee non-LPR cancellation. Other issues may include asylum, adjustment, waivers, motions, or citizenship. A qualified representative must evaluate eligibility, evidence, bars, discretion, and procedure. Prior orders and departures deserve early attention. Do not choose voluntary departure or sign away review rights based on a course summary.",
+          "sources": [
+            "cancellation",
+            "proceedings",
+            "adjustment"
+          ],
+          "check": {
+            "stem": "Is ten years in the United States enough by itself to establish cancellation eligibility?",
+            "options": [
+              "Yes.",
+              "No; multiple statutory requirements and other issues must be evaluated.",
+              "Yes, if the person has a job."
+            ],
+            "answer": 1,
+            "explanation": "Time is only one part of the relevant statutory pathway.",
+            "sources": [
+              "cancellation"
+            ],
+            "id": "removal-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "Which fact should be escalated early?",
+          "options": [
+            "The color of the person’s folder.",
+            "An unknown prior removal order or upcoming criminal plea.",
+            "A preference for morning appointments only."
+          ],
+          "answer": 1,
+          "explanation": "Prior orders and criminal decisions can materially affect available procedures and consequences.",
+          "sources": [
+            "deportability",
+            "proceedings"
+          ],
+          "id": "removal-quiz-1"
+        },
+        {
+          "stem": "What is the advocate’s role in a complex criminal-immigration issue?",
+          "options": [
+            "Tell the person not to disclose the case to counsel.",
+            "Preserve exact records and connect qualified criminal and immigration counsel.",
+            "Invent a safe plea from a summary."
+          ],
+          "answer": 1,
+          "explanation": "Accurate records and qualified coordination protect meaningful analysis.",
+          "sources": [
+            "definitions",
+            "inadmissibility"
+          ],
+          "id": "removal-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "What would you request when the person says “I had a court case years ago”?",
+        "model": "Identify which court, approximate dates, aliases or identifiers, actual orders and dispositions, and any later appeal or motion. Preserve the uncertainty until the record is obtained."
+      },
+      "action": [
+        "Read each allegation and statutory charge.",
+        "Collect prior immigration and criminal records.",
+        "Screen relief separately from removability.",
+        "Escalate proposed pleas, departures, and waivers."
+      ],
+      "sources": [
+        "inadmissibility",
+        "deportability",
+        "definitions",
+        "proceedings",
+        "nta",
+        "cancellation",
+        "adjustment"
+      ],
+      "number": 6
+    },
+    {
+      "id": "court",
+      "title": "Prepare for immigration court",
+      "subtitle": "The person, the evidence, and the record.",
+      "goal": "Distinguish hearing types and support preparation without assuming every case follows the same track.",
+      "art": "court",
+      "comic": [
+        [
+          "Luis",
+          "Should I bring everything to the first hearing?"
+        ],
+        [
+          "Maya",
+          "We will read the notice and counsel’s instructions. The purpose of the hearing matters."
+        ],
+        [
+          "Sofia",
+          "How can I help?"
+        ],
+        [
+          "Maya",
+          "Help organize evidence and questions, confirm interpretation needs, and make sure the next steps are understood."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Read the notice; identify the proceeding",
+          "text": "Ordinary INA § 240 removal proceedings begin when DHS files the served NTA with the court. Master calendar hearings address initial procedural matters; individual or merits hearings address contested issues and evidence. Other tracks—including expedited removal, fear review, and withholding-only proceedings—have different scope and review rules. Do not assume everyone receives the same sequence or appeal opportunity.",
+          "sources": [
+            "nta",
+            "court"
+          ],
+          "check": {
+            "stem": "Which statement is most accurate?",
+            "options": [
+              "Every agency interview is a merits hearing.",
+              "The proceeding and hearing type must be identified from the record.",
+              "All immigration cases follow an identical hearing sequence."
+            ],
+            "answer": 1,
+            "explanation": "The forum, proceeding, and hearing purpose change what the advocate must prepare.",
+            "sources": [
+              "court"
+            ],
+            "id": "court-check-1"
+          }
+        },
+        {
+          "title": "Support evidence and participation",
+          "text": "In § 240 proceedings, statutory protections include representation at no government expense and a reasonable opportunity to examine evidence, present evidence, and cross-examine government witnesses, subject to specified limits. Do not import the criminal public-defender model. Prepare an organized exhibit record and questions with counsel; identify interpretation and access needs early. Read court orders and filing requirements rather than assuming handing a folder to the judge completes filing.",
+          "sources": [
+            "proceedings"
+          ],
+          "check": {
+            "stem": "Does the ordinary statutory right to representation guarantee a government-paid lawyer in every immigration case?",
+            "options": [
+              "Yes.",
+              "There is never any right to representation.",
+              "No; the statutory right is generally at no expense to the government."
+            ],
+            "answer": 2,
+            "explanation": "Access to counsel matters, but the statutory framework differs from the criminal public-defender model.",
+            "sources": [
+              "proceedings"
+            ],
+            "id": "court-check-2"
+          }
+        },
+        {
+          "title": "Close the hearing with a usable next-step plan",
+          "text": "After the hearing, identify what was decided, what was reserved, the deadlines, the next appearance, and any appeal or motion issue requiring counsel’s attention. The person should be able to explain the plan in their own words. Do not assume an appeal always stays removal or that every decision has the same review route. Use the courtroom tour to learn roles and mechanics; it illustrates a representative room, not a rule for every court.",
+          "sources": [
+            "court",
+            "deadlines"
+          ],
+          "check": {
+            "stem": "What is the best post-hearing practice?",
+            "options": [
+              "Wait for the next notice before recording anything.",
+              "Assume the person understood every statement.",
+              "Review the decision and deadlines with appropriate interpretation and ask the person to explain next steps."
+            ],
+            "answer": 2,
+            "explanation": "A clear written and understood plan helps preserve deadlines and supports the person’s participation.",
+            "sources": [],
+            "id": "court-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "What should you do before relying on a general deadline table?",
+          "options": [
+            "Apply it without looking at the order.",
+            "Ask social media for the most common deadline.",
+            "Check the actual order, applicable rule, and current filing instructions."
+          ],
+          "answer": 2,
+          "explanation": "EOIR describes its tables as general guidance; case-specific rules and orders must be consulted.",
+          "sources": [
+            "deadlines"
+          ],
+          "id": "court-quiz-1"
+        },
+        {
+          "stem": "What does the virtual courtroom tour establish?",
+          "options": [
+            "Eligibility for relief.",
+            "The layout of every court.",
+            "A representative orientation to roles and hearing mechanics."
+          ],
+          "answer": 2,
+          "explanation": "The tour is a teaching environment, not proof of local courtroom arrangements or legal eligibility.",
+          "sources": [],
+          "id": "court-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "What would you put on a post-hearing handoff sheet?",
+        "model": "The decision and whether it is final, next hearing, exact deadlines and their source, documents needed, counsel responsible for review, and a safe contact plan."
+      },
+      "action": [
+        "Open the Immigration Court Virtual Tour.",
+        "Identify the actual proceeding and hearing purpose.",
+        "Prepare with counsel and qualified interpretation.",
+        "Record and explain the next steps."
+      ],
+      "sources": [
+        "nta",
+        "court",
+        "proceedings",
+        "deadlines"
+      ],
+      "number": 7
+    },
+    {
+      "id": "detention",
+      "title": "Respond to detention with a plan",
+      "subtitle": "Locate. Document. Escalate.",
+      "goal": "Triage a custody concern and recognize the limits of general bond advice.",
+      "art": "care",
+      "comic": [
+        [
+          "Sofia",
+          "My father was detained. What do I do first?"
+        ],
+        [
+          "Maya",
+          "Let’s record the location, identifiers, urgent health concerns, and any papers or deadlines."
+        ],
+        [
+          "Sofia",
+          "Can you promise a bond hearing?"
+        ],
+        [
+          "Maya",
+          "No. Qualified counsel must identify the custody authority and current review options. We can help get the facts to them quickly."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Build the urgent custody record",
+          "text": "Collect the person’s identity information, current facility and location, known identifiers, arrest date, custody documents, upcoming proceedings, safe contacts, and urgent health or access concerns. Record the source and time of each fact. Ask about transfers and prior orders. Share sensitive information only through the agreed channels. The goal is a reliable handoff for counsel, not a release prediction from incomplete information.",
+          "sources": [],
+          "check": {
+            "stem": "What is the best first detention task?",
+            "options": [
+              "Promise release within a week.",
+              "Focus only on the family’s estimate of bond cost.",
+              "Confirm location and identifiers, urgent concerns, records, and time-sensitive events."
+            ],
+            "answer": 2,
+            "explanation": "Counsel needs reliable custody facts and urgent issues before analyzing remedies.",
+            "sources": [],
+            "id": "detention-check-1"
+          }
+        },
+        {
+          "title": "Bond is not available in every case",
+          "text": "Custody authority and immigration-judge jurisdiction must be evaluated. The bond regulation contains restrictions and treats bond review separately from the removal proceeding. Statutory mandatory-detention provisions and current precedent or court orders may matter. Release from custody does not by itself resolve the immigration case. Evidence used in a bond matter may need to be submitted separately in the merits case.",
+          "sources": [
+            "bond",
+            "detention"
+          ],
+          "check": {
+            "stem": "Does release on bond automatically end the removal case?",
+            "options": [
+              "Only if the person has an EAD.",
+              "No; custody and the removal case are distinct matters.",
+              "Yes."
+            ],
+            "answer": 1,
+            "explanation": "A custody decision is separate from the merits of immigration proceedings.",
+            "sources": [
+              "bond"
+            ],
+            "id": "detention-check-2"
+          }
+        },
+        {
+          "title": "Know when to seek federal litigation help",
+          "text": "AILA’s March 2026 commentary urges practitioners to be prepared to evaluate federal habeas when administrative custody review is unavailable or inadequate. That is a professional recommendation, not a universal rule that habeas must succeed. Qualified counsel must assess custody, jurisdiction, venue, defendants, controlling decisions, and requested relief. Build a referral plan before an emergency so location changes and deadlines do not catch the team unprepared.",
+          "sources": [
+            "aila-habeas",
+            "habeas"
+          ],
+          "check": {
+            "stem": "What can you responsibly say about habeas?",
+            "options": [
+              "It always produces immediate release.",
+              "It automatically cancels every removal order.",
+              "It may be a custody tool that qualified counsel evaluates under current law."
+            ],
+            "answer": 2,
+            "explanation": "Habeas is a legal remedy with jurisdictional and substantive limits, not an outcome guarantee.",
+            "sources": [
+              "habeas",
+              "aila-habeas"
+            ],
+            "id": "detention-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "A person was transferred yesterday. What should be updated?",
+          "options": [
+            "Nothing; the original location controls forever.",
+            "Only the mailing list.",
+            "Current location, custody record, access concerns, and counsel’s forum analysis."
+          ],
+          "answer": 2,
+          "explanation": "A current factual handoff supports counsel’s assessment of access and appropriate litigation steps.",
+          "sources": [],
+          "id": "detention-quiz-1"
+        },
+        {
+          "stem": "A detained person has a work card. What does that tell you about bond jurisdiction?",
+          "options": [
+            "It eliminates mandatory detention.",
+            "It does not by itself resolve the custody-authority or jurisdiction question.",
+            "It guarantees a bond hearing."
+          ],
+          "answer": 1,
+          "explanation": "Employment authorization and custody review are separate analyses.",
+          "sources": [
+            "work",
+            "bond"
+          ],
+          "id": "detention-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "Write a five-item urgent custody handoff.",
+        "model": "Current facility/location; identity and identifiers; arrest and transfer timeline; custody documents and prior orders; urgent health/access concerns and upcoming deadlines, with safe family contacts."
+      },
+      "action": [
+        "Confirm present location and document each source.",
+        "Flag medical, interpretation, and counsel-access needs.",
+        "Do not promise bond or release.",
+        "Arrange appropriate custody and federal-litigation review."
+      ],
+      "sources": [
+        "bond",
+        "detention",
+        "habeas",
+        "aila-habeas",
+        "work"
+      ],
+      "number": 8
+    },
+    {
+      "id": "case-care",
+      "title": "Keep the case moving without losing the person",
+      "subtitle": "Notices, safety, deadlines, and truthful records.",
+      "goal": "Create a reliable follow-through plan and recognize dangerous shortcuts.",
+      "art": "care",
+      "comic": [
+        [
+          "Sofia",
+          "We moved. I told the post office. Is that enough?"
+        ],
+        [
+          "Maya",
+          "We must identify each agency and court that needs an update."
+        ],
+        [
+          "Luis",
+          "Someone offered to fix the case if I sign blank forms."
+        ],
+        [
+          "Maya",
+          "Let’s pause, preserve the records, and get qualified advice. You should understand what is being submitted in your name."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Address updates are forum-specific",
+          "text": "An address change to DHS does not notify EOIR. The EOIR-33/IC instructions require filing within five working days of a contact change or receipt of a charging document with incorrect contact information, with service requirements. Cases before the BIA use the appropriate BIA form. Check the current form instructions, each affected person, and each pending forum. Postal forwarding alone does not complete these obligations.",
+          "sources": [
+            "address",
+            "appearances"
+          ],
+          "check": {
+            "stem": "Does updating DHS automatically update the immigration court?",
+            "options": [
+              "No; EOIR needs the required separate update.",
+              "Yes.",
+              "Yes, if the post office is also notified."
+            ],
+            "answer": 0,
+            "explanation": "Different systems have separate requirements. The course does not submit any form for you.",
+            "sources": [
+              "appearances"
+            ],
+            "id": "case-care-check-1"
+          }
+        },
+        {
+          "title": "Make deadlines visible and verify receipt",
+          "text": "Create a calendar with the event, deadline, source, person responsible, reminders, and confirmation of completion. Preserve full notices, envelopes where relevant, proof of filing, and service records. Distinguish sending from successful filing under the applicable rules. If a date is missed or unclear, escalate promptly; do not assume there is no remedy or that a motion automatically fixes it. Registration obligations and evidence of registration require individualized review under current rules.",
+          "sources": [
+            "deadlines",
+            "registration"
+          ],
+          "check": {
+            "stem": "A filing was mailed. What still needs verification?",
+            "options": [
+              "Whether the envelope looked professional.",
+              "Nothing.",
+              "The applicable filing and service rules and proof that the submission was successfully filed."
+            ],
+            "answer": 2,
+            "explanation": "A submission must satisfy the forum’s actual rules; mailing and filing are not always identical.",
+            "sources": [
+              "deadlines"
+            ],
+            "id": "case-care-check-2"
+          }
+        },
+        {
+          "title": "Protect truthful records and client choice",
+          "text": "Do not sign blank forms, invent facts, omit records to improve a story, or accept a guaranteed outcome as a credential. Read submissions with appropriate interpretation, preserve a copy, and ask who is authorized to provide advice. Work and travel questions require separate current review. If a person fears contact with an agency, arrange qualified advice on the obligation and risks rather than urging either blanket compliance or evasion without analysis.",
+          "sources": [
+            "aila-fraud",
+            "work",
+            "registration"
+          ],
+          "check": {
+            "stem": "Someone asks Luis to sign a blank application. What is the best response?",
+            "options": [
+              "Let a relative sign without asking Luis.",
+              "Sign because the preparer promised approval.",
+              "Pause, obtain an explanation and qualified review, and preserve complete records."
+            ],
+            "answer": 2,
+            "explanation": "The person should understand the submission and retain records. Fraud and unauthorized practice undermine that choice.",
+            "sources": [
+              "aila-fraud"
+            ],
+            "id": "case-care-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "A deadline was missed. What is the advocate’s best immediate response?",
+          "options": [
+            "Preserve the notice and timing facts and escalate promptly for remedy review.",
+            "Hide it from counsel.",
+            "Assume every missed date can be cured automatically."
+          ],
+          "answer": 0,
+          "explanation": "Timely, accurate disclosure gives qualified counsel the opportunity to evaluate available remedies.",
+          "sources": [
+            "deadlines"
+          ],
+          "id": "case-care-quiz-1"
+        },
+        {
+          "stem": "Does an administrative immigration warrant mean the same thing as a judicial warrant signed by a judge?",
+          "options": [
+            "Yes, if an officer describes it as official.",
+            "No; identify the document, issuing authority, setting, and applicable rules.",
+            "Yes; every document called a warrant has identical authority."
+          ],
+          "answer": 1,
+          "explanation": "AILA’s rights guidance distinguishes warrant types. Do not assume identical entry authority or apply a home-visit instruction to every setting.",
+          "sources": [
+            "aila-rights"
+          ],
+          "id": "case-care-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "Design a deadline entry that another advocate could use.",
+        "model": "Record the actual event, date, controlling notice/rule, forum, filing and service method, responsible representative, reminder dates, and evidence of completion."
+      },
+      "action": [
+        "Check every forum’s address requirements.",
+        "Preserve notices and proof of filing/service.",
+        "Escalate unclear or missed dates promptly.",
+        "Review work, travel, and registration separately."
+      ],
+      "sources": [
+        "address",
+        "appearances",
+        "deadlines",
+        "registration",
+        "aila-fraud",
+        "work"
+      ],
+      "number": 9,
+      "fieldNote": {
+        "title": "Prepare for an encounter before it happens",
+        "text": "Discuss a rights plan with qualified counsel. AILA’s home-visit flyer explains the importance of distinguishing a judicial warrant from an administrative immigration warrant and seeking legal advice before signing documents. An encounter at home, in public, or at a port of entry can involve different rules. Do not turn one flyer into a universal instruction for every setting. Preserve what happened, avoid false statements or obstruction, and arrange prompt qualified help.",
+        "sources": [
+          "aila-rights"
+        ]
+      }
+    },
+    {
+      "id": "citizenship",
+      "title": "Think long-term and research what changes",
+      "subtitle": "Citizenship, verification, and a complete handoff.",
+      "goal": "Distinguish residence from citizenship and use a disciplined current-law research workflow.",
+      "art": "care",
+      "comic": [
+        [
+          "Luis",
+          "After enough years with a green card, am I automatically a citizen?"
+        ],
+        [
+          "Maya",
+          "Permanent residence and citizenship are different. We should review whether a citizenship rule already applies or whether naturalization is a possible next step."
+        ],
+        [
+          "Sofia",
+          "What if an online article says the rule changed?"
+        ],
+        [
+          "Maya",
+          "Find the authority, effective date, and any controlling court order. An announcement is a starting point for research."
+        ]
+      ],
+      "blocks": [
+        {
+          "title": "Citizenship is not just a card or a clock",
+          "text": "Permanent residence and citizenship are distinct. Naturalization has eligibility requirements; time alone does not automatically confer citizenship. Citizenship acquired at birth or derived through a parent is a separate inquiry. Parentage, dates, ages, residence, custody, and the law applicable at the relevant time can matter. Obtain the records before assuming someone needs to naturalize or is subject to removal. Birthright-citizenship disputes need current specialist review rather than a blanket statement in this beginner course.",
+          "sources": [
+            "naturalization",
+            "child-citizenship",
+            "definitions"
+          ],
+          "check": {
+            "stem": "Does a certain number of years with a green card automatically make someone a citizen?",
+            "options": [
+              "Only if the card was renewed.",
+              "Yes.",
+              "No; naturalization or an applicable acquisition/derivation rule must be evaluated."
+            ],
+            "answer": 2,
+            "explanation": "Residence and citizenship are distinct, and naturalization requires more than passage of time.",
+            "sources": [
+              "naturalization",
+              "child-citizenship"
+            ],
+            "id": "citizenship-check-1"
+          }
+        },
+        {
+          "title": "Build the naturalization or citizenship record",
+          "text": "The ordinary naturalization framework includes lawful permanent residence, residence and physical presence, and good moral character; language/civics requirements and exceptions must also be reviewed under the applicable pathway. Special routes have different requirements. Collect travel, family, residence, prior immigration, and criminal records. For a possible derivative-citizenship claim, investigate the parent’s citizenship, the child’s age and residence, and legal/physical custody under the applicable law.",
+          "sources": [
+            "nat-reg",
+            "child-reg",
+            "naturalization",
+            "civics"
+          ],
+          "check": {
+            "stem": "A person has a citizen parent. What should you do?",
+            "options": [
+              "Assume citizenship without dates or records.",
+              "Collect the parentage, citizenship, age, residence, and custody facts for the applicable-law analysis.",
+              "Ignore the parent because only naturalization exists."
+            ],
+            "answer": 1,
+            "explanation": "Potential citizenship through a parent depends on the applicable rule and facts.",
+            "sources": [
+              "child-reg",
+              "child-citizenship"
+            ],
+            "id": "citizenship-check-2"
+          }
+        },
+        {
+          "title": "Read 2026 developments with discipline",
+          "text": "AILA’s current-issues pages provide useful professional context and research leads. They are not a substitute for controlling authority. A February 2026 Federal Register document on asylum employment authorization was published as a proposed rule. That historical label does not establish whether a later rule was adopted, blocked, or amended. Before advising on today’s work, fees, TPS, parole, detention, student admission periods, or asylum procedures, identify the latest authority, effective date, jurisdiction, and court orders. This lesson teaches verification rather than unverified nationwide answers.",
+          "sources": [
+            "aila-issues",
+            "proposal"
+          ],
+          "check": {
+            "stem": "You find a proposed rule from February 2026. May you teach its proposal as today’s operative rule without further research?",
+            "options": [
+              "Yes, because it is dated 2026.",
+              "Yes, because it is on a government website.",
+              "No; check later final action, effective dates, and litigation."
+            ],
+            "answer": 2,
+            "explanation": "A proposal is not a final rule. Its publication also does not prove that no later action occurred.",
+            "sources": [
+              "proposal"
+            ],
+            "id": "citizenship-check-3"
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "stem": "Which source answers a request for the governing legal rule?",
+          "options": [
+            "Applicable statutes, regulations, and controlling decisions, with current procedural guidance.",
+            "A social-media poll.",
+            "Only an advocacy slogan."
+          ],
+          "answer": 0,
+          "explanation": "Professional commentary helps frame research; governing law and current effect still require independent checking.",
+          "sources": [
+            "aila-issues"
+          ],
+          "id": "citizenship-quiz-1"
+        },
+        {
+          "stem": "What belongs in a final advocate handoff?",
+          "options": [
+            "Only a prediction of winning.",
+            "A complete eligibility conclusion without missing records.",
+            "Goals, verified facts, open questions, sources, urgent issues, responsibilities, and next steps."
+          ],
+          "answer": 2,
+          "explanation": "A handoff should make the next qualified review possible and preserve the person’s priorities.",
+          "sources": [],
+          "id": "citizenship-quiz-2"
+        }
+      ],
+      "reflection": {
+        "prompt": "How would you verify a headline about a changed immigration rule?",
+        "model": "Identify the issuing body and original document; distinguish proposal, final rule, statute, guidance, and court decision; check effective dates, scope, later action, and controlling orders; record what remains unresolved."
+      },
+      "action": [
+        "Check possible citizenship before assuming an immigration pathway.",
+        "Separate long-term planning from urgent case needs.",
+        "Verify policy changes using original authorities.",
+        "Keep a dated record of the rule and its limits."
+      ],
+      "sources": [
+        "naturalization",
+        "nat-reg",
+        "child-citizenship",
+        "child-reg",
+        "definitions",
+        "aila-issues",
+        "proposal",
+        "civics"
+      ],
+      "number": 10
+    }
+  ],
+  "capstone": [
+    {
+      "stem": "Luis brings a receipt, EAD, and hearing notice. Your first organizational move?",
+      "options": [
+        "Map the separate benefit, work, and court questions and their dates.",
+        "Combine them into one status label.",
+        "Discard the oldest document."
+      ],
+      "answer": 0,
+      "explanation": "The file has multiple tracks; one document does not answer every question.",
+      "sources": [
+        "work",
+        "court"
+      ],
+      "id": "capstone-1"
+    },
+    {
+      "stem": "He prefers an interpreter. What is the best approach?",
+      "options": [
+        "Use Sofia automatically for every legal conversation.",
+        "Arrange appropriate interpretation with his agreement and preserve his voice.",
+        "Proceed in English to save time."
+      ],
+      "answer": 1,
+      "explanation": "The course recommends informed participation and reliable communication.",
+      "sources": [],
+      "id": "capstone-2"
+    },
+    {
+      "stem": "His visa expires in 2029. What else must you read to assess the permitted stay?",
+      "options": [
+        "Entry record/category and any later decisions.",
+        "Nothing.",
+        "Only the passport cover."
+      ],
+      "answer": 0,
+      "explanation": "Visa validity is distinct from the authorized period of stay.",
+      "sources": [
+        "visa"
+      ],
+      "id": "capstone-3"
+    },
+    {
+      "stem": "A pending application is mentioned. Which conclusion is justified?",
+      "options": [
+        "Any receipt guarantees protection from detention.",
+        "Every pending filing creates lawful status.",
+        "The type, timing, and rules must be reviewed before drawing status or unlawful-presence conclusions."
+      ],
+      "answer": 2,
+      "explanation": "Pending filings do not all have identical effects.",
+      "sources": [
+        "aila-status"
+      ],
+      "id": "capstone-4"
+    },
+    {
+      "stem": "An approved family petition appears in the file. What remains to review?",
+      "options": [
+        "Nothing; residence is automatic.",
+        "Only the spelling of the name.",
+        "Eligibility, availability, procedure, admissibility, and prior history."
+      ],
+      "answer": 2,
+      "explanation": "Petition approval does not complete the immigration process.",
+      "sources": [
+        "petition",
+        "adjustment",
+        "categories"
+      ],
+      "id": "capstone-5"
+    },
+    {
+      "stem": "Luis reports threats linked to his beliefs. What do you do?",
+      "options": [
+        "Promise asylum.",
+        "Supply a rehearsed story.",
+        "Record his account sensitively and arrange prompt qualified protection screening."
+      ],
+      "answer": 2,
+      "explanation": "Recognize relevant facts without coaching or promising an outcome.",
+      "sources": [
+        "asylum"
+      ],
+      "id": "capstone-6"
+    },
+    {
+      "stem": "He says an old criminal case was expunged. Best next step?",
+      "options": [
+        "Obtain exact records for qualified immigration review.",
+        "Assume automatic citizenship.",
+        "Ignore it."
+      ],
+      "answer": 0,
+      "explanation": "Immigration consequences require analysis of the actual record.",
+      "sources": [
+        "definitions",
+        "deportability"
+      ],
+      "id": "capstone-7"
+    },
+    {
+      "stem": "He has lived here ten years. Is cancellation automatic?",
+      "options": [
+        "Yes.",
+        "No; the applicable statutory pathway has multiple requirements.",
+        "Yes, with any tax return."
+      ],
+      "answer": 1,
+      "explanation": "Duration alone does not establish eligibility.",
+      "sources": [
+        "cancellation"
+      ],
+      "id": "capstone-8"
+    },
+    {
+      "stem": "He was detained and transferred. What is urgent?",
+      "options": [
+        "A guaranteed bond amount.",
+        "Assume the EAD guarantees release.",
+        "Current location, custody papers, prior orders, health/access concerns, and counsel review."
+      ],
+      "answer": 2,
+      "explanation": "Custody triage and jurisdiction analysis require current facts.",
+      "sources": [
+        "bond",
+        "habeas"
+      ],
+      "id": "capstone-9"
+    },
+    {
+      "stem": "The family updated DHS after moving. Is EOIR automatically updated?",
+      "options": [
+        "Only if the family has a lawyer.",
+        "No; comply with the relevant separate EOIR requirements.",
+        "Yes."
+      ],
+      "answer": 1,
+      "explanation": "DHS notification is not EOIR notification.",
+      "sources": [
+        "appearances",
+        "address"
+      ],
+      "id": "capstone-10"
+    },
+    {
+      "stem": "A 2026 proposal seems relevant to work permission. What do you research?",
+      "options": [
+        "Whether friends agree.",
+        "Later action, operative text, effective date, scope, and court orders.",
+        "Only the headline."
+      ],
+      "answer": 1,
+      "explanation": "Publication as a proposal does not establish today’s operative rule.",
+      "sources": [
+        "proposal"
+      ],
+      "id": "capstone-11"
+    },
+    {
+      "stem": "Which handoff best supports Luis?",
+      "options": [
+        "A prediction of approval.",
+        "A blank form to sign.",
+        "A verified timeline, goals, open issues, urgent events, qualified referrals, and agreed next steps."
+      ],
+      "answer": 2,
+      "explanation": "Advocacy makes the next informed decision possible without replacing the person’s choice.",
+      "sources": [],
+      "id": "capstone-12"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Admission",
+      "meaning": "A legal entry following inspection and authorization; determine the applicable statutory definition and record."
+    },
+    {
+      "term": "Parole",
+      "meaning": "Permission to be physically present without admission under the parole authority; distinct from permanent residence."
+    },
+    {
+      "term": "A-number",
+      "meaning": "An immigration record identifier; it does not itself prove a status."
+    },
+    {
+      "term": "EAD",
+      "meaning": "Employment Authorization Document; read the category, dates, notices, and applicable rules."
+    },
+    {
+      "term": "NTA",
+      "meaning": "Notice to Appear, Form I-862; a charging document, not itself a final removal order."
+    },
+    {
+      "term": "EOIR",
+      "meaning": "Department of Justice agency that includes immigration courts and the BIA."
+    },
+    {
+      "term": "BIA",
+      "meaning": "Board of Immigration Appeals; review authority depends on the type of decision."
+    },
+    {
+      "term": "Priority date",
+      "meaning": "A date used in the applicable immigrant visa allocation process; read the category and current bulletin."
+    },
+    {
+      "term": "Inadmissibility",
+      "meaning": "Statutory grounds affecting admission or other specified benefits, subject to exceptions and waivers."
+    },
+    {
+      "term": "Deportability",
+      "meaning": "Statutory grounds for removal that require analysis of the facts and procedural posture."
+    },
+    {
+      "term": "CAT",
+      "meaning": "Convention Against Torture protection; separate from asylum."
+    },
+    {
+      "term": "Habeas",
+      "meaning": "A judicial tool concerning custody, subject to jurisdiction and other limits."
+    },
+    {
+      "term": "Naturalization",
+      "meaning": "A process of becoming a citizen after satisfying an applicable eligibility pathway."
+    },
+    {
+      "term": "Accredited representative",
+      "meaning": "A representative authorized through the recognition/accreditation programme within the approved scope."
+    }
+  ]
+}
