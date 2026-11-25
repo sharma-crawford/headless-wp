@@ -1,0 +1,487 @@
+[
+  {
+    "id": "notice",
+    "title": "A date on a piece of paper",
+    "body": "You are Elena, a fictional parent living with your eight-year-old daughter, Lucía. Your protection application is already filed. A hearing notice arrives. You have $900, unstable housing, and twelve weeks to prepare. The notice is in English. Your next shift begins in an hour.",
+    "learn": "A notice creates obligations even when its language is unfamiliar. This story begins after filing and does not teach asylum eligibility or filing deadlines.",
+    "source": "notice",
+    "choices": [
+      {
+        "label": "Ask a community interpreter to read it with you",
+        "cost": 0,
+        "days": 2,
+        "effects": {
+          "support": 1,
+          "stress": -5
+        },
+        "consequence": "You write the hearing details in a calendar. A volunteer helps you make a list of questions.",
+        "barrier": "notice"
+      },
+      {
+        "label": "Pay for help reading the notice",
+        "cost": 60,
+        "days": 1,
+        "effects": {
+          "support": 1
+        },
+        "consequence": "You understand the date, location, and instructions, but lose money needed for the week.",
+        "barrier": "notice"
+      },
+      {
+        "label": "Ask a friend after your shift",
+        "cost": 0,
+        "days": 3,
+        "effects": {
+          "stress": 5
+        },
+        "consequence": "Your friend explains the date but cannot answer legal questions. You keep the original notice.",
+        "barrier": "language"
+      }
+    ]
+  },
+  {
+    "id": "housing",
+    "title": "The address on the envelope",
+    "body": "Your cousin can no longer host you. A room is available, but the deposit is $300. Every move makes mail and transportation harder.",
+    "learn": "The court must be told when contact information changes. Informing a different agency does not necessarily update the court.",
+    "source": "notice",
+    "choices": [
+      {
+        "label": "Rent the room and arrange help updating your court address",
+        "cost": 300,
+        "days": 3,
+        "effects": {
+          "housing": 1,
+          "support": 1
+        },
+        "consequence": "You secure a room and get help completing the court address update.",
+        "barrier": "housing"
+      },
+      {
+        "label": "Stay temporarily with another family and ask them to hold your mail",
+        "cost": 0,
+        "days": 5,
+        "effects": {
+          "stress": 10
+        },
+        "consequence": "You save the deposit. You still need to update the court and keep checking for mail.",
+        "barrier": "housing"
+      },
+      {
+        "label": "Ask a community group for emergency housing",
+        "cost": 0,
+        "days": 7,
+        "effects": {
+          "housing": 1,
+          "support": 1,
+          "stress": -5
+        },
+        "consequence": "In this fictional community, a short-term room becomes available after a week of calls. Availability is not guaranteed elsewhere.",
+        "barrier": "capacity"
+      }
+    ]
+  },
+  {
+    "id": "counsel",
+    "title": "The calls no one answers",
+    "body": "Three legal-service organizations have waiting lists. A private consultation costs $120. A stranger promises a guaranteed result for cash.",
+    "learn": "You can seek qualified representation at no expense to the government. A legal-service directory is a starting point; being listed does not mean an organization can accept every case.",
+    "source": "counsel",
+    "choices": [
+      {
+        "label": "Keep calling qualified nonprofit providers",
+        "cost": 0,
+        "days": 8,
+        "effects": {
+          "support": 1,
+          "stress": 5
+        },
+        "consequence": "A clinic schedules a screening. It has not agreed to represent you.",
+        "barrier": "capacity"
+      },
+      {
+        "label": "Pay for a consultation with a licensed attorney",
+        "cost": 120,
+        "days": 3,
+        "effects": {
+          "support": 1,
+          "evidence": 1
+        },
+        "consequence": "The attorney explains next steps. A consultation alone does not establish ongoing representation.",
+        "barrier": "counsel"
+      },
+      {
+        "label": "Decline the guarantee and use the official provider directory",
+        "cost": 0,
+        "days": 5,
+        "effects": {
+          "support": 1
+        },
+        "consequence": "You avoid the promise of a guaranteed outcome and identify qualified providers.",
+        "barrier": "scam"
+      }
+    ]
+  },
+  {
+    "id": "records",
+    "title": "A document across an ocean",
+    "body": "A relative may have a hospital record relevant to what happened before you left. Calling repeatedly could draw unwanted attention to them. A copy service asks $90.",
+    "learn": "Evidence must be evaluated in context. If corroboration cannot reasonably be obtained, explaining why can matter. A missing record is not proof that an event did not occur.",
+    "source": "evidence",
+    "choices": [
+      {
+        "label": "Ask your relative once, through a safer contact",
+        "cost": 0,
+        "days": 8,
+        "effects": {
+          "evidence": 1,
+          "stress": 5
+        },
+        "consequence": "A partial copy arrives. Some dates are difficult to read. You preserve what you received.",
+        "barrier": "records"
+      },
+      {
+        "label": "Pay for retrieval through a trusted contact",
+        "cost": 90,
+        "days": 5,
+        "effects": {
+          "evidence": 2,
+          "stress": 5
+        },
+        "consequence": "A clearer copy arrives in this story. Paying for retrieval does not guarantee that records exist or can be safely obtained.",
+        "barrier": "records"
+      },
+      {
+        "label": "Do not expose your relative; document why the record is unavailable",
+        "cost": 0,
+        "days": 2,
+        "effects": {
+          "evidence": 1,
+          "stress": -5
+        },
+        "consequence": "You write down the danger, your attempts, and what other evidence might be available.",
+        "barrier": "safety"
+      }
+    ]
+  },
+  {
+    "id": "phone",
+    "title": "The missed call",
+    "body": "Your phone plan expires just as the clinic calls. Your daughter needs groceries. Both feel urgent.",
+    "learn": "A missed callback may reflect money, connectivity, work, or childcare. It does not establish indifference to the case.",
+    "source": "barriers",
+    "choices": [
+      {
+        "label": "Pay $40 for phone access",
+        "cost": 40,
+        "days": 1,
+        "effects": {
+          "support": 1
+        },
+        "consequence": "You reconnect with the clinic and confirm its appointment.",
+        "barrier": "phone"
+      },
+      {
+        "label": "Buy groceries and call from the library",
+        "cost": 35,
+        "days": 3,
+        "effects": {
+          "family": 1,
+          "stress": -5
+        },
+        "consequence": "Your daughter eats. Library hours and a shared phone make the callback harder.",
+        "barrier": "phone"
+      },
+      {
+        "label": "Ask a community worker to arrange a safe callback",
+        "cost": 0,
+        "days": 4,
+        "effects": {
+          "support": 1
+        },
+        "consequence": "You agree on a time and a contact method that does not expose personal details to others.",
+        "barrier": "communication"
+      }
+    ]
+  },
+  {
+    "id": "interview",
+    "title": "Tell the story again",
+    "body": "At a clinic screening, an interpreter joins. You remember an important event but cannot place it on an exact date. Your daughter is waiting in the hallway.",
+    "learn": "Interpretation and document translation are different tasks. A careful interview can distinguish an uncertain date from an uncertain event.",
+    "source": "language",
+    "choices": [
+      {
+        "label": "Explain what you remember and where you are uncertain",
+        "cost": 0,
+        "days": 2,
+        "effects": {
+          "evidence": 1,
+          "stress": 5
+        },
+        "consequence": "The interviewer separates confirmed facts from estimates and makes space for a follow-up.",
+        "barrier": "trauma"
+      },
+      {
+        "label": "Ask for a second appointment with childcare arranged",
+        "cost": 50,
+        "days": 5,
+        "effects": {
+          "evidence": 2,
+          "family": 1,
+          "stress": -5
+        },
+        "consequence": "You have more time to explain the sequence. In this story, the clinic can schedule another appointment.",
+        "barrier": "childcare"
+      },
+      {
+        "label": "Use your own timeline and ask the interpreter to clarify unfamiliar words",
+        "cost": 0,
+        "days": 3,
+        "effects": {
+          "evidence": 1,
+          "support": 1
+        },
+        "consequence": "The timeline includes approximate dates and questions. You do not invent details to fill gaps.",
+        "barrier": "language"
+      }
+    ]
+  },
+  {
+    "id": "translation",
+    "title": "A record you cannot afford to translate",
+    "body": "You have a short medical record in Spanish. A qualified translator quotes $100. A friend offers an informal summary.",
+    "learn": "Foreign-language documents submitted in immigration court require an English translation with the appropriate certification. A summary is different from a complete translation.",
+    "source": "translation",
+    "choices": [
+      {
+        "label": "Pay for a complete certified translation",
+        "cost": 100,
+        "days": 4,
+        "effects": {
+          "evidence": 2
+        },
+        "consequence": "The record and translation can be reviewed together. Cost does not decide its legal weight.",
+        "barrier": "translation"
+      },
+      {
+        "label": "Ask the clinic about volunteer translation",
+        "cost": 0,
+        "days": 9,
+        "effects": {
+          "evidence": 1,
+          "support": 1
+        },
+        "consequence": "In this story, a volunteer completes the translation after a delay. This resource may not be available in every community.",
+        "barrier": "capacity"
+      },
+      {
+        "label": "Keep the original and explain the translation gap to qualified help",
+        "cost": 0,
+        "days": 2,
+        "effects": {
+          "stress": 5
+        },
+        "consequence": "You preserve the record and flag what remains incomplete rather than treating a summary as a certified translation.",
+        "barrier": "translation"
+      }
+    ]
+  },
+  {
+    "id": "appointment",
+    "title": "Two appointments. One afternoon.",
+    "body": "Your daughter has a medical appointment on the afternoon of a case-preparation meeting. Missing work again threatens the household budget.",
+    "learn": "Scheduling pressure can affect a case long before the hearing. A practical support plan is part of understanding the client’s circumstances.",
+    "source": "barriers",
+    "choices": [
+      {
+        "label": "Arrange childcare and attend the preparation meeting",
+        "cost": 70,
+        "days": 2,
+        "effects": {
+          "evidence": 1,
+          "support": 1,
+          "stress": 5
+        },
+        "consequence": "You attend. The cost leaves less for transportation and food.",
+        "barrier": "childcare"
+      },
+      {
+        "label": "Ask the clinic to reschedule and take your daughter to the doctor",
+        "cost": 0,
+        "days": 6,
+        "effects": {
+          "family": 1,
+          "stress": -5
+        },
+        "consequence": "The meeting moves in this story. The delay narrows the time left to prepare.",
+        "barrier": "family"
+      },
+      {
+        "label": "Ask for a shorter phone appointment after the doctor",
+        "cost": 0,
+        "days": 3,
+        "effects": {
+          "support": 1,
+          "family": 1
+        },
+        "consequence": "You discuss the urgent issues, but some documents need a later review.",
+        "barrier": "communication"
+      }
+    ]
+  },
+  {
+    "id": "packet",
+    "title": "What belongs in the file?",
+    "body": "Your folder contains copies, a timeline, translation notes, and a list of missing records. The court’s instructions include a filing date specific to this case.",
+    "learn": "A court’s filing instructions matter. This story does not substitute a universal deadline for the instructions governing a real case.",
+    "source": "notice",
+    "choices": [
+      {
+        "label": "Ask qualified help to review the packet against the instructions",
+        "cost": 0,
+        "days": 5,
+        "effects": {
+          "evidence": 2,
+          "support": 1
+        },
+        "consequence": "In this story, a volunteer checks organization and identifies remaining questions. This is not a promise of representation.",
+        "barrier": "records"
+      },
+      {
+        "label": "Pay $45 for copies and organize the packet yourself",
+        "cost": 45,
+        "days": 3,
+        "effects": {
+          "evidence": 1
+        },
+        "consequence": "You retain a copy and keep track of what was submitted. Some legal questions remain.",
+        "barrier": "records"
+      },
+      {
+        "label": "Prioritize the required items and explain missing material",
+        "cost": 0,
+        "days": 2,
+        "effects": {
+          "evidence": 1,
+          "stress": 5
+        },
+        "consequence": "You distinguish unavailable evidence from items still being prepared and seek help on the unresolved issues.",
+        "barrier": "records"
+      }
+    ]
+  },
+  {
+    "id": "travel",
+    "title": "The last bus",
+    "body": "The hearing is approaching. Transportation, childcare, and a night of lost sleep are now part of the case. You have the hearing notice in your folder.",
+    "learn": "Getting to court can require planning around childcare and transit. In real proceedings, failing to appear can have serious consequences; qualified advice and current court information matter.",
+    "source": "notice",
+    "choices": [
+      {
+        "label": "Reserve transport and childcare",
+        "cost": 80,
+        "days": 1,
+        "effects": {
+          "family": 1,
+          "stress": -5
+        },
+        "consequence": "You have a confirmed plan and a backup contact.",
+        "barrier": "transport"
+      },
+      {
+        "label": "Arrange a volunteer ride",
+        "cost": 0,
+        "days": 3,
+        "effects": {
+          "support": 1
+        },
+        "consequence": "A volunteer agrees in this fictional community. You confirm the details rather than assuming a ride will arrive.",
+        "barrier": "transport"
+      },
+      {
+        "label": "Take the early bus with your daughter",
+        "cost": 15,
+        "days": 2,
+        "effects": {
+          "stress": 10
+        },
+        "consequence": "You arrive tired and early. Your daughter waits beside you.",
+        "barrier": "transport"
+      }
+    ]
+  },
+  {
+    "id": "hearing",
+    "title": "When your name is called",
+    "body": "You reach the hearing. The judge, the government attorney, and an interpreter have different roles. The clinic’s help with paperwork did not mean it would appear as your attorney.",
+    "learn": "The respondent and DHS are parties to removal proceedings. The immigration judge is part of EOIR in the Department of Justice. Court interpretation does not replace legal representation.",
+    "source": "court",
+    "choices": [
+      {
+        "label": "Ask the interpreter to clarify what you did not understand",
+        "cost": 0,
+        "days": 1,
+        "effects": {
+          "support": 1,
+          "stress": -5
+        },
+        "consequence": "The instruction is repeated. You explain the factual questions and remaining gaps without pretending to understand.",
+        "barrier": "language"
+      },
+      {
+        "label": "Request more time to seek representation or complete preparation",
+        "cost": 0,
+        "days": 1,
+        "effects": {
+          "continuance": 1,
+          "stress": 5
+        },
+        "consequence": "You state why more time is needed. A request is not automatically granted. This prototype follows an illustrative continued-hearing branch.",
+        "barrier": "capacity"
+      },
+      {
+        "label": "Proceed with your organized folder and explain what is missing",
+        "cost": 0,
+        "days": 1,
+        "effects": {
+          "evidence": 1,
+          "stress": 10
+        },
+        "consequence": "The hearing proceeds in this fictional case. Legal eligibility and the complete record—not a game score—govern a real decision.",
+        "barrier": "records"
+      }
+    ]
+  },
+  {
+    "id": "waiting",
+    "title": "Life after the hearing",
+    "body": "The hearing ends, but your daughter still needs dinner, the room still needs rent, and your relatives still ask when you will know.",
+    "learn": "The prototype’s endings are authored teaching examples. Costs, time, support, and evidence indicators are fictional; they are not approval probabilities, legal tests, or predictions.",
+    "source": "method",
+    "choices": [
+      {
+        "label": "Make a plan for the next notice and follow-up",
+        "cost": 0,
+        "days": 7,
+        "effects": {
+          "support": 1,
+          "stress": -5
+        },
+        "consequence": "You keep copies, confirm a safe contact method, and plan how to obtain qualified help with what happens next.",
+        "barrier": "communication"
+      },
+      {
+        "label": "Rest with your daughter before the next round of calls",
+        "cost": 0,
+        "days": 7,
+        "effects": {
+          "family": 1,
+          "stress": -10
+        },
+        "consequence": "A short pause does not erase your effort. The case and the pressures on your household remain.",
+        "barrier": "family"
+      }
+    ]
+  }
+]

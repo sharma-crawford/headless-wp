@@ -19,6 +19,8 @@ export const education = [
 ] as const;
 
 const localResources: Record<string, string> = {
+  "/immigration-dice": "/immigration-dice",
+  "/immigration-simulator": "/immigration-simulator",
   "/immigration-court-tour": "/castle-resources/court-tour/index.html",
   "/immigration-101": "/castle-resources/advocate-101/index.html",
   "/habeas-corpus": "/castle-resources/habeas-primer/index.html",

@@ -1,0 +1,3 @@
+import { educationHref } from "@/components/castle/education";
+const links=[['Court tour','/immigration-court-tour'],['Immigration 101','/immigration-101'],['The Line','/immigration-simulator'],['Detention finder','/icemap'],['Rights & family help','/immigration-rights']] as const;
+export default function PenSwordHeader({current}:{current:string}){return <header className="ps-resource-header"><a className="ps-resource-logo" href="/castle#library"><img src="/castle/pen-sword-logo.png" width="220" height="78" alt="The Pen & Sword — Legal Education & Training Reimagined"/></a><nav aria-label="Pen & Sword resources">{links.map(([label,href])=><a key={href} href={educationHref(href)} aria-current={current===href?'page':undefined}>{label}</a>)}</nav></header>;}
