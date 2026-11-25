@@ -13,7 +13,7 @@
 .brandLogo{width:190px;height:auto;border-right:1px solid var(--blue);padding-right:20px}.header{border-bottom-color:var(--blue)}
 @media(max-width:760px){.brandLogo{width:155px;padding-right:12px}.brand strong{font-size:21px}}
 .education{margin-top:55px;border-top:2px solid var(--blue);padding-top:30px}.education h2{font-size:36px;margin-bottom:12px}.education p{color:#4b5d6b;line-height:1.6}.education h3{font:26px Georgia;margin:30px 0 12px}.education section>a{display:block;padding:18px 0;border-bottom:1px solid var(--line)}.education section>a:hover strong{text-decoration:underline}.education strong{display:block;font-size:18px}.education span{display:block;margin-top:6px;color:#4b5d6b;line-height:1.5}.resourceLinks a{font-size:15px}.council strong{font-size:clamp(18px,1.55vw,24px)}
-@media(min-width:1001px){.council{width:19%}.council strong{font-size:23px;white-space:nowrap}}
+@media(min-width:1001px){.council{width:19%}.council strong{font-size:clamp(18px,1.55vw,23px);white-space:normal}}
 
 /* Integrated navigation and explicit destination buttons. */
 .header{height:auto;min-height:80px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}.header nav{gap:16px;font-size:17px;flex-wrap:wrap}.header nav a+a{padding-left:16px}
