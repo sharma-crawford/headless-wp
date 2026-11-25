@@ -334,14 +334,19 @@ async function setPersonPlan(userId: number, plan: string, until: string): Promi
  * signed out, and sending one would make it look like it needed it.
  */
 async function getCatalogue(): Promise<Catalogue> {
-  const catalogue = (await wordpressFetch("/platform-cle/v1/catalogue")) as Catalogue;
+  // The upstream host caches anonymous REST URLs even when our fetch uses
+  // no-store and request revalidation headers. Bound that cache to a minute
+  // so newly published programmes appear without a hosting-panel purge.
+  const revision = Math.floor(Date.now() / 60_000);
+  const catalogue = (await wordpressFetch(`/platform-cle/v1/catalogue?revision=${revision}`)) as Catalogue;
 
   return { ...catalogue, programs: catalogue.programs.map(withAccess) };
 }
 
 async function getCatalogueItem(id: number): Promise<CatalogueDetail> {
+  const revision = Math.floor(Date.now() / 60_000);
   return withAccess(
-    (await wordpressFetch(`/platform-cle/v1/catalogue/${id}`)) as CatalogueDetail
+    (await wordpressFetch(`/platform-cle/v1/catalogue/${id}?revision=${revision}`)) as CatalogueDetail
   );
 }
 
