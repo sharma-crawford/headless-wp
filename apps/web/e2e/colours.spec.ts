@@ -4,6 +4,32 @@ import { people } from "./support/people";
 import { signIn } from "./support/session";
 import { WordPress } from "./support/wordpress";
 
+import type { Locator, Page } from "@playwright/test";
+
+/**
+ * Opens a colour menu (D3) from its trigger. A click that lands before the page
+ * has hydrated does nothing, and on a slow runner that is the usual case, so
+ * click again until the menu is there instead of waiting on a closed one.
+ */
+async function openMenu(trigger: Locator, inMenu: Locator) {
+  await expect(async () => {
+    if (!(await inMenu.isVisible())) {
+      await trigger.click();
+    }
+    await expect(inMenu).toBeVisible({ timeout: 3000 });
+  }).toPass({ timeout: 20_000 });
+}
+
+/**
+ * Opens one titled item's colour menu and picks a swatch.
+ */
+async function choose(page: Page, title: string, swatch: string) {
+  const item = page.getByRole("menuitem", { name: swatch, exact: true });
+  await openMenu(page.getByRole("button", { name: new RegExp(`^Colour for ${title}:`) }), item);
+  await item.click();
+}
+
+
 /**
  * An author colours a programme, everything inside it follows, and one item
  * can be given a colour of its own and then handed back.
@@ -24,30 +50,6 @@ test.describe("Colours", () => {
   test.afterAll(async () => {
     await wordpress.deleteNode(programme.id, true);
   });
-
-  /** Opens the colour menu (D3) for one titled item and picks a swatch. */
-  async function choose(page: import("@playwright/test").Page, title: string, swatch: string) {
-    await openMenu(page, title, page.getByRole("menuitem", { name: swatch, exact: true }));
-    await page.getByRole("menuitem", { name: swatch, exact: true }).click();
-  }
-
-  /**
-   * Opens one item's colour menu. A click that lands before the page has
-   * hydrated does nothing, and on a slow runner that is the usual case, so
-   * click again until the menu is there instead of waiting on a closed one.
-   */
-  async function openMenu(
-    page: import("@playwright/test").Page,
-    title: string,
-    inMenu: import("@playwright/test").Locator
-  ) {
-    await expect(async () => {
-      if (!(await inMenu.isVisible())) {
-        await page.getByRole("button", { name: new RegExp(`^Colour for ${title}:`) }).click();
-      }
-      await expect(inMenu).toBeVisible({ timeout: 3000 });
-    }).toPass({ timeout: 20_000 });
-  }
 
   test("a programme's colour reaches everything inside it", async ({ page }) => {
     await signIn(page, people.instructor);
@@ -80,7 +82,7 @@ test.describe("Colours", () => {
     ).toBeVisible();
 
     const giveBack = page.getByRole("menuitem", { name: "Use the programme's colour" });
-    await openMenu(page, unit.title, giveBack);
+    await openMenu(page.getByRole("button", { name: new RegExp(`^Colour for ${unit.title}:`) }), giveBack);
     await giveBack.click();
 
     await expect(
@@ -108,12 +110,13 @@ test.describe("Colour settings", () => {
     await signIn(page, people.administrator);
     await page.goto("/colours");
 
-    await page.getByRole("button", { name: /^Colour for “Draft”:/ }).click();
+    const gold = page.getByRole("menuitem", { name: "Gold soft", exact: true });
+    await openMenu(page.getByRole("button", { name: /^Colour for “Draft”:/ }), gold);
 
     // Draft keeps to warm colours: a green is not offered.
     await expect(page.getByRole("menuitem", { name: "Emerald soft", exact: true })).toBeDisabled();
 
-    await page.getByRole("menuitem", { name: "Gold soft", exact: true }).click();
+    await gold.click();
 
     await expect(page.getByRole("button", { name: "Colour for “Draft”: Gold soft" })).toBeVisible();
 
@@ -147,8 +150,9 @@ test.describe("My colours", () => {
     const trigger = page.getByRole("button", { name: /^Colour for / }).first();
     const name = (await trigger.getAttribute("aria-label"))!.replace(/^Colour for (.*): .*$/, "$1");
 
-    await trigger.click();
-    await page.getByRole("menuitem", { name: "Rose strong", exact: true }).click();
+    const rose = page.getByRole("menuitem", { name: "Rose strong", exact: true });
+    await openMenu(trigger, rose);
+    await rose.click();
 
     await expect(
       page.getByRole("button", { name: `Colour for ${name}: Rose strong, your colour` })
