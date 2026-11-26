@@ -8,14 +8,14 @@ import '../themed-room.css';
 import './orbit.css';
 
 export const dynamic='force-dynamic';
-export const metadata:Metadata={title:'Torts: Tort Station | renAIssance Legal Education',description:'A sci-fi Torts study room spanning three note volumes, with sixteen comic lessons, refreshers, hypotheticals, and self-grading quizzes.'};
+export const metadata:Metadata={title:'Torts: Tort Station | The Armory',description:'A sci-fi Torts study room spanning three note volumes, with sixteen comic lessons, refreshers, hypotheticals, and self-grading quizzes.'};
 const safe=questions.map(({id,section,prompt,options})=>({id,section,prompt,options}));
 const names=data.sections.map(s=>s.title);
 const volumeNames:Record<string,string>={I:'Intentional invasions',II:'Negligence & causation',III:'Duties, defenses & remedies'};
 
 export default function TortsRoom(){return <main className="study themed-room orbit-room">
  <header className="study-top"><Link href="/castle">The Armory</Link><Link href="/castle#library">← All study rooms</Link><Link href="/my-training">My training</Link></header>
- <section className="room-hero orbit-hero"><div className="orbit-hero-grid"><div><p className="study-eyebrow">renAIssance / TORT STATION</p><p className="room-kicker">Torts · three-volume field guide</p><h1>Torts<em>Tort Station</em></h1><p className="room-intro">{data.intro}</p><div className="room-actions"><a className="study-button" href="#review">Board the station ↓</a><a href="#practice">Run the simulation ↗</a></div></div><aside className="orbit-console" aria-label="Station case method"><span className="orbit-pulse" aria-hidden="true">✦</span><strong>CASE METHOD / SECTOR 07</strong><ol><li>Identify the protected interest</li><li>Test duty or intent</li><li>Trace the causal chain</li><li>Assess defenses and harm</li></ol></aside></div></section>
+ <section className="room-hero orbit-hero"><div className="orbit-hero-grid"><div><p className="study-eyebrow">The Armory / TORT STATION</p><p className="room-kicker">Torts · three-volume field guide</p><h1>Torts<em>Tort Station</em></h1><p className="room-intro">{data.intro}</p><div className="room-actions"><a className="study-button" href="#review">Board the station ↓</a><a href="#practice">Run the simulation ↗</a></div></div><aside className="orbit-console" aria-label="Station case method"><span className="orbit-pulse" aria-hidden="true">✦</span><strong>CASE METHOD / SECTOR 07</strong><ol><li>Identify the protected interest</li><li>Test duty or intent</li><li>Trace the causal chain</li><li>Assess defenses and harm</li></ol></aside></div></section>
  <div className="room-stats"><span><b>3</b> note volumes</span><span><b>{data.sections.length}</b> comic lessons</span><span><b>{data.sections.length}</b> refreshers & written problems</span><span><b>{questions.length}</b> quiz questions</span></div>
  <nav className="study-tabs" aria-label="Torts study modes"><a href="#review">Mission brief</a><a href="#chapters">Sectors</a><a href="#practice">Simulation</a><a href="#sources">Sources</a></nav>
  <div className="study-layout"><aside className="study-outline"><p>STATION DIRECTORY</p><ol>{data.sections.map((s,i)=><li key={s.id}><a href={'#'+s.id}><span>{String(i+1).padStart(2,'0')}</span>{s.title}</a></li>)}</ol></aside><div className="study-content">
