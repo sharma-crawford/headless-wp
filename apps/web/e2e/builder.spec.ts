@@ -340,6 +340,39 @@ test.describe("Attaching a file by dropping it on the body", () => {
     );
   });
 
+  test("a song over 4 MB goes straight to WordPress and is attached whole", async ({ page }) => {
+    await signIn(page, people.instructor);
+    await page.goto(`/builder/nodes/${lesson.id}`);
+
+    /*
+     * A real (silent) MP3 of about 5 MB, built in the page rather than kept in
+     * the repo: an ID3 header, then MPEG frames, so the server's sniffing of
+     * the real type has something to recognise. Over the 4 MB the web host
+     * lets a request carry, so it can only arrive by the direct route.
+     */
+    const transfer = await page.evaluateHandle(() => {
+      const frame = new Uint8Array(417);
+      frame.set([0xff, 0xfb, 0x90, 0x64]);
+      const frames = 12_500;
+      const bytes = new Uint8Array(10 + frame.length * frames);
+      bytes.set([0x49, 0x44, 0x33, 3, 0, 0, 0, 0, 0, 0]);
+      for (let index = 0; index < frames; index++) bytes.set(frame, 10 + index * frame.length);
+      const data = new DataTransfer();
+      data.items.add(new File([bytes], "long-song.mp3", { type: "audio/mpeg" }));
+      return data;
+    });
+
+    const body = page.locator("#node-body");
+    await expect(async () => {
+      await body.dispatchEvent("dragover", { dataTransfer: transfer });
+      await expect(page.getByText("Drop to attach here")).toBeVisible({ timeout: 500 });
+    }).toPass();
+    await body.dispatchEvent("drop", { dataTransfer: transfer });
+
+    await expect(page.locator("#node-body")).toHaveValue(/\[\[media:\d+\]\]/, { timeout: 30_000 });
+    await expect(page.getByText(/— long-song(-\d+)?\.mp3/)).toBeVisible();
+  });
+
   test("a file the builder does not take is refused before it is sent", async ({
     page,
   }) => {

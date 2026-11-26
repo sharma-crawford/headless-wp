@@ -57,6 +57,7 @@ services:
       # theme edits live, the way `develop.watch` does for the web service.
       - ./apps/wordpress/plugins/platform-cle/plugin:/var/www/html/wp-content/plugins/platform-cle
       - ./apps/wordpress/plugins/platform-cle/theme:/var/www/html/wp-content/themes/platform-cle
+      - ./apps/wordpress/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini:ro
     depends_on:
       - db
 

@@ -623,6 +623,22 @@ async function uploadNodeMedia(
   }) as Promise<UploadedMedia>;
 }
 
+/**
+ * A one-time address the browser can send a large file to directly.
+ *
+ * The web host caps a request at about 4 MB, so a song cannot come through
+ * uploadNodeMedia(). The plugin hands out a short-lived address instead
+ * (direct-upload.php); the file goes to WordPress without passing here.
+ */
+async function requestUploadTicket(
+  id: number
+): Promise<{ url: string; expires_in: number; max_bytes: number }> {
+  return wordpressFetch(`/platform-cle/v1/authoring/nodes/${id}/upload-ticket`, {
+    auth: true,
+    method: "POST",
+  }) as Promise<{ url: string; expires_in: number; max_bytes: number }>;
+}
+
 async function createNode(input: {
   type: NodeType;
   parentId: number;
@@ -798,6 +814,7 @@ export {
   exportProgram,
   importProgram,
   uploadNodeMedia,
+  requestUploadTicket,
   createNode,
   updateNode,
   deleteNode,

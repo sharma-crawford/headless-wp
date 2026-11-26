@@ -1311,6 +1311,10 @@ function pcle_authoring_upload_types() {
 			'png'  => 'image/png',
 			'gif'  => 'image/gif',
 			'webp' => 'image/webp',
+			// Songs and other audio. The real type is sniffed, and an .m4a is
+			// audio/mp4, so both names are listed.
+			'mp3'  => 'audio/mpeg',
+			'm4a'  => 'audio/mp4',
 		)
 	);
 }
@@ -1340,7 +1344,20 @@ function pcle_authoring_upload_media( $request ) {
 		);
 	}
 
-	$file = $files['file'];
+	return pcle_authoring_store_upload( $node_id, $files['file'] );
+}
+
+/**
+ * Checks one uploaded file and attaches it to a node, in the protected
+ * directory. Shared by the builder's own upload route and the direct one
+ * (direct-upload.php), so a file is held to the same rules whichever way in.
+ *
+ * @param int   $node_id Node the file belongs to.
+ * @param array $file    A $_FILES-style entry: name, tmp_name, size, error.
+ * @return WP_REST_Response|WP_Error
+ */
+function pcle_authoring_store_upload( $node_id, $file ) {
+	$node_id = (int) $node_id;
 
 	if ( ! empty( $file['error'] ) ) {
 		// UPLOAD_ERR_INI_SIZE / FORM_SIZE are the ones an author will actually
@@ -1366,7 +1383,7 @@ function pcle_authoring_upload_media( $request ) {
 	if ( empty( $checked['type'] ) || ! in_array( $checked['type'], $allowed, true ) ) {
 		return new WP_Error(
 			'pcle_file_type_not_allowed',
-			__( 'That kind of file cannot be attached. Documents and images only.', 'platform-cle' ),
+			__( 'That kind of file cannot be attached. Documents, images and audio only.', 'platform-cle' ),
 			array( 'status' => 400 )
 		);
 	}

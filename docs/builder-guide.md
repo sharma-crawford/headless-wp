@@ -45,7 +45,8 @@ That consistency is what makes no-code editing possible.
 3. On the programme page, add **units**, then **modules** inside them. Rename
    inline, drag to reorder.
 4. Click a module to write its body. You can attach a document or image
-   (PDF, Word, JPG, PNG, GIF, WebP; 4 MB each).
+   (PDF, Word, JPG, PNG, GIF, WebP, MP3, M4A). Files over 4 MB are sent
+   straight to WordPress, so a song attaches whole; the server's own limit applies.
 5. Add a **quiz** to a module: questions, correct answers, a pass mark, and
    whether passing is required to complete the module.
 6. Open the programme's settings:
@@ -105,8 +106,9 @@ Learner screens: My Training, programs, modules, quizzes, rooms, reports
 
 These are real gaps. Closing them is what the plan is for.
 
-- **Audio.** Uploads accept PDF, Word and images only. The course songs (`.m4a`,
-  4 to 5 MB each) need audio types and a higher size limit. Today's limit is 4 MB.
+- **Audio.** Done in code: MP3 and M4A are accepted, and large files go straight
+  to WordPress. It works once the plugin is deployed and the host's PHP upload
+  limit is high enough for a song (7 MB is the largest). Check that limit first.
 - **Themes.** A programme has no "room theme" setting yet. The Viking, noir,
   infernal and other looks are code (planned: a setting that picks from a short
   list of themes).
