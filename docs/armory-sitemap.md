@@ -124,7 +124,7 @@ rough and assume the WordPress plugin can be changed.
 - Note: deleting files stops the repo growing but does not shrink git history.
 - Done when: an author edits a question in the builder and the change shows with no deploy.
 
-### Phase 5: Progress, sign-up, enrollment (about 2 to 3 days, depends on Question 1)
+### Phase 5: Progress, sign-up, enrollment (about 2 to 3 days)
 - Self-completion for self-study programs. Today only staff mark completions.
 - Quiz results and lesson progress saved from the rooms.
 - Check the sign-up and enrollment flow end to end for a new learner.
@@ -137,19 +137,22 @@ rough and assume the WordPress plugin can be changed.
 
 Every phase that adds, moves or removes a page also updates `docs/ui-map.md`.
 
+## Decisions
+
+Decided (Rafael, 2026-11-26):
+
+1. **Learner self-completion: yes.** Learners can mark their own progress in
+   self-study programs. Proposed shape, not yet confirmed: a per-program setting,
+   with instructor-marked staying the default for CLE credit. Unblocks Phase 5.
+2. **Immigration tools: public.** The static pages, Dice and Simulator need no
+   login. Moving them inside the shell (Phase 1) keeps them public.
+3. **Front door: `/castle`.** Castle stays the Armory home. `/` is unchanged.
+
 ## Open decisions
 
-1. **Learner self-completion.** The platform marks completions by instructor, which
-   fits CLE credit. For the law-school self-study courses, can learners mark their
-   own progress (or complete by passing the quiz)? Proposed: a per-program setting,
-   instructor-marked stays the default.
-2. **Immigration tools: public or gated?** Today the four static pages are public
-   and Dice and Simulator need no login. The import README says the original
-   course restrictions still apply. Which is it?
-3. **Where is the front door?** Keep `/castle` as the Armory home, or make `/` the
-   Armory and redirect `/castle`?
 4. **Header links.** After Phase 2 the header is Castle, Library, My Training or
-   Sign in. Confirm "Library" replaces both "Course rooms" and "Catalogue".
+   Sign in. Confirm "Library" replaces both "Course rooms" and "Catalogue". The
+   Catalogue link is out of the header today; confirm that stays.
 5. **Who owns what.** Suggested: Edward for room themes and widgets, Rekha for design
    sign-off, plugin work needs someone with WordPress access. To be confirmed.
 
@@ -161,8 +164,8 @@ Every phase that adds, moves or removes a page also updates `docs/ui-map.md`.
   course content. Edit both, or freeze edits, during Phases 1 to 3.
 - **Plugin work.** Phases 3 to 5 need WordPress plugin changes (room theme,
   study-mode endpoint, self-completion). Confirm who can ship them.
-- **Public media.** The immigration static pages are public today. Moving them
-  inside the shell must follow Question 2.
+- **Public media.** The immigration pages stay public (decision 2), so nothing
+  behind login may be embedded in them.
 
 ## Not in this plan
 
