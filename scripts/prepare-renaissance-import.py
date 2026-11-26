@@ -71,7 +71,7 @@ def main():
         extras={k:v for k,v in data.items() if k!='sections'}
         units.append(node('unit','Case briefs and source collection',children=[node('module','Original course reference material',render(extras))]))
         title=subject.replace('-',' ').title()
-        programme=node('programme',title, '<p>Original educational material by Edward Schmalz, migrated from renAIssance Legal Education. Draft for import review; no CLE credit assigned.</p>',units,credits={},program_format='course')
+        programme=node('programme',title, '<p>Original educational material by Edward Schmalz, migrated from renAIssance Legal Education. Draft for import review; no CLE credit assigned.</p>',units,credits={},program_format='series')
         payload=dict(format='platform-cle/programme',version=1,site='https://legal-renaissance.com',programme=programme)
         target=imports/(subject+'.json');target.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
         assert target.stat().st_size<4_000_000

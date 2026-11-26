@@ -484,6 +484,7 @@ function pcle_rest_get_program( $request ) {
 			// pcle_get_credit_hours().
 			'credits'        => pcle_rest_shape_credit_hours( $program->ID ),
 			'format'         => pcle_get_program_format( $program->ID ),
+			'room_theme'     => pcle_get_room_theme( $program->ID ),
 			'color'          => pcle_participant_colour( $program->ID ),
 			'cover'          => pcle_get_program_cover_url( $program->ID ),
 			// Where a webinar's participant actually goes. 0 for a series, or

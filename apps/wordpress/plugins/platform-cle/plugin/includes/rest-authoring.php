@@ -287,6 +287,7 @@ function pcle_authoring_shape_node( $post ) {
 	if ( 'pcle_program' === $post->post_type ) {
 		$node['credits'] = pcle_rest_shape_credit_hours( $post->ID );
 		$node['format']  = pcle_get_program_format( $post->ID );
+		$node['room_theme'] = pcle_get_room_theme( $post->ID );
 	}
 
 	return $node;
@@ -569,6 +570,7 @@ function pcle_authoring_list_programs() {
 			'status'     => $program->post_status,
 			'credits'    => pcle_rest_shape_credit_hours( $program->ID ),
 			'format'     => pcle_get_program_format( $program->ID ),
+			'room_theme' => pcle_get_room_theme( $program->ID ),
 			'color'      => pcle_get_colour( $program->ID ),
 			'units'      => count( pcle_authoring_get_children( $program->ID, 'pcle_unit' ) ),
 			'modules'    => count( pcle_get_program_module_ids( $program->ID ) ),
@@ -815,6 +817,15 @@ function pcle_authoring_update_node( $request ) {
 		}
 	}
 
+	// How the course room is dressed. A short list, so a bad value is refused up front.
+	if ( null !== $request['room_theme'] && 'pcle_program' === get_post_type( $id ) ) {
+		$themed = pcle_set_room_theme( $id, (string) $request['room_theme'] );
+
+		if ( is_wp_error( $themed ) ) {
+			return $themed;
+		}
+	}
+
 	/*
 	 * A webinar's live session: { starts_at, duration, join_url }, each
 	 * optional. After the format change above, so a programme turned into a
@@ -880,7 +891,7 @@ function pcle_authoring_update_node( $request ) {
 		 * recolouring a programme should not make it "last edited" by
 		 * whoever chose the colour.
 		 */
-		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'study_mode', 'credits' );
+		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'room_theme', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'study_mode', 'credits' );
 
 		if ( ! array_filter( $fields, fn( $field ) => null !== $request[ $field ] ) ) {
 			return rest_ensure_response( pcle_authoring_shape_node( get_post( $id ) ) );
