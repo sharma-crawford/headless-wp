@@ -392,6 +392,25 @@ function pcle_model_answer_shortcode( $atts, $content = '' ) {
 add_shortcode( 'pcle_model_answer', 'pcle_model_answer_shortcode' );
 
 /**
+ * A widget's place in a page: an empty marker the app replaces with the piece
+ * it has registered under this key. Without the app (wp-admin, the WordPress
+ * site) it shows nothing, and an unknown key is harmless.
+ *
+ * @param array $atts Shortcode attributes: key.
+ * @return string
+ */
+function pcle_widget_shortcode( $atts ) {
+	$atts = shortcode_atts( array( 'key' => '' ), $atts, 'pcle_widget' );
+
+	if ( ! preg_match( '/^[a-z0-9][a-z0-9-]{0,39}$/', (string) $atts['key'] ) ) {
+		return '';
+	}
+
+	return sprintf( '<div class="pcle-widget" data-widget="%s"></div>', esc_attr( $atts['key'] ) );
+}
+add_shortcode( 'pcle_widget', 'pcle_widget_shortcode' );
+
+/**
  * Hides the program CPTs from search results and feeds for users without
  * access (defense in depth).
  *

@@ -1555,6 +1555,16 @@ pcle_ok(
 	'and writes back out as its shortcode'
 );
 
+// Widgets: a key on a line of its own, stored as a shortcode the app replaces.
+$widget_stored = pcle_authoring_content_from_text( "Before.\n\n[[widget:corporate-veil-tabs]]\n\nAfter." );
+pcle_ok( false !== strpos( $widget_stored, '[pcle_widget key="corporate-veil-tabs"]' ), 'a widget key is stored as the widget shortcode' );
+$widget_read = pcle_authoring_text_from_content( $widget_stored );
+pcle_eq( $widget_read['editable'], true, 'a body holding a widget stays editable' );
+pcle_ok( false !== strpos( $widget_read['text'], '[[widget:corporate-veil-tabs]]' ), 'and the widget reads back as its key' );
+pcle_eq( trim( do_shortcode( '[pcle_widget key="corporate-veil-tabs"]' ) ), '<div class="pcle-widget" data-widget="corporate-veil-tabs"></div>', 'rendered, it is an empty marker for the app to fill' );
+pcle_eq( do_shortcode( '[pcle_widget key="Bad Key<script>"]' ), '', 'a malformed key renders nothing' );
+pcle_ok( false === strpos( pcle_authoring_content_from_text( '[[widget:Bad Key]]' ), 'pcle_widget' ), 'and a malformed key is not stored as a widget' );
+
 /*
  * Everything else is preserved rather than refused. Its content is copied from
  * the stored post on save, never rebuilt from the client, so re-serialising

@@ -124,7 +124,11 @@ rough and assume the WordPress plugin can be changed.
   (Phase 4). Rooms at `/study/<slug>` stay until they match.
 - Web: one room renders by theme from WP data. `/study/<slug>` redirects to the
   program. Remove `studyPrograms`.
-- Widget registry: lesson content references a widget by key.
+- Widget registry: lesson content references a widget by key. **Done (plugin not
+  yet deployed):** `[[widget:key]]` on a line of its own in a lesson body; the app
+  draws the component registered under that key (`components/widgets/registry.tsx`),
+  and an unknown key draws nothing. First widget: `corporate-veil-tabs`. Adding a
+  widget is a developer's job: a component and one line in the registry.
 - Done when: Contracts renders from WP and looks like it does today.
 
 ### Phase 4: Content leaves the repo (about 2 to 3 days)
