@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import CastleExplorer from "@/components/castle/castle-explorer";
 import type { CastleProgram } from "@/components/castle/courses";
+import CatalogueBrowser from "@/components/catalogue/catalogue-browser";
+import CatalogueCard from "@/components/catalogue/catalogue-card";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
 import { decodeEntities } from "@/lib/html";
@@ -26,5 +28,15 @@ export default async function CastlePage() {
       id: item.id, title: decodeEntities(item.title), description: decodeEntities(item.excerpt ?? ""), enrolled: true, progress: item.progress,
     });
   }
-  return <><CastleExplorer programs={programs} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} /><PageCode code="P24" /></>;
+  const published = catalogue.status === "fulfilled" ? catalogue.value : { programs: [], topics: [] };
+  const library = published.programs.length === 0 ? null : (
+    <CatalogueBrowser
+      programs={published.programs}
+      topics={published.topics}
+      cards={Object.fromEntries(published.programs.map((item) => [
+        item.id, <CatalogueCard key={item.id} program={item} enrolled={enrolled.has(item.id)} />,
+      ]))}
+    />
+  );
+  return <><CastleExplorer programs={programs} library={library} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} /><PageCode code="P24" /></>;
 }

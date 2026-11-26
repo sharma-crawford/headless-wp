@@ -181,9 +181,9 @@ export default async function Home() {
                 variant="outline"
                 className="h-11 border-white/30 bg-transparent px-6 text-base text-white hover:bg-white/10 hover:text-white"
                 nativeButton={false}
-                render={<Link href="/catalogue" />}
+                render={<Link href="/castle#list" />}
               >
-                Browse the catalogue
+                Browse the Library
               </Button>
 
               <Button

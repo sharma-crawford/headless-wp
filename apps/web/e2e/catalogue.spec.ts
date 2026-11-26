@@ -11,7 +11,7 @@ const PNG = Buffer.from(
 );
 
 /**
- * The catalogue (P18, P19) is the one part of the platform a stranger can
+ * The Library (P24, list view) and the course page (P19) are the one part of the platform a stranger can
  * read. These check both halves of that: it opens signed out, and what an
  * author sets in the builder is what a stranger sees.
  */
@@ -31,10 +31,10 @@ test.describe("The public catalogue", () => {
 
   test("someone signed out can browse it and open a programme", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("button", { name: "Browse the catalogue" }).click();
+    await page.getByRole("button", { name: "Browse the Library" }).click();
 
-    await expect(page).toHaveURL(/\/catalogue$/);
-    await expect(page.getByRole("heading", { name: "Courses and webinars" })).toBeVisible();
+    await expect(page).toHaveURL(/\/castle#list$/);
+    await expect(page.getByRole("heading", { name: "Courses & resources" })).toBeVisible();
     // The public header: a way in, and nothing that needs an account.
     await expect(page.getByRole("banner").getByRole("link", { name: "Sign in" })).toBeVisible();
     await expect(page.getByRole("banner").getByRole("link", { name: "My Training" })).toHaveCount(0);
@@ -50,7 +50,7 @@ test.describe("The public catalogue", () => {
   });
 
   test("search narrows the list, and says when nothing matches", async ({ page }) => {
-    await page.goto("/catalogue");
+    await page.goto("/castle#list");
 
     await page.getByLabel("Search the catalogue").fill("zzzz-nothing-is-called-this");
     await expect(page.getByText("Nothing matches.")).toBeVisible();
@@ -78,7 +78,7 @@ test.describe("The public catalogue", () => {
 
     // A fresh context: nobody signed in.
     const stranger = await browser.newPage();
-    await stranger.goto("/catalogue");
+    await stranger.goto("/castle#list");
     await stranger.getByRole("button", { name: topic }).click();
 
     const card = stranger.getByRole("link", { name: new RegExp(programme.title) });
