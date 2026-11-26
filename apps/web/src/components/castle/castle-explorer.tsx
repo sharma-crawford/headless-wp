@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { courses, type CastleProgram } from "./courses";
 import { education, educationHref } from "./education";
+import ArmoryNav from "@/components/armory/armory-nav";
 import styles from "./castle.module.css";
 
 const EMPTY_PROGRAMS: CastleProgram[] = [];
@@ -68,15 +69,7 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
 
   return <div className={styles.shell}>
     <a className={styles.skip} href="#castle-main">Skip to courses</a>
-    <header className={styles.header}>
-      <a className={styles.brand} href="#courtyard" aria-label="The Armory courtyard"><Image className={styles.brandLogo} src="/castle/pen-sword-logo.png" alt="The Pen & Sword" width={190} height={67} /><span><strong>ARMORY</strong><small>Explore. Learn. Practice.</small></span></a>
-      <nav aria-label="Armory navigation">
-        <a href="#courtyard" aria-current={view === "courtyard" ? "page" : undefined}>Castle</a>
-        <a href="#list" aria-current={view === "list" ? "page" : undefined}>Course rooms</a>
-        <Link href="/catalogue">Catalogue</Link>
-        <a href={signedIn ? "/my-training" : "/login"}>{signedIn ? "My Training" : "Sign in"}</a>
-      </nav>
-    </header>
+    <ArmoryNav inCastle signedIn={signedIn} current={view === "courtyard" ? "courtyard" : view === "list" ? "list" : undefined} />
     <main id="castle-main" className={styles.main}>
       {view === "courtyard" && <>
         <section className={styles.intro}><h1 ref={heading} tabIndex={-1}>A place to sharpen your practice.</h1><p>Choose a room. Discover a course. Build your craft.</p><span className={styles.previewNote}>The Pen & Sword · The Armory</span></section>
