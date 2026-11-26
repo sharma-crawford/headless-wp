@@ -308,16 +308,104 @@ function pcle_stream_file( $path, $attachment_id ) {
 	nocache_headers();
 	header( 'Content-Type: ' . ( $mime ? $mime : 'application/octet-stream' ) );
 	header( 'Content-Disposition: inline; filename="' . rawurlencode( $name ) . '"' );
-	if ( false !== $size ) {
-		header( 'Content-Length: ' . $size );
-	}
 	header( 'X-Content-Type-Options: nosniff' );
+	header( 'Accept-Ranges: bytes' );
 
-	// Flush any buffering so readfile streams cleanly.
+	// phpcs:ignore WordPress.Security.ValidatedSanitizedInput -- parsed strictly below.
+	$range = false !== $size && isset( $_SERVER['HTTP_RANGE'] ) ? pcle_parse_byte_range( (string) $_SERVER['HTTP_RANGE'], $size ) : null;
+
+	if ( false === $range ) {
+		status_header( 416 );
+		header( 'Content-Range: bytes */' . $size );
+		exit;
+	}
+
+	// Flush any buffering so the file streams cleanly.
 	while ( ob_get_level() ) {
 		ob_end_clean();
 	}
 
+	if ( is_array( $range ) ) {
+		// Safari will not play audio or video from a server that cannot answer
+		// a range, and seeking needs it everywhere.
+		status_header( 206 );
+		header( sprintf( 'Content-Range: bytes %d-%d/%d', $range[0], $range[1], $size ) );
+		header( 'Content-Length: ' . ( $range[1] - $range[0] + 1 ) );
+		pcle_stream_file_range( $path, $range[0], $range[1] );
+		exit;
+	}
+
+	if ( false !== $size ) {
+		header( 'Content-Length: ' . $size );
+	}
+
 	readfile( $path ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_readfile
 	exit;
+}
+
+/**
+ * Reads one `Range: bytes=a-b` header (a single range) against a file size.
+ *
+ * @param string $header Header value.
+ * @param int    $size   File size in bytes.
+ * @return array{0:int,1:int}|false|null [start, end] inclusive; false when
+ *         unsatisfiable (416); null when there is no usable range (send it all).
+ */
+function pcle_parse_byte_range( $header, $size ) {
+	if ( ! preg_match( '/^bytes=(\d*)-(\d*)$/', trim( $header ), $m ) || ( '' === $m[1] && '' === $m[2] ) ) {
+		return null;
+	}
+
+	$last = $size - 1;
+
+	if ( '' === $m[1] ) {
+		// "-N": the last N bytes.
+		$length = (int) $m[2];
+
+		if ( 0 === $length || $size < 1 ) {
+			return false;
+		}
+
+		return array( max( 0, $size - $length ), $last );
+	}
+
+	$start = (int) $m[1];
+	$end   = '' === $m[2] ? $last : min( (int) $m[2], $last );
+
+	if ( $start > $end || $start >= $size ) {
+		return false;
+	}
+
+	return array( $start, $end );
+}
+
+/**
+ * Sends bytes start..end of a file, in chunks.
+ *
+ * @param string $path  File path.
+ * @param int    $start First byte.
+ * @param int    $end   Last byte, inclusive.
+ */
+function pcle_stream_file_range( $path, $start, $end ) {
+	$handle = fopen( $path, 'rb' ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen
+
+	if ( ! $handle ) {
+		return;
+	}
+
+	fseek( $handle, $start );
+	$remaining = $end - $start + 1;
+
+	while ( $remaining > 0 && ! feof( $handle ) ) {
+		$chunk = fread( $handle, min( 8192, $remaining ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fread
+
+		if ( false === $chunk || '' === $chunk ) {
+			break;
+		}
+
+		echo $chunk; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- file bytes.
+		$remaining -= strlen( $chunk );
+	}
+
+	fclose( $handle ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose
 }

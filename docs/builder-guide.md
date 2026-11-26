@@ -47,8 +47,10 @@ That consistency is what makes no-code editing possible.
 4. Click a module to write its body. You can attach a document or image
    (PDF, Word, JPG, PNG, GIF, WebP, MP3, M4A). To place an interactive piece a
    developer has built (for example the corporate-veil case tabs), type its key
-   on a line of its own: `[[widget:corporate-veil-tabs]]`. A key nobody has
-   built yet shows nothing. Files over 4 MB are sent
+   on a line of its own: `[[widget:corporate-veil-tabs]]`. Built so far:
+   `corporate-veil-tabs`, `business-associations-practice`,
+   `evidence-admission-flowchart`. A key nobody has built yet shows nothing. An
+   attached MP3 or M4A shows as a player in the lesson. Files over 4 MB are sent
    straight to WordPress, so a song attaches whole; the server's own limit applies.
 5. Add a **quiz** to a module: questions, correct answers, a pass mark, and
    whether passing is required to complete the module.

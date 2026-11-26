@@ -705,6 +705,7 @@ function pcle_authoring_text_from_content( $content ) {
 				$parts[] = sprintf( '![%s](%s)', html_entity_decode( $alt, ENT_QUOTES, get_bloginfo( 'charset' ) ), $src[1] );
 				break;
 
+			case 'core/audio':
 			case 'core/file':
 				if ( empty( $parsed['attrs']['id'] ) || 'attachment' !== get_post_type( (int) $parsed['attrs']['id'] ) ) {
 					$parts[] = pcle_authoring_preserve( $index, $block, $preserved );
@@ -848,6 +849,14 @@ function pcle_authoring_media_markup( $attachment_id ) {
 			esc_url( $url ),
 			esc_attr( $alt ),
 			$attachment_id
+		);
+	}
+
+	if ( preg_match( '#^audio/#', $mime ) ) {
+		return sprintf(
+			"<!-- wp:audio {\"id\":%d} -->\n<figure class=\"wp-block-audio\"><audio controls src=\"%s\"></audio></figure>\n<!-- /wp:audio -->",
+			$attachment_id,
+			esc_url( $url )
 		);
 	}
 

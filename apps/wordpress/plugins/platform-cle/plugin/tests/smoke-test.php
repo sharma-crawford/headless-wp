@@ -1841,6 +1841,28 @@ wp_set_current_user( 0 );
 $up_out = pcle_upload_to_node( $editable_module, 'brief.pdf', $pdf_bytes );
 pcle_eq( $up_out->get_status(), 401, 'nor can a signed-out visitor' );
 
+// Songs: an audio attachment becomes a player, and reads back as its token.
+$mp3_bytes = "ID3\x03\x00\x00\x00\x00\x00\x00" . str_repeat( "\xFF\xFB\x90\x64" . str_repeat( "\x00", 413 ), 40 );
+wp_set_current_user( $admin );
+$up_mp3 = pcle_upload_to_node( $editable_module, 'song.mp3', $mp3_bytes );
+pcle_eq( $up_mp3->get_status(), 200, 'staff can attach a song' );
+$mp3_id          = $up_mp3->get_data()['id'];
+$created_posts[] = $mp3_id;
+$audio_markup    = pcle_authoring_media_markup( $mp3_id );
+pcle_ok( false !== strpos( $audio_markup, '<audio controls' ), 'a song is drawn as an audio player, not a download link' );
+pcle_ok( false !== strpos( $audio_markup, 'wp:audio' ), 'in an audio block' );
+pcle_eq( trim( pcle_authoring_text_from_content( $audio_markup )['text'] ), sprintf( '[[media:%d]]', $mp3_id ), 'which reads back as its media token' );
+
+// Byte ranges, so audio can seek and Safari will play it at all.
+pcle_eq( pcle_parse_byte_range( 'bytes=0-99', 1000 ), array( 0, 99 ), 'a range from the start' );
+pcle_eq( pcle_parse_byte_range( 'bytes=500-', 1000 ), array( 500, 999 ), 'an open-ended range runs to the end' );
+pcle_eq( pcle_parse_byte_range( 'bytes=-100', 1000 ), array( 900, 999 ), 'a suffix range is the last bytes' );
+pcle_eq( pcle_parse_byte_range( 'bytes=900-5000', 1000 ), array( 900, 999 ), 'an end past the file is clipped' );
+pcle_eq( pcle_parse_byte_range( 'bytes=1000-', 1000 ), false, 'a start past the end is unsatisfiable' );
+pcle_eq( pcle_parse_byte_range( 'bytes=5-2', 1000 ), false, 'a backwards range is unsatisfiable' );
+pcle_eq( pcle_parse_byte_range( 'items=0-1', 1000 ), null, 'another unit is ignored' );
+pcle_eq( pcle_parse_byte_range( 'bytes=0-1,5-9', 1000 ), null, 'several ranges are ignored, the whole file is sent' );
+
 /*
  * Direct uploads: the browser sends the file to a one-time address, so a file
  * larger than the web app's own request cap can still be attached. Held to the

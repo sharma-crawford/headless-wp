@@ -602,7 +602,7 @@ test.describe("Placing a widget in a lesson", () => {
     const unit = await wordpress.createNode("pcle_unit", "E2E Widget Unit", programme.id);
     lesson = await wordpress.createNode("pcle_module", "E2E Widget Module", unit.id);
     await wordpress.updateNode(lesson.id, {
-      body: "Before the tabs.\n\n[[widget:corporate-veil-tabs]]\n\n[[widget:not-a-real-widget]]\n\nAfter the tabs.",
+      body: "Before the tabs.\n\n[[widget:corporate-veil-tabs]]\n\n[[widget:not-a-real-widget]]\n\n[[widget:business-associations-practice]]\n\n[[widget:evidence-admission-flowchart]]\n\nAfter the tabs.",
     });
   });
 
@@ -618,7 +618,66 @@ test.describe("Placing a widget in a lesson", () => {
     await expect(page.getByRole("tab", { name: "Walkovszky" })).toBeVisible();
     await page.getByRole("tab", { name: "Radaszewski" }).click();
     await expect(page.getByRole("heading", { name: "Radaszewski v. Telecom Corp." })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "One business six questions" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /Does the evidence/ })).toBeVisible();
     await expect(page.getByText("After the tabs.")).toBeVisible();
     await expect(page.locator("[data-widget]")).toHaveCount(0);
+  });
+});
+
+test.describe("A song in a lesson", () => {
+  let wordpress: WordPress;
+  let programme: { id: number; title: string };
+  let lesson: { id: number; title: string };
+  let song: Buffer;
+
+  test.beforeAll(async () => {
+    wordpress = await WordPress.asAdministrator();
+    programme = await wordpress.createNode("pcle_program", "E2E Song Programme");
+    const unit = await wordpress.createNode("pcle_unit", "E2E Song Unit", programme.id);
+    lesson = await wordpress.createNode("pcle_module", "E2E Song Module", unit.id);
+
+    // A short silent MP3: an ID3 header, then MPEG frames the server can recognise.
+    const frame = Buffer.alloc(417);
+    frame.set([0xff, 0xfb, 0x90, 0x64]);
+    song = Buffer.concat([Buffer.from([0x49, 0x44, 0x33, 3, 0, 0, 0, 0, 0, 0]), ...Array(40).fill(frame)]);
+
+    const media = await wordpress.uploadMedia(lesson.id, { name: "lesson-song.mp3", mimeType: "audio/mpeg", buffer: song });
+    await wordpress.updateNode(lesson.id, { body: `Listen to the song.\n\n${media.token}` });
+  });
+
+  test.afterAll(async () => {
+    await wordpress.deleteNode(programme.id, true);
+  });
+
+  test("it is a player the reader's browser can load, by byte range", async ({ page }) => {
+    await signIn(page, people.instructor);
+    await page.goto(`/modules/${lesson.id}?preview=1`);
+
+    const player = page.locator("audio[controls]");
+    await expect(player).toHaveCount(1);
+    const src = await player.getAttribute("src");
+    expect(src).toMatch(/^\/media\/\d+$/);
+
+    // The reader's own session fetches it through the app, and a range is answered as one.
+    const whole = await page.request.get(src!);
+    expect(whole.status()).toBe(200);
+    expect((await whole.body()).length).toBe(song.length);
+
+    const part = await page.request.get(src!, { headers: { Range: "bytes=0-99" } });
+    expect(part.status()).toBe(206);
+    expect(part.headers()["content-range"]).toBe(`bytes 0-99/${song.length}`);
+    expect((await part.body()).length).toBe(100);
+  });
+
+  test("a signed-out visitor is not given the file", async ({ browser, page }) => {
+    await signIn(page, people.instructor);
+    await page.goto(`/modules/${lesson.id}?preview=1`);
+    const src = await page.locator("audio[controls]").getAttribute("src");
+
+    const stranger = await browser.newContext();
+    const response = await stranger.request.get(`http://localhost:3000${src}`);
+    expect(response.status()).toBe(401);
+    await stranger.close();
   });
 });
