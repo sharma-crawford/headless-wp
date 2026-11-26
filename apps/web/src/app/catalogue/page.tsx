@@ -45,7 +45,7 @@ export default async function CataloguePage() {
   );
 
   return (
-    <PageShell code="P18" wide>
+    <PageShell code="P18" wide theme="armory">
       <PageHeading
         eyebrow="Catalogue"
         title="Courses and webinars"

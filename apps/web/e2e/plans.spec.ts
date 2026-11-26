@@ -92,7 +92,7 @@ test.describe("Plans", () => {
   test("an instructor is not offered plans", async ({ page }) => {
     await signIn(page, people.instructor);
 
-    await expect(page.getByRole("banner").getByRole("button", { name: "Plans" })).toHaveCount(0);
+    await expect(page.getByRole("banner").getByRole("link", { name: "Plans" })).toHaveCount(0);
 
     await page.goto(`/builder/programs/${programme.id}`);
     await expect(page.getByRole("link", { name: "Access", exact: true })).toHaveCount(0);

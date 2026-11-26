@@ -141,7 +141,7 @@ export default async function ModulePage({
     : { previous: null, next: null };
 
   return (
-    <PageShell code="P4" wide>
+    <PageShell code="P4" wide theme="armory">
       {preview && <PreviewBanner programmeId={courseModule.program?.id} />}
 
       <CoursePlayer

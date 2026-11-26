@@ -36,3 +36,8 @@
 /* 44px touch targets */
 .header nav a{display:inline-flex;align-items:center;min-height:44px}
 @media print{.header{display:none}}
+/* Log out sits in the nav as a button that reads like a link. */
+.header nav form{margin:0;display:flex}
+.header nav button{display:inline-flex;align-items:center;min-height:44px;background:none;border:0;border-left:1px solid var(--line);padding:0 0 0 16px;font:inherit;color:inherit;cursor:pointer}
+.header nav button:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+@media(max-width:760px){.header nav button{padding-left:10px}}

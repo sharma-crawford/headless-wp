@@ -36,8 +36,8 @@ test.describe("The public catalogue", () => {
     await expect(page).toHaveURL(/\/catalogue$/);
     await expect(page.getByRole("heading", { name: "Courses and webinars" })).toBeVisible();
     // The public header: a way in, and nothing that needs an account.
-    await expect(page.getByRole("banner").getByRole("button", { name: "Sign in" })).toBeVisible();
-    await expect(page.getByRole("banner").getByRole("button", { name: "My Training" })).toHaveCount(0);
+    await expect(page.getByRole("banner").getByRole("link", { name: "Sign in" })).toBeVisible();
+    await expect(page.getByRole("banner").getByRole("link", { name: "My Training" })).toHaveCount(0);
 
     await page.getByRole("link", { name: new RegExp(programme.title) }).click();
 
