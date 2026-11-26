@@ -87,8 +87,8 @@ Each phase ends with something visible and leaves the site working. Estimates ar
 rough and assume the WordPress plugin can be changed.
 
 ### Phase 1: One shell and theme (about 1 to 2 days)
-- Shared Armory header on Castle, Dice, Simulator, course rooms. **Built on
-  `feat/armory-shared-nav`, not yet committed.**
+- Shared Armory header on Castle, Dice, Simulator, course rooms. **Done (PR #73).**
+  Study room pages carry it but were not visually tested (behind login).
 - Same header on the four static immigration pages.
 - Castle, Dice and Simulator read the theme tokens instead of hardcoded fonts and colours.
 - `/programs`, `/modules`, `/units`, `/quizzes`, `/my-training`, `/webinars`,
