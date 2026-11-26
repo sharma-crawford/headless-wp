@@ -11,6 +11,6 @@
     '<img src="/castle/pen-sword-logo.png" alt="The Pen &amp; Sword" width="190" height="67">' +
     '<span><strong>ARMORY</strong><small>Explore. Learn. Practice.</small></span></a>' +
     '<nav aria-label="Armory navigation"><a href="/castle#courtyard">Castle</a>' +
-    '<a href="/castle#list">Course rooms</a><a href="/my-training">My Training</a></nav>';
+    '<a href="/castle#list">Library</a><a href="/my-training">My Training</a></nav>';
   document.body.insertBefore(header, document.body.firstChild);
 })();

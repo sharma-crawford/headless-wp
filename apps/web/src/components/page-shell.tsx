@@ -55,7 +55,6 @@ export default async function PageShell({
     ? await pathsFor()
     : [
         { href: "/castle", label: "Castle", description: "" },
-        { href: "/catalogue", label: "Catalogue", description: "" },
         { href: "/pricing", label: "Pricing", description: "" },
       ];
 
