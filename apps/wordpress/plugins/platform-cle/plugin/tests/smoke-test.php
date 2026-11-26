@@ -3301,6 +3301,22 @@ pcle_eq( $patch_format( $web_prog, 'series' )->get_status(), 200, 'a webinar can
 pcle_eq( pcle_get_program_format( $web_prog ), 'series', 'and is one again' );
 pcle_eq( $patch_format( $web_prog, 'podcast' )->get_status(), 400, 'an unknown format is refused' );
 
+// The room theme: a short list an author chooses from, default until chosen.
+$patch_theme = function ( $id, $theme ) use ( $admin ) {
+	return pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$id}", array( 'room_theme' => $theme ) );
+};
+
+pcle_eq( pcle_get_room_theme( $web_prog ), 'default', 'a programme has the default room until one is chosen' );
+$themed = $patch_theme( $web_prog, 'infernal' );
+pcle_eq( $themed->get_status(), 200, 'an author can choose a room theme' );
+pcle_eq( $themed->get_data()['room_theme'], 'infernal', 'the response says which' );
+pcle_eq( pcle_get_room_theme( $web_prog ), 'infernal', 'and it is stored' );
+pcle_eq( $patch_theme( $web_prog, 'sparkles' )->get_status(), 400, 'an unknown room theme is refused' );
+pcle_eq( pcle_get_room_theme( $web_prog ), 'infernal', 'and changes nothing' );
+pcle_eq( $patch_theme( $web_prog, 'default' )->get_status(), 200, 'the default can be chosen again' );
+pcle_eq( pcle_get_room_theme( $web_prog ), 'default', 'and clears the choice' );
+pcle_eq( get_post_meta( $web_prog, PCLE_ROOM_THEME_META, true ), '', 'leaving nothing stored' );
+
 // A programme with more than one of anything cannot be squeezed into one.
 $refused = $patch_format( $prog_a, 'webinar' );
 pcle_eq( $refused->get_status(), 409, 'a programme with two modules cannot become a webinar' );

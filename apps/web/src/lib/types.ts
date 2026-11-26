@@ -7,6 +7,7 @@
  */
 
 import type { Swatch } from "@/lib/colours";
+import type { RoomTheme } from "@/lib/room-themes";
 
 type Progress = {
   completed: number;
@@ -77,6 +78,8 @@ type Program = {
   content: string;
   progress: Progress;
   format: ProgramFormat;
+  /** How the programme's course room is dressed; set in the builder. */
+  room_theme?: RoomTheme;
   color: Swatch | null;
   /** The cover's URL, or null. */
   cover?: string | null;
@@ -611,6 +614,8 @@ type TreeNode = Authorship & {
   credits?: CreditHours[];
   /** Programmes only. */
   format?: ProgramFormat;
+  /** Programmes only: how the course room is dressed. */
+  room_theme?: RoomTheme;
   /** Events only: minutes. */
   duration?: number;
   /** Events only. */

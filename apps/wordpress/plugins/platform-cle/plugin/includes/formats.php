@@ -21,6 +21,68 @@ defined( 'ABSPATH' ) || exit;
 /** Post meta holding a programme's format. Absent means a series. */
 const PCLE_PROGRAM_FORMAT_META = '_pcle_program_format';
 
+/** Post meta holding a programme's room theme. Absent means the default room. */
+const PCLE_ROOM_THEME_META = '_pcle_room_theme';
+
+/**
+ * The room themes a programme can take: how its course room is dressed.
+ *
+ * A short list on purpose. Each one is a look the app already knows how to
+ * draw, so an author picks one and nobody has to write code. A new look is a
+ * developer's job and a new entry here.
+ *
+ * @return array<string,string> Slug => label.
+ */
+function pcle_room_themes() {
+	return array(
+		'default' => __( 'Default', 'platform-cle' ),
+		'viking'  => __( 'Viking hall', 'platform-cle' ),
+		'noir'    => __( 'Noir case files', 'platform-cle' ),
+		'infernal' => __( 'Infernal bar', 'platform-cle' ),
+		'tidewater' => __( 'Tidewater docket', 'platform-cle' ),
+		'estates' => __( 'Noble estates', 'platform-cle' ),
+		'fairy'   => __( 'Fairy court', 'platform-cle' ),
+		'dojo'    => __( 'Procedure dojo', 'platform-cle' ),
+		'orbit'   => __( 'Orbit station', 'platform-cle' ),
+	);
+}
+
+/**
+ * A programme's room theme.
+ *
+ * @param int $program_id Programme ID.
+ * @return string A slug from pcle_room_themes(); 'default' when none is set or the stored one is gone.
+ */
+function pcle_get_room_theme( $program_id ) {
+	$theme = (string) get_post_meta( (int) $program_id, PCLE_ROOM_THEME_META, true );
+
+	return isset( pcle_room_themes()[ $theme ] ) ? $theme : 'default';
+}
+
+/**
+ * Sets a programme's room theme. 'default' and '' both clear it.
+ *
+ * @param int    $program_id Programme ID.
+ * @param string $theme      A slug from pcle_room_themes().
+ * @return true|WP_Error
+ */
+function pcle_set_room_theme( $program_id, $theme ) {
+	$theme = (string) $theme;
+
+	if ( '' === $theme || 'default' === $theme ) {
+		delete_post_meta( (int) $program_id, PCLE_ROOM_THEME_META );
+		return true;
+	}
+
+	if ( ! isset( pcle_room_themes()[ $theme ] ) ) {
+		return new WP_Error( 'pcle_invalid_room_theme', __( 'Unknown room theme.', 'platform-cle' ), array( 'status' => 400 ) );
+	}
+
+	update_post_meta( (int) $program_id, PCLE_ROOM_THEME_META, $theme );
+
+	return true;
+}
+
 /**
  * The formats a programme can take.
  *

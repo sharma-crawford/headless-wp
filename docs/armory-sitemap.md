@@ -114,9 +114,10 @@ rough and assume the WordPress plugin can be changed.
 
 ### Phase 3: Room themes come from WordPress (about 3 to 4 days for one generic room; more per bespoke layout)
 - Plugin: a room-theme setting on programs, exposed by the API, with a control in
-  the program builder.
-- Fix the import: the script writes `program_format = 'course'`, but the plugin only
-  knows `series` and `webinar`.
+  the program builder. **Done (PR for this step, not yet deployed).** The list is
+  `pcle_room_themes()` in `formats.php` and `lib/room-themes.ts`; keep them in step.
+- Fix the import: the script wrote `program_format = 'course'`, but the plugin only
+  knows `series` and `webinar`. **Done:** the script now writes `series`.
 - Web: one room renders by theme from WP data. `/study/<slug>` redirects to the
   program. Remove `studyPrograms`.
 - Widget registry: lesson content references a widget by key.

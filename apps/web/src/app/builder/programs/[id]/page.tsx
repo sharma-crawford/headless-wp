@@ -24,10 +24,12 @@ import {
   saveLiveAction,
   saveTopicsAction,
   setFormatAction,
+  setRoomThemeAction,
   setStatusAction,
 } from "@/app/actions/authoring";
 import { isAuthenticated } from "@/lib/auth";
 import { swatchSolid } from "@/lib/colours";
+import { ROOM_THEMES } from "@/lib/room-themes";
 import { decodeEntities } from "@/lib/html";
 import type { ChecklistItem, Plan, ProgramAccess, TreeNode, WebinarLive } from "@/lib/types";
 import { setProgramAccessAction } from "@/app/actions/plans";
@@ -247,6 +249,7 @@ export default async function BuilderProgramPage({
           {tab === "details" && (
             <>
               <FormatSection programmeId={tree.id} isWebinar={isWebinar} />
+              {!isWebinar && <RoomSection programmeId={tree.id} theme={tree.room_theme ?? "default"} />}
               <CreditsSection programmeId={tree.id} credits={tree.credits ?? []} />
               <CatalogueListing
                 programmeId={tree.id}
@@ -456,6 +459,36 @@ function FormatSection({ programmeId, isWebinar }: { programmeId: number; isWebi
         >
           Webinar
         </Button>
+      </ActionForm>
+    </Section>
+  );
+}
+
+/** How the course room is dressed: one choice from a short list. */
+function RoomSection({ programmeId, theme }: { programmeId: number; theme: string }) {
+  return (
+    <Section
+      title="Course room"
+      intro="The look of this programme's course room. Pick one from the list; the content comes from the units and modules."
+    >
+      <ActionForm action={setRoomThemeAction} className="flex flex-wrap items-center gap-2">
+        <input type="hidden" name="id" value={programmeId} />
+        <label htmlFor="room-theme" className="sr-only">
+          Room theme
+        </label>
+        <select
+          id="room-theme"
+          name="room_theme"
+          defaultValue={theme}
+          className="h-9 rounded-md border border-zinc-300 bg-white px-3 text-sm"
+        >
+          {ROOM_THEMES.map((option) => (
+            <option key={option.slug} value={option.slug}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <Button type="submit">Save room</Button>
       </ActionForm>
     </Section>
   );

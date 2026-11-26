@@ -514,3 +514,28 @@ test.describe("Backing up a programme", () => {
     await expect(page).toHaveURL(/\/builder$/);
   });
 });
+
+test.describe("Choosing a course room's look", () => {
+  let wordpress: WordPress;
+  let programme: { id: number; title: string };
+
+  test.beforeAll(async () => {
+    wordpress = await WordPress.asAdministrator();
+    programme = await wordpress.createNode("pcle_program", "E2E Room Programme");
+  });
+
+  test.afterAll(async () => {
+    await wordpress.deleteNode(programme.id, true);
+  });
+
+  test("an author picks a room theme and it is still there on reload", async ({ page }) => {
+    await signIn(page, people.instructor);
+    await page.goto(`/builder/programs/${programme.id}?tab=details`);
+
+    await page.getByLabel("Room theme").selectOption("infernal");
+    await page.getByRole("button", { name: "Save room" }).click();
+
+    await page.reload();
+    await expect(page.getByLabel("Room theme")).toHaveValue("infernal");
+  });
+});
