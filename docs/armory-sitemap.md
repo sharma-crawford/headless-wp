@@ -91,7 +91,9 @@ rough and assume the WordPress plugin can be changed.
   Study room pages carry it but were not visually tested (behind login).
 - Same header on the four static immigration pages. **Done (static copy in
   `public/castle-resources/armory/`; keep in sync with `armory-nav`).**
-- Castle, Dice and Simulator read the theme tokens instead of hardcoded fonts and colours.
+- Theme tokens: `public/castle-resources/armory/tokens.css`, taken from the Castle
+  interface. **Castle, the header, Dice and Simulator read them (done).** The static
+  pages and the learner pages still hardcode their own fonts and colours.
 - `/programs`, `/modules`, `/units`, `/quizzes`, `/my-training`, `/webinars`,
   `/pricing`, `/account` adopt the Armory header and theme.
 - Done when: moving between any two learner pages never changes the header or fonts.

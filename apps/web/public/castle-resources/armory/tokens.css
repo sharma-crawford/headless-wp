@@ -1,0 +1,29 @@
+/*
+ * Armory design tokens. The Castle interface is the reference: every value here
+ * is taken from components/castle/castle.module.css. One source for the Next
+ * app (imported by app/globals.css) and the static pages in public/castle-resources.
+ */
+:root {
+  /* Colour */
+  --armory-navy: #082641;        /* text, headings, primary buttons */
+  --armory-ink: #19354b;         /* body copy on tinted surfaces */
+  --armory-blue: #20aeea;        /* accent: current page, focus, rules */
+  --armory-pale: #9cdff1;        /* soft accent, focus rings on dark */
+  --armory-deep: #154563;        /* hover for navy buttons */
+  --armory-steel: #427084;       /* numbers and quiet labels */
+  --armory-muted: #4b5d6b;       /* secondary text */
+  --armory-line: #b9cbd5;        /* borders and dividers */
+  --armory-sky: #d8e8ef;         /* courtyard backdrop */
+  --armory-paper: #fff;          /* page surface */
+  --armory-tint-soft: #f6fbfe;   /* resting card surface */
+  --armory-tint: #eef8fc;        /* panels, row hover */
+  --armory-tint-hover: #e2f3fc;  /* card hover */
+
+  /* Type */
+  --armory-font: Georgia, "Times New Roman", serif;   /* headings, nav, buttons */
+  --armory-font-ui: Arial, Helvetica, sans-serif;     /* base text */
+
+  /* Shape */
+  --armory-radius-sm: 3px;
+  --armory-radius: 4px;
+}
