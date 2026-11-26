@@ -92,7 +92,7 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
         <a className={styles.back} href="#courtyard">← Back to the courtyard</a><h1 ref={heading} tabIndex={-1}>Courses & resources</h1>
         <label className={styles.search}>Find a course or resource<input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search titles and topics" /></label>
         <section className={styles.education}><h2>Armory courses</h2>{catalogueNotice}<div className={styles.buttonGrid}>{programDoors(filteredPrograms)}</div></section>
-        <section className={styles.education}><h2>The nine law-school courses</h2><div className={styles.buttonGrid}>{studyDoors()}</div></section>
+        <section className={styles.education}><h2>Law-school courses (moving to WordPress)</h2><div className={styles.buttonGrid}>{studyDoors()}</div></section>
         <section className={styles.education}><h2>Immigration resources</h2><div className={styles.buttonGrid}>{filteredResources.map((item) => <ResourceButton key={item.path} item={item} />)}</div></section>
         {filteredPrograms.length + filteredStudy.length + filteredResources.length === 0 && <p role="status">No courses or resources match “{query}”. Try another title or topic.</p>}
       </section>}
@@ -120,7 +120,7 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
             {study && <ResourceButton item={study} />}
             {wing?.id === "library" && <>
               <h2>Armory courses</h2>{catalogueNotice}<div className={styles.resourceGrid}>{programDoors(programs)}</div>
-              <h2>The nine law-school courses</h2><div className={styles.resourceGrid}>{studyCourses.map((item) => <a className={styles.resourceButton} href={`#${courseKey(item.path)}`} key={item.path}><strong>{item.title}</strong><b>Enter course room →</b></a>)}</div>
+              <h2>Law-school courses (moving to WordPress)</h2><div className={styles.resourceGrid}>{studyCourses.map((item) => <a className={styles.resourceButton} href={`#${courseKey(item.path)}`} key={item.path}><strong>{item.title}</strong><b>Enter course room →</b></a>)}</div>
             </>}
             {wing?.id === "council" && <div className={styles.resourceGrid}>{immigration.filter((item) => !practicePaths.includes(item.path)).map((item) => <ResourceButton key={item.path} item={item} />)}</div>}
             {wing?.id === "training" && <div className={styles.resourceGrid}>

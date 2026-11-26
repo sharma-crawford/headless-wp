@@ -64,8 +64,8 @@ export default async function PricingPage() {
       {plans.length === 0 ? (
         <p className="mx-auto mt-12 max-w-xl rounded-xl border border-dashed border-zinc-300 bg-white px-6 py-10 text-center text-zinc-600">
           Plans are being prepared.{" "}
-          <Link href="/catalogue" className="font-medium text-brand-700 hover:underline">
-            Browse the catalogue
+          <Link href="/castle#list" className="font-medium text-brand-700 hover:underline">
+            Browse the Library
           </Link>{" "}
           in the meantime.
         </p>
