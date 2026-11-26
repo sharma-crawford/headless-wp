@@ -10,7 +10,7 @@ type Props = {
   /** True on /castle itself, where the Castle views switch by hash without a page load. */
   inCastle?: boolean;
   /**
-   * The reader's own paths (My Training, Webinars, Catalogue, and the staff ones),
+   * The reader's own paths (My Training, Webinars, and the staff ones),
    * from pathsFor(). When given they replace the default My Training / Sign in link.
    */
   paths?: NavPath[];
@@ -18,7 +18,7 @@ type Props = {
   logout?: () => Promise<void>;
 };
 
-/** The one Armory header: Castle, Course rooms, the reader's paths, and sign in or out. */
+/** The one Armory header: Castle, Library, the reader's paths, and sign in or out. */
 export default function ArmoryNav({ current, signedIn = false, inCastle = false, paths, logout }: Props) {
   const base = inCastle ? "" : "/castle";
   const page = (key: NonNullable<Props["current"]>) => (current === key ? "page" : undefined);
@@ -30,7 +30,7 @@ export default function ArmoryNav({ current, signedIn = false, inCastle = false,
       </a>
       <nav aria-label="Armory navigation">
         <a href={`${base}#courtyard`} aria-current={page("courtyard")}>Castle</a>
-        <a href={`${base}#list`} aria-current={page("list")}>Course rooms</a>
+        <a href={`${base}#list`} aria-current={page("list")}>Library</a>
         {paths ? (
           paths
             .filter((path) => !path.href.startsWith("/castle"))
