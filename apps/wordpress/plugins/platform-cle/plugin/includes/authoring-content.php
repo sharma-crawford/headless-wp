@@ -20,6 +20,7 @@
  *   ### Heading           → h3          > quoted          → quote
  *   ![alt](url)           → image       @ url             → embed
  *   [[media:N]]           → an uploaded file: image, or a download link
+ *   [[widget:key]]        → an interactive piece the app draws (see below)
  *   ! Model answer        → the [pcle_model_answer] shortcode
  *   [[block:N:hash]]      → a preserved region (see the token constant below)
  *   anything else         → paragraph
@@ -127,6 +128,21 @@ const PCLE_AUTHORING_TOKEN_PATTERN = '/^\[\[block:(\d+):([0-9a-f]{8})\]\]$/';
 const PCLE_AUTHORING_MEDIA_PATTERN = '/^\[\[media:(\d+)\]\]$/';
 
 /**
+ * The marker for a widget: an interactive piece the app draws in place.
+ *
+ * A widget is code a developer wrote (a set of tabs, a flowchart) and the app
+ * knows it by key. The author places it by typing its key on a line of its own;
+ * what it looks like and does is not theirs to change, and nothing about it
+ * travels through the client but the key. The plugin only checks the key is
+ * well formed: which keys exist is the app's registry, and one the app does not
+ * know draws nothing.
+ *
+ * Stored as a shortcode block, like a model answer, so wp-admin shows it as a
+ * recognisable block and not as opaque HTML.
+ */
+const PCLE_AUTHORING_WIDGET_PATTERN = '/^\[\[widget:([a-z0-9][a-z0-9-]{0,39})\]\]$/';
+
+/**
  * The token identifying one stored block.
  *
  * @param int    $index      Position among the stored top-level blocks.
@@ -216,6 +232,9 @@ function pcle_authoring_line_type( $line ) {
 	}
 	if ( preg_match( PCLE_AUTHORING_MEDIA_PATTERN, $trimmed ) ) {
 		return 'media';
+	}
+	if ( preg_match( PCLE_AUTHORING_WIDGET_PATTERN, $trimmed ) ) {
+		return 'widget';
 	}
 	// Before the model answer test: an image opens "![", which has no space
 	// after the bang, and a model answer opens "! ", which does.
@@ -322,7 +341,7 @@ function pcle_authoring_text_to_blocks( $text ) {
 	$run_type = null;
 
 	// Types that are always exactly one line, and so never form a run.
-	$singles = array( 'heading', 'image', 'embed', 'token', 'media' );
+	$singles = array( 'heading', 'image', 'embed', 'token', 'media', 'widget' );
 
 	foreach ( $lines as $line ) {
 		$type = pcle_authoring_line_type( $line );
@@ -373,6 +392,15 @@ function pcle_authoring_text_to_blocks( $text ) {
 			$blocks[] = array(
 				'type' => 'media',
 				'id'   => (int) $m[1],
+			);
+			continue;
+		}
+
+		if ( 'widget' === $type ) {
+			preg_match( PCLE_AUTHORING_WIDGET_PATTERN, trim( $line ), $m );
+			$blocks[] = array(
+				'type' => 'widget',
+				'key'  => $m[1],
 			);
 			continue;
 		}
@@ -491,6 +519,16 @@ function pcle_authoring_blocks_to_parts( $blocks ) {
 						'markup' => $markup,
 					);
 				}
+				break;
+
+			case 'widget':
+				$out[] = array(
+					'type'   => 'markup',
+					'markup' => sprintf(
+						"<!-- wp:shortcode -->\n[pcle_widget key=\"%s\"]\n<!-- /wp:shortcode -->",
+						$block['key']
+					),
+				);
 				break;
 
 			case 'list':
@@ -689,6 +727,11 @@ function pcle_authoring_text_from_content( $content ) {
 				// Only our own model answer is authored text; any other
 				// shortcode is preserved whole, since we cannot know what its
 				// body means.
+				if ( preg_match( '#^\[pcle_widget key="([a-z0-9][a-z0-9-]{0,39})"\]$#', trim( $inner ), $w ) ) {
+					$parts[] = sprintf( '[[widget:%s]]', $w[1] );
+					break;
+				}
+
 				if ( ! preg_match( '#^\[pcle_model_answer\](.*)\[/pcle_model_answer\]$#s', trim( $inner ), $m ) ) {
 					$parts[] = pcle_authoring_preserve( $index, $block, $preserved );
 					break;

@@ -590,3 +590,35 @@ test.describe("Choosing a course room's look", () => {
     await expect(page.locator(".room")).toHaveCount(0);
   });
 });
+
+test.describe("Placing a widget in a lesson", () => {
+  let wordpress: WordPress;
+  let programme: { id: number; title: string };
+  let lesson: { id: number; title: string };
+
+  test.beforeAll(async () => {
+    wordpress = await WordPress.asAdministrator();
+    programme = await wordpress.createNode("pcle_program", "E2E Widget Programme");
+    const unit = await wordpress.createNode("pcle_unit", "E2E Widget Unit", programme.id);
+    lesson = await wordpress.createNode("pcle_module", "E2E Widget Module", unit.id);
+    await wordpress.updateNode(lesson.id, {
+      body: "Before the tabs.\n\n[[widget:corporate-veil-tabs]]\n\n[[widget:not-a-real-widget]]\n\nAfter the tabs.",
+    });
+  });
+
+  test.afterAll(async () => {
+    await wordpress.deleteNode(programme.id, true);
+  });
+
+  test("a widget key draws the registered piece in place, and an unknown key draws nothing", async ({ page }) => {
+    await signIn(page, people.instructor);
+    await page.goto(`/modules/${lesson.id}?preview=1`);
+
+    await expect(page.getByText("Before the tabs.")).toBeVisible();
+    await expect(page.getByRole("tab", { name: "Walkovszky" })).toBeVisible();
+    await page.getByRole("tab", { name: "Radaszewski" }).click();
+    await expect(page.getByRole("heading", { name: "Radaszewski v. Telecom Corp." })).toBeVisible();
+    await expect(page.getByText("After the tabs.")).toBeVisible();
+    await expect(page.locator("[data-widget]")).toHaveCount(0);
+  });
+});
