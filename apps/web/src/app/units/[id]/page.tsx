@@ -36,7 +36,7 @@ export default async function UnitPage({
   const program = await outlineFor(unit.program?.id, preview);
 
   return (
-    <PageShell code="P5" wide>
+    <PageShell code="P5" wide theme="armory">
       {preview && <PreviewBanner programmeId={unit.program?.id} />}
 
       <CoursePlayer

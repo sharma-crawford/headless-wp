@@ -85,7 +85,7 @@ export default async function CatalogueItemPage({
   const live = program.next_live ? scheduled(program.next_live) : null;
 
   return (
-    <PageShell code="P19" wide>
+    <PageShell code="P19" wide theme="armory">
       <Breadcrumbs
         trail={[{ label: "Catalogue", href: "/catalogue" }, { label: program.title }]}
       />

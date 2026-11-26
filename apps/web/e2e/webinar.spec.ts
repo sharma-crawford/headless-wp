@@ -119,7 +119,7 @@ test.describe("The webinars hub", () => {
     page,
   }) => {
     await signIn(page, people.participant);
-    await page.getByRole("banner").getByRole("button", { name: "Webinars" }).click();
+    await page.getByRole("banner").getByRole("link", { name: "Webinars" }).click();
 
     await expect(page).toHaveURL(/\/webinars$/);
 
