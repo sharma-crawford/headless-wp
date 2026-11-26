@@ -53,9 +53,9 @@ async function pathsFor(): Promise<Path[]> {
         "Live sessions coming up, with the link to join, and webinars to watch on demand.",
     },
     {
-      href: "/catalogue",
-      label: "Catalogue",
-      description: "Everything the platform offers, by topic and format.",
+      href: "/castle#list",
+      label: "Library",
+      description: "Every course and webinar, by topic and format.",
     },
   ];
 

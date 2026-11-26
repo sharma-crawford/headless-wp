@@ -157,12 +157,11 @@ Decided (Rafael, 2026-11-26):
 2. **Immigration tools: public.** The static pages, Dice and Simulator need no
    login. Moving them inside the shell (Phase 1) keeps them public.
 3. **Front door: `/castle`.** Castle stays the Armory home. `/` is unchanged.
+4. **Header links: Library.** The header is Castle, Library, then My Training or
+   Sign in. "Library" replaces both "Course rooms" and "Catalogue" (done).
 
 ## Open decisions
 
-4. **Header links.** After Phase 2 the header is Castle, Library, My Training or
-   Sign in. Confirm "Library" replaces both "Course rooms" and "Catalogue". The
-   Catalogue link is out of the header today; confirm that stays.
 5. **Who owns what.** Suggested: Edward for room themes and widgets, Rekha for design
    sign-off, plugin work needs someone with WordPress access. To be confirmed.
 
