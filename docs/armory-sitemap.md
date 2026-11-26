@@ -89,7 +89,8 @@ rough and assume the WordPress plugin can be changed.
 ### Phase 1: One shell and theme (about 1 to 2 days)
 - Shared Armory header on Castle, Dice, Simulator, course rooms. **Done (PR #73).**
   Study room pages carry it but were not visually tested (behind login).
-- Same header on the four static immigration pages.
+- Same header on the four static immigration pages. **Done (static copy in
+  `public/castle-resources/armory/`; keep in sync with `armory-nav`).**
 - Castle, Dice and Simulator read the theme tokens instead of hardcoded fonts and colours.
 - `/programs`, `/modules`, `/units`, `/quizzes`, `/my-training`, `/webinars`,
   `/pricing`, `/account` adopt the Armory header and theme.
