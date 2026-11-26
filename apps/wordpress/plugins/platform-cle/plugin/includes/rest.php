@@ -413,6 +413,30 @@ function pcle_register_curriculum_routes() {
 	}
 
 	/*
+	 * Study mode: the same quiz with the answers showing, when the author has
+	 * allowed it. Same per-programme guard, so only someone who has the
+	 * programme gets it.
+	 */
+	register_rest_route(
+		'platform-cle/v1',
+		'/quizzes/(?P<id>\d+)/study',
+		array(
+			'methods'             => 'GET',
+			'callback'            => 'pcle_rest_get_quiz_study',
+			'permission_callback' => function ( $request ) {
+				return pcle_rest_guard_item( $request, 'pcle_quiz' );
+			},
+			'args'                => array(
+				'id' => array(
+					'required'          => true,
+					'type'              => 'integer',
+					'sanitize_callback' => 'absint',
+				),
+			),
+		)
+	);
+
+	/*
 	 * Submitting goes through the same per-programme guard as reading. It is
 	 * registered separately only because it is the one write among them.
 	 */
@@ -581,6 +605,36 @@ function pcle_rest_get_quiz( $request ) {
 			'attempts'  => pcle_get_quiz_attempts( $quiz->ID ),
 			'module'    => pcle_rest_shape_ref( $module ),
 			'program'   => pcle_rest_shape_ref( $program ),
+		)
+	);
+}
+
+/**
+ * GET /quizzes/<id>/study — the quiz with its answers showing.
+ *
+ * Refused (403) unless an author allowed study mode on this quiz, and always
+ * refused for a quiz that gates completion. The programme guard has already
+ * run, so the reader has the programme.
+ *
+ * @param WP_REST_Request $request Request.
+ * @return WP_REST_Response|WP_Error
+ */
+function pcle_rest_get_quiz_study( $request ) {
+	$quiz = get_post( (int) $request['id'] );
+
+	if ( ! pcle_quiz_allows_study( $quiz->ID ) ) {
+		return new WP_Error(
+			'pcle_study_not_allowed',
+			__( 'This quiz is not open for study.', 'platform-cle' ),
+			array( 'status' => 403 )
+		);
+	}
+
+	return rest_ensure_response(
+		array(
+			'id'        => (int) $quiz->ID,
+			'title'     => get_the_title( $quiz ),
+			'questions' => pcle_quiz_questions_for_study( $quiz->ID ),
 		)
 	);
 }
