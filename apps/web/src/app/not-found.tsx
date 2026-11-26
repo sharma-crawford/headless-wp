@@ -33,8 +33,8 @@ export default function NotFound() {
           <Button nativeButton={false} render={<Link href="/" />}>
             Go to the menu
           </Button>
-          <Button variant="outline" nativeButton={false} render={<Link href="/catalogue" />}>
-            Browse the catalogue
+          <Button variant="outline" nativeButton={false} render={<Link href="/castle#list" />}>
+            Browse the Library
           </Button>
         </div>
       </div>

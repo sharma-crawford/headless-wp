@@ -1,3 +1,6 @@
-// Retain existing preview bookmarks while using the integrated castle route.
-export { default, metadata } from "../castle/page";
-export const dynamic = "force-dynamic";
+import { redirect } from "next/navigation";
+
+// Old preview bookmarks land on the real castle route.
+export default function CastlePreviewRedirect() {
+  redirect("/castle");
+}

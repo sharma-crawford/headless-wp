@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { courses, type CastleProgram } from "./courses";
 import { education, educationHref } from "./education";
 import ArmoryNav from "@/components/armory/armory-nav";
@@ -22,8 +21,10 @@ function ResourceButton({ item }: { item: (typeof education)[number] }) {
   </a>;
 }
 
-export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = false, catalogueUnavailable = false }: {
+export default function CastleExplorer({ programs = EMPTY_PROGRAMS, library = null, signedIn = false, catalogueUnavailable = false }: {
   programs?: CastleProgram[];
+  /** The catalogue browser (search, topics, cards), drawn on the server from WordPress. */
+  library?: ReactNode;
   signedIn?: boolean;
   catalogueUnavailable?: boolean;
 }) {
@@ -36,7 +37,6 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
   const study = studyCourses.find((item) => courseKey(item.path) === view);
   const inRoom = Boolean(wing || program || study);
   const matches = (text: string) => text.toLowerCase().includes(query.trim().toLowerCase());
-  const filteredPrograms = programs.filter((item) => matches(`${item.title} ${item.description}`));
   const filteredStudy = studyCourses.filter((item) => matches(`${item.title} ${item.description}`));
   const filteredResources = immigration.filter((item) => matches(`${item.title} ${item.description}`));
 
@@ -65,7 +65,7 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
   function studyDoors() {
     return filteredStudy.map((item) => <a className={styles.resourceButton} href={`#${courseKey(item.path)}`} key={item.path}><strong>{item.title}</strong><span>{item.description}</span><b>Enter course room →</b></a>);
   }
-  const catalogueNotice = catalogueUnavailable ? <p role="status" className={styles.sampleNotice}>The Armory catalogue is temporarily unavailable. You can still explore the education resources or <Link href="/catalogue">try the catalogue again</Link>.</p> : programs.length === 0 ? <p>No published Armory courses are available yet. Explore the education library below.</p> : null;
+  const catalogueNotice = catalogueUnavailable ? <p role="status" className={styles.sampleNotice}>The Armory catalogue is temporarily unavailable. You can still explore the education resources or reload this page in a moment.</p> : programs.length === 0 ? <p>No published Armory courses are available yet. Explore the education library below.</p> : null;
 
   return <div className={styles.shell}>
     <a className={styles.skip} href="#castle-main">Skip to courses</a>
@@ -90,11 +90,11 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
 
       {view === "list" && <section className={styles.listPage}>
         <a className={styles.back} href="#courtyard">← Back to the courtyard</a><h1 ref={heading} tabIndex={-1}>Courses & resources</h1>
-        <label className={styles.search}>Find a course or resource<input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search titles and topics" /></label>
-        <section className={styles.education}><h2>Armory courses</h2>{catalogueNotice}<div className={styles.buttonGrid}>{programDoors(filteredPrograms)}</div></section>
-        <section className={styles.education}><h2>The nine law-school courses</h2><div className={styles.buttonGrid}>{studyDoors()}</div></section>
+        <label className={styles.search}>Find a law-school course or resource<input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search titles and topics" /></label>
+        <section className={`${styles.education} armory-theme`}><h2>Armory courses and webinars</h2>{catalogueNotice}{library}</section>
+        <section className={styles.education}><h2>Law-school courses (moving to WordPress)</h2><div className={styles.buttonGrid}>{studyDoors()}</div></section>
         <section className={styles.education}><h2>Immigration resources</h2><div className={styles.buttonGrid}>{filteredResources.map((item) => <ResourceButton key={item.path} item={item} />)}</div></section>
-        {filteredPrograms.length + filteredStudy.length + filteredResources.length === 0 && <p role="status">No courses or resources match “{query}”. Try another title or topic.</p>}
+        {filteredStudy.length + filteredResources.length === 0 && <p role="status">No courses or resources match “{query}”. Try another title or topic.</p>}
       </section>}
 
       {inRoom && <>
@@ -120,7 +120,7 @@ export default function CastleExplorer({ programs = EMPTY_PROGRAMS, signedIn = f
             {study && <ResourceButton item={study} />}
             {wing?.id === "library" && <>
               <h2>Armory courses</h2>{catalogueNotice}<div className={styles.resourceGrid}>{programDoors(programs)}</div>
-              <h2>The nine law-school courses</h2><div className={styles.resourceGrid}>{studyCourses.map((item) => <a className={styles.resourceButton} href={`#${courseKey(item.path)}`} key={item.path}><strong>{item.title}</strong><b>Enter course room →</b></a>)}</div>
+              <h2>Law-school courses (moving to WordPress)</h2><div className={styles.resourceGrid}>{studyCourses.map((item) => <a className={styles.resourceButton} href={`#${courseKey(item.path)}`} key={item.path}><strong>{item.title}</strong><b>Enter course room →</b></a>)}</div>
             </>}
             {wing?.id === "council" && <div className={styles.resourceGrid}>{immigration.filter((item) => !practicePaths.includes(item.path)).map((item) => <ResourceButton key={item.path} item={item} />)}</div>}
             {wing?.id === "training" && <div className={styles.resourceGrid}>

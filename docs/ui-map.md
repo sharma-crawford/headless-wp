@@ -47,13 +47,13 @@ pointing at the right thing.
 | P15 | Not allowed | any of the above, when WordPress refuses access | Anyone without access | `components/access-error.tsx` |
 | P16 | Colours | `/colours` | Authors (the defaults and display take an administrator) | `app/colours/page.tsx` |
 | P17 | Webinars | `/webinars` | Everyone: upcoming live sessions and on-demand webinars | `app/webinars/page.tsx` |
-| P18 | Catalogue | `/catalogue` | Anyone, signed in or not | `app/catalogue/page.tsx` |
+| P18 | Catalogue | `/catalogue` | Redirects to the Library, `/castle#list` (P24) | `app/catalogue/page.tsx` |
 | P19 | Catalogue programme | `/catalogue/:id` | Anyone, signed in or not | `app/catalogue/[id]/page.tsx` |
 | P20 | Plans | `/plans` | Administrators | `app/plans/page.tsx` |
 | P21 | Pricing | `/pricing` | Anyone, signed in or not | `app/pricing/page.tsx` |
 | P22 | Not found | any address with nothing at it | Anyone | `app/not-found.tsx` |
 
-| P23 | Castle preview alias | `/castle-preview` | Same integrated castle as P24 | `app/castle-preview/page.tsx` |
+| P23 | Castle preview alias | `/castle-preview` | Redirects to `/castle` (P24) | `app/castle-preview/page.tsx` |
 | P24 | Castle | `/castle` | Public course rooms; enrolled training when signed in | `app/castle/page.tsx` |
 
 ## Popups
