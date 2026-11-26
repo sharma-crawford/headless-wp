@@ -34,7 +34,7 @@ export default async function WebinarsPage() {
   const [next, ...later] = webinars.upcoming;
 
   return (
-    <PageShell code="P17" wide>
+    <PageShell code="P17" wide theme="armory">
       <PageHeading
         eyebrow="Learn live"
         title="Webinars"

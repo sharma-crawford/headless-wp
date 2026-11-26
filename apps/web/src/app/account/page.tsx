@@ -67,7 +67,7 @@ export default async function AccountPage() {
   }
 
   return (
-    <PageShell code="P7">
+    <PageShell code="P7" theme="armory">
       <PageHeading
         eyebrow="Account"
         title="Your account"

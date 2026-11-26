@@ -23,7 +23,7 @@ export default async function MyTrainingPage() {
   }
 
   return (
-    <PageShell code="P2" wide>
+    <PageShell code="P2" wide theme="armory">
       <PageHeading
         eyebrow="Your learning"
         title="My Training"

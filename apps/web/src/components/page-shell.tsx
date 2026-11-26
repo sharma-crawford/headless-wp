@@ -1,15 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { Button } from "@pcle/ui/components/button";
 import { cn } from "@pcle/ui/lib/utils";
 
 import { logoutAction } from "@/app/actions/auth";
+import ArmoryNav from "@/components/armory/armory-nav";
 import { PageCode } from "@/components/screen-code";
-import NavLink from "@/components/nav-link";
 import { isAuthenticated } from "@/lib/auth";
 import { pathsFor, type Path } from "@/lib/navigation";
-import { getMe } from "@/lib/wordpress";
 
 /**
  * Shared frame for the signed-in pages: a header offering the same paths the
@@ -28,6 +26,7 @@ export default async function PageShell({
   children,
   code,
   wide = false,
+  theme,
 }: {
   children: ReactNode;
   /**
@@ -42,6 +41,8 @@ export default async function PageShell({
    * clipped in it.
    */
   wide?: boolean;
+  /** `armory` puts the screen on the Castle fonts and colours (see armory-theme.css). Learner screens only. */
+  theme?: "armory";
 }) {
   /*
    * Signed out, the only screens that render a shell are the public ones
@@ -57,7 +58,6 @@ export default async function PageShell({
         { href: "/catalogue", label: "Catalogue", description: "" },
         { href: "/pricing", label: "Pricing", description: "" },
       ];
-  const name = signedIn ? await displayName() : "";
 
   return (
     /*
@@ -65,65 +65,8 @@ export default async function PageShell({
       version stamp as its last child; a screen-height shell would push that
       below the fold on every page, which is a footer nobody ever reads.
     */
-    <div className="flex flex-1 flex-col bg-zinc-50">
-      <header className="sticky top-0 z-30 border-b border-zinc-200 bg-white/95 shadow-[0_1px_2px_rgb(15_23_42/0.04)] backdrop-blur">
-        <div className="mx-auto flex h-16 max-w-6xl items-center gap-6 px-4 sm:px-6">
-          <Wordmark />
-
-          {/*
-            The paths scroll sideways on a phone rather than wrapping: a
-            wrapped header changes height from screen to screen, which reads
-            as the page jumping.
-          */}
-          <nav
-            aria-label="Main"
-            className="-mx-1 flex min-w-0 flex-1 items-center overflow-x-auto [scrollbar-width:none]"
-          >
-            {paths.map((path) => (
-              <NavLink
-                key={path.href}
-                href={path.href}
-                label={path.label}
-                external={path.external}
-              />
-            ))}
-          </nav>
-
-          {!signedIn ? (
-            <Button
-              className="h-9 shrink-0 px-4"
-              nativeButton={false}
-              render={<Link href="/login" />}
-            >
-              Sign in
-            </Button>
-          ) : (
-            /* Everyone's, whatever their role, so it sits with Log out rather than in pathsFor(). */
-            <div className="flex shrink-0 items-center gap-1">
-              <Button
-                variant="ghost"
-                className="h-9 gap-2 px-2 text-zinc-700"
-                nativeButton={false}
-                render={<Link href="/account" />}
-              >
-                <Initials name={name} />
-                <span className="hidden sm:inline">Account</span>
-                <span className="sr-only sm:hidden">Account</span>
-              </Button>
-
-              <form action={logoutAction}>
-                <Button
-                  type="submit"
-                  variant="ghost"
-                  className="h-9 px-2.5 text-zinc-500"
-                >
-                  Log out
-                </Button>
-              </form>
-            </div>
-          )}
-        </div>
-      </header>
+    <div className={cn("flex flex-1 flex-col bg-zinc-50", theme === "armory" && "armory-theme")}>
+      <ArmoryNav signedIn={signedIn} paths={paths} logout={logoutAction} />
 
       <main
         className={cn(
@@ -137,18 +80,6 @@ export default async function PageShell({
       <PageCode code={code} />
     </div>
   );
-}
-
-/**
- * The reader's name, or nothing if WordPress cannot say. Decoration only:
- * the header must render for a reader whose token has just expired.
- */
-async function displayName(): Promise<string> {
-  try {
-    return (await getMe()).display_name;
-  } catch {
-    return "";
-  }
 }
 
 /** The site's mark: goes to the menu, like every wordmark. */
@@ -191,20 +122,3 @@ export function Wordmark({
 }
 
 /** A round badge with the reader's initials, beside Account. */
-function Initials({ name }: { name: string }) {
-  const initials = name
-    .split(/[\s@._-]+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase())
-    .join("");
-
-  return (
-    <span
-      aria-hidden="true"
-      className="grid size-7 place-items-center rounded-full bg-brand-100 text-xs font-semibold text-brand-800"
-    >
-      {initials || "·"}
-    </span>
-  );
-}

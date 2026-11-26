@@ -65,7 +65,7 @@ export default async function ProgramPage({
   const studySubject = Object.entries(studyPrograms).find(([, programmeId]) => programmeId === program.id)?.[0];
 
   return (
-    <PageShell code="P3" wide>
+    <PageShell code="P3" wide theme="armory">
       {preview && <PreviewBanner programmeId={Number(id)} />}
 
       <Breadcrumbs

@@ -98,7 +98,7 @@ export default async function QuizPage({
       : { next: null };
 
   return (
-    <PageShell code="P6" wide>
+    <PageShell code="P6" wide theme="armory">
       {preview && <PreviewBanner programmeId={quiz.program?.id} />}
 
       <CoursePlayer

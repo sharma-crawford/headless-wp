@@ -47,7 +47,7 @@ export default async function PricingPage() {
   const featured = plans.length >= 2 ? plans[Math.floor(plans.length / 2)].id : null;
 
   return (
-    <PageShell code="P21" wide>
+    <PageShell code="P21" wide theme="armory">
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-xs font-semibold tracking-[0.14em] text-brand-600 uppercase">
           Plans and pricing
