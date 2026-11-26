@@ -2,6 +2,7 @@ import { notFound, redirect } from "next/navigation";
 import { isAuthenticated } from "@/lib/auth";
 import { getProgram, WordPressApiError } from "@/lib/wordpress";
 import { studyPrograms } from "@/lib/study-courses";
+import ArmoryNav from "@/components/armory/armory-nav";
 import { renderAccessError } from "@/components/access-error";
 import "@/components/study/armory.css";
 
@@ -28,5 +29,5 @@ export default async function StudyPage({ params }: PageProps<"/study/[subject]"
   if (refused instanceof WordPressApiError && refused.status === 403) redirect(`/catalogue/${id}?locked=1`);
   if (refused) return renderAccessError(refused);
   const Room = (await rooms[subject as keyof typeof rooms]()).default;
-  return <div className="armory-study"><nav className="armory-study-nav" aria-label="Course navigation"><a href="/castle#library">← Castle library</a><a href={`/programs/${id}`}>Lessons and progress →</a></nav><Room /></div>;
+  return <div className="armory-study"><ArmoryNav signedIn /><nav className="armory-study-nav" aria-label="Course navigation"><a href="/castle#library">← Castle library</a><a href={`/programs/${id}`}>Lessons and progress →</a></nav><Room /></div>;
 }
