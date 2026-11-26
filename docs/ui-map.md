@@ -53,7 +53,7 @@ pointing at the right thing.
 | P21 | Pricing | `/pricing` | Anyone, signed in or not | `app/pricing/page.tsx` |
 | P22 | Not found | any address with nothing at it | Anyone | `app/not-found.tsx` |
 
-| P23 | Castle preview alias | `/castle-preview` | Same integrated castle as P24 | `app/castle-preview/page.tsx` |
+| P23 | Castle preview alias | `/castle-preview` | Redirects to `/castle` (P24) | `app/castle-preview/page.tsx` |
 | P24 | Castle | `/castle` | Public course rooms; enrolled training when signed in | `app/castle/page.tsx` |
 
 ## Popups

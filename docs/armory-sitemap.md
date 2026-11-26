@@ -104,7 +104,8 @@ rough and assume the WordPress plugin can be changed.
 ### Phase 2: Library is the catalogue (about 1 day)
 - Castle's Library reads WP programs only. Delete the hardcoded nine-course list.
 - One course page (today `/catalogue/:id`) with enroll and sign-up.
-- Remove the stale catalogue links and the `/castle-preview` alias.
+- Remove the stale catalogue links. `/castle-preview` now redirects to `/castle`
+  (**done**; kept as a redirect so old bookmarks work).
 - Done when: publishing a program in the builder makes it appear in the Library
   with no deploy.
 
