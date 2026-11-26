@@ -1853,6 +1853,14 @@ pcle_ok( false !== strpos( $audio_markup, '<audio controls' ), 'a song is drawn 
 pcle_ok( false !== strpos( $audio_markup, 'wp:audio' ), 'in an audio block' );
 pcle_eq( trim( pcle_authoring_text_from_content( $audio_markup )['text'] ), sprintf( '[[media:%d]]', $mp3_id ), 'which reads back as its media token' );
 
+// An audio-only .m4a sniffs as video/mp4; it is accepted when it really is an MP4 container.
+$m4a_bytes = "\x00\x00\x00\x20ftypisom\x00\x00\x02\x00isomiso2mp41" . str_repeat( "\x00", 400 );
+$up_m4a    = pcle_upload_to_node( $editable_module, 'song.m4a', $m4a_bytes );
+pcle_eq( $up_m4a->get_status(), 200, 'an m4a song is accepted' );
+$created_posts[] = $up_m4a->get_data()['id'];
+pcle_eq( $up_m4a->get_data()['mime'], 'audio/mp4', 'and is stored as audio' );
+pcle_eq( pcle_upload_to_node( $editable_module, 'fake.m4a', '<?php echo 1;' )->get_status(), 400, 'a file named .m4a that is not an MP4 container is still refused' );
+
 // Byte ranges, so audio can seek and Safari will play it at all.
 pcle_eq( pcle_parse_byte_range( 'bytes=0-99', 1000 ), array( 0, 99 ), 'a range from the start' );
 pcle_eq( pcle_parse_byte_range( 'bytes=500-', 1000 ), array( 500, 999 ), 'an open-ended range runs to the end' );

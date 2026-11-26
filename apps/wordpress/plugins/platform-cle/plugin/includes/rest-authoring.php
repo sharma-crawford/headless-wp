@@ -1386,6 +1386,26 @@ function pcle_authoring_store_upload( $node_id, $file ) {
 	$allowed = pcle_authoring_upload_types();
 	$checked = wp_check_filetype_and_ext( $file['tmp_name'], $file['name'], $allowed );
 
+	/*
+	 * An .m4a is an MP4 container, and the sniffer calls an audio-only one
+	 * "video/mp4", which the check above then refuses as the wrong kind of
+	 * file. It is accepted here when the name says m4a and the bytes really are
+	 * an MP4 container (an "ftyp" box at offset 4); anything else keeps failing.
+	 */
+	$trusted_m4a = false;
+
+	if ( empty( $checked['type'] ) && 'm4a' === strtolower( pathinfo( (string) $file['name'], PATHINFO_EXTENSION ) ) ) {
+		$head = (string) file_get_contents( $file['tmp_name'], false, null, 0, 12 ); // phpcs:ignore WordPress.WP.AlternativeFunctions
+
+		if ( 'ftyp' === substr( $head, 4, 4 ) ) {
+			$checked     = array(
+				'ext'  => 'm4a',
+				'type' => 'audio/mp4',
+			);
+			$trusted_m4a = true;
+		}
+	}
+
 	if ( empty( $checked['type'] ) || ! in_array( $checked['type'], $allowed, true ) ) {
 		return new WP_Error(
 			'pcle_file_type_not_allowed',
@@ -1413,6 +1433,11 @@ function pcle_authoring_store_upload( $node_id, $file ) {
 		'mimes'     => $allowed,
 	);
 
+	// WordPress's own handler would sniff the same file and refuse it again.
+	if ( $trusted_m4a ) {
+		$overrides['test_type'] = false;
+	}
+
 	/*
 	 * Which mover applies depends on where the bytes came from, and the two are
 	 * not interchangeable. A real HTTP upload sits in PHP's upload tmp dir and
@@ -1432,6 +1457,11 @@ function pcle_authoring_store_upload( $node_id, $file ) {
 		pcle_protected_upload_override( 0 );
 
 		return new WP_Error( 'pcle_upload_failed', $handled['error'], array( 'status' => 500 ) );
+	}
+
+	// With the type test off, the handler reports no type: say what was checked.
+	if ( $trusted_m4a ) {
+		$handled['type'] = 'audio/mp4';
 	}
 
 	$attachment_id = wp_insert_attachment(
