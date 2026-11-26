@@ -256,6 +256,16 @@ export default function QuizEditor({ node }: { node: NodeDetail }) {
               />
               Passing is required to complete the module
             </label>
+
+            <label className="flex items-center gap-2 pb-2 text-sm text-zinc-700">
+              <input
+                type="checkbox"
+                name="study_mode"
+                defaultChecked={node.study_mode ?? false}
+                className={CHECKBOX_CLASS}
+              />
+              Let learners study with the answers showing
+            </label>
           </div>
 
           {/*

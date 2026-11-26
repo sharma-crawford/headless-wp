@@ -668,6 +668,7 @@ async function saveQuizAction(
       questions,
       pass_mark: Number(formData.get("pass_mark") ?? 70),
       gates_completion: formData.get("gates_completion") !== null,
+      study_mode: formData.get("study_mode") !== null,
     });
   } catch (error) {
     return { error: describe(error) };

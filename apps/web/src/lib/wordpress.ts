@@ -9,6 +9,7 @@ import type {
   Catalogue,
   CatalogueDetail,
   CatalogueProgram,
+  QuizStudy,
   EnrollmentResult,
   People,
   Person,
@@ -273,6 +274,15 @@ async function getMyTraining(): Promise<{ programs: TrainingProgram[] }> {
  * honoured for teaching staff only, and it writes nothing — see
  * pcle_previewing_as_participant() in the plugin.
  */
+/**
+ * A quiz opened for study, with the right answers and feedback showing.
+ * Only for learners who have the programme, and only when an author allowed
+ * it on this quiz (403 otherwise).
+ */
+async function getQuizStudy(id: number): Promise<QuizStudy> {
+  return wordpressFetch(`/platform-cle/v1/quizzes/${id}/study`, { auth: true }) as Promise<QuizStudy>;
+}
+
 async function getProgram(id: number, preview = false): Promise<Program> {
   return wordpressFetch(
     `/platform-cle/v1/programs/${id}${preview ? "?preview=1" : ""}`,
@@ -696,6 +706,7 @@ async function updateNode(
     questions?: QuizQuestion[];
     pass_mark?: number;
     gates_completion?: boolean;
+    study_mode?: boolean;
   }
 ): Promise<TreeNode> {
   return wordpressFetch(`/platform-cle/v1/authoring/nodes/${id}`, {
@@ -771,6 +782,7 @@ export {
   logout,
   getMyTraining,
   getProgram,
+  getQuizStudy,
   getUnit,
   getModule,
   setModuleCompletion,

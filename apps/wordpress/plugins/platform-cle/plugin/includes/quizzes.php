@@ -50,6 +50,9 @@ const PCLE_QUIZ_QUESTIONS_META = '_pcle_quiz_questions';
 /** Whether passing this quiz is required to complete its module. */
 const PCLE_QUIZ_GATES_META = '_pcle_quiz_gates_completion';
 
+/** Post meta: this quiz may be studied with its answers showing. Absent means no. */
+const PCLE_QUIZ_STUDY_META = '_pcle_quiz_study_mode';
+
 /** Percentage of the available score needed to pass. */
 const PCLE_QUIZ_PASS_MARK_META = '_pcle_quiz_pass_mark';
 
@@ -343,6 +346,59 @@ function pcle_set_quiz_questions( $quiz_id, $questions ) {
  */
 function pcle_quiz_gates_completion( $quiz_id ) {
 	return (bool) get_post_meta( (int) $quiz_id, PCLE_QUIZ_GATES_META, true );
+}
+
+/**
+ * May an enrolled learner study this quiz with the answers showing?
+ *
+ * Off unless an author turned it on, and never on for a quiz that gates
+ * completion: showing the key of an assessment that counts defeats it. The
+ * imported law-school courses are practice, so they can be opened up one by
+ * one without touching anything that carries credit.
+ *
+ * @param int $quiz_id Quiz post ID.
+ * @return bool
+ */
+function pcle_quiz_allows_study( $quiz_id ) {
+	return (bool) get_post_meta( (int) $quiz_id, PCLE_QUIZ_STUDY_META, true )
+		&& ! pcle_quiz_gates_completion( $quiz_id );
+}
+
+/**
+ * The questions with their answers and feedback showing, for study mode.
+ *
+ * The one participant-facing shape that carries the key. Callers must have
+ * checked pcle_quiz_allows_study() and that the reader has the programme;
+ * pcle_rest_get_quiz_study() does both.
+ *
+ * @param int $quiz_id Quiz post ID.
+ * @return array
+ */
+function pcle_quiz_questions_for_study( $quiz_id ) {
+	$out = array();
+
+	foreach ( pcle_get_quiz_questions( $quiz_id ) as $question ) {
+		$shaped = array(
+			'key'      => $question['key'],
+			'type'     => $question['type'],
+			'prompt'   => $question['prompt'],
+			'help'     => $question['help'],
+			'feedback' => $question['feedback'],
+			'choices'  => array(),
+		);
+
+		foreach ( $question['choices'] as $choice ) {
+			$shaped['choices'][] = array(
+				'key'     => $choice['key'],
+				'text'    => $choice['text'],
+				'correct' => ! empty( $choice['correct'] ),
+			);
+		}
+
+		$out[] = $shaped;
+	}
+
+	return $out;
 }
 
 /**
