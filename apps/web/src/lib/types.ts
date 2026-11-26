@@ -70,6 +70,20 @@ type UnitDetail = Unit & {
  * How a programme is shaped. A webinar is one video: a single unit and module
  * the app never shows as such, sending the participant straight to the module.
  */
+/** A quiz opened for study: the questions with the key and the feedback showing. */
+type QuizStudy = {
+  id: number;
+  title: string;
+  questions: {
+    key: string;
+    type: string;
+    prompt: string;
+    help: string;
+    feedback: string;
+    choices: { key: string; text: string; correct: boolean }[];
+  }[];
+};
+
 type ProgramFormat = "series" | "webinar";
 
 type Program = {
@@ -363,6 +377,7 @@ export type {
   Catalogue,
   CatalogueDetail,
   CatalogueProgram,
+  QuizStudy,
   People,
   Person,
   GrantableRole,
@@ -610,6 +625,8 @@ type TreeNode = Authorship & {
   questions?: number;
   /** Quizzes only: whether passing is required to complete the module. */
   gates_completion?: boolean;
+  /** Quizzes only: learners who have the programme may study it with the answers showing. */
+  study_mode?: boolean;
   /** Programmes only. */
   credits?: CreditHours[];
   /** Programmes only. */

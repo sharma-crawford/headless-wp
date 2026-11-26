@@ -2230,6 +2230,40 @@ pcle_eq( $refused->get_error_data()['status'], 400, 'the refusal is a 400' );
 pcle_eq( $refused->get_error_data()['missing'], array( 'must' ), 'the refusal names the missing question' );
 pcle_eq( count( pcle_get_quiz_attempts( $req_quiz, $student ) ), 0, 'a refused submission records nothing' );
 
+// Study mode: the answers showing, only where an author allowed it, and
+// never for a quiz that counts.
+$study_quiz = pcle_make_post( 'pcle_quiz', 'TEST Study Quiz', array( '_pcle_module_id' => $module2 ) );
+$created_posts[] = $study_quiz;
+pcle_set_quiz_questions( $study_quiz, array(
+	array( 'key' => 's1', 'prompt' => 'Pick B', 'type' => 'single', 'feedback' => 'Because B.',
+		'choices' => array( array( 'key' => 'a', 'text' => 'A' ), array( 'key' => 'b', 'text' => 'B', 'correct' => true ) ) ),
+) );
+
+$study = function ( $uid ) use ( $study_quiz ) {
+	return pcle_authoring_call( $uid, 'GET', "/platform-cle/v1/quizzes/{$study_quiz}/study" );
+};
+$patch_study = function ( $fields ) use ( $admin, $study_quiz ) {
+	return pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$study_quiz}", $fields );
+};
+
+pcle_eq( pcle_quiz_allows_study( $study_quiz ), false, 'a quiz is closed to study until an author opens it' );
+pcle_eq( $study( $student )->get_status(), 403, 'so the study route refuses a learner who has the programme' );
+pcle_eq( $patch_study( array( 'study_mode' => true ) )->get_data()['study_mode'], true, 'an author can open a quiz to study' );
+
+$studied = $study( $student );
+pcle_eq( $studied->get_status(), 200, 'then a learner who has the programme can study it' );
+pcle_eq( $studied->get_data()['questions'][0]['choices'][1]['correct'], true, 'and sees which choice is right' );
+pcle_eq( $studied->get_data()['questions'][0]['feedback'], 'Because B.', 'and the feedback' );
+
+$taking = pcle_authoring_call( $student, 'GET', "/platform-cle/v1/quizzes/{$study_quiz}" );
+pcle_eq( isset( $taking->get_data()['questions'][0]['choices'][1]['correct'] ), false, 'sitting the quiz still shows no answers' );
+
+$patch_study( array( 'gates_completion' => true ) );
+pcle_eq( pcle_quiz_allows_study( $study_quiz ), false, 'a quiz that gates completion is never open to study' );
+pcle_eq( $study( $student )->get_status(), 403, 'and the route refuses it, whatever the flag says' );
+$patch_study( array( 'gates_completion' => false, 'study_mode' => false ) );
+pcle_eq( $study( $student )->get_status(), 403, 'closing study closes the route' );
+
 /*
  * Attempts must not outlive what they point at. WordPress reuses
  * auto-increment IDs, so an orphan row is not merely invisible — it can end up

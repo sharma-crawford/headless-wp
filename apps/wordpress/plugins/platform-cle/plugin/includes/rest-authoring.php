@@ -281,6 +281,7 @@ function pcle_authoring_shape_node( $post ) {
 		// empty assessment in front of a participant.
 		$node['questions']        = count( pcle_get_quiz_questions( $post->ID ) );
 		$node['gates_completion'] = pcle_quiz_gates_completion( $post->ID );
+		$node['study_mode']       = (bool) get_post_meta( $post->ID, PCLE_QUIZ_STUDY_META, true );
 	}
 
 	if ( 'pcle_program' === $post->post_type ) {
@@ -890,7 +891,7 @@ function pcle_authoring_update_node( $request ) {
 		 * recolouring a programme should not make it "last edited" by
 		 * whoever chose the colour.
 		 */
-		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'room_theme', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'credits' );
+		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'room_theme', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'study_mode', 'credits' );
 
 		if ( ! array_filter( $fields, fn( $field ) => null !== $request[ $field ] ) ) {
 			return rest_ensure_response( pcle_authoring_shape_node( get_post( $id ) ) );
@@ -928,6 +929,10 @@ function pcle_authoring_update_node( $request ) {
 
 		if ( null !== $request['gates_completion'] ) {
 			update_post_meta( $id, PCLE_QUIZ_GATES_META, rest_sanitize_boolean( $request['gates_completion'] ) ? 1 : 0 );
+		}
+
+		if ( null !== $request['study_mode'] ) {
+			update_post_meta( $id, PCLE_QUIZ_STUDY_META, rest_sanitize_boolean( $request['study_mode'] ) ? 1 : 0 );
 		}
 	}
 
@@ -1266,6 +1271,7 @@ function pcle_authoring_get_node( $request ) {
 		$node['questions']        = pcle_get_quiz_questions( $post->ID );
 		$node['pass_mark']        = pcle_quiz_pass_mark( $post->ID );
 		$node['gates_completion'] = pcle_quiz_gates_completion( $post->ID );
+		$node['study_mode']       = (bool) get_post_meta( $post->ID, PCLE_QUIZ_STUDY_META, true );
 		$node['max_score']        = pcle_quiz_max_score( $post->ID );
 	}
 

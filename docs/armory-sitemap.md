@@ -135,7 +135,12 @@ rough and assume the WordPress plugin can be changed.
   [builder-guide.md](builder-guide.md).
 - Rooms use the WP quizzes (446 questions are already imported as drafts).
 - A study-mode endpoint for flashcards and "show answers", for enrolled learners
-  only, because WP quizzes normally hide answers until attempted.
+  only, because WP quizzes normally hide answers until attempted. **Done in the
+  plugin (not yet deployed):** `GET /quizzes/<id>/study`, opt-in per quiz with a
+  checkbox in the quiz editor, and never for a quiz that gates completion.
+- Finding: the 4 MB limit on songs is the web app's request cap (Vercel and
+  `bodySizeLimit`), not the plugin's. Audio types alone will not fix it; uploads
+  over 4 MB need a chunked path (web sends parts, the plugin assembles them).
 - Delete `quiz-data.json`, `study-data.json`, `course-assets/`, `/api/study/grade`,
   `/study-assets`.
 - Note: deleting files stops the repo growing but does not shrink git history.
