@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@pcle/ui/globals.css";
+@import "../../public/castle-resources/armory/tokens.css";
 @source "../../../../libs/ui/src";
 
 /*

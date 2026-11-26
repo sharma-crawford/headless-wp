@@ -1,12 +1,12 @@
 /* Shared Armory header, moved out of castle.module.css so every Armory page uses one source. */
-.header{--navy:#082641;--blue:#20aeea;--line:#b9cbd5;background:#fff;color:var(--navy)}
+.header{--navy:var(--armory-navy);--blue:var(--armory-blue);--line:var(--armory-line);background:#fff;color:var(--navy)}
 .header *{box-sizing:border-box}.header a{color:inherit;text-decoration:none}.header a:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
 .header{height:80px;padding:0 3.3%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:30px}
 .brand{display:flex;align-items:center;gap:23px}
-.brandInitial{font:36px Georgia;border-right:1px solid var(--line);padding-right:24px;color:var(--navy)}
-.brand strong{font:28px Georgia;letter-spacing:.22em}
-.brand small{display:block;font:italic 17px Georgia;margin-top:2px}
-.header nav{display:flex;gap:28px;align-items:center;font:20px Georgia}
+.brandInitial{font:36px var(--armory-font);border-right:1px solid var(--line);padding-right:24px;color:var(--navy)}
+.brand strong{font:28px var(--armory-font);letter-spacing:.22em}
+.brand small{display:block;font:italic 17px var(--armory-font);margin-top:2px}
+.header nav{display:flex;gap:28px;align-items:center;font:20px var(--armory-font)}
 .header nav a{padding:10px 0;border-bottom:2px solid transparent}
 .header nav a[aria-current]{border-bottom-color:var(--blue)}
 .header nav a+a{border-left:1px solid var(--line);padding-left:28px}
