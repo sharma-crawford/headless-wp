@@ -118,6 +118,10 @@ rough and assume the WordPress plugin can be changed.
   `pcle_room_themes()` in `formats.php` and `lib/room-themes.ts`; keep them in step.
 - Fix the import: the script wrote `program_format = 'course'`, but the plugin only
   knows `series` and `webinar`. **Done:** the script now writes `series`.
+- Web, first cut **done**: a programme with a theme is drawn inside that room's frame
+  (palette, hero band, accent buttons) on its course page, from WP data. The lesson
+  bodies are still the plain imported text; the bespoke layouts return as widgets
+  (Phase 4). Rooms at `/study/<slug>` stay until they match.
 - Web: one room renders by theme from WP data. `/study/<slug>` redirects to the
   program. Remove `studyPrograms`.
 - Widget registry: lesson content references a widget by key.
