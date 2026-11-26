@@ -28,7 +28,7 @@ import {
   TooltipTrigger,
 } from "@pcle/ui/components/tooltip";
 
-import { uploadMediaAction } from "@/app/actions/authoring";
+import { requestUploadTicketAction, uploadMediaAction } from "@/app/actions/authoring";
 import type { PreservedRegion } from "@/lib/types";
 
 /**
@@ -62,12 +62,13 @@ const BLOCK_MARKERS = /^(#{2,3} |- |> |! )/;
  * pcle_authoring_upload_types() in rest-authoring.php, which sniffs the real
  * type rather than trusting the name.
  */
-const ACCEPTED_EXTENSIONS = ["pdf", "doc", "docx", "jpg", "jpeg", "png", "gif", "webp"];
+const ACCEPTED_EXTENSIONS = ["pdf", "doc", "docx", "jpg", "jpeg", "png", "gif", "webp", "mp3", "m4a"];
 
 /**
- * The most one upload may be: bodySizeLimit in next.config.ts, less room for
- * the rest of the request. Larger files are refused by the framework with an
- * error that names neither the file nor the limit.
+ * The most one upload may be through this app: bodySizeLimit in next.config.ts,
+ * less room for the rest of the request. A larger file is not refused; it goes
+ * straight to WordPress by a one-time address (see sendDirect), and the server
+ * says what its own limit is.
  */
 const MAX_UPLOAD_BYTES = 4 * 1024 * 1024 - 64 * 1024;
 
@@ -76,14 +77,60 @@ function refusal(file: File): string | null {
   const extension = file.name.split(".").pop()?.toLowerCase() ?? "";
 
   if (!ACCEPTED_EXTENSIONS.includes(extension)) {
-    return `${file.name} is not a file the builder takes — PDF, Word or an image (JPG, PNG, GIF, WebP).`;
-  }
-
-  if (file.size > MAX_UPLOAD_BYTES) {
-    return `${file.name} is over 4 MB, the most one file may be.`;
+    return `${file.name} is not a file the builder takes — PDF, Word, an image (JPG, PNG, GIF, WebP) or audio (MP3, M4A).`;
   }
 
   return null;
+}
+
+type SendResult = {
+  media?: { token: string; filename: string };
+  error?: string;
+};
+
+/** A file small enough to come through this app, which is most of them. */
+async function sendThroughApp(nodeId: number, file: File): Promise<SendResult> {
+  const body = new FormData();
+  body.set("file", file);
+
+  return uploadMediaAction(nodeId, body);
+}
+
+/**
+ * A large file, sent from the browser straight to WordPress.
+ *
+ * The app asks for a one-time address (with the author's own credentials, on
+ * the server), then the browser posts the file to it. The file never passes
+ * through this app, so the 4 MB the host allows a request here does not apply;
+ * WordPress's own limit does, and its refusal is passed on in its own words.
+ */
+async function sendDirect(nodeId: number, file: File): Promise<SendResult> {
+  const ticket = await requestUploadTicketAction(nodeId);
+
+  if (ticket.error || !ticket.url) {
+    return { error: ticket.error ?? "The upload could not be started." };
+  }
+
+  if (ticket.maxBytes && file.size > ticket.maxBytes) {
+    const megabytes = Math.floor(ticket.maxBytes / (1024 * 1024));
+    return { error: `${file.name} is over the ${megabytes} MB this site accepts.` };
+  }
+
+  const body = new FormData();
+  body.set("file", file);
+
+  try {
+    const response = await fetch(ticket.url, { method: "POST", body });
+    const json = await response.json();
+
+    if (!response.ok || !json.token) {
+      return { error: json?.message ?? "The file could not be attached." };
+    }
+
+    return { media: { token: json.token, filename: json.filename } };
+  } catch {
+    return { error: "The file could not be sent. Check the connection and try again." };
+  }
 }
 
 /** Whether a drag is carrying files, as opposed to text being moved about. */
@@ -423,10 +470,10 @@ export default function BodyEditor({
       const failed: string[] = [];
 
       for (const file of sendable) {
-        const body = new FormData();
-        body.set("file", file);
-
-        const result = await uploadMediaAction(nodeId, body);
+        const result =
+          file.size > MAX_UPLOAD_BYTES
+            ? await sendDirect(nodeId, file)
+            : await sendThroughApp(nodeId, file);
 
         if (result.error || !result.media) {
           failed.push(`${file.name}: ${result.error ?? "it could not be attached."}`);

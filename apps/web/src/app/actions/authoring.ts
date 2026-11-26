@@ -19,6 +19,7 @@ import {
   reorderChildren,
   updateNode,
   uploadNodeMedia,
+  requestUploadTicket,
   WordPressApiError,
 } from "@/lib/wordpress";
 
@@ -706,6 +707,24 @@ async function uploadMediaAction(
   }
 }
 
+/**
+ * Asks for an address the browser can send one large file to directly.
+ *
+ * For files over what a request here may carry. The author's own right to edit
+ * the node is checked by WordPress when the ticket is asked for and again when
+ * it is used.
+ */
+async function requestUploadTicketAction(
+  id: number
+): Promise<{ url?: string; maxBytes?: number; error?: string }> {
+  try {
+    const ticket = await requestUploadTicket(id);
+    return { url: ticket.url, maxBytes: ticket.max_bytes };
+  } catch (error) {
+    return { error: describe(error) };
+  }
+}
+
 /** The most a backup file may be; see bodySizeLimit in next.config.ts. */
 const MAX_BACKUP_BYTES = 4 * 1024 * 1024;
 
@@ -773,6 +792,7 @@ export {
   createNodeAction,
   restoreProgramAction,
   uploadMediaAction,
+  requestUploadTicketAction,
   saveQuizAction,
   createProgramAction,
   saveBodyAction,

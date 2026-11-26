@@ -129,8 +129,10 @@ rough and assume the WordPress plugin can be changed.
 
 ### Phase 4: Content leaves the repo (about 2 to 3 days)
 - Art and songs go to the WP media library and attach to modules. The builder
-  accepts PDF, Word and images only, up to 4 MB each, so songs (`.m4a`, 4 to 5 MB)
-  need audio types and a higher limit first. See [builder-guide.md](builder-guide.md).
+  now takes MP3 and M4A, and files over 4 MB go from the browser straight to
+  WordPress by a one-time address (**done**, plugin not yet deployed; the limit is
+  then the server's own PHP upload limit, still to be checked on the host). See
+  [builder-guide.md](builder-guide.md).
 - Rooms use the WP quizzes (446 questions are already imported as drafts).
 - A study-mode endpoint for flashcards and "show answers", for enrolled learners
   only, because WP quizzes normally hide answers until attempted. **Done in the

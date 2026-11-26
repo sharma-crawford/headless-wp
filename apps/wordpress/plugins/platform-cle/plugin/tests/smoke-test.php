@@ -1831,6 +1831,53 @@ wp_set_current_user( 0 );
 $up_out = pcle_upload_to_node( $editable_module, 'brief.pdf', $pdf_bytes );
 pcle_eq( $up_out->get_status(), 401, 'nor can a signed-out visitor' );
 
+/*
+ * Direct uploads: the browser sends the file to a one-time address, so a file
+ * larger than the web app's own request cap can still be attached. Held to the
+ * same rules as the ordinary route, and the address is good for one file.
+ */
+pcle_section( '# Direct uploads' );
+
+$ticket_for = function ( $uid, $node ) {
+	return pcle_authoring_call( $uid, 'POST', "/platform-cle/v1/authoring/nodes/{$node}/upload-ticket" );
+};
+$send_to = function ( $ticket, $filename, $bytes ) {
+	$tmp = tempnam( sys_get_temp_dir(), 'pcle' );
+	file_put_contents( $tmp, $bytes ); // phpcs:ignore WordPress.WP.AlternativeFunctions
+
+	wp_set_current_user( 0 ); // the browser carries no credentials, only the address
+	$request = new WP_REST_Request( 'POST', "/platform-cle/v1/upload/{$ticket}" );
+	$request->set_file_params( array( 'file' => array( 'name' => $filename, 'tmp_name' => $tmp, 'error' => 0, 'size' => strlen( $bytes ) ) ) );
+
+	return rest_do_request( $request );
+};
+$ticket_of = function ( $response ) {
+	return basename( $response->get_data()['url'] );
+};
+
+pcle_eq( $ticket_for( $student, $editable_module )->get_status(), 403, 'a participant cannot be given an upload address' );
+pcle_eq( $ticket_for( 0, $editable_module )->get_status(), 401, 'nor can a signed-out visitor' );
+
+$issued = $ticket_for( $admin, $editable_module );
+pcle_eq( $issued->get_status(), 200, 'an author is given an upload address' );
+pcle_eq( strpos( $issued->get_data()['url'], '/platform-cle/v1/upload/' ) !== false, true, 'it points at the upload route' );
+pcle_eq( $issued->get_data()['max_bytes'] > 0, true, 'and says how large a file the server takes' );
+
+$sent = $send_to( $ticket_of( $issued ), 'direct.pdf', $pdf_bytes );
+pcle_eq( $sent->get_status(), 200, 'a file sent to it is attached' );
+$created_posts[] = $sent->get_data()['id'];
+pcle_eq( $sent->get_data()['protected'], true, 'and lands in the protected directory like any other' );
+
+pcle_eq( $send_to( $ticket_of( $issued ), 'again.pdf', $pdf_bytes )->get_status(), 401, 'the address is good for one file' );
+pcle_eq( $send_to( str_repeat( 'a', 40 ), 'x.pdf', $pdf_bytes )->get_status(), 401, 'a made-up address is refused' );
+
+$php_ticket = $ticket_for( $admin, $editable_module );
+pcle_eq( $send_to( $ticket_of( $php_ticket ), 'shell.php', '<?php echo 1;' )->get_status(), 400, 'a file the builder does not take is refused here too' );
+pcle_eq( $send_to( $ticket_of( $php_ticket ), 'retry.pdf', $pdf_bytes )->get_status(), 401, 'and a refused file spends the address' );
+
+$audio_types = array_values( pcle_authoring_upload_types() );
+pcle_eq( in_array( 'audio/mpeg', $audio_types, true ) && in_array( 'audio/mp4', $audio_types, true ), true, 'the builder takes songs (mp3 and m4a)' );
+
 /* ------------------------------------------------------------------ */
 /* 25) The week-to-unit migration                                     */
 /* ------------------------------------------------------------------ */
