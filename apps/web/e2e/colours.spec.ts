@@ -27,8 +27,26 @@ test.describe("Colours", () => {
 
   /** Opens the colour menu (D3) for one titled item and picks a swatch. */
   async function choose(page: import("@playwright/test").Page, title: string, swatch: string) {
-    await page.getByRole("button", { name: new RegExp(`^Colour for ${title}:`) }).click();
+    await openMenu(page, title, page.getByRole("menuitem", { name: swatch, exact: true }));
     await page.getByRole("menuitem", { name: swatch, exact: true }).click();
+  }
+
+  /**
+   * Opens one item's colour menu. A click that lands before the page has
+   * hydrated does nothing, and on a slow runner that is the usual case, so
+   * click again until the menu is there instead of waiting on a closed one.
+   */
+  async function openMenu(
+    page: import("@playwright/test").Page,
+    title: string,
+    inMenu: import("@playwright/test").Locator
+  ) {
+    await expect(async () => {
+      if (!(await inMenu.isVisible())) {
+        await page.getByRole("button", { name: new RegExp(`^Colour for ${title}:`) }).click();
+      }
+      await expect(inMenu).toBeVisible({ timeout: 3000 });
+    }).toPass({ timeout: 20_000 });
   }
 
   test("a programme's colour reaches everything inside it", async ({ page }) => {
@@ -61,8 +79,9 @@ test.describe("Colours", () => {
       page.getByRole("button", { name: `Colour for ${courseModule.title}: Plum soft, from the unit` })
     ).toBeVisible();
 
-    await page.getByRole("button", { name: new RegExp(`^Colour for ${unit.title}:`) }).click();
-    await page.getByRole("menuitem", { name: "Use the programme's colour" }).click();
+    const giveBack = page.getByRole("menuitem", { name: "Use the programme's colour" });
+    await openMenu(page, unit.title, giveBack);
+    await giveBack.click();
 
     await expect(
       page.getByRole("button", { name: `Colour for ${unit.title}: Teal strong, from the programme` })
