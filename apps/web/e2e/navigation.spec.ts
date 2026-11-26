@@ -11,9 +11,9 @@ test.describe("What each role is offered", () => {
     await signIn(page, people.participant);
 
     const header = page.getByRole("banner");
-    await expect(header.getByRole("button", { name: "My Training" })).toBeVisible();
-    await expect(header.getByRole("button", { name: "Build" })).toHaveCount(0);
-    await expect(header.getByRole("button", { name: "Reports" })).toHaveCount(0);
+    await expect(header.getByRole("link", { name: "My Training" })).toBeVisible();
+    await expect(header.getByRole("link", { name: "Build" })).toHaveCount(0);
+    await expect(header.getByRole("link", { name: "Reports" })).toHaveCount(0);
   });
 
   test("an instructor is offered the builder and reports", async ({ page }) => {
@@ -21,15 +21,15 @@ test.describe("What each role is offered", () => {
     await page.goto("/reports");
 
     const header = page.getByRole("banner");
-    await expect(header.getByRole("button", { name: "Build" })).toBeVisible();
-    await expect(header.getByRole("button", { name: "Reports" })).toBeVisible();
+    await expect(header.getByRole("link", { name: "Build" })).toBeVisible();
+    await expect(header.getByRole("link", { name: "Reports" })).toBeVisible();
 
     /*
      * Administration is WordPress, and teaching does not grant it. The
      * header and the menu render one list, so this also asserts they agree.
      */
     await expect(
-      header.getByRole("button", { name: "Administration" })
+      header.getByRole("link", { name: "Administration" })
     ).toHaveCount(0);
   });
 
@@ -38,7 +38,7 @@ test.describe("What each role is offered", () => {
     await page.goto("/reports");
 
     await expect(
-      page.getByRole("banner").getByRole("button", { name: "Administration" })
+      page.getByRole("banner").getByRole("link", { name: "Administration" })
     ).toBeVisible();
   });
 });

@@ -88,7 +88,7 @@ test.describe("Where People is offered", () => {
     await page.goto("/reports");
 
     await expect(
-      page.getByRole("banner").getByRole("button", { name: "People" })
+      page.getByRole("banner").getByRole("link", { name: "People" })
     ).toBeVisible();
   });
 
@@ -96,7 +96,7 @@ test.describe("Where People is offered", () => {
     await signIn(page, people.participant);
 
     await expect(
-      page.getByRole("banner").getByRole("button", { name: "People" })
+      page.getByRole("banner").getByRole("link", { name: "People" })
     ).toHaveCount(0);
   });
 });
