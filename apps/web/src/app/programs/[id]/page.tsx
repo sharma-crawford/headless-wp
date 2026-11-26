@@ -15,6 +15,7 @@ import { decodeEntities } from "@/lib/html";
 import { firstUnfinished } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
 import { studyPrograms } from "@/lib/study-courses";
+import { ROOM_THEMES } from "@/lib/room-themes";
 import type { Program } from "@/lib/types";
 import { WordPressApiError, getProgram } from "@/lib/wordpress";
 
@@ -62,6 +63,8 @@ export default async function ProgramPage({
   const started = completed > 0;
   const finished = total > 0 && completed === total;
   const credits = (program.credits ?? []).filter((credit) => credit.hours > 0);
+  const theme = program.room_theme && program.room_theme !== "default" ? program.room_theme : null;
+  const themeLabel = ROOM_THEMES.find((option) => option.slug === theme)?.label;
   const studySubject = Object.entries(studyPrograms).find(([, programmeId]) => programmeId === program.id)?.[0];
 
   return (
@@ -75,21 +78,30 @@ export default async function ProgramPage({
         ]}
       />
 
+      {/* A programme with a room theme is drawn inside that room's frame (room-themes.css). */}
+      <div className={theme ? `room room-${theme} mt-5` : undefined}>
+
       {/* The course's front page: what it is, how far you are, and the way on. */}
-      <div className="mt-5 grid overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-[0_1px_2px_rgb(15_23_42/0.04)] md:grid-cols-[minmax(0,1fr)_20rem]">
+      <div
+        className={`grid overflow-hidden rounded-2xl md:grid-cols-[minmax(0,1fr)_20rem] ${
+          theme ? "room-hero" : "mt-5 border border-zinc-200 bg-white shadow-[0_1px_2px_rgb(15_23_42/0.04)]"
+        }`}
+      >
         <div className="p-6 sm:p-8">
-          <p className="text-xs font-semibold tracking-[0.14em] text-brand-600 uppercase">Course</p>
-          <h1 className="mt-2 text-3xl leading-tight font-semibold text-zinc-950 sm:text-4xl">
+          <p className={`text-xs font-semibold tracking-[0.14em] uppercase ${theme ? "room-eyebrow" : "text-brand-600"}`}>
+            {themeLabel ?? "Course"}
+          </p>
+          <h1 className={`mt-2 text-3xl leading-tight font-semibold sm:text-4xl ${theme ? "text-white" : "text-zinc-950"}`}>
             {decodeEntities(program.title)}
           </h1>
 
           {credits.length > 0 && (
-            <p className="mt-3 text-sm font-medium text-zinc-700">
+            <p className={`mt-3 text-sm font-medium ${theme ? "text-white/80" : "text-zinc-700"}`}>
               CLE credit: {credits.map((credit) => `${credit.label} ${credit.hours} h`).join(" · ")}
             </p>
           )}
 
-          <div className="mt-6 max-w-md">
+          <div className={`mt-6 max-w-md ${theme ? "rounded-lg bg-white p-3" : ""}`}>
             <ProgressBar progress={program.progress} label="Programme progress" />
           </div>
 
@@ -154,6 +166,7 @@ export default async function ProgramPage({
             </div>
           </aside>
         )}
+      </div>
       </div>
     </PageShell>
   );

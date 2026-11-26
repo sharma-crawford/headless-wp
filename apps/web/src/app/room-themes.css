@@ -1,0 +1,62 @@
+/*
+ * Course-room themes. Wrap a programme page in `.room.room-<slug>` and the
+ * brand utilities, buttons and links inside it take that room's palette; the
+ * hero band uses the deep colour and accent. One block per theme: a theme is
+ * five colours, so a new look is a short entry here and one in the plugin
+ * (pcle_room_themes) and lib/room-themes.ts.
+ *
+ * The palettes are taken from the bespoke rooms in components/study/courses.
+ */
+.room {
+  background: var(--room-paper);
+  color: var(--room-ink);
+  border-radius: 1rem;
+  padding: 1.25rem;
+
+  --color-brand-50: color-mix(in srgb, var(--room-link) 7%, white);
+  --color-brand-100: color-mix(in srgb, var(--room-link) 14%, white);
+  --color-brand-200: color-mix(in srgb, var(--room-link) 26%, white);
+  --color-brand-300: color-mix(in srgb, var(--room-link) 45%, white);
+  --color-brand-400: color-mix(in srgb, var(--room-link) 70%, white);
+  --color-brand-500: color-mix(in srgb, var(--room-link) 88%, white);
+  --color-brand-600: var(--room-link);
+  --color-brand-700: color-mix(in srgb, var(--room-link) 85%, black);
+  --color-brand-800: color-mix(in srgb, var(--room-link) 70%, black);
+  --color-brand-900: var(--room-deep);
+  --color-brand-950: color-mix(in srgb, var(--room-deep) 80%, black);
+  --foreground: var(--room-ink);
+  --primary: var(--room-link);
+  --primary-foreground: #fff;
+  --accent: color-mix(in srgb, var(--room-link) 10%, white);
+  --accent-foreground: var(--room-ink);
+  --ring: var(--room-accent);
+}
+
+@media (min-width: 640px) {
+  .room { padding: 2rem; }
+}
+
+.room-hero {
+  background: var(--room-deep);
+  color: #fff;
+  border-bottom: 5px solid var(--room-accent);
+  border-radius: 0.75rem;
+}
+
+.room-hero .room-eyebrow { color: var(--room-accent); }
+
+/* Buttons on the deep band take the accent, which reads on it. */
+.room-hero a.bg-brand-600 {
+  background: var(--room-accent);
+  color: var(--room-deep);
+}
+.room-hero a.bg-brand-600:hover { background: color-mix(in srgb, var(--room-accent) 85%, white); }
+
+.room-viking    { --room-deep: #142e36; --room-link: #0c6668; --room-accent: #d9b45f; --room-paper: #f5f0e4; --room-ink: #142e36; }
+.room-noir      { --room-deep: #15181a; --room-link: #8a5a1f; --room-accent: #d0a56b; --room-paper: #f3efe8; --room-ink: #1d1f20; }
+.room-infernal  { --room-deep: #210e1e; --room-link: #a42944; --room-accent: #d9604a; --room-paper: #fff9f2; --room-ink: #2a1625; }
+.room-tidewater { --room-deep: #0b2630; --room-link: #065c68; --room-accent: #ffbf6e; --room-paper: #eff3f0; --room-ink: #162a30; }
+.room-estates   { --room-deep: #251e31; --room-link: #74451b; --room-accent: #e8be73; --room-paper: #f6efdf; --room-ink: #2b241d; }
+.room-fairy     { --room-deep: #203d32; --room-link: #5e3775; --room-accent: #e5ca88; --room-paper: #f8f6ee; --room-ink: #26382f; }
+.room-dojo      { --room-deep: #233337; --room-link: #97382b; --room-accent: #dd6b45; --room-paper: #f8f1df; --room-ink: #233337; }
+.room-orbit     { --room-deep: #0b1733; --room-link: #075b8f; --room-accent: #7fc4ff; --room-paper: #f5faff; --room-ink: #0b1733; }

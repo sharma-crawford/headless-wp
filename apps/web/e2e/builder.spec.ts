@@ -538,4 +538,22 @@ test.describe("Choosing a course room's look", () => {
     await page.reload();
     await expect(page.getByLabel("Room theme")).toHaveValue("infernal");
   });
+
+  test("a themed programme is drawn in its room, and a plain one is not", async ({ page }) => {
+    // The test above leaves a theme on it; start from a plain one.
+    await wordpress.updateNode(programme.id, { room_theme: "default" });
+    await signIn(page, people.instructor);
+
+    await page.goto(`/programs/${programme.id}?preview=1`);
+    await expect(page.locator(".room")).toHaveCount(0);
+
+    await wordpress.updateNode(programme.id, { room_theme: "tidewater" });
+    await page.reload();
+    await expect(page.locator(".room.room-tidewater")).toHaveCount(1);
+    await expect(page.getByText("Tidewater docket", { exact: true })).toBeVisible();
+
+    await wordpress.updateNode(programme.id, { room_theme: "default" });
+    await page.reload();
+    await expect(page.locator(".room")).toHaveCount(0);
+  });
 });
