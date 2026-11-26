@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation";
 import type { ReactNode } from "react";
 
+import ArmoryNav from "@/components/armory/armory-nav";
 import LoginForm from "@/components/login-form";
-import { Wordmark } from "@/components/page-shell";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
 
@@ -44,34 +44,39 @@ export default async function LoginPage({
   const passwordChanged = params.changed === "password";
 
   return (
-    <main className="grid flex-1 bg-white lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
-      <BrandPanel />
+    <div className="armory-theme flex flex-1 flex-col bg-white">
+      <ArmoryNav />
+      <main className="grid flex-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
+        <BrandPanel />
 
-      <div className="flex flex-col items-center justify-center gap-4 px-4 py-16 sm:px-6">
-        <div className="mb-4 lg:hidden">
-          <Wordmark compact={false} />
+        <div className="flex flex-col items-center justify-center gap-4 px-4 py-16 sm:px-6">
+          {sessionEnded && !passwordChanged && (
+            <p
+              role="status"
+              className="max-w-sm text-center text-sm text-zinc-600"
+            >
+              You were signed out — perhaps your password was changed on another
+              device. Sign in again.
+            </p>
+          )}
+          {passwordChanged && (
+            <p
+              role="status"
+              className="max-w-sm text-center text-sm text-emerald-700"
+            >
+              Your password is changed. Sign in with the new one.
+            </p>
+          )}
+          <LoginForm />
         </div>
-
-        {sessionEnded && !passwordChanged && (
-          <p role="status" className="max-w-sm text-center text-sm text-zinc-600">
-            You were signed out — perhaps your password was changed on another
-            device. Sign in again.
-          </p>
-        )}
-        {passwordChanged && (
-          <p role="status" className="max-w-sm text-center text-sm text-emerald-700">
-            Your password is changed. Sign in with the new one.
-          </p>
-        )}
-        <LoginForm />
-      </div>
-      <PageCode code="P0" />
-    </main>
+        <PageCode code="P0" />
+      </main>
+    </div>
   );
 }
 
 /**
- * The teal half of the screen on a wide display: who this is, and what is
+ * The navy half of the screen on a wide display: who this is, and what is
  * waiting on the other side of the form. Hidden on a phone, where it would
  * only push the form below the fold.
  *
@@ -80,15 +85,7 @@ export default async function LoginPage({
  */
 function BrandPanel() {
   return (
-    <div
-      className="relative hidden overflow-hidden bg-brand-900 px-12 py-14 text-white lg:flex lg:flex-col"
-      style={{
-        backgroundImage:
-          "radial-gradient(90% 70% at 0% 0%, rgb(255 255 255 / 0.12), transparent 60%), radial-gradient(70% 60% at 100% 100%, oklch(65.5% 0.121 222.8 / 0.45), transparent 70%)",
-      }}
-    >
-      <Wordmark inverted compact={false} />
-
+    <div className="relative hidden overflow-hidden bg-brand-900 px-12 py-14 text-white lg:flex lg:flex-col">
       <div className="my-auto max-w-md">
         <p className="text-xs font-semibold tracking-[0.14em] text-brand-300 uppercase">
           Continuing Legal Education
