@@ -427,6 +427,26 @@ async function setRoomThemeAction(
   return {};
 }
 
+async function setSelfCompletionAction(
+  _prev: BuilderActionState,
+  formData: FormData
+): Promise<BuilderActionState> {
+  const id = readId(formData.get("id"));
+
+  if (!id) {
+    return { error: "That change could not be applied." };
+  }
+
+  try {
+    await updateNode(id, { self_completion: formData.get("self_completion") !== null });
+  } catch (error) {
+    return { error: describe(error) };
+  }
+
+  refresh();
+  return {};
+}
+
 /**
  * Gives an item its own colour, or clears it ("") so it inherits again.
  *
@@ -802,6 +822,7 @@ export {
   saveTopicsAction,
   setFormatAction,
   setRoomThemeAction,
+  setSelfCompletionAction,
   setColourAction,
   renameNodeAction,
   setStatusAction,

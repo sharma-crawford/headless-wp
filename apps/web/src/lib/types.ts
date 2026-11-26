@@ -633,6 +633,8 @@ type TreeNode = Authorship & {
   format?: ProgramFormat;
   /** Programmes only: how the course room is dressed. */
   room_theme?: RoomTheme;
+  /** Programmes only: learners mark their own modules complete (never with CLE credit hours). */
+  self_completion?: boolean;
   /** Events only: minutes. */
   duration?: number;
   /** Events only. */

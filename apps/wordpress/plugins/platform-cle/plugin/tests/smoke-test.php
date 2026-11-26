@@ -586,6 +586,44 @@ pcle_eq( $refused->get_status(), 403, 'an enrolled student cannot mark their own
 pcle_eq( $refused->get_data()['code'], 'pcle_marked_by_instructor', 'and is told who does' );
 pcle_eq( pcle_is_module_complete( $module, $student ), false, 'nothing was recorded' );
 
+// Self-study: an author can let learners mark their own progress.
+$self_prog = pcle_make_post( 'pcle_program', 'TEST Self-study Programme' );
+$self_unit = pcle_make_post( 'pcle_unit', 'TEST Self-study Unit', array( '_pcle_program_id' => $self_prog ) );
+$self_mod  = pcle_make_post( 'pcle_module', 'TEST Self-study Module', array( '_pcle_unit_id' => $self_unit ) );
+array_push( $created_posts, $self_prog, $self_unit, $self_mod );
+pcle_enroll_user( $self_prog, $student );
+
+$patch_self = function ( $on ) use ( $admin, $self_prog ) {
+	return pcle_authoring_call( $admin, 'PATCH', "/platform-cle/v1/authoring/nodes/{$self_prog}", array( 'self_completion' => $on ) );
+};
+$module_view = function ( $uid ) use ( $self_mod ) {
+	return pcle_authoring_call( $uid, 'GET', "/platform-cle/v1/modules/{$self_mod}" )->get_data();
+};
+
+pcle_eq( pcle_program_allows_self_completion( $self_prog ), false, 'learners cannot mark their own progress until an author says so' );
+pcle_eq( pcle_rest_post_progress( $student, $self_mod, true )->get_status(), 403, 'so a learner is refused' );
+pcle_eq( $module_view( $student )['can_mark'], false, 'and is not offered the control' );
+
+$opened = $patch_self( true );
+pcle_eq( $opened->get_status(), 200, 'an author can open a programme to self-marking' );
+pcle_eq( $opened->get_data()['self_completion'], true, 'and the response says so' );
+pcle_eq( $module_view( $student )['can_mark'], true, 'then a learner is offered the control' );
+
+$own = pcle_rest_post_progress( $student, $self_mod, true );
+pcle_eq( $own->get_status(), 200, 'and can mark their own module' );
+pcle_eq( pcle_is_module_complete( $self_mod, $student ), true, 'which is recorded' );
+pcle_eq( pcle_get_module_marked_by( $self_mod, $student ), 0, 'as their own doing, not an instructor\'s' );
+pcle_eq( pcle_rest_post_progress( $student, $self_mod, false )->get_status(), 200, 'and can take it back' );
+pcle_eq( pcle_rest_post_progress( $outsider, $self_mod, true )->get_status(), 403, 'but someone not in the programme still cannot' );
+
+update_post_meta( $self_prog, pcle_credit_hours_meta_key( 'ks' ), 3 );
+pcle_eq( pcle_program_allows_self_completion( $self_prog ), false, 'adding CLE credit hours closes self-marking again' );
+pcle_eq( pcle_rest_post_progress( $student, $self_mod, true )->get_status(), 403, 'and the learner is refused' );
+pcle_eq( $patch_self( true )->get_status(), 409, 'a programme with credit hours cannot be opened to it' );
+delete_post_meta( $self_prog, pcle_credit_hours_meta_key( 'ks' ) );
+$patch_self( false );
+pcle_eq( pcle_program_allows_self_completion( $self_prog ), false, 'and an author can close it' );
+
 // Staff mark their own.
 $toggle = pcle_rest_post_progress( $admin, $module, true );
 pcle_eq( $toggle->get_status(), 200, 'staff can mark their own module complete' );

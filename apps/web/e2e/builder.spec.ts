@@ -681,3 +681,51 @@ test.describe("A song in a lesson", () => {
     await stranger.close();
   });
 });
+
+test.describe("Learners marking their own progress", () => {
+  let wordpress: WordPress;
+  let programme: { id: number; title: string };
+  let lesson: { id: number; title: string };
+
+  test.beforeAll(async () => {
+    wordpress = await WordPress.asAdministrator();
+    programme = await wordpress.createNode("pcle_program", "E2E Self-study Programme");
+    const unit = await wordpress.createNode("pcle_unit", "E2E Self-study Unit", programme.id);
+    lesson = await wordpress.createNode("pcle_module", "E2E Self-study Module", unit.id);
+
+    // A participant sees only what is published.
+    for (const node of [lesson, unit, programme]) {
+      await wordpress.updateNode(node.id, { status: "publish" });
+    }
+
+    await wordpress.enrol(programme.id, await wordpress.emailOf(people.participant.username));
+  });
+
+  test.afterAll(async () => {
+    await wordpress.deleteNode(programme.id, true);
+  });
+
+  test("an author opens a programme to it, and the learner then marks their own module", async ({ page, browser }) => {
+    // Closed by default: the learner is told their instructor marks it.
+    const learner = await browser.newPage();
+    await signIn(learner, people.participant);
+    await learner.goto(`/modules/${lesson.id}`);
+    await expect(learner.getByText("Your instructor marks this module complete")).toBeVisible();
+    await expect(learner.getByRole("button", { name: "Mark as complete" })).toHaveCount(0);
+
+    // The author opens it in the builder.
+    await signIn(page, people.instructor);
+    await page.goto(`/builder/programs/${programme.id}?tab=details`);
+    await page.getByLabel("Learners mark their own modules complete").check();
+    await page.getByRole("button", { name: "Save", exact: true }).click();
+    await page.reload();
+    await expect(page.getByLabel("Learners mark their own modules complete")).toBeChecked();
+
+    // Now the learner has the button, and it records.
+    await learner.reload();
+    await learner.getByRole("button", { name: "Mark as complete" }).click();
+    await expect(learner.getByRole("button", { name: /Completed/ })).toBeVisible();
+
+    await learner.close();
+  });
+});

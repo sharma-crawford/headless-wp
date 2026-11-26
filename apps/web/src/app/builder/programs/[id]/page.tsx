@@ -25,6 +25,7 @@ import {
   saveTopicsAction,
   setFormatAction,
   setRoomThemeAction,
+  setSelfCompletionAction,
   setStatusAction,
 } from "@/app/actions/authoring";
 import { isAuthenticated } from "@/lib/auth";
@@ -251,6 +252,7 @@ export default async function BuilderProgramPage({
               <FormatSection programmeId={tree.id} isWebinar={isWebinar} />
               {!isWebinar && <RoomSection programmeId={tree.id} theme={tree.room_theme ?? "default"} />}
               <CreditsSection programmeId={tree.id} credits={tree.credits ?? []} />
+              <ProgressSection programmeId={tree.id} open={tree.self_completion ?? false} hasCredit={(tree.credits ?? []).some((credit) => credit.hours > 0)} />
               <CatalogueListing
                 programmeId={tree.id}
                 cover={tree.cover ?? null}
@@ -460,6 +462,43 @@ function FormatSection({ programmeId, isWebinar }: { programmeId: number; isWebi
           Webinar
         </Button>
       </ActionForm>
+    </Section>
+  );
+}
+
+/**
+ * Who marks a learner's progress. Instructors by default, which is what a CLE
+ * credit record rests on; an author can open a self-study programme to
+ * self-marking. Not offered for a programme with credit hours.
+ */
+function ProgressSection({
+  programmeId,
+  open,
+  hasCredit,
+}: {
+  programmeId: number;
+  open: boolean;
+  hasCredit: boolean;
+}) {
+  return (
+    <Section
+      title="Progress"
+      intro="By default your instructors mark a participant's modules complete, which is what a credit record rests on. For a self-study programme, learners can mark their own."
+    >
+      {hasCredit ? (
+        <p className="text-sm text-zinc-600">
+          This programme carries CLE credit hours, so its progress is marked by instructors. Remove the hours to let learners mark their own.
+        </p>
+      ) : (
+        <ActionForm action={setSelfCompletionAction} className="flex flex-wrap items-center gap-3">
+          <input type="hidden" name="id" value={programmeId} />
+          <label className="flex items-center gap-2 text-sm text-zinc-700">
+            <input type="checkbox" name="self_completion" defaultChecked={open} className="size-4 rounded border-zinc-300" />
+            Learners mark their own modules complete
+          </label>
+          <Button type="submit">Save</Button>
+        </ActionForm>
+      )}
     </Section>
   );
 }
