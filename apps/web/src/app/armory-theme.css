@@ -1,0 +1,41 @@
+/*
+ * Armory theme for learner-facing screens. Wrap a page in `.armory-theme` and
+ * every `brand-*` utility, the semantic tokens (--primary, --ring, ...) and the
+ * heading and body fonts follow the Castle interface (see tokens.css).
+ * Staff screens do not use it and keep the teal Pen & Sword look.
+ *
+ * The brand ramp below is built from the tokens: tints at the light end, the
+ * Castle navy at the dark end. 700 and 950 are interpolated, not taken from Castle.
+ */
+.armory-theme {
+  --color-brand-50: var(--armory-tint-soft);
+  --color-brand-100: var(--armory-tint);
+  --color-brand-200: var(--armory-tint-hover);
+  --color-brand-300: var(--armory-pale);
+  --color-brand-400: var(--armory-blue);
+  --color-brand-500: var(--armory-blue);
+  --color-brand-600: var(--armory-deep);
+  --color-brand-700: #0f3552;
+  --color-brand-800: var(--armory-navy);
+  --color-brand-900: var(--armory-navy);
+  --color-brand-950: #051a2d;
+
+  /* Semantic tokens are resolved on :root, so they are restated here. */
+  --foreground: var(--armory-navy);
+  --primary: var(--armory-deep);
+  --primary-foreground: var(--armory-paper);
+  --accent: var(--armory-tint);
+  --accent-foreground: var(--armory-navy);
+  --ring: var(--armory-blue);
+
+  color: var(--armory-navy);
+  font-family: var(--armory-font-ui);
+}
+
+.armory-theme h1,
+.armory-theme h2,
+.armory-theme h3 {
+  font-family: var(--armory-font);
+  font-weight: 400;
+  letter-spacing: 0;
+}
