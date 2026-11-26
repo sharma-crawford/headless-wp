@@ -514,3 +514,46 @@ test.describe("Backing up a programme", () => {
     await expect(page).toHaveURL(/\/builder$/);
   });
 });
+
+test.describe("Choosing a course room's look", () => {
+  let wordpress: WordPress;
+  let programme: { id: number; title: string };
+
+  test.beforeAll(async () => {
+    wordpress = await WordPress.asAdministrator();
+    programme = await wordpress.createNode("pcle_program", "E2E Room Programme");
+  });
+
+  test.afterAll(async () => {
+    await wordpress.deleteNode(programme.id, true);
+  });
+
+  test("an author picks a room theme and it is still there on reload", async ({ page }) => {
+    await signIn(page, people.instructor);
+    await page.goto(`/builder/programs/${programme.id}?tab=details`);
+
+    await page.getByLabel("Room theme").selectOption("infernal");
+    await page.getByRole("button", { name: "Save room" }).click();
+
+    await page.reload();
+    await expect(page.getByLabel("Room theme")).toHaveValue("infernal");
+  });
+
+  test("a themed programme is drawn in its room, and a plain one is not", async ({ page }) => {
+    // The test above leaves a theme on it; start from a plain one.
+    await wordpress.updateNode(programme.id, { room_theme: "default" });
+    await signIn(page, people.instructor);
+
+    await page.goto(`/programs/${programme.id}?preview=1`);
+    await expect(page.locator(".room")).toHaveCount(0);
+
+    await wordpress.updateNode(programme.id, { room_theme: "tidewater" });
+    await page.reload();
+    await expect(page.locator(".room.room-tidewater")).toHaveCount(1);
+    await expect(page.getByText("Tidewater docket", { exact: true })).toBeVisible();
+
+    await wordpress.updateNode(programme.id, { room_theme: "default" });
+    await page.reload();
+    await expect(page.locator(".room")).toHaveCount(0);
+  });
+});

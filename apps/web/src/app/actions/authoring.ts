@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { isSwatch } from "@/lib/colours";
+import { isRoomTheme } from "@/lib/room-themes";
 import type {
   NodeType,
   ProgramFormat,
@@ -404,6 +405,27 @@ async function setFormatAction(
   return {};
 }
 
+async function setRoomThemeAction(
+  _prev: BuilderActionState,
+  formData: FormData
+): Promise<BuilderActionState> {
+  const id = readId(formData.get("id"));
+  const theme = String(formData.get("room_theme") ?? "");
+
+  if (!id || !isRoomTheme(theme)) {
+    return { error: "That change could not be applied." };
+  }
+
+  try {
+    await updateNode(id, { room_theme: theme });
+  } catch (error) {
+    return { error: describe(error) };
+  }
+
+  refresh();
+  return {};
+}
+
 /**
  * Gives an item its own colour, or clears it ("") so it inherits again.
  *
@@ -758,6 +780,7 @@ export {
   saveLiveAction,
   saveTopicsAction,
   setFormatAction,
+  setRoomThemeAction,
   setColourAction,
   renameNodeAction,
   setStatusAction,

@@ -677,6 +677,8 @@ async function updateNode(
     credits?: Record<string, number>;
     /** Programmes. Becoming a webinar reshapes it on the server, or is refused. */
     format?: ProgramFormat;
+    /** Programmes. A slug from the plugin's short list; "default" clears it. */
+    room_theme?: string;
     /**
      * Webinars: their live session. Each field optional; starts_at "" removes
      * the session.
