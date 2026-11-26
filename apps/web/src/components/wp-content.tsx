@@ -8,6 +8,17 @@ import { WIDGETS } from "@/components/widgets/registry";
 const WIDGET_MARKER = /(?:<p>\s*)?<div class="pcle-widget" data-widget="([a-z0-9][a-z0-9-]{0,39})"><\/div>(?:\s*<\/p>)?/g;
 
 /**
+ * A protected attachment's address as WordPress writes it, on its own domain
+ * behind a WordPress login the learner here does not have. Rewritten to this
+ * app's /media route, which fetches it with the reader's own token.
+ */
+const PROTECTED_FILE = /https?:\/\/[^"'\s<>]*?\/?\?pcle_download=(\d+)/g;
+
+function throughApp(html: string): string {
+  return html.replace(PROTECTED_FILE, "/media/$1");
+}
+
+/**
  * Renders HTML produced by WordPress.
  *
  * The markup comes from `the_content` — the same pipeline that renders the
@@ -35,10 +46,10 @@ export default function WpContent({
   }
 
   const wrapper = `wp-content ${className}`.trim();
-  const parts = html.split(WIDGET_MARKER);
+  const parts = throughApp(html).split(WIDGET_MARKER);
 
   if (parts.length === 1) {
-    return <div className={wrapper} dangerouslySetInnerHTML={{ __html: html }} />;
+    return <div className={wrapper} dangerouslySetInnerHTML={{ __html: parts[0] }} />;
   }
 
   // split() with one capture group alternates: html, key, html, key, ...

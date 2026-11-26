@@ -127,7 +127,9 @@ rough and assume the WordPress plugin can be changed.
 - Widget registry: lesson content references a widget by key. **Done (plugin not
   yet deployed):** `[[widget:key]]` on a line of its own in a lesson body; the app
   draws the component registered under that key (`components/widgets/registry.tsx`),
-  and an unknown key draws nothing. First widget: `corporate-veil-tabs`. Adding a
+  and an unknown key draws nothing. Widgets so far: `corporate-veil-tabs`, `business-associations-practice`,
+  `evidence-admission-flowchart`. (The per-room topic guides are not widgets: a
+  generic room has its own outline.) Adding a
   widget is a developer's job: a component and one line in the registry.
 - Done when: Contracts renders from WP and looks like it does today.
 
@@ -137,6 +139,12 @@ rough and assume the WordPress plugin can be changed.
   WordPress by a one-time address (**done**, plugin not yet deployed; the limit is
   then the server's own PHP upload limit, still to be checked on the host). See
   [builder-guide.md](builder-guide.md).
+- Songs play in the lesson: an audio attachment is an audio player, and lesson
+  files are fetched through the app's `/media/<id>` route with the reader's own
+  token, because WordPress's file check wants a WordPress login a learner here does
+  not have (images and PDFs attached to lessons had the same problem). The plugin
+  now answers byte ranges, which Safari needs to play audio at all. **Done (plugin
+  not yet deployed).**
 - Rooms use the WP quizzes (446 questions are already imported as drafts).
 - A study-mode endpoint for flashcards and "show answers", for enrolled learners
   only, because WP quizzes normally hide answers until attempted. **Done in the

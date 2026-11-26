@@ -227,6 +227,23 @@ class WordPress {
     }
   }
 
+  /** Attaches a file to a node, as the builder does, and returns its body token. */
+  async uploadMedia(
+    nodeId: number,
+    file: { name: string; mimeType: string; buffer: Buffer }
+  ): Promise<{ id: number; token: string }> {
+    const response = await this.api.post(`${API}/platform-cle/v1/authoring/nodes/${nodeId}/media`, {
+      headers: this.headers,
+      multipart: { file },
+    });
+
+    if (!response.ok()) {
+      throw new Error(`Could not attach ${file.name} to ${nodeId}: ${await response.text()}`);
+    }
+
+    return (await response.json()) as { id: number; token: string };
+  }
+
   /**
    * Replaces the site's colour settings (P16). `{}` puts every default back,
    * which is how a test that changed one leaves the site.
