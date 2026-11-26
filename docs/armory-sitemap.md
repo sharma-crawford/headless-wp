@@ -113,7 +113,9 @@ rough and assume the WordPress plugin can be changed.
 - Done when: Contracts renders from WP and looks like it does today.
 
 ### Phase 4: Content leaves the repo (about 2 to 3 days)
-- Art and songs go to the WP media library and attach to modules.
+- Art and songs go to the WP media library and attach to modules. The builder
+  accepts PDF, Word and images only, up to 4 MB each, so songs (`.m4a`, 4 to 5 MB)
+  need audio types and a higher limit first. See [builder-guide.md](builder-guide.md).
 - Rooms use the WP quizzes (446 questions are already imported as drafts).
 - A study-mode endpoint for flashcards and "show answers", for enrolled learners
   only, because WP quizzes normally hide answers until attempted.
