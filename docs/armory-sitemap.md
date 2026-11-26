@@ -92,8 +92,10 @@ rough and assume the WordPress plugin can be changed.
 - Same header on the four static immigration pages. **Done (static copy in
   `public/castle-resources/armory/`; keep in sync with `armory-nav`).**
 - Theme tokens: `public/castle-resources/armory/tokens.css`, taken from the Castle
-  interface. **Castle, the header, Dice and Simulator read them (done).** The static
-  pages and the learner pages still hardcode their own fonts and colours.
+  interface. **Castle, the header, Dice, Simulator, the static header and the shared
+  resource styles (court tour, Immigration 101, ICE map) read them (done).** Still
+  hardcoded: the habeas primer, the pages' own cream and olive content colours,
+  `/login`, and the learner pages.
 - `/programs`, `/modules`, `/units`, `/quizzes`, `/my-training`, `/webinars`,
   `/pricing`, `/account` adopt the Armory header and theme.
 - Done when: moving between any two learner pages never changes the header or fonts.

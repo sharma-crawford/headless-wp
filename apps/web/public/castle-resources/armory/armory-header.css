@@ -1,11 +1,12 @@
+@import url("/castle-resources/armory/tokens.css");
 /* Static copy of components/armory/armory-nav for the pages in public/castle-resources. Keep in sync. */
-.ar-header{--navy:#082641;--blue:#20aeea;--line:#b9cbd5;box-sizing:border-box;min-height:80px;padding:12px 3.3%;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:30px;background:#fff;color:var(--navy);border-bottom:1px solid var(--blue)}
+.ar-header{--navy:var(--armory-navy);--blue:var(--armory-blue);--line:var(--armory-line);box-sizing:border-box;min-height:80px;padding:12px 3.3%;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:30px;background:#fff;color:var(--navy);border-bottom:1px solid var(--blue)}
 .ar-header *{box-sizing:border-box}.ar-header a{color:inherit;text-decoration:none}.ar-header a:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
 .ar-brand{display:flex;align-items:center;gap:23px}
 .ar-brand img{width:190px;height:auto;border-right:1px solid var(--blue);padding-right:20px}
-.ar-brand strong{display:block;font:28px Georgia,serif;letter-spacing:.22em}
-.ar-brand small{display:block;font:italic 17px Georgia,serif;margin-top:2px}
-.ar-header nav{display:flex;flex-direction:row;flex-wrap:wrap;gap:16px;align-items:center;margin:0;font:17px Georgia,serif}
+.ar-brand strong{display:block;font:28px var(--armory-font);letter-spacing:.22em}
+.ar-brand small{display:block;font:italic 17px var(--armory-font);margin-top:2px}
+.ar-header nav{display:flex;flex-direction:row;flex-wrap:wrap;gap:16px;align-items:center;margin:0;font:17px var(--armory-font)}
 .ar-header nav a{display:inline-flex;align-items:center;min-height:44px;padding:0;font:inherit;background:none;border:0;border-bottom:2px solid transparent}
 .ar-header nav a+a{border-left:1px solid var(--line);padding-left:16px}
 @media(max-width:1000px){.ar-brand strong{font-size:22px}}
