@@ -17,3 +17,6 @@ apps/web/test-results/
 apps/web/playwright-report/
 apps/web/blob-report/
 apps/web/.playwright/
+
+# Resumable state for scripts/migrate-course-media.py (media ids on one WordPress)
+scripts/.migrate-course-media.state.json

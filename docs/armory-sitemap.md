@@ -145,6 +145,8 @@ rough and assume the WordPress plugin can be changed.
   not have (images and PDFs attached to lessons had the same problem). The plugin
   now answers byte ranges, which Safari needs to play audio at all. **Done (plugin
   not yet deployed).**
+- A migration script moves the art and songs into WordPress: [course-media-migration.md](course-media-migration.md).
+  Dry run by default, never deletes, tested locally, **not yet run on production**.
 - Rooms use the WP quizzes (446 questions are already imported as drafts).
 - A study-mode endpoint for flashcards and "show answers", for enrolled learners
   only, because WP quizzes normally hide answers until attempted. **Done in the
