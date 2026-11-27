@@ -61,7 +61,7 @@ by role) on every page, including the static immigration pages. `/catalogue` and
 | Phase | State | What is in `main` |
 | --- | --- | --- |
 | 1. One shell and theme | **Done** | Shared header, one set of colour and font tokens, learner pages themed, static pages on the tokens (#73 to #81) |
-| 2. Library is the catalogue | **Done** | Library has the catalogue's cards, covers, topics, filters and search; redirects; header is Castle, Library (#82, #83). The nine hardcoded courses stay listed until Phase 3 removes them |
+| 2. Library is the catalogue | **Mostly done** | Library has the catalogue's cards, covers, topics, filters and search; redirects; header is Castle, Library (#82, #83). The nine hardcoded courses stay listed until Phase 3 removes them |
 | 3. Room themes from WordPress | **Partly done** | Theme setting per programme and a themed frame (#84). Not done: one generic room that replaces the nine bespoke ones, and `/study/<slug>` redirecting |
 | 4. Content leaves the repo | **Built, not run** | Study mode for quizzes (#85), whole songs by direct upload (#86), widgets by key (#87), song player and `/media/<id>` (#88), migration script (#89). Not done: moving the files to production, rooms on WordPress quizzes, deletions |
 | 5. Progress, sign-up, enrollment | **Mostly built** | Self-completion (#90), emails and password pages (#91), room answers saved to WordPress quizzes (#92). Not confirmed: Reports for these courses |
@@ -118,23 +118,40 @@ by role) on every page, including the static immigration pages. `/catalogue` and
    course page is where people see what a course is, what it costs, and sign up
    or subscribe.
 
+### What each place is
+
+Decided 2026-11-27. The Castle is the entrance; the three rooms answer three
+different needs, and nothing is in two places.
+
+| Place | What it is for | Holds | Does not hold |
+| --- | --- | --- | --- |
+| **Castle** (`/castle`) | The entrance and the map. Orients a visitor and sends them to a room. Public. | The courtyard, three doors, a strip of what is live soon | Content of its own |
+| **Library** | Learn. Every course, to choose from and sign up for. Public to browse. | All courses from WordPress, in two formats (several lessons, or one video, live or recorded), free or paid, with filters and one search. Free ones such as Immigration 101 included. The nine law-school courses until Phase 3 moves them | Reference material, practice tools, a person's own progress |
+| **Council Chamber** | Consult. Information and help to have at hand, for families and for practitioners. Public. | Rights and family resources, the habeas primer, the ICE detention map, in plain language, grouped "For families" and "For practitioners", each saying who it is for | Courses (it may link to Immigration 101, which lives in the Library) |
+| **Training Hall** | Practice. Active exercises. Public. | The court tour, Roll the Dice, the Simulator | Courses, My Training, webinars |
+| **Header** | Me. Where the person is and what is theirs. | Castle, Library, then My Training and Account when signed in (Sign in when not), and the staff paths by role | |
+
+Two ideas sit behind this: **a webinar is a course** whose format is one video, with
+an optional live date (not a separate kind of thing), and **"mine" lives in the
+header**, not in a room.
+
 ### Target sitemap
 
 ```
 Armory (one header and theme on every page)
-├── Discover (public)
-│   ├── Courtyard, Library        all published courses, from WP
-│   ├── Course page               what it is, price, sign up / enroll
-│   ├── Pricing, plans            tiers per course
-│   └── Webinars                  live and on demand
-├── Learn (signed in)
+├── Castle                        the entrance: three doors, what is live soon
+│   ├── Library                   learn: all courses (from WP), free and paid,
+│   │   │                         several lessons or one video, live soon
+│   │   └── Course page           what it is, price, sign up / enroll
+│   ├── Council Chamber           consult: rights and family resources,
+│   │                             habeas primer, ICE map (families, practitioners)
+│   └── Training Hall             practice: court tour, Dice, Simulator
+├── Me (header, signed in)
 │   ├── My Training               enrolled courses and progress
-│   ├── Course room              themed, rendered from WP data
+│   ├── Course room               themed, rendered from WP data
 │   │   └── Lessons, quizzes      progress saved
 │   └── Account
-├── Practice and resources
-│   └── Immigration tools         Dice, Simulator, court tour, ICE map,
-│                                 Immigration 101, habeas primer (inside the shell)
+├── Pricing, plans                tiers per course
 └── Staff
     └── Build, Reports, People, Plans, Colours
 ```
@@ -171,7 +188,7 @@ rough and assume the WordPress plugin can be changed.
   `/pricing`, `/account` adopt the Armory header and theme.
 - Done when: moving between any two learner pages never changes the header or fonts.
 
-### Phase 2: Library is the catalogue (about 1 day) [done]
+### Phase 2: Library is the catalogue (about 1 day) [mostly done, see 2b]
 - Castle's Library reads WP programs only. Delete the hardcoded nine-course list.
 - The Library list view now carries the catalogue's cards, covers, topics, format
   filters and search (**done**); `/catalogue` redirects to it. Enrolled programs
@@ -181,6 +198,40 @@ rough and assume the WordPress plugin can be changed.
   (**done**; kept as a redirect so old bookmarks work).
 - Done when: publishing a program in the builder makes it appear in the Library
   with no deploy.
+
+### Phase 2b: One Library, three rooms (about 1 to 2 days, web only)
+
+Found in the 2026-11-27 walkthrough: there are two "Library" views with different
+content (the header's page `#list` and the courtyard's room `#library`), the same
+course has two doors that lead to different places (via an empty `#program-ID` page,
+or straight to `/catalogue/:id`), there are two search boxes on one page, the
+immigration resources are split three ways, and the same thing has five names.
+
+- The courtyard's "The Library" door and the header's "Library" open the **same
+  page**. The `#library` room is removed.
+- No middle pages. A course card goes straight to its course page
+  (`/catalogue/:id`, which already says "Go to the course" when enrolled). The
+  `#program-ID` and `#study-X` pages are removed; a law-school card goes straight to
+  `/study/X` until Phase 3.
+- **Immigration 101** is shown in the Library as a free course (a "Free" mark); it
+  stays public. Until it is a WordPress course it is listed by hand.
+- **Council Chamber:** the habeas primer, the Rights and Family Resources, the ICE
+  map and a link to Immigration 101, in two groups, "For families" and "For
+  practitioners". **Training Hall:** the court tour, Dice and the Simulator only;
+  My Training and Webinars buttons come out.
+- **Webinars are courses.** The `/webinars` page folds into the Library as a "Live
+  soon" view; `/webinars` redirects; "Webinars" leaves the header and
+  `pathsFor()`. The live date, reminder emails and calendar file stay as they are.
+  The reminder email's link points at the Library instead.
+- **Header:** Castle, Library, then My Training and Account (Sign in when signed
+  out), and the staff paths by role.
+- **One search** on the Library for courses and for the resources it still lists.
+- **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
+  the course page's trail, no "Your course room" on pages that are not a room.
+  Every "back" goes to the same place.
+- Updates `docs/ui-map.md` (P17 becomes a redirect) and the webinar end-to-end tests.
+- Done when: from the Castle, a visitor can answer "where do I learn, where do I look
+  something up, where do I practice" without finding the same thing in two places.
 
 ### Phase 3: Room themes come from WordPress (about 3 to 4 days for one generic room; more per bespoke layout) [partly done]
 - Plugin: a room-theme setting on programs, exposed by the API, with a control in
@@ -275,6 +326,17 @@ Decided (Rafael, 2026-11-26):
 3. **Front door: `/castle`.** Castle stays the Armory home. `/` is unchanged.
 4. **Header links: Library.** The header is Castle, Library, then My Training or
    Sign in. "Library" replaces both "Course rooms" and "Catalogue" (done).
+
+Decided (Rafael, 2026-11-27), numbered after the open decision below so no number
+is reused:
+
+6. **Council Chamber is for families and practitioners both.** Plain language, and
+   each resource says who it is for.
+7. **Immigration 101 is a free course.** It lives in the Library with a "Free" mark.
+8. **Webinars are courses.** A course in the one-video format, with an optional live
+   date. One catalogue, no separate Webinars place.
+9. **"Mine" lives in the header.** My Training and Account are in the header, not in
+   a room. The Training Hall is practice only.
 
 ## Open decisions
 
