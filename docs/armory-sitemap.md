@@ -167,7 +167,14 @@ rough and assume the WordPress plugin can be changed.
   closed again if hours are added later), so a certificate never rests on a
   learner's own tick. A learner's own completions are recorded with no instructor
   against them, so Reports can tell them apart.
-- Quiz results and lesson progress saved from the rooms.
+- Quiz results saved from the rooms. **Done in the web app, best effort:** after the
+  room marks an answer, `/api/study/grade` also submits it as an attempt on the
+  matching WordPress quiz (the section's module and its practice quiz, as the
+  migration made them), so it counts in the learner's record and in Reports. If
+  the programme is not published yet, or a section has no module or quiz, that
+  section is skipped and the room works as before. Checked locally against a
+  Contracts fixture: 1 of 2 right was recorded as 1 of 2. Lesson progress (marking
+  modules) stays with Progress above.
 - Check the sign-up and enrollment flow end to end for a new learner. **Walked
   through locally; fixed (plugin not yet deployed).** Matriculating an address with
   no account made an account and sent two WordPress emails that sent the learner to
