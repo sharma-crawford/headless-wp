@@ -26,6 +26,7 @@ export default async function PageShell({
   code,
   wide = false,
   theme,
+  hero,
 }: {
   children: ReactNode;
   /**
@@ -42,6 +43,8 @@ export default async function PageShell({
   wide?: boolean;
   /** `armory` puts the screen on the Castle fonts and colours (see armory-theme.css). Learner screens only. */
   theme?: "armory";
+  /** A full-width band under the header (a place's hero), before the content column. */
+  hero?: ReactNode;
 }) {
   /*
    * Signed out, the only screens that render a shell are the public ones
@@ -60,10 +63,12 @@ export default async function PageShell({
     */
     <div className={cn("flex flex-1 flex-col bg-zinc-50", theme === "armory" && "armory-theme")}>
       <ArmoryNav signedIn={signedIn} account={account} />
+      {hero}
 
       <main
         className={cn(
-          "mx-auto w-full px-4 py-10 sm:px-6 sm:py-12",
+          "mx-auto w-full px-4 sm:px-6",
+          hero ? "pt-8 pb-12 sm:pt-10 sm:pb-14" : "py-10 sm:py-12",
           wide ? "max-w-6xl" : "max-w-3xl"
         )}
       >

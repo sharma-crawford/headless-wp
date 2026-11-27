@@ -5,6 +5,8 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { courses } from "./courses";
 import { audience, education, educationHref } from "./education";
 import ArmoryNav from "@/components/armory/armory-nav";
+import RoomFrame from "./room-frame";
+import frame from "./room-frame.module.css";
 import type { TrainingSummary } from "@/lib/training-summary";
 import styles from "./castle.module.css";
 
@@ -53,8 +55,7 @@ export default function CastleExplorer({ library = null, catalogueUnavailable = 
   const [view, setView] = useState("courtyard");
   const heading = useRef<HTMLHeadingElement>(null);
   const navigated = useRef(false);
-  const room = courses.find((item) => item.id === view);
-  const inRoom = view === "council" || view === "training";
+  const room = view === "council" || view === "training" ? courses.find((item) => item.id === view) : undefined;
 
   useEffect(() => {
     const sync = () => {
@@ -115,41 +116,22 @@ export default function CastleExplorer({ library = null, catalogueUnavailable = 
         <footer className={styles.footer}><em>Explore at your own pace.</em><a href="#list">Browse every course →</a></footer>
       </>}
 
-      {view === "list" && <section className={styles.listPage}>
-        <a className={styles.back} href="#courtyard">← Back to the courtyard</a><h1 ref={heading} tabIndex={-1}>Library</h1>
-        <p className={styles.roomDescription}>Every course and webinar, free and paid. Search, or filter by format and topic.</p>
+      {view === "list" && <RoomFrame art="library" name="The Library" title="Library" purpose="Learn: every course and webinar, free and paid." back="#courtyard" headingRef={heading}>
         {notice}
-        <section className={`${styles.education} armory-theme`}>{library}</section>
-      </section>}
+        <div className="armory-theme">{library}</div>
+      </RoomFrame>}
 
-      {inRoom && room && <>
-        <div className={styles.breadcrumb}><a className={styles.back} href="#courtyard">← Back to the courtyard</a></div>
-        <section className={styles.room}>
-          <div className={styles.roomArt}>
-            <Image src="/castle/library.png" alt="A vaulted learning room with bookshelves, a reading desk, and a practice table." width={1316} height={1196} sizes="(max-width: 760px) 100vw, 62vw" priority />
-            <nav className={styles.stations} aria-label="Room destinations">
-              <a className={`${styles.station} ${styles.reading}`} href="#list">Browse courses →</a>
-              <a className={`${styles.station} ${styles.resources}`} href="#council">Rights & resources →</a>
-              <a className={`${styles.station} ${styles.practice}`} href="#training">Practice →</a>
-            </nav>
-          </div>
-          <div className={styles.roomContent}>
-            <p className={styles.roomName}>{room.room}</p>
-            <h1 ref={heading} tabIndex={-1}>{room.title}</h1>
-            <p className={styles.roomDescription}>{room.description}</p>
+      {room && <RoomFrame art={view as "council" | "training"} name={room.room} title={room.title} purpose={room.description} back="#courtyard" headingRef={heading}>
+        {view === "council" && <>
+          {GROUPS.map((group) => {
+            const items = council.filter((item) => audience[item.path] === group.key);
+            return items.length === 0 ? null : <section key={group.key}><h2>{group.title}</h2><div className={frame.grid}>{items.map((item) => <ResourceButton key={item.path} item={item} />)}</div></section>;
+          })}
+          <p className={styles.sampleNotice}>New to immigration law? <a href="/castle-resources/advocate-101/index.html">Start with Immigration 101, a free course →</a></p>
+        </>}
 
-            {view === "council" && <>
-              {GROUPS.map((group) => {
-                const items = council.filter((item) => audience[item.path] === group.key);
-                return items.length === 0 ? null : <section key={group.key}><h2>{group.title}</h2><div className={styles.resourceGrid}>{items.map((item) => <ResourceButton key={item.path} item={item} />)}</div></section>;
-              })}
-              <p className={styles.sampleNotice}>New to immigration law? <a href="/castle-resources/advocate-101/index.html">Start with Immigration 101, a free course →</a></p>
-            </>}
-
-            {view === "training" && <div className={styles.resourceGrid}>{training.map((item) => <ResourceButton key={item.path} item={item} />)}</div>}
-          </div>
-        </section>
-      </>}
+        {view === "training" && <div className={frame.grid}>{training.map((item) => <ResourceButton key={item.path} item={item} />)}</div>}
+      </RoomFrame>}
     </main>
   </div>;
 }
