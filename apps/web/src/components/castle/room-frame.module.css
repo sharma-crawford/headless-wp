@@ -1,0 +1,38 @@
+/*
+ * The frame every place shares: a hero band with the place's picture, its name, what it
+ * is for and a way back to the Castle, then the place's own body. The body is what makes
+ * each place itself (the catalogue, the reader's own page, a list of resources); the
+ * frame is what makes them read as one castle.
+ */
+.hero{--navy:var(--armory-navy);position:relative;color:#fff;background-color:var(--armory-navy);background-image:url(/castle/courtyard-training.webp);background-repeat:no-repeat;background-size:170% auto}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#082641f0 0%,#082641cc 38%,#08264133 78%,#08264100 100%)}
+.inner{position:relative;max-width:1180px;margin:auto;padding:26px 30px 40px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.back{align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #ffffffb0;color:#fff;font:17px var(--armory-font);text-decoration:none;background:#08264155}
+.back:hover{background:#082641aa}
+.back:focus-visible{outline:3px solid var(--armory-pale);outline-offset:3px}
+.name{font:600 14px var(--armory-font-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--armory-pale);margin:0}
+.title{font:400 clamp(38px,5vw,64px)/1.05 var(--armory-font);margin:6px 0 10px;overflow-wrap:break-word}
+.purpose{font:20px/1.45 var(--armory-font);margin:0;max-width:46ch;color:#fff}
+.body{max-width:1180px;margin:auto;padding:30px 30px 70px}
+.body h2{font:400 30px var(--armory-font);color:var(--armory-navy);margin:34px 0 4px}
+.body h2:first-child{margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin:16px 0 8px}
+
+/* Which part of the courtyard picture each place shows. */
+.library{background-position:0% 52%}
+.council{background-position:51% 22%}
+.training{background-position:100% 56%}
+.mine{background-position:40% 80%}
+
+@media(max-width:760px){
+.hero{background-size:cover}
+.inner{padding:18px 20px 28px;min-height:220px}
+.hero::before{background:linear-gradient(0deg,#082641f2 0%,#082641b0 55%,#08264155 100%)}
+.library{background-position:15% 50%}
+.council{background-position:50% 30%}
+.training{background-position:88% 55%}
+.mine{background-position:38% 80%}
+.purpose{font-size:18px}
+.body{padding:22px 20px 56px}
+}
+@media print{.hero{display:none}}

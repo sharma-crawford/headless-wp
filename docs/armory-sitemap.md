@@ -235,6 +235,13 @@ immigration resources are split three ways, and the same thing has five names.
 - **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
   the course page's trail, no "Your course room" on pages that are not a room.
   Every "back" goes to the same place.
+- **One frame for the four places** (`components/castle/room-frame.tsx`): a hero band
+  with a crop of the courtyard picture for that place, its name, what it is for, and
+  "← Castle", then the place's own body. The Library keeps its catalogue, My Training
+  its personal page, the two halls their resources; only the frame is shared. The
+  hero crops are placeholders until each place has its own interior picture. The
+  library interior that used to sit in the Council Chamber and the Training Hall is
+  gone.
 - **The courtyard labels are small plaques** that scale with the picture and sit
   beside each door, not over it; the whole plaque is the link.
 - **The courtyard picture and its four labels.** A fourth door, "My Training", sits

@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 
 import { renderAccessError } from "@/components/access-error";
 import ContinueCard from "@/components/continue-card";
-import PageHeading from "@/components/page-heading";
+import { RoomHero } from "@/components/castle/room-frame";
 import PageShell from "@/components/page-shell";
 import ProgrammeCard from "@/components/programme-card";
 import SessionCard from "@/components/webinars/session-card";
@@ -40,16 +40,20 @@ export default async function MyTrainingPage() {
   const upcoming = webinars?.upcoming ?? [];
 
   return (
-    <PageShell code="P2" wide theme="armory">
-      <PageHeading
-        eyebrow="Your learning"
-        title="My Training"
-        intro={
-          programs.length === 0
-            ? undefined
-            : "Pick up where you left off, or start something new."
-        }
-      />
+    <PageShell
+      code="P2"
+      wide
+      theme="armory"
+      hero={
+        <RoomHero
+          art="mine"
+          name="Your learning"
+          title="My Training"
+          purpose={programs.length === 0 ? "Everything you are enrolled in will be here." : "Pick up where you left off, or start something new."}
+          back="/castle#courtyard"
+        />
+      }
+    >
 
       {upcoming.length > 0 && (
         <section aria-labelledby="upcoming" className="mt-10">
