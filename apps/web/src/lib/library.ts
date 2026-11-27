@@ -9,6 +9,17 @@ import type { LibraryProgram } from "@/lib/types";
  *
  * Their ids are negative so they can never meet a WordPress id.
  */
+/**
+ * Cover pictures for the code courses, by the course's path. Illustrated in the
+ * Armory style and kept in public/castle/covers. A course without one shows the
+ * plain cover. (Course art in course-assets is not used: it is behind the course's
+ * login, and these are shown to everyone.)
+ */
+const covers: Record<string, string> = {
+  "/what-like-its-hard/contracts": "/castle/covers/contracts.webp",
+  "/immigration-101": "/castle/covers/immigration-101.webp",
+};
+
 export function codeCourses(): LibraryProgram[] {
   const courses = education.filter(
     (item) => item.group === "Doctrinal courses" || freeCourses.includes(item.path)
@@ -23,7 +34,7 @@ export function codeCourses(): LibraryProgram[] {
       excerpt: item.description,
       format: "series",
       color: null,
-      cover: null,
+      cover: covers[item.path] ?? null,
       topics: [free ? "Immigration" : "Law school"],
       credits: [],
       units: 0,

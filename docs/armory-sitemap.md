@@ -242,6 +242,9 @@ immigration resources are split three ways, and the same thing has five names.
   hero crops are placeholders until each place has its own interior picture. The
   library interior that used to sit in the Council Chamber and the Training Hall is
   gone.
+- **Covers.** Two Library cards have an illustrated cover so far (Contracts,
+  Immigration 101); the rest, and a fallback for programmes without one, wait on more
+  image credits. See [image-style.md](image-style.md).
 - **The courtyard labels are small plaques** that scale with the picture and sit
   beside each door, not over it; the whole plaque is the link.
 - **The courtyard picture and its four labels.** A fourth door, "My Training", sits

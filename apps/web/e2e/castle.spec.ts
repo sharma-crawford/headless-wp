@@ -44,6 +44,9 @@ test.describe("The Castle", () => {
     const contracts = page.getByRole("link", { name: /Contracts/ }).first();
     await expect(contracts).toHaveAttribute("href", "/study/contracts");
 
+    // The covers that have been illustrated show on their cards.
+    await expect(contracts.locator("img")).toHaveAttribute("src", "/castle/covers/contracts.webp");
+
     const free = page.getByRole("link", { name: /Immigration 101/ }).first();
     await expect(free).toContainText("Free");
     await expect(free).toHaveAttribute("href", /advocate-101/);
