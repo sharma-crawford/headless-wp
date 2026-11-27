@@ -235,6 +235,9 @@ immigration resources are split three ways, and the same thing has five names.
 - **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
   the course page's trail, no "Your course room" on pages that are not a room.
   Every "back" goes to the same place.
+- **Covers.** Two Library cards have an illustrated cover so far (Contracts,
+  Immigration 101); the rest, and a fallback for programmes without one, wait on more
+  image credits. See [image-style.md](image-style.md).
 - **The courtyard labels are small plaques** that scale with the picture and sit
   beside each door, not over it; the whole plaque is the link.
 - **The courtyard picture and its four labels.** A fourth door, "My Training", sits
