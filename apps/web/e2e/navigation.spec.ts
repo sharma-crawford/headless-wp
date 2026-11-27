@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { people } from "./support/people";
+import { openAccountMenu } from "./support/header";
 import { signIn } from "./support/session";
 import { WordPress } from "./support/wordpress";
 
@@ -10,26 +11,26 @@ test.describe("What each role is offered", () => {
   }) => {
     await signIn(page, people.participant);
 
-    const header = page.getByRole("banner");
-    await expect(header.getByRole("link", { name: "My Training" })).toBeVisible();
-    await expect(header.getByRole("link", { name: "Build" })).toHaveCount(0);
-    await expect(header.getByRole("link", { name: "Reports" })).toHaveCount(0);
+    const menu = await openAccountMenu(page);
+    await expect(menu.getByRole("menuitem", { name: "My Training" })).toBeVisible();
+    await expect(menu.getByRole("menuitem", { name: "Build" })).toHaveCount(0);
+    await expect(menu.getByRole("menuitem", { name: "Reports" })).toHaveCount(0);
   });
 
   test("an instructor is offered the builder and reports", async ({ page }) => {
     await signIn(page, people.instructor);
     await page.goto("/reports");
 
-    const header = page.getByRole("banner");
-    await expect(header.getByRole("link", { name: "Build" })).toBeVisible();
-    await expect(header.getByRole("link", { name: "Reports" })).toBeVisible();
+    const menu = await openAccountMenu(page);
+    await expect(menu.getByRole("menuitem", { name: "Build" })).toBeVisible();
+    await expect(menu.getByRole("menuitem", { name: "Reports" })).toBeVisible();
 
     /*
      * Administration is WordPress, and teaching does not grant it. The
      * header and the menu render one list, so this also asserts they agree.
      */
     await expect(
-      header.getByRole("link", { name: "Administration" })
+      menu.getByRole("menuitem", { name: "Administration" })
     ).toHaveCount(0);
   });
 
@@ -37,9 +38,8 @@ test.describe("What each role is offered", () => {
     await signIn(page, people.administrator);
     await page.goto("/reports");
 
-    await expect(
-      page.getByRole("banner").getByRole("link", { name: "Administration" })
-    ).toBeVisible();
+    const menu = await openAccountMenu(page);
+    await expect(menu.getByRole("menuitem", { name: "Administration" })).toBeVisible();
   });
 });
 

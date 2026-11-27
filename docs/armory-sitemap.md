@@ -52,8 +52,8 @@ Merged to `main`: PRs #72 to #94. Phase 2b is in review (#95).
 | Staff | Build, Reports, People, Plans, Colours | Authors and administrators |
 | Still in code | Nine law-school rooms under `/study/<subject>` | Enrolled learners |
 
-One Armory header (`Castle · Library · My Training · Account`, plus the staff paths
-by role) on every page, including the static immigration pages. `/catalogue` and
+One Armory header (`Castle`, then the reader's menu with My Training, Account and the
+staff paths by role) on every page, including the static immigration pages. `/catalogue` and
 `/castle-preview` redirect. Full list of addresses: [ui-map.md](ui-map.md).
 
 ### By phase
@@ -129,7 +129,7 @@ different needs, and nothing is in two places.
 | **Library** | Learn. Every course, to choose from and sign up for. Public to browse. | All courses from WordPress, in two formats (several lessons, or one video, live or recorded), free or paid, with filters and one search. Free ones such as Immigration 101 included. The nine law-school courses until Phase 3 moves them | Reference material, practice tools, a person's own progress |
 | **Council Chamber** | Consult. Information and help to have at hand, for families and for practitioners. Public. | Rights and family resources, the habeas primer, the ICE detention map, in plain language, grouped "For families" and "For practitioners", each saying who it is for | Courses (it may link to Immigration 101, which lives in the Library) |
 | **Training Hall** | Practice. Active exercises. Public. | The court tour, Roll the Dice, the Simulator | Courses, My Training, webinars |
-| **Header** | Me. Where the person is and what is theirs. | Castle, Library, then My Training and Account when signed in (Sign in when not), and the staff paths by role | |
+| **Header** | Me. The way back to the Castle, and what is theirs. | Castle, then the reader's menu (their name; under it My Training, Account, the staff paths by role, Log out), or Sign in. It does not repeat the Castle's doors | The Library, Council Chamber or Training Hall |
 
 Two ideas sit behind this: **a webinar is a course** whose format is one video, with
 an optional live date (not a separate kind of thing), and **"mine" lives in the
@@ -227,12 +227,16 @@ immigration resources are split three ways, and the same thing has five names.
   soon" filter. The live date, reminder emails and calendar file are unchanged; the
   reminder email still links to `/webinars`, which redirects, so the plugin is
   untouched.
-- **Header:** Castle, Library, then My Training and Account (Sign in when signed
-  out), and the staff paths by role.
+- **Header:** Castle, then the reader's menu: their name, and under it My Training,
+  Account, the staff paths by role and Log out (Sign in when signed out). Library is
+  no longer in the header, because the Castle's door already opens it; Castle takes
+  the reader back to the doors from any page.
 - **One search** on the Library for courses and for the resources it still lists.
 - **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
   the course page's trail, no "Your course room" on pages that are not a room.
   Every "back" goes to the same place.
+- **The courtyard labels are small plaques** that scale with the picture and sit
+  beside each door, not over it; the whole plaque is the link.
 - **The courtyard picture and its four labels.** A fourth door, "My Training", sits
   on a lectern with an open study journal in the courtyard art (an edit of the
   existing picture, `public/castle/courtyard-training.webp`; the old
@@ -336,8 +340,9 @@ Decided (Rafael, 2026-11-26):
 2. **Immigration tools: public.** The static pages, Dice and Simulator need no
    login. Moving them inside the shell (Phase 1) keeps them public.
 3. **Front door: `/castle`.** Castle stays the Armory home. `/` is unchanged.
-4. **Header links: Library.** The header is Castle, Library, then My Training or
-   Sign in. "Library" replaces both "Course rooms" and "Catalogue" (done).
+4. **Header links: Library.** "Library" replaces both "Course rooms" and "Catalogue"
+   (done). Later superseded: the header is now Castle and the reader's menu, and
+   the Library is the Castle's door (2026-11-27).
 
 Decided (Rafael, 2026-11-27), numbered after the open decision below so no number
 is reused:

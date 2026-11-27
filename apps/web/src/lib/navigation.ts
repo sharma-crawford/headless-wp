@@ -117,5 +117,23 @@ async function pathsFor(): Promise<Path[]> {
   return paths;
 }
 
-export { pathsFor };
+/**
+ * What the Armory header's account menu shows: the reader's name, and their own
+ * paths (My Training, Account) followed by the staff ones. The Castle's own doors
+ * are left out: the header's Castle link covers them. Null when it cannot be worked
+ * out, and the header then shows a plain link.
+ */
+async function armoryAccount(): Promise<{ name: string; items: Path[] } | null> {
+  try {
+    const [me, paths] = await Promise.all([getMe(), pathsFor()]);
+    const own = paths.filter((path) => !path.staff && !path.href.startsWith("/castle"));
+    const staff = paths.filter((path) => path.staff);
+    const account: Path = { href: "/account", label: "Account", description: "Your username and password, and your colours." };
+    return { name: me.display_name || "Account", items: [...own, account, ...staff] };
+  } catch {
+    return null;
+  }
+}
+
+export { pathsFor, armoryAccount };
 export type { Path };

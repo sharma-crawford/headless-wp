@@ -38,7 +38,7 @@ function ResourceButton({ item }: { item: (typeof education)[number] }) {
   </a>;
 }
 
-export default function CastleExplorer({ library = null, catalogueUnavailable = false, signedIn = false, noPublished = false, training: mine = null }: {
+export default function CastleExplorer({ library = null, catalogueUnavailable = false, signedIn = false, noPublished = false, training: mine = null, account = null }: {
   /** The Library: every course, with search and filters, drawn on the server. */
   library?: ReactNode;
   signedIn?: boolean;
@@ -47,6 +47,8 @@ export default function CastleExplorer({ library = null, catalogueUnavailable = 
   noPublished?: boolean;
   /** What the reader's own label says; null when signed out or not enrolled anywhere. */
   training?: TrainingSummary | null;
+  /** The reader's name and menu for the header (armoryAccount()). */
+  account?: { name: string; items: { href: string; label: string; external?: boolean; staff?: boolean }[] } | null;
 }) {
   const [view, setView] = useState("courtyard");
   const heading = useRef<HTMLHeadingElement>(null);
@@ -78,7 +80,7 @@ export default function CastleExplorer({ library = null, catalogueUnavailable = 
 
   return <div className={styles.shell}>
     <a className={styles.skip} href="#castle-main">Skip to content</a>
-    <ArmoryNav inCastle signedIn={signedIn} current={view === "courtyard" ? "courtyard" : view === "list" ? "list" : undefined} />
+    <ArmoryNav inCastle signedIn={signedIn} account={account} current={view === "courtyard" ? "courtyard" : undefined} />
     <main id="castle-main" className={styles.main}>
       {view === "courtyard" && <>
         <section className={styles.intro}><h1 ref={heading} tabIndex={-1}>A place to sharpen your practice.</h1><p>Choose a room. Discover a course. Build your craft.</p><span className={styles.previewNote}>The Pen & Sword · The Armory</span></section>
