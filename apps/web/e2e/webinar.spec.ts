@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { people } from "./support/people";
+import { openAccountMenu } from "./support/header";
 import { signIn } from "./support/session";
 import { WordPress } from "./support/wordpress";
 
@@ -120,7 +121,8 @@ test.describe("Live sessions on My Training", () => {
     page,
   }) => {
     await signIn(page, people.participant);
-    await page.getByRole("banner").getByRole("link", { name: "My Training" }).click();
+    const menu = await openAccountMenu(page);
+    await menu.getByRole("menuitem", { name: "My Training" }).click();
 
     await expect(page).toHaveURL(/\/my-training$/);
 

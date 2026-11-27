@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 
+import { openAccountMenu } from "./support/header";
 import { signIn, signOut } from "./support/session";
 import { WordPress } from "./support/wordpress";
 
@@ -23,8 +24,8 @@ test.describe("Your account", () => {
 
   test("the header leads to it", async ({ page }) => {
     await signIn(page, person);
-    // Role "button": the Button component keeps it, even rendered as a link.
-    await page.getByRole("link", { name: "Account" }).click();
+    const menu = await openAccountMenu(page);
+    await menu.getByRole("menuitem", { name: "Account" }).click();
 
     await expect(page.getByRole("heading", { name: "Your account" })).toBeVisible();
     await expect(page.getByText(`Signed in as ${person.username}`)).toBeVisible();

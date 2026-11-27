@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { people } from "./support/people";
+import { openAccountMenu } from "./support/header";
 import { signIn, signOut } from "./support/session";
 import { WordPress } from "./support/wordpress";
 
@@ -92,7 +93,10 @@ test.describe("Plans", () => {
   test("an instructor is not offered plans", async ({ page }) => {
     await signIn(page, people.instructor);
 
-    await expect(page.getByRole("banner").getByRole("link", { name: "Plans" })).toHaveCount(0);
+    await page.goto("/reports");
+    const menu = await openAccountMenu(page);
+    await expect(menu.getByRole("menuitem", { name: "Plans" })).toHaveCount(0);
+    await page.keyboard.press("Escape");
 
     await page.goto(`/builder/programs/${programme.id}`);
     await expect(page.getByRole("link", { name: "Access", exact: true })).toHaveCount(0);

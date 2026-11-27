@@ -41,3 +41,8 @@
 .header nav button{display:inline-flex;align-items:center;min-height:44px;background:none;border:0;border-left:1px solid var(--line);padding:0 0 0 16px;font:inherit;color:inherit;cursor:pointer}
 .header nav button:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
 @media(max-width:760px){.header nav button{padding-left:10px}}
+/* The reader's menu: their name and a caret, set off from Castle like the old links were. */
+.trigger{display:inline-flex;align-items:center;gap:8px;min-height:44px;background:none;border:0;border-left:1px solid var(--line);padding:0 0 0 16px;font:inherit;color:inherit;cursor:pointer}
+.trigger:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.triggerName{max-width:16ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:760px){.trigger{padding-left:10px}.triggerName{max-width:11ch}}

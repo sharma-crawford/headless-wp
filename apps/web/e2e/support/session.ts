@@ -1,5 +1,6 @@
 import { expect, type Page } from "@playwright/test";
 
+import { openAccountMenu } from "./header";
 import type { Person } from "./people";
 
 /**
@@ -20,7 +21,8 @@ async function signIn(page: Page, person: Person): Promise<void> {
 }
 
 async function signOut(page: Page): Promise<void> {
-  await page.getByRole("button", { name: "Log out" }).click();
+  const menu = await openAccountMenu(page);
+  await menu.getByRole("menuitem", { name: "Log out" }).click();
   await expect(page).toHaveURL(/\/login$/);
 }
 

@@ -9,7 +9,7 @@ import { signIn } from "./support/session";
  * link and the courtyard's Library door both open.
  */
 test.describe("The Castle", () => {
-  test("the courtyard has three doors, and the Library door opens the same page as the header", async ({ page }) => {
+  test("the courtyard has the doors, and the Library door opens the Library", async ({ page }) => {
     await page.goto("/castle");
 
     // Three rooms and the reader's own door: signed out, it asks them to sign in.
@@ -20,12 +20,10 @@ test.describe("The Castle", () => {
 
     await doors.getByRole("link", { name: /Library/ }).click();
     await expect(page.getByRole("heading", { name: "Library", level: 1 })).toBeVisible();
-    const fromDoor = page.url();
 
-    await page.goto("/castle");
-    await page.getByRole("banner").getByRole("link", { name: "Library" }).click();
-    await expect(page.getByRole("heading", { name: "Library", level: 1 })).toBeVisible();
-    expect(page.url()).toBe(fromDoor);
+    // The header does not repeat the doors: it carries Castle and the reader's menu.
+    await expect(page.getByRole("banner").getByRole("link", { name: "Library" })).toHaveCount(0);
+    await expect(page.getByRole("banner").getByRole("link", { name: "Castle" })).toBeVisible();
   });
 
   test("an old address for the library still opens the Library", async ({ page }) => {
@@ -72,7 +70,7 @@ test.describe("The Castle", () => {
     await page.goto("/castle");
     const doors = page.getByLabel("Castle entrances");
 
-    await expect(doors.getByRole("link", { name: "Library Learn: every course Browse courses →" })).toBeVisible();
+    await expect(doors.getByRole("link", { name: /^Library Learn: every course/ })).toBeVisible();
     await expect(doors.getByRole("link", { name: /Council Chamber Consult: rights and resources/ })).toBeVisible();
     await expect(doors.getByRole("link", { name: /Training Hall Practice: court tour, Dice, Simulator/ })).toBeVisible();
   });

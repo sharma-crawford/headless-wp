@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { people } from "./support/people";
+import { openAccountMenu } from "./support/header";
 import { signIn } from "./support/session";
 import { WordPress } from "./support/wordpress";
 
@@ -87,16 +88,14 @@ test.describe("Where People is offered", () => {
     await signIn(page, people.instructor);
     await page.goto("/reports");
 
-    await expect(
-      page.getByRole("banner").getByRole("link", { name: "People" })
-    ).toBeVisible();
+    const menu = await openAccountMenu(page);
+    await expect(menu.getByRole("menuitem", { name: "People" })).toBeVisible();
   });
 
   test("and not to a participant", async ({ page }) => {
     await signIn(page, people.participant);
 
-    await expect(
-      page.getByRole("banner").getByRole("link", { name: "People" })
-    ).toHaveCount(0);
+    const menu = await openAccountMenu(page);
+    await expect(menu.getByRole("menuitem", { name: "People" })).toHaveCount(0);
   });
 });

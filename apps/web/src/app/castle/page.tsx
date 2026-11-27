@@ -5,6 +5,7 @@ import CatalogueCard from "@/components/catalogue/catalogue-card";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
 import { codeCourses } from "@/lib/library";
+import { armoryAccount } from "@/lib/navigation";
 import { trainingSummary } from "@/lib/training-summary";
 import type { LibraryProgram } from "@/lib/types";
 import { getCatalogue, getMyTraining, getWebinars } from "@/lib/wordpress";
@@ -47,7 +48,7 @@ export default async function CastlePage() {
   );
 
   return <>
-    <CastleExplorer library={library} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} noPublished={catalogue.status === "fulfilled" && published.programs.length === 0} training={mine} />
+    <CastleExplorer library={library} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} noPublished={catalogue.status === "fulfilled" && published.programs.length === 0} training={mine} account={signedIn ? await armoryAccount() : null} />
     <PageCode code="P24" />
   </>;
 }

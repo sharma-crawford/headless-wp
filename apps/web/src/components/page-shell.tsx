@@ -3,11 +3,10 @@ import type { ReactNode } from "react";
 
 import { cn } from "@pcle/ui/lib/utils";
 
-import { logoutAction } from "@/app/actions/auth";
 import ArmoryNav from "@/components/armory/armory-nav";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
-import { pathsFor, type Path } from "@/lib/navigation";
+import { armoryAccount } from "@/lib/navigation";
 
 /**
  * Shared frame for the signed-in pages: a header offering the same paths the
@@ -51,12 +50,7 @@ export default async function PageShell({
    * before it gets here.
    */
   const signedIn = await isAuthenticated();
-  const paths: Path[] = signedIn
-    ? await pathsFor()
-    : [
-        { href: "/castle", label: "Castle", description: "" },
-        { href: "/pricing", label: "Pricing", description: "" },
-      ];
+  const account = signedIn ? await armoryAccount() : null;
 
   return (
     /*
@@ -65,7 +59,7 @@ export default async function PageShell({
       below the fold on every page, which is a footer nobody ever reads.
     */
     <div className={cn("flex flex-1 flex-col bg-zinc-50", theme === "armory" && "armory-theme")}>
-      <ArmoryNav signedIn={signedIn} paths={paths} logout={logoutAction} />
+      <ArmoryNav signedIn={signedIn} account={account} />
 
       <main
         className={cn(
