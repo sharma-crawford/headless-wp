@@ -31,7 +31,7 @@ pointing at the right thing.
 |---|---|---|---|---|
 | P0 | Sign in | `/login` | Anyone signed out | `app/login/page.tsx` |
 | P1 | Menu | `/` | Everyone; where signing in lands | `app/page.tsx` |
-| P2 | My Training | `/my-training` | Participants | `app/my-training/page.tsx` |
+| P2 | My Training (incl. upcoming live sessions) | `/my-training` | Participants | `app/my-training/page.tsx` |
 | P3 | Program | `/programs/:id` | Participants (enrolled) | `app/programs/[id]/page.tsx` |
 | P4 | Module | `/modules/:id` | Participants (enrolled) | `app/modules/[id]/page.tsx` |
 | P5 | Unit | `/units/:id` | Participants (enrolled) | `app/units/[id]/page.tsx` |
@@ -46,7 +46,7 @@ pointing at the right thing.
 | P14 | Participant report | `/reports/:id/participants/:userId` | Authors | `app/reports/[id]/participants/[userId]/page.tsx` |
 | P15 | Not allowed | any of the above, when WordPress refuses access | Anyone without access | `components/access-error.tsx` |
 | P16 | Colours | `/colours` | Authors (the defaults and display take an administrator) | `app/colours/page.tsx` |
-| P17 | Webinars | `/webinars` | Everyone: upcoming live sessions and on-demand webinars | `app/webinars/page.tsx` |
+| P17 | Webinars (retired) | `/webinars` | Redirects to My Training (P2). A webinar is a course in the Library; the live sessions a reader has coming up are on My Training | `app/webinars/page.tsx` |
 | P18 | Catalogue | `/catalogue` | Redirects to the Library, `/castle#list` (P24) | `app/catalogue/page.tsx` |
 | P19 | Catalogue programme | `/catalogue/:id` | Anyone, signed in or not | `app/catalogue/[id]/page.tsx` |
 | P20 | Plans | `/plans` | Administrators | `app/plans/page.tsx` |
@@ -54,7 +54,7 @@ pointing at the right thing.
 | P22 | Not found | any address with nothing at it | Anyone | `app/not-found.tsx` |
 
 | P23 | Castle preview alias | `/castle-preview` | Redirects to `/castle` (P24) | `app/castle-preview/page.tsx` |
-| P24 | Castle | `/castle` | Public course rooms; enrolled training when signed in | `app/castle/page.tsx` |
+| P24 | Castle: the entrance, and its views `#courtyard`, `#list` (the Library: every course), `#council` (Council Chamber: rights and family resources), `#training` (Training Hall: the court tour, Dice, the Simulator) | `/castle` | Public | `app/castle/page.tsx` |
 | P25 | Forgot your password | `/forgot-password` | Anyone | `app/forgot-password/page.tsx` |
 | P26 | Choose a password | `/reset-password?login=&key=` | Anyone with the emailed link | `app/reset-password/page.tsx` |
 

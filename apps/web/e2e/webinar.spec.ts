@@ -75,10 +75,11 @@ test.describe("Webinars", () => {
 });
 
 /**
- * The webinars hub (P17): an author schedules a webinar live, and its
- * participants find it under Upcoming with a calendar file to keep.
+ * Live sessions: an author schedules a webinar live, and its participants find it
+ * under Upcoming live sessions on My Training, with a calendar file to keep. (The
+ * old Webinars page is gone; /webinars redirects there.)
  */
-test.describe("The webinars hub", () => {
+test.describe("Live sessions on My Training", () => {
   let wordpress: WordPress;
   let programme: { id: number; title: string };
   let participantEmail: string;
@@ -119,9 +120,9 @@ test.describe("The webinars hub", () => {
     page,
   }) => {
     await signIn(page, people.participant);
-    await page.getByRole("banner").getByRole("link", { name: "Webinars" }).click();
+    await page.getByRole("banner").getByRole("link", { name: "My Training" }).click();
 
-    await expect(page).toHaveURL(/\/webinars$/);
+    await expect(page).toHaveURL(/\/my-training$/);
 
     const upcoming = page.getByRole("region", { name: "Upcoming live sessions" });
     const card = upcoming.getByRole("article").filter({ hasText: programme.title });
@@ -143,9 +144,11 @@ test.describe("The webinars hub", () => {
     await wordpress.remove(programme.id, participantEmail);
 
     await signIn(page, people.participant);
+    // The old address now lands on My Training.
     await page.goto("/webinars");
 
-    await expect(page.getByRole("heading", { name: "Webinars", level: 1 })).toBeVisible();
+    await expect(page).toHaveURL(/\/my-training$/);
+    await expect(page.getByRole("heading", { name: "My Training", level: 1 })).toBeVisible();
     await expect(page.getByText(programme.title)).toHaveCount(0);
 
     await wordpress.enrol(programme.id, participantEmail);

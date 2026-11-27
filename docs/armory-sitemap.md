@@ -40,7 +40,7 @@ plans and enrollment can gate these courses once they are real programs.
 
 ## Status snapshot, 2026-11-27
 
-Merged to `main`: PRs #72 to #92.
+Merged to `main`: PRs #72 to #94. Phase 2b is in review (#95).
 
 ### The site now
 
@@ -61,7 +61,7 @@ by role) on every page, including the static immigration pages. `/catalogue` and
 | Phase | State | What is in `main` |
 | --- | --- | --- |
 | 1. One shell and theme | **Done** | Shared header, one set of colour and font tokens, learner pages themed, static pages on the tokens (#73 to #81) |
-| 2. Library is the catalogue | **Mostly done** | Library has the catalogue's cards, covers, topics, filters and search; redirects; header is Castle, Library (#82, #83). The nine hardcoded courses stay listed until Phase 3 removes them |
+| 2. Library is the catalogue | **Done** | Library has the catalogue's cards, covers, topics, filters and search; redirects; header is Castle, Library (#82, #83). The nine hardcoded courses stay listed until Phase 3 removes them |
 | 3. Room themes from WordPress | **Partly done** | Theme setting per programme and a themed frame (#84). Not done: one generic room that replaces the nine bespoke ones, and `/study/<slug>` redirecting |
 | 4. Content leaves the repo | **Built, not run** | Study mode for quizzes (#85), whole songs by direct upload (#86), widgets by key (#87), song player and `/media/<id>` (#88), migration script (#89). Not done: moving the files to production, rooms on WordPress quizzes, deletions |
 | 5. Progress, sign-up, enrollment | **Mostly built** | Self-completion (#90), emails and password pages (#91), room answers saved to WordPress quizzes (#92). Not confirmed: Reports for these courses |
@@ -188,7 +188,7 @@ rough and assume the WordPress plugin can be changed.
   `/pricing`, `/account` adopt the Armory header and theme.
 - Done when: moving between any two learner pages never changes the header or fonts.
 
-### Phase 2: Library is the catalogue (about 1 day) [mostly done, see 2b]
+### Phase 2: Library is the catalogue (about 1 day) [done]
 - Castle's Library reads WP programs only. Delete the hardcoded nine-course list.
 - The Library list view now carries the catalogue's cards, covers, topics, format
   filters and search (**done**); `/catalogue` redirects to it. Enrolled programs
@@ -199,7 +199,7 @@ rough and assume the WordPress plugin can be changed.
 - Done when: publishing a program in the builder makes it appear in the Library
   with no deploy.
 
-### Phase 2b: One Library, three rooms (about 1 to 2 days, web only)
+### Phase 2b: One Library, three rooms (about 1 to 2 days, web only) [done]
 
 Found in the 2026-11-27 walkthrough: there are two "Library" views with different
 content (the header's page `#list` and the courtyard's room `#library`), the same
@@ -219,10 +219,14 @@ immigration resources are split three ways, and the same thing has five names.
   map and a link to Immigration 101, in two groups, "For families" and "For
   practitioners". **Training Hall:** the court tour, Dice and the Simulator only;
   My Training and Webinars buttons come out.
-- **Webinars are courses.** The `/webinars` page folds into the Library as a "Live
-  soon" view; `/webinars` redirects; "Webinars" leaves the header and
-  `pathsFor()`. The live date, reminder emails and calendar file stay as they are.
-  The reminder email's link points at the Library instead.
+- **Webinars are courses.** "Webinars" leaves the header and `/webinars` redirects.
+  Built a little differently from first written: the old page was the reader's own
+  calendar (it also listed the live sessions of series programmes, for what they
+  are enrolled in), so those sessions now sit on **My Training** ("Upcoming live
+  sessions", with Join and Add to calendar), and the Library has the public "Live
+  soon" filter. The live date, reminder emails and calendar file are unchanged; the
+  reminder email still links to `/webinars`, which redirects, so the plugin is
+  untouched.
 - **Header:** Castle, Library, then My Training and Account (Sign in when signed
   out), and the staff paths by role.
 - **One search** on the Library for courses and for the resources it still lists.
