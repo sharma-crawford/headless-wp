@@ -25,12 +25,12 @@ export default function LoginForm() {
 
       <div className="mt-8 space-y-5">
         <div className="space-y-1.5">
-          <Label htmlFor="login-username">Username</Label>
+          <Label htmlFor="login-username">Username or email</Label>
           <Input
             id="login-username"
             name="username"
             type="text"
-            placeholder="Username"
+            placeholder="Username or email"
             autoComplete="username"
             className="h-11"
             required
@@ -61,8 +61,14 @@ export default function LoginForm() {
         </Button>
       </div>
 
-      {/* Somewhere to go for anyone who arrived here by accident. */}
       <p className="mt-6 text-center text-sm">
+        <Link href="/forgot-password" className="text-zinc-700 hover:text-zinc-950 hover:underline">
+          Forgot your password?
+        </Link>
+      </p>
+
+      {/* Somewhere to go for anyone who arrived here by accident. */}
+      <p className="mt-3 text-center text-sm">
         <Link
           href="/"
           className="text-zinc-500 hover:text-zinc-900 hover:underline"

@@ -1914,6 +1914,79 @@ pcle_eq( pcle_parse_byte_range( 'bytes=0-1,5-9', 1000 ), null, 'several ranges a
  * larger than the web app's own request cap can still be attached. Held to the
  * same rules as the ordinary route, and the address is good for one file.
  */
+pcle_section( '# Learner access (the app, not WordPress)' );
+
+$app_url_filter = function () {
+	return 'https://app.test/';
+};
+add_filter( 'pcle_app_url', $app_url_filter );
+pcle_eq( pcle_app_url( '/my-training' ), 'https://app.test/my-training', 'the app address comes from one place' );
+
+$mails = array();
+$mail_capture = function ( $null, $atts ) use ( &$mails ) {
+	$mails[] = array( 'to' => $atts['to'], 'subject' => $atts['subject'], 'body' => $atts['message'] );
+	return true;
+};
+add_filter( 'pre_wp_mail', $mail_capture, 10, 2 );
+
+$invitee = 'learner.access.' . wp_generate_password( 6, false, false ) . '@example.test';
+wp_set_current_user( $admin );
+$bulk = pcle_bulk_enroll( $prog_a, array( $invitee ), true );
+pcle_eq( $bulk['created'], 1, 'an address with no account gets one' );
+$invited = get_user_by( 'email', $invitee );
+$created_users[] = $invited->ID;
+
+$by_subject = function ( $needle ) use ( &$mails ) {
+	foreach ( $mails as $mail ) {
+		if ( false !== strpos( $mail['subject'], $needle ) ) {
+			return $mail;
+		}
+	}
+	return null;
+};
+$welcome = $by_subject( 'Armory account' );
+pcle_ok( null !== $welcome, 'the new learner is sent the Armory account email' );
+pcle_ok( false !== strpos( $welcome['body'], 'https://app.test/reset-password?login=' ), 'whose link is the app\'s set-password page' );
+pcle_ok( false === strpos( $welcome['body'], 'wp-login.php' ), 'and never WordPress\'s login' );
+pcle_ok( false === strpos( $welcome['body'], 'Hello ' . $invited->user_login ), 'and does not greet them by a login made from their email' );
+
+$enrolled = $by_subject( 'You are enrolled' );
+pcle_ok( null !== $enrolled && false !== strpos( $enrolled['body'], 'https://app.test/programs/' . $prog_a ), 'the enrolment email links to the programme in the app' );
+pcle_ok( false === strpos( $enrolled['body'], '/program/' ), 'not to WordPress\'s own page for it' );
+
+// The link in the email sets the password, once.
+preg_match( '#reset-password\?login=([^&]+)&key=(\S+)#', $welcome['body'], $link );
+$login = rawurldecode( $link[1] );
+$key   = $link[2];
+$reset = function ( $password ) use ( $login, $key ) {
+	return pcle_authoring_call( 0, 'POST', '/platform-cle/v1/account/reset', array( 'login' => $login, 'key' => $key, 'password' => $password ) );
+};
+pcle_eq( $reset( 'short' )->get_status(), 400, 'a password that is too short is refused' );
+pcle_eq( $reset( $invitee )->get_status(), 400, 'so is one that is their own email address' );
+$done = $reset( 'a-long-enough-password' );
+pcle_eq( $done->get_status(), 200, 'a good password is accepted by the link' );
+pcle_ok( ! is_wp_error( wp_authenticate( $login, 'a-long-enough-password' ) ), 'and they can sign in with it' );
+pcle_eq( $reset( 'another-long-password-1' )->get_status(), 400, 'the link works once' );
+pcle_eq( pcle_authoring_call( 0, 'POST', '/platform-cle/v1/account/reset', array( 'login' => $login, 'key' => 'nonsense', 'password' => 'a-long-enough-password-2' ) )->get_status(), 400, 'a made-up key is refused' );
+
+// Forgot password: the same answer for everyone, one email, and only for real accounts.
+$mails = array();
+$forgot = function ( $email ) {
+	return pcle_authoring_call( 0, 'POST', '/platform-cle/v1/account/forgot', array( 'email' => $email ) );
+};
+$known = $forgot( $invitee );
+pcle_eq( $known->get_data(), array( 'sent' => true ), 'asking to reset says it was sent' );
+pcle_eq( count( $mails ), 1, 'and sends one email to a real account' );
+pcle_ok( false !== strpos( $mails[0]['body'], 'https://app.test/reset-password?login=' ), 'with the app\'s link' );
+pcle_eq( $forgot( 'nobody.here.' . wp_generate_password( 6, false, false ) . '@example.test' )->get_data(), array( 'sent' => true ), 'an address with no account gets the same answer' );
+pcle_eq( count( $mails ), 1, 'and nothing is sent' );
+$forgot( $invitee );
+pcle_eq( count( $mails ), 1, 'asking again at once sends nothing more' );
+pcle_eq( $forgot( 'not an email' )->get_status(), 200, 'rubbish is answered the same way' );
+
+remove_filter( 'pre_wp_mail', $mail_capture, 10 );
+remove_filter( 'pcle_app_url', $app_url_filter );
+
 pcle_section( '# Direct uploads' );
 
 $ticket_for = function ( $uid, $node ) {

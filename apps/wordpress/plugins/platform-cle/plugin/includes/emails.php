@@ -52,17 +52,20 @@ function pcle_send_enrollment_email( $program_id, $user_id ) {
 	}
 
 	$program_title = get_the_title( $program_id );
-	$program_url   = get_permalink( $program_id );
-	$dashboard     = function_exists( 'pcle_get_front_door_url' ) ? pcle_get_front_door_url() : home_url( '/' );
+	// The app, not WordPress's own front end: that is a different interface that
+	// asks for a WordPress login. See learner-access.php.
+	$program_url = pcle_app_url( '/programs/' . (int) $program_id );
+	$dashboard   = pcle_app_url( '/my-training' );
+	$greeting    = pcle_greeting_name( $user );
 
 	/* translators: %s: program title. */
 	$subject = sprintf( __( 'You are enrolled: %s', 'platform-cle' ), $program_title );
 
 	$lines = array(
-		sprintf(
-			/* translators: 1: display name, 2: program title. */
-			__( 'Hi %1$s,', 'platform-cle' ),
-			$user->display_name
+		'' === $greeting ? __( 'Hello,', 'platform-cle' ) : sprintf(
+			/* translators: %s: display name. */
+			__( 'Hi %s,', 'platform-cle' ),
+			$greeting
 		),
 		'',
 		sprintf(
@@ -180,7 +183,8 @@ function pcle_send_reminder_email( $user, $event, $when ) {
 	}
 
 	$title = get_the_title( $event->ID );
-	$url   = get_permalink( $event->ID );
+	// The app's webinars page, not the session's WordPress permalink (learner-access.php).
+	$url   = pcle_app_url( '/webinars' );
 
 	/* translators: %s: session title. */
 	$subject = sprintf( __( 'Reminder: %s', 'platform-cle' ), $title );

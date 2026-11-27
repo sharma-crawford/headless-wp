@@ -260,6 +260,27 @@ async function changePassword(
   });
 }
 
+/**
+ * Asks for a set-password link by email. WordPress answers the same whether or
+ * not the address has an account, so this says nothing about who does.
+ */
+async function requestPasswordReset(email: string): Promise<void> {
+  await wordpressFetch("/platform-cle/v1/account/forgot", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+}
+
+/** Sets the password, given the login and one-time key from the emailed link. */
+async function resetPassword(login: string, key: string, password: string): Promise<void> {
+  await wordpressFetch("/platform-cle/v1/account/reset", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ login, key, password }),
+  });
+}
+
 async function getMyTraining(): Promise<{ programs: TrainingProgram[] }> {
   return wordpressFetch("/platform-cle/v1/my-training", {
     auth: true,
@@ -798,6 +819,8 @@ export {
   wordpressFetch,
   login,
   logout,
+  requestPasswordReset,
+  resetPassword,
   getMyTraining,
   getProgram,
   getQuizStudy,

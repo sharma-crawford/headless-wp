@@ -55,6 +55,8 @@ pointing at the right thing.
 
 | P23 | Castle preview alias | `/castle-preview` | Redirects to `/castle` (P24) | `app/castle-preview/page.tsx` |
 | P24 | Castle | `/castle` | Public course rooms; enrolled training when signed in | `app/castle/page.tsx` |
+| P25 | Forgot your password | `/forgot-password` | Anyone | `app/forgot-password/page.tsx` |
+| P26 | Choose a password | `/reset-password?login=&key=` | Anyone with the emailed link | `app/reset-password/page.tsx` |
 
 ## Popups
 
