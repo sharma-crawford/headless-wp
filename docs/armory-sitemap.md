@@ -1,6 +1,9 @@
 # Armory: sitemap and plan
 
-Status: **draft for review** (Edward, Rekha, Maria). Nothing here is built unless marked.
+Status: **in progress** (Edward, Rekha, Maria). Updated 2026-11-27. Phases 1 and 2
+are done and live on `main`. Phases 3 to 5 are built in code and merged, but most of
+it needs the WordPress plugin deployed before it exists on the live site. Phase 6
+(payment) has not started. See [Status snapshot](#status-snapshot-2026-11-27).
 
 ## The principle
 
@@ -12,7 +15,10 @@ The rule behind it: **if a course author needs to change it, it lives in WordPre
 and is edited in the builder. If it needs a developer, it is a theme or a widget,
 and there is a short, shared list of those.**
 
-## Where we are today
+## Where we started
+
+The table below is the baseline before Phase 1. What has changed since is in the
+[status snapshot](#status-snapshot-2026-11-27) further down.
 
 The Armory shell (Castle, the nine course rooms, Dice, Simulator) and the course
 platform (programs, modules, My Training, catalogue, webinars) are two sites
@@ -31,6 +37,70 @@ sharing a login.
 
 WordPress already decides who may enter a room (access check per programme), so
 plans and enrollment can gate these courses once they are real programs.
+
+## Status snapshot, 2026-11-27
+
+Merged to `main`: PRs #72 to #92.
+
+### The site now
+
+| Zone | Pages | Who |
+| --- | --- | --- |
+| Discover | Castle `/castle` (front door), Library `/castle#list`, course page `/catalogue/:id`, Pricing, Webinars | Public |
+| Learn | Sign in, Forgot password, Choose password, My Training, Programme (themed), Module and quiz, Account | Signed in (the first three: anyone) |
+| Practice tools | Dice, Simulator, court tour, ICE map, Immigration 101, habeas primer | Public |
+| Staff | Build, Reports, People, Plans, Colours | Authors and administrators |
+| Still in code | Nine law-school rooms under `/study/<subject>` | Enrolled learners |
+
+One Armory header (`Castle · Library · My Training · Account`, plus the staff paths
+by role) on every page, including the static immigration pages. `/catalogue` and
+`/castle-preview` redirect. Full list of addresses: [ui-map.md](ui-map.md).
+
+### By phase
+
+| Phase | State | What is in `main` |
+| --- | --- | --- |
+| 1. One shell and theme | **Done** | Shared header, one set of colour and font tokens, learner pages themed, static pages on the tokens (#73 to #81) |
+| 2. Library is the catalogue | **Done** | Library has the catalogue's cards, covers, topics, filters and search; redirects; header is Castle, Library (#82, #83). The nine hardcoded courses stay listed until Phase 3 removes them |
+| 3. Room themes from WordPress | **Partly done** | Theme setting per programme and a themed frame (#84). Not done: one generic room that replaces the nine bespoke ones, and `/study/<slug>` redirecting |
+| 4. Content leaves the repo | **Built, not run** | Study mode for quizzes (#85), whole songs by direct upload (#86), widgets by key (#87), song player and `/media/<id>` (#88), migration script (#89). Not done: moving the files to production, rooms on WordPress quizzes, deletions |
+| 5. Progress, sign-up, enrollment | **Mostly built** | Self-completion (#90), emails and password pages (#91), room answers saved to WordPress quizzes (#92). Not confirmed: Reports for these courses |
+| 6. Plans and payment | **Not started** | Last, as agreed |
+
+### Not true yet
+
+1. **The plugin is not deployed.** Until it is, the live site has no room theme,
+   study mode, direct upload, widgets, song player, self-completion or new emails.
+   Needs someone with server access.
+2. **Email may not arrive.** No SMTP is configured, and the new-account and password
+   emails depend on it. Needs a choice (the organisation's Microsoft 365, or a
+   transactional provider) and DNS records. See the plugin's `ROADMAP.md`.
+3. **Content is still in two places.** The nine rooms hold it in code; WordPress holds
+   the lessons as drafts. The 138 MB of art and songs are not in WordPress yet
+   ([course-media-migration.md](course-media-migration.md)). Needs the plugin
+   deployed, PHP's upload limit checked (8 MB or more), and a backup of each programme.
+4. **Nothing has been deleted.** `quiz-data.json`, `study-data.json`, `course-assets/`
+   and `/api/study/grade` are still there, and stay until the rooms read WordPress.
+   That needs a go-ahead at that moment.
+
+### Small debts
+
+- The static header (`public/castle-resources/armory/`) is a copy of the React one and
+  is kept in step by hand.
+- The cream and olive content colours in the court tour, Immigration 101 and the ICE
+  map are still hardcoded.
+- Signed-in and staff screens were checked by CI's end-to-end tests, not by eye in a
+  browser; mobile was spot-checked on the Simulator and Dice only.
+- The colour-menu end-to-end tests had a timing problem on slow runners; fixed by
+  waiting for the menu to open (#82, #89).
+
+### Needs your decision or go-ahead
+
+- Confirm self-completion as built: per programme, off by default, never open for a
+  programme with CLE credit hours (decision 1).
+- Who deploys the plugin, and who sets up email (open decision 5, owners).
+- When to run the migration script on production, one course first.
+- When to switch the rooms to WordPress quizzes and delete the old files.
 
 ## Target model
 
@@ -86,7 +156,7 @@ Armory (one header and theme on every page)
 Each phase ends with something visible and leaves the site working. Estimates are
 rough and assume the WordPress plugin can be changed.
 
-### Phase 1: One shell and theme (about 1 to 2 days)
+### Phase 1: One shell and theme (about 1 to 2 days) [done]
 - Shared Armory header on Castle, Dice, Simulator, course rooms. **Done (PR #73).**
   Study room pages carry it but were not visually tested (behind login).
 - Same header on the four static immigration pages. **Done (static copy in
@@ -101,7 +171,7 @@ rough and assume the WordPress plugin can be changed.
   `/pricing`, `/account` adopt the Armory header and theme.
 - Done when: moving between any two learner pages never changes the header or fonts.
 
-### Phase 2: Library is the catalogue (about 1 day)
+### Phase 2: Library is the catalogue (about 1 day) [done]
 - Castle's Library reads WP programs only. Delete the hardcoded nine-course list.
 - The Library list view now carries the catalogue's cards, covers, topics, format
   filters and search (**done**); `/catalogue` redirects to it. Enrolled programs
@@ -112,7 +182,7 @@ rough and assume the WordPress plugin can be changed.
 - Done when: publishing a program in the builder makes it appear in the Library
   with no deploy.
 
-### Phase 3: Room themes come from WordPress (about 3 to 4 days for one generic room; more per bespoke layout)
+### Phase 3: Room themes come from WordPress (about 3 to 4 days for one generic room; more per bespoke layout) [partly done]
 - Plugin: a room-theme setting on programs, exposed by the API, with a control in
   the program builder. **Done (PR for this step, not yet deployed).** The list is
   `pcle_room_themes()` in `formats.php` and `lib/room-themes.ts`; keep them in step.
@@ -133,7 +203,7 @@ rough and assume the WordPress plugin can be changed.
   widget is a developer's job: a component and one line in the registry.
 - Done when: Contracts renders from WP and looks like it does today.
 
-### Phase 4: Content leaves the repo (about 2 to 3 days)
+### Phase 4: Content leaves the repo (about 2 to 3 days) [built, not run]
 - Art and songs go to the WP media library and attach to modules. The builder
   now takes MP3 and M4A, and files over 4 MB go from the browser straight to
   WordPress by a one-time address (**done**, plugin not yet deployed; the limit is
@@ -160,7 +230,7 @@ rough and assume the WordPress plugin can be changed.
 - Note: deleting files stops the repo growing but does not shrink git history.
 - Done when: an author edits a question in the builder and the change shows with no deploy.
 
-### Phase 5: Progress, sign-up, enrollment (about 2 to 3 days)
+### Phase 5: Progress, sign-up, enrollment (about 2 to 3 days) [mostly built]
 - Self-completion for self-study programs. **Done (plugin not yet deployed):** a
   per-program setting, off by default, on the programme's Details tab (Progress).
   Closed for a programme that carries CLE credit hours (refused when enabling, and
@@ -185,7 +255,7 @@ rough and assume the WordPress plugin can be changed.
   (decided: payment last).
 - Reports include these courses.
 
-### Phase 6: Plans and payment (last, as agreed)
+### Phase 6: Plans and payment (last, as agreed) [not started]
 - Per-program access and price set in the builder (the fields exist; price is a label today).
 - Course-page call to action per plan.
 - Payment provider integration.
