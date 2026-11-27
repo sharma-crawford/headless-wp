@@ -4,8 +4,8 @@
  * each place itself (the catalogue, the reader's own page, a list of resources); the
  * frame is what makes them read as one castle.
  */
-.hero{--navy:var(--armory-navy);position:relative;color:#fff;background-color:var(--armory-navy);background-image:url(/castle/courtyard-training.webp);background-repeat:no-repeat;background-size:170% auto}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#082641f0 0%,#082641cc 38%,#08264133 78%,#08264100 100%)}
+.hero{--navy:var(--armory-navy);position:relative;color:#fff;background-color:var(--room-deep,var(--armory-navy));background-image:url(/castle/courtyard-training.webp);background-repeat:no-repeat;background-size:170% auto}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--room-deep,#082641) 94%,transparent) 0%,color-mix(in srgb,var(--room-deep,#082641) 80%,transparent) 38%,color-mix(in srgb,var(--room-deep,#082641) 20%,transparent) 78%,transparent 100%)}
 .inner{position:relative;max-width:1180px;margin:auto;padding:26px 30px 40px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;gap:26px}
 .back{align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #ffffffb0;color:#fff;font:17px var(--armory-font);text-decoration:none;background:#08264155}
 .back:hover{background:#082641aa}
@@ -19,6 +19,7 @@
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin:16px 0 8px}
 
 /* Which part of the courtyard picture each place shows. */
+.cover{background-size:cover;background-position:center}
 .library{background-position:0% 52%}
 .council{background-position:51% 22%}
 .training{background-position:100% 56%}
@@ -27,7 +28,7 @@
 @media(max-width:760px){
 .hero{background-size:cover}
 .inner{padding:18px 20px 28px;min-height:220px}
-.hero::before{background:linear-gradient(0deg,#082641f2 0%,#082641b0 55%,#08264155 100%)}
+.hero::before{background:linear-gradient(0deg,color-mix(in srgb,var(--room-deep,#082641) 95%,transparent) 0%,color-mix(in srgb,var(--room-deep,#082641) 70%,transparent) 55%,color-mix(in srgb,var(--room-deep,#082641) 30%,transparent) 100%)}
 .library{background-position:15% 50%}
 .council{background-position:50% 30%}
 .training{background-position:88% 55%}
