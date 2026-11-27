@@ -235,6 +235,10 @@ immigration resources are split three ways, and the same thing has five names.
 - **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
   the course page's trail, no "Your course room" on pages that are not a room.
   Every "back" goes to the same place.
+- **"Choose your next stop"** under the courtyard is three cards instead of six
+  buttons that repeated the doors: "Start here" (Immigration 101, free), "Live soon"
+  (the next live session) and "Newest" (the latest published course). Whatever there
+  is none of is left out.
 - **The programme page is the generic room.** It uses the same hero frame: the
   programme's cover if it has one (else the courtyard crop), its theme's deep colour,
   the theme's name, its credit hours or size, and "← My Training"; then a progress
@@ -248,6 +252,9 @@ immigration resources are split three ways, and the same thing has five names.
   hero crops are placeholders until each place has its own interior picture. The
   library interior that used to sit in the Council Chamber and the Training Hall is
   gone.
+- **Covers.** Two Library cards have an illustrated cover so far (Contracts,
+  Immigration 101); the rest, and a fallback for programmes without one, wait on more
+  image credits. See [image-style.md](image-style.md).
 - **The courtyard labels are small plaques** that scale with the picture and sit
   beside each door, not over it; the whole plaque is the link.
 - **The courtyard picture and its four labels.** A fourth door, "My Training", sits

@@ -44,6 +44,9 @@ test.describe("The Castle", () => {
     const contracts = page.getByRole("link", { name: /Contracts/ }).first();
     await expect(contracts).toHaveAttribute("href", "/study/contracts");
 
+    // The covers that have been illustrated show on their cards.
+    await expect(contracts.locator("img")).toHaveAttribute("src", "/castle/covers/contracts.webp");
+
     const free = page.getByRole("link", { name: /Immigration 101/ }).first();
     await expect(free).toContainText("Free");
     await expect(free).toHaveAttribute("href", /advocate-101/);
@@ -64,6 +67,18 @@ test.describe("The Castle", () => {
     await expect(page.getByRole("link", { name: /Simulator/ })).toBeVisible();
     await expect(page.getByRole("link", { name: /Virtual Tour/ })).toBeVisible();
     await expect(page.getByRole("link", { name: "Open My Training →" })).toHaveCount(0);
+  });
+
+  test("under the courtyard, three cards answer where to begin", async ({ page }) => {
+    await page.goto("/castle");
+
+    const stops = page.getByRole("region", { name: "Choose your next stop." });
+    await expect(stops).toBeVisible();
+    // The free course for someone new is always there; the other two depend on what is published.
+    await expect(stops.getByText("Start here")).toBeVisible();
+    await expect(stops.getByRole("link", { name: /Immigration 101/ })).toContainText("Free");
+    // No row of buttons repeating the doors.
+    await expect(page.getByRole("link", { name: "Find rights & family resources →" })).toHaveCount(0);
   });
 
   test("each label says the place, what it is for, and one action", async ({ page }) => {

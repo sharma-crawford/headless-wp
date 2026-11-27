@@ -40,9 +40,11 @@ function ResourceButton({ item }: { item: (typeof education)[number] }) {
   </a>;
 }
 
-export default function CastleExplorer({ library = null, catalogueUnavailable = false, signedIn = false, noPublished = false, training: mine = null, account = null }: {
+export default function CastleExplorer({ library = null, next = null, catalogueUnavailable = false, signedIn = false, noPublished = false, training: mine = null, account = null }: {
   /** The Library: every course, with search and filters, drawn on the server. */
   library?: ReactNode;
+  /** Cards under the courtyard that answer "where do I begin?", drawn on the server. */
+  next?: ReactNode;
   signedIn?: boolean;
   catalogueUnavailable?: boolean;
   /** WordPress answered but has no published course yet. */
@@ -105,14 +107,7 @@ export default function CastleExplorer({ library = null, catalogueUnavailable = 
                 </a>}
           </div>
         </div>
-        <section className={styles.quickAccess} aria-label="Go directly to a resource"><h2>Choose your next stop.</h2><div className={styles.buttonGrid}>
-          <a className={styles.actionButton} href="/castle-resources/advocate-101/index.html">Start Immigration 101, free →</a>
-          <a className={styles.actionButton} href="#list">Browse every course →</a>
-          <a className={styles.actionButton} href="#council">Find rights & family resources →</a>
-          <a className={styles.actionButton} href="/castle-resources/court-tour/index.html">Tour the immigration courtroom →</a>
-          <a className={styles.actionButton} href="/immigration-dice">Roll the dice, practice a scenario →</a>
-          <a className={styles.actionButton} href="#training">Practice in the Training Hall →</a>
-        </div></section>
+        {next && <section className={styles.quickAccess} aria-labelledby="next-stop"><h2 id="next-stop">Choose your next stop.</h2>{next}</section>}
         <footer className={styles.footer}><em>Explore at your own pace.</em><a href="#list">Browse every course →</a></footer>
       </>}
 

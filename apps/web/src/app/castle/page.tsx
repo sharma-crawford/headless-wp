@@ -4,7 +4,7 @@ import CatalogueBrowser from "@/components/catalogue/catalogue-browser";
 import CatalogueCard from "@/components/catalogue/catalogue-card";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
-import { codeCourses } from "@/lib/library";
+import { codeCourses, soonestLive } from "@/lib/library";
 import { armoryAccount } from "@/lib/navigation";
 import { trainingSummary } from "@/lib/training-summary";
 import type { LibraryProgram } from "@/lib/types";
@@ -47,8 +47,31 @@ export default async function CastlePage() {
     />
   );
 
+  /*
+   * "Choose your next stop": three cards that answer "where do I begin?": the free
+   * course for someone new, the next live session, and the newest course. Whatever
+   * there is none of (no live session, nothing published yet) is left out.
+   */
+  const startHere = codeCourses().find((course) => course.free);
+  const upcoming = soonestLive(published.programs);
+  const newest = [...published.programs].filter((program) => program.id !== upcoming?.id).sort((a, b) => b.id - a.id)[0];
+  const stops: [string, LibraryProgram][] = [];
+  if (startHere) stops.push(["Start here", startHere]);
+  if (upcoming) stops.push(["Live soon", upcoming]);
+  if (newest) stops.push(["Newest", newest]);
+  const next = stops.length === 0 ? null : (
+    <div className="armory-theme grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {stops.map(([label, program]) => (
+        <div key={label}>
+          <p className="mb-2 text-xs font-semibold tracking-[0.14em] text-brand-700 uppercase">{label}</p>
+          <CatalogueCard key={program.id} program={program} enrolled={enrolled.has(program.id)} />
+        </div>
+      ))}
+    </div>
+  );
+
   return <>
-    <CastleExplorer library={library} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} noPublished={catalogue.status === "fulfilled" && published.programs.length === 0} training={mine} account={signedIn ? await armoryAccount() : null} />
+    <CastleExplorer library={library} next={next} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} noPublished={catalogue.status === "fulfilled" && published.programs.length === 0} training={mine} account={signedIn ? await armoryAccount() : null} />
     <PageCode code="P24" />
   </>;
 }
