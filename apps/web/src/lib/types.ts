@@ -357,6 +357,20 @@ type CatalogueProgram = {
   access: ProgramAccess;
 };
 
+/**
+ * One card in the Library: a WordPress programme, or one of the courses that is
+ * still code (the nine law-school rooms, Immigration 101) until it moves to
+ * WordPress. Those carry their own address and a note in place of unit counts.
+ */
+type LibraryProgram = CatalogueProgram & {
+  /** Where the card goes, when it is not the course page. */
+  href?: string;
+  /** Marks a free course. */
+  free?: boolean;
+  /** A line in place of "N units · N modules". */
+  note?: string;
+};
+
 type CatalogueDetail = CatalogueProgram & {
   /** Unit and module titles, nothing more. Empty for a webinar. */
   outline: { title: string; modules: string[] }[];
@@ -377,6 +391,7 @@ export type {
   Catalogue,
   CatalogueDetail,
   CatalogueProgram,
+  LibraryProgram,
   QuizStudy,
   People,
   Person,

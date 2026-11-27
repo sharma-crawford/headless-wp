@@ -18,6 +18,16 @@ export const education = [
   { title: "Civil Procedure", group: "Doctrinal courses", path: "/what-like-its-hard/civil-procedure", description: "The Procedure Dojo · Pleadings, discovery, judgment, and jurisdiction." },
 ] as const;
 
+/** Who a resource is for, shown on it in the Council Chamber. */
+export const audience: Record<string, "families" | "both" | "practitioners"> = {
+  "/immigration-rights": "families",
+  "/icemap": "both",
+  "/habeas-corpus": "practitioners",
+};
+
+/** Courses that are free to anyone. */
+export const freeCourses = ["/immigration-101"];
+
 const localResources: Record<string, string> = {
   "/immigration-dice": "/immigration-dice",
   "/immigration-simulator": "/immigration-simulator",

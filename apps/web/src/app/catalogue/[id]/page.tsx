@@ -87,7 +87,7 @@ export default async function CatalogueItemPage({
   return (
     <PageShell code="P19" wide theme="armory">
       <Breadcrumbs
-        trail={[{ label: "Catalogue", href: "/catalogue" }, { label: program.title }]}
+        trail={[{ label: "Library", href: "/castle#list" }, { label: program.title }]}
       />
 
       {locked && !enrolled && (

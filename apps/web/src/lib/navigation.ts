@@ -44,22 +44,16 @@ async function pathsFor(): Promise<Path[]> {
       href: "/my-training",
       label: "My Training",
       description:
-        "The programmes you are enrolled in, and how far through them you are.",
-    },
-    {
-      href: "/webinars",
-      label: "Webinars",
-      description:
-        "Live sessions coming up, with the link to join, and webinars to watch on demand.",
+        "The programmes you are enrolled in, how far through them you are, and your live sessions.",
     },
     {
       href: "/castle#list",
       label: "Library",
-      description: "Every course and webinar, by topic and format.",
+      description: "Every course and webinar, free and paid, by topic and format.",
     },
   ];
 
-  paths.push({ href: "/castle", label: "Castle", description: "Explore course rooms, immigration resources, and the courtroom tour." });
+  paths.push({ href: "/castle", label: "Castle", description: "The entrance: the Library, the Council Chamber and the Training Hall." });
 
   if (author) {
     paths.push(

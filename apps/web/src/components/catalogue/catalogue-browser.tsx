@@ -6,9 +6,9 @@ import { Input } from "@pcle/ui/components/input";
 import { cn } from "@pcle/ui/lib/utils";
 
 import { decodeEntities } from "@/lib/html";
-import type { CatalogueProgram } from "@/lib/types";
+import type { LibraryProgram } from "@/lib/types";
 
-type Format = "all" | "series" | "webinar";
+type Format = "all" | "series" | "webinar" | "live";
 
 /**
  * Search and filters over the catalogue, entirely in the browser.
@@ -22,7 +22,7 @@ export default function CatalogueBrowser({
   topics,
   cards,
 }: {
-  programs: CatalogueProgram[];
+  programs: LibraryProgram[];
   topics: string[];
   cards: Record<number, React.ReactNode>;
 }) {
@@ -34,7 +34,8 @@ export default function CatalogueBrowser({
     const words = query.toLowerCase().split(/\s+/).filter(Boolean);
 
     return programs.filter((program) => {
-      if (format !== "all" && program.format !== format) {
+      // "Live soon" is any course with a live session coming up, in any format.
+      if (format === "live" ? !program.next_live : format !== "all" && program.format !== format) {
         return false;
       }
 
@@ -54,7 +55,7 @@ export default function CatalogueBrowser({
     <div>
       <div className="flex flex-col gap-4 rounded-xl border border-zinc-200 bg-white p-4 sm:p-5">
         <label htmlFor="catalogue-search" className="sr-only">
-          Search the catalogue
+          Search the Library
         </label>
         <Input
           id="catalogue-search"
@@ -71,6 +72,7 @@ export default function CatalogueBrowser({
               ["all", "All formats"],
               ["series", "Courses"],
               ["webinar", "Webinars"],
+              ["live", "Live soon"],
             ] as const
           ).map(([value, label]) => (
             <Chip key={value} pressed={format === value} onClick={() => setFormat(value)}>
@@ -100,8 +102,8 @@ export default function CatalogueBrowser({
 
       <p className="mt-6 text-sm text-zinc-500" aria-live="polite">
         {shown.length === programs.length
-          ? `${programs.length} ${programs.length === 1 ? "programme" : "programmes"}`
-          : `${shown.length} of ${programs.length} programmes`}
+          ? `${programs.length} ${programs.length === 1 ? "course" : "courses"}`
+          : `${shown.length} of ${programs.length} courses`}
       </p>
 
       {shown.length > 0 ? (

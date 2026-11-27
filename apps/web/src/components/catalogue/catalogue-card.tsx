@@ -4,15 +4,19 @@ import { Cover } from "@/components/programme-card";
 import { swatchSolid } from "@/lib/colours";
 import { decodeEntities } from "@/lib/html";
 import { scheduled } from "@/lib/sessions";
-import type { CatalogueProgram } from "@/lib/types";
+import type { LibraryProgram } from "@/lib/types";
 
 /** "Kansas 3 h · Missouri 3 h": the hours, as a bar lists them. */
-function creditLine(program: CatalogueProgram): string {
+function creditLine(program: LibraryProgram): string {
   return program.credits.map((credit) => `${credit.label} ${credit.hours} h`).join(" · ");
 }
 
 /** "2 units · 4 modules", or "Webinar". */
-function sizeLine(program: CatalogueProgram): string {
+function sizeLine(program: LibraryProgram): string {
+  if (program.note) {
+    return program.note;
+  }
+
   if (program.format === "webinar") {
     return "Webinar";
   }
@@ -31,14 +35,14 @@ export default function CatalogueCard({
   program,
   enrolled = false,
 }: {
-  program: CatalogueProgram;
+  program: LibraryProgram;
   enrolled?: boolean;
 }) {
   const live = program.next_live ? scheduled(program.next_live) : null;
 
   return (
     <Link
-      href={`/catalogue/${program.id}`}
+      href={program.href ?? `/catalogue/${program.id}`}
       className="group flex h-full flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-[0_1px_2px_rgb(15_23_42/0.04)] transition hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-[0_8px_24px_-8px_rgb(15_23_42/0.18)] focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
     >
       <Cover
@@ -50,6 +54,11 @@ export default function CatalogueCard({
 
       <div className="flex flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-1.5">
+          {program.free && (
+            <span className="rounded-full bg-emerald-600 px-2 py-0.5 text-xs font-semibold text-white">
+              Free
+            </span>
+          )}
           {enrolled && (
             <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">
               In your training

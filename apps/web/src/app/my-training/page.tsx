@@ -5,9 +5,10 @@ import ContinueCard from "@/components/continue-card";
 import PageHeading from "@/components/page-heading";
 import PageShell from "@/components/page-shell";
 import ProgrammeCard from "@/components/programme-card";
+import SessionCard from "@/components/webinars/session-card";
 import { isAuthenticated } from "@/lib/auth";
-import type { TrainingProgram } from "@/lib/types";
-import { getMyTraining } from "@/lib/wordpress";
+import type { TrainingProgram, Webinars } from "@/lib/types";
+import { getMyTraining, getWebinars } from "@/lib/wordpress";
 
 export default async function MyTrainingPage() {
   if (!(await isAuthenticated())) {
@@ -22,6 +23,22 @@ export default async function MyTrainingPage() {
     return renderAccessError(error);
   }
 
+  /*
+   * The live sessions of what this reader is enrolled in, a webinar's or a
+   * series'. Best effort: My Training must still open if this cannot be read.
+   */
+  let webinars: Webinars | null = null;
+
+  try {
+    webinars = await getWebinars();
+  } catch {
+    webinars = null;
+  }
+
+  // WordPress's clock, not this server's: the same one that decided what is upcoming.
+  const serverNow = webinars ? Date.parse(webinars.now) : 0;
+  const upcoming = webinars?.upcoming ?? [];
+
   return (
     <PageShell code="P2" wide theme="armory">
       <PageHeading
@@ -33,6 +50,19 @@ export default async function MyTrainingPage() {
             : "Pick up where you left off, or start something new."
         }
       />
+
+      {upcoming.length > 0 && (
+        <section aria-labelledby="upcoming" className="mt-10">
+          <h2 id="upcoming" className="text-2xl font-semibold text-zinc-950">
+            Upcoming live sessions
+          </h2>
+          <div className="mt-5 space-y-4">
+            {upcoming.map((session, index) => (
+              <SessionCard key={session.id} session={session} serverNow={serverNow} featured={index === 0} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {programs.length === 0 ? (
         <div className="mt-8 rounded-xl border border-dashed border-zinc-300 bg-white px-6 py-12 text-center">

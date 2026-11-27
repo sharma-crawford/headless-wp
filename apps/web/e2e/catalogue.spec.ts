@@ -34,7 +34,7 @@ test.describe("The public catalogue", () => {
     await page.getByRole("button", { name: "Browse the Library" }).click();
 
     await expect(page).toHaveURL(/\/castle#list$/);
-    await expect(page.getByRole("heading", { name: "Courses & resources" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Library", level: 1 })).toBeVisible();
     // The public header: a way in, and nothing that needs an account.
     await expect(page.getByRole("banner").getByRole("link", { name: "Sign in" })).toBeVisible();
     await expect(page.getByRole("banner").getByRole("link", { name: "My Training" })).toHaveCount(0);
@@ -52,7 +52,7 @@ test.describe("The public catalogue", () => {
   test("search narrows the list, and says when nothing matches", async ({ page }) => {
     await page.goto("/castle#list");
 
-    await page.getByLabel("Search the catalogue").fill("zzzz-nothing-is-called-this");
+    await page.getByLabel("Search the Library").fill("zzzz-nothing-is-called-this");
     await expect(page.getByText("Nothing matches.")).toBeVisible();
 
     await page.getByRole("button", { name: "Clear the filters" }).click();
