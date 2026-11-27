@@ -1,6 +1,15 @@
 import { education, educationHref, freeCourses } from "@/components/castle/education";
 import type { LibraryProgram } from "@/lib/types";
 
+/** The programme whose next live session is soonest and still ahead, or undefined. */
+export function soonestLive<T extends { next_live: string }>(programs: T[]): T | undefined {
+  const now = Date.now();
+
+  return programs
+    .filter((program) => program.next_live && Date.parse(program.next_live) >= now)
+    .sort((a, b) => Date.parse(a.next_live) - Date.parse(b.next_live))[0];
+}
+
 /**
  * The courses that are still code, as Library cards: the nine law-school rooms and
  * Immigration 101. They sit beside the WordPress programmes so the Library has one

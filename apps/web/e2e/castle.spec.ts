@@ -66,6 +66,18 @@ test.describe("The Castle", () => {
     await expect(page.getByRole("link", { name: "Open My Training →" })).toHaveCount(0);
   });
 
+  test("under the courtyard, three cards answer where to begin", async ({ page }) => {
+    await page.goto("/castle");
+
+    const stops = page.getByRole("region", { name: "Choose your next stop." });
+    await expect(stops).toBeVisible();
+    // The free course for someone new is always there; the other two depend on what is published.
+    await expect(stops.getByText("Start here")).toBeVisible();
+    await expect(stops.getByRole("link", { name: /Immigration 101/ })).toContainText("Free");
+    // No row of buttons repeating the doors.
+    await expect(page.getByRole("link", { name: "Find rights & family resources →" })).toHaveCount(0);
+  });
+
   test("each label says the place, what it is for, and one action", async ({ page }) => {
     await page.goto("/castle");
     const doors = page.getByLabel("Castle entrances");

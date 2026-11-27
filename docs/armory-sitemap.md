@@ -235,6 +235,10 @@ immigration resources are split three ways, and the same thing has five names.
 - **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
   the course page's trail, no "Your course room" on pages that are not a room.
   Every "back" goes to the same place.
+- **"Choose your next stop"** under the courtyard is three cards instead of six
+  buttons that repeated the doors: "Start here" (Immigration 101, free), "Live soon"
+  (the next live session) and "Newest" (the latest published course). Whatever there
+  is none of is left out.
 - **One frame for the four places** (`components/castle/room-frame.tsx`): a hero band
   with a crop of the courtyard picture for that place, its name, what it is for, and
   "← Castle", then the place's own body. The Library keeps its catalogue, My Training
