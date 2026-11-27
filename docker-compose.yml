@@ -46,6 +46,8 @@ services:
       - WORDPRESS_ADMIN_PASSWORD=${WORDPRESS_ADMIN_PASSWORD}
       - WORDPRESS_ADMIN_EMAIL=${WORDPRESS_ADMIN_EMAIL}
       - JWT_AUTH_SECRET_KEY=${JWT_AUTH_SECRET_KEY}
+      # Where emails send learners: the local app, not production (learner-access.php).
+      - WORDPRESS_CONFIG_EXTRA=define('PCLE_APP_URL','http://localhost:3000');
       # Opt-in: when set, the demo seeder also creates the demo accounts.
       # Leave it unset anywhere that isn't a local machine.
       - PCLE_DEMO_USER_PASSWORD=${PCLE_DEMO_USER_PASSWORD:-}

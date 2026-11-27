@@ -168,7 +168,14 @@ rough and assume the WordPress plugin can be changed.
   learner's own tick. A learner's own completions are recorded with no instructor
   against them, so Reports can tell them apart.
 - Quiz results and lesson progress saved from the rooms.
-- Check the sign-up and enrollment flow end to end for a new learner.
+- Check the sign-up and enrollment flow end to end for a new learner. **Walked
+  through locally; fixed (plugin not yet deployed).** Matriculating an address with
+  no account made an account and sent two WordPress emails that sent the learner to
+  WordPress, not the app. Now: the "set your password" email and the enrolment email
+  link to the app (`PCLE_APP_URL`, default production), the app has "Forgot your
+  password?" (`/forgot-password`) and the page the link opens (`/reset-password`),
+  and the sign-in page says the email address works. Sign-up is still by invitation
+  (decided: payment last).
 - Reports include these courses.
 
 ### Phase 6: Plans and payment (last, as agreed)
