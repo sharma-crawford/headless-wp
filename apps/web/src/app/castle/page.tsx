@@ -5,8 +5,9 @@ import CatalogueCard from "@/components/catalogue/catalogue-card";
 import { PageCode } from "@/components/screen-code";
 import { isAuthenticated } from "@/lib/auth";
 import { codeCourses } from "@/lib/library";
+import { trainingSummary } from "@/lib/training-summary";
 import type { LibraryProgram } from "@/lib/types";
-import { getCatalogue, getMyTraining } from "@/lib/wordpress";
+import { getCatalogue, getMyTraining, getWebinars } from "@/lib/wordpress";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Explore the castle | The Armory" };
@@ -22,6 +23,10 @@ export default async function CastlePage() {
     getCatalogue(),
     signedIn ? getMyTraining() : Promise.resolve({ programs: [] }),
   ]);
+  // The reader's own label on the courtyard. Best effort: the Castle opens without it.
+  const mine = signedIn && training.status === "fulfilled"
+    ? await trainingSummary(training.value.programs, await getWebinars().catch(() => null))
+    : null;
   const enrolled = new Set(training.status === "fulfilled" ? training.value.programs.map((item) => item.id) : []);
   const published = catalogue.status === "fulfilled" ? catalogue.value : { programs: [], topics: [] };
 
@@ -42,7 +47,7 @@ export default async function CastlePage() {
   );
 
   return <>
-    <CastleExplorer library={library} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} noPublished={catalogue.status === "fulfilled" && published.programs.length === 0} />
+    <CastleExplorer library={library} signedIn={signedIn} catalogueUnavailable={catalogue.status === "rejected"} noPublished={catalogue.status === "fulfilled" && published.programs.length === 0} training={mine} />
     <PageCode code="P24" />
   </>;
 }

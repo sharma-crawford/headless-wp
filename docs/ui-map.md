@@ -54,7 +54,7 @@ pointing at the right thing.
 | P22 | Not found | any address with nothing at it | Anyone | `app/not-found.tsx` |
 
 | P23 | Castle preview alias | `/castle-preview` | Redirects to `/castle` (P24) | `app/castle-preview/page.tsx` |
-| P24 | Castle: the entrance, and its views `#courtyard`, `#list` (the Library: every course), `#council` (Council Chamber: rights and family resources), `#training` (Training Hall: the court tour, Dice, the Simulator) | `/castle` | Public | `app/castle/page.tsx` |
+| P24 | Castle: the entrance, and its views `#courtyard`, `#list` (the Library: every course), `#council` (Council Chamber: rights and family resources), `#training` (Training Hall: the court tour, Dice, the Simulator). The courtyard also has a My Training label for the reader's own page | `/castle` | Public | `app/castle/page.tsx` |
 | P25 | Forgot your password | `/forgot-password` | Anyone | `app/forgot-password/page.tsx` |
 | P26 | Choose a password | `/reset-password?login=&key=` | Anyone with the emailed link | `app/reset-password/page.tsx` |
 

@@ -233,6 +233,14 @@ immigration resources are split three ways, and the same thing has five names.
 - **One name per thing.** "Library" everywhere: no "Course rooms", no "Catalogue" on
   the course page's trail, no "Your course room" on pages that are not a room.
   Every "back" goes to the same place.
+- **The courtyard picture and its four labels.** A fourth door, "My Training", sits
+  on a lectern with an open study journal in the courtyard art (an edit of the
+  existing picture, `public/castle/courtyard-training.webp`; the old
+  `courtyard.png` is kept in the repo, unused). It is not a room: it is the
+  reader's own page, so its label is drawn from their data: the next module to
+  do and the next live session; signed out it says "Sign in to see your
+  training". All four labels read the same way: the place, what it is for
+  ("Learn", "Consult", "Practice"), one action.
 - Updates `docs/ui-map.md` (P17 becomes a redirect) and the webinar end-to-end tests.
 - Done when: from the Castle, a visitor can answer "where do I learn, where do I look
   something up, where do I practice" without finding the same thing in two places.
