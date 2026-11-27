@@ -40,7 +40,7 @@ plans and enrollment can gate these courses once they are real programs.
 
 ## Status snapshot, 2026-11-27
 
-Merged to `main`: PRs #72 to #91. In review: #92 (CI running).
+Merged to `main`: PRs #72 to #92.
 
 ### The site now
 
@@ -64,7 +64,7 @@ by role) on every page, including the static immigration pages. `/catalogue` and
 | 2. Library is the catalogue | **Done** | Library has the catalogue's cards, covers, topics, filters and search; redirects; header is Castle, Library (#82, #83). The nine hardcoded courses stay listed until Phase 3 removes them |
 | 3. Room themes from WordPress | **Partly done** | Theme setting per programme and a themed frame (#84). Not done: one generic room that replaces the nine bespoke ones, and `/study/<slug>` redirecting |
 | 4. Content leaves the repo | **Built, not run** | Study mode for quizzes (#85), whole songs by direct upload (#86), widgets by key (#87), song player and `/media/<id>` (#88), migration script (#89). Not done: moving the files to production, rooms on WordPress quizzes, deletions |
-| 5. Progress, sign-up, enrollment | **Mostly built** | Self-completion (#90), emails and password pages (#91). #92 (room answers saved to WordPress quizzes) is in review. Not confirmed: Reports for these courses |
+| 5. Progress, sign-up, enrollment | **Mostly built** | Self-completion (#90), emails and password pages (#91), room answers saved to WordPress quizzes (#92). Not confirmed: Reports for these courses |
 | 6. Plans and payment | **Not started** | Last, as agreed |
 
 ### Not true yet
