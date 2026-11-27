@@ -15,6 +15,9 @@ export function RoomHero({
   title,
   purpose,
   back,
+  backLabel = "Castle",
+  image,
+  theme,
   headingRef,
 }: {
   art: Art;
@@ -26,12 +29,21 @@ export function RoomHero({
   purpose: string;
   /** Where "← Castle" goes: "#courtyard" inside the Castle, "/castle#courtyard" elsewhere. */
   back: string;
+  /** What the way back is called: "Castle" by default. */
+  backLabel?: string;
+  /** A picture to use instead of the courtyard crop, such as a programme's cover. */
+  image?: string | null;
+  /** A room theme slug (room-themes.css): the band takes that room's deep colour. */
+  theme?: string | null;
   headingRef?: Ref<HTMLHeadingElement>;
 }) {
   return (
-    <header className={`${styles.hero} ${styles[art]}`}>
+    <header
+      className={`${styles.hero} ${image ? styles.cover : styles[art]} ${theme ? `room-${theme}` : ""}`}
+      style={image ? { backgroundImage: `url(${image})` } : undefined}
+    >
       <div className={styles.inner}>
-        <a className={styles.back} href={back}>← Castle</a>
+        <a className={styles.back} href={back}>← {backLabel}</a>
         <div>
           <p className={styles.name}>{name}</p>
           <h1 ref={headingRef} tabIndex={-1} className={styles.title}>{title}</h1>

@@ -239,6 +239,12 @@ immigration resources are split three ways, and the same thing has five names.
   buttons that repeated the doors: "Start here" (Immigration 101, free), "Live soon"
   (the next live session) and "Newest" (the latest published course). Whatever there
   is none of is left out.
+- **The programme page is the generic room.** It uses the same hero frame: the
+  programme's cover if it has one (else the courtyard crop), its theme's deep colour,
+  the theme's name, its credit hours or size, and "← My Training"; then a progress
+  and "Start / Continue" bar and the outline. A programme with a room theme takes
+  that theme's palette for the body. The nine bespoke rooms at `/study/<slug>` stay
+  until their content is in WordPress (Phase 4).
 - **One frame for the four places** (`components/castle/room-frame.tsx`): a hero band
   with a crop of the courtyard picture for that place, its name, what it is for, and
   "← Castle", then the place's own body. The Library keeps its catalogue, My Training

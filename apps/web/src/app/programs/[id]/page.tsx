@@ -2,15 +2,13 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { renderAccessError } from "@/components/access-error";
-import Breadcrumbs from "@/components/breadcrumbs";
+import { RoomHero } from "@/components/castle/room-frame";
 import PageShell from "@/components/page-shell";
 import PreviewBanner from "@/components/preview-banner";
-import { Cover } from "@/components/programme-card";
 import ProgressBar from "@/components/progress-bar";
 import UnitSection from "@/components/unit-section";
 import WpContent from "@/components/wp-content";
 import { isAuthenticated } from "@/lib/auth";
-import { swatchSolid } from "@/lib/colours";
 import { decodeEntities } from "@/lib/html";
 import { firstUnfinished } from "@/lib/outline";
 import { isPreview, keepPreview } from "@/lib/preview";
@@ -67,73 +65,58 @@ export default async function ProgramPage({
   const themeLabel = ROOM_THEMES.find((option) => option.slug === theme)?.label;
   const studySubject = Object.entries(studyPrograms).find(([, programmeId]) => programmeId === program.id)?.[0];
 
+  const purpose = credits.length > 0
+    ? `CLE credit: ${credits.map((credit) => `${credit.label} ${credit.hours} h`).join(" · ")}`
+    : `${program.units.length} ${program.units.length === 1 ? "unit" : "units"} · ${total} ${total === 1 ? "module" : "modules"}`;
+
   return (
-    <PageShell code="P3" wide theme="armory">
+    <PageShell
+      code="P3"
+      wide
+      theme="armory"
+      hero={
+        <RoomHero
+          art="library"
+          image={program.cover}
+          theme={theme}
+          name={themeLabel ?? "Course"}
+          title={decodeEntities(program.title)}
+          purpose={purpose}
+          back="/my-training"
+          backLabel="My Training"
+        />
+      }
+    >
       {preview && <PreviewBanner programmeId={Number(id)} />}
 
-      <Breadcrumbs
-        trail={[
-          { label: "My Training", href: "/my-training" },
-          { label: program.title },
-        ]}
-      />
+      {/* A programme with a room theme takes that room's palette (room-themes.css). */}
+      <div className={theme ? `room room-${theme}` : undefined}>
 
-      {/* A programme with a room theme is drawn inside that room's frame (room-themes.css). */}
-      <div className={theme ? `room room-${theme} mt-5` : undefined}>
-
-      {/* The course's front page: what it is, how far you are, and the way on. */}
-      <div
-        className={`grid overflow-hidden rounded-2xl md:grid-cols-[minmax(0,1fr)_20rem] ${
-          theme ? "room-hero" : "mt-5 border border-zinc-200 bg-white shadow-[0_1px_2px_rgb(15_23_42/0.04)]"
-        }`}
-      >
-        <div className="p-6 sm:p-8">
-          <p className={`text-xs font-semibold tracking-[0.14em] uppercase ${theme ? "room-eyebrow" : "text-brand-600"}`}>
-            {themeLabel ?? "Course"}
-          </p>
-          <h1 className={`mt-2 text-3xl leading-tight font-semibold sm:text-4xl ${theme ? "text-white" : "text-zinc-950"}`}>
-            {decodeEntities(program.title)}
-          </h1>
-
-          {credits.length > 0 && (
-            <p className={`mt-3 text-sm font-medium ${theme ? "text-white/80" : "text-zinc-700"}`}>
-              CLE credit: {credits.map((credit) => `${credit.label} ${credit.hours} h`).join(" · ")}
-            </p>
-          )}
-
-          <div className={`mt-6 max-w-md ${theme ? "rounded-lg bg-white p-3" : ""}`}>
-            <ProgressBar progress={program.progress} label="Programme progress" />
-          </div>
-
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            {studySubject && (
-              <Link href={`/study/${studySubject}`} className="inline-flex min-h-11 items-center rounded-lg bg-brand-600 px-5 py-2 font-semibold text-white transition hover:bg-brand-700">
-                Explore the interactive course →
-              </Link>
-            )}
-            {next ? (
-              <Link
-                href={keepPreview(`/modules/${next.module.id}`, preview)}
-                className="inline-flex h-11 items-center gap-1.5 rounded-lg bg-brand-600 px-5 font-semibold text-white transition hover:bg-brand-700"
-              >
-                {started ? "Continue" : "Start"}: {decodeEntities(next.module.title)}
-                <span aria-hidden="true">→</span>
-              </Link>
-            ) : finished ? (
-              <span className="inline-flex h-11 items-center rounded-lg bg-emerald-50 px-5 font-semibold text-emerald-800">
-                ✓ You&apos;ve completed every module
-              </span>
-            ) : null}
-          </div>
+      {/* How far you are, and the way on. */}
+      <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-zinc-200 bg-white p-5 shadow-[0_1px_2px_rgb(15_23_42/0.04)] sm:p-6">
+        <div className="w-full max-w-md">
+          <ProgressBar progress={program.progress} label="Programme progress" />
         </div>
 
-        <div className="hidden md:block">
-          <Cover
-            colour={program.color ? swatchSolid(program.color) : undefined}
-            webinar={false}
-            image={program.cover ?? null}
-            className="h-full min-h-56"
-          />
+        <div className="flex flex-wrap items-center gap-3">
+          {studySubject && (
+            <Link href={`/study/${studySubject}`} className="inline-flex min-h-11 items-center rounded-lg bg-brand-600 px-5 py-2 font-semibold text-white transition hover:bg-brand-700">
+              Explore the interactive course →
+            </Link>
+          )}
+          {next ? (
+            <Link
+              href={keepPreview(`/modules/${next.module.id}`, preview)}
+              className="inline-flex h-11 items-center gap-1.5 rounded-lg bg-brand-600 px-5 font-semibold text-white transition hover:bg-brand-700"
+            >
+              {started ? "Continue" : "Start"}: {decodeEntities(next.module.title)}
+              <span aria-hidden="true">→</span>
+            </Link>
+          ) : finished ? (
+            <span className="inline-flex h-11 items-center rounded-lg bg-emerald-50 px-5 font-semibold text-emerald-800">
+              ✓ You&apos;ve completed every module
+            </span>
+          ) : null}
         </div>
       </div>
 
