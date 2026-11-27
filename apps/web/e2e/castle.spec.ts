@@ -1,5 +1,8 @@
 import { expect, test } from "@playwright/test";
 
+import { people } from "./support/people";
+import { signIn } from "./support/session";
+
 /**
  * The Castle (P24) is the entrance and holds no content of its own. Three doors,
  * each a place with one purpose, and one Library: the page the header's Library
@@ -9,10 +12,13 @@ test.describe("The Castle", () => {
   test("the courtyard has three doors, and the Library door opens the same page as the header", async ({ page }) => {
     await page.goto("/castle");
 
+    // Three rooms and the reader's own door: signed out, it asks them to sign in.
     const doors = page.getByLabel("Castle entrances");
-    await expect(doors.getByRole("link")).toHaveCount(3);
+    await expect(doors.getByRole("link")).toHaveCount(4);
+    await expect(doors.getByRole("link", { name: /My Training/ })).toHaveAttribute("href", "/login");
+    await expect(doors.getByText("Sign in to see your training")).toBeVisible();
 
-    await doors.getByRole("link", { name: /The Library/ }).click();
+    await doors.getByRole("link", { name: /Library/ }).click();
     await expect(page.getByRole("heading", { name: "Library", level: 1 })).toBeVisible();
     const fromDoor = page.url();
 
@@ -60,5 +66,25 @@ test.describe("The Castle", () => {
     await expect(page.getByRole("link", { name: /Simulator/ })).toBeVisible();
     await expect(page.getByRole("link", { name: /Virtual Tour/ })).toBeVisible();
     await expect(page.getByRole("link", { name: "Open My Training →" })).toHaveCount(0);
+  });
+
+  test("each label says the place, what it is for, and one action", async ({ page }) => {
+    await page.goto("/castle");
+    const doors = page.getByLabel("Castle entrances");
+
+    await expect(doors.getByRole("link", { name: "Library Learn: every course Browse courses →" })).toBeVisible();
+    await expect(doors.getByRole("link", { name: /Council Chamber Consult: rights and resources/ })).toBeVisible();
+    await expect(doors.getByRole("link", { name: /Training Hall Practice: court tour, Dice, Simulator/ })).toBeVisible();
+  });
+});
+
+test.describe("The Castle, signed in", () => {
+  test("My Training is the reader's own door, and says what is next", async ({ page }) => {
+    await signIn(page, people.participant);
+    await page.goto("/castle");
+
+    const mine = page.getByLabel("Castle entrances").getByRole("link", { name: /My Training/ });
+    await expect(mine).toHaveAttribute("href", "/my-training");
+    await expect(mine).not.toContainText("Sign in");
   });
 });

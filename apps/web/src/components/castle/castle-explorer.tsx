@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { courses } from "./courses";
 import { audience, education, educationHref } from "./education";
 import ArmoryNav from "@/components/armory/armory-nav";
+import type { TrainingSummary } from "@/lib/training-summary";
 import styles from "./castle.module.css";
 
 /*
@@ -37,13 +38,15 @@ function ResourceButton({ item }: { item: (typeof education)[number] }) {
   </a>;
 }
 
-export default function CastleExplorer({ library = null, catalogueUnavailable = false, signedIn = false, noPublished = false }: {
+export default function CastleExplorer({ library = null, catalogueUnavailable = false, signedIn = false, noPublished = false, training: mine = null }: {
   /** The Library: every course, with search and filters, drawn on the server. */
   library?: ReactNode;
   signedIn?: boolean;
   catalogueUnavailable?: boolean;
   /** WordPress answered but has no published course yet. */
   noPublished?: boolean;
+  /** What the reader's own label says; null when signed out or not enrolled anywhere. */
+  training?: TrainingSummary | null;
 }) {
   const [view, setView] = useState("courtyard");
   const heading = useRef<HTMLHeadingElement>(null);
@@ -80,8 +83,24 @@ export default function CastleExplorer({ library = null, catalogueUnavailable = 
       {view === "courtyard" && <>
         <section className={styles.intro}><h1 ref={heading} tabIndex={-1}>A place to sharpen your practice.</h1><p>Choose a room. Discover a course. Build your craft.</p><span className={styles.previewNote}>The Pen & Sword · The Armory</span></section>
         <div className={styles.courtyard}>
-          <Image className={styles.castleArt} src="/castle/courtyard.png" alt="A stone castle courtyard with the library on the left, council chamber ahead, and training hall on the right." width={1832} height={860} priority sizes="100vw" />
-          <div className={styles.entrances} aria-label="Castle entrances">{courses.map((item) => <a key={item.id} href={item.href} className={`${styles.entrance} ${styles[item.position]}`}><strong>{item.room}</strong><span>{item.title}</span><b>Enter room →</b></a>)}</div>
+          <Image className={styles.castleArt} src="/castle/courtyard-training.webp" alt="A stone castle courtyard with the library on the left, the council chamber ahead and the training hall on the right. In front of the fountain a wooden lectern holds an open study journal." width={1501} height={704} priority sizes="100vw" />
+          <div className={styles.entrances} aria-label="Castle entrances">
+            {courses.map((item) => <a key={item.id} href={item.href} className={`${styles.entrance} ${styles[item.position]}`}><strong>{item.name}</strong><span>{item.purpose}</span><b>{item.cta}</b></a>)}
+            {signedIn
+              ? <a href="/my-training" className={`${styles.entrance} ${styles.mytraining}`}>
+                  <strong>My Training</strong>
+                  <span>
+                    <span className={styles.mineLine}>{mine?.next ? `${mine.next.started ? "Continue" : "Start"}: ${mine.next.title}` : mine && mine.count > 0 ? `${mine.count} ${mine.count === 1 ? "programme" : "programmes"}` : "Nothing enrolled yet"}</span>
+                    {mine?.live && <span className={styles.mineLine}>Live {mine.live}</span>}
+                  </span>
+                  <b>Open →</b>
+                </a>
+              : <a href="/login" className={`${styles.entrance} ${styles.mytraining}`}>
+                  <strong>My Training</strong>
+                  <span>Sign in to see your training</span>
+                  <b>Sign in →</b>
+                </a>}
+          </div>
         </div>
         <section className={styles.quickAccess} aria-label="Go directly to a resource"><h2>Choose your next stop.</h2><div className={styles.buttonGrid}>
           <a className={styles.actionButton} href="/castle-resources/advocate-101/index.html">Start Immigration 101, free →</a>
