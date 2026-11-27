@@ -288,6 +288,7 @@ function pcle_authoring_shape_node( $post ) {
 		$node['credits'] = pcle_rest_shape_credit_hours( $post->ID );
 		$node['format']  = pcle_get_program_format( $post->ID );
 		$node['room_theme'] = pcle_get_room_theme( $post->ID );
+		$node['self_completion'] = (bool) get_post_meta( $post->ID, PCLE_SELF_COMPLETION_META, true );
 	}
 
 	return $node;
@@ -571,6 +572,7 @@ function pcle_authoring_list_programs() {
 			'credits'    => pcle_rest_shape_credit_hours( $program->ID ),
 			'format'     => pcle_get_program_format( $program->ID ),
 			'room_theme' => pcle_get_room_theme( $program->ID ),
+			'self_completion' => (bool) get_post_meta( $program->ID, PCLE_SELF_COMPLETION_META, true ),
 			'color'      => pcle_get_colour( $program->ID ),
 			'units'      => count( pcle_authoring_get_children( $program->ID, 'pcle_unit' ) ),
 			'modules'    => count( pcle_get_program_module_ids( $program->ID ) ),
@@ -817,6 +819,25 @@ function pcle_authoring_update_node( $request ) {
 		}
 	}
 
+	/*
+	 * Learners marking their own progress. Refused for a programme that carries
+	 * CLE credit hours: that record is the instructor's, and saying so now is
+	 * kinder than saving a switch that would never act.
+	 */
+	if ( null !== $request['self_completion'] && 'pcle_program' === get_post_type( $id ) ) {
+		$open = rest_sanitize_boolean( $request['self_completion'] );
+
+		if ( $open && pcle_has_credit_hours( $id ) ) {
+			return new WP_Error(
+				'pcle_self_completion_credit',
+				__( 'A programme that carries CLE credit hours is marked by the instructor. Remove the hours first.', 'platform-cle' ),
+				array( 'status' => 409 )
+			);
+		}
+
+		update_post_meta( $id, PCLE_SELF_COMPLETION_META, $open ? 1 : 0 );
+	}
+
 	// How the course room is dressed. A short list, so a bad value is refused up front.
 	if ( null !== $request['room_theme'] && 'pcle_program' === get_post_type( $id ) ) {
 		$themed = pcle_set_room_theme( $id, (string) $request['room_theme'] );
@@ -891,7 +912,7 @@ function pcle_authoring_update_node( $request ) {
 		 * recolouring a programme should not make it "last edited" by
 		 * whoever chose the colour.
 		 */
-		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'room_theme', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'study_mode', 'credits' );
+		$fields = array( 'title', 'excerpt', 'body', 'content', 'status', 'format', 'room_theme', 'self_completion', 'starts_at', 'duration', 'join_url', 'live', 'topics', 'cover', 'access', 'questions', 'pass_mark', 'gates_completion', 'study_mode', 'credits' );
 
 		if ( ! array_filter( $fields, fn( $field ) => null !== $request[ $field ] ) ) {
 			return rest_ensure_response( pcle_authoring_shape_node( get_post( $id ) ) );

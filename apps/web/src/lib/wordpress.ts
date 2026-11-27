@@ -705,6 +705,8 @@ async function updateNode(
     format?: ProgramFormat;
     /** Programmes. A slug from the plugin's short list; "default" clears it. */
     room_theme?: string;
+    /** Programmes. 409 when the programme carries CLE credit hours. */
+    self_completion?: boolean;
     /**
      * Webinars: their live session. Each field optional; starts_at "" removes
      * the session.

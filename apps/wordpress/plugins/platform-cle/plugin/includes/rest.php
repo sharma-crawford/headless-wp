@@ -543,7 +543,9 @@ function pcle_rest_get_module( $request ) {
 			 * write would land on the author's own record, which preview
 			 * promises to leave alone.
 			 */
-			'can_mark'  => ( pcle_user_is_staff() && ! pcle_previewing_as_participant() ),
+			'can_mark'  => pcle_previewing_as_participant()
+				? pcle_program_allows_self_completion( $program ? $program->ID : 0 )
+				: ( pcle_user_is_staff() || pcle_program_allows_self_completion( $program ? $program->ID : 0 ) ),
 			'unit'      => pcle_rest_shape_ref( $unit ),
 			'program'   => pcle_rest_shape_ref( $program ),
 			// A webinar's module is the whole programme, so the app drops the

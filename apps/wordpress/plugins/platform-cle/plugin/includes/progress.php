@@ -153,6 +153,29 @@ function pcle_is_module_complete( $module_id, $user_id = null ) {
 	);
 }
 
+/** Post meta on a programme: its learners mark their own modules complete. Absent means no. */
+const PCLE_SELF_COMPLETION_META = '_pcle_self_completion';
+
+/**
+ * May the learners of this programme mark their own modules complete?
+ *
+ * Off by default: an instructor marks a participant's progress, which is what a
+ * CLE credit record rests on. An author can open a self-study programme to
+ * self-marking. Never for one that carries credit hours, whatever the flag says:
+ * a certificate must not rest on a learner's own tick, and adding hours to a
+ * programme later closes it again.
+ *
+ * @param int $program_id Programme ID.
+ * @return bool
+ */
+function pcle_program_allows_self_completion( $program_id ) {
+	$program_id = (int) $program_id;
+
+	return $program_id > 0
+		&& (bool) get_post_meta( $program_id, PCLE_SELF_COMPLETION_META, true )
+		&& ! pcle_has_credit_hours( $program_id );
+}
+
 /**
  * Marks a module as complete.
  *
@@ -385,7 +408,7 @@ function pcle_rest_toggle_progress( $request ) {
 	 * carry its own code. A participant who is told only "forbidden" reads it
 	 * as a fault; `pcle_marked_by_instructor` lets the app say who does this.
 	 */
-	if ( ! pcle_user_is_staff() ) {
+	if ( ! pcle_user_is_staff() && ! pcle_program_allows_self_completion( pcle_get_program_for_post( $module_id ) ) ) {
 		return new WP_Error(
 			'pcle_marked_by_instructor',
 			__( 'Your instructor marks modules complete.', 'platform-cle' ),

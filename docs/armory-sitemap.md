@@ -161,7 +161,12 @@ rough and assume the WordPress plugin can be changed.
 - Done when: an author edits a question in the builder and the change shows with no deploy.
 
 ### Phase 5: Progress, sign-up, enrollment (about 2 to 3 days)
-- Self-completion for self-study programs. Today only staff mark completions.
+- Self-completion for self-study programs. **Done (plugin not yet deployed):** a
+  per-program setting, off by default, on the programme's Details tab (Progress).
+  Closed for a programme that carries CLE credit hours (refused when enabling, and
+  closed again if hours are added later), so a certificate never rests on a
+  learner's own tick. A learner's own completions are recorded with no instructor
+  against them, so Reports can tell them apart.
 - Quiz results and lesson progress saved from the rooms.
 - Check the sign-up and enrollment flow end to end for a new learner.
 - Reports include these courses.
@@ -178,8 +183,9 @@ Every phase that adds, moves or removes a page also updates `docs/ui-map.md`.
 Decided (Rafael, 2026-11-26):
 
 1. **Learner self-completion: yes.** Learners can mark their own progress in
-   self-study programs. Proposed shape, not yet confirmed: a per-program setting,
-   with instructor-marked staying the default for CLE credit. Unblocks Phase 5.
+   self-study programs. Built as proposed: a per-program setting, off by default,
+   and never open for a programme with CLE credit hours (instructor-marked stays
+   the rule for credit). To confirm: that this is the shape you want.
 2. **Immigration tools: public.** The static pages, Dice and Simulator need no
    login. Moving them inside the shell (Phase 1) keeps them public.
 3. **Front door: `/castle`.** Castle stays the Armory home. `/` is unchanged.
